@@ -1,0 +1,544 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2012/dev/Arch Linux) (format=pdflatex 2012.2.6)  9 MAR 2012 12:55
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**sig-alternate.tex
+(./sig-alternate.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2011-07-01, ngerman-x-2011-07-01, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, galician, german, ngerman, swissgerman, monogreek, greek, hungarian,
+ icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, marathi, or
+iya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, kurmanji,
+ lao, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, pol
+ish, portuguese, romanian, russian, sanskrit, serbian, serbianc, slovak, sloven
+ian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, welsh, loaded
+.
+(./sig-alternate.cls (/usr/share/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+(/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count79
+))
+\Gin@req@height=\dimen102
+\Gin@req@width=\dimen103
+)
+\epsfxsize=\dimen104
+\epsfysize=\dimen105
+)
+(/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks15
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip41
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks16
+\ex@=\dimen106
+))
+(/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen107
+)
+(/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count80
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count81
+\leftroot@=\count82
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count83
+\DOTSCASE@=\count84
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen108
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count85
+\c@MaxMatrixCols=\count86
+\dotsspace@=\muskip10
+\c@parentequation=\count87
+\dspbrk@lvl=\count88
+\tag@help=\toks17
+\row@=\count89
+\column@=\count90
+\maxfields@=\count91
+\andhelp@=\toks18
+\eqnshift@=\dimen109
+\alignsep@=\dimen110
+\tagshift@=\dimen111
+\tagwidth@=\dimen112
+\totwidth@=\dimen113
+\lineht@=\dimen114
+\@envbody=\toks19
+\multlinegap=\skip42
+\multlinetaggap=\skip43
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+Document Class 'sig-alternate' <22nd. April '09>. Modified by G.K.M. Tobin/Gerr
+y Murray
+Based in part upon document Style `acmconf' <22 May 89>. Hacked 4/91 by
+shivers@cs.cmu.edu, 4/93 by theobald@cs.mcgill.ca
+Excerpts were taken from (Journal Style) 'esub2acm.cls'.
+****** Bugs/comments/suggestions/technicalities to Gerry Murray -- murray@hq.ac
+m.org ******
+Questions on the style, SIGS policies, etc. to Adrienne Griscti griscti@acm.org
+
+\footheight=\dimen115
+\@maxsep=\dimen116
+\@dblmaxsep=\dimen117
+\aucount=\count92
+\originalaucount=\count93
+\auwidth=\dimen118
+\auskip=\dimen119
+\auskipcount=\count94
+\auskip=\dimen120
+\allauboxes=\dimen121
+\addauthors=\toks21
+\addauflag=\count95
+\subtitletext=\toks22
+\savesection=\count96
+\sectioncntr=\count97
+\c@figure=\count98
+\c@table=\count99
+\titleboxnotes=\toks23
+\titleboxnoteflag=\count100
+Document Class: sig-alternate 2009/04/22 - V2.4 - based on acmproc.cls V1.3 <No
+v. 30 '99>
+(/usr/share/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+)
+\@acmtitlebox=\box28
+\titlenotecount=\count101
+\tntoks=\toks24
+\tntokstwo=\toks25
+\tntoksthree=\toks26
+\tntoksfour=\toks27
+\tntoksfive=\toks28
+\catcount=\count102
+\copyrightnotice=\toks29
+\conf=\toks30
+\confinfo=\toks31
+\c@part=\count103
+\c@section=\count104
+\c@subsection=\count105
+\c@subsubsection=\count106
+\c@paragraph=\count107
+
+Using 'Abbrev' bibliography style
+LaTeX Info: Redefining \cite on input line 1211.
+\bibindent=\dimen122
+\colcntr=\count108
+\saveb@x=\box29
+\copyrtyr=\toks32
+\acmcopyr=\toks33
+\boilerplate=\toks34
+\copyrightetc=\toks35
+(/usr/share/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+)
+LaTeX Font Info:    Try loading font information for T1+aer on input line 100.
+
+(/usr/share/texmf-dist/tex/latex/ae/t1aer.fd
+File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
+)))
+(/usr/share/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+(/usr/share/texmf-dist/tex/latex/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks36
+\SOUL@lasttoken=\toks37
+\SOUL@cmds=\toks38
+\SOUL@buffer=\toks39
+\SOUL@token=\toks40
+\SOUL@spaceskip=\skip44
+\SOUL@ttwidth=\dimen123
+\SOUL@uldp=\dimen124
+\SOUL@ulht=\dimen125
+)
+(/usr/share/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+) (./sig-alternate.aux)
+\openout1 = `sig-alternate.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+
+(/usr/share/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count109
+\scratchdimen=\dimen126
+\scratchbox=\box30
+\nofMPsegments=\count110
+\nofMParguments=\count111
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count112
+\MPscratchDim=\dimen127
+\MPnumerator=\count113
+\makeMPintoPDFobject=\count114
+\everyMPtoPDFconversion=\toks42
+) (/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/04/22 v0.16 Utilities of pdfTeX for LuaTeX (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Managing graphics extensions (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Defining keys (HO)
+))
+(/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2011/04/07 v1.13 Key value parser (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Prefix for e-TeX command names (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Try loading font information for U+msa on input line 171.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 171.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 171.
+
+(/usr/share/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+Overfull \hbox (6.21733pt too wide) in paragraph at lines 173--174
+\T1/aer/m/n/9 This pa-per pro-vides an overview of the `cross re-al-ity' paradi
+gm
+ []
+
+
+Overfull \hbox (10.97911pt too wide) in paragraph at lines 182--182
+\T1/aer/m/n/9 C.2.4 [\T1/aer/bx/n/9 Computer-Communication Net-works\T1/aer/m/n
+/9 ]: Dis-tributed
+ []
+
+
+Overfull \hbox (7.95592pt too wide) in paragraph at lines 185--186
+\T1/aer/m/n/9 vir-tu-al-ity, sen-sor, ac-tu-a-tor, vir-tual en-vi-ron-ment, vir
+-tual world,
+ []
+
+
+Overfull \hbox (1.71696pt too wide) in paragraph at lines 201--202
+\T1/aer/m/n/9 si-mul-ta-ne-ously to fa-cil-i-tate syn-chronous multi-directiona
+l ex-
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+Overfull \hbox (2.98177pt too wide) in paragraph at lines 218--219
+[]\T1/aer/bx/n/9 Mixed re-al-ity $\OMS/cmsy/m/n/9 ^^@$ \T1/aer/m/n/9 An en-vi-r
+on-ment cre-ated by the merg-
+ []
+
+
+LaTeX Warning: Citation `Milgram1994' on page \thepage  undefined on input line
+ 221.
+
+<virtualitycontinuum.jpg, id=15, 614.295pt x 118.4425pt>
+File: virtualitycontinuum.jpg Graphic file (type jpg)
+
+<use virtualitycontinuum.jpg>
+Package pdftex.def Info: virtualitycontinuum.jpg used on input line 225.
+(pdftex.def)             Requested size: 241.91785pt x 46.6442pt.
+
+Overfull \hbox (1.91785pt too wide) in paragraph at lines 225--226
+ [][] 
+ []
+
+<virtualitymatrix.png, id=16, 596.2275pt x 244.915pt>
+File: virtualitymatrix.png Graphic file (type png)
+
+<use virtualitymatrix.png>
+Package pdftex.def Info: virtualitymatrix.png used on input line 236.
+(pdftex.def)             Requested size: 282.23877pt x 115.93594pt.
+
+Overfull \hbox (42.23877pt too wide) in paragraph at lines 236--237
+ [][] 
+ []
+
+[2 <./virtualitycontinuum.jpg> <./virtualitymatrix.png>]
+Overfull \hbox (2.97343pt too wide) in paragraph at lines 253--253
+[]\secfnt MIT Re-spon-sive En-vi-ron-ments Group [41] 
+ []
+
+
+Overfull \hbox (7.94359pt too wide) in paragraph at lines 254--255
+[]\T1/aer/m/n/9 Mentioned in sec-tion 2[], the Re-spon-sive En-vi-ron-ments Gro
+up
+ []
+
+
+Overfull \hbox (14.46828pt too wide) in paragraph at lines 270--271
+\T1/aer/m/n/9 in-te-gra-tion mid-dle-ware, Holo-graphic En-ter-prise In-ter-fac
+e (HEI),
+ []
+
+
+Overfull \hbox (7.77426pt too wide) in paragraph at lines 275--276
+\T1/aer/m/n/9 Won-der-land vir-tual world (now the Open Won-der-land project)
+ []
+
+
+Overfull \hbox (4.94011pt too wide) in paragraph at lines 279--279
+[]\secfnt ALTERNATE RE-AL-I-TIES IN CUL-TURAL
+ []
+
+[3]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 312.
+
+<basilicascreenshot.png, id=24, 1041.8925pt x 837.1275pt>
+File: basilicascreenshot.png Graphic file (type png)
+
+<use basilicascreenshot.png>
+Package pdftex.def Info: basilicascreenshot.png used on input line 314.
+(pdftex.def)             Requested size: 241.91785pt x 194.37466pt.
+
+Overfull \hbox (1.91785pt too wide) in paragraph at lines 314--315
+ [][] 
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 319.
+
+<cathedralscreenshot.png, id=25, 1041.8925pt x 880.28876pt>
+File: cathedralscreenshot.png Graphic file (type png)
+
+<use cathedralscreenshot.png>
+Package pdftex.def Info: cathedralscreenshot.png used on input line 321.
+(pdftex.def)             Requested size: 241.91785pt x 204.39638pt.
+
+Overfull \hbox (1.91785pt too wide) in paragraph at lines 321--322
+ [][] 
+ []
+
+[4 <./basilicascreenshot.png> <./cathedralscreenshot.png>] [5]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 372.
+
+<mockup.jpg, id=32, 1204.5pt x 798.985pt>
+File: mockup.jpg Graphic file (type jpg)
+ <use mockup.jpg>
+Package pdftex.def Info: mockup.jpg used on input line 374.
+(pdftex.def)             Requested size: 241.91785pt x 160.46469pt.
+
+Overfull \hbox (1.91785pt too wide) in paragraph at lines 374--375
+ [][] 
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 395.
+
+<visio_diagram_2_tech.png, id=33, 552.1428pt x 593.5776pt>
+File: visio_diagram_2_tech.png Graphic file (type png)
+
+<use visio_diagram_2_tech.png>
+Package pdftex.def Info: visio_diagram_2_tech.png used on input line 397.
+(pdftex.def)             Requested size: 241.91785pt x 260.06996pt.
+
+Overfull \hbox (1.91785pt too wide) in paragraph at lines 397--398
+ [][] 
+ []
+
+[6 <./mockup.jpg>]
+Overfull \hbox (9.04305pt too wide) in paragraph at lines 423--424
+[]\T1/aer/m/n/9 Software plat-forms in-clude op-er-at-ing sys-tems tai-lored sp
+ecif-
+ []
+
+[7 <./visio_diagram_2_tech.png>]
+Overfull \hbox (6.90187pt too wide) in paragraph at lines 452--453
+[]\T1/aer/bx/n/9 Open Geospa-tial Con-sor-tium (OGC) Sen-sor Web
+ []
+
+
+Overfull \hbox (4.0969pt too wide) in paragraph at lines 452--453
+\T1/aer/bx/n/9 En-able-ment (SWE) $\OMS/cmsy/m/n/9 ^^@$ \T1/aer/m/n/9 Aims to e
+n-able all Web and/or
+ []
+
+
+Overfull \hbox (3.58719pt too wide) in paragraph at lines 456--457
+\T1/aer/m/n/9 pro-duc-tion of sens-ing ap-pli-ca-tions, pro-duc-ing new kinds
+ []
+
+
+Overfull \hbox (13.74802pt too wide) in paragraph at lines 468--469
+[]\T1/aer/m/it/9 ``The `In-for-ma-tion ex-change with Vir-tual Worlds'
+ []
+
+[8] (./sig-alternate.bbl
+Overfull \hbox (18.66312pt too wide) in paragraph at lines 97--102
+\OMS/cmsy/m/n/9 n$\T1/aer/m/n/9 url{http://blogs.openwonderland.org/2011/01/28/
+remote- 
+ []
+
+
+Overfull \hbox (171.2375pt too wide) in paragraph at lines 137--143
+\OMS/cmsy/m/n/9 n$\T1/aer/m/n/9 url{http://www.iso.org/iso/iso_catalogue/catalo
+gue_tc/catalogue_detail.htm?csnumber=54985}, 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10])
+[11
+
+] (./sig-alternate.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 250 ({)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 3138 strings out of 493629
+ 39415 string characters out of 3148779
+ 103820 words of memory out of 3000000
+ 6351 multiletter control sequences out of 15000+200000
+ 52355 words of font info for 70 fonts, out of 3000000 for 9000
+ 831 hyphenation exceptions out of 8191
+ 41i,11n,26p,946b,274s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-dist/font
+s/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texmf-dis
+t/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/he
+lvetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr
+/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts
+/type1/urw/times/utmri8a.pfb>
+Output written on sig-alternate.pdf (11 pages, 3480957 bytes).
+PDF statistics:
+ 91 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+
