@@ -1,0 +1,91 @@
+\documentclass{report}
+
+\usepackage{fullpage}
+\usepackage{graphicx}
+
+%compresses ranges of citations eg [1, 2, 3, 4, 5] becomes [1-5]
+\usepackage[numbers,sort&compress]{natbib}
+
+\renewcommand{\chaptername}{}
+
+% ======= ======= ======= ======= ======= ======= =======
+
+\begin{document}
+
+% ======= ======= ======= ======= ======= ======= =======
+
+\title{Combining indoor positioning with stereoscopic VR \& video passthrough for simultaneous exploration of tandem real \& VR environments}
+\date{March 2015}
+\author{CJ Davies}
+\maketitle
+
+% ======= ======= ======= ======= ======= ======= =======
+
+% \chapter* in \documentclass{report} creates a chapter with no number (& thus no ToC entry)
+\chapter*{Abstract}
+\input{00_abstract/abstract.tex}
+
+% ======= ======= ======= ======= ======= ======= =======
+
+\chapter*{Acknowledgements}
+\input{00_acknowledgements/acknowledgements.tex}
+
+% ======= ======= ======= ======= ======= ======= =======
+
+\tableofcontents
+
+% ======= ======= ======= ======= ======= ======= =======
+
+\chapter{Introduction}
+\input{01/content.tex}
+
+% ======= ======= ======= ======= ======= ======= =======
+
+\chapter{Background/Extended Example}
+\input{02/content.tex}
+
+% ======= ======= ======= ======= ======= ======= =======
+
+\chapter{Theory \& Rationale}
+\input{03/content.tex}
+\graphicspath{ {03/images/} }
+\input{03/literature_review.tex}
+
+% ======= ======= ======= ======= ======= ======= =======
+
+\chapter{Virtual Time Window}
+\input{04/content.tex}
+
+% ======= ======= ======= ======= ======= ======= =======
+
+\chapter{Mirrorshades - Design/Implementation}
+\graphicspath{ {05/} }
+\input{05/content.tex}
+
+% ======= ======= ======= ======= ======= ======= =======
+
+\chapter{Mirrorshades - Studies/Results}
+\graphicspath{ {06/} }
+\input{06/content.tex}
+
+% ======= ======= ======= ======= ======= ======= =======
+
+\chapter{Conclusions \& Discussion}
+\input{07/content.tex}
+
+% ======= ======= ======= ======= ======= ======= =======
+
+\chapter*{Appendices}
+\addcontentsline{toc}{chapter}{Appendices}
+
+% ======= ======= ======= ======= ======= ======= =======
+
+%\chapter*{Bibliography}
+% no chapter definition for the bibliography because the \bibliography command itself includes a 'Bibliography' title already
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliographystyle{unsrt}
+\bibliography{bib}
+
+% ======= ======= ======= ======= ======= ======= =======
+
+\end{document}

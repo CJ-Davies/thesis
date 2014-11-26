@@ -1,0 +1,110 @@
+Does adding mobility to the visual content of cross reality increase engagement?"
+
+Predictions/Hypotheses
+
+======= ======= =======
+Pre Task Questionnnaire
+======= ======= =======
+
+This is just for calibration, really
+
+======= ======= =======
+SUS
+======= ======= =======
+
+Mobile scenario will score lower than stationary scenario, simply due to it being cumbersome, real cameras having bad reseolution/imperfect FoV compared to virtual, etc.
+
+======= ======= =======
+Questionnaire
+======= ======= =======
+
+q2 - people will find it easier to compare & contrast real & virtual environments in the mobile scenario than in the stationary scenario
+
+q4 - people will have a greater sense of 'being in' the virtual environment in the mobile scenario than in the stationary scenario (because of physical movement/embodiment)
+
+	q7 - (for the cultural heritage case study) people will have a greater sense of 'being in the past' in the mobile scenario than in the stationary scenario
+
+q5 - people will maintain greater awareness of both real & virtual environments in the mobile scenario than in the stationary scenario
+
+q10 - people will notice more differences between real & virtual environments in the mobile scenario than in the stationary scenario
+
+q12 - (for the cultural heritage case study) people will gain a better understanding of what the site was like in the past in the mobile scenario than in the stationary scenario
+
+======= ======= =======
+Log data
+======= ======= =======
+
+yaw against time, comparing stationary & mobile
+
+- head movement will be more restricted in the mobile scenario compared to the stationary scenario
+
+- head movements will be larger discrete changes in the stationary scenario compared to the movile scenario
+
+aversion to looking around (even at real) when walking
+
+tendency to only look at virtual when looking around
+
+
+
+	\item Head movement (pitch \& yaw) will be more restricted in the mobile scenario compared to the stationary scenario
+
+	\item Aversion to looking around (even at real) when moving in the mobile scenario
+
+	\item Head movements will be larger discrete changes in the stationary scenario compared to the mobile scenario
+
+	\item Tendency to only look at virtual when looking around
+
+
+======= ======= =======
+Interview transcripts
+======= ======= =======
+
+mobile scenario makes it easier to spot differences
+
+mobile scenario reveals differences that stationary didn't
+
+stationary does not reveal differences that mobile doesn't
+
+mobile scenario is preferred & is user-reported as 'more engaging'
+
+======= ======= =======
+ Conclusions
+======= ======= =======
+
+How can we encourage people to look around them more when moving & to look at real & virtual in more equal amounts when looking around?
+
+These results show that users find the mobile scenario more engaging & that users can more easily maake comparisons & notice more differences in tthe mobile scenario, however the log data shows us that in the mobile scenario they are not looking around themselves (in either real or virtual) whilst walking (& thus engaging less with *both* environments when walking) & that when they do stop to look around it is really only to look at virtual & not real (& thus engaging less with the real at these stops)
+
+======= ======= =======
+Considerations
+======= ======= =======
+
+*** Would be useful to measure head orientation when user is walking in the stationary scenario, but it would be rather difficult to achieve that in a way that makes it comparable to Rift head tracking data, especially on short notice
+
+*** How biased is the correlation between head movement & real/virtual indicator when the participants were explicitly instructed to stop & look around them at 3x positions?
+	- think about how to compare it to the head movement for virtual aspect of the stationary scenario
+	- if the participant looked around more in the virtual aspect of the stationary scenario (when they were completing *the same task*), that implies that they were 'restricted' in the mobile scenario & thus engagement was reduced because they couldn't engage with the virtual content as freely
+	- & should they not have been compelled to look around at other times (as they did in the stationary scenario)?
+
+
+
+
+
+
+	"the stationary person had a high variance for all time blocks, so they moved their head the same amount for the entire experiment. However, in the mobile experiment, the variance is low for many time blocks, and high in others, meaning they didn't need to turn their head as much"
+
+	"Each time yaw changes in the first plot, it more often than not shows maximum variance, whereas the right plot shows little variance"
+
+
+***THIS CAN BE A HYPOTHESIS
+
+	variance in mobile is higher when looking at virtual than mobile
+
+	variance is higher in stationary scenario than mobile scenario
+
+	(deviation from mean is higher in stationary than mobile)
+
+
+
+	real <- subset(merged_combined_data, time < 221 & environment.y == "False")
+virtual <- subset(merged_combined_data, time < 221 & environment.y == "True")
