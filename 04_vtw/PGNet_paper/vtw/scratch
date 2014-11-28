@@ -1,0 +1,62 @@
+\section{Cross Reality in Cultural Heritage}
+\label{sec:crossrealityinculturalheritage}
+Cross reality promises to expand upon existing alternate reality research in the domain of cultural heritage by increasing the level of interactivity between users, artefacts and sites, by coupling real world conditions more tightly to those pertaining to the digital content of the site and vice-versa, allowing each to influence the other to a greater degree.
+The following is a brief overview of several areas in which cultural heritage is particularly well suited to benefit from cross reality, though it should not be considered an exhaustive survey.
+
+\subsection{User Interaction with Digital Content}
+Many of the projects referenced in section 4 use augmented reality to overlay digital content atop the user's view of a real world site. Interaction with this content is often very limited, where included at all, and there are few common modalities between different sites that feature such systems.
+A cross reality approach in which the digital content is hosted within the context of a wider 3D virtual environment, allowing the user the full freedom of control offered by a virtual world avatar or game player character, permits a much greater level of interactivity and involvement between users and augmentations. Artefacts can be ‘picked up’ for closer examination and passed between different users to aid more natural discussion and collaborative learning, as well as dynamically changing their representation in real-time in response to commands from users, such as changing from an assembled view to an exploded view to aid in the understanding of complex mechanisms and construction. Users can take copies of artefacts, storing them in the inventory system of the virtual environment for further study at a later time, even once they have left the site (see section \ref{subsec:remoteaccesstodigitalcontent}).
+
+\subsection{Real World Influencing Digital Content}
+\label{subsec:realworldinfluencingdigitalcontent}
+Augmented reality implementations usually present users with digital content comprising static models rendered with prebaked textures. Combined with a lack of sensing capabilities this results in content that cannot dynamically change in relation to changing physical and environmental conditions at the site, such as lighting and weather. As a result there is a marked continuity error between the digital content and the surrounding real environment whenever the conditions in the latter do not match those adopted during the creation of the former.
+For example, if a ruined building is digitally modelled in its original splendour as if in sunlight and then rendered atop a user's view of the ruins in the real world, the model will merge well with the surrounding real environment only if the user visits the site during fair weather. If the user visits the site during torrential rain the quality of their experience will be lessened due to the rendered reconstruction not merging as well with its surroundings. Cross reality allows for readings from environmental sensors dispersed about the site to affect the digital content presented to users, such that the appearance of the content better reflects the current site conditions. This dynamic alteration ranges from simple control of lighting direction onto surfaces of digital content to reflect the passage of the Sun across the sky throughout the day, to more complex representations of weather conditions such as rain, snow and mist.
+
+\subsection{Digital Content Influencing Real Word}
+\label{subsec:digitalcontentinfluencingrealworld}
+As previously identified, alternate reality deployments in the domain of cultural heritage have focussed on the use of augmented reality and virtual reality to present visual and auditory content to users. There has been comparatively little research into the presentation of complete somatosensory content, including physical changes to the state of a site through control of lights, fans, heaters, RoSE devices, etc. Cross reality allows for actions and events that take place within the virtual environment to trigger such changes in the state of the site, allowing content to address more sensory systems and opening a vast range of new modalities of interaction between users and digital content.
+A simple example is of a user altering the lighting conditions of a digital component within the virtual environment (see section 5.1) and these same alterations manifesting in the real site through the use of a remotely controllable lighting fixture via the DMX512 protocol (Technology, n.d.) or similar. This particular example could make it much easier for a user to map between features of a real artefact and the coinciding features of its digital reconstruction.
+
+\subsection{Extent of Digital Content}
+\label{subsec:extentofdigitalcontent}
+The majority of previous augmented reality deployments in cultural heritage have added sparse digital objects to users' views of a site, resulting in easily identifiable augmentations that ‘stand out’ from their real surroundings due to their imperfect photorealism. By hosting these digital objects within a larger virtual environment they will no longer appear out of place, as the level of photorealism of the objects themselves will be identical to that of the virtual environment around them, presenting a more consistent experience.
+Creating an entire virtual environment, instead of only certain objects of interest to add to the site, also gives rise to different possible modalities of interaction between visitors and digital content. Because a surrounding virtual environment gives context to the objects, they can be observed and interacted with solely in the virtual environment or alongside the site, instead of having to be ‘mixed’ with the site in the traditional sense of augmented reality. Of course there is nothing to prevent these same objects from also being used in this traditional fashion, by allowing them to be accessed independently of their virtual surroundings.
+
+\subsection{Remote Access to Digital Content}
+\label{subsec:remoteaccesstodigitalcontent}
+The digital content of most cultural heritage sites that employ alternate reality technologies is only accessible to users who are physically present at the site. In the case of virtual reality deployments this content is usually delivered using a bespoke or proprietary platform that is not commonly or freely available to individuals, whilst for augmented reality content it is a defining feature of the concept that this content be overlaid upon a direct or indirect view of the real site, something that is not usually available remotely. Whilst some sites may present a subset of their digital content to remote users via a website, possibly employing techniques such as panoramic photographs, this is a markedly different and more limiting style of interaction than that of alternate realities.
+By employing cross reality and modelling not only particular objects of interest but also the environment surrounding them (see section 5.4), the digital content becomes useful in a standalone situation as well as becoming remotely accessible. This ability to remotely access, using freely available software such as a virtual world client on a standard home computer, the same virtual environment as is used to present visitors to the site itself with digital content, either alongside their view of the real site using a tablet or handheld computer, or mixed with their view of the site using an augmented reality glasses approach, raises interesting possibilities with regards to interaction between users at the site and remote users.
+Visitors to the site can be guided by a domain expert who is not physically with them at the site, but who is logged in to the virtual environment at a computer elsewhere. Similarly visitors to the site can invite friends and family who are unable to accompany them to the site to ‘join’ them, by logging into the virtual environment, as they explore and learn about the site.
+Remote access to the virtual environment also promises to extend users' interaction with the site beyond the end of their physical visits, whilst retaining familiarity with the methods of presentation. Upon returning home, users can share their experiences at the site with their friends and family by logging in to the virtual environment from their home computer, perhaps instead of showing them photographs they had taken at the site. If a user discovered after leaving the site that they missed something, or ran out of time to see everything that they wanted to, or simply wished to revisit a certain artefact, they can log in to the virtual environment at a later point to see it.
+
+
+
+
+========================
+CUT after discussion 04/04/2012
+========================
+
+\section{Related Work}
+\label{sec:relatedwork}
+The use of alternate realities in cultural heritage has been an area of active research for over 20 years as it provides many advantages over more traditional techniques employed for the capture, analysis and in particular the presentation and visualization of the domain material~\cite{Roussou2002}.
+
+The majority of this research has focussed on the application of augmented reality and virtual reality to aiding in the presentation, visualization and thus accessibility of information to both experts and interested novices, such as visitors to museums and sites of interest~\cite{walczak:applications}. These applications have been employed to;
+
+\begin{itemize}
+	\item visualize and provide (remote) access to sites and artefacts that no longer exist, never existed or only exist in a damaged or decayed state, are hard or impossible to reach (both due to physical and legislative reasons, the latter often due to items being held in private collections) or are the result of speculation (time, distance, scale, etc.)~\cite{Christou2006, Dikaiakou2003, griffin:recovering, Laycock2008, Levoy1999, levoy:digitalmichelangelolong, roussou:photorealism, willmott:largecomplex};
+
+	\item quickly and easily present and explore multiple representations of sites and artefacts, allowing domain experts to compare, contrast and test different theories of reconstruction, restoration and relocation and also to aid in the analysis process that generates new understanding by allowing the available information to be studied in fashions that are not possible using traditional approaches, such as easily visualizing changes through time~\cite{cabral:x3dexperience, Ikeuchi2003, mcnamara:lightness, Sundstedt2004};
+	
+	\item aid accessibility and increase interest, particularly in children who can be easily underwhelmed and lose interest when presented with sites that no longer represent their former glory, and aid distance learning and education~\cite{ardito:combining, Kim2009, Seo2010};
+
+	\item enable informal methods of education and research; interactive, collaborative and responsive, and enable different modalities of interaction with the information, such as haptics~\cite{benko:collaborative};
+
+	\item digitally preserve sites and artefacts that are in danger of decay~\cite{Remondino2009};
+
+	\item reduce complexity of creating presentations and visualizations, so that once information that pertains to a site or artefact has been collected the process of preparing it for presentation to users is a less involved and expert affair~\cite{Ruffaldi2008};
+
+	\item improve the standard of audiovisual tours of sites, such that they better reflect the users' current position, gaze, etc. without restricting them to a predetermined path, only providing information at pre-chosen points of interest, or requiring excessive prompting to, or control from, the user~\cite{vlahakis:archeoguide}.
+\end{itemize}
+
+	
+The success of these projects, establishing a strong research base for alternate reality in cultural heritage, paves the way for investigation into applications of the cross reality paradigm to the domain.

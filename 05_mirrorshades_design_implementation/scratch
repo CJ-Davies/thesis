@@ -1,0 +1,101 @@
+
+
+\subsection{Case Study}
+Cultural heritage is one field that benefits from the style of interaction that Mirrorshades allows, enabling a user to explore a site of interest in tandem with its VR reconstruction. There are many examples of the application of AR to cultural heritage sites~\cite{Seo2010,Kim2009,Papagiannakis2007,Taketomi2011,Papagiannakis2004,Magnenat-Thalmann7,Papagiannakis2009,Ruffaldi2008}, but whilst these systems focus on accurate placement of a small number of virtual objects upon a user's view of the real site, XR presents a complete, discrete virtual environment which allows for more comprehensive, encompassing \& immersive virtual content to be compared \& contrasted to the real. This promises particular utility where a virtual reconstruction is drastically different to the current environment.
+
+\hrulefill
+
+\clearpage
+
+
+
+Certain individual components of the platform will be evaluated independently;
+\begin{itemize}
+	\item accuracy of IPS
+	\item accuracy of HMD head tracking
+	\item latency of HMD visuals (real \& virtual)
+	%\item performance/quality of 3D graphics
+\end{itemize}
+
+\subsection{Accuracy of IPS}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=0.7\textwidth]{images/IPS-experiment.png}
+		\caption{IPS accuracy experimental design.}
+	\end{center}	
+\end{figure}
+
+Can't measure accuracy of the IPS on-the-fly whilst users are using MShades, so can't draw any correlations between changing accuracy of IPS \& users' experiences with the system.
+
+\cite{Haverinen2009a} IndoorAtlas
+\cite{Haverinen2009} IndoorAtlas
+\cite{Chung2011} MIT
+
+All used a robot/rover
+
+
+***as with head tracking, there is no reason why you couldn't use really accurate positioning, but the ability of MShades to operate without this sort of accuracy is a big bonus
+
+***Use Mediated Reality, Steve Mann, 1.2.1 quote to make the point about \textbf{registration} (also use word registration rather than whatever else i'm using!)
+
+The IPS used by the Mirrorshades platform is IndoorAtlas~\cite{IndoorAtlasLtd.2012}. This system makes use of a smartphone's magnetometer to detect anomalies in the Earth's magnetic field caused by building materials (metal beams, pipework, electrical cabling, HVAC ducting, etc.) which are compared against a `fingerprint' of such readings taken during a prior offline mapping phase. The original research that developed into this system is summarised in~\cite{Haverinen2009, Haverinen2009a} whilst a similar approach was also investigated by~\cite{Chung2011}.
+
+There has been no survey yet to demonstrate the performance/accuracy of the IndoorAtlas IPS for various building types. As the accuracy of the IPS is expected to impact the qualitative experience of the Mirrorshades experience, the IndoorAtlas IPS will be evaluated within various types of building;
+
+\begin{itemize}
+	\item Jack Cole $-$ a modern building based around a metal frame, with an abundance of electrical cabling \& HVAC ducting. This building does not fit within the case study of cultural heritage, however due to its construction it represents an ideal candidate for the IndoorAtlas IPS \& will provide data for the performance of IndoorAtlas under ideal conditions.
+	\item St Salvator's chapel $-$ a late gothic chapel built over 600 years ago with a stone \& timber construction. This building is an ideal candidate for tandem exploration of RW \& VR via the Mirrorshades platform \& is the intended site for our case study, however the building's construction does not bode well for the performance of IndoorAtlas. The addition at later dates of central heating/electrical systems may however allow for sufficient positional accuracy even if the magnetic properties of the stone used to construct the building are not enough to provide an accurate fix.
+	\item St Andrews cathedral $-$ a site that is an ideal candidate for exploration with Mirrorshades, however having lain ruin since the latter half of the 14th century the likelihood of sufficient positional accuracy via IndoorAtlas is low as the amount of building materials remaining (let alone those with magnetic properties) is limited.
+\end{itemize}
+
+Both the positional accuracy \& the amount of lag of the IndoorAtlas IPS will be measured. Lag is inherent due to the architecture of the IndoorAtlas platform: magnetometer readings taken by the phone are sent to the IndoorAtlas cloud via an API \& position data are returned, rather than the position being calculated locally by the phone itself. Even given ideal network situations, a noticeable lag is introduced by this communication between phone \& cloud simply due to the physical distance that the communication must propagate. In practise this has an effect of the reported positions being `behind' the user whilst they are walking, `catching up' after they have stopped moving. The impact that this lag has on the user experience of the Mirrorshades platform will be explored.
+
+As IndoorAtlas reports positions only upon the paths that were used during the offline fingerprinting stage (it does not extrapolate to positions off of these paths) measuring the Hausdorff distance between a planned route \& that reported by IndoorAtlas is not a viable experiment, as this distance will simply be the distance between the planned route \& the path(s) used during fingerprinting \& will not represent the accuracy of the positional data. Instead, experiments will walk to specific points which correspond to the path(s) used during the fingerprinting stage \& measure the discrepancy of the reported position.
+
+\subsection{Accuracy of HMD head tracking}
+
+*** talk about how MShades might not need as accurate registration as a traditional AR system, but this will become more apparent whem trying different blending/switching/fading, etc.
+
+*\textit{allows} lower registration than AR, but nothing is to say that you couldn't have just as accurate registration, though the non requirement should definitely be spun as a big advantage that allows the user of cheaper positioning that doesn't require costly setup or any infrastructure installation
+
+In the Mirrorshades platform, the HMD is responsible for presenting a depiction of the user's RW environment \& an alternative depiction of a VR environment. In both cases the environments are displayed in a manner such that the depiction matches the user's vantage point when considering the physical orientation of their head. In the case of presenting the user's RW environment, webcams rigidly attached to the front of the HMD ensure that the vantage is always correct; whatever direction the user points their head, the cameras will follow due to their physical connection. However in the case of presenting the VR environment, the HMD's head tracker is used \& this is subject to inaccuracy \& `drift'.
+
+The Oculus Rift contains a 6 degrees-of-freedom (6 DOF) inertial measurement unit (IMU), or `tracker', which is comprised of a 3-axis accelerometer, a 3-axis gyroscope \& a 3-axis magnetometer. The gyroscope monitors the roll, pitch \& yaw of the user's head (its `orientation'), whilst the accelerometer \& magnetometer readings are used to correct tilt error \& yaw error respectively that occurs in the gyroscope readings as operational time progresses~\cite{LaValle2013}. The introduction of these errors over time is termed `drift'.
+
+Whilst some drift when interacting only with VR content may be easy to ignore, it may become more apparent when switching between VR \& RW content as the webcam feeds will not drift equal to the VR content; the webcam's physical attachment to the HMD means that they will never drift. The amount that the VR content drifts from related RW content will be measured by comparing frames captured from the webcams \& the game engine for increasing time \& orientation changes. If it is found that there is a perceivable drift between VR \& RW content the impact that such discrepancies have on the user experience of the platform will need to be investigated.
+
+\subsection{Latency of HMD visuals}
+
+Webcams have between 180 \& 215 milliseconds of delay, tested by having a stopclock displaying on a desktop computer monitor, Rift pointing at monitor with webcams enabled \& running, in a standalone Unity app where the only objects/whatever was the camera controller, lenses removed from Rift, NEX-5n pointed to capture both \& recording at 50 frames per second progressive at a shutter speed of 1 4000th of a second.
+
+
+
+%\hline
+
+
+Visuals to be displayed on the HMD's screen are subject to latency before they actually appear on the screen, whether their source is the webcams or the game engine. Whilst the display itself introduces some latency due to the speed at which each sub-pixel display element can respond to new input \& change its emitted colour accordingly, the majority of the end-to-end latency in both webcam \& game engine scenarios arises due to other reasons \& the severity of the latency in these two scenarios may differ substantially.
+
+***Is this actually true? Use Presence paper as reference.
+
+For the game engine scenario, the latency is the time it takes for the IMU to detect a change in the orientation of the user's head \& for these data to propagate to the game engine \& for the engine to effect the necessary changes to the rendered scene. This latency can be measured using the Latency Tester accessory produced by Oculus VR.
+
+For the webcam scenario, the latency is the time it takes for the camera to capture a new frame \& deliver it to the game engine \& for the engine to effect the necessary changes to the rendered scene. This latency can be measured using a stopclock \& a camera with a high shutter speed that captures both the stopclock directly \& the representation of the stopclock on the Rift's screen.
+
+\subsection{Performance/quality of 3D graphics}
+Statistics such as FPS are easily recorded for the VR content \& can be capped at specific values to investigate the effect on user experience of faster or slower rates.% `Quality' of graphics is much more subjective, but can also be altered to discern the effect that it has on overall user experience.
+
+%\subsection{Performance/quality of webcams}
+%By viewing their RW environment through a pair of webcams capturing at 30Hz \& displaying onto a relatively low resolution display (640x800 per eye), a user of Mirrorshades has the fidelity of their RW vision substantially reduced compared to their `naked' eyes. How much this affects their ability to observe \& interact with their RW environment will be qualitatively assessed.
+
+\subsection{Qualitative evaluation of system-as-whole}
+Whilst evaluating the performance of each individual component of the Mirrorshades platform will give insights into where limitations that affect overall user experience of the system-as-a-whole are introduced, the combination of all of the components \& experience of the system-as-whole may substantially affect the quality of experience, either positively or negatively.
+
+For example, as IndoorAtlas will likely not situate the user to greater than 2-3m, a discrepancy of a few degrees between the VR orientation (as determined by IMU) \& the RW orientation (as determined by the physical orientation of the user's head) will be dwarfed by the difference caused by the 2-3m separation of the `real' \& `virtual' cameras. Whether this positional discrepancy negatively affects the user's experience as a whole due to not being able to easily discern how the VR \& RW content relate, or positively affects the user's experience by allowing the small orientational discrepancy to be ignored, will only become apparent through experiments performed with the system-as-whole.
+
+
+
+(Modified) presence questionnaire (or presence questionnaire where evaluation of results is modified to take into account that there are 2x environments \& we are not actually trying to completely remove the user's knowledge of their RW environment!)
+
+
+
