@@ -1,4 +1,22 @@
-\begin{thebibliography}{100}
+\begin{thebibliography}{10}
+
+\bibitem{Lifton2007a}
+Joshua Lifton.
+\newblock {\em {Dual Reality: An Emerging Medium}}.
+\newblock Ph.d. dissertation, Massachusetts Institute of Technology, Department
+  of Media Arts and Sciences, September 2007.
+
+\bibitem{Dublon2011}
+Gershon Dublon, Laurel~S Pardue, Brian Mayton, Noah Swartz, Nicholas Joliat,
+  Patrick Hurst, and Joseph~A Paradiso.
+\newblock {DoppelLab: Tools for exploring and harnessing multimodal sensor
+  network data}, 2011.
+
+\bibitem{Gelernter1993}
+David Gelernter.
+\newblock {\em {Mirror Worlds: or the Day Software Puts the Universe in a
+  Shoebox...How It Will Happen and What It Will Mean}}.
+\newblock 1993.
 
 \bibitem{Warburton2009}
 Steven Warburton.
@@ -72,12 +90,6 @@ Judy York and Parag~C Pendharkar.
   variable work context}.
 \newblock {\em International Journal of Human-Computer Studies},
   60(5-6):771--797, 2004.
-
-\bibitem{Lifton2007a}
-Joshua Lifton.
-\newblock {\em {Dual Reality: An Emerging Medium}}.
-\newblock Ph.d. dissertation, Massachusetts Institute of Technology, Department
-  of Media Arts and Sciences, September 2007.
 
 \bibitem{Krevelen2010}
 D~W F~Van Krevelen and R~Poelman.
@@ -274,12 +286,6 @@ Palmisano Gets A~Second Life.
 Paul Mason.
 \newblock {Searching for the soul of cyberspace}, 2007.
 
-\bibitem{Dublon2011}
-Gershon Dublon, Laurel~S Pardue, Brian Mayton, Noah Swartz, Nicholas Joliat,
-  Patrick Hurst, and Joseph~A Paradiso.
-\newblock {DoppelLab: Tools for exploring and harnessing multimodal sensor
-  network data}, 2011.
-
 \bibitem{Dublon2011a}
 Gershon Dublon.
 \newblock {\em {Beyond the Lens: Communicating Context through Sensing, Video
@@ -293,38 +299,6 @@ Joshua Lifton, Mathew Laibowitz, Drew Harry, Nan-wei Gong, Manas Mittal, and
   Sensor/Actuator Networks}.
 \newblock {\em IEEE Pervasive Computing: Mobile and Ubiquitous Systems},
   8(3):24--33, July 2009.
-
-\bibitem{Dindar2009}
-Nihal Dindar, \c{C}agri Balkesen, Katina Kromwijk, and Nesime Tatbul.
-\newblock {Event Processing Support for Cross-Reality Environments}.
-\newblock {\em IEEE Pervasive Computing}, 8(3):34--41, July 2009.
-
-\bibitem{Horn2009}
-Daniel Horn, Ewen Cheslack-Postava, Tahir Azim, Michael~J. Freedman, and Philip
-  Levis.
-\newblock {Scaling Virtual Worlds with a Physical Metaphor}.
-\newblock {\em IEEE Pervasive Computing}, 8(3):50--54, July 2009.
-
-\bibitem{Clark-Casey2010}
-Justin Clark-Casey.
-\newblock {\em {Scaling OpenSimulator: An Examination of Possible Architectures
-  for an Internet-Scale Virtual Environment Network}}.
-\newblock PhD thesis, Oxford, 2010.
-
-\bibitem{Yankelovich2009}
-Nicole Yankelovich, Jordan Slott, Alex Hill, Matt Bonner, Jacob Schiefer, Blair
-  MacIntyre, Elena Mugellini, Omar~Abou Khaled, Fr\'{e}d\'{e}ric Barras,
-  Jacques Bapst, Maribeth Back, Edgardo Aviles-Lopez, and J.~Antonio
-  Garcia-Macias.
-\newblock {Building and Employing Cross-Reality}.
-\newblock {\em IEEE Pervasive Computing}, 8(3):55--57, July 2009.
-
-\bibitem{Fayolle2011}
-Jacques Fayolle.
-\newblock {The Concept of the Remote Laboratory}.
-\newblock
-  $\backslash$url\{http://blogs.openwonderland.org/2011/01/28/remote-laboratories/\},
-  January 2011.
 
 \bibitem{UgoTrade2007}
 UgoTrade.
@@ -341,136 +315,6 @@ IBM.
 \bibitem{Marketwire2008}
 Marketwire.
 \newblock {IBM 3-D Data Centers Show Virtual Worlds Fit for Business}, 2008.
-
-\bibitem{LindenResearchInc.}
-{Linden Research Inc.}
-\newblock {Virtual Worlds, Avatars, free 3D chat, online meetings - Second Life
-  Official Site}.
-
-\bibitem{OpenSimulatorProject}
-{OpenSimulator Project}.
-\newblock {OpenSim}.
-
-\bibitem{OpenWonderlandFoundation}
-{Open Wonderland Foundation}.
-\newblock {Open source 3D virtual collaboration toolkit | Open Wonderland}.
-
-\bibitem{UnigineCorp}
-{Unigine Corp}.
-\newblock {Unigine: real-time 3D engine (game, simulation, visualization and
-  VR)}.
-
-\bibitem{EpicGames}
-{Epic Games}.
-\newblock {Game Engine Technology by Unreal}.
-
-\bibitem{UnityTechnologies}
-{Unity Technologies}.
-\newblock {Unity - Game Engine}.
-
-\bibitem{Hendaoui2008}
-Adel Hendaoui, Moez Limayem, and Craig~W Thompson.
-\newblock {3D Social Virtual Worlds: Research Issues and Challenges}.
-\newblock {\em IEEE Internet Computing}, 12(1):88--92, 2008.
-
-\bibitem{Bainbridge2007}
-William~Sims Bainbridge.
-\newblock {The scientific research potential of virtual worlds.}
-\newblock {\em Science}, 317(5837):472--6, 2007.
-
-\bibitem{Faludi2010}
-Robert Faludi.
-\newblock {\em {Building Wireless Sensor Networks}}.
-\newblock O'Reilly Media Inc., Sebastopol, 1 edition, 2010.
-
-\bibitem{TinyOSAlliance}
-{TinyOS Alliance}.
-\newblock {TinyOS Home Page}.
-
-\bibitem{Dunkels}
-Adam Dunkels.
-\newblock {The Contiki OS}.
-
-\bibitem{InternationalOrganizationforStandardization2011}
-{International Organization for Standardization} and (ISO).
-\newblock {ISO/IEC 23005-1:2011 - Information technology -- Media context and
-  control -- Part 1: Architecture}.
-\newblock
-  $\backslash$url\{http://www.iso.org/iso/iso\_catalogue/catalogue\_tc/catalogue\_detail.htm?csnumber=54985\},
-  2011.
-
-\bibitem{Sivan2008}
-Yesha Sivan.
-\newblock {Real Virtual Worlds SOS (State of Standards) Q3-2008}.
-\newblock {\em Journal of Virtual Worlds Research}, 1(2), 2008.
-
-\bibitem{Sivan2009}
-Yesha Sivan.
-\newblock {Overview: State of Virtual Worlds Standards in 2009}.
-\newblock {\em Journal of Virtual Worlds Research2}, 2(3), 2009.
-
-\bibitem{Rosendale2009}
-Philip Rosendale.
-\newblock {Virtual Worlds, Collaboratively Built}.
-\newblock {\em Journal of Virtual Worlds Research}, 2(3), 2009.
-
-\bibitem{Gelissen2009}
-Jean Gelissen.
-\newblock {Introduction to MPEG-V}.
-\newblock {\em Journal of Virtual Worlds Research}, 2(3), 2009.
-
-\bibitem{Sivan2011}
-Yesha Sivan.
-\newblock {Managing Editor’s Corner: Celebrating Four Years and Planning for
-  the Next}.
-\newblock {\em Journal of Virtual Worlds Research}, 4(3), 2011.
-
-\bibitem{Gelissen2011}
-Jean Gelissen, Marius Preda, Samuel Cruz-Lara, and Yesha Sivan.
-\newblock {Issue Editors' Corner: The Current and Future Angles of Standards}.
-\newblock {\em Journal of Virtual Worlds Research}, 4(3), 2011.
-
-\bibitem{Gelissen2011a}
-Jean Gelissen and Yesha Sivan.
-\newblock {The Metaverse1 Case: Historical Review of Making One Virtual Worlds
-  Standard (MPEG-V)}.
-\newblock {\em Journal of Virtual Worlds Research}, 4(3), 2011.
-
-\bibitem{Cabello2011}
-Jose~Manuel Cabello, Jose~Maria Franco, Antonio Collado, Jordi Janer, Samuel
-  Cruz-Lara, David Oyarzun, Albert Armisen, and Roland Geraerts.
-\newblock {Standards in Virtual Worlds Virtual Travel Use Case Metaverse1
-  Project}.
-\newblock {\em Journal of Virtual Worlds Research}, 4(3), 2011.
-
-\bibitem{IEEE}
-IEEE.
-\newblock {IEEE VW Standard Working Group}.
-
-\bibitem{InstituteofElectricalandElectronicsEngineers2012}
-{Institute of Electrical and Electronics Engineers}.
-\newblock {IEEE P1828/D1 Draft Trial-Use Standard for Systems with Virtual
-  Components}.
-\newblock 2012.
-
-\bibitem{Davies2012}
-C~J Davies, Alan Miller, and Colin Allison.
-\newblock {Virtual Time Windows : Applying Cross Reality to Cultural Heritage}.
-\newblock In {\em PGNet}, 2012.
-
-\bibitem{Roush2007}
-Wade Roush.
-\newblock {Second Earth}, 2007.
-
-\bibitem{Bar-Zeev2007}
-Avi Bar-Zeev.
-\newblock {RealityPrime » Second Earth}, 2007.
-
-\bibitem{Gelernter1993}
-David Gelernter.
-\newblock {\em {Mirror Worlds: or the Day Software Puts the Universe in a
-  Shoebox...How It Will Happen and What It Will Mean}}.
-\newblock 1993.
 
 \bibitem{Qvortrup2002}
 Lars Qvortrup.
@@ -490,6 +334,53 @@ E~L Waterworth and J~A Waterworth.
 S~Laureys, M~Boly, G~Moonen, and P~Maquet.
 \newblock {Two Dimensions of Consciousness: Arousal and Awareness}.
 \newblock 2:1133--1142, 2009.
+
+\bibitem{Slater2002}
+Mel Slater.
+\newblock {Presence and The Sixth Sense}.
+\newblock {\em Presence: Teleoperators and Virtual Environments},
+  11(4):435--439, August 2002.
+
+\bibitem{Ijsselsteijn2001}
+Wijnand Ijsselsteijn.
+\newblock {Understanding Presence}.
+\newblock In {\em Proceedings of the AIIA 2002 'Workshop sulla percezione della
+  presenza in ambienti virtuali o remoti'}, 2001.
+
+\bibitem{Heeter2003}
+Carrie Heeter.
+\newblock {Reflections on Real Presence by a Virtual Person}, 2003.
+
+\bibitem{Ijsselsteijn1998}
+Wijnand Ijsselsteijn, Huib de~Ridder, Roelof Hamberg, Don Bouwhuis, and
+  Jonathan Freeman.
+\newblock {Perceived depth and the feeling of presence in 3DTV}, 1998.
+
+\bibitem{Turkle2004}
+Sherry Turkle.
+\newblock {Our Split Screens}.
+\newblock In Andrew Feenberg and Darin Barney, editors, {\em Community in the
+  Digital Age: Philosophy and Practice}, chapter~6, pages 101--117. Rowman \&
+  Littlefield, 2004.
+
+\bibitem{Slater2000}
+Mel Slater and Anthony Steed.
+\newblock {A Virtual Presence Counter}.
+\newblock {\em Presence: Teleoperators and Virtual Environments},
+  9(5):413--434, October 2000.
+
+\bibitem{Davies2012}
+C~J Davies, Alan Miller, and Colin Allison.
+\newblock {Virtual Time Windows : Applying Cross Reality to Cultural Heritage}.
+\newblock In {\em PGNet}, 2012.
+
+\bibitem{Roush2007}
+Wade Roush.
+\newblock {Second Earth}, 2007.
+
+\bibitem{Bar-Zeev2007}
+Avi Bar-Zeev.
+\newblock {RealityPrime » Second Earth}, 2007.
 
 \bibitem{deamicis:gamebased}
 Raffaele {De Amicis}, Gabrio Girardi, Michele Andreolli, Giuseppe Conti, and
@@ -667,40 +558,6 @@ Delia Tzortzaki.
 John Brooke.
 \newblock {SUS-A quick and dirty usability scale}.
 \newblock {\em Usability evaluation in industry}, 189:194, 1996.
-
-\bibitem{Slater2002}
-Mel Slater.
-\newblock {Presence and The Sixth Sense}.
-\newblock {\em Presence: Teleoperators and Virtual Environments},
-  11(4):435--439, August 2002.
-
-\bibitem{Ijsselsteijn2001}
-Wijnand Ijsselsteijn.
-\newblock {Understanding Presence}.
-\newblock In {\em Proceedings of the AIIA 2002 'Workshop sulla percezione della
-  presenza in ambienti virtuali o remoti'}, 2001.
-
-\bibitem{Heeter2003}
-Carrie Heeter.
-\newblock {Reflections on Real Presence by a Virtual Person}, 2003.
-
-\bibitem{Ijsselsteijn1998}
-Wijnand Ijsselsteijn, Huib de~Ridder, Roelof Hamberg, Don Bouwhuis, and
-  Jonathan Freeman.
-\newblock {Perceived depth and the feeling of presence in 3DTV}, 1998.
-
-\bibitem{Turkle2004}
-Sherry Turkle.
-\newblock {Our Split Screens}.
-\newblock In Andrew Feenberg and Darin Barney, editors, {\em Community in the
-  Digital Age: Philosophy and Practice}, chapter~6, pages 101--117. Rowman \&
-  Littlefield, 2004.
-
-\bibitem{Slater2000}
-Mel Slater and Anthony Steed.
-\newblock {A Virtual Presence Counter}.
-\newblock {\em Presence: Teleoperators and Virtual Environments},
-  9(5):413--434, October 2000.
 
 \bibitem{Schubert2001}
 Thomas Schubert, Frank Friedmann, and Holger Regenbrecht.

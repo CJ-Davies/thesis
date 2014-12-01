@@ -1,6 +1,5 @@
 \begin{quote}
-\textit{
-``Where are you?'' Hiro says.
+\textit{``Where are you?'' Hiro says.
 \\
 \\
 ``In Reality or the Metaverse?''
@@ -12,9 +11,30 @@
 \\
 \\
 \\
-Reviewing the literature on the domain of alternate realities this research finds that there is a gap in the scholarly investigation of simultaneous presence in real and virtual environments and the associated `vacancy problem'. This review proposes that a better understanding of the extension of human presence from only one of the real world or a virtual environment to simultaneous presence in both will permit the introduction of novel systems in a variety of fields in which simultaneous interaction and exploration of both real and virtual environments is possible. Such systems will likely be formed by expansion of research into \textit{cross reality}, an alternate reality comprised of complete real and virtual environments able to mutually reflect and influence each other via sensor/actuator infrastructure, and are likely to be in high demand as progress toward 3D extension of the Web continues.
+
+%=========================================================================================================
+%=========================================================================================================
+
+% 'Position' section from experimental plan document
 
 \section{Introduction}
+This research centres around the design, development \& evaluation of a hardware \& software platform which allows its user to observe \& move around their Real World (RW) environment whilst wearing a wide field of view (FOV), stereoscopic 3D, Head Mounted Display (HMD) which allows them to alternatively view an immersive Virtual Reality (VR) environment from the equivalent vantage point. This is achieved by combining a head-tracked HMD, webcams, an indoor positioning system (IPS) \& a 3D game engine, into a mobile \textit{cross reality} (XR) interface.
+
+One of the distinguishing features of XR is that, by linking real \& virtual environments more closely, it mitigates the `vacancy problem': \textit{``the noticeable \& profound absence of a person from one world, either real or virtual, while they are participating in the other''}, which arises \textit{``because people do not currently have the means to be in more than one place (reality) at a time''}~\cite{Lifton2007a}.
+
+Previous XR research approached the vacancy problem by integrating sensor/actuator networks into the environments, such that actions in one could manifest in the other, however direct visual engagement with the virtual environment was only possible from static interfaces at pre-determined locations within the real environment~\cite{Lifton2007a, Dublon2011}. The platform discussed in this document addresses this shortcoming by providing a mobile interface for visual engagement with both environments of a XR system, allowing the user to transition between viewing their real environment \& a virtual environment at any time while maintaining the freedom to move around them, multiplexing visual stimuli from their real surroundings \& from a parallel, virtual `mirror world'~\cite{Gelernter1993}.
+
+%=========================================================================================================
+%=========================================================================================================
+
+\section{Defining Alternate Realities}
+A fundamental imperative for the remainder of this review is a well defined set of criteria for classifying and differentiating between different types of alternate reality. The terms \textit{mixed reality}, \textit{augmented reality} and to a lesser extent \textit{augmented virtuality} are all now relatively common in the literature, however they have too often been used in conflicting manners, or assigned vague definitions with uncertain boundaries separating them from each other. Furthermore the less well established terms \textit{cross reality} and \textit{X reality} (different names for the same concept) also need classifying according to the same system.
+
+%=========================================================================================================
+%=========================================================================================================
+
+% From.... original lit review?
+
 Research on alternate realities has been extensive, with the theme being explored for purposes as diverse as education~\cite{Warburton2009} and new forms of data visualisation~\cite{Coleman2009} to medical~\cite{TenEyck2011} and military training~\cite{Qiu2009}. Traditionally access to implementations of alternate realities was limited by the availability and high monetary cost of the specialised hardware and software that was required to create virtual environments and computerised superimpositions~\cite{Druck2006}. However more recently the cost and availability of this hardware and software has reduced and increased respectively to the point at which we find ourselves today where alternate realities can be, and in fact frequently are, experienced by many with the equipment they already have available to them with no special considerations~\cite{Sevan2008}.
 
 Hardware capable of synthesising the graphically complex three-dimensional environments that alternate realities often present has reduced in cost to the point that it is no longer considered specialist equipment, owned only by those expressing an explicit interest in the subject, and is now commonplace in `average' consumer electronics devices, be they traditional desktop and laptop computers, games consoles, or portable devices such as mobile phones and tablets. Combined with the continued adoption of high-speed Internet connectivity~\cite{Cisco2011} the potential of multi-user virtual environments is already being realised, both for traditional competitive gaming through platforms such as World of Warcraft, but also for non-competitive purposes that focus more on community, creation and commerce with `virtual world' platforms such as Second Life~\cite{Sevan2008}.
@@ -31,8 +51,8 @@ This is largely because users exploring and interacting with the real environmen
 
 Interested in the promise of simultaneous presence in complete real and virtual environments, particularly those that are able to mutually affect each other via sensor/actuator infrastructure and the cross reality paradigm, this literature review investigates how academic studies have treated such themes. The conclusion of this investigation is that the theme of simultaneous presence in real and virtual environments is still discussed only marginally in the scholarly literature and that this situation warrants attention as the benefits proposed by such interactions between real and virtual environments are extremely promising.
 
-\section{Defining Alternate Realities}
-A fundamental imperative for the remainder of this review is a well defined set of criteria for classifying and differentiating between different types of alternate reality. The terms \textit{mixed reality}, \textit{augmented reality} and to a lesser extent \textit{augmented virtuality} are all now relatively common in the literature, however they have too often been used in conflicting manners, or assigned vague definitions with uncertain boundaries separating them from each other. Furthermore the less well established terms \textit{cross reality} and \textit{X reality} (different names for the same concept) also need classifying according to the same system.
+%=========================================================================================================
+%=========================================================================================================
 
 \subsection{Reality Continua}
 Paul Milgram, Herman Colquhon and Fumio Kishino addressed this issue in detail and can in fact be accredited with introducing the terms \textit{augmented virtuality} and \textit{mixed reality} to the literature in the first instance, prompted by their identification of the need for more encompassing terms to supplement the existing definitions of \textit{augmented reality}~\cite{Milgram1994, Milgram1999}. Their discussion at times takes on a hint of the philosophical, as it rightly discusses what exactly it is that we mean by `real' and `virtual' and whether it is in fact reality or virtuality which is being augmented. However despite these thorough and well-reasoned definitions being published originally in 1994, much of the subsequent literature studied for this review has adopted conflicting, or at least confusing and misleading, definitions.
@@ -148,7 +168,11 @@ Logically opposite to \textit{augmented reality}, an \textit{augmented virtualit
 
 A simple commercial example of augmented virtuality is the EyeToy accessory and associated software for Sony's Playstation 2 games console (and later the Playstation Eye for the Playstation 3), a digital camera that captures images of players and their surroundings and integrates them into the gaming experience presented on the screen.
 
+%=========================================================================================================
+%=========================================================================================================
+
 \section{Cross Reality}
+
 \label{sec:cross_reality}
 The discussion of the literature pertaining to the \textit{cross reality} paradigm warrants its own section of this review, as it is not only one of the youngest categories included under the umbrella term \textit{alternate reality} but also the closest existing concept to lend to the simultaneous exploration of real and virtual environments.
 
@@ -171,14 +195,7 @@ Because a cross reality system is comprised of two complete environments, it can
 \label{subsec:responsive_environments_at_mit_media_lab}
 The Responsive Environments Group at MIT's Media Lab, under the direction of Joseph Paradiso, deserve the accolade for the inaugural work in establishing cross reality as a field of research. In their own words, the group \textit{``explores how sensor networks augment and mediate human experience, interaction and perception''}~\cite{ResponsiveEnvironmentsGroup} and since 1995 they have produced prolific research in the domain of sensor architecture and wireless sensor clusters~\cite{Paradiso1996, Rowe1999, Burke1996, Paradiso1997, Knaian2000, Teegarden2001, A2007, Ma2002, Bamberg2008, Laibowitz2005, LaPenta2007} and perceptive spaces~\cite{Lifton2001, Paradiso1997a, Paradiso2000, Richardson2004}, establishing a prime research environment, both in terms of experience and available technologies, for a concept such as cross reality to emerge.
 
-The path to cross reality began with the `Plug' project that created a sensor network comprising power strips imbued with sensing, computational and communicative abilities~\cite{Lifton2007b}. By basing the nodes on power strips the platform was ideally suited for broad and unobtrusive deployment in environments where people work and live as power strips already exist in such environments with ubiquity. A labelled photograph of a single Plug node is included as figure \ref{mit_plug.jpg}. In addition to sporting a number of different sensors, each Plug node was also able to individually control the output of the four 120Vac sockets, allowing the nodes to act as both input (sensing) and output (actuating) devices.
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=\textwidth]{mit_plug.jpg}
-\caption{A Plug node.}
-\label{mit_plug.jpg}
-\end{figure}
+The path to cross reality began with the `Plug' project that created a sensor network comprising power strips imbued with sensing, computational and communicative abilities~\cite{Lifton2007b}. By basing the nodes on power strips the platform was ideally suited for broad and unobtrusive deployment in environments where people work and live as power strips already exist in such environments with ubiquity. In addition to sporting a number of different sensors, each Plug node was also able to individually control the output of the four 120Vac sockets, allowing the nodes to act as both input (sensing) and output (actuating) devices.
 
 Parallel to the development of the Plug platform the group also developed two mobile platforms for interacting with the network of nodes. The Tricorder project~\cite{Lifton2007}, based around a Nokia 770 Internet tablet, presented users with a two-dimensional map centered and oriented about the Tricorder's physical position and allowed \textit{``real-time point-and-browse''} functionality to browse the sensor data from nodes within the vicinity. The Ubicorder~\cite{Mittal2011} project made use of a tablet laptop computer and allowed users to graphically define, and recursively combine, rules for translating sensor data to higher order and potentially more meaningful events.
 
@@ -245,13 +262,6 @@ Following on from the Dual Reality Lab, and now dropping the title dual reality 
 
 However in stark contrast to the Dual Reality Lab, the virtual portals were not situated in a simulation of the real Media Lab in situations corresponding to their physical location, but instead used a more abstract virtual representation with a geometric layout; this design, shown in figure \ref{ubiquitous_sensor_portal_virtual.png}, reflected intellectual affiliation as opposed to real-world location and also allowed for intuitive browsing of past still images and videos captured by the real portal.
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.8\textwidth]{ubiquitous_sensor_portal_virtual.png}
-\caption{The design of the virtual portals in the Ubiquitous Sensor Portals project.}
-\label{ubiquitous_sensor_portal_virtual.png}
-\end{figure}
-
 The ability of a person to walk about the real building and for their presence in front of different portals to be reflected in Second Life addressed the vacancy problem to some extent by allowing the user to explore the real environment in a normal fashion but for their position to occasionally be updated in the virtual environment. However the abstract layout of the virtual environment presents a method of virtual environments exploration disjoint to the physical layout and relationship between the portals themselves, which is not ideal for all applications.
 
 \subsection{Doppellab}
@@ -262,9 +272,7 @@ However despite claiming to be a cross realtiy project, there is no evidence in 
 
 \subsection{Consumer Adoption of Cross Reality}
 \label{subsec:consumer_adoption_of_cross_reality}
-A final piece of literature to consider whilst reviewing MIT's involvement with the cross reality paradigm and the vacancy problem, is an article written by Joshua Lifton, as an invited paper for the International Symposium on Ubiquitous Virtual Reality 2010, entitled \textit{Consumer Adoption of Cross Reality}. This is a retrospective piece, written after Lifton had left MIT in 2007 to work at the Electric Sheep Company, \textit{``then the premier third-party services company for designing, building and managing experiences across a number of virtual worlds, with a focus on Second Life''}, and in 2009 leaving the Electric Sheep Company to become an independent contractor and consultant. Lifton reasons that \textit{``these experiences and the transition from academia to industry helped shape my views on what is possible and what is probable in the field of cross reality''}.
-
-The overall conclusion of the paper is that cross reality hadn't yet achieved notable consumer adoption because the full utility of ubiquitous computing, particularly in terms of sensing and actuating infrastructure, and virtual worlds had yet to be realised as they hadn't been fully developed and deployed. As the key enabling technologies of cross reality, their full realisation is required before the paradigm can begin to be widely adopted.
+Cross reality hadn't yet achieved notable consumer adoption because the full utility of ubiquitous computing, particularly in terms of sensing and actuating infrastructure, and virtual worlds had yet to be realised as they hadn't been fully developed and deployed. As the key enabling technologies of cross reality, their full realisation is required before the paradigm can begin to be widely adopted.
 
 As discussed in further detail in section \ref{subsec:virtual_environments}, virtual worlds, particularly Second Life, failed to live up to their media hype, however the adoption and integration of sensor/actuator infrastructure into consumers' everyday lives has faired much better. Mobile phones with myriad sensors are now commonplace, on-body and off-body motion sensing have been extremely popular for games consoles (Nintendo Wii and Microsoft Kinect respectively), non-contact identification (RFID) is common in passports and building access and new buildings are now more often than not equipped with various sensing \&/or actuating capabilities in the form of Building Automation Systems (BAS).
 
@@ -284,8 +292,6 @@ and also how it can be employed for simultaneous presence in real and virtual en
 \textit{``The differential characteristic of X-reality is that it can augment user's engagement in the experiences of virtual presence and virtual world. Ultimately, it results in the human life span extension from the only real world to both worlds.''}
 \end{quote}
 
-Kim et al. also recognise the work at the time of Lifton et al. at the Media Lab for integrating sensing infrastructure with virtual worlds.
-
 \subsection{IEEE Pervasive Computing - Cross Reality Environments}
 \label{subsec:ieee_pervasive_computing_-_cross_reality_environments}
 The July-September 2009 issue of IEEE Pervasive (volume 8, number 3) was entitled `Cross Reality Environments' and serves both as attestation to the research promise of the paradigm and as a good survey of the state of the art in cross reality research at the time of publication. The issue is introduced by Roy Want~\cite{Want2009}, whose definitions and matrix representation of the different categories of alternate realities were discussed in section \ref{subsec:reality_matrix}, whilst the guest editor's introduction is provided by Joseph Paradiso, director of the Responsive Environments group at the MIT Media Lab~\cite{Paradiso2009}, whose work was discussed in section \ref{subsec:responsive_environments_at_mit_media_lab}.
@@ -293,8 +299,6 @@ The July-September 2009 issue of IEEE Pervasive (volume 8, number 3) was entitle
 Paradiso's introduction frames the background of cross reality very well, explaining the constituent technologies whose evolution will see the paradigm come to be, realising that it promises to serve as an extension of human perception and interaction and contrasting it with other alternate realities
 
 \begin{quote}
-\textit{``The genesis of ubiquitously networked sensor/actuator infrastructure, leveraged by the increasingly low cost of microelectronics, sensors, and wireless technologies, is endemic to pervasive computing. As the independent application-siloed sensor/actuator networks now being deployed begin to converge through common standards, the world is becoming covered by a seamless electronic ``nervous system'' that extends across places, things, and people. Concurrently, although 3D virtual environments have been around for decades, their deployment has recently exploded with the advent of massively shared online virtual worlds. Dedicated immersive games such as World of Warcraft and general purpose worlds like Second Life each now boast more than 10 million subscribers.}
-
 \textit{We call the ubiquitous mixed reality environment that comes from the fusion of these two technologies cross-reality. Sensor networks can tunnel dense real-world information into virtual worlds, where this data is interpreted and displayed to dispersed users. Interaction of virtual participants can incarnate into the physical world through a plenitude of diverse displays and actuators. We can envision a user's interface into this environment as an extension of human perception and interaction, augmenting our five senses well beyond the canonical ``here and now'' and redefining the meaning of presence.''}
 \end{quote}
 
@@ -305,16 +309,6 @@ Lifton and other members of the Media Lab also have an article in the issue~\cit
 \begin{quote}
 \textit{``We see cross-reality precipitating when diverse and ubiquitous sensor and actuator networks meet pervasively shared online virtual worlds, where phenomena freely tunnel between real and contrived continua at a multitude of ``wormholes'' opened by densely deployed networked devices, seamlessly adapting the level of immersion to match a variable ecology of available interfaces and user context or preference.''}
 \end{quote}
-
-Dindar et al.'s article~\cite{Dindar2009} discusses the importance of higher level inference techniques to make sense of phenomena detected by sensor networks, presenting it as an essential functionality of cross reality environments. This is a subject that Lifton touches upon in his thesis, where he discusses relationships such as vibration data inferring whether a lamp was plugged in before being turned on. Dindar et al present an example of such an event processing system, DejaVu, that works along with an example cross reality application that feeds real world RFID data into a virtual library in Second Life.
-
-Horn et al.~\cite{Horn2009} discuss the scalability problems of the virtual worlds of the day (both `general purpose' virtual worlds including Second Life as well as gaming worlds including World of Warcraft and Eve Online). They propose the Meru Project from Stanford as a virtual world architecture that can grow to global scales by modelling the virtual world after the real world; for example, using distance to determine the detail/bandwidth with which to render an object. Horn et al. also discuss the cross reality paradigm through the intriguing idea of `Space Zero', a space within which physical objects can register themselves and thus advertise their presence and location to users of the virtual world. An example of such a relationship given is of a real person walking down a street in the real world, with an avatar's position within a virtual world updated by GPS, allowing shop owners who have registered their shops with Space Zero to be able to advertise specials via the avatar. This discussion also leads to the valid and interesting point that, just like with the current Web, it won't always be actual users observing the virtual world of a cross reality system, as it may well be scripts/bots that, for example, comb through advertisements of specials for those that match the user's interests.
-
-The issue of scaling virtual worlds to Internet scale is investigated in detail in Justin Clark-Casey's masters dissertation~\cite{Clark-Casey2010}. Justin was then, and continues to be today, one of the lead developers of OpenSimulator.
-
-The `Works in Progress' section of the issue~\cite{Yankelovich2009} discusses a number of projects under the title `Building and Employing Cross-Reality' however according to the definition of cross reality adopted by this review only the first project, `6thSpace', constitutes a cross reality system. 6thSpace was a 2009 project from Malden Labs that used Sun's Project Wonderland virtual world (now the Open Wonderland project) to allow remote system administrators to collaborate with on-site staff to diagnose problems with computer equipment, with the remote participants gaining access to terminal windows on the on-site hardware by leveraging Wonderland's application-sharing feature~\cite{Yankelovich2009}.
-	
-This same application-sharing feature has also been investigated by groups of scientists to remotely control laboratory equipment, visualising results in 3D by interfacing with external data sources, enabling collaborative lab-based research to be undertaken by geographically dispersed researchers~\cite{Fayolle2011}.
 
 \subsection{Eolus One}
 \label{subsec:eolus_one}
@@ -335,93 +329,146 @@ Implenia made use of these solutions to extend the functionality of their existi
 	
 By introducing this information to their existing models, Implenia were allowed a finer control of the HVAC and security systems, allowing them to take action to be more efficient, with the consolidated views giving their operators insight into real physical issues such as how heat and energy flowed through the data centre.
 
-\section{Components of a Cross Reality System}
-As has been alluded to before in this review, a cross reality system relies upon the combination of sensor/actuator infrastructure with a virtual environment. As systems that support simultaneous presence in real and virtual environments will likely share many implementation details with cross reality systems, this section of the review provides a brief overview of the state of these constituent technologies.
+\section{Position of Cross Reality}
 
-\subsection{Virtual Environments}
-\label{subsec:virtual_environments}
-Whilst inaugural cross reality projects and the majority that have since followed have made use of virtual worlds such as Second Life~\cite{LindenResearchInc.}, OpenSimulator~\cite{OpenSimulatorProject} and Open Wonderland~\cite{OpenWonderlandFoundation}, the paradigm can also be implemented using `traditional' game and visualisation engines such as Unigine~\cite{UnigineCorp}, Unreal Engine 3~\cite{EpicGames} and Unity~\cite{UnityTechnologies}; the previously mentioned Doppellab project from MIT (see section \ref{subsec:doppellab}) has already made use of Unity for such a purpose.
+\subsection{Position - \textit{Milgram \& Kishino}}
+The position of XR in relation to other alternate realities studied by Computer Science can be visualised using Milgram \& Kishino's \textit{virtuality continuum} (figure \ref{virtuality-continuum-original})~\cite{Milgram1994} that stretches from an entirely real environment at one extreme to an ontologically parallel but entirely virtual environment~\cite{Qvortrup2002} at the other. The explanation herein distinguishes between environments themselves (depicted in figures \ref{virtuality-continuum-augmented-reality} to \ref{virtuality-continuum-cross-reality-3} by solid ellipses) \& where the stimuli that the user is perceiving originate from (depicted by dashed ellipses).
 
-The definition of `virtual world' adopted by this review is that of `real virtual worlds' presented by Yesha Sivan, in a 2008 article for the Journal of Virtual Worlds Research~\cite{Sevan2008}, as an aggregate of four factors; a three-dimensional world, community, creation and commerce. This definition is particularly useful as it differentiates between certain genres of games such as Massively Multiplayer Online Role-Playing Games (MMORPGs) including World of Warcraft (WoW) which share many features with virtual worlds; WoW presents players with a three-dimensional world, has a strong aspect of community by promoting players to join guilds to quest together and has a commerce aspect by allowing players to buy and sell in-game items. However WoW does not feature the creation aspect, as all content in the game is created by the game studio; in virtual worlds such as Second Life, the vast majority of the content is created by the users.
+%Ontology - The core meaning within computer science is a model for describing the world that consists of a set of types, properties, and relationship types. There is also generally an expectation that the features of the model in an ontology should closely resemble the real world (related to the object).
 
-Several factors stand out in the literature for why, since their inception, virtual worlds have been used so extensively compared to game/visualization engines for alternate reality research. Foremost the accessibility of virtual worlds with regards to content creation makes them a more attractive option for researchers who may not have prior experience in a standalone 3D modelling package, which is a common requirement for working with game and visualisation engines. Virtual worlds provide powerful yet straightforward interfaces for building and personalising avatars, virtual spaces and objects and while these tools may lack some of the more advanced features and effects of professional modelling packages, they allow researchers to create diverse and expansive environments more easily and affordably, both in terms of experience and time required~\cite{Hendaoui2008}. This allows more to be achieved within a limited budget as researchers can focus on running experiments and collecting and processing results rather than creating the experimental environment itself.
-
-These experiments can be run for extended periods of time, over a period of months or more, at very low cost, thanks to the open licensing that many virtual worlds have~\cite{Bainbridge2007}. Researchers are free to make use of existing hardware at their institution, deploying and administering their own infrastructure in any manner they see fit.
-
-However virtual worlds are woefully outclassed by game engines when compared based upon technical merit rather than upon development and licensing costs. Modern game engines  boast near photorealistic graphics, with incredibly complex lighting engines, physics engines capable of simulating soft and rigid body physics, cloth physics, rag doll physics, inverse kinematics and fluid buoyancy and interaction, sound engines supporting virtually unlimited 3D sound sources, Doppler effect, sound occlusion and multiple reverberation zones, artificial intelligence frameworks for non-player characters (NPCs) and environment editors capable of creating limitless, destructible environments with intelligent river and foliage generation and no loading when transitioning between locations.
-
-Whilst all of these features can improve the user's experience, at the cost of substantially longer, more complex and more expensive development time, it is the multi-platform compatibility that many modern game engines offer that represents their most lucrative feature over today's virtual worlds. Many game engines allow the development of a single source that can be deployed onto desktop and laptop computers running Windows and Mac OS, games consoles and also to portable devices such as mobile phones and tablets running iOS and Android. This is a stark contrast to the current offering of virtual worlds, which require the use of a client program that only runs on desktop and laptop computers running Windows, Mac OS or Linux, drastically limiting the possibilities of virtual world usage on portable devices.
-
-Virtual worlds, particularly Second Life, failed to live up to their media hype. In his retrospective on the consumer adoption of cross reality (see section \ref{subsec:consumer_adoption_of_cross_reality}) Lifton reasons that this was predominantly \textit{``because it was too difficult to use and because it was never clear to most consumers what they should be doing once in Second Life''}~\cite{lifton:adoption}. The explosive popularity of social networking can also be attributed to the failure of virtual worlds to garner substantial followings, as they allow similar expression of identity and creation of social and business contacts in the more familiar and accessible environment of a Web browser rather than the comparatively alien and bespoke interface of a virtual world client.
-
-The magnitude of this hype is wonderfully captured by an article published in Technology Review in 2007, in which the author Wade Roush, visionary of the Second Earth concept (see section \ref{subsec:vtw}) wrote \textit{``according to technology research firm Gartner, current trends suggest that 80 percent of active Internet users and Fortune 500 companies will participate in Second Life or some competing virtual world by the end of 2011.''}
-
-However this failure of virtual worlds to garner substantial consumer adoption does not represent the end of progress toward three-dimensional extension of the Web; indeed the fact that virtual worlds were developed at all and for a while gained vast media attention and hype, and that complex 3D applications can now be rendered within a Web browser via extensions such as the Unity Web Player, is proof that the concept of the 3D Web stands to succeed. Once infrastructure is put in place that allows rich 3D content to be accessed as easily as the 2D Web can currently be accessed via any Web browser, concepts such as cross reality and simultaneous presence in real and virtual environments can emerge and thrive. Even though game engines that allow compilation of binaries for multiple platforms represent greater accessibility than today's virtual worlds, the installation of a separate program or plugin for the sole purpose of accessing a single 3D environment is still a substantial inconvenience when compared to the ability of a Web browser to access any Web content.
-
-\subsection{Sensor/Actuator Infrastructure}
-\label{subsec:sensor_actuator_infrastructure}
-Numerous platforms for distributed sensing and actuating exist~\cite{Bose2009}. Commercially procurable hardware designed specifically for the task, such as wireless sensor network (WSN) solutions including Berkeley motes~\cite{Bose2009}, are one option whilst general-purpose low-power prototyping and embedded platforms, such as Phidgets and Arduino, have also proven popular for creation of bespoke sensor/actuator devices~\cite{Faludi2010}. Software platforms include those tailored specifically for operation on WSN motes such as TinyOS~\cite{TinyOSAlliance} and more general purpose operating systems such as Contiki~\cite{Dunkels} which is designed for running on devices with limited memory footprints and computational capabilities. With sufficient expertise and resources bespoke platforms can be constructed from scratch, as the Media Lab did for the creation of their Plug platform, by selecting an appropriate microcontroller and designing and manufacturing a node around it, as well as writing the necessary operating system and software to run atop the resulting bespoke platform.
-
-Many authors, including Lifton in his inaugural thesis, have recognised that the emergence of cross reality will depend upon sensor/actuator infrastructure as ubiquitous as today's electrical sockets and lighting fixtures. However whether this provision will come from the wider installation of dedicated sensor/actuator infrastructure into our environment, for example through continuing adoption of Building Automation Systems and `smart' building construction, or from integration with sensor/actuator infrastructure that is now commonly being integrated into consumer electronics devices such as mobile phones, tablets and games consoles, or indeed from a combination of both, is yet to become apparent.
-
-But as Paradiso observes in his guest introduction to IEEE Pervasive 8.3 (see section \ref{subsec:ieee_pervasive_computing_-_cross_reality_environments}) the ability to access such sensor/actuator infrastructure via common standards will be one of the enabling features for widespread deployment and adoption of cross reality and systems that support simultaneous presence in real and virtual environments. This likely will not come via the global adoption of any single hardware \&/or software platform, but by the heterogeneous array of different hardware \&/or software platforms adopting a single standard for abstracting over their access and control interfaces.
-
-A number of standards and frameworks that attempt to provide such a standard method of interfacing with sensor/actuator infrastructure have already been developed, several of which will be discussed in the following part of this section of the review. It is prudent to appreciate that each was designed and developed from a different perspective and with different final goals. Whilst none are explicitly designed for facilitating implementation of alternate reality projects, they represent substantial work toward a standard interface to heterogeneous sensor/actuator infrastructure, which would facilitate the easier creation of cross reality systems and thus systems that support simultaneous presence in real and virtual environments.
-
-\subsection{Integration of Sensor/Actuator Infrastructure with Virtual Environments}
-With the exception of IEEE 1451, none of the standards, frameworks and middlewares discussed in the previous section have explicit support for controlling actuators; that is, they are primarily concerned with administering and retrieving data \textit{from} sensors with little or no attention or support provided for sending commands \textit{to} actuators. A cross reality system and any system in which there is simultaneous presence within real and virtual worlds will naturally require this bidirectional flow of control and media.
-
-Additionally the standards, frameworks and middlewares covered in the previous section are all from the general perspective of sensors \&/or actuators and are not explicitly to do with alternate realities, cross reality or simultaneous presence in real and virtual environments. Whilst the argument holds that a well designed and widely adopted set of standards-compliant interfaces to ubiquitous sensor/actuator infrastructure is all that is required to be able to combine such infrastructure with virtual environments and create cross reality systems capable of supporting simultaneous presence in real and virtual environments, there also exist standards that cater specifically for the mediation of sensor data and actuator control to and from virtual environments, as well as between different environments, by defining encoding formats for sensor data and actuator commands, communication standards, etc.
-
-\subsubsection{MPEG-V}
-The most comprehensive work to date toward a set of standards for interaction between the real world and virtual worlds, and between different virtual worlds, is MPEG-V, a work that started in 2007 as a unified effort to develop standards within virtual worlds and between virtual worlds and the real world. The culmination of this work was the publication of `ISO/IEC 23005 Information technology - Media context and control' in January 2011. To quote directly from the first section of the standard
-
-\begin{quote}
-\textit{``ISO/IEC 23005 (MPEG-V) provides an architecture and specifies associated information representations to enable the interoperability between virtual worlds, for example, digital content provider of a virtual world, (serious) gaming, simulation, DVD, and with the real world, for example, sensors, actuators, vision and rendering, robotics (e.g. for revalidation), (support for) independent living, social and welfare systems, banking, insurance, travel, real estate, rights management and many others.''}~\cite{InternationalOrganizationforStandardization2011}
-\end{quote}
-
-Yesha Sivan, head of the information systems programme at the Tel Aviv Academic College, brought the idea of standardisation in the field of virtual worlds to the ITEA2 project outline event in Dusseldorf in 2007, gaining the attention of Jean Gelissen from Philips Research who teamed up with Sivan and took on the role of project leader for Metaverse1, one of the largest contributors toward MPEG-V.
-
-Sivan's call for participation in MPEG-V was published in the November 2008 issue of the Journal of Virtual Worlds Research (JVWR, of which he now acts as Managing Editor) and appropriately titled `Real Virtual Worlds SOS (State of Standards)'~\cite{Sivan2008}. Here he makes the observation that the virtual worlds industry of the time was operating more akin to the computer gaming industry than the Internet industry, in that each virtual world had its own client and server that were incompatible with other virtual worlds whereas a Web browser can navigate to any Web page. At the time of this article's publication, MPEG-V was a working group under the ISO (ISO/IEC JTC 1/SC 29/WG 11/N9902).
-
-The October 2009 issue of JVWR was dedicated to `Technology, Economy \& Standards' and devoted several articles to the progress toward release of MPEG-V, starting with an editorial from Sivan giving an overview of the state of virtual worlds standards in 2009~\cite{Sivan2009}. Linden Lab themselves (the creators of Second Life) contributed a short article to this release of the journal~\cite{Rosendale2009}, expressing their opinion that virtual world companies would be most successful by providing only the minimal scaffolding for the development of the rich content experiences that would bring more and more usage and to confirm that where feasible their path had been to open the avenues for others to develop and explore the interconnected components that comprise their virtual world.
-
-Gelissen provided an overview of MPEG-V as it stood in late 2009, explaining the role of the Metaverse1 project and of particular interest to this review noted that \textit{``a strong connection between the virtual and the real world is needed to reach simultaneous reactions in both worlds to changes in the environment and human behaviour''}~\cite{Gelissen2009} which supports the notion that MPEG-V may be of use for developing systems for simultaneous presence in real and virtual worlds and addressing the vacancy problem.
-
-After the release of ISO/IEC 23005 in its first edition, JVWR released an issue dedicated to `MPEG-V \& Other Virtual Worlds Standards'. As Sivan notes in his editorial to this issue~\cite{Sivan2011}, it takes an historical perspective as in many ways it is a direct descendent of the October 2009 issue, which has just  been discussed. Gelissen and Sivan co-authored the Issue Editors' Corner introducing the special issue~\cite{Gelissen2011} and then went on to write a historic account of Metaverse1 and its input to the MPEG-V project~\cite{Gelissen2011a}. The project involved about 30 EU based organisations, totalling around 100 people, and ran for 3 years from mid 2008 to mid 2011, resulting in around 216 person-years of work that was piped into the MPEG-V endeavour. They also update the assumptions that they made in 2008 and in particular note that the full impact of virtual worlds has not come to be, at least partly due to the rise of social media and mobile media grabbing the attention, an opinion shared by other authors. A use case of the Metaverse1 work was presented by Cabello et al.~\cite{Cabello2011}, in the same issue.
-
-An overview of the areas in which MPEG-V applies in relation to virtual worlds and the real world is included as figure \ref{mpeg_-_v_diagram.png}.
 
 \begin{figure}[h]
-\centering
-\includegraphics[width=\textwidth]{mpeg_-_v_diagram.png}
-\caption{MPEG-V overview as of December 2011.}
-\label{mpeg_-_v_diagram.png}
+	\begin{center}
+		\includegraphics[width=\textwidth]{virtuality-continuum-original.png}
+		\caption{Milgram \& Kishino's virtuality continuum.}
+		\label{virtuality-continuum-original}
+	\end{center}
 \end{figure}
 
+Of particular importance is to appreciate the distinction between a XR system \& an \textit{augmented reality} (AR) system, as both concepts involve user engagement with both real \& virtual content. Whilst an AR system features a single environment, comprised of the user's RW overlain by some virtual content, with the user perceiving stimuli from this single augmented environment (figure \ref{virtuality-continuum-augmented-reality}), a XR system instead features two discrete environments, one real \& the other virtual, each complete unto itself (figure \ref{virtuality-continuum-cross-reality-1}).
 
-\subsubsection{IEEE P1828 - Standard for Systems with Virtual Components}
-Due to possible licensing issues associated with MPEG-V, with some people envisaging a similar situation as with MP3 where in September 1998 Fraunhofer IIS sent a `letter of infringement' to several small commercial and open source MP3 development projects, claiming that due to patents related to MP3 and held by Fraunhofer, all encoders (even those given away free) required the payment of royalties, a truly `open', patent-free and zero litigation alternative to MPEG-V, the IEEE Standard for Systems with Virtual Components, is under development as IEEE working group P1828~\cite{IEEE}. This endeavour is still in the concept phase, with a draft set for completion before the end of 2012. From the current draft document
+Whilst AR falls within the realms of Mixed Reality (MR), a XR system can be considered as occupying the two extremes of the continuum outwith the MR region. However, XR systems that allow simultaneous interaction with both of their constituent environments blur this definition; using a XR platform such as that discussed in this document, a user can transition between perceiving stimuli from each of these environments (figures \ref{virtuality-continuum-cross-reality-2} \& \ref{virtuality-continuum-cross-reality-3}) in a manner that allows them to engage with each environment without becoming wholly vacant from the other.
 
-\begin{quote}
-\textit{``This standard is an over-arching standard for virtual environments. The over-arching standard provides a reference model and covers subsequent standards for virtual worlds. This standard establishes terminology for the Virtual Environment (VE) components and systems. The reference model covers addresses, interfaces, and/or communication protocols between and among system components. Components include supporting devices, like servers, reality engines/environments, virtual objects including avatars, and scripts. This standard defines processes, conventions and protocols to promote interoperability objects between and among virtual environments and networked resources. This standard is application agnostic but will provide illustrative use cases.''}
-\end{quote}
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=\textwidth]{virtuality-continuum-augmented-reality.png}
+		\caption{AR visualised using the virtuality continuum.}
+		\label{virtuality-continuum-augmented-reality}
+	\end{center}
+\end{figure}
 
-\begin{quote}
-\textit{``The purpose of this standard is to promote leverage (software and data reuse) of work between virtual project developments and promote shared resources. Another purpose of this standard is to establish the means to incorporate the respective strengths of different virtual environments. The purpose is to define a comprehensive abstraction of functions that virtual worlds can implement to interoperate at negotiable levels in near-real-time.}~\cite{InstituteofElectricalandElectronicsEngineers2012}
-\end{quote}
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=\textwidth]{virtuality-continuum-cross-reality-1.png}
+		\caption{The two environments that comprise a XR system.}
+		\label{virtuality-continuum-cross-reality-1}
+	\end{center}
+\end{figure}
 
-One of the use cases already presented in the draft, under the title `Augmented and Mixed Reality'
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=\textwidth]{virtuality-continuum-cross-reality-2.png}
+		\caption{A XR system with the user attending to RW stimuli.}
+		\label{virtuality-continuum-cross-reality-2}
+	\end{center}
+\end{figure}
 
-\begin{quote}
-\textit{``...covers a virtual environment with interfaces with real devices. Real devices will report status to include geolocation that would be reflected in world. Real devices will also respond to control from in-world avatars and/or scripts.''}
-\end{quote}
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=\textwidth]{virtuality-continuum-cross-reality-3.png}
+		\caption{A XR system with the user attending to VR stimuli.}
+		\label{virtuality-continuum-cross-reality-3}
+	\end{center}
+\end{figure}
 
-Which clearly alludes to both virtual-to-real, augmented reality control and real-to-virtual, augmented virtuality control, supporting the standard's suitability for enabling cross reality systems and/or systems that permit simultaneous presence in real and virtual environments.
-\\
-\\
-\\
-Ultimately the realisation of cross reality and support for simultaneous presence in real and virtual environments will likely come through the development and deployment of both of these concepts; combining both an easy way to access and control sensor/actuator infrastructure via a standardized abstraction and an easy way to integrate this access and control into a virtual environment through standardized interfaces and encodings.
+\clearpage
+
+%=========================================================================================================
+%=========================================================================================================
+
+\subsection{Position - \textit{Waterworth \& Waterworth}}
+\label{waterworth}
+\newcommand{\presencefootnote}{\footnote{\textbf{Presence} in this context is defined as a state of heightened perceptual processing of environmental stimuli (\textit{``a psychological focus on direct perceptual processing''}~\cite{Waterworth2001}) accompanied by lessened conceptual reasoning, whether these environmental stimuli originate from a real environment, a virtual environment, a mixed reality environment, or even from multiple discrete environments.}}
+
+\newcommand{\absencefootnote}{\footnote{\textbf{Absence} is defined as \textit{``a psychological focus on \ldots conceptual processing''}~\cite{Waterworth2001}.}}
+
+The virtuality continuum is here considered to be analogous to the \textit{locus of attention} axis of Waterworth \& Waterworth's \textit{three dimensions of virtual experience} model~\cite{Waterworth2001}; the combination of these models is shown by figure \ref{focus-locus-sensus-with-virtuality-continuum}. In this model, locus of attention represents the environment where the stimuli that the user is perceiving originate from; focus of attention represents the balance between conceptual/abstract reasoning \& perceptual/concrete processing, where complex conceptual reasoning results in little attention being paid to processing environmental percepts (whether originating from real or virtual stimuli) thus reducing presence\presencefootnote{} in that environment toward its antithesis $-$ absence\absencefootnote{}; and sensus of attention represents the level of conscious arousal (or `wakefulness'~\cite{Laureys2009}) of the user, whether directed toward percepts originating from real stimuli, virtual stimuli, a mix, or not directed toward any percepts in the case of completely `absent' conceptual reasoning.
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=0.685\textwidth]{focus-locus-sensus-with-virtuality-continuum.png}
+		\caption{The combined virtuality continuum/three dimensions of virtual experience model.}
+		\label{focus-locus-sensus-with-virtuality-continuum}
+	\end{center}	
+\end{figure}
+
+%The Sensus Dimension - the importance of being awake in class
+%"Even as we sleep dreamlessly..." (example of being 'unconscious' in this regard)
+
+%fourth axis is alterity, between hermeneutics \& embodiment
+
+%=========================================================================================================
+%=========================================================================================================
+
+% More from experimental plan document
+
+\section{Informing Mobile XR Implementation}
+
+\newcommand{\breakinpresencefootnote}{\footnote{The definition of \textbf{break in presence} adopted herein is the second from Waterworth \& Waterworth~\cite{Waterworth2001} (p205): a movement along the focus axis away from presence in the real or a virtual environment \& toward absence. This differs to Slater \& Steed's original definition in~\cite{Slater2000} as they considered presence only in terms of attending to stimuli from a virtual environment, with a break in presence as a Gestalt switch to instead attending to stimuli from the real environment. Waterworth \& Waterworth's model considers presence in terms of attending to stimuli from either the real \textit{or a virtual} environment, with a break in presence representing absence in the sense of heightened conceptual load \& the resultant reduced perceptual processing of environmental stimuli originating from \textit{either} the real or a virtual environment. This definition better fits the situation invoked by the Mirrorshades platform, which is concerned with intentionally \& willingly switching engagement between stimuli from both real \& virtual environments, rather than engaging with stimuli from only a virtual environment in a scenario where stimuli from the real environment are considered a `distraction'.}}
+
+The novel aspect of the Mirrorshades platform is the ability it imparts upon its user to switch their locus of attention between equivalent vantage points in RW \& VR environments whilst walking around. This is achieved by the user performing transitions between RW visual stimuli \& VR visual stimuli, both presented via their HMD. This extends existing XR research by allowing the user to engage with the visual stimuli of the VR component of a XR system from any position \& at any time.
+
+In order to achieve the highest quality of experience with this style of interaction with XR systems, it is vital to determine how best to implement these transitions; that is, to mitigate the increased cognitive load (manifesting as increased conceptual reasoning \& reduced perceptual processing, see section \ref{waterworth}) required to comprehend these transitions, as this increased cognitive load will detract from engagement with the environments \& reduce the user's willingness to perform these transitions.
+
+Whilst some researchers support the notion that in systems where more than one environment competes for the user's locus of attention there is an `all or nothing' Gestalt switch between awareness of one environment \& the other~\cite{Slater2002}, which would result in a substantial increase in cognitive load upon each transition, Mirrorshades has been developed in support of the contrary opinion; that switching locus of attention from the stimuli of one environment to those of another does not completely overrule the user's awareness of the former, that both environments can be perceived at the same time (albeit one to a lesser extent)~\cite{Ijsselsteijn2001} \& that when engaging with VR content a user's focus can even be said to typically be \textit{shared} between VR \& RW~\cite{Waterworth2001}.
+
+This latter position is particularly apt for situations wherein the RW \& VR environments share the same fundamental layout \& dimensions, as those in a XR system often do, as the inherent familiarity between the two environments reduces the cognitive load associated with transitioning between them. Furthermore, the notion of experience of presence as changing continually from moment-to-moment~\cite{Heeter2003, Ijsselsteijn1998} lends confidence to the successful mitigation of the cognitive load associated with these transitions to manageable levels. One might even liken this `switching' between RW \& VR to the `cycling through' behaviour observed in users of virtual communities, which stemmed from the `window' concept of modern computer operating systems~\cite{Turkle2004}.
+
+However, no matter how smooth the transition the process is expected to always result in some heightened cognitive load, a temporary \textit{break in presence}\breakinpresencefootnote{} (BIP), as the user comes to terms with the new environment presented to them \& comprehends its relation to the other environment that they were just perceiving.
+
+%\section{Transitions}
+Transitions can be performed in multiple different manners \& it is hypothesized that users will prefer different styles of transition in different situations, surroundings \& scenarios (where `preference' toward a particular style of transition is expected to correlate strongly with a less severe BIP being experienced upon its execution).
+
+To this end, several different transition methods have been developed \& this investigation will endeavour to identify \& quantify preferences toward them, to infer which approaches to transitioning between RW \& VR visual stimuli are more or less appropriate for the different situations that arise where a platform like Mirrorshades may be deployed. In particular, it is hypothesized that there will be a strong correlation between participant movement (or lack thereof) \& choice of particular transition style.
+
+\subsection{Transitions using the Combined Model}
+Visualised using the combined model (see section \ref{waterworth}) as figure \ref{focus-locus-sensus-with-virtuality-continuum-with-transition}, these transitions are an oscillation along the locus axis, between a RW environment at one position \& a VR environment at the other.
+
+Heightened cognitive load required to comprehend a transition is a temporary movement upon the focus axis from presence toward absence (a BIP). With the ability of a wide FOV, stereoscopic 3D, head-tracked HMD to produce immersive VR visual stimuli that require fairly limited cognitive processing \& our inherent ability to engage with our RW surroundings without significant cognitive load, focus is expected to be high (toward the presence extremum) when attending to stimuli from either RW or VR.
+
+Sensus is expected to be largely task dependent, however when performing a task that involves actively engaging with the visual stimuli from either/both of RW or VR it is expected to be high (toward the conscious extremum). Upon triggering a transition, sensus is expected to increase, as the user centres their attention upon relating the visual stimuli from the new environment to those they were just perceiving from the other environment
+
+%Whilst continued exposure to the platform is expected to reduce the severity of the BIPs, mitigating their severity from the outset (reducing the displacement from the presence extremum downwards toward absence) through informed execution of the transitions between RW \& VR is believed to be important to the overall quality of experience that users receive.
+
+%absent-mindedness - caused by increased attention toward a single object of focus (hyperfocus, eg the object of focus is the switch)
+% or caused by distraction (again, the switch)
+
+%\clearpage
+
+%\vspace{12mm}
+
+%\begin{figure}[h]
+%	\begin{center}
+%		\includegraphics[width=0.7\textwidth]{images/focus-locus-sensus-with-virtuality-continuum-with-transition.png}
+%		\caption{Operation of the Mirrorshades platform represented upon the combined model.}
+%		\label{focus-locus-sensus-with-virtuality-continuum-with-transition}
+%	\end{center}	
+%\end{figure}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=0.7\textwidth]{focus-locus-sensus-with-virtuality-continuum-with-transition-updated.png}
+		\caption{Operation of the Mirrorshades platform represented upon the combined model.}
+		\label{focus-locus-sensus-with-virtuality-continuum-with-transition}
+	\end{center}	
+\end{figure}
+
+%=========================================================================================================
+%=========================================================================================================
+
+% Original literature review from here on
+
+Reviewing the literature on the domain of alternate realities this research finds that there is a gap in the scholarly investigation of simultaneous presence in real and virtual environments and the associated `vacancy problem'. This review proposes that a better understanding of the extension of human presence from only one of the real world or a virtual environment to simultaneous presence in both will permit the introduction of novel systems in a variety of fields in which simultaneous interaction and exploration of both real and virtual environments is possible. Such systems will likely be formed by expansion of research into \textit{cross reality}, an alternate reality comprised of complete real and virtual environments able to mutually reflect and influence each other via sensor/actuator infrastructure, and are likely to be in high demand as progress toward 3D extension of the Web continues.
 
 \section{Use Cases}
 This section presents two use cases for simultaneous presence in real and virtual environments and illustrates the two different relationships that can exist between the real and virtual environments - whether they are \textit{spatially equivalent} or not.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2014.11.18)  28 NOV 2014 16:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2014.11.18)  1 DEC 2014 16:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -200,22 +200,27 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ]
  3.
 (./03_background/background.tex) (./03_background/literature_review.tex
-Underfull \hbox (badness 10000) in paragraph at lines 9--10
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--10
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--16
+Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--16
+Underfull \hbox (badness 10000) in paragraph at lines 10--14
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
  []
 
@@ -230,13 +235,9 @@ um.png Graphic file (type png)
 <use 03_background/images/reality_virtuality_extent_of_world_knowledge_continuu
 m.png>
 Package pdftex.def Info: 03_background/images/reality_virtuality_extent_of_worl
-d_knowledge_continuum.png used on input line 44.
+d_knowledge_continuum.png used on input line 64.
 (pdftex.def)             Requested size: 375.80544pt x 135.93266pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[10]
+ [10]
 <03_background/images/reality_virtuality_mixed_reality_continuum.png, id=51, 56
 6.115pt x 183.68625pt>
 File: 03_background/images/reality_virtuality_mixed_reality_continuum.png Graph
@@ -244,7 +245,7 @@ ic file (type png)
 
 <use 03_background/images/reality_virtuality_mixed_reality_continuum.png>
 Package pdftex.def Info: 03_background/images/reality_virtuality_mixed_reality_
-continuum.png used on input line 55.
+continuum.png used on input line 75.
 (pdftex.def)             Requested size: 375.80544pt x 121.93959pt.
 
 [11 <./03_background/images/reality_virtuality_extent_of_world_knowledge_contin
@@ -256,7 +257,7 @@ File: 03_background/images/original_virtuality_matrix.png Graphic file (type pn
 g)
  <use 03_background/images/original_virtuality_matrix.png>
 Package pdftex.def Info: 03_background/images/original_virtuality_matrix.png us
-ed on input line 75.
+ed on input line 95.
 (pdftex.def)             Requested size: 375.80544pt x 168.06778pt.
 
 <03_background/images/modified_virtuality_matrix.png, id=57, 522.95375pt x 233.
@@ -265,398 +266,352 @@ File: 03_background/images/modified_virtuality_matrix.png Graphic file (type pn
 g)
  <use 03_background/images/modified_virtuality_matrix.png>
 Package pdftex.def Info: 03_background/images/modified_virtuality_matrix.png us
-ed on input line 84.
+ed on input line 104.
 (pdftex.def)             Requested size: 375.80544pt x 168.06778pt.
- [12 <./03_background/images/original_virtuality_matrix.png (PNG copy)> <./03_b
-ackground/images/modified_virtuality_matrix.png>]
-<03_background/images/original_lifton_axis.png, id=62, 855.195pt x 284.06125pt>
-File: 03_background/images/original_lifton_axis.png Graphic file (type png)
-<use 03_background/images/original_lifton_axis.png>
-Package pdftex.def Info: 03_background/images/original_lifton_axis.png used on 
-input line 108.
-(pdftex.def)             Requested size: 469.75502pt x 156.03044pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<03_background/images/modified_lifton_axis.png, id=63, 855.195pt x 321.2pt>
+[12 <./03_background/images/original_virtuality_matrix.png (PNG copy)>]
+[13 <./03_background/images/modified_virtuality_matrix.png>]
+<03_background/images/original_lifton_axis.png, id=65, 855.195pt x 284.06125pt>
+File: 03_background/images/original_lifton_axis.png Graphic file (type png)
+<use 03_background/images/original_lifton_axis.png>
+Package pdftex.def Info: 03_background/images/original_lifton_axis.png used on 
+input line 128.
+(pdftex.def)             Requested size: 469.75502pt x 156.03044pt.
+
+<03_background/images/modified_lifton_axis.png, id=66, 855.195pt x 321.2pt>
 File: 03_background/images/modified_lifton_axis.png Graphic file (type png)
 
 <use 03_background/images/modified_lifton_axis.png>
 Package pdftex.def Info: 03_background/images/modified_lifton_axis.png used on 
-input line 115.
+input line 135.
 (pdftex.def)             Requested size: 469.75502pt x 176.43019pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[13] [14 <./03_background/images/original_lifton_axis.png (PNG copy)> <./03_bac
-kground/images/modified_lifton_axis.png>] [15]
-<03_background/images/mit_plug.jpg, id=74, 794.97pt x 614.295pt>
-File: 03_background/images/mit_plug.jpg Graphic file (type jpg)
-
-<use 03_background/images/mit_plug.jpg>
-Package pdftex.def Info: 03_background/images/mit_plug.jpg used on input line 1
-78.
-(pdftex.def)             Requested size: 469.75502pt x 363.00267pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[16] [17 <./03_background/images/mit_plug.jpg>] [18]
-<03_background/images/lifton_data_ponds.png, id=85, 821.0675pt x 548.0475pt>
+ [14 <./03_background/images/original_lifton_axis.png (PNG copy)> <./03_backgro
+und/images/modified_lifton_axis.png>] [15] [16] [17]
+<03_background/images/lifton_data_ponds.png, id=81, 821.0675pt x 548.0475pt>
 File: 03_background/images/lifton_data_ponds.png Graphic file (type png)
 
 <use 03_background/images/lifton_data_ponds.png>
 Package pdftex.def Info: 03_background/images/lifton_data_ponds.png used on inp
-ut line 222.
+ut line 239.
 (pdftex.def)             Requested size: 469.75502pt x 313.5527pt.
 
-<03_background/images/lifton_shadow_lab.png, id=86, 822.07124pt x 588.1975pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<03_background/images/lifton_shadow_lab.png, id=82, 822.07124pt x 588.1975pt>
 File: 03_background/images/lifton_shadow_lab.png Graphic file (type png)
 
 <use 03_background/images/lifton_shadow_lab.png>
 Package pdftex.def Info: 03_background/images/lifton_shadow_lab.png used on inp
-ut line 229.
+ut line 246.
 (pdftex.def)             Requested size: 469.75502pt x 336.11075pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[19 <./03_background/images/lifton_data_ponds.png (PNG copy)>]
-<03_background/images/ubiquitous_sensor_portal.jpg, id=90, 360.53798pt x 377.59
+[18]
+<03_background/images/ubiquitous_sensor_portal.jpg, id=86, 360.53798pt x 377.59
 045pt>
 File: 03_background/images/ubiquitous_sensor_portal.jpg Graphic file (type jpg)
 
  <use 03_background/images/ubiquitous_sensor_portal.jpg>
 Package pdftex.def Info: 03_background/images/ubiquitous_sensor_portal.jpg used
- on input line 241.
+ on input line 258.
 (pdftex.def)             Requested size: 281.85587pt x 295.1877pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[20 <./03_background/images/lifton_shadow_lab.png (PNG copy)>]
-<03_background/images/ubiquitous_sensor_portal_virtual.png, id=94, 602.25pt x 4
-81.8pt>
-File: 03_background/images/ubiquitous_sensor_portal_virtual.png Graphic file (t
-ype png)
- <use 03_background/images/ubiquitous_sensor_portal_virtual.png>
-Package pdftex.def Info: 03_background/images/ubiquitous_sensor_portal_virtual.
-png used on input line 250.
-(pdftex.def)             Requested size: 375.80544pt x 300.65375pt.
+
+LaTeX Warning: Reference `ubiquitous_sensor_portal_virtual.png' on page 19 unde
+fined on input line 263.
+
+[19 <./03_background/images/lifton_data_ponds.png (PNG copy)>] [20 <./03_backgr
+ound/images/lifton_shadow_lab.png (PNG copy)>]
+
+LaTeX Warning: Reference `subsec:virtual_environments' on page 21 undefined on 
+input line 277.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Reference `subsec:sensor_actuator_infrastructure' on page 21 und
+efined on input line 283.
 
-[21 <./03_background/images/ubiquitous_sensor_portal.jpg>] [22 <./03_background
-/images/ubiquitous_sensor_portal_virtual.png>] [23] [24] [25] [26] [27]
-[28]
-<03_background/images/mpeg_-_v_diagram.png, id=120, 906.38625pt x 682.55pt>
-File: 03_background/images/mpeg_-_v_diagram.png Graphic file (type png)
-
-<use 03_background/images/mpeg_-_v_diagram.png>
-Package pdftex.def Info: 03_background/images/mpeg_-_v_diagram.png used on inpu
-t line 397.
-(pdftex.def)             Requested size: 469.75502pt x 353.74075pt.
- [29 <./03_background/images/mpeg_-_v_diagram.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 420--425
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 420--425
-
- []
-
-[30] [31]
-Underfull \hbox (badness 10000) in paragraph at lines 453--473
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 453--473
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 453--473
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 453--473
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 453--473
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 453--473
-
- []
-
-[32]) [33]
- 4.
-(./04_vtw/vtw.tex) [34
-
-]
- 5.
-
-(./05_mirrorshades_design_implementation/mirrorshades_design_implementation.tex
-
-<05_mirrorshades_design_implementation/images/virtuality-continuum-original.png
-, id=140, 1927.2pt x 293.095pt>
-File: 05_mirrorshades_design_implementation/images/virtuality-continuum-origina
-l.png Graphic file (type png)
-
-<use 05_mirrorshades_design_implementation/images/virtuality-continuum-original
-.png>
-Package pdftex.def Info: 05_mirrorshades_design_implementation/images/virtualit
-y-continuum-original.png used on input line 22.
+[21 <./03_background/images/ubiquitous_sensor_portal.jpg>] [22]
+<03_background/images/virtuality-continuum-original.png, id=99, 1927.2pt x 293.
+095pt>
+File: 03_background/images/virtuality-continuum-original.png Graphic file (type
+ png)
+ <use 03_background/images/virtuality-continuum-original.png>
+Package pdftex.def Info: 03_background/images/virtuality-continuum-original.png
+ used on input line 342.
 (pdftex.def)             Requested size: 469.75502pt x 71.43993pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[35
+[23]
+<03_background/images/virtuality-continuum-augmented-reality.png, id=105, 1927.
+2pt x 357.335pt>
+File: 03_background/images/virtuality-continuum-augmented-reality.png Graphic f
+ile (type png)
 
-]
-<05_mirrorshades_design_implementation/images/virtuality-continuum-augmented-re
-ality.png, id=146, 1927.2pt x 357.335pt>
-File: 05_mirrorshades_design_implementation/images/virtuality-continuum-augment
-ed-reality.png Graphic file (type png)
-
-<use 05_mirrorshades_design_implementation/images/virtuality-continuum-augmente
-d-reality.png>
-Package pdftex.def Info: 05_mirrorshades_design_implementation/images/virtualit
-y-continuum-augmented-reality.png used on input line 34.
+<use 03_background/images/virtuality-continuum-augmented-reality.png>
+Package pdftex.def Info: 03_background/images/virtuality-continuum-augmented-re
+ality.png used on input line 354.
 (pdftex.def)             Requested size: 469.75502pt x 87.098pt.
 
-<05_mirrorshades_design_implementation/images/virtuality-continuum-cross-realit
-y-1.png, id=147, 1927.2pt x 322.20375pt>
-File: 05_mirrorshades_design_implementation/images/virtuality-continuum-cross-r
-eality-1.png Graphic file (type png)
+<03_background/images/virtuality-continuum-cross-reality-1.png, id=106, 1927.2p
+t x 322.20375pt>
+File: 03_background/images/virtuality-continuum-cross-reality-1.png Graphic fil
+e (type png)
 
-<use 05_mirrorshades_design_implementation/images/virtuality-continuum-cross-re
-ality-1.png>
-Package pdftex.def Info: 05_mirrorshades_design_implementation/images/virtualit
-y-continuum-cross-reality-1.png used on input line 42.
+<use 03_background/images/virtuality-continuum-cross-reality-1.png>
+Package pdftex.def Info: 03_background/images/virtuality-continuum-cross-realit
+y-1.png used on input line 362.
 (pdftex.def)             Requested size: 469.75502pt x 78.535pt.
 
-<05_mirrorshades_design_implementation/images/virtuality-continuum-cross-realit
-y-2.png, id=148, 1927.2pt x 345.29pt>
-File: 05_mirrorshades_design_implementation/images/virtuality-continuum-cross-r
-eality-2.png Graphic file (type png)
+<03_background/images/virtuality-continuum-cross-reality-2.png, id=107, 1927.2p
+t x 345.29pt>
+File: 03_background/images/virtuality-continuum-cross-reality-2.png Graphic fil
+e (type png)
 
-<use 05_mirrorshades_design_implementation/images/virtuality-continuum-cross-re
-ality-2.png>
-Package pdftex.def Info: 05_mirrorshades_design_implementation/images/virtualit
-y-continuum-cross-reality-2.png used on input line 50.
+<use 03_background/images/virtuality-continuum-cross-reality-2.png>
+Package pdftex.def Info: 03_background/images/virtuality-continuum-cross-realit
+y-2.png used on input line 370.
 (pdftex.def)             Requested size: 469.75502pt x 84.16211pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<05_mirrorshades_design_implementation/images/virtuality-continuum-cross-realit
-y-3.png, id=149, 1927.2pt x 354.32375pt>
-File: 05_mirrorshades_design_implementation/images/virtuality-continuum-cross-r
-eality-3.png Graphic file (type png)
+<03_background/images/virtuality-continuum-cross-reality-3.png, id=108, 1927.2p
+t x 354.32375pt>
+File: 03_background/images/virtuality-continuum-cross-reality-3.png Graphic fil
+e (type png)
 
-<use 05_mirrorshades_design_implementation/images/virtuality-continuum-cross-re
-ality-3.png>
-Package pdftex.def Info: 05_mirrorshades_design_implementation/images/virtualit
-y-continuum-cross-reality-3.png used on input line 58.
+<use 03_background/images/virtuality-continuum-cross-reality-3.png>
+Package pdftex.def Info: 03_background/images/virtuality-continuum-cross-realit
+y-3.png used on input line 378.
 (pdftex.def)             Requested size: 469.75502pt x 86.36403pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[36 <./05_mirrorshades_design_implementation/images/virtuality-continuum-origin
-al.png> <./05_mirrorshades_design_implementation/images/virtuality-continuum-au
-gmented-reality.png> <./05_mirrorshades_design_implementation/images/virtuality
--continuum-cross-reality-1.png>] [37 <./05_mirrorshades_design_implementation/i
-mages/virtuality-continuum-cross-reality-2.png> <./05_mirrorshades_design_imple
-mentation/images/virtuality-continuum-cross-reality-3.png>]
-<05_mirrorshades_design_implementation/images/focus-locus-sensus-with-virtualit
-y-continuum.png, id=161, 1927.2pt x 2252.415pt>
-File: 05_mirrorshades_design_implementation/images/focus-locus-sensus-with-virt
-uality-continuum.png Graphic file (type png)
+[24 <./03_background/images/virtuality-continuum-original.png> <./03_background
+/images/virtuality-continuum-augmented-reality.png> <./03_background/images/vir
+tuality-continuum-cross-reality-1.png>] [25 <./03_background/images/virtuality-
+continuum-cross-reality-2.png> <./03_background/images/virtuality-continuum-cro
+ss-reality-3.png>]
+<03_background/images/focus-locus-sensus-with-virtuality-continuum.png, id=120,
+ 1927.2pt x 2252.415pt>
+File: 03_background/images/focus-locus-sensus-with-virtuality-continuum.png Gra
+phic file (type png)
 
-<use 05_mirrorshades_design_implementation/images/focus-locus-sensus-with-virtu
-ality-continuum.png>
-Package pdftex.def Info: 05_mirrorshades_design_implementation/images/focus-loc
-us-sensus-with-virtuality-continuum.png used on input line 79.
+<use 03_background/images/focus-locus-sensus-with-virtuality-continuum.png>
+Package pdftex.def Info: 03_background/images/focus-locus-sensus-with-virtualit
+y-continuum.png used on input line 399.
 (pdftex.def)             Requested size: 321.78104pt x 376.06606pt.
- [38
 
- <./05_mirrorshades_design_implementation/images/focus-locus-sensus-with-virtua
-lity-continuum.png>] [39]
-<05_mirrorshades_design_implementation/images/sallies_layout.png, id=174, 1383.
+[26
+
+ <./03_background/images/focus-locus-sensus-with-virtuality-continuum.png>]
+[27]
+<03_background/images/focus-locus-sensus-with-virtuality-continuum-with-transit
+ion-updated.png, id=133, 1927.2pt x 2252.415pt>
+File: 03_background/images/focus-locus-sensus-with-virtuality-continuum-with-tr
+ansition-updated.png Graphic file (type png)
+
+<use 03_background/images/focus-locus-sensus-with-virtuality-continuum-with-tra
+nsition-updated.png>
+Package pdftex.def Info: 03_background/images/focus-locus-sensus-with-virtualit
+y-continuum-with-transition-updated.png used on input line 460.
+(pdftex.def)             Requested size: 328.82707pt x 384.31462pt.
+ [28 <./03_background/images/focus-locus-sensus-with-virtuality-continuum-with-
+transition-updated.png (PNG copy)>] [29]
+Underfull \hbox (badness 10000) in paragraph at lines 500--520
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 500--520
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 500--520
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 500--520
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 500--520
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 500--520
+
+ []
+
+[30]) [31]
+ 4.
+(./04_vtw/vtw.tex) [32
+
+]
+ 5.
+
+(./05_mirrorshades_design_implementation/mirrorshades_design_implementation.tex
+[33
+
+] [34]
+<05_mirrorshades_design_implementation/images/sallies_layout.png, id=156, 1383.
 1675pt x 662.475pt>
 File: 05_mirrorshades_design_implementation/images/sallies_layout.png Graphic f
 ile (type png)
 
 <use 05_mirrorshades_design_implementation/images/sallies_layout.png>
 Package pdftex.def Info: 05_mirrorshades_design_implementation/images/sallies_l
-ayout.png used on input line 127.
+ayout.png used on input line 38.
 (pdftex.def)             Requested size: 328.82707pt x 157.49107pt.
- [40 <./05_mirrorshades_design_implementation/images/sallies_layout.png>]
-<05_mirrorshades_design_implementation/images/system-architecture.png, id=178, 
+ [35 <./05_mirrorshades_design_implementation/images/sallies_layout.png>]
+<05_mirrorshades_design_implementation/images/system-architecture.png, id=161, 
 373.395pt x 271.0125pt>
 File: 05_mirrorshades_design_implementation/images/system-architecture.png Grap
 hic file (type png)
 
 <use 05_mirrorshades_design_implementation/images/system-architecture.png>
 Package pdftex.def Info: 05_mirrorshades_design_implementation/images/system-ar
-chitecture.png used on input line 144.
+chitecture.png used on input line 55.
 (pdftex.def)             Requested size: 234.8775pt x 170.4741pt.
 
 <05_mirrorshades_design_implementation/images/experimental-implementation.png, 
-id=179, 743.8992pt x 325.9377pt>
+id=162, 743.8992pt x 325.9377pt>
 File: 05_mirrorshades_design_implementation/images/experimental-implementation.
 png Graphic file (type png)
 
 <use 05_mirrorshades_design_implementation/images/experimental-implementation.p
 ng>
 Package pdftex.def Info: 05_mirrorshades_design_implementation/images/experimen
-tal-implementation.png used on input line 159.
+tal-implementation.png used on input line 70.
 (pdftex.def)             Requested size: 434.52483pt x 190.38681pt.
- [41
+ [36
 
  <./05_mirrorshades_design_implementation/images/system-architecture.png> <./05
 _mirrorshades_design_implementation/images/experimental-implementation.png>]
-<05_mirrorshades_design_implementation/images/rift.png, id=184, 584.1825pt x 47
+<05_mirrorshades_design_implementation/images/rift.png, id=166, 584.1825pt x 47
 6.78125pt>
 File: 05_mirrorshades_design_implementation/images/rift.png Graphic file (type 
 png)
  <use 05_mirrorshades_design_implementation/images/rift.png>
 Package pdftex.def Info: 05_mirrorshades_design_implementation/images/rift.png 
-used on input line 178.
+used on input line 89.
 (pdftex.def)             Requested size: 281.85587pt x 230.0455pt.
- [42 <./05_mirrorshades_design_implementation/images/rift.png (PNG copy)>]
+ [37 <./05_mirrorshades_design_implementation/images/rift.png (PNG copy)>]
 
-LaTeX Warning: Reference `pews' on page 43 undefined on input line 219.
-
-
-LaTeX Warning: Reference `ceiling' on page 43 undefined on input line 219.
-
-[43] [44]
-<05_mirrorshades_design_implementation/images/focus-locus-sensus-with-virtualit
-y-continuum-with-transition-updated.png, id=194, 1927.2pt x 2252.415pt>
-File: 05_mirrorshades_design_implementation/images/focus-locus-sensus-with-virt
-uality-continuum-with-transition-updated.png Graphic file (type png)
-
-<use 05_mirrorshades_design_implementation/images/focus-locus-sensus-with-virtu
-ality-continuum-with-transition-updated.png>
-Package pdftex.def Info: 05_mirrorshades_design_implementation/images/focus-loc
-us-sensus-with-virtuality-continuum-with-transition-updated.png used on input l
-ine 313.
-(pdftex.def)             Requested size: 328.82707pt x 384.31462pt.
+LaTeX Warning: Reference `pews' on page 38 undefined on input line 130.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Reference `ceiling' on page 38 undefined on input line 130.
 
-
+[38]
 <05_mirrorshades_design_implementation/images/jack-cole-splodges-black.png, id=
-195, 1326.9575pt x 1016.79875pt>
+173, 1326.9575pt x 1016.79875pt>
 File: 05_mirrorshades_design_implementation/images/jack-cole-splodges-black.png
  Graphic file (type png)
 
 <use 05_mirrorshades_design_implementation/images/jack-cole-splodges-black.png>
 Package pdftex.def Info: 05_mirrorshades_design_implementation/images/jack-cole
--splodges-black.png used on input line 324.
+-splodges-black.png used on input line 184.
 (pdftex.def)             Requested size: 328.82707pt x 251.96489pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[45] [46 <./05_mirrorshades_design_implementation/images/focus-locus-sensus-wit
-h-virtuality-continuum-with-transition-updated.png (PNG copy)>] [47 <./05_mirro
-rshades_design_implementation/images/jack-cole-splodges-black.png (PNG copy)>]
+[39 <./05_mirrorshades_design_implementation/images/jack-cole-splodges-black.pn
+g (PNG copy)>]
 <05_mirrorshades_design_implementation/images/switching-hard-with-controller.pn
-g, id=208, 1040.88875pt x 494.84875pt>
+g, id=179, 1040.88875pt x 494.84875pt>
 File: 05_mirrorshades_design_implementation/images/switching-hard-with-controll
 er.png Graphic file (type png)
 
 <use 05_mirrorshades_design_implementation/images/switching-hard-with-controlle
 r.png>
 Package pdftex.def Info: 05_mirrorshades_design_implementation/images/switching
--hard-with-controller.png used on input line 340.
+-hard-with-controller.png used on input line 200.
 (pdftex.def)             Requested size: 328.82707pt x 156.32367pt.
 
 <05_mirrorshades_design_implementation/images/switching-soft-with-controller.pn
-g, id=209, 1760.5775pt x 597.23125pt>
+g, id=180, 1760.5775pt x 597.23125pt>
 File: 05_mirrorshades_design_implementation/images/switching-soft-with-controll
 er.png Graphic file (type png)
 
 <use 05_mirrorshades_design_implementation/images/switching-soft-with-controlle
 r.png>
 Package pdftex.def Info: 05_mirrorshades_design_implementation/images/switching
--soft-with-controller.png used on input line 351.
+-soft-with-controller.png used on input line 211.
 (pdftex.def)             Requested size: 469.75502pt x 159.34996pt.
- [48
+ [40
 
  <./05_mirrorshades_design_implementation/images/switching-hard-with-controller
 .png (PNG copy)> <./05_mirrorshades_design_implementation/images/switching-soft
 -with-controller.png (PNG copy)>]
 <05_mirrorshades_design_implementation/images/switching-analogue-with-controlle
-r.png, id=215, 1760.5775pt x 575.14874pt>
+r.png, id=185, 1760.5775pt x 575.14874pt>
 File: 05_mirrorshades_design_implementation/images/switching-analogue-with-cont
 roller.png Graphic file (type png)
 
 <use 05_mirrorshades_design_implementation/images/switching-analogue-with-contr
 oller.png>
 Package pdftex.def Info: 05_mirrorshades_design_implementation/images/switching
--analogue-with-controller.png used on input line 364.
+-analogue-with-controller.png used on input line 224.
 (pdftex.def)             Requested size: 422.77664pt x 138.10872pt.
 
-<05_mirrorshades_design_implementation/images/timed-switch.png, id=216, 1983.41
+<05_mirrorshades_design_implementation/images/timed-switch.png, id=186, 1983.41
 pt x 349.305pt>
 File: 05_mirrorshades_design_implementation/images/timed-switch.png Graphic fil
 e (type png)
 
 <use 05_mirrorshades_design_implementation/images/timed-switch.png>
 Package pdftex.def Info: 05_mirrorshades_design_implementation/images/timed-swi
-tch.png used on input line 377.
+tch.png used on input line 237.
 (pdftex.def)             Requested size: 469.75502pt x 82.72627pt.
- [49 <./05_mirrorshades_design_implementation/images/switching-analogue-with-co
+ [41 <./05_mirrorshades_design_implementation/images/switching-analogue-with-co
 ntroller.png (PNG copy)> <./05_mirrorshades_design_implementation/images/timed-
 switch.png (PNG copy)>]
 <05_mirrorshades_design_implementation/images/base-opacity-hard-switch.png, id=
-220, 1031.855pt x 494.84875pt>
+191, 1031.855pt x 494.84875pt>
 File: 05_mirrorshades_design_implementation/images/base-opacity-hard-switch.png
  Graphic file (type png)
 
 <use 05_mirrorshades_design_implementation/images/base-opacity-hard-switch.png>
 Package pdftex.def Info: 05_mirrorshades_design_implementation/images/base-opac
-ity-hard-switch.png used on input line 392.
+ity-hard-switch.png used on input line 252.
 (pdftex.def)             Requested size: 328.82707pt x 157.69037pt.
 
-LaTeX Warning: Reference `ipqitems' on page 50 undefined on input line 441.
+LaTeX Warning: Reference `ipqitems' on page 42 undefined on input line 301.
 
-[50 <./05_mirrorshades_design_implementation/images/base-opacity-hard-switch.pn
-g (PNG copy)>] [51]) [52]
+[42 <./05_mirrorshades_design_implementation/images/base-opacity-hard-switch.pn
+g (PNG copy)>] [43]) [44]
  6.
 (./06_mirrorshades_studies_results/mirrorshades_studies_results.tex
 
-LaTeX Warning: Reference `pre_task_questionnaire' on page 53 undefined on input
+LaTeX Warning: Reference `pre_task_questionnaire' on page 45 undefined on input
  line 16.
 
 
-LaTeX Warning: Reference `12_questions' on page 53 undefined on input line 22.
+LaTeX Warning: Reference `12_questions' on page 45 undefined on input line 22.
 
 
-LaTeX Warning: Reference `interview_questions' on page 53 undefined on input li
+LaTeX Warning: Reference `interview_questions' on page 45 undefined on input li
 ne 28.
 
-[53
+[45
 
 ]
-<06_mirrorshades_studies_results/images/chapel_path.png, id=234, 2453.165pt x 1
+<06_mirrorshades_studies_results/images/chapel_path.png, id=204, 2453.165pt x 1
 245.65375pt>
 File: 06_mirrorshades_studies_results/images/chapel_path.png Graphic file (type
  png)
@@ -665,16 +620,19 @@ Package pdftex.def Info: 06_mirrorshades_studies_results/images/chapel_path.png
  used on input line 44.
 (pdftex.def)             Requested size: 469.75502pt x 238.52036pt.
 
-[54 <./06_mirrorshades_studies_results/images/chapel_path.png>] [55] [56]
-<06_mirrorshades_studies_results/images/sus.png, id=245, 903.375pt x 903.375pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[46] [47 <./06_mirrorshades_studies_results/images/chapel_path.png>] [48]
+<06_mirrorshades_studies_results/images/sus.png, id=217, 903.375pt x 903.375pt>
 File: 06_mirrorshades_studies_results/images/sus.png Graphic file (type png)
 <use 06_mirrorshades_studies_results/images/sus.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/sus.png used on
  input line 119.
 (pdftex.def)             Requested size: 328.82707pt x 328.82626pt.
- [57 <./06_mirrorshades_studies_results/images/sus.png (PNG copy)>]
+ [49 <./06_mirrorshades_studies_results/images/sus.png (PNG copy)>]
 <06_mirrorshades_studies_results/images/post_task_questionnaire_boxplot.png, id
-=249, 903.375pt x 903.375pt>
+=221, 903.375pt x 903.375pt>
 File: 06_mirrorshades_studies_results/images/post_task_questionnaire_boxplot.pn
 g Graphic file (type png)
 
@@ -683,9 +641,9 @@ g Graphic file (type png)
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/post_task_quest
 ionnaire_boxplot.png used on input line 133.
 (pdftex.def)             Requested size: 422.77664pt x 422.78056pt.
- [58 <./06_mirrorshades_studies_results/images/post_task_questionnaire_boxplot.
+ [50 <./06_mirrorshades_studies_results/images/post_task_questionnaire_boxplot.
 png (PNG copy)>]
-<06_mirrorshades_studies_results/images/24072014_1200_4up.png, id=253, 1927.2pt
+<06_mirrorshades_studies_results/images/24072014_1200_4up.png, id=225, 1927.2pt
  x 1204.5pt>
 File: 06_mirrorshades_studies_results/images/24072014_1200_4up.png Graphic file
  (type png)
@@ -695,7 +653,7 @@ Package pdftex.def Info: 06_mirrorshades_studies_results/images/24072014_1200_4
 up.png used on input line 179.
 (pdftex.def)             Requested size: 469.75502pt x 293.5888pt.
 
-<06_mirrorshades_studies_results/images/24072014_1200_2up.png, id=254, 963.6pt 
+<06_mirrorshades_studies_results/images/24072014_1200_2up.png, id=226, 963.6pt 
 x 1204.5pt>
 File: 06_mirrorshades_studies_results/images/24072014_1200_2up.png Graphic file
  (type png)
@@ -711,7 +669,7 @@ LaTeX Warning: Float too large for page by 0.71042pt on input line 192.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<06_mirrorshades_studies_results/images/25072014_1300_4up.png, id=255, 1927.2pt
+<06_mirrorshades_studies_results/images/25072014_1300_4up.png, id=227, 1927.2pt
  x 1204.5pt>
 File: 06_mirrorshades_studies_results/images/25072014_1300_4up.png Graphic file
  (type png)
@@ -725,7 +683,7 @@ up.png used on input line 199.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<06_mirrorshades_studies_results/images/25072014_1300_2up.png, id=256, 963.6pt 
+<06_mirrorshades_studies_results/images/25072014_1300_2up.png, id=228, 963.6pt 
 x 1204.5pt>
 File: 06_mirrorshades_studies_results/images/25072014_1300_2up.png Graphic file
  (type png)
@@ -741,7 +699,7 @@ LaTeX Warning: Float too large for page by 0.71042pt on input line 212.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<06_mirrorshades_studies_results/images/25072014_1400_4up.png, id=257, 1927.2pt
+<06_mirrorshades_studies_results/images/25072014_1400_4up.png, id=229, 1927.2pt
  x 1204.5pt>
 File: 06_mirrorshades_studies_results/images/25072014_1400_4up.png Graphic file
  (type png)
@@ -755,7 +713,7 @@ up.png used on input line 219.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<06_mirrorshades_studies_results/images/25072014_1400_2up.png, id=258, 963.6pt 
+<06_mirrorshades_studies_results/images/25072014_1400_2up.png, id=230, 963.6pt 
 x 1204.5pt>
 File: 06_mirrorshades_studies_results/images/25072014_1400_2up.png Graphic file
  (type png)
@@ -771,7 +729,7 @@ LaTeX Warning: Float too large for page by 0.71042pt on input line 232.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<06_mirrorshades_studies_results/images/25072014_1500_4up.png, id=259, 963.6pt 
+<06_mirrorshades_studies_results/images/25072014_1500_4up.png, id=231, 963.6pt 
 x 1204.5pt>
 File: 06_mirrorshades_studies_results/images/25072014_1500_4up.png Graphic file
  (type png)
@@ -787,7 +745,7 @@ LaTeX Warning: Float too large for page by 0.71042pt on input line 242.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<06_mirrorshades_studies_results/images/25072014_1500_2up.png, id=260, 963.6pt 
+<06_mirrorshades_studies_results/images/25072014_1500_2up.png, id=232, 963.6pt 
 x 1204.5pt>
 File: 06_mirrorshades_studies_results/images/25072014_1500_2up.png Graphic file
  (type png)
@@ -803,7 +761,7 @@ LaTeX Warning: Float too large for page by 0.71042pt on input line 250.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<06_mirrorshades_studies_results/images/29082014_1350_4up.png, id=261, 1927.2pt
+<06_mirrorshades_studies_results/images/29082014_1350_4up.png, id=233, 1927.2pt
  x 1204.5pt>
 File: 06_mirrorshades_studies_results/images/29082014_1350_4up.png Graphic file
  (type png)
@@ -817,7 +775,7 @@ up.png used on input line 257.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<06_mirrorshades_studies_results/images/29082014_1350_2up.png, id=262, 963.6pt 
+<06_mirrorshades_studies_results/images/29082014_1350_2up.png, id=234, 963.6pt 
 x 1204.5pt>
 File: 06_mirrorshades_studies_results/images/29082014_1350_2up.png Graphic file
  (type png)
@@ -832,21 +790,21 @@ LaTeX Warning: Float too large for page by 0.71042pt on input line 270.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [59 <./06_mirrorshades_studies_results/images/24072014_1200_4up.png (PNG copy
-)>] [60 <./06_mirrorshades_studies_results/images/24072014_1200_2up.png (PNG co
-py)>] [61 <./06_mirrorshades_studies_results/images/25072014_1300_4up.png (PNG 
-copy)>] [62 <./06_mirrorshades_studies_results/images/25072014_1300_2up.png (PN
-G copy)>] [63 <./06_mirrorshades_studies_results/images/25072014_1400_4up.png (
-PNG copy)>] [64 <./06_mirrorshades_studies_results/images/25072014_1400_2up.png
- (PNG copy)>] [65 <./06_mirrorshades_studies_results/images/25072014_1500_4up.p
-ng (PNG copy)>] [66 <./06_mirrorshades_studies_results/images/25072014_1500_2up
-.png (PNG copy)>] [67 <./06_mirrorshades_studies_results/images/29082014_1350_4
-up.png (PNG copy)>] [68 <./06_mirrorshades_studies_results/images/29082014_1350
+) [51 <./06_mirrorshades_studies_results/images/24072014_1200_4up.png (PNG copy
+)>] [52 <./06_mirrorshades_studies_results/images/24072014_1200_2up.png (PNG co
+py)>] [53 <./06_mirrorshades_studies_results/images/25072014_1300_4up.png (PNG 
+copy)>] [54 <./06_mirrorshades_studies_results/images/25072014_1300_2up.png (PN
+G copy)>] [55 <./06_mirrorshades_studies_results/images/25072014_1400_4up.png (
+PNG copy)>] [56 <./06_mirrorshades_studies_results/images/25072014_1400_2up.png
+ (PNG copy)>] [57 <./06_mirrorshades_studies_results/images/25072014_1500_4up.p
+ng (PNG copy)>] [58 <./06_mirrorshades_studies_results/images/25072014_1500_2up
+.png (PNG copy)>] [59 <./06_mirrorshades_studies_results/images/29082014_1350_4
+up.png (PNG copy)>] [60 <./06_mirrorshades_studies_results/images/29082014_1350
 _2up.png (PNG copy)>]
  7.
-(./07_conclusions/conclusions.tex) [69
+(./07_conclusions/conclusions.tex) [61
 
-] (./thesis.bbl [70
+] (./thesis.bbl [62
 
 ]
 Missing character: There is no â in font cmr10!
@@ -855,9 +813,9 @@ Missing character: There is no “ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
- [71
+ [63
 
-] [72]
+] [64]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
@@ -867,52 +825,24 @@ Missing character: There is no “ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
- [73]
-Underfull \hbox (badness 10000) in paragraph at lines 323--328
-[]\OT1/cmr/m/n/10 Jacques Fay-olle.  The Con-cept of the Re-mote Lab-o-ra-tory.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 330--335
+Underfull \hbox (badness 10000) in paragraph at lines 304--309
 []\OT1/cmr/m/n/10 UgoTrade.  EO-LUS Makes Leap To 3D In-ter-net On Sec-ond Life
 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 330--335
+Underfull \hbox (badness 10000) in paragraph at lines 304--309
 \OMS/cmsy/m/n/10 n$\OT1/cmr/m/n/10 url\OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 http://
 www.ugotrade.com/2007/07/02/eolus-makes-leap-to-3d-internet-on-second-life/\OMS
 /cmsy/m/n/10 g\OT1/cmr/m/n/10 , July
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 395--401
-[]\OT1/cmr/m/n/10 International Or-ga-ni-za-tion for Stan-dard-iza-tion and (IS
-O).  ISO/IEC 23005-1:2011
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 395--401
-\OT1/cmr/m/n/10 - In-for-ma-tion tech-nol-ogy -- Me-dia con-text and con-trol -
-- Part 1: Ar-chi-tec-ture.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 395--401
-\OMS/cmsy/m/n/10 n$\OT1/cmr/m/n/10 url\OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 http://
-www.iso.org/iso/iso[]catalogue/catalogue[]tc/catalogue[]detail.htm?csnumber=549
-85\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ,
- []
-
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-[74]
+[65]
 Missing character: There is no Â in font cmr10!
 Missing character: There is no » in font cmr10!
- [75]
-Underfull \hbox (badness 1028) in paragraph at lines 574--579
+ [66]
+Underfull \hbox (badness 1577) in paragraph at lines 465--470
 []\OT1/cmr/m/n/10 George Pa-pa-gian-nakis, Se-bastien Scherten-leib, Michal Pon
 -der, Marl^^Rene Ar^^Sevalo-Poizat, Na-dia
  []
@@ -920,19 +850,19 @@ Underfull \hbox (badness 1028) in paragraph at lines 574--579
 Missing character: There is no â in font cmti10!
 Missing character: There is no € in font cmti10!
 Missing character: There is no “ in font cmti10!
-[76]) [77] (./thesis.aux)
+[67]) [68] (./thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2597 strings out of 493108
- 49218 string characters out of 6140724
- 92835 words of memory out of 5000000
- 5959 multiletter control sequences out of 15000+600000
+ 2499 strings out of 493108
+ 46007 string characters out of 6140724
+ 93319 words of memory out of 5000000
+ 5864 multiletter control sequences out of 15000+600000
  10641 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,28p,1415b,630s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,8n,28p,1374b,544s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -947,10 +877,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmti8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10
 .pfb>
-Output written on thesis.pdf (79 pages, 7482224 bytes).
+Output written on thesis.pdf (70 pages, 6109719 bytes).
 PDF statistics:
- 379 PDF objects out of 1000 (max. 8388607)
- 226 compressed objects within 3 object streams
+ 346 PDF objects out of 1000 (max. 8388607)
+ 205 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 216 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 201 words of extra memory for PDF output out of 10000 (max. 10000000)
 
