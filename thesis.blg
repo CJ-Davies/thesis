@@ -6,51 +6,55 @@ Database file #1: bib.bib
 Warning--empty publisher in Gelernter1993
 Warning--there's a number but no series in Qiu2009
 Warning--empty journal in Laureys2009
+Warning--there's a number but no volume in Applin2011
+Warning--there's a number but no volume in Applin2012
+Warning--can't use both author and editor fields in Bartle2004
+Warning--can't use both volume and number fields in Bartle2004
 Warning--empty journal in Andersen
 Warning--empty year in Andersen
 Warning--empty publisher in Magnenat-Thalmann2008a
 Warning--there's a number but no series in Papagiannakis2004
 Warning--empty publisher in Taketomi2011
 Warning--empty note in IndoorAtlasLtd.2012
-You've used 94 entries,
+You've used 119 entries,
             1791 wiz_defined-function locations,
-            1008 strings with 20895 characters,
-and the built_in function-call counts, 22412 in all, are:
-= -- 2086
-> -- 863
-< -- 33
-+ -- 331
-- -- 237
-* -- 1356
-:= -- 3326
-add.period$ -- 288
-call.type$ -- 94
-change.case$ -- 88
+            1125 strings with 23959 characters,
+and the built_in function-call counts, 26433 in all, are:
+= -- 2379
+> -- 1054
+< -- 36
++ -- 409
+- -- 290
+* -- 1509
+:= -- 3937
+add.period$ -- 348
+call.type$ -- 119
+change.case$ -- 110
 chr.to.int$ -- 0
-cite$ -- 103
-duplicate$ -- 1090
-empty$ -- 2290
-format.name$ -- 237
-if$ -- 5199
+cite$ -- 132
+duplicate$ -- 1276
+empty$ -- 2777
+format.name$ -- 290
+if$ -- 6121
 int.to.chr$ -- 0
-int.to.str$ -- 94
-missing$ -- 68
-newline$ -- 453
-num.names$ -- 100
-pop$ -- 373
+int.to.str$ -- 119
+missing$ -- 79
+newline$ -- 562
+num.names$ -- 127
+pop$ -- 498
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 606
+skip$ -- 750
 stack$ -- 0
-substring$ -- 1375
-swap$ -- 343
-text.length$ -- 33
+substring$ -- 1458
+swap$ -- 392
+text.length$ -- 36
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 9
-while$ -- 227
-width$ -- 96
-write$ -- 1013
-(There were 9 warnings)
+warning$ -- 13
+while$ -- 261
+width$ -- 122
+write$ -- 1228
+(There were 13 warnings)

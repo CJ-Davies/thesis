@@ -1,92 +1,104 @@
-\contentsline {chapter}{\numberline {1}Introduction}{6}
-\contentsline {chapter}{\numberline {2}Extended Example}{7}
-\contentsline {chapter}{\numberline {3}Background, Theory \& Rationale}{8}
-\contentsline {section}{\numberline {3.1}Introduction}{8}
-\contentsline {section}{\numberline {3.2}Defining Alternate Realities}{9}
-\contentsline {subsection}{\numberline {3.2.1}Reality Continua}{10}
-\contentsline {subsection}{\numberline {3.2.2}Reality Matrix}{12}
-\contentsline {subsection}{\numberline {3.2.3}More Reality Continua}{13}
-\contentsline {section}{\numberline {3.3}Adopted Definitions of Alternate Realities}{14}
-\contentsline {subsection}{\numberline {3.3.1}Reality}{14}
-\contentsline {subsection}{\numberline {3.3.2}Virtual Reality}{15}
-\contentsline {subsection}{\numberline {3.3.3}Mixed Reality}{15}
-\contentsline {subsection}{\numberline {3.3.4}Augmented Reality}{15}
-\contentsline {subsection}{\numberline {3.3.5}Augmented Virtuality}{15}
-\contentsline {section}{\numberline {3.4}Cross Reality}{16}
-\contentsline {subsection}{\numberline {3.4.1}Overview of Cross Reality}{16}
-\contentsline {subsection}{\numberline {3.4.2}MIT Media Lab Responsive Environments Group}{16}
-\contentsline {subsection}{\numberline {3.4.3}Dual Reality: An Emerging Medium}{17}
-\contentsline {subsection}{\numberline {3.4.4}IBM Virtual Universe Community}{18}
-\contentsline {subsection}{\numberline {3.4.5}Shadow Lab}{18}
-\contentsline {subsection}{\numberline {3.4.6}Ubiquitous Sensor Portals}{19}
-\contentsline {subsection}{\numberline {3.4.7}Doppellab}{20}
-\contentsline {subsection}{\numberline {3.4.8}Consumer Adoption of Cross Reality}{21}
-\contentsline {subsection}{\numberline {3.4.9}X-Reality}{21}
-\contentsline {subsection}{\numberline {3.4.10}IEEE Pervasive Computing - Cross Reality Environments}{22}
-\contentsline {subsection}{\numberline {3.4.11}Eolus One}{22}
-\contentsline {subsection}{\numberline {3.4.12}IBM and Implenia}{23}
-\contentsline {section}{\numberline {3.5}Position of Cross Reality}{23}
-\contentsline {subsection}{\numberline {3.5.1}Position - \textit {Milgram \& Kishino}}{23}
-\contentsline {subsection}{\numberline {3.5.2}Position - \textit {Waterworth \& Waterworth}}{26}
-\contentsline {section}{\numberline {3.6}Informing Mobile XR Implementation}{27}
-\contentsline {subsection}{\numberline {3.6.1}Transitions using the Combined Model}{28}
-\contentsline {section}{\numberline {3.7}Use Cases}{29}
-\contentsline {subsection}{\numberline {3.7.1}Virtual Time Windows - Spatial Equivalence}{29}
-\contentsline {subsection}{\numberline {3.7.2}Snow Crash - No Spatial Equivalence}{30}
-\contentsline {section}{\numberline {3.8}Conclusions}{31}
-\contentsline {chapter}{\numberline {4}Virtual Time Window}{32}
-\contentsline {chapter}{\numberline {5}Mirrorshades - Design/Implementation}{33}
-\contentsline {subsection}{\numberline {5.0.1}The Case for Mobile XR}{33}
-\contentsline {subsection}{\numberline {5.0.2}Example Application - Cultural Heritage}{34}
-\contentsline {subsection}{\numberline {5.0.3}Case Study - St Salvator's Chapel}{35}
-\contentsline {section}{\numberline {5.1}The Mirrorshades Platform}{36}
-\contentsline {subsection}{\numberline {5.1.1}Implementation}{36}
-\contentsline {subsection}{\numberline {5.1.2}Hardware Components}{37}
-\contentsline {subsection}{\numberline {5.1.3}Software Components}{37}
-\contentsline {subsection}{\numberline {5.1.4}Integration of Components}{38}
-\contentsline {section}{\numberline {5.2}Investigation 1 - The Case for Mobile XR}{38}
-\contentsline {subsection}{\numberline {5.2.1}Setting \& Task}{38}
-\contentsline {subsection}{\numberline {5.2.2}Evaluation Techniques}{38}
-\contentsline {subsection}{\numberline {5.2.3}Hypothesis}{39}
-\contentsline {subsection}{\numberline {5.2.4}Transition Methods}{39}
-\contentsline {subsubsection}{Hard switch}{40}
-\contentsline {subsubsection}{Switch with linear interpolation}{40}
-\contentsline {subsubsection}{Analogue selectable opacity}{41}
-\contentsline {subsubsection}{Periodic hard switches}{41}
-\contentsline {subsubsection}{Reduced maximum opacity}{42}
-\contentsline {subsection}{\numberline {5.2.5}Experimental Task \& Setting}{42}
-\contentsline {subsection}{\numberline {5.2.6}Evaluation}{42}
-\contentsline {subsubsection}{Subjective Quantitative - Post-Task Questionnaire}{42}
-\contentsline {subsubsection}{Subjective Qualitative - Interview}{43}
-\contentsline {subsubsection}{Objective Quantitative - Automatic Data Logging}{43}
-\contentsline {subsubsection}{Objective Qualitative - Video Recording}{44}
-\contentsline {chapter}{\numberline {6}Mirrorshades - Studies/Results}{45}
-\contentsline {section}{\numberline {6.1}The Case for Mobile XR}{45}
-\contentsline {section}{\numberline {6.2}Process}{45}
-\contentsline {section}{\numberline {6.3}The Scenarios}{46}
-\contentsline {section}{\numberline {6.4}Hypotheses}{46}
-\contentsline {section}{\numberline {6.5}SUS}{47}
-\contentsline {section}{\numberline {6.6}12-item Questionnaire}{47}
-\contentsline {section}{\numberline {6.7}Log data}{48}
-\contentsline {section}{\numberline {6.8}Interviews}{48}
-\contentsline {section}{\numberline {6.9}Results}{48}
-\contentsline {subsection}{\numberline {6.9.1}Pre-task Questionnaire}{48}
-\contentsline {subsection}{\numberline {6.9.2}SUS}{49}
-\contentsline {subsection}{\numberline {6.9.3}12-item Questionnaire}{50}
-\contentsline {subsection}{\numberline {6.9.4}Log data}{51}
-\contentsline {section}{\numberline {6.10}Phase 2.1 Results}{61}
-\contentsline {subsection}{\numberline {6.10.1}Participant 7}{62}
-\contentsline {subsection}{\numberline {6.10.2}Participant 8}{63}
-\contentsline {subsection}{\numberline {6.10.3}Participant 9}{65}
-\contentsline {subsection}{\numberline {6.10.4}Participant 10}{67}
-\contentsline {subsection}{\numberline {6.10.5}Participant 11}{69}
-\contentsline {subsection}{\numberline {6.10.6}Participant 12}{71}
-\contentsline {subsection}{\numberline {6.10.7}Participant 13}{73}
-\contentsline {section}{\numberline {6.11}Phase 2.2 Results}{75}
-\contentsline {subsection}{\numberline {6.11.1}Participant 14}{76}
-\contentsline {subsection}{\numberline {6.11.2}Participant 15}{78}
-\contentsline {subsection}{\numberline {6.11.3}Participant 16}{80}
-\contentsline {subsection}{\numberline {6.11.4}Participant 17}{82}
-\contentsline {chapter}{\numberline {7}Conclusions \& Discussion}{84}
-\contentsline {chapter}{Appendices}{85}
-\contentsline {chapter}{Bibliography}{85}
+\contentsline {chapter}{\numberline {1}Introduction}{7}
+\contentsline {chapter}{\numberline {2}Extended Example}{8}
+\contentsline {section}{\numberline {2.1}Virtual Time Windows - Spatial Equivalence}{8}
+\contentsline {section}{\numberline {2.2}Snow Crash - No Spatial Equivalence}{9}
+\contentsline {chapter}{\numberline {3}Background, Theory \& Rationale}{11}
+\contentsline {section}{\numberline {3.1}Defining Alternate Realities}{12}
+\contentsline {subsection}{\numberline {3.1.1}Milgram \& Kishino's Reality Continua}{13}
+\contentsline {subsection}{\numberline {3.1.2}Waterworth \& Waterworth's Three Dimensions of Virtual Experience}{15}
+\contentsline {subsection}{\numberline {3.1.3}Reality Matrix}{15}
+\contentsline {subsection}{\numberline {3.1.4}More Reality Continua}{17}
+\contentsline {section}{\numberline {3.2}Adopted Definitions of Alternate Realities}{18}
+\contentsline {subsection}{\numberline {3.2.1}Reality}{18}
+\contentsline {subsection}{\numberline {3.2.2}Virtual Reality}{19}
+\contentsline {subsection}{\numberline {3.2.3}Mixed Reality}{19}
+\contentsline {subsection}{\numberline {3.2.4}Augmented Reality}{19}
+\contentsline {subsection}{\numberline {3.2.5}Augmented Virtuality}{19}
+\contentsline {section}{\numberline {3.3}Cross Reality}{20}
+\contentsline {subsection}{\numberline {3.3.1}Overview of Cross Reality}{20}
+\contentsline {subsection}{\numberline {3.3.2}MIT Media Lab Responsive Environments Group}{20}
+\contentsline {subsection}{\numberline {3.3.3}Dual Reality: An Emerging Medium}{21}
+\contentsline {subsection}{\numberline {3.3.4}IBM Virtual Universe Community}{21}
+\contentsline {subsection}{\numberline {3.3.5}Shadow Lab}{21}
+\contentsline {subsection}{\numberline {3.3.6}Ubiquitous Sensor Portals}{22}
+\contentsline {subsection}{\numberline {3.3.7}Doppellab}{24}
+\contentsline {subsection}{\numberline {3.3.8}X-Reality}{24}
+\contentsline {subsection}{\numberline {3.3.9}IEEE Pervasive Computing - Cross Reality Environments}{24}
+\contentsline {subsection}{\numberline {3.3.10}Eolus One}{25}
+\contentsline {subsection}{\numberline {3.3.11}IBM and Implenia}{25}
+\contentsline {section}{\numberline {3.4}Position of Cross Reality}{26}
+\contentsline {subsection}{\numberline {3.4.1}Position - \textit {Milgram \& Kishino}}{26}
+\contentsline {section}{\numberline {3.5}Informing Mobile XR Implementation / On Presence}{26}
+\contentsline {subsection}{\numberline {3.5.1}Transitions using the Combined Model}{28}
+\contentsline {section}{\numberline {3.6}Conclusions}{28}
+\contentsline {chapter}{\numberline {4}Virtual Time Window}{31}
+\contentsline {section}{\numberline {4.1}Introduction}{31}
+\contentsline {section}{\numberline {4.2}Scope}{32}
+\contentsline {section}{\numberline {4.3}Methods}{34}
+\contentsline {subsection}{\numberline {4.3.1}Virtual Environment}{34}
+\contentsline {subsection}{\numberline {4.3.2}GPS Configuration}{35}
+\contentsline {subsection}{\numberline {4.3.3}GPS to OpenSim conversion}{36}
+\contentsline {subsection}{\numberline {4.3.4}Orientation}{36}
+\contentsline {subsection}{\numberline {4.3.5}Interfacing GPS/Orientation hardware with SL}{37}
+\contentsline {section}{\numberline {4.4}Results}{39}
+\contentsline {section}{\numberline {4.5}Interpretations}{41}
+\contentsline {section}{\numberline {4.6}Conclusions}{42}
+\contentsline {chapter}{\numberline {5}Mirrorshades - Design/Implementation}{43}
+\contentsline {subsection}{\numberline {5.0.1}The Case for Mobile XR}{43}
+\contentsline {subsection}{\numberline {5.0.2}Example Application - Cultural Heritage}{44}
+\contentsline {subsection}{\numberline {5.0.3}Case Study - St Salvator's Chapel}{45}
+\contentsline {section}{\numberline {5.1}The Mirrorshades Platform}{46}
+\contentsline {subsection}{\numberline {5.1.1}Implementation}{46}
+\contentsline {subsection}{\numberline {5.1.2}Hardware Components}{47}
+\contentsline {subsection}{\numberline {5.1.3}Software Components}{47}
+\contentsline {subsection}{\numberline {5.1.4}Integration of Components}{48}
+\contentsline {section}{\numberline {5.2}Investigation 1 - The Case for Mobile XR}{48}
+\contentsline {subsection}{\numberline {5.2.1}Setting \& Task}{48}
+\contentsline {subsection}{\numberline {5.2.2}Evaluation Techniques}{48}
+\contentsline {subsection}{\numberline {5.2.3}Hypothesis}{49}
+\contentsline {subsection}{\numberline {5.2.4}Transition Methods}{49}
+\contentsline {subsubsection}{Hard switch}{50}
+\contentsline {subsubsection}{Switch with linear interpolation}{50}
+\contentsline {subsubsection}{Analogue selectable opacity}{51}
+\contentsline {subsubsection}{Periodic hard switches}{51}
+\contentsline {subsubsection}{Reduced maximum opacity}{52}
+\contentsline {subsection}{\numberline {5.2.5}Experimental Task \& Setting}{52}
+\contentsline {subsection}{\numberline {5.2.6}Evaluation}{52}
+\contentsline {subsubsection}{Subjective Quantitative - Post-Task Questionnaire}{52}
+\contentsline {subsubsection}{Subjective Qualitative - Interview}{53}
+\contentsline {subsubsection}{Objective Quantitative - Automatic Data Logging}{53}
+\contentsline {subsubsection}{Objective Qualitative - Video Recording}{54}
+\contentsline {chapter}{\numberline {6}Mirrorshades - Studies/Results}{55}
+\contentsline {section}{\numberline {6.1}The Case for Mobile XR}{55}
+\contentsline {section}{\numberline {6.2}Process}{55}
+\contentsline {section}{\numberline {6.3}The Scenarios}{56}
+\contentsline {section}{\numberline {6.4}Hypotheses}{56}
+\contentsline {section}{\numberline {6.5}SUS}{57}
+\contentsline {section}{\numberline {6.6}12-item Questionnaire}{57}
+\contentsline {section}{\numberline {6.7}Log data}{58}
+\contentsline {section}{\numberline {6.8}Interviews}{58}
+\contentsline {section}{\numberline {6.9}Phase 1 Results}{58}
+\contentsline {subsection}{\numberline {6.9.1}Pre-task Questionnaire}{58}
+\contentsline {subsection}{\numberline {6.9.2}SUS}{59}
+\contentsline {subsection}{\numberline {6.9.3}12-item Questionnaire}{60}
+\contentsline {subsection}{\numberline {6.9.4}Participant 1}{61}
+\contentsline {subsection}{\numberline {6.9.5}Participant 3}{63}
+\contentsline {subsection}{\numberline {6.9.6}Participant 4}{65}
+\contentsline {subsection}{\numberline {6.9.7}Participant 5}{66}
+\contentsline {subsection}{\numberline {6.9.8}Participant 6}{68}
+\contentsline {section}{\numberline {6.10}Phase 2.1 Results}{71}
+\contentsline {subsection}{\numberline {6.10.1}Participant 7}{72}
+\contentsline {subsection}{\numberline {6.10.2}Participant 8}{73}
+\contentsline {subsection}{\numberline {6.10.3}Participant 9}{75}
+\contentsline {subsection}{\numberline {6.10.4}Participant 10}{77}
+\contentsline {subsection}{\numberline {6.10.5}Participant 11}{79}
+\contentsline {subsection}{\numberline {6.10.6}Participant 12}{81}
+\contentsline {subsection}{\numberline {6.10.7}Participant 13}{83}
+\contentsline {section}{\numberline {6.11}Phase 2.2 Results}{85}
+\contentsline {subsection}{\numberline {6.11.1}Participant 14}{86}
+\contentsline {subsection}{\numberline {6.11.2}Participant 15}{88}
+\contentsline {subsection}{\numberline {6.11.3}Participant 16}{90}
+\contentsline {subsection}{\numberline {6.11.4}Participant 17}{92}
+\contentsline {chapter}{\numberline {7}Conclusions \& Discussion}{94}
+\contentsline {chapter}{Appendices}{95}
+\contentsline {chapter}{Bibliography}{95}
