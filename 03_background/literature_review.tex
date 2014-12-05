@@ -18,24 +18,27 @@
 % 'Position' section from experimental plan document
 
 %\section{Introduction}
-This research centres around the design, development \& evaluation of a hardware \& software platform which allows its user to observe \& move around their Real World (RW) environment whilst wearing a wide field of view (FOV), stereoscopic 3D, Head Mounted Display (HMD) which allows them to alternatively view an immersive Virtual Reality (VR) environment from the equivalent vantage point. This is achieved by combining a head-tracked HMD, webcams, an indoor positioning system (IPS) \& a 3D game engine, into a mobile \textit{cross reality} (XR) interface.
 
-One of the distinguishing features of XR is that, by linking real \& virtual environments more closely, it mitigates the `vacancy problem': \textit{``the noticeable \& profound absence of a person from one world, either real or virtual, while they are participating in the other''}, which arises \textit{``because people do not currently have the means to be in more than one place (reality) at a time''}~\cite{Lifton2007a}.
+The subject of this thesis is the design, development \& evaluation of platforms that allow their users to observe \& move around their real environment whilst being able to alternatively view a virtual environment from the equivalent vantage point. This combination of `parallel' real \& virtual environments combined with maintained mobility is not perfectly encapsulated by any existing alternate reality terminology, thus it is necessary to explore alternate reality terminology \& technologies in order to correctly frame these systems in relation to them.
 
-Previous XR research approached the vacancy problem by integrating sensor/actuator networks into the environments, such that actions in one could manifest in the other, however direct visual engagement with the virtual environment was only possible from static interfaces at pre-determined locations within the real environment~\cite{Lifton2007a, Dublon2011}. The platform discussed in this document addresses this shortcoming by providing a mobile interface for visual engagement with both environments of a XR system, allowing the user to transition between viewing their real environment \& a virtual environment at any time while maintaining the freedom to move around them, multiplexing visual stimuli from their real surroundings \& from a parallel, virtual `mirror world'~\cite{Gelernter1993}.
+The closest existing paradigm is the `cross reality' paradigm.
+
+%This research centres around the design, development \& evaluation of a hardware \& software platform which allows its user to observe \& move around their Real World (RW) environment whilst wearing a wide field of view (FOV), stereoscopic 3D, Head Mounted Display (HMD) which allows them to alternatively view an immersive Virtual Reality (VR) environment from the equivalent vantage point. This is achieved by combining a head-tracked HMD, webcams, an indoor positioning system (IPS) \& a 3D game engine, into a mobile \textit{cross reality} (XR) interface.
+
+%One of the distinguishing features of XR is that, by linking real \& virtual environments more closely, it mitigates the `vacancy problem': \textit{``the noticeable \& profound absence of a person from one world, either real or virtual, while they are participating in the other''}, which arises \textit{``because people do not currently have the means to be in more than one place (reality) at a time''}~\cite{Lifton2007a}.
+
+%Previous XR research approached the vacancy problem by integrating sensor/actuator networks into the environments, such that actions in one could manifest in the other, however direct visual engagement with the virtual environment was only possible from static interfaces at pre-determined locations within the real environment~\cite{Lifton2007a, Dublon2011}. The platform discussed in this document addresses this shortcoming by providing a mobile interface for visual engagement with both environments of a XR system, allowing the user to transition between viewing their real environment \& a virtual environment at any time while maintaining the freedom to move around them, multiplexing visual stimuli from their real surroundings \& from a parallel, virtual `mirror world'~\cite{Gelernter1993}.
 
 %=========================================================================================================
 %=========================================================================================================
 
 \section{Defining Alternate Realities}
-A fundamental imperative for the remainder of this review is a well defined set of criteria for classifying and differentiating between different types of alternate reality. The terms \textit{mixed reality}, \textit{augmented reality} and to a lesser extent \textit{augmented virtuality} are all now relatively common in the literature, however they have too often been used in conflicting manners, or assigned vague definitions with uncertain boundaries separating them from each other. Furthermore the less well established terms \textit{cross reality} and \textit{X reality} (different names for the same concept) also need classifying according to the same system.
+A fundamental imperative for defining the paradigm that these systems occupy is a sound understanding of the criteria for classifying and differentiating between different types of alternate reality. The terms \textit{mixed reality}, \textit{augmented reality} and to a lesser extent \textit{augmented virtuality} are relatively common in the literature, however they have too often been used in conflicting manners, or assigned vague definitions with uncertain boundaries.
 
 %=========================================================================================================
 %=========================================================================================================
 
-% From.... original lit review?
-
-Research on alternate realities has been extensive, with the theme being explored for purposes as diverse as education~\cite{Warburton2009} and new forms of data visualisation~\cite{Coleman2009} to medical~\cite{TenEyck2011} and military training~\cite{Qiu2009}. Traditionally access to implementations of alternate realities was limited by the availability and high monetary cost of the specialised hardware and software that was required to create virtual environments and computerised superimpositions~\cite{Druck2006}. However more recently the cost and availability of this hardware and software has reduced and increased respectively to the point at which we find ourselves today where alternate realities can be, and in fact frequently are, experienced by many with the equipment they already have available to them with no special considerations~\cite{Sevan2008}.
+Research into alternate realities is extensive, the theme explored for purposes as diverse as education~\cite{Warburton2009} and new forms of data visualisation~\cite{Coleman2009} to medical~\cite{TenEyck2011} and military training~\cite{Qiu2009}. Traditionally access to implementations of alternate realities was limited by the availability and high monetary cost of the specialised hardware and software that was required to create virtual environments and computerised superimpositions~\cite{Druck2006}. However more recently the cost and availability of this hardware and software has reduced and increased respectively to the point at which we find ourselves today where alternate realities can be, and in fact frequently are, experienced by many with the equipment they already have available to them with no special considerations~\cite{Sevan2008}.
 
 Hardware capable of synthesising the graphically complex three-dimensional environments that alternate realities often present has reduced in cost to the point that it is no longer considered specialist equipment, owned only by those expressing an explicit interest in the subject, and is now commonplace in `average' consumer electronics devices, be they traditional desktop and laptop computers, games consoles, or portable devices such as mobile phones and tablets. Combined with the continued adoption of high-speed Internet connectivity~\cite{Cisco2011} the potential of multi-user virtual environments is already being realised, both for traditional competitive gaming through platforms such as World of Warcraft, but also for non-competitive purposes that focus more on community, creation and commerce with `virtual world' platforms such as Second Life~\cite{Sevan2008}.
 
@@ -91,7 +94,7 @@ The virtuality continuum is here considered to be analogous to the \textit{locus
 
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[width=0.685\textwidth]{focus-locus-sensus-with-virtuality-continuum.png}
+		\includegraphics[width=0.6\textwidth]{focus-locus-sensus-with-virtuality-continuum.png}
 		\caption{The combined virtuality continuum/three dimensions of virtual experience model.}
 		\label{focus-locus-sensus-with-virtuality-continuum}
 	\end{center}	
@@ -104,23 +107,25 @@ The virtuality continuum is here considered to be analogous to the \textit{locus
 
 %=========================================================================================================
 
+\clearpage
+
 \subsection{Reality Matrix}
 \label{subsec:reality_matrix}
 Another useful method of illustrating the relationships between the different categories of alternate realities was put forward by Roy Want in his introductory article for a 2009 issue of IEEE Pervasive Computing dedicated to the \textit{cross reality} paradigm~\cite{Want2009}. Here he presented a 2x2 matrix categorising the different terms according to whether the experience and overlay data are real or virtual (see figure \ref{original_virtuality_matrix.png}).
 
 \begin{figure}[h]
-\centering
-\includegraphics[width=0.8\textwidth]{original_virtuality_matrix.png}
-\caption{Want's original virtuality matrix.}
-\label{original_virtuality_matrix.png}
+	\centering
+	\includegraphics[width=0.8\textwidth]{Want_virtuality_matrix_original.png}
+	\caption{Want's original virtuality matrix.}
+	\label{original_virtuality_matrix.png}
 \end{figure}
 
 Whilst this is a useful representation, some of the definitions and criteria depicted do not match with those of Milgram et al. or even with those of other authors in the same issue of IEEE Pervasive Computing, let alone other publications concerning alternate realities. Thus this review presents a modified version of Want's matrix, that is better in fitting with the consensual definitions built from reviewing the literature on alternate realities, as figure \ref{modified_virtuality_matrix.png}.
 
 \begin{figure}[h]
-\centering
-\includegraphics[width=0.8\textwidth]{modified_virtuality_matrix.png}
-\caption{Want's virtuality matrix after modification by this review; note removal of \textit{mixed reality}, \textit{cross reality} and \textit{embodied virtuality} and addition of \textit{reality} and \textit{augmented virtuality}.}
+	\centering
+	\includegraphics[width=0.8\textwidth]{Want_virtuality_matrix_modified.png}
+	\caption{Want's virtuality matrix after modification by this review; note removal of \textit{mixed reality}, 	\textit{cross reality} and \textit{embodied virtuality} and addition of \textit{reality} and \textit{augmented virtuality}.}
 \label{modified_virtuality_matrix.png}
 \end{figure}
 
@@ -142,20 +147,22 @@ Lifton's definitions, or more accurately his relationships between, the terms \t
 Lifton does however explain that while such a taxonomy can be successfully applied to most alternate reality efforts, it does not well address the concept of cross reality where there are two complete realities, one real and one virtual.
 
 \begin{figure}[h]
-\centering
-\includegraphics[width=\textwidth]{original_lifton_axis.png}
-\caption{The \textit{``virtual worlds taxonomy as viewed on the real-virtual axis''} presented by Lifton.}
-\label{original_lifton_axis.png}
+	\centering
+	\includegraphics[width=\textwidth]{Lifton_continuum_original.png}
+	\caption{The \textit{``virtual worlds taxonomy as viewed on the real-virtual axis''} presented by Lifton.}
+	\label{original_lifton_axis.png}
 \end{figure}
 
 \begin{figure}[h]
-\centering
-\includegraphics[width=\textwidth]{modified_lifton_axis.png}
-\caption{Lifton's taxonomy as modified by this review.}
-\label{modified_lifton_axis.png}
+	\centering
+	\includegraphics[width=\textwidth]{Lifton_continuum_modified.png}
+	\caption{Lifton's taxonomy as modified by this review.}
+	\label{modified_lifton_axis.png}
 \end{figure}
 
 %=========================================================================================================
+
+\clearpage
 
 \section{Adopted Definitions of Alternate Realities}
 \label{sec:definitions_of_alternate_realities}
@@ -436,6 +443,27 @@ Sensus is expected to be largely task dependent, however when performing a task 
 \end{figure}
 
 %=========================================================================================================
+
+\section{The Case for Mobile XR}
+
+%ARCHEOGUIDE makes the point that AR is good because users are not isolated/completely immersed in a synthetic world - well Mirrorshades allows uers to more fully immerse themselves in a synthetic world, but without becoming isolated in it (eg without becoming ***vacant*** from the real world)
+
+A XR system that presents the user with visual stimuli from both its constituent environments (RW \& VR) allows that user to engage with both real \& virtual content in a manner that is similar to, but has a number of advantages over, a traditional AR system;
+
+\begin{itemize}
+	\item the XR system is less critical of registration (the accurate positioning/alignment) between real \& virtual, as the virtual objects are seen as part of a larger virtual environment instead of being rendered atop a view of the real environment;
+	\item the XR system can make use of existing VR content without the overhead of decanting/extracting a subset of the virtual components into an AR framework (e.g. manually selecting which objects within the VR environment are to be displayed over the RW environment);
+	\item the use of a complete VR environment allows the virtual content to be more encompassing \& immersive, as presenting a complete VR environment allows total control over lighting, shadows, reflections, particle effects, etc. which would be difficult or impossible for an AR platform to render atop a view of a RW environment.
+\end{itemize}
+
+Thus, such a XR platform is well suited to situations in which interaction with both real \& virtual visual stimuli is required \& where one or more of the following hold true;
+
+\begin{itemize}
+	\item in lieu of accurate registration between real \& virtual, there is a strong focus on the virtual environment's atmosphere \& immersion~\cite{deamicis:gamebased};
+	\item there is existing VR content;
+	\item the visual differences between real \& virtual environments are so substantial that an AR system would resort to augment (\&/or diminish~\cite{Mann2002}) almost the whole RW view. While AR \textit{``smears an informational coating over real space''}~\cite{Andersen}, XR presents a complete, discrete virtual environment. AR is beneficial where one wishes the juxtaposition of virtual objects upon what is already present in the RW environment, however VR is better suited to situations where one wishes to present a complete virtual alternative.
+\end{itemize}
+
 %=========================================================================================================
 
 % Original literature review from here on
