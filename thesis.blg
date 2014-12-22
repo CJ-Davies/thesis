@@ -3,6 +3,7 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: unsrt.bst
 Database file #1: bib.bib
+Warning--I didn't find a database entry for "Terashima2001"
 Warning--there's a number but no series in Qiu2009
 Warning--there's a number but no volume in Applin2012
 Warning--empty journal in Laureys2009
@@ -16,45 +17,45 @@ Warning--empty publisher in Magnenat-Thalmann2008a
 Warning--there's a number but no series in Papagiannakis2004
 Warning--empty publisher in Taketomi2011
 Warning--empty note in IndoorAtlasLtd.2012
-You've used 88 entries,
+You've used 89 entries,
             1791 wiz_defined-function locations,
-            953 strings with 18800 characters,
-and the built_in function-call counts, 19682 in all, are:
-= -- 1748
-> -- 805
+            960 strings with 18946 characters,
+and the built_in function-call counts, 19779 in all, are:
+= -- 1755
+> -- 804
 < -- 28
-+ -- 310
++ -- 311
 - -- 222
-* -- 1122
-:= -- 2914
-add.period$ -- 257
-call.type$ -- 88
-change.case$ -- 83
+* -- 1120
+:= -- 2927
+add.period$ -- 259
+call.type$ -- 89
+change.case$ -- 84
 chr.to.int$ -- 0
-cite$ -- 101
-duplicate$ -- 960
-empty$ -- 2080
+cite$ -- 102
+duplicate$ -- 964
+empty$ -- 2098
 format.name$ -- 222
-if$ -- 4573
+if$ -- 4597
 int.to.chr$ -- 0
-int.to.str$ -- 88
-missing$ -- 61
-newline$ -- 414
+int.to.str$ -- 89
+missing$ -- 62
+newline$ -- 418
 num.names$ -- 97
-pop$ -- 387
+pop$ -- 395
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 569
+skip$ -- 572
 stack$ -- 0
 substring$ -- 1033
-swap$ -- 296
+swap$ -- 297
 text.length$ -- 28
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 13
-while$ -- 190
-width$ -- 90
-write$ -- 902
-(There were 13 warnings)
+while$ -- 191
+width$ -- 91
+write$ -- 910
+(There were 14 warnings)
