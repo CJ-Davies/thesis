@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2014.11.17)  22 DEC 2014 19:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2014.12.23)  5 JAN 2015 18:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -194,9 +194,9 @@ Missing character: There is no ™ in font cmbx10!
 
 ] (./thesis.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 3.
+(Font)              <7> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 3.
+(Font)              <5> on input line 4.
  [4
 
 ] [5])
@@ -218,39 +218,9 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 
 ]
  2.
-(./02_example/example.tex [8
+(./02_example/example.tex) [8
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 36--56
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--56
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--56
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--56
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--56
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--56
-
- []
-
-[9]) [10]
  3.
 (./03_background/literature_review.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
@@ -277,11 +247,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
  []
 
-[11
+[9
 
 ]
 <03_background/images/virtuality_continuum_extent_of_world_knowledge_continuum.
-png, id=54, 1927.2pt x 757.83125pt>
+png, id=47, 1927.2pt x 757.83125pt>
 File: 03_background/images/virtuality_continuum_extent_of_world_knowledge_conti
 nuum.png Graphic file (type png)
 
@@ -290,9 +260,9 @@ uum.png>
 Package pdftex.def Info: 03_background/images/virtuality_continuum_extent_of_wo
 rld_knowledge_continuum.png used on input line 53.
 (pdftex.def)             Requested size: 469.75502pt x 184.71628pt.
- [12 <./03_background/images/virtuality_continuum_extent_of_world_knowledge_con
+ [10 <./03_background/images/virtuality_continuum_extent_of_world_knowledge_con
 tinuum.png>]
-<03_background/images/Want_virtuality_matrix_original.png, id=59, 1927.2pt x 10
+<03_background/images/Want_virtuality_matrix_original.png, id=52, 1927.2pt x 10
 21.8175pt>
 File: 03_background/images/Want_virtuality_matrix_original.png Graphic file (ty
 pe png)
@@ -301,7 +271,7 @@ Package pdftex.def Info: 03_background/images/Want_virtuality_matrix_original.p
 ng used on input line 80.
 (pdftex.def)             Requested size: 223.1329pt x 118.29391pt.
 
-<03_background/images/Want_virtuality_matrix_modified.png, id=60, 1927.2pt x 10
+<03_background/images/Want_virtuality_matrix_modified.png, id=53, 1927.2pt x 10
 21.8175pt>
 File: 03_background/images/Want_virtuality_matrix_modified.png Graphic file (ty
 pe png)
@@ -310,9 +280,17 @@ Package pdftex.def Info: 03_background/images/Want_virtuality_matrix_modified.p
 ng used on input line 86.
 (pdftex.def)             Requested size: 223.1329pt x 118.29391pt.
 
-[13 <./03_background/images/Want_virtuality_matrix_original.png> <./03_backgrou
+[11 <./03_background/images/Want_virtuality_matrix_original.png> <./03_backgrou
 nd/images/Want_virtuality_matrix_modified.png>]
-<03_background/images/Mann_venn_original.png, id=66, 1927.2pt x 1927.2pt>
+
+Package natbib Warning: Citation `Schofield2012' on page 12 undefined on input 
+line 102.
+
+
+Package natbib Warning: Citation `Turkle2011' on page 12 undefined on input lin
+e 102.
+
+<03_background/images/Mann_venn_original.png, id=60, 1927.2pt x 1927.2pt>
 File: 03_background/images/Mann_venn_original.png Graphic file (type png)
 
 <use 03_background/images/Mann_venn_original.png>
@@ -320,7 +298,7 @@ Package pdftex.def Info: 03_background/images/Mann_venn_original.png used on in
 put line 112.
 (pdftex.def)             Requested size: 223.1329pt x 223.10837pt.
 
-<03_background/images/Mann_venn_mod_1.png, id=67, 1915.155pt x 1931.215pt>
+<03_background/images/Mann_venn_mod_1.png, id=61, 1915.155pt x 1931.215pt>
 File: 03_background/images/Mann_venn_mod_1.png Graphic file (type png)
 
 <use 03_background/images/Mann_venn_mod_1.png>
@@ -328,7 +306,7 @@ Package pdftex.def Info: 03_background/images/Mann_venn_mod_1.png used on input
  line 118.
 (pdftex.def)             Requested size: 223.1329pt x 224.98764pt.
 
-<03_background/images/Mann_venn_mod_3.png, id=68, 1671.24374pt x 1927.2pt>
+<03_background/images/Mann_venn_mod_3.png, id=62, 1671.24374pt x 1927.2pt>
 File: 03_background/images/Mann_venn_mod_3.png Graphic file (type png)
 
 <use 03_background/images/Mann_venn_mod_3.png>
@@ -339,7 +317,7 @@ Package pdftex.def Info: 03_background/images/Mann_venn_mod_3.png used on input
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14] [15 <./03_background/images/Mann_venn_original.png> <./03_background/image
+[12] [13 <./03_background/images/Mann_venn_original.png> <./03_background/image
 s/Mann_venn_mod_1.png> <./03_background/images/Mann_venn_mod_3.png>]
 Overfull \hbox (35.97592pt too wide) in alignment at lines 156--216
  [] [] 
@@ -349,171 +327,205 @@ Overfull \hbox (35.97592pt too wide) in alignment at lines 156--216
 Underfull \vbox (badness 10000) detected at line 216
  []
 
+[14
 
-Package natbib Warning: Citation `Terashima2001' on page 16 undefined on input 
-line 230.
-
-[16
-
-] [17]
-<03_background/images/lifton_shadow_lab.png, id=85, 822.07124pt x 588.1975pt>
+] [15]
+<03_background/images/lifton_shadow_lab.png, id=78, 822.07124pt x 588.1975pt>
 File: 03_background/images/lifton_shadow_lab.png Graphic file (type png)
 
 <use 03_background/images/lifton_shadow_lab.png>
 Package pdftex.def Info: 03_background/images/lifton_shadow_lab.png used on inp
-ut line 321.
+ut line 322.
 (pdftex.def)             Requested size: 223.1329pt x 159.65013pt.
 
-<03_background/images/ubiquitous_sensor_portal.jpg, id=86, 360.53798pt x 377.59
+<03_background/images/ubiquitous_sensor_portal.jpg, id=79, 360.53798pt x 377.59
 045pt>
 File: 03_background/images/ubiquitous_sensor_portal.jpg Graphic file (type jpg)
 
  <use 03_background/images/ubiquitous_sensor_portal.jpg>
 Package pdftex.def Info: 03_background/images/ubiquitous_sensor_portal.jpg used
- on input line 327.
+ on input line 328.
 (pdftex.def)             Requested size: 223.1329pt x 233.68883pt.
 
-<03_background/images/Lifton_continuum_original.png, id=87, 1927.2pt x 405.515p
+<03_background/images/Lifton_continuum_original.png, id=80, 1927.2pt x 405.515p
 t>
 File: 03_background/images/Lifton_continuum_original.png Graphic file (type png
 )
  <use 03_background/images/Lifton_continuum_original.png>
 Package pdftex.def Info: 03_background/images/Lifton_continuum_original.png use
-d on input line 343.
+d on input line 344.
 (pdftex.def)             Requested size: 375.80544pt x 79.072pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<03_background/images/Lifton_continuum_modified.png, id=88, 1927.2pt x 608.2725
+<03_background/images/Lifton_continuum_modified.png, id=81, 1927.2pt x 608.2725
 pt>
 File: 03_background/images/Lifton_continuum_modified.png Graphic file (type png
 )
  <use 03_background/images/Lifton_continuum_modified.png>
 Package pdftex.def Info: 03_background/images/Lifton_continuum_modified.png use
-d on input line 350.
+d on input line 351.
 (pdftex.def)             Requested size: 375.80544pt x 118.60802pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[18 <./03_background/images/lifton_shadow_lab.png (PNG copy)> <./03_background/
+[16 <./03_background/images/lifton_shadow_lab.png (PNG copy)> <./03_background/
 images/ubiquitous_sensor_portal.jpg>]
-<03_background/images/virtuality-continuum-augmented-reality.png, id=92, 1927.2
+<03_background/images/virtuality-continuum-augmented-reality.png, id=85, 1927.2
 pt x 357.335pt>
 File: 03_background/images/virtuality-continuum-augmented-reality.png Graphic f
 ile (type png)
 
 <use 03_background/images/virtuality-continuum-augmented-reality.png>
 Package pdftex.def Info: 03_background/images/virtuality-continuum-augmented-re
-ality.png used on input line 373.
+ality.png used on input line 380.
 (pdftex.def)             Requested size: 469.75502pt x 87.098pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<03_background/images/virtuality-continuum-cross-reality-1.png, id=93, 1927.2pt
+<03_background/images/virtuality-continuum-cross-reality-1.png, id=86, 1927.2pt
  x 322.20375pt>
 File: 03_background/images/virtuality-continuum-cross-reality-1.png Graphic fil
 e (type png)
 
 <use 03_background/images/virtuality-continuum-cross-reality-1.png>
 Package pdftex.def Info: 03_background/images/virtuality-continuum-cross-realit
-y-1.png used on input line 381.
+y-1.png used on input line 388.
 (pdftex.def)             Requested size: 469.75502pt x 78.535pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<03_background/images/virtuality-continuum-cross-reality-2.png, id=94, 1927.2pt
+<03_background/images/virtuality-continuum-cross-reality-2.png, id=87, 1927.2pt
  x 345.29pt>
 File: 03_background/images/virtuality-continuum-cross-reality-2.png Graphic fil
 e (type png)
 
 <use 03_background/images/virtuality-continuum-cross-reality-2.png>
 Package pdftex.def Info: 03_background/images/virtuality-continuum-cross-realit
-y-2.png used on input line 393.
+y-2.png used on input line 396.
 (pdftex.def)             Requested size: 469.75502pt x 84.16211pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<03_background/images/virtuality-continuum-cross-reality-3.png, id=95, 1927.2pt
+<03_background/images/virtuality-continuum-cross-reality-3.png, id=88, 1927.2pt
  x 354.32375pt>
 File: 03_background/images/virtuality-continuum-cross-reality-3.png Graphic fil
 e (type png)
 
 <use 03_background/images/virtuality-continuum-cross-reality-3.png>
 Package pdftex.def Info: 03_background/images/virtuality-continuum-cross-realit
-y-3.png used on input line 401.
+y-3.png used on input line 404.
 (pdftex.def)             Requested size: 469.75502pt x 86.36403pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
+[17 <./03_background/images/Lifton_continuum_original.png> <./03_background/ima
+ges/Lifton_continuum_modified.png>]
 <03_background/images/virtuality-continuum-cross-reality-information-flows-dash
-ed.png, id=96, 1927.2pt x 641.39626pt>
+ed.png, id=98, 1927.2pt x 641.39626pt>
 File: 03_background/images/virtuality-continuum-cross-reality-information-flows
 -dashed.png Graphic file (type png)
 
 <use 03_background/images/virtuality-continuum-cross-reality-information-flows-
 dashed.png>
 Package pdftex.def Info: 03_background/images/virtuality-continuum-cross-realit
-y-information-flows-dashed.png used on input line 409.
+y-information-flows-dashed.png used on input line 416.
 (pdftex.def)             Requested size: 469.75502pt x 156.33603pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[19 <./03_background/images/Lifton_continuum_original.png> <./03_background/ima
-ges/Lifton_continuum_modified.png>]
-<03_background/images/focus-locus-sensus-with-virtuality-continuum.png, id=102,
+[18 <./03_background/images/virtuality-continuum-augmented-reality.png> <./03_b
+ackground/images/virtuality-continuum-cross-reality-1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 452--472
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 452--472
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 452--472
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 452--472
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 452--472
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 452--472
+
+ []
+
+[19 <./03_background/images/virtuality-continuum-cross-reality-2.png> <./03_bac
+kground/images/virtuality-continuum-cross-reality-3.png>] [20 <./03_background/
+images/virtuality-continuum-cross-reality-information-flows-dashed.png>]
+Overfull \hbox (28.79536pt too wide) in alignment at lines 492--528
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 528
+ []
+
+
+<03_background/images/focus-locus-sensus-with-virtuality-continuum.png, id=113,
  1927.2pt x 2252.415pt>
 File: 03_background/images/focus-locus-sensus-with-virtuality-continuum.png Gra
 phic file (type png)
 
 <use 03_background/images/focus-locus-sensus-with-virtuality-continuum.png>
 Package pdftex.def Info: 03_background/images/focus-locus-sensus-with-virtualit
-y-continuum.png used on input line 435.
+y-continuum.png used on input line 546.
 (pdftex.def)             Requested size: 328.82707pt x 384.31462pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Reference `waterworth' on page 20 undefined on input line 455.
+LaTeX Warning: Reference `waterworth' on page 21 undefined on input line 566.
 
-[20 <./03_background/images/virtuality-continuum-augmented-reality.png> <./03_b
-ackground/images/virtuality-continuum-cross-reality-1.png>] [21 <./03_backgroun
-d/images/virtuality-continuum-cross-reality-2.png> <./03_background/images/virt
-uality-continuum-cross-reality-3.png>]
+[21] [22 <./03_background/images/focus-locus-sensus-with-virtuality-continuum.p
+ng>]
 
-LaTeX Warning: Reference `waterworth' on page 22 undefined on input line 469.
+LaTeX Warning: Reference `waterworth' on page 23 undefined on input line 580.
 
 
 <03_background/images/focus-locus-sensus-with-virtuality-continuum-with-transit
-ion-updated.png, id=118, 1927.2pt x 2252.415pt>
+ion-updated.png, id=123, 1927.2pt x 2252.415pt>
 File: 03_background/images/focus-locus-sensus-with-virtuality-continuum-with-tr
 ansition-updated.png Graphic file (type png)
 
 <use 03_background/images/focus-locus-sensus-with-virtuality-continuum-with-tra
 nsition-updated.png>
 Package pdftex.def Info: 03_background/images/focus-locus-sensus-with-virtualit
-y-continuum-with-transition-updated.png used on input line 482.
+y-continuum-with-transition-updated.png used on input line 593.
 (pdftex.def)             Requested size: 328.82707pt x 384.31462pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[22 <./03_background/images/virtuality-continuum-cross-reality-information-flow
-s-dashed.png>] [23 <./03_background/images/focus-locus-sensus-with-virtuality-c
-ontinuum.png>] [24 <./03_background/images/focus-locus-sensus-with-virtuality-c
-ontinuum-with-transition-updated.png (PNG copy)>] [25
+[23] [24 <./03_background/images/focus-locus-sensus-with-virtuality-continuum-w
+ith-transition-updated.png (PNG copy)>] [25
 
 ] [26]) [27]
  4.
@@ -1179,8 +1191,6 @@ ng used on input line 512.
 ] (./thesis.bbl [91
 
 ]
-Missing character: There is no Â in font cmr10!
-Missing character: There is no » in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
@@ -1194,11 +1204,13 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
  [93]
+Missing character: There is no Â in font cmr10!
+Missing character: There is no » in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
  [94]
-Underfull \hbox (badness 1577) in paragraph at lines 416--421
+Underfull \hbox (badness 1577) in paragraph at lines 411--416
 []\OT1/cmr/m/n/10 George Pa-pa-gian-nakis, Se-bastien Scherten-leib, Michal Pon
 -der, Marl^^Rene Ar^^Sevalo-Poizat, Na-dia
  []
@@ -1207,23 +1219,28 @@ Underfull \hbox (badness 1577) in paragraph at lines 416--421
 Missing character: There is no â in font cmti10!
 Missing character: There is no € in font cmti10!
 Missing character: There is no “ in font cmti10!
- [96])
+)
 
 Package natbib Warning: There were undefined citations.
 
-[97] (./thesis.aux)
+[96] (./thesis.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2924 strings out of 493108
- 55458 string characters out of 6140724
- 198672 words of memory out of 5000000
- 6245 multiletter control sequences out of 15000+600000
+ 2928 strings out of 493108
+ 55588 string characters out of 6140724
+ 198741 words of memory out of 5000000
+ 6249 multiletter control sequences out of 15000+600000
  10282 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,28p,1914b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,8n,28p,1914b,499s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -1237,10 +1254,10 @@ r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmtt10.pfb>
-Output written on thesis.pdf (99 pages, 20687153 bytes).
+Output written on thesis.pdf (98 pages, 20689546 bytes).
 PDF statistics:
- 475 PDF objects out of 1000 (max. 8388607)
- 266 compressed objects within 3 object streams
+ 472 PDF objects out of 1000 (max. 8388607)
+ 264 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  366 words of extra memory for PDF output out of 10000 (max. 10000000)
 
