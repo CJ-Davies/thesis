@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2014.12.23)  5 JAN 2015 18:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2014.12.23)  6 JAN 2015 17:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -446,68 +446,39 @@ y-information-flows-dashed.png used on input line 416.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [18 <./03_background/images/virtuality-continuum-augmented-reality.png> <./03_b
-ackground/images/virtuality-continuum-cross-reality-1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 452--472
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 452--472
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 452--472
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 452--472
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 452--472
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 452--472
-
- []
-
-[19 <./03_background/images/virtuality-continuum-cross-reality-2.png> <./03_bac
-kground/images/virtuality-continuum-cross-reality-3.png>] [20 <./03_background/
-images/virtuality-continuum-cross-reality-information-flows-dashed.png>]
-Overfull \hbox (28.79536pt too wide) in alignment at lines 492--528
+ackground/images/virtuality-continuum-cross-reality-1.png>] [19 <./03_backgroun
+d/images/virtuality-continuum-cross-reality-2.png> <./03_background/images/virt
+uality-continuum-cross-reality-3.png>]
+Overfull \hbox (28.79536pt too wide) in alignment at lines 464--500
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 528
+Underfull \vbox (badness 10000) detected at line 500
  []
 
-
-<03_background/images/focus-locus-sensus-with-virtuality-continuum.png, id=113,
+[20 <./03_background/images/virtuality-continuum-cross-reality-information-flow
+s-dashed.png>]
+<03_background/images/focus-locus-sensus-with-virtuality-continuum.png, id=114,
  1927.2pt x 2252.415pt>
 File: 03_background/images/focus-locus-sensus-with-virtuality-continuum.png Gra
 phic file (type png)
 
 <use 03_background/images/focus-locus-sensus-with-virtuality-continuum.png>
 Package pdftex.def Info: 03_background/images/focus-locus-sensus-with-virtualit
-y-continuum.png used on input line 546.
+y-continuum.png used on input line 530.
 (pdftex.def)             Requested size: 328.82707pt x 384.31462pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Reference `waterworth' on page 21 undefined on input line 566.
+LaTeX Warning: Reference `waterworth' on page 21 undefined on input line 550.
 
 [21] [22 <./03_background/images/focus-locus-sensus-with-virtuality-continuum.p
 ng>]
 
-LaTeX Warning: Reference `waterworth' on page 23 undefined on input line 580.
+LaTeX Warning: Reference `waterworth' on page 23 undefined on input line 564.
 
 
 <03_background/images/focus-locus-sensus-with-virtuality-continuum-with-transit
@@ -518,7 +489,7 @@ ansition-updated.png Graphic file (type png)
 <use 03_background/images/focus-locus-sensus-with-virtuality-continuum-with-tra
 nsition-updated.png>
 Package pdftex.def Info: 03_background/images/focus-locus-sensus-with-virtualit
-y-continuum-with-transition-updated.png used on input line 593.
+y-continuum-with-transition-updated.png used on input line 577.
 (pdftex.def)             Requested size: 328.82707pt x 384.31462pt.
 
 
@@ -1210,37 +1181,32 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
  [94]
-Underfull \hbox (badness 1577) in paragraph at lines 411--416
+[95]
+Underfull \hbox (badness 1577) in paragraph at lines 428--433
 []\OT1/cmr/m/n/10 George Pa-pa-gian-nakis, Se-bastien Scherten-leib, Michal Pon
 -der, Marl^^Rene Ar^^Sevalo-Poizat, Na-dia
  []
 
-[95]
 Missing character: There is no â in font cmti10!
 Missing character: There is no € in font cmti10!
 Missing character: There is no “ in font cmti10!
-)
+[96])
 
 Package natbib Warning: There were undefined citations.
 
-[96] (./thesis.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
+[97] (./thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2928 strings out of 493108
- 55588 string characters out of 6140724
- 198741 words of memory out of 5000000
- 6249 multiletter control sequences out of 15000+600000
+ 2938 strings out of 493108
+ 55778 string characters out of 6140724
+ 198789 words of memory out of 5000000
+ 6259 multiletter control sequences out of 15000+600000
  10282 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,28p,1914b,499s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,8n,28p,1914b,565s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -1254,10 +1220,10 @@ r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmtt10.pfb>
-Output written on thesis.pdf (98 pages, 20689546 bytes).
+Output written on thesis.pdf (99 pages, 20691634 bytes).
 PDF statistics:
- 472 PDF objects out of 1000 (max. 8388607)
- 264 compressed objects within 3 object streams
+ 475 PDF objects out of 1000 (max. 8388607)
+ 266 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  366 words of extra memory for PDF output out of 10000 (max. 10000000)
 

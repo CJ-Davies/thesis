@@ -18,45 +18,45 @@ Warning--empty publisher in Magnenat-Thalmann2008a
 Warning--there's a number but no series in Papagiannakis2004
 Warning--empty publisher in Taketomi2011
 Warning--empty note in IndoorAtlasLtd.2012
-You've used 88 entries,
+You've used 91 entries,
             1791 wiz_defined-function locations,
-            957 strings with 18846 characters,
-and the built_in function-call counts, 19682 in all, are:
-= -- 1748
-> -- 805
+            975 strings with 19333 characters,
+and the built_in function-call counts, 20231 in all, are:
+= -- 1796
+> -- 825
 < -- 28
-+ -- 310
-- -- 222
-* -- 1122
-:= -- 2914
-add.period$ -- 257
-call.type$ -- 88
-change.case$ -- 83
++ -- 318
+- -- 227
+* -- 1156
+:= -- 3000
+add.period$ -- 265
+call.type$ -- 91
+change.case$ -- 86
 chr.to.int$ -- 0
-cite$ -- 101
-duplicate$ -- 960
-empty$ -- 2080
-format.name$ -- 222
-if$ -- 4573
+cite$ -- 104
+duplicate$ -- 983
+empty$ -- 2142
+format.name$ -- 227
+if$ -- 4695
 int.to.chr$ -- 0
-int.to.str$ -- 88
-missing$ -- 61
-newline$ -- 414
-num.names$ -- 97
-pop$ -- 387
+int.to.str$ -- 91
+missing$ -- 63
+newline$ -- 428
+num.names$ -- 100
+pop$ -- 396
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 569
+skip$ -- 581
 stack$ -- 0
-substring$ -- 1033
-swap$ -- 296
+substring$ -- 1067
+swap$ -- 299
 text.length$ -- 28
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 13
-while$ -- 190
-width$ -- 90
-write$ -- 902
+while$ -- 196
+width$ -- 93
+write$ -- 932
 (There were 15 warnings)
