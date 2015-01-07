@@ -303,17 +303,13 @@ The principle features that distinguish XR from the other alternate realities co
 
 %This thesis presents systems that focus on the second aspect above \& extends it by permitting both environments to be experienced at any time \& position.
 
-XR was realised \& developed as a research area by the Responsive Environments Group at MIT's Media Lab, centred around the research of Joshua Lifton~\cite{Lifton2007a} in combining the Plug sensor/actuator platform~\cite{Lifton2007b} with a Second Life hosted virtual model of the physical Lab in the `Shadow Lab' project. One of the driving motivations behind this work was what Lifton dubbed `the vacancy problem'; \textbf{***See HyperReality p35***}
-
-\begin{quote}
-\textit{``the noticeable and profound absence of a person from one world, either real or virtual, while they are participating in the other. Simply put, the vacancy problem arises because people do not currently have the means to be in more than one place (reality) at a time.''}
-\end{quote}
-
-These XR projects at the Media Lab furthered initial work by the IBM Virtual Universe Community~\cite{Hughes2006, Hughes2006a,Hughes2006b}, described in personal correspondence by Ian Hughes;
+XR as an alternate reality paradigm has its roots in work undertaken by the IBM Virtual Universe Community~\cite{Hughes2006, Hughes2006a,Hughes2006b}, described in personal correspondence by Ian Hughes;
 
 \begin{quote}
 \textit{``The control mechanisms worked two ways generally. There was a physical lab that had devices that were controlled by a pub/sub mechanism based on the light weight protocol MQTT. Those devices subscribed to various messages. So initially web pages controlled them \ldots\ Equally the objects generated messages when they were physically switched on and off. As SL had an RPC interface it was possible \ldots\ to subscribe to the same messages and send requests into SL to change states of object \ldots\ So there were lights, blinds, proximity detectors and even the tilt sensors on the laptops that were instrumented with these messages.''}
 \end{quote}
+
+But it was the work of the Responsive Environments Group at MIT's Media Lab, centred around the research of Joshua Lifton in combining the Plug sensor/actuator platform~\cite{Lifton2007b} with a Second Life hosted virtual model of the physical Lab in the `Shadow Lab' project, that truly launched XR as a research area. The Shadow Lab project did not allow for tandem visual engagement with both constituent environments of the cross reality platform, focussing instead on the interplay of sensor data \& actuator commands exchanged between the environments. The visual aspect was addressed in part by the subsequent Ubiquitous Sensor Portal project, which situated 45 I/O rich `portals' (figure \ref{ubiquitous_sensor_portal.jpg}) throughout the Lab, each with a corresponding extension in Second Life. However in stark contrast to the Dual Reality Lab, the virtual portals were not situated in a simulation of the real Media Lab in situations corresponding to their physical location, but instead used a more abstract virtual representation with a geometric layout reflecting intellectual affiliation as opposed to real-world location.
 
 \begin{figure}[h]
 \centering
@@ -331,7 +327,17 @@ These XR projects at the Media Lab furthered initial work by the IBM Virtual Uni
 \end{minipage}
 \end{figure}
 
-The Shadow Lab project did not allow for tandem visual engagement with both constituent environments of the cross reality platform, focussing instead on the interplay of sensor data \& actuator commands exchanged between the environments. The visual aspect was addressed in part by the subsequent Ubiquitous Sensor Portal project, which situated 45 I/O rich `portals' (figure \ref{ubiquitous_sensor_portal.jpg}) throughout the Lab, each with a corresponding extension in Second Life. However in stark contrast to the Dual Reality Lab, the virtual portals were not situated in a simulation of the real Media Lab in situations corresponding to their physical location, but instead used a more abstract virtual representation with a geometric layout reflecting intellectual affiliation as opposed to real-world location.
+One of the driving motivations behind this work was what Lifton dubbed `the vacancy problem';
+
+\begin{quote}
+\textit{``the noticeable and profound absence of a person from one world, either real or virtual, while they are participating in the other. Simply put, the vacancy problem arises because people do not currently have the means to be in more than one place (reality) at a time.''}~\cite{Lifton2007a}
+\end{quote}
+
+Which the Shadow Lab addressed via the sensor/actuator infrastructure more closely linking the real \& virtual environments, such that actions \& events in one could manifest \& be observed by users in the other even if they could not directly visually observe both environments in tandem. The vacancy problem was previously observed by HR researchers, touching on an observation of the PoSR situations observed among mobile phone users of the time as a manifestation of the problem before virtual environments are introduced to the picture; %HyperReality p35
+
+\begin{quote}
+	\textit{``One of the main problems with \ldots virtual reality is what to do about the body that is left behind in physical reality \ldots In HyperReality a person by definition is perceptually aware of the physical world around them, yet part of the attention normally given to the physical reality is given to interacting with virtual reality. It is difficult as yet to see how much this matters, but the increasing use of the mobile phone, which is a primitive form of HR, gives us some feel for the issues. People using a mobile phone can walk busy streets \ldots while talking to someone who is not there.''}~\cite{Terashima2001}
+\end{quote}
 
 %=========================================================================================================
 
@@ -359,7 +365,14 @@ The diagram Lifton presents (figure \ref{original_lifton_axis.png}) alludes to M
 	\label{modified_lifton_axis.png}
 \end{figure}
 
-Lifton does however explain that while such a taxonomy can be successfully applied to most alternate reality efforts, it does not well address those that feature two complete realities, one real \& one virtual, which is one of the defining \& distinguishing characteristics of a XR system.
+Lifton does however explain that while such a taxonomy can be successfully applied to most alternate realities, with each falling into a different singular category, it does not well address those that feature two complete realities, one real \& one virtual, which is one of the defining \& distinguishing characteristics of a XR system \& instead prefers figure \ref{reality_virtual_reality_sensor_networks.png} to show how sensor/actuator infrastructure can cause the real \& a virtual environment to merge into a cross reality.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.6\textwidth]{reality_virtual_reality_sensor_networks.png}
+	\caption{Sensor/actuator infrastructure merging a real \& a virtual environment, creating XR.}
+	\label{reality_virtual_reality_sensor_networks.png}
+\end{figure}
 
 %page 37 of Lifton's thesis
 
@@ -372,8 +385,6 @@ Lifton does however explain that while such a taxonomy can be successfully appli
 \newcommand{\avxrfootnote}{\footnote{This discussion over the relationship between AR \& XR also stands for the relationship between AV \& XR, however as AV has received less attention in the literature \& in commercially available implementations, the discussion uses AR as its example.}}
 
 The position of XR in relation to other alternate realities can be visualised using Milgram \& Kishino's virtuality continuum. As one of the defining characteristics of a XR system is that it features two environments, both complete unto themselves, the explanation herein distinguishes between environments themselves (depicted in figures \ref{virtuality-continuum-augmented-reality} to \ref{virtuality-continuum-cross-reality-information-flows-dashed.png} by solid ellipses) \& where the stimuli that the user is perceiving originate from (depicted by dashed ellipses).
-
-\textbf{***Use Illustrator version of Lifton thesis p38 here as well?}
 
 %Ontology - The core meaning within computer science is a model for describing the world that consists of a set of types, properties, and relationship types. There is also generally an expectation that the features of the model in an ontology should closely resemble the real world (related to the object).
 
@@ -419,12 +430,12 @@ Although a XR system as a whole should definitely be considered a case of MR, wh
 
 \section{Parallel Reality}
 
-The discussion in the previous section highlighted that the first distinguishing factor of XR, that differentiates it from other alternate realities such as AR \& AV, is that XR features two discrete environments, one real \& one virtual. The second distinguishing factor is the presence of a bidirectional flow of information between these two environments (figure \ref{virtuality-continuum-cross-reality-information-flows-dashed.png}).
+The discussion in the previous section highlighted that the first distinguishing factor of XR, that differentiates it from other alternate realities such as AR \& AV, is that XR features two discrete environments, one real \& one virtual. The second distinguishing factor is the presence of a bidirectional flow of information between these two environments (figure \ref{virtuality-continuum-cross-reality-information-flows-dashed.png}, an integration of figure \ref{reality_virtual_reality_sensor_networks.png} with Milgram \& Kishino's virtuality continuum).
 
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=\textwidth]{virtuality-continuum-cross-reality-information-flows-dashed.png}
-		\caption{The two environments that comprise a XR system, plus the bidirectional information flow between them. \textbf{***Illustrator version of Lifton's diagram from his thesis p38}}
+		\caption{The two environments that comprise a XR system, plus the bidirectional information flow between them.}
 		\label{virtuality-continuum-cross-reality-information-flows-dashed.png}
 	\end{center}
 \end{figure}
@@ -562,9 +573,9 @@ The novel aspect of a PR system is the ability it imparts upon its user to switc
 
 Whilst some researchers support the notion that in systems where more than one environment competes for the user's locus of attention there is an `all or nothing' Gestalt switch between awareness of one environment \& the other~\cite{Slater2002}, which would result in a substantial increase in cognitive load upon each transition, the systems in this thesis have been developed in support of the contrary opinion; that switching locus of attention from the stimuli of one environment to those of another does not completely overrule the user's awareness of the former, that both environments can be perceived at the same time (albeit one to a lesser extent)~\cite{Ijsselsteijn2001} \& that when engaging with VR content a user's focus can even be said to typically be \textit{shared} between VR \& RW~\cite{Waterworth2001}.
 
-This latter position is particularly apt for situations wherein the RW \& VR environments share the same fundamental layout \& dimensions (spatial equivalence), as those in the PR systems of this thesis do, as inherent familiarity between two environments reduces the cognitive load associated with transitioning between them. Furthermore, the notion of experience of presence as changing continually from moment-to-moment~\cite{Heeter2003, Ijsselsteijn1998} lends confidence to the successful mitigation of the cognitive load associated with these transitions to manageable levels. One might even liken this `switching' between RW \& VR to the `cycling through' behaviour observed in users of virtual communities, which stemmed from the `window' concept of modern computer operating systems~\cite{Turkle2004}.
+This latter position is particularly apt for situations wherein the RW \& VR environments share the same fundamental layout \& dimensions (spatial equivalence), as those in the PR systems of this thesis do, as inherent familiarity between two environments reduces the cognitive load associated with transitioning between them.
 
-\textbf{***Updated Turkle quote on this from Alone Together}
+Furthermore, the notion of experience of presence as changing continually from moment-to-moment~\cite{Heeter2003, Ijsselsteijn1998} lends confidence to the successful mitigation of the cognitive load associated with these transitions to manageable levels. One might even liken this `switching' between RW \& VR to the `cycling through' behaviour observed in users of virtual communities, which stemmed from the `window' concept of modern computer operating systems~\cite{Turkle2004} \& accelerated with mobile devices to the point where for many users today rapid cycling stabilizes them into a sense of `continual copresence', where even just a mobile phone brings them into a world of continual partial attention to any particular subject or environment~\cite{Turkle2011}.
 
 However, no matter how smooth the transition the process is expected to always result in some heightened cognitive load, a temporary \textit{break in presence}\breakinpresencefootnote{} (BIP), as the user comes to terms with the new environment presented to them \& comprehends its relation to the other environment that they were just perceiving. Transitions can be implemented in multiple different manners \& it is hypothesized that users will prefer different implementations in different situations, surroundings \& scenarios (where `preference' toward a particular implementation is expected to correlate strongly with a less severe BIP being experienced upon its execution). To this end, several different implementations are effected \& investigation endeavoured to identify \& quantify preferences toward them, to infer which approaches to transitioning between RW \& VR visual stimuli are more or less appropriate for the different situations that arise where a platform like those developed by this thesis may be deployed (such as moving, stationary, etc.).
 
@@ -683,3 +694,5 @@ Although less thoroughly investigated, the concept of creating an alternate real
 Previous cross reality research focussed on alleviating this vacancy problem by integrating sensor \& actuator infrastructure into the constituent real \& virtual environments of a system, such that actions \& events in one environment could manifest into the other. However directly visually engaging with both environments was not always possible in these systems \& where it was it was only possible from predetermined, static locations.
 
 This thesis serves to extend alternate reality research by designing, implementing \& testing a system that allows its user to visually engage with both a real \& a virtual environment, at any point, whilst maintaining mobility to walk through the environments. In trading the sensor/actuator infrastructure of a cross reality system for direct visual engagement with both environments, the parallel reality concept is born.
+
+Simply put in the terms of Lifton's original definition of the vacancy problem, this thesis aims to allow people to be in more than one place (reality) at a time.
