@@ -153,7 +153,7 @@ This final iteration of the Venn diagram still contains ambiguity, however it is
 %=========================================================================================================
 
 \begin{center}
-\begin{longtable}{| l | p{12cm} |}
+\begin{longtable}{| l | p{10cm} |}
 
 \hline	
 	
@@ -178,6 +178,13 @@ While traditional definitions of \textit{virtual reality} require the environmen
 \hline
 		
 %=========================================================================================================
+
+\textbf{Distributed Virtual Reality (DVR)} & Multi-user VR where telecommunications are employed to allow multiple (geographically distributed) users to occupy the same VR environment, allowing cooperation~\cite{Terashima2001}. \\
+
+\hline
+		
+%=========================================================================================================
+
 
 \textbf{Mixed Reality (MR)} & The broad range of environments that arise from the merging of real and virtual environments to some extent such that the result is neither entirely real nor entirely virtual, where real and virtual objects co-exist. Both \textit{augmented reality} and \textit{augmented virtuality} are included under the broader classification of \textit{mixed reality}. \\
 
@@ -269,7 +276,11 @@ HR is an abstract, high level term that refers to a category of mixed reality en
 
 \subsection{PolySocial Reality}
 
-PolySocial Reality (PoSR) describes situations in which people multiplex their physical reality, where they engage in face-to-face social interaction, with Web-based social networks \& apps for Internet mediated social interaction. Instead of defining a new type of alternate reality in terms of the provenance of the audiovisual stimuli received by a subject, PoSR is concerned with the provenance of the multiple, simultaneous social interactions that are mediated through various telecommunications media~\cite{Applin2012}.
+PolySocial Reality (PoSR) describes situations in which people multiplex their physical reality, where they engage in face-to-face social interaction, with Web-based social networks \& apps for Internet mediated social interaction. Instead of defining a new type of alternate reality in terms of the provenance of the audiovisual stimuli received by a subject, PoSR is concerned with the provenance of the multiple, simultaneous social interactions that are mediated through various telecommunications media~\cite{Applin2012}. It has been shown that \textit{``effective interaction among participants is a contributing factor to presence''}~\cite{Terashima2001}, so it should not come as much surprise to observe people capable of maintaining PolySocial interactions between their real environment \& a virtual one.
+
+\textbf{*** Mention place vs non-place?}
+
+%HyperReality p55, references Slate \& Usoh 1994
 
 %"Lifton does not fully address the social element and aspects of Dual Reality. In part, this results from the rather 'fixed' locations that he is linking, and by his restriction of the social components to those people in the lab who share both aspects of the dual reality. The introduction of mobility via phones and other devices to the context will require a generalisation of the concept of Dual Reality." Feb 2011
 
@@ -390,6 +401,15 @@ The position of XR in relation to other alternate realities can be visualised us
 
 Of particular importance is to appreciate the distinction between a XR system \& an AR system\avxrfootnote{}, as both concepts involve user engagement with both real \& virtual content. Whilst an AR system features a single environment, comprised of the user's RW overlain by some virtual content, with the user perceiving stimuli from this single augmented environment (figure \ref{virtuality-continuum-augmented-reality}), a XR system instead features two discrete environments, one real \& the other virtual, each complete unto itself (figure \ref{virtuality-continuum-cross-reality-1}), with the user attending either to the stimuli originating from the real environment (figure \ref{virtuality-continuum-cross-reality-2}) or to the stimuli originating from the virtual environment (figure \ref{virtuality-continuum-cross-reality-3}).
 
+A HR environment likewise constitutes a single physical environment, formed by the seamless introduction of VR content into the real world, rather than two complete environments;
+
+%`physical' quote is HyperReality p158
+
+%HyperReality p26
+\begin{quote}
+	\textit{``\ldots virtual people, virtual objects \& virtual settings can interact \& thereby communicate with real people, real objects \& real settings as though they were all part of the same world.''}~\cite{Terashima2001}
+\end{quote}
+
 Although a XR system as a whole should definitely be considered a case of MR, whether each of its constituent environments should be considered outwith or within the realm of MR (especially when visualised upon the continuum) is open to debate. Taking the real environment as an example, one could argue that the use of actuators to produce physically observable effects on behalf of controls from the virtual environment constitutes an AR environment. However in adhering to the definition of AR adopted earlier (see section \ref{summaryofalternaterealitydefinitions}) we would not label this an AR environment as we do not have \textit{virtual} objects overlain upon our view of the real environment, but rather \textit{real} objects controlled by the actions \& events of a discrete virtual environment. So whilst an AR environment falls within the realms of MR, the constituent environments of a XR system when considered individually are considered as occupying the two extremes of the continuum, outwith the MR region \& thus their depiction as such in figures \ref{virtuality-continuum-cross-reality-2} \& \ref{virtuality-continuum-cross-reality-2}.
 
 %***this is more to do distribution of the dashed line surrounding the environments, rather than the position of the environments themselves (solid line)***
@@ -455,7 +475,7 @@ Should a bidirectional information flow be introduced to a PR system, or the abi
 %(Life on the Screen, p219
 \newcommand{\turklevrfootnote}{\footnote{\textit{``For virtual reality to be interesting it has to emulate the real. But you have to be able to do something in the virtual that you couldn't in the real.''}~\cite{Turkle1997}}}
 
-When discussing a PR system that allows a user to transition between two environments, one real \& the other virtual, one must consider the relationship between the two environments, namely whether (\& if so, how much) their layout, dimensions \& content relate to each other $-$ their \textit{spatial equivalence}.
+When discussing a PR system that allows a user to transition between two environments, one real \& the other virtual, one must consider the relationship between the two environments, namely whether (\& if so, how much) their layout, dimensions \& content relate to each other $-$ their \textit{spatial equivalence}. One could apply the notions of Baudrillard's Simulacra \& Simulation~\cite{Baudrillard1994} to this consideration, with complete spatial equivalence occupying Baudrillard's first stage of a faithful image or copy of a profound reality, zero spatial equivalence occupying the fourth stage, of pure simulation with no relation to anything in reality \& partial equivalence perhaps occupying the second stage, a perversion of reality.
 
 A PR system would be unrewarding if the real \& virtual environments were identical\turklevrfootnote{}. However a virtual environment that shares roughly the same fundamental dimensions \& layout as the real environment (it represents the same `place') but presents an alternative representation has been proven to be a useful modality in previous XR research (see section \ref{sec_crossreality}) \& it is this arrangement that the systems developed by this thesis focus on, in particular those where the virtual environment represents the same place as the real environment but at an earlier moment in time.
 
@@ -467,15 +487,17 @@ In the opening quote to this chapter, taken from Neal Stephenson's cyberpunk nov
 
 In this scenario there is no spatial equivalence between the real environment and the virtual environment - they are not the same `location' or `place', however the protagonist still wishes to be able to experience both by transitioning between them, paying attention to one while travelling through the other. While this situation is currently science fiction, recent developments in mobile VR platforms such as Samsumg Gear VR hint that we are not so far away from a time in which members of the general public will wish to multiplex their real environment with a virtual one while in public, in the same way that people commonly engage in CMC via their smartphones at the same time as walking through real environments \& conversing with the people in them, in instantiations of PoSR \& informing the implementation of transitions in such systems with the findings of the experiments of this thesis into spatially equivalent PR systems will be of benefit to them.
 
-\textbf{*** Ready Player One, bit where protagonist enters a net cafe \& the clerk has a semi-transparent visor such that s/he can observe real world clients whilst also paying attention to a spatially inequivalent fictitious virtual environment.}
+A second example of such a situation is found in the book \textit{Ready Player One}, in a scene in which the protagonist users the equivalent of an Internet cafe to access \textit{the OASIS};
+
+\begin{quote}
+	\textit{``A vacant-eyed clerk glanced up at me \ldots He was wearing a bifocal visor, which gave him a semitransparent view of the OASIS whilse also allowing him to see his real-world surroundings.''}~\cite{Cline2012}
+\end{quote}
+
+The OASIS is similar to Snow Crash's Metaverse; a fictional multi-user 3D environment with no enforced likeness to the real world, accessed via \textit{``a visor \& a pair of haptic gloves''}.
 
 %=========================================================================================================
 
-\subsection{PolySocial Reality in Parallel Reality}
-
-\textbf{Some references from HyperReality}
-
-\textbf{Also mention the concepts of `place' \& `non-place' that are prominent throughout PoSR literature?}
+%\subsection{PolySocial Reality in Parallel Reality}
 
 %=========================================================================================================
 
@@ -483,7 +505,7 @@ In this scenario there is no spatial equivalence between the real environment an
 \label{summaryofadditionalalternaterealitydefinitions}
 
 \begin{center}
-\begin{longtable}{| l | p{12cm} |}
+\begin{longtable}{| l | p{10cm} |}
 
 \hline	
 	
@@ -525,9 +547,10 @@ In this scenario there is no spatial equivalence between the real environment an
 %=========================================================================================================
 %=========================================================================================================
 
-\section{Presence}
+\pagebreak
+%next section was rendering off the page
 
-\textbf{***We haven't mentioned `simultaneous presence' at all(?), \& although we want to shy away from it I think it is worth at least mentioning in passing in the section about presence?}
+\section{Presence}
 
 Any investigation into alternate realities, virtual reality in particular, is likely to involve discussion of \textit{presence} - the subjective experience of being in one place or environment, even when one is physically situated in another~\cite{Witmer1998}. Presence is distinguished from the concept of \textit{immersion}, an objective description of a technology, describing the extent to which it is capable of delivering an illusion of reality to the sense of the user~\cite{Slater1997}. In current theoretical models, the sense of presence is seen as the outcome, or a direct function of, immersion; the more inclusive, extensive, surrounding \& vivd the VE is, or the more similar the transformations in the VE are to those in the real world, the higher the presence~\cite{Constantin2003}.
 
@@ -571,11 +594,11 @@ The novel aspect of a PR system is the ability it imparts upon its user to switc
 
 %This is achieved by the user performing transitions between RW visual stimuli \& VR visual stimuli, both presented via their HMD. This extends existing XR research by allowing the user to engage with the visual stimuli of the VR component of a XR system from any position \& at any time.
 
-Whilst some researchers support the notion that in systems where more than one environment competes for the user's locus of attention there is an `all or nothing' Gestalt switch between awareness of one environment \& the other~\cite{Slater2002}, which would result in a substantial increase in cognitive load upon each transition, the systems in this thesis have been developed in support of the contrary opinion; that switching locus of attention from the stimuli of one environment to those of another does not completely overrule the user's awareness of the former, that both environments can be perceived at the same time (albeit one to a lesser extent)~\cite{Ijsselsteijn2001} \& that when engaging with VR content a user's focus can even be said to typically be \textit{shared} between VR \& RW~\cite{Waterworth2001}.
+Whilst some researchers support the notion that in systems where more than one environment competes for the user's locus of attention there is an `all or nothing' Gestalt switch between awareness of one environment \& the other~\cite{Slater2002}, which would result in a substantial increase in cognitive load upon each transition, the systems in this thesis have been developed in support of the contrary opinion; that switching locus of attention from the stimuli of one environment to those of another does not completely overrule the user's awareness of the former, that both environments can be perceived at the same time (albeit one to a lesser extent)~\cite{Ijsselsteijn2001} \& that when engaging with VR content a user's focus can even be said to typically be \textit{shared} between VR \& RW~\cite{Waterworth2001}, leading to a notion of `distributed' presence, or simultaneously experiencing a sense of presence in multiple environments.
 
 This latter position is particularly apt for situations wherein the RW \& VR environments share the same fundamental layout \& dimensions (spatial equivalence), as those in the PR systems of this thesis do, as inherent familiarity between two environments reduces the cognitive load associated with transitioning between them.
 
-Furthermore, the notion of experience of presence as changing continually from moment-to-moment~\cite{Heeter2003, Ijsselsteijn1998} lends confidence to the successful mitigation of the cognitive load associated with these transitions to manageable levels. One might even liken this `switching' between RW \& VR to the `cycling through' behaviour observed in users of virtual communities, which stemmed from the `window' concept of modern computer operating systems~\cite{Turkle2004} \& accelerated with mobile devices to the point where for many users today rapid cycling stabilizes them into a sense of `continual copresence', where even just a mobile phone brings them into a world of continual partial attention to any particular subject or environment~\cite{Turkle2011}.
+Furthermore, the notion of experience of presence as changing continually from moment-to-moment~\cite{Heeter2003, Ijsselsteijn1998} lends confidence to the successful mitigation of the cognitive load associated with these transitions to manageable levels. One might even liken this `switching' between RW \& VR to the `cycling through' behaviour observed in users of virtual communities, which stemmed from the `window' concept of modern computer operating systems~\cite{Turkle2004} \& accelerated with mobile devices to the point where for many users today rapid cycling stabilizes them into a sense of `continual copresence', where even just a mobile phone brings them into a world of continual partial attention to any particular subject or environment~\cite{Turkle2011}. The advent of mobile phones has previously been credited with allowing a person to \textit{``be in many places at once''} \& to play multiple roles~\cite{Terashima2001}. %HyperReality p148
 
 However, no matter how smooth the transition the process is expected to always result in some heightened cognitive load, a temporary \textit{break in presence}\breakinpresencefootnote{} (BIP), as the user comes to terms with the new environment presented to them \& comprehends its relation to the other environment that they were just perceiving. Transitions can be implemented in multiple different manners \& it is hypothesized that users will prefer different implementations in different situations, surroundings \& scenarios (where `preference' toward a particular implementation is expected to correlate strongly with a less severe BIP being experienced upon its execution). To this end, several different implementations are effected \& investigation endeavoured to identify \& quantify preferences toward them, to infer which approaches to transitioning between RW \& VR visual stimuli are more or less appropriate for the different situations that arise where a platform like those developed by this thesis may be deployed (such as moving, stationary, etc.).
 
