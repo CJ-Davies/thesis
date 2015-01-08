@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2014.12.23)  8 JAN 2015 14:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2014.12.23)  8 JAN 2015 16:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -448,7 +448,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 ackground/images/virtuality-continuum-cross-reality-1.png>] [20 <./03_backgroun
 d/images/virtuality-continuum-cross-reality-2.png> <./03_background/images/virt
 uality-continuum-cross-reality-3.png>]
-Underfull \vbox (badness 10000) detected at line 544
+Underfull \vbox (badness 10000) detected at line 550
  []
 
 [21 <./03_background/images/virtuality-continuum-cross-reality-information-flow
@@ -460,7 +460,7 @@ phic file (type png)
 
 <use 03_background/images/focus-locus-sensus-with-virtuality-continuum.png>
 Package pdftex.def Info: 03_background/images/focus-locus-sensus-with-virtualit
-y-continuum.png used on input line 573.
+y-continuum.png used on input line 579.
 (pdftex.def)             Requested size: 328.82707pt x 384.31462pt.
 
 
@@ -476,7 +476,7 @@ ansition-updated.png Graphic file (type png)
 <use 03_background/images/focus-locus-sensus-with-virtuality-continuum-with-tra
 nsition-updated.png>
 Package pdftex.def Info: 03_background/images/focus-locus-sensus-with-virtualit
-y-continuum-with-transition-updated.png used on input line 619.
+y-continuum-with-transition-updated.png used on input line 625.
 (pdftex.def)             Requested size: 328.82707pt x 384.31462pt.
 
 
@@ -1202,7 +1202,7 @@ r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmtt10.pfb>
-Output written on thesis.pdf (98 pages, 20768244 bytes).
+Output written on thesis.pdf (98 pages, 20768863 bytes).
 PDF statistics:
  474 PDF objects out of 1000 (max. 8388607)
  264 compressed objects within 3 object streams
