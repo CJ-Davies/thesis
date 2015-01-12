@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2014.11.17)  11 JAN 2015 17:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2014.12.23)  12 JAN 2015 15:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -222,7 +222,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 
 ]
  3.
-(./03_background/literature_review.tex
+(./03_background/background.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
@@ -481,7 +481,7 @@ ith-transition-updated.png (PNG copy)>]) [27]
 File: 04_vtw/images/figure_1.png Graphic file (type png)
 
 <use 04_vtw/images/figure_1.png>
-Package pdftex.def Info: 04_vtw/images/figure_1.png used on input line 18.
+Package pdftex.def Info: 04_vtw/images/figure_1.png used on input line 31.
 (pdftex.def)             Requested size: 225.4804pt x 140.91307pt.
 
 
@@ -491,33 +491,36 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: 04_vtw/images/separation_map.png Graphic file (type png)
 
 <use 04_vtw/images/separation_map.png>
-Package pdftex.def Info: 04_vtw/images/separation_map.png used on input line 29
+Package pdftex.def Info: 04_vtw/images/separation_map.png used on input line 42
 .
 (pdftex.def)             Requested size: 225.4804pt x 156.32657pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 <04_vtw/images/figure_3.jpg, id=151, 469.4265pt x 314.3745pt>
 File: 04_vtw/images/figure_3.jpg Graphic file (type jpg)
 
 <use 04_vtw/images/figure_3.jpg>
-Package pdftex.def Info: 04_vtw/images/figure_3.jpg used on input line 36.
+Package pdftex.def Info: 04_vtw/images/figure_3.jpg used on input line 49.
 (pdftex.def)             Requested size: 225.4804pt x 151.00357pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[30 <./04_vtw/images/figure_1.png (PNG copy)> <./04_vtw/images/separation_map.p
-ng>]
-Overfull \hbox (39.02264pt too wide) in paragraph at lines 45--46
+
+Overfull \hbox (39.02264pt too wide) in paragraph at lines 58--59
 \OT1/cmr/m/n/10 The 3D vir-tual en-vi-ron-ment com-po-nent of the Pan-golin sys
 -tem was im-ple-mented us-ing the Sec-ond Life/OpenSimulator
  []
 
-[31 <./04_vtw/images/figure_3.jpg>]
+[30 <./04_vtw/images/figure_1.png (PNG copy)>] [31 <./04_vtw/images/separation_
+map.png> <./04_vtw/images/figure_3.jpg>]
 <04_vtw/images/server.jpg, id=158, 903.375pt x 600.2425pt>
 File: 04_vtw/images/server.jpg Graphic file (type jpg)
 
 <use 04_vtw/images/server.jpg>
-Package pdftex.def Info: 04_vtw/images/server.jpg used on input line 55.
+Package pdftex.def Info: 04_vtw/images/server.jpg used on input line 68.
 (pdftex.def)             Requested size: 225.4804pt x 149.81296pt.
  [32 <./04_vtw/images/server.jpg>] [33]
 Missing character: There is no â in font cmr10!
@@ -528,14 +531,14 @@ Missing character: There is no ƒ in font cmr10!
 File: 04_vtw/images/figure_8.jpg Graphic file (type jpg)
 
 <use 04_vtw/images/figure_8.jpg>
-Package pdftex.def Info: 04_vtw/images/figure_8.jpg used on input line 90.
+Package pdftex.def Info: 04_vtw/images/figure_8.jpg used on input line 103.
 (pdftex.def)             Requested size: 225.4804pt x 236.24352pt.
 
 <04_vtw/images/tablet_back.jpg, id=167, 1027.84pt x 578.16pt>
 File: 04_vtw/images/tablet_back.jpg Graphic file (type jpg)
 
 <use 04_vtw/images/tablet_back.jpg>
-Package pdftex.def Info: 04_vtw/images/tablet_back.jpg used on input line 97.
+Package pdftex.def Info: 04_vtw/images/tablet_back.jpg used on input line 110.
 (pdftex.def)             Requested size: 225.4804pt x 126.82506pt.
 
 
@@ -546,21 +549,21 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: 04_vtw/images/figure_9.png Graphic file (type png)
 
 <use 04_vtw/images/figure_9.png>
-Package pdftex.def Info: 04_vtw/images/figure_9.png used on input line 110.
+Package pdftex.def Info: 04_vtw/images/figure_9.png used on input line 123.
 (pdftex.def)             Requested size: 225.4804pt x 220.33856pt.
  [35 <./04_vtw/images/tablet_back.jpg> <./04_vtw/images/figure_9.png>]
 <04_vtw/images/figure_4.png, id=176, 903.375pt x 515.9275pt>
 File: 04_vtw/images/figure_4.png Graphic file (type png)
 
 <use 04_vtw/images/figure_4.png>
-Package pdftex.def Info: 04_vtw/images/figure_4.png used on input line 127.
+Package pdftex.def Info: 04_vtw/images/figure_4.png used on input line 140.
 (pdftex.def)             Requested size: 225.4804pt x 128.769pt.
  [36 <./04_vtw/images/figure_4.png>]
 <04_vtw/images/figure_5.png, id=181, 903.375pt x 515.9275pt>
 File: 04_vtw/images/figure_5.png Graphic file (type png)
 
 <use 04_vtw/images/figure_5.png>
-Package pdftex.def Info: 04_vtw/images/figure_5.png used on input line 140.
+Package pdftex.def Info: 04_vtw/images/figure_5.png used on input line 153.
 (pdftex.def)             Requested size: 225.4804pt x 128.769pt.
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
@@ -570,7 +573,7 @@ Missing character: There is no ƒ in font cmr10!
 File: 04_vtw/images/figure_6.png Graphic file (type png)
 
 <use 04_vtw/images/figure_6.png>
-Package pdftex.def Info: 04_vtw/images/figure_6.png used on input line 149.
+Package pdftex.def Info: 04_vtw/images/figure_6.png used on input line 162.
 (pdftex.def)             Requested size: 225.4804pt x 128.769pt.
 
 
@@ -581,7 +584,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: 04_vtw/images/figure_7.png Graphic file (type png)
 
 <use 04_vtw/images/figure_7.png>
-Package pdftex.def Info: 04_vtw/images/figure_7.png used on input line 160.
+Package pdftex.def Info: 04_vtw/images/figure_7.png used on input line 173.
 (pdftex.def)             Requested size: 225.4804pt x 112.7378pt.
  [38 <./04_vtw/images/figure_6.png> <./04_vtw/images/figure_7.png>]) [39]
  5.
@@ -1157,7 +1160,7 @@ Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
 
 [95]
-Underfull \hbox (badness 1577) in paragraph at lines 452--457
+Underfull \hbox (badness 1577) in paragraph at lines 441--446
 []\OT1/cmr/m/n/10 George Pa-pa-gian-nakis, Se-bastien Scherten-leib, Michal Pon
 -der, Marl^^Rene Ar^^Sevalo-Poizat, Na-dia
  []
@@ -1171,13 +1174,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2959 strings out of 493108
- 56443 string characters out of 6140724
- 202889 words of memory out of 5000000
- 6279 multiletter control sequences out of 15000+600000
+ 2953 strings out of 493108
+ 56308 string characters out of 6140724
+ 202857 words of memory out of 5000000
+ 6273 multiletter control sequences out of 15000+600000
  10282 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,28p,1914b,567s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,8n,28p,1824b,563s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -1191,7 +1194,7 @@ r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmtt10.pfb>
-Output written on thesis.pdf (99 pages, 20770229 bytes).
+Output written on thesis.pdf (99 pages, 20770367 bytes).
 PDF statistics:
  477 PDF objects out of 1000 (max. 8388607)
  266 compressed objects within 3 object streams
