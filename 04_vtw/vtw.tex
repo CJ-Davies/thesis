@@ -1,7 +1,13 @@
 This chapter presents the development of a preliminary PR system that combined a tablet computer, GPS, accelerometer \& magnetometer hardware, with an OpenSim based virtual environment to allow exploration of the real world ruins of a 14th century cathedral with a complete, atmospheric virtual reconstruction of it as it stood in its prime. Cultural heritage is introduced as an ideal area for which PR systems can be applied to beneficial effect, while the accuracy of GPS tracking emerged as a constraint on this style of interaction.
 
+\section{Digital/Virtual Heritage}
+The field of cultural heritage has seen widespread applications of both AR~\cite{Kim2009, Wojciechowski2004, Okura2006, Magnenat-Thalmann2008a, vlahakis:archeoguide, Okura2011, Seo2010, benko:collaborative, Papagiannakis2004, Magnenat-Thalmann7, Papagiannakis2005, Papagiannakis2007, Papagiannakis2009, Taketomi2011, walczak:applications} \& VR~\cite{deamicis:gamebased, roussou:photorealism, cabral:x3dexperience, Roussou2002, Christou2006, willmott:largecomplex, Tzortzaki2002}. AR has been used to add artefacts, actors \& reconstructed architecture to views of present day sites that bear traces of their original status, whilst VR has been used to host more complete reconstructions of entire buildings \& settlements for interaction via screen, HMD \& CAVE, including where the present day site bears no evidence of the past status or is inaccessible for some reason (due to latter development, change in landscape, etc.).
 
-\section{Hardware Platform (smartphone/tablet)}
+In situations where VR content exists in cultural heritage contexts, it is experienced from a static position that causes both spatial \& temporal separation from the RW location that it relates to; in order to perform comparisons between RW \& VR content, users must interact with one \& \textit{subsequently} the other. A mobile XR platform will allow VR content in cultural heritage contexts to be experienced in tandem with the real site (where accessible), combining the immediate juxtaposition of real \& virtual content of AR with the immersive \& atmospheric qualities of HMD based VR, all without requiring alterations to the VR content (for example to make it compatible with an AR framework).
+
+%fixed/anchored AR interface~\cite{Weng2012}
+
+\section{Platform (smartphone/tablet, + Second Life/OpenSim)}
 Widespread adoption of smartphones \& tablets in recent years has enabled people to multiplex their physical reality, where they engage in face-to-face social interaction, with Web-based social networks and apps\cite{Accenture2012}. Whilst such PolySocial situations are now commonplace with such 2D apps \& Web content, using smartphones \& tablets to multiplex real \& virtual environments in a parallel reality setting has not yet been attempted.
 
 The suitability of smartphones \& tablets for location aware browsing of virtual content has been leveraged by AR apps, however their suitability for browsing a complete virtual environment parallel to the user's real location has not been thoroughly explored.
@@ -11,6 +17,30 @@ This chapter presents a preliminary hardware \& software platform that uses a ta
 Motivation for this platform stemmed from a desire to leverage an existing virtual model of a 14th century cathedral in parallel with the present day ruins of the cathedral in the real world.
 
 To build upon existing work within the Open Virtual Worlds research group, to allow our existing content to be accessed in a new \& exciting manner that also adds to its experience \& understanding.
+
+Talk about history of Second Life/OpenSim in academia/research, including original cross reality research.
+
+\subsection{How this platform fits into the theory of chapter 3}
+In particular, how with VTW we have a small `window' into the virtual, which is then surrounded by the real. So unlike Mirrorshades which is about distributing attention by time (one environment, then the other), VTW is about distributing attention by gaze/place (different parts of a single view/combined environment).
+
+\section{System design diagram}
+
+\section{Implementation}
+
+\begin{itemize}
+	\item Arduino + `accelerometer' as joystick for Second Life
+	\item OpenSim RegionModules \& GPS (server side positional tracking/control)
+	\item Arduino + HMC6343 + u-blox MAX-6
+	\item Control Second Life with GPS, accelerometer \& magnetometer - in particular cover the structure of the Second Life client \& where/how the modifications were effected \& how the menu items are inserted (separate blog post) (even mention silly glh-linear fixes?) And Arduino code/structure/HEX/etc. I did lots of stuff here!
+\end{itemize}
+
+\section{System implementation diagram}
+
+\section{Performance}
+
+\subsection{GPS Accuracy \& impact/implications}
+
+\subsection{Orientation/camera accuracy/speed}
 
 \section{Introduction}
 The pervasive provision of these devices provides a new mechanism for people to take physical space for granted, to cerebrally occupy a Web-based location whilst their bodies are simultaneously established in a physical location~\cite{Applin2011}.
