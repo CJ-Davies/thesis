@@ -1,31 +1,66 @@
-This chapter presents the development of a preliminary PR system that combined a tablet computer, GPS, accelerometer \& magnetometer hardware, with an OpenSim based virtual environment to allow exploration of the real world ruins of a 14th century cathedral with a complete, atmospheric virtual reconstruction of it as it stood in its prime. Cultural heritage is introduced as an ideal area for which PR systems can be applied to beneficial effect, while the accuracy of GPS tracking emerged as a constraint on this style of interaction.
+\begin{quote}
+	\textit{``The sinister thing about a simstim construct, really, was that it carried the suggestion that any environment might be unreal, that the windows of the shopfronts she passed now with Andrea might be figments.''}
+\end{quote}
+\hfill \textit{Count Zero, William Gibson}
+\\
+\\
+\\
 
-\section{Digital/Virtual Heritage}
+%=========================================================================================================
+%=========================================================================================================
+
+This chapter presents the development of a preliminary PR system that combined a tablet computer, GPS, accelerometer \& magnetometer, with an OpenSim based virtual environment to allow exploration of the real world ruins of a 14th century cathedral with a complete, atmospheric virtual reconstruction of it as it stood in its prime. Cultural heritage is introduced as an ideal area for which PR systems can be applied to beneficial effect, while the accuracy of GPS tracking emerged as a constraint on this style of interaction.
+
+%=========================================================================================================
+
+\section{Digital Heritage}
+
+There is a long history of the application of alternate reality technologies to aid in the investigation \& understanding of the past. In particular, virtual reality has been used to allow people to immerse themselves in reconstructions of places that no longer exist \& augmented reality has been used to introduce pieces of the past atop a view of what remains in the real world today.
+
+\textbf{Citation for the terms `digital heritage' \& 'virtual heritage'.}
+
+\textbf{Put some pictures in here, maybe one of VR applied to heritage \& one of AR applied to heritage.}
+
 The field of cultural heritage has seen widespread applications of both AR~\cite{Kim2009, Wojciechowski2004, Okura2006, Magnenat-Thalmann2008a, vlahakis:archeoguide, Okura2011, Seo2010, benko:collaborative, Papagiannakis2004, Magnenat-Thalmann7, Papagiannakis2005, Papagiannakis2007, Papagiannakis2009, Taketomi2011, walczak:applications} \& VR~\cite{deamicis:gamebased, roussou:photorealism, cabral:x3dexperience, Roussou2002, Christou2006, willmott:largecomplex, Tzortzaki2002}. AR has been used to add artefacts, actors \& reconstructed architecture to views of present day sites that bear traces of their original status, whilst VR has been used to host more complete reconstructions of entire buildings \& settlements for interaction via screen, HMD \& CAVE, including where the present day site bears no evidence of the past status or is inaccessible for some reason (due to latter development, change in landscape, etc.).
 
 In situations where VR content exists in cultural heritage contexts, it is experienced from a static position that causes both spatial \& temporal separation from the RW location that it relates to; in order to perform comparisons between RW \& VR content, users must interact with one \& \textit{subsequently} the other. A mobile XR platform will allow VR content in cultural heritage contexts to be experienced in tandem with the real site (where accessible), combining the immediate juxtaposition of real \& virtual content of AR with the immersive \& atmospheric qualities of HMD based VR, all without requiring alterations to the VR content (for example to make it compatible with an AR framework).
 
 %fixed/anchored AR interface~\cite{Weng2012}
 
-\section{Platform (smartphone/tablet, + Second Life/OpenSim)}
-Widespread adoption of smartphones \& tablets in recent years has enabled people to multiplex their physical reality, where they engage in face-to-face social interaction, with Web-based social networks and apps\cite{Accenture2012}. Whilst such PolySocial situations are now commonplace with such 2D apps \& Web content, using smartphones \& tablets to multiplex real \& virtual environments in a parallel reality setting has not yet been attempted.
-
-The suitability of smartphones \& tablets for location aware browsing of virtual content has been leveraged by AR apps, however their suitability for browsing a complete virtual environment parallel to the user's real location has not been thoroughly explored.
-
-This chapter presents a preliminary hardware \& software platform that uses a tablet computer \& a modified Second Life viewer to provide a mobile interface to a virtual environment parallel to an outdoor real world location.
+\subsection{Digital Heritage at the University of St Andrews}
 
 Motivation for this platform stemmed from a desire to leverage an existing virtual model of a 14th century cathedral in parallel with the present day ruins of the cathedral in the real world.
 
 To build upon existing work within the Open Virtual Worlds research group, to allow our existing content to be accessed in a new \& exciting manner that also adds to its experience \& understanding.
 
+
+
+The capacity of 3D environments to provide extensible collaborative platforms for the reconstruction of cultural heritage sites and the potential of such reconstructions to promote understanding of and engagement with cultural heritage content both in public and classroom settings has been demonstrated~\cite{Allison2012,Kennedy2012}. This research tested various deployment scenarios, leveraging different control methodologies (traditional keyboard and mouse, Xbox controllers and gesture recognition via Kinect) and display options (regular 24'' desktop monitors, larger 40'' televisions and still larger 150'' projection) along with voice interaction with actors playing the parts of historical figures. These scenarios support three deployment modes; a network of reconstructions accessible via the Internet as part of the OpenSim hypergrid; portable LAN exhibitions where multiple computers are connected to a server via local network suitable for classroom use; and immersive installations combining projection and Kinect for use in museums and cultural heritage centers. In all these scenarios a recurrent theme has been the relationship between the virtual reconstruction and the physicality of the corresponding physical site. Frequently projects have involved interactions with the reconstruction and subsequent visits and tours of the physical site; however the temporal separation between these activities makes it harder to appreciate the sometimes complex relationships between the two. To overcome this temporal separation of experiencing the virtual and the real it is necessary for the virtual representation to be accessible in tandem at the physical site by overcoming the vacancy problem.
+
+The same pioneering collaborations between computer scientists, educationalists and historians that led to the creation of the St Andrews cathedral reconstruction have also led to the creation of reconstructions of; a 6th Century Spartan Basilica, Virtual Harlem (1921), Linlithgow Palace (1561), Brora Salt Pans (1599), Featherstone Fishing Station (19th century), Eyemouth Fort (1610), an Iron Age Wheel House and Caen Township (1815). These reconstructions provide a platform for interactive historical narratives, a stage for visitors to play upon and engage in both serious (and not so serious) games both alone and with other users, and serve as a focal point for educational investigations into local history and culture [9, 18]. The reconstructions have been widely used in a range of real world educational contexts. In the formal sector they have been a vehicle for investigative research, part of degree accredited university modules and used in both primary and secondary education. They have also been used as the content for interactive museum installations, art installations and community groups. This has involved further collaborations with Education Scotland, Historic Scotland, SCAPE Trust, Timespan cultural center, the Museum of the University of St Andrews (MUSA), Madras College, Linlithgow Palace and Strathkiness Primary School.
+
+
+%=========================================================================================================
+
+\section{Designing a Virtual Time Window}
+
+pervasive provision of these devices 
+
+Widespread adoption of smartphones \& tablets in recent years has enabled people to multiplex their physical reality, where they engage in face-to-face social interaction, with Web-based social networks and apps\cite{Accenture2012}. Whilst such PolySocial situations are now commonplace with such 2D apps \& Web content, using smartphones \& tablets to multiplex real \& virtual environments in a parallel reality setting has not yet been attempted.
+
+The suitability of smartphones \& tablets for location aware browsing of virtual content has been leveraged by AR apps, however their suitability for browsing a complete virtual environment parallel to the user's real location has not been thoroughly explored.
+
+\subsection{Second Life/OpenSim}
+
 Talk about history of Second Life/OpenSim in academia/research, including original cross reality research.
 
-\subsection{How this platform fits into the theory of chapter 3}
-In particular, how with VTW we have a small `window' into the virtual, which is then surrounded by the real. So unlike Mirrorshades which is about distributing attention by time (one environment, then the other), VTW is about distributing attention by gaze/place (different parts of a single view/combined environment).
+\subsection{VTW within PR}
 
-\section{System design diagram}
+How with VTW we have a small `window' into the virtual, which is then surrounded by the real. So unlike Mirrorshades which is about distributing attention by time (one environment, then the other), VTW is about distributing attention by gaze/place (different parts of a single view/combined environment).
 
-\section{Implementation}
+%=========================================================================================================
+
+\section{Building a Virtual Time Window}
 
 \begin{itemize}
 	\item Arduino + `accelerometer' as joystick for Second Life
@@ -34,27 +69,30 @@ In particular, how with VTW we have a small `window' into the virtual, which is 
 	\item Control Second Life with GPS, accelerometer \& magnetometer - in particular cover the structure of the Second Life client \& where/how the modifications were effected \& how the menu items are inserted (separate blog post) (even mention silly glh-linear fixes?) And Arduino code/structure/HEX/etc. I did lots of stuff here!
 \end{itemize}
 
-\section{System implementation diagram}
+%=========================================================================================================
 
-\section{Performance}
+\section{Using the Virtual Time Window}
 
-\subsection{GPS Accuracy \& impact/implications}
 
-\subsection{Orientation/camera accuracy/speed}
+%=========================================================================================================
+%=========================================================================================================
 
-\section{Introduction}
-The pervasive provision of these devices provides a new mechanism for people to take physical space for granted, to cerebrally occupy a Web-based location whilst their bodies are simultaneously established in a physical location~\cite{Applin2011}.
 
-With the majority of players of popular Massively Multiplayer Online games (MMOs) wishing they could spend more time playing, over a fifth even wanting to spend all of their time in game~\cite{Castronova2006}, and with social roles and the community aspect constituting key aspects of these game's popularity~\cite{Castronova2006, Bartle2004}, exploring approaches for achieving 3D PoSR is prudent as demand for access to 3D social environments will only increase as 3D Web technologies further develop and more increasingly appeal to general social Web users and to educators in addition to gamers.
 
-The capacity of 3D environments to provide extensible collaborative platforms for the reconstruction of cultural heritage sites and the potential of such reconstructions to promote understanding of and engagement with cultural heritage content both in public and classroom settings has been demonstrated~\cite{Allison2012,Kennedy2012}. This research tested various deployment scenarios, leveraging different control methodologies (traditional keyboard and mouse, Xbox controllers and gesture recognition via Kinect) and display options (regular 24'' desktop monitors, larger 40'' televisions and still larger 150'' projection) along with voice interaction with actors playing the parts of historical figures. These scenarios support three deployment modes; a network of reconstructions accessible via the Internet as part of the OpenSim hypergrid; portable LAN exhibitions where multiple computers are connected to a server via local network suitable for classroom use; and immersive installations combining projection and Kinect for use in museums and cultural heritage centers. In all these scenarios a recurrent theme has been the relationship between the virtual reconstruction and the physicality of the corresponding physical site. Frequently projects have involved interactions with the reconstruction and subsequent visits and tours of the physical site; however the temporal separation between these activities makes it harder to appreciate the sometimes complex relationships between the two. To overcome this temporal separation of experiencing the virtual and the real it is necessary for the virtual representation to be accessible in tandem at the physical site by overcoming the vacancy problem.
 
-The cross reality concept~\cite{Lifton2007a, Paradiso2009} was proposed as an approach to address the vacancy problem and describes the mixed reality situation that arises from the combination of physical reality with a complete~\cite{lifton:merging} 3D virtual environment. Previous cross reality experiments did not address the explorative nor social elements of the paradigm as they focused on static locations at which the two environments were linked within closed lab surroundings~\cite{Applin2011}. The project described in this paper addressed these omissions with the Pangolin virtual world viewer~\cite{Daviesa} that uses a tablet computer with location and orientation sensors to provide users with a mobile cross reality interface allowing them to interact with 3D reconstructions of cultural heritage sites whilst simultaneously exploring the corresponding physical site, providing a sense of presence at both the physical site and in the reconstruction. The primary difference between this style of interaction and the more widely explored Augmented Reality (AR) concept is that cross reality concerns systems in which the virtual content constitutes a complete environment, as opposed to the sparse and discrete objects that AR positions upon a view of the real environment. This allows the virtual environment of cross reality systems to be accessed in absence of the real environment and allows for more encompassing graphical content.
 
-\section{Scope}
-The amount that the real and virtual environments that constitute a cross reality system spatially relate to each other is an important design decision which largely prescribes the style of interaction of the system as a whole. If the two environments have a high degree of spatial equivalence, that is to say that even if their visual appearances differ substantially that their fundamental layout and dimensions are the same such that navigating freely in one will never result in a collision with an object in the other (an allusion to the `mirror world' concept~\cite{Gelernter1993, Bar-Zeev2007, Roush2007}), then monitoring a user's movements within the real environment provides a method for controlling their avatar within the virtual environment without the need for concious manual control. This approach substantially lightens the cognitive load of maintaining a presence in a virtual environment, which is one of the main contributors to the vacancy problem.
 
-This paper presents a cross reality project in which there is a high degree of spatial equivalence between the real and virtual environments, as it deals with bringing together virtual reconstructions of cultural heritage sites with their corresponding real locations. The backdrop for many of the experiments is the impressive ruins of the St Andrews cathedral, while the virtual environment is a `distorted'~\cite{lifton:merging} OpenSim simulation of the same location that presents a historically accurate reconstruction of the cathedral as it would have stood at the peak of its former glory~\cite{Kennedy2012, OpenVirtualWorldsgroupSchoolofComputerScience} (see figure \ref{cathedral_picture}). This is a large reconstruction, over 400m by 600m, of a complex multi-storey building and thus represents a challenge for a mobile device to render and consequently is considered a good platform for testing.
+
+
+
+
+
+The project described in this paper addressed these omissions with the Pangolin virtual world viewer~\cite{Daviesa} that uses a tablet computer with location and orientation sensors to provide users with a mobile cross reality interface allowing them to interact with 3D reconstructions of cultural heritage sites whilst simultaneously exploring the corresponding physical site, providing a sense of presence at both the physical site and in the reconstruction.
+
+
+Tracking user position, instead of requiring them to manually control/update their position. substantially lightens the cognitive load of maintaining a presence in a virtual environment, which is one of the main contributors to the vacancy problem.
+
+This paper presents a cross reality project in which there is a high degree of spatial equivalence between the real and virtual environments, as it deals with bringing together virtual reconstructions of cultural heritage sites with their corresponding real locations. The backdrop for many of the experiments is the impressive ruins of the St Andrews cathedral, while the virtual environment is a `distorted'~\cite{lifton:merging} OpenSim simulation of the same location that presents a historically accurate reconstruction of the cathedral as it would have stood at the peak of its former glory~\cite{Kennedy2012, OpenVirtualWorldsgroupSchoolofComputerScience} (see figure \ref{cathedral_picture}).
 
 \begin{figure}[h]
 \centering
@@ -63,7 +101,7 @@ This paper presents a cross reality project in which there is a high degree of s
 \label{cathedral_picture}
 \end{figure}
 
-The same pioneering collaborations between computer scientists, educationalists and historians that led to the creation of the St Andrews cathedral reconstruction have also led to the creation of reconstructions of; a 6th Century Spartan Basilica, Virtual Harlem (1921), Linlithgow Palace (1561), Brora Salt Pans (1599), Featherstone Fishing Station (19th century), Eyemouth Fort (1610), an Iron Age Wheel House and Caen Township (1815). These reconstructions provide a platform for interactive historical narratives, a stage for visitors to play upon and engage in both serious (and not so serious) games both alone and with other users, and serve as a focal point for educational investigations into local history and culture [9, 18]. The reconstructions have been widely used in a range of real world educational contexts. In the formal sector they have been a vehicle for investigative research, part of degree accredited university modules and used in both primary and secondary education. They have also been used as the content for interactive museum installations, art installations and community groups. This has involved further collaborations with Education Scotland, Historic Scotland, SCAPE Trust, Timespan cultural center, the Museum of the University of St Andrews (MUSA), Madras College, Linlithgow Palace and Strathkiness Primary School.
+
 
 The project described in this paper furthers this previous work by developing a mobile interface to allow students to explore both a physical site and its virtual reconstruction in tandem, rather than having to explore the reconstruction from a computer in the classroom and trying to relate what they had seen to a visit to the physical site at a later date. Figure \ref{separation_map} shows how small the spatial separation between the classroom and the physical site was during a session with students at St Andrews' Madras College. This project, introduced in~\cite{Davies2012}, developed a modified version of the Second Life viewer called Pangolin, which through use of sensors allows movement of the avatar and camera to be implicitly controlled by sensing the physical position and orientation of the tablet computer which the user carries and upon which the viewer executes. Figure \ref{pangolin_in_action} depicts the system in use at the St Andrews cathedral.
 

@@ -18,45 +18,45 @@ Warning--can't use both author and editor fields in Bartle2004
 Warning--can't use both volume and number fields in Bartle2004
 Warning--empty publisher in Gelernter1993
 Warning--empty note in IndoorAtlasLtd.2012
-You've used 94 entries,
+You've used 93 entries,
             1791 wiz_defined-function locations,
-            991 strings with 19294 characters,
-and the built_in function-call counts, 20435 in all, are:
-= -- 1811
-> -- 810
+            986 strings with 19240 characters,
+and the built_in function-call counts, 20289 in all, are:
+= -- 1799
+> -- 806
 < -- 28
-+ -- 316
-- -- 222
-* -- 1151
-:= -- 3032
-add.period$ -- 274
-call.type$ -- 94
++ -- 314
+- -- 221
+* -- 1148
+:= -- 3009
+add.period$ -- 271
+call.type$ -- 93
 change.case$ -- 86
 chr.to.int$ -- 0
-cite$ -- 109
-duplicate$ -- 1006
-empty$ -- 2192
-format.name$ -- 222
-if$ -- 4745
+cite$ -- 108
+duplicate$ -- 996
+empty$ -- 2173
+format.name$ -- 221
+if$ -- 4710
 int.to.chr$ -- 0
-int.to.str$ -- 94
-missing$ -- 70
-newline$ -- 443
-num.names$ -- 103
-pop$ -- 417
+int.to.str$ -- 93
+missing$ -- 68
+newline$ -- 438
+num.names$ -- 102
+pop$ -- 410
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 573
+skip$ -- 571
 stack$ -- 0
 substring$ -- 1041
-swap$ -- 297
+swap$ -- 296
 text.length$ -- 28
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 15
-while$ -- 196
-width$ -- 96
-write$ -- 963
+while$ -- 195
+width$ -- 95
+write$ -- 953
 (There were 15 warnings)
