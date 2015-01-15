@@ -13,15 +13,451 @@ This chapter presents the development of a preliminary PR system that combined a
 
 %=========================================================================================================
 
-\section{Digital Heritage}
+\section{Virtual Heritage}
 
-There is a long history of the application of alternate reality technologies to aid in the investigation \& understanding of the past. In particular, virtual reality has been used to allow people to immerse themselves in reconstructions of places that no longer exist \& augmented reality has been used to introduce pieces of the past atop a view of what remains in the real world today.
+Alternate reality technologies have a long \& fruitful history of applications to aid in the investigation, understanding \& dissemination of information pertaining to our past.
+
+http://en.wikipedia.org/wiki/Virtual_heritage
+
+Virtual heritage and cultural heritage have independent meanings: cultural heritage refers to sites, monuments, buildings and objects "with historical, aesthetic, archaeological, scientific, ethnological or anthropological value",[2] whereas virtual heritage refers to instances of these within a technological domain, usually involving computer visualization of artefacts or Virtual Reality environments.
 
 \textbf{Citation for the terms `digital heritage' \& 'virtual heritage'.}
 
 \textbf{Put some pictures in here, maybe one of VR applied to heritage \& one of AR applied to heritage.}
 
-The field of cultural heritage has seen widespread applications of both AR~\cite{Kim2009, Wojciechowski2004, Okura2006, Magnenat-Thalmann2008a, vlahakis:archeoguide, Okura2011, Seo2010, benko:collaborative, Papagiannakis2004, Magnenat-Thalmann7, Papagiannakis2005, Papagiannakis2007, Papagiannakis2009, Taketomi2011, walczak:applications} \& VR~\cite{deamicis:gamebased, roussou:photorealism, cabral:x3dexperience, Roussou2002, Christou2006, willmott:largecomplex, Tzortzaki2002}. AR has been used to add artefacts, actors \& reconstructed architecture to views of present day sites that bear traces of their original status, whilst VR has been used to host more complete reconstructions of entire buildings \& settlements for interaction via screen, HMD \& CAVE, including where the present day site bears no evidence of the past status or is inaccessible for some reason (due to latter development, change in landscape, etc.).
+%=========================================================================================================
+% AR citations
+%=========================================================================================================
+
+Alternate reality applications to cultural heritage are particularly useful for young people...
+
+ardito:combining
+
+Combining Multimedia Resources
+for an Engaging Experience of Cultural Heritage
+
+Introduces the CHeR model, for creating, converting into digital form & maintaining the
+multitude of data related to cultural heritage sites. Observes that cultural heritage sites
+often arouse little involvement in young people, particularly when presented with the ruins
+of ancient settlements whose current appearance no longer reflects their original aspect and purpose.
+
+%=======
+
+Augmented reality has seen frequent deployment to cultural heritage sites, where it
+
+%=======
+
+Kim2009
+
+Sajeongjeon and Gangnyeongjeon of Gyeongbokgung, which is the representative of the cultural heritages in Korea.
+
+The proposed system uses visual information of a target scene without any additional devices such as sensors and obtains the camera pose by tracking a rectangular structure where its corners are more robust features
+
+Rendered 3D characters atop the scene
+
+===ALSO=== (same people)
+
+Seo2010
+
+A tracking framework for augmented reality tours on cultural heritage sites
+
+Visual tracking for augmented reality tours is still challenging for
+cultural heritage sites because of the great variation of tracking tar-
+gets and environments on such sites. Even at today’s state of the
+art, it is almost impossible to apply just one tracking method to
+all the various environments with any hope of success. This paper
+presents a tracking framework to overcome this problem. It consists
+of different tracking flows, each efficiently using robust visual cues
+of the target scene. Analysis of the tracking environment enables
+more practical tracking at the sites. The reliability of the tracking
+framework is verified through on-site demonstrations at Gyeong-
+bokgung, the most symbolic cultural heritage site in Korea.
+
+%=======
+
+Wojciechowski2004
+
+A system that allows museums to build and manage Virtual and
+Augmented Reality exhibitions based on 3D models of artifacts is
+presented. Dynamic content creation based on pre-designed
+visualization templates allows content designers to create virtual
+exhibitions very efficiently. Virtual Reality exhibitions can be
+presented both inside museums, e.g. on touch-screen displays
+installed inside galleries and, at the same time, on the Internet.
+Additionally, the presentation based on Augmented Reality
+technologies allows museum visitors to interact with the content
+in an intuitive and exciting manner.
+
+===AND=== (same people)
+
+walczak:applications
+
+Cultural heritage applications of virtual reality
+
+There are a number of ongoing projects that use VR/Web3D technologies in the domain of cultural heritage. Solutions are being
+developed for digitization and interactive visualization of cultural heritage objects ranging from small museum artifacts to entire
+cultural heritage cities. The aim is to provide technology that would aid the preservation and protection of these objects, while at same
+time making them widely available to scientists, archaeologists, curators, historians, and citizens for their enjoyment and learning.
+To efficiently use the VR/Web3D technology in cultural heritage applications the problems of automatic or semi-automatic creation of
+virtual representations of cultural objects, efficient storage, management and retrieval of cultural object collections, and advanced
+interactive visualization of virtual representations of cultural objects must be addressed.
+The goal of this workshop is to bring together researchers and practitioners in the area of cultural heritage applications of virtual
+reality and create a forum for presenting their work and exchanging research ideas
+
+%=======
+
+Okura2006 \& Okura2011
+
+This study developed a virtual tourism system “beyond time and
+space” using augmented telepresence. Telepresence is a technique
+that provides a view of a remote site using immersive displays. In
+this paper, augmented telepresence (AT) refers to a kind of telepresence
+that provides a user with both a view of a remote site and
+related information using augmented reality (AR) techniques.
+The 1300th anniversary of Nara Heijo-kyo capital, an ancient capital
+in Japan, was last year. The proposed system superimposes
+CG of the Heijo palace which was built 1300 years ago “beyond
+time” on recorded videos captured from an unmanned airship at
+the remote site “beyond space.” Related AT works using recorded
+videos (e.g. [Ghadirian and Bishop 2008]) cannot resolve geometric
+and photometric registration problems, and/or they do not provide
+for immersive telepresence. This study handles geometric and
+photometric registration problems for automatic movie-quality registration.
+In addition, the proposed system uses omnidirectional
+videos captured by an omnidirectional multi camera system (OMS)
+equipped on an airship to increase the immersiveness of telepresence
+by providing looking-around behavior for the user. To render
+augmented scenes, we use image-based-lighting (IBL) and global
+illumination (GI) techniques with an omnidirectional environmental
+map. Invisible areas of the environmental map including areas
+which the OMS cannot capture and areas which the ai
+
+%=======
+
+Magnenat-Thalmann2008a
+
+Virtual humans are used as interfaces as well as real-time augmentations (three-dimensional computer-generated superimpositions) in real environments, as experienced by users though specialized equipment for enhanced mobility (e.g. ultra mobile PCs and video see-through glasses).
+
+%=======
+
+vlahakis:archeoguide
+
+Archeoguide: first results of an augmented reality, mobile computing system in cultural heritage sites
+
+A system that provides on-site help & augmented reality reconstructions of ancient ruins. Claims to have
+applications ranging from archaeological research to education to multimedia publishing and cultural
+tourism.
+        
+Had a laptop, tablet computer & PDA version of the system, used GPS in some to ascertain location, compass
+to ascertain direction & to augment reality accordingly.
+
+This paper presents the ARCHEOGUIDE project
+(Augmented Reality-based Cultural Heritage On-site
+GUIDE). ARCHEOGUIDE is an IST project, funded by
+the EU, aiming at providing a personalized electronic
+guide and tour assistant to cultural site visitors. The
+system provides on-site help and Augmented Reality
+reconstructions of ancient ruins, based on user’s
+position and orientation in the cultural site, and real-
+time image rendering. It incorporates a multimedia
+database of cultural material for on-line access to
+cultural data, virtual visits, and restoration information.
+It uses multi-modal user interfaces and personalizes the
+flow of information to its user’s profile in order to cater
+for both professional and recreational users, and for
+applications ranging from archaeological research, to
+education, multimedia publishing, and cultural tourism.
+This paper presents the ARCHEOGUIDE system and
+the experiences gained from the evaluation of an initial
+prototype by representative user groups at the
+archeological site of Olympia, Greece.
+
+%=======
+
+benko:collaborative
+
+Collaborative Mixed Reality Visualization of an Archaeological Excavation
+
+We present VITA (Visual Interaction Tool for Archaeology),
+an experimental collaborative mixed reality system
+for offsite visualization of an archaeological dig. Our
+system allows multiple users to visualize the dig site in a
+mixed reality environment in which tracked, see-through,
+head-worn displays are combined with a multi-user,
+multi-touch, projected table surface, a large screen display,
+and tracked hand-held displays. We focus on augmenting
+existing archaeological analysis methods with
+new ways to organize, visualize, and combine the standard
+2D information available from an excavation (drawings,
+pictures, and notes) with textured, laser rangescanned
+3D models of objects and the site itself. Users
+can combine speech, touch, and 3D hand gestures to interact
+multimodally with the environment. Preliminary
+user tests were conducted with archaeology researchers
+and students, and their feedback is presented here. 
+
+%=======
+
+Magnenat-Thalmann7
+
+Real Time Animation and Illumination in Ancient Roman Sites
+
+The present article discusses and details the methodological approaches and the reconstruction strategies that have been employed to realize the 3D real-time virtual simulations of the populated ancient sites of Aspendos and Pompeii, respectively visualized using a virtual and an augmented reality setup. More specifically, the two case studies to which we refer concern the VR restitution of the Roman theatre of Aspendos in Turkey, visualized as it was in the 3rd century, and the on-site AR simulation of a digitally restored Thermopolium situated at the archeological site of Pompeii in Italy. In order to enhance both simulated 3D environments, either case study presents the inclusion of real time animated virtual humans, which are re-enacting situations and activities that were typically performed in such sites during ancient times. Furthermore, the implemented modeling and real time illumination strategies of both the textured static 3D models of the sites and the simulated dynamic virtual humans are equally presented and compared.
+
+%=======
+
+\textbf{*** On-site VR is not well represented, especially *mobile* on-site VR, the combination of mobility \& on-site is exclusively(?) employed by AR rather than VR}
+
+%=======
+
+Papagiannakis2004
+
+Real-time virtual humans in AR sites
+
+In this paper we present our work on the LIFEPLUS EU IST project. LIFEPLUS proposes an innovative 3D reconstruction of ancient frescos-paintings through the real-time revival of their fauna and flora, featuring groups of virtual animated characters with artificial life dramaturgical behaviors, in an immersive AR environment. The goal of this project is to push the limits of current Augmented Reality (AR) technologies, exploring the processes of narrative design of fictional spaces where users can experience a high degree of realistic interactive immersion. Based on a captured/real-time video of a real scene, the project is oriented in enhancing these scenes by allowing the possibility to render realistic 3D simulations of virtual characters in real-time. Although initially targeted at Cultural Heritage Centers and Sites, the paradigm is by no means limited to such subjects, but encompasses all types of future Location-Based Entertainments, E- visitor Attractions, e-Worker training schemes as well as on-set visualizations for the TV/movie industry. In this paper we provide an overview of the project and the technologies being employed and finally we present early results based on the ongoing research.
+
+Papagiannakis2005
+
+Mixing virtual and real scenes in the site of ancient Pompeii
+
+This paper presents an innovative 3D reconstruction of ancient fresco paintings through the real-time revival of their fauna and flora, featuring groups of virtual animated characters with artificial-life dramaturgical behaviours in an immersive, fully mobile augmented reality (AR) environment. The main goal is to push the limits of current AR and virtual storytelling technologies and to explore the processes of mixed narrative design of fictional spaces (e.g. fresco paintings) where visitors can experience a high degree of realistic immersion. Based on a captured/real-time video sequence of the real scene in a video-see-through HMD set-up, these scenes are enhanced by the seamless accurate real-time registration and 3D rendering of realistic complete simulations of virtual flora and fauna (virtual humans and plants) in a real-time storytelling scenario-based environment. Thus the visitor of the ancient site is presented with an immersive and innovative multi-sensory interactive trip to the past. Copyright (c) 2005 John Wiley T Sons, Ltd.
+
+Papagiannakis2007
+
+Mobile Augmented Heritage: Enabling Human Life in Ancient Pompeii
+
+We propose a new methodology for real-time mobile mixed reality systems that feature realistic simulations of animated virtual human actors (clothes, body, skin, face) who augment real environments and re-enact staged storytelling dramas. Although ini- tially targeted at Cultural Heritage Sites, the paradigm is by no means limited to such subjects. The abandonment of traditional concepts of static cultural artifacts or rigid geometrical and 2D textual augmentations with 3D, interactive, augmented histori- cal character-based event representations in a mobile and wearable setup, is the main contribution of the described work as well as the proposed extensions to AR Enabling technologies: a VR/AR character simulation kernel framework with character to object interaction, a markerless camera tracker specialized for non-invasive geometrical registration on heritage sites and a PRT mixed reality illumination model for more consistent real-virtual real-time rendering. We demonstrate a real-time case study on the actual site of ancient Pompeii. PDF
+
+Papagiannakis2009
+
+Recreating Daily Life in Pompeii
+
+We propose an integrated Mixed Reality methodology for recreating ancient daily life that features realistic simulations of animated virtual human actors (clothes, body, skin, face) who augment real environments and re-enact staged storytelling dramas. We aim to go further from traditional concepts of static cultural artifacts or rigid geometrical and 2D textual augmentations and allow for 3D, interactive, augmented historical character-based event representations in a mobile and wearable setup. This is the main contribution of the described work as well as the proposed extensions to AR Enabling technologies: a VR/AR character simulation kernel framework with real-time, clothed virtual humans that are dynamically superimposed on live camera input, animated and acting based on a predefined, historically correct scenario. We demonstrate such a real-time case study on the actual site of ancient Pompeii.
+
+%=======
+
+Taketomi2011
+
+AR Cultural Heritage Reconstruction Based on Feature Landmark Database Constructed by Using Omnidirectional Range Sensor
+
+This paper describes an application of augmented reality (AR) techniques to virtual cultural heritage reconstruction on the real sites of defunct constructs. To realize AR-based cultural heritage reconstruction, extrinsic camera parameter estimation is required for geometric registration of real and virtual worlds. To estimate extrinsic camera parameters, we use a pre-constructed feature landmark database of the target environment. Conventionally, a feature landmark database has been constructed in a large-scale environment using a structure -from-motion technique for omnidirectional image sequences. However, the accuracy of estimated camera parameters is insufficient for specific applications like AR-based cultural heritage reconstruction, which needs to overlay CG objects at the position close to the user’s viewpoint. This is due to the difficulty in compensation of the appearance change of close landmarks only from the sparse 3-D information obtained by structure-from-motion. In this paper, visual patterns of landmarks are compensated for by considering local shapes obtained by omnidirectional range finder to find corresponding landmarks existing close to the user. By using these landmarks with local shapes, accurate geometric registration is achieved for AR sightseeing in historic sites.
+
+%=========================================================================================================
+% VR citations
+%=========================================================================================================
+
+In particular, virtual reality has been used to allow people to immerse themselves in reconstructions of places that no longer exist \& augmented reality has been used to introduce pieces of the past atop a view of what remains in the real world today.
+
+%=======
+
+deamicis:gamebased
+
+Game based technology to enhance the learning of history and cultural heritage
+
+Abstract only that talks about the use of game technologies to support learning of users
+within cultural heritage sites. Says that the level of realism is ideal to visualise cultural
+heritage if a string focus on the environment's atmosphere & immersion is required, "emphasising
+environmental effects such as fog, sky, water, particles", all of which self-proclaimed virtual
+worlds aren't as good at.
+        
+Uses Unity3D! Mentions that it can produce web browser based applications as well as standalone
+ones, has a simple authoring interface & "exploits the latest graphical hardware by making extensive
+use of shaders to deliver high quality graphics".
+
+\textbf{*** Major good quote for VR (\& thus PR) vs AR!!!}
+
+%=======
+
+roussou:photorealism
+
+Photorealism and Non-Photorealism
+in Virtual Heritage Representation
+
+The area of virtual heritage has long been concentrated on generating digital reconstructions of historical or
+archaeological artefacts and sites with enough fidelity to be truly accurate representations of their real-world
+counterparts. In some cases, the advancement of tools and techniques for achieving greater visual realism has
+distracted from the development of other directions that enhance a virtual experience, such as interactivity, sound
+or touch. Recent trends in the area of non-photorealistic rendering shift focus to the development of more “believable”
+environments, while maintaining the accuracy and validity of the visualised data, which is significant for
+archaeological research. In this paper we argue that it is important to enhance the perception of realism, achieved
+both through photorealistic and non-photorealistic visualisation approaches, with interactivity. This is illustrated
+by two example projects which develop prototype virtual environments created for specialists as well as novice
+users.
+
+\textbf{***Definition of virtual heritage} - "Virtual heritage, broadly defined, involves the synthesis, conservation,
+reproduction, representation, digital reprocessing, and display of cultural evidence with the use of
+advanced imaging technology."
+        
+"...virtual heritage has long been concentrated on generating digital reconstructions of historical or
+archaeological artefacts and sites with enough fidelity to be truly accurate representations of their real
+world counterparts."
+        
+Contrasts between photorealistic & non-photorealistic computer graphics and that for some users the realism
+isn't the most important factor, but rather how believeable & convincing it is, regardless if the imagery
+emulates the physical properties of the real world or not. More 'artistic' means of expression can that do
+not necessarily hold true to a photographic view of a site can nonetheless be important to a user's understanding.
+        
+"In virtual heritage representation, architectural walkthroughs and picture-perfect simulations of objects
+have defined a practice where photorealism is considered as perhaps the most important measure of a
+successful representation."
+        
+But...
+        
+"...the emphasis on achieving a high degree of realism runs the risk of limiting VR reconstruction to the
+creation of historically accurate yet static worlds that leave little flexibility for interpretive and/or
+educational use."
+        
+So advanced realistic modelling techniques are good for accuracy & authenticity, but non-photorealistic methods
+can provide appropriate tools for more flexible uses in virtual heritage applications. This paper tries to
+combine both photorealism & interactivity into the same virtual reality framework under the CREATE project.
+        
+"...heritage is 'as much about the living and evolving place, people, and environment as it is about any
+single static monument'"
+        
+"In the case of an archaeology scholar who intends to restore the ancient monument, the goal is to offer
+the possibility to try varied reconstruction hypotheses and choose the most plausible."
+
+===AND=== (same people)
+
+Roussou2002
+
+Virtual Heritage : From the Research Lab to the Broad Public
+
+The use of immersive Virtual Reality (
+VR
+) technology accounts almost a decade of research performed exclusively by the academic,military,and industrial research and development communities. However,as
+VR
+technologies mature,research is expanding from themilitary and scientific visualisation realm into more multidisciplinary areas,such as education,archeology,art,culture,and thehumanities. As representative institutions involved in the research and presentation of these fields,museums and cultural heritage centresmay be in a better position to make use of advanced virtual reality technologies and contribute to a broad-based public acceptance of technology as a tool for the study and presentation of the past. Nevertheless,the prohibitive costs and inaccessibility of immersive
+VR
+technologies,coupled with theoretical issues and issues of usability,user training,operation,and maintenance,continue to present  practical drawbacks,especially for the cultural and educational use of 
+VR
+. This paper explores some of these issues through examples of immersive virtual heritage applications for the broad public.
+
+
+\textbf{***Very good introduction to the use of virtual reality in the realm of heritage, lots of useful definitions.}
+        
+"The use of immersive VR technology accounts almost a decade of research" (as of publication in 2000)
+        
+"a tool for the study and presentation of the past"
+        
+"the visualization of abstract concepts and ideas, spaces that are unreachable or no longer exist, or objects
+that must be examined from diverse and unique points of view"
+        
+"heritage refers to the study of human activity not only through the recovery of remains, as is the case
+with archaeology, but also through tradition, art & cultural evidences, narratives, etc."
+        
+"To virtualize heritage means to actualize it digitally, to simulate it using computer graphics technology..."
+        
+Lots more, etc.
+
+%=======
+
+cabral:x3dexperience
+
+An experience using X3D for virtual cultural heritage
+
+CAVE
+
+In this paper we present our experience in using Virtual Reality
+Technologies to accurately reconstruct and further explore ancient
+and historic city buildings. Virtual reality techniques provide a
+powerful set of tools to explore and access the history of a city.
+In order to explore, visualize and hear such history, we divided the
+process in three phases: historical data gathering and analysis; 3D
+reconstruction and modeling; interactive immersive visualization,
+auralization and display. The set of guidelines devised helped to
+put into practice the extensible tools available in VR but not al-
+ways easy to put together by inexperienced users. These guidelines
+also helped the smoothness of our work and helped avoiding prob-
+lems in the subsequent phases. Most importantly, the X3D standard
+provided an environment capable of helping the design and vali-
+dation process as well as the visualization phase. To finalize, we
+present the results achieved and further analyze the extensibility of
+the framework. Although VR tools and techniques are widely avail-
+able at present, there is still a gap between using the tools and re-
+ally taking advantage of VR in historic architectural reconstruction
+so that users might immerse themselves into this world and thus be
+able to consider various scenarios and possibilities that might lead
+to new insightful inspiration. This is an ongoing process that we
+think will increase and help current architectural development.
+
+%=======
+
+Christou2006
+
+A versatile large-scale multimodal VR system for cultural heritage visualization
+
+We describe the development and evaluation of a large-scale
+multimodal virtual reality simulation suitable for the visualization
+of cultural heritage sites and architectural planning. The system is
+demonstrated with a reconstruction of an ancient Greek temple in
+Messene that was created as part of a EU funded cultural heritage
+project (CREATE). The system utilizes a CAVE-like theatre
+consisting of head-tracked user localization, a haptic interface
+with two arms, and 3D sound. The haptic interface was coupled
+with a realistic physics engine allowing users to experience and
+fully appreciate the effort involved in the construction of
+architectural components and their changes through the ages.
+Initial user-based studies were carried out, to evaluate the
+usability and performance of the system. A simple task of
+stacking blocks was used to compare errors and timing in a
+haptics-enabled system with a haptics-disabled system. In
+addition, a qualitative study of the final system took place while
+it was installed in a museum.
+
+Uses a CAVE with a 2-armed haptic interface. Applicability of haptic interfaces for cross
+reality?
+        
+Useful quote for the shortcomings of self-proclaimed virtual worlds - "Such environments suffer
+either from a lack of realism or a low degree of interactivity, due to technological and
+methodological constraints.".
+
+%=======
+
+willmott:largecomplex
+
+Rendering of large and complex urban environments for real time heritage reconstructions
+
+In this paper we describe a rendering package, which brings
+together a number of rendering techniques and optimisations to
+render large and complex urban environments at interactive frame
+rates. The package has been built on top of a proprietary Scene
+Graph structure developed for the CHARISMATIC project. The
+paper presents an integrated approach combining Real-time
+Optionally Adapting Meshes, View Frustum Culling, Occluder
+Shadows, Level of Detail for Houses and Motion Captured
+Avatars in a single application.
+
+We discuss the performance issues associated with our
+approaches and give comprehensive implementation details. We
+also consider implications of the trends in high performance
+graphics sub-systems for PCs in the context of data types and
+animations required for populated interactive virtual heritage
+experiences. Finally we present empirical results to demonstrate
+the importance of employing such techniques and the implications
+for practical virtual heritage applications.
+
+
+Presents a rendering package with heavy focus on optimizations such as not rendering buildings
+that are obscured by buildings in front of them, rendering buildings features like windows into
+the wall textures so from a distance it looks as though the windows are there so they only need to
+actually be rendered at closer range & the difference is less noticeable.
+
+%=======
+
+\textbf{***This is actually from Virtual Space (Qvortrup)}
+
+Tzortzaki2002
+
+Virtual Reality as Simulation: The CAVE as "Space of Illusion" in Museum Displays
+
+But this chapter is not about virtual museums and cyberspace. It is rather concerned with the use of virtual reality (VR) within the very physical space of museums.
+
+That form of interplay between physicality and digitality in museum displays, in order for something which is not physically present to be re-presented, creates a particular ``space of illusion'', which I will explore in the following pages.
+
+%=========================================================================================================
+
+AR has been used to add artefacts, actors \& reconstructed architecture to views of present day sites that bear traces of their original status, whilst VR has been used to host more complete reconstructions of entire buildings \& settlements for interaction via screen, HMD \& CAVE, including where the present day site bears no evidence of the past status or is inaccessible for some reason (due to latter development, change in landscape, etc.).
 
 In situations where VR content exists in cultural heritage contexts, it is experienced from a static position that causes both spatial \& temporal separation from the RW location that it relates to; in order to perform comparisons between RW \& VR content, users must interact with one \& \textit{subsequently} the other. A mobile XR platform will allow VR content in cultural heritage contexts to be experienced in tandem with the real site (where accessible), combining the immediate juxtaposition of real \& virtual content of AR with the immersive \& atmospheric qualities of HMD based VR, all without requiring alterations to the VR content (for example to make it compatible with an AR framework).
 
@@ -94,30 +530,30 @@ Tracking user position, instead of requiring them to manually control/update the
 
 This paper presents a cross reality project in which there is a high degree of spatial equivalence between the real and virtual environments, as it deals with bringing together virtual reconstructions of cultural heritage sites with their corresponding real locations. The backdrop for many of the experiments is the impressive ruins of the St Andrews cathedral, while the virtual environment is a `distorted'~\cite{lifton:merging} OpenSim simulation of the same location that presents a historically accurate reconstruction of the cathedral as it would have stood at the peak of its former glory~\cite{Kennedy2012, OpenVirtualWorldsgroupSchoolofComputerScience} (see figure \ref{cathedral_picture}).
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.48\textwidth]{images/figure_1}
-\caption{OpenSim reconstruction of the St Andrews cathedral.}
-\label{cathedral_picture}
-\end{figure}
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=0.48\textwidth]{images/figure_1}
+%\caption{OpenSim reconstruction of the St Andrews cathedral.}
+%\label{cathedral_picture}
+%\end{figure}
 
 
 
 The project described in this paper furthers this previous work by developing a mobile interface to allow students to explore both a physical site and its virtual reconstruction in tandem, rather than having to explore the reconstruction from a computer in the classroom and trying to relate what they had seen to a visit to the physical site at a later date. Figure \ref{separation_map} shows how small the spatial separation between the classroom and the physical site was during a session with students at St Andrews' Madras College. This project, introduced in~\cite{Davies2012}, developed a modified version of the Second Life viewer called Pangolin, which through use of sensors allows movement of the avatar and camera to be implicitly controlled by sensing the physical position and orientation of the tablet computer which the user carries and upon which the viewer executes. Figure \ref{pangolin_in_action} depicts the system in use at the St Andrews cathedral.
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.48\textwidth]{images/separation_map}
-\caption{Aerial photograph of St Andrews demonstrating the distance between Madras College (left ring) and the cathedral itself (right ring). The distance between the two sites is roughly 650m, with the photograph being approximately 1km across.}
-\label{separation_map}
-\end{figure}
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=0.48\textwidth]{images/separation_map}
+%\caption{Aerial photograph of St Andrews demonstrating the distance between Madras College (left ring) and the cathedral itself (right ring). The distance between the two sites is roughly 650m, with the photograph being approximately 1km across.}
+%\label{separation_map}
+%\end{figure}
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.48\textwidth]{images/figure_3}
-\caption{The Pangolin viewer running on a tablet computer at the St Andrews cathedral, with the camera orientation of the viewer synchronised to the physical orientation of the tablet, the view of the virtual reconstruction corresponding to that of the physical ruins.}
-\label{pangolin_in_action}
-\end{figure}
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=0.48\textwidth]{images/figure_3}
+%\caption{The Pangolin viewer running on a tablet computer at the St Andrews cathedral, with the camera orientation of the viewer synchronised to the physical orientation of the tablet, the view of the virtual reconstruction corresponding to that of the physical ruins.}
+%\label{pangolin_in_action}
+%\end{figure}
 
 This system promises to augment exploration of cultural heritage sites by allowing convenient navigation of the 3D reconstruction and stimulating reflection through the close juxtaposition of the remains and an accessible interpretation. The use of a complete virtual environment also allows for the possibility of interaction between individuals and groups at the site with remote participants, including domain experts, who are connected to the reconstruction from a distant physical location.
 
@@ -131,12 +567,12 @@ As the SL viewer is only available for x86 platforms the choice of user hardware
 
 To reduce computational load on the 110W, the OpenSim server was run on a separate Lenovo ThinkPad X61s laptop computer during the experiments. Due to the limited range of the laptop's wireless interface, the laptop was connected by RJ45 ethernet cable to a Linksys WRT54G wireless router to allow the 110W to access the OpenSim server wirelessly from anywhere within the experiment area. The router was powered from a 12V sealed lead-acid battery. This setup is shown in figure \ref{server}.
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.48\textwidth]{images/server}
-\caption{Lenovo ThinkPad X61s laptop, Linksys WRT54G wireless router and sealed lead-acid battery providing OpenSim server via wireless to the 110W.}
-\label{server}
-\end{figure}
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=0.48\textwidth]{images/server}
+%\caption{Lenovo ThinkPad X61s laptop, Linksys WRT54G wireless router and sealed lead-acid battery providing OpenSim server via wireless to the 110W.}
+%\label{server}
+%\end{figure}
 
 \subsection{GPS Configuration}
 The 110W features an AzureWave GPS-M16~\cite{AzureWave} GPS receiver; however poor API provision and meager documentation lead to use of a separate u-blox MAX-6 GPS receiver~\cite{U-bloxAG} outfitted with a Sarantel SL-1202 passive antenna~\cite{Sarantel}. The MAX-6 is of higher operational specification than the GPS-M16 and supports Satellite Based Augmentation Systems (SBAS) which improve the accuracy of location data by applying additional correction data received from networks of satellites and ground-based transmitters separate to those of the GPS system. These networks include the European Geostationary Navigation Overlay Service (EGNOS) that covers the UK where the experiments took place.
@@ -166,19 +602,19 @@ Magnetic declination information was entered into the HMC6343 for the position o
 \subsection{Interfacing GPS/Orientation hardware with SL}
 The MAX-6 and HMC6343 were connected to an Arduino (the setup used throughout the experiments is shown in figure \ref{arduino}) and a `sketch' (the name given to programs that execute upon the Arduino platform) written to receive the data from the ICs, perform simple processing upon them and relay them to the tablet via USB connection~\cite{Davies}. The TinyGPS library~\cite{Hart} was used to abstract processing of NMEA messages from the MAX-6 to obtain the required latitude and longitude values.
  
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.48\textwidth]{images/figure_8}
-\caption{The HMC6343, MAX-6 and SL-1202 connected via a breadboard prototyping shield to the Arduino, in the setup and configuration that was then attached to the rear of the 110W for the experiments.}
-\label{arduino}
-\end{figure}
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=0.48\textwidth]{images/figure_8}
+%\caption{The HMC6343, MAX-6 and SL-1202 connected via a breadboard prototyping shield to the Arduino, in the setup and configuration that was then attached to the rear of the 110W for the experiments.}
+%\label{arduino}
+%\end{figure}
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.48\textwidth]{images/tablet_back}
-\caption{The setup from figure \ref{arduino} attached to the rear of the 110W. The sensors are configured such that (in the orientation of this photograph) the X axis is positive pointing straight down, Y is positive pointing straight right and Z is positive pointing perpendicular out of the rear face of the tablet.}
-\label{tablet_back}
-\end{figure}
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=0.48\textwidth]{images/tablet_back}
+%\caption{The setup from figure \ref{arduino} attached to the rear of the 110W. The sensors are configured such that (in the orientation of this photograph) the X axis is positive pointing straight down, Y is positive pointing straight right and Z is positive pointing perpendicular out of the rear face of the tablet.}
+%\label{tablet_back}
+%\end{figure}
 
 Leveraging standard SL avatar/camera control interfaces was explored by programming the Arduino to mimic a standard USB HID joystick via the Lightweight USB Framework for AVRs (LUFA), sending messages that the viewer interpreted as coming from a joystick and allowing the use of the standard joystick options. However the granularity of control attainable via this method was not sufficient and thus the viewer was modified (giving rise to the Pangolin viewer) to make use of the Boost.Asio C++ library to support receiving data via serial port and to use these data to control the movement of the avatar and camera by directly interfacing with the control functions at a lower level of abstraction. Receipt of messages is performed in an asynchronous non-blocking fashion, with the viewer's main loop processing the most recently received message in each iteration. Messages follow the format
 
@@ -186,12 +622,12 @@ $\langle bearing \rangle$ $\langle pitch \rangle$ $\langle roll \rangle$ $\langl
 
 The viewer's GUI was modified with the addition of a dialogue that allows the user to specify the path of the serial device, separately enable or disable sensor-driven camera and movement control, as well as providing numerous controls for fine-tuning its behavior, including the ability to specify high-pass filters for avatar movement and specify the smoothing applied to camera control. This GUI also presents the necessary fields for input of the anchor point details and fields for diagnostic output of the received information. Figure \ref{pangolin_screenshot} shows this GUI within the Pangolin viewer.
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.48\textwidth]{images/figure_9}
-\caption{The GUI within the Pangolin viewer that allows administration of the position and orientation control of the avatar. In this screenshot Pangolin is connected to the Arduino and is receiving position and orientation data.}
-\label{pangolin_screenshot}
-\end{figure}
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=0.48\textwidth]{images/figure_9}
+%\caption{The GUI within the Pangolin viewer that allows administration of the position and orientation control of the avatar. In this screenshot Pangolin is connected to the Arduino and is receiving position and orientation data.}
+%\label{pangolin_screenshot}
+%\end{figure}
 
 \section{Results}
 Two plausible modalities of interaction were identified for this system, with each presenting different requirements with regards to accuracy of position tracking.
@@ -203,12 +639,12 @@ The first modality can be scaled to function with different accuracies of positi
 
 During the experiments the MAX-6 was unable to maintain reception of the additional correction data required for SBAS operation; when left stationary for several minutes reception was possible however subsequent movement of only a few meters at walking pace broke the connection. This reduced the theoretical maximum performance of the unit to 2.5m CEP, with observed performance being lower. Figure \ref{map_one} depicts an aerial view of the St Andrews cathedral ruins; the blue line represents the planned route, red the route recorded by the MAX-6 receiver and green the route recorded by the smartphone for comparative purposes, both while walking the planned route.
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.48\textwidth]{images/figure_4}
-\caption{Aerial view oriented North upward of the St Andrews cathedral ruins; the blue line represents the planned route, red the route recorded by the MAX-6 and green the route recorded by the smartphone whilst walking the planned route.}
-\label{map_one}
-\end{figure}
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=0.48\textwidth]{images/figure_4}
+%\caption{Aerial view oriented North upward of the St Andrews cathedral ruins; the blue line represents the planned route, red the route recorded by the MAX-6 and green the route recorded by the smartphone whilst walking the planned route.}
+%\label{map_one}
+%\end{figure}
 
 The Hausdorff distance between the planned route and that recorded by the MAX-6 was $1.02e^{-04\circ}$. The `length' of a degree of latitude and a degree of longitude depends upon location upon the Earth; around the location of the St Andrews cathedral 1$^\circ$ of latitude is equivalent to 111347.95m and 1$^\circ$ of longitude to 61843.88m. Thus the Hausdorff distance of $1.02e^{-04\circ}$ can be visualized as $\pm11.3$m of North/South inaccuracy or $\pm6.3$m of East/West inaccuracy (or a combination of both N/S and E/W inaccuracy not exceeding a total displacement of $1.02e^{-04\circ}$ from the planned route).
 
@@ -216,32 +652,32 @@ The MAX-6 did achieve better performance than the smartphone, which recorded a H
 
 The maximum inaccuracies were recorded when walking along the South wall of the cathedral's nave. This wall is one of the most complete sections of the building with stonework reaching some 30ft above ground level and providing an effective obstruction to line-of-sight to half of the sky (and substantially impairing reception of signals from GPS satellites) when in close proximity to it. When considering just the sub-route shown in figure \ref{map_two}, which terminates before this wall begins to significantly obstruct view of the sky, the Hausdorff distances are notably smaller; the MAX-6 achieved a Hausdorff distance of $7.23e^{-05\circ}$ ($\pm8.05$m N/S, $\pm4.47$m E/W) throughout this sub-route, with the smartphone still behind with $8.99e^{-05\circ}$ ($\pm10.01$m N/S, $\pm5.56$m E/W). Again the Hausforff distance between the receivers showed low correlation between the inaccuracies, at $6.43e^{-05\circ}$ ($\pm7.12$m N/S, $\pm3.98$m E/W).
  
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.48\textwidth]{images/figure_5}
-\caption{Aerial view oriented North upward of the St Andrews cathedral ruins; the blue line represents the first sub-route of the planned route, red the sub-route recorded by the MAX-6 and green the sub-route recorded by the smartphone whilst walking the first planned sub-route.}
-\label{map_two}
-\end{figure}
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=0.48\textwidth]{images/figure_5}
+%\caption{Aerial view oriented North upward of the St Andrews cathedral ruins; the blue line represents the first sub-route of the planned route, red the sub-route recorded by the MAX-6 and green the sub-route recorded by the smartphone whilst walking the first planned sub-route.}
+%\label{map_two}
+%\end{figure}
 
 When analyzing the tracks in the vicinity of the nave (see figure \ref{map_three}) it is shown that although the MAX-6 outperformed the smartphone in terms of Hausdorff distance this relationship can be considered misleading as the smartphone track corresponded more closely in shape to the planned route even if it did stray further at its extreme. The discrepancy in the behavior of the two receivers in this situation is attributed to different implementations of dead-reckoning functionality between the receivers. Dead-reckoning is the process used when a GPS receiver loses reception of location data from satellites and extrapolates its position based upon a combination of the last received position data and the velocity of travel at the time of receiving these data.
  
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.48\textwidth]{images/figure_6}
-\caption{Aerial view oriented North upward of the St Andrews cathedral ruins; the blue line represents the second sub-route of the planned route, red the sub-route recorded by the MAX-6 and green the sub-route recorded by the smartphone whilst walking the second planned sub-route.}
-\label{map_three}
-\end{figure}
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=0.48\textwidth]{images/figure_6}
+%\caption{Aerial view oriented North upward of the St Andrews cathedral ruins; the blue line represents the second sub-route of the planned route, red the sub-route recorded by the MAX-6 and green the sub-route recorded by the smartphone whilst walking the second planned sub-route.}
+%\label{map_three}
+%\end{figure}
 
 Pangolin's camera control from orientation data does not have as stringent performance criteria as the movement control from position data. Unlike augmented reality where sparse virtual content is superimposed upon a view of a real environment and the virtual objects must be placed accurately in order for the effect to work well, cross reality presents a complete virtual environment that is viewed `separately' or side-by-side with the real environment and thus discrepancies between orientation of real and virtual environments have a less detrimental effect to the experience. Although the accuracy of the camera control during the experiments was reported as being sufficient, the speed at which the camera orientation moved to match physical orientation was reported as being too slow, resulting in having to wait for the display to `catch up' to changes in orientation. This is attributed to the 10Hz sampling rate of the orientation sensors which, particularly after readings are combined for smoothing purposes to reduce jerky movement, resulted in too infrequent orientation updates. Frame rates within Pangolin whilst navigating the route averaged between 15 and 20 frames per second with the viewer's `quality and speed' slider set to the `low' position.
 
 The style of explorative interaction with virtual content that this system employs is more resilient to input lag and low frame rates than other scenarios of interaction with virtual content such as fast paced competitive video games including First Person Shooters (FPS) [20], but overall user experience would nonetheless be improved by a faster sampling of orientation data and a higher frame rate. Additionally it should be noted that the cathedral reconstruction was created with relatively powerful desktop computers in mind as the primary deployment platform and has not been optimized for use on less powerful mobile platforms such as Pangolin. Performance of Pangolin on a less graphically complex OpenSim region (Salt Pan 2 [17]), that also depicts a reconstruction of a cultural heritage site, was better at 20 to 25 frames per second at the `low' position and between 15 and 20 frames per second at `high' (see figure 7).
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.48\textwidth]{images/figure_7}
-\caption{Plot of Pangolin's performance (measured in frames per second) against different graphical settings (selected via the `Quality and speed' slider of the viewer) in two positions within the Salt Pan 2 region.}
-\label{framerate_graph}
-\end{figure}
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=0.48\textwidth]{images/figure_7}
+%\caption{Plot of Pangolin's performance (measured in frames per second) against different graphical settings (selected via the `Quality and speed' slider of the viewer) in two positions within the Salt Pan 2 region.}
+%\label{framerate_graph}
+%\end{figure}
 
 \section{Interpretations}
 The positional accuracy of $1.02e^{-04\circ}$ attained by the MAX-6 is sufficient for the first modality of interaction (that of distinguishing and navigating between multiple points of interest). This value of $1.02e^{-04\circ}$ (analogous to a combination of $\pm11.3$m of North/South inaccuracy or $\pm6.3$m of East/West inaccuracy) represents a constraint on the granularity of the content; it is the minimum distance required between any two points of interest for them to be correctly differentiated between. This same value is not sufficient for the second modality of interaction (that of free roaming exploration with avatars mimicking their users' movements as closely as possible). This modality would require the use of additional position tracking techniques to improve accuracy to around 1m CEP (analogous to $8.98e^{-06\circ}$ latitude or $1.62e^{-05\circ}$ longitude around the location of the St Andrews cathedral).
