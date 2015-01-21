@@ -1,0 +1,106 @@
+Graphics
+
+=======
+=======
+=======
+
+Comparing Real & Synthetic Scenes using Human Judgements of Lightness
+
+\cite{mcnamara:lightness}
+
+Compares how realistic computer generated scenes are compared to their real counterparts, by creating a scene & lighting it in the real world & creating a computer simulation of the same & asking participants to classify the two according to some system.
+
+"...the ultimate goal being to create images which are perceptually indistinguishable from an actual scene."
+
+=======
+=======
+=======
+
+Rendering of large and complex urban environments for real time heritage reconstructions
+
+\cite{willmott:largecomplex}
+
+Presents a rendering package with heavy focus on optimizations such as not rendering buildings
+that are obscured by buildings in front of them, rendering buildings features like windows into
+the wall textures so from a distance it looks as though the windows are there so they only need to
+actually be rendered at closer range & the difference is less noticeable.
+
+Talks about importance of performance optimizations for real time heritage, which is pertinent to VTW but VTW doesn't have any of these optimizations!
+
+=======
+=======
+=======
+
+Photorealism and Non-Photorealism in Virtual Heritage Representation
+
+\cite{roussou:photorealism}
+
+Definition of virtual heritage - "Virtual heritage, broadly defined, involves the synthesis, conservation, reproduction, representation, digital reprocessing, and display of cultural evidence with the use of advanced imaging technology."
+
+"...virtual heritage has long been concentrated on generating digital reconstructions of historical or
+archaeological artefacts and sites with enough fidelity to be truly accurate representations of their real world counterparts."
+
+Contrasts between photorealistic & non-photorealistic computer graphics and that for some users the realism isn't the most important factor, but rather how believeable & convincing it is, regardless if the imagery emulates the physical properties of the real world or not. More 'artistic' means of expression can that do not necessarily hold true to a photographic view of a site can nonetheless be important to a user's understanding.
+
+"In virtual heritage representation, architectural walkthroughs and picture-perfect simulations of objects have defined a practice where photorealism is considered as perhaps the most important measure of a successful representation."
+
+But...
+
+"...the emphasis on achieving a high degree of realism runs the risk of limiting VR reconstruction to the creation of historically accurate yet static worlds that leave little flexibility for interpretive and/or educational use."
+
+So advanced realistic modelling techniques are good for accuracy & authenticity, but non-photorealistic methods can provide appropriate tools for more flexible uses in virtual heritage applications. This paper tries to combine both photorealism & interactivity into the same virtual reality framework under the CREATE project.
+
+"...heritage is 'as much about the living and evolving place, people, and environment as it is about any single static monument'"
+
+"In the case of an archaeology scholar who intends to restore the ancient monument, the goal is to offer the possibility to try varied reconstruction hypotheses and choose the most plausible."
+
+=======
+=======
+=======
+
+High fidelity reconstruction of the ancient Egyptian temple of Kalabsha
+
+\cite{Sundstedt2004}
+
+Talks about the importance of accuracy to archaeology & the practical methodology that should be adopted to create a truly high fidelity reconstruction of an archaeological site, paying particular interest to the accuracy of the lighting (measuring emission spectra of different oils burning & everything!). Spurred by the fact that "there are very few high fidelity reconstructions that attempt to authentically represent how a site may have been perceived in the past. Crucial to this accurate perception is the need to correctly model the ancient lighting."
+
+Most self-defined virtual worlds (eg Second Life, OpenSim, etc.) don't have complex enough rendering/lighitng engines for this (except Avatar Reality, based on some version of CryEngine).
+
+Used Maya in combination with Radiance, a suite of tools for lighting simulation. Allows archaeologists to determine how light would have fallen on different parts of structures in their original (non-ruined) conditions & in their original locations (the Kalabsha was moved) to make new discoveries about the role of light in these structures.
+
+=======
+=======
+=======
+
+3D modeling of complex and detailed cultural heritage using multi-resolution data
+
+\cite{Remondino2009}
+
+Virtual digitization of the Great Inscription of Gortyna, Crete, using several different
+digitizing techniques/equipments at different resolutions (more detailed the closer to the
+area of interest, etc.).
+
+=======
+=======
+=======
+
+Game based technology to enhance the learning of history and cultural heritage
+
+\cite{deamicis:gamebased}
+
+Major good quote for VR (\& thus PR) vs AR!!! - 'atmosphere & immersion'
+
+Abstract only that talks about the use of game technologies to support learning of users
+within cultural heritage sites. Says that the level of realism is ideal to visualise cultural
+heritage if a string focus on the environment's atmosphere \& immersion is required, "emphasising
+environmental effects such as fog, sky, water, particles", all of which self-proclaimed virtual
+worlds aren't as good at.
+        
+Uses Unity3D! Mentions that it can produce web browser based applications as well as standalone
+ones, has a simple authoring interface \& "exploits the latest graphical hardware by making extensive
+use of shaders to deliver high quality graphics".
+
+=======
+=======
+=======
+

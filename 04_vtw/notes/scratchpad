@@ -1,0 +1,149 @@
+\textbf{***Video see through \& enhanced mobility by using a UMPC, this deserves better talking about in relation to Mirrorshades.}
+
+video see-through head-mounted display~\cite{Rolland1994}
+
+See-through video glasses, \textbf{***definition here, will be important later because MShades is see-through}, combined with an ultra mobile PC, have been used to render virtual humans as interfaces to virtual cultural heritage content including other real-time augmentations of 3D superimpositions of virtual content atop the view of the real, whilst allowing enhanced mobility compared to traditional approaches~\cite{Magnenat-Thalmann2008a}.
+
+%=======
+
+2008
+
+Real time animation \& illumination was used in a virtual reality restitution of the Roman theatre of Aspendos in Turkey, visualised as it was in the 3rd century, \& an on-site augmented reality simulation of a Thermopolium situated within Pompeii in Italy. Both included real time animated virtual humans, programmed to re-enact situations \& activities typical of their sites \& both actors \& the scenes themsevles were rendered using real time illumination strategies~\cite{Magnenat-Thalmann7}.
+
+%=======
+
+
+
+\clearpage
+
+%=========================================================================================================
+% VR citations
+%=========================================================================================================
+
+\textbf{***It seems that I don't really have many citations (in here at least, check Mendeley/folders) for *VR* being used in cultural heritage, but I have plenty for AR. Surely there must be lots more showing VR being used in CAVEs \& HMD (I'm thinking of one paper in particular that I don't think is cited here, has nice photos in)? I want to show that both AR \& VR have been applied to cultural heritage, but whereas AR maintains user mobility \& VR provides more atmospheric immersion, there haven't really been any attempts to combine the two \& allow users to be mobile in an atmospheric immersive VR counterpart to a real location.}
+
+In particular, virtual reality has been used to allow people to immerse themselves in reconstructions of places that no longer exist \& augmented reality has been used to introduce pieces of the past atop a view of what remains in the real world today.
+
+%=======
+
+\textbf{***A lot of this is about virtual heritage in general \& would be good to open the section with, rather than trying to use it as a specifically VR citation.}
+
+roussou:photorealism
+
+Photorealism and Non-Photorealism
+in Virtual Heritage Representation
+
+The area of virtual heritage has long been concentrated on generating digital reconstructions of historical or archaeological artefacts and sites with enough fidelity to be truly accurate representations of their real-world counterparts. In some cases, the advancement of tools and techniques for achieving greater visual realism has distracted from the development of other directions that enhance a virtual experience, such as interactivity, sound or touch. Recent trends in the area of non-photorealistic rendering shift focus to the development of more “believable” environments, while maintaining the accuracy and validity of the visualised data, which is significant for archaeological research. In this paper we argue that it is important to enhance the perception of realism, achieved both through photorealistic and non-photorealistic visualisation approaches, with interactivity. This is illustrated by two example projects which develop prototype virtual environments created for specialists as well as novice users.
+
+
+        
+"...virtual heritage has long been concentrated on generating digital reconstructions of historical or archaeological artefacts and sites with enough fidelity to be truly accurate representations of their real world counterparts."
+        
+Contrasts between photorealistic \& non-photorealistic computer graphics and that for some users the realism isn't the most important factor, but rather how believeable \& convincing it is, regardless if the imagery emulates the physical properties of the real world or not. More 'artistic' means of expression can that do not necessarily hold true to a photographic view of a site can nonetheless be important to a user's understanding.
+        
+"In virtual heritage representation, architectural walkthroughs and picture-perfect simulations of objects have defined a practice where photorealism is considered as perhaps the most important measure of a successful representation."
+        
+But...
+        
+"...the emphasis on achieving a high degree of realism runs the risk of limiting VR reconstruction to the creation of historically accurate yet static worlds that leave little flexibility for interpretive and/or educational use."
+        
+So advanced realistic modelling techniques are good for accuracy \& authenticity, but non-photorealistic methods can provide appropriate tools for more flexible uses in virtual heritage applications. This paper tries to combine both photorealism \& interactivity into the same virtual reality framework under the CREATE project.
+        
+"...heritage is 'as much about the living and evolving place, people, and environment as it is about any single static monument'"
+        
+"In the case of an archaeology scholar who intends to restore the ancient monument, the goal is to offer the possibility to try varied reconstruction hypotheses and choose the most plausible."
+
+===AND=== (same people)
+
+Roussou2002
+
+Virtual Heritage : From the Research Lab to the Broad Public
+
+The use of immersive Virtual Reality (VR) technology accounts almost a decade of research performed exclusively by the academic,military,and industrial research and development communities. However,as
+VR technologies mature,research is expanding from themilitary and scientific visualisation realm into more multidisciplinary areas,such as education,archeology,art,culture,and thehumanities. As representative institutions involved in the research and presentation of these fields,museums and cultural heritage centresmay be in a better position to make use of advanced virtual reality technologies and contribute to a broad-based public acceptance of technology as a tool for the study and presentation of the past. Nevertheless,the prohibitive costs and inaccessibility of immersive
+VR technologies,coupled with theoretical issues and issues of usability,user training,operation,and maintenance,continue to present  practical drawbacks,especially for the cultural and educational use of VR. This paper explores some of these issues through examples of immersive virtual heritage applications for the broad public.
+
+        
+"The use of immersive VR technology accounts almost a decade of research" (as of publication in 2000)
+        
+"a tool for the study and presentation of the past"
+        
+"the visualization of abstract concepts and ideas, spaces that are unreachable or no longer exist, or objects
+that must be examined from diverse and unique points of view"
+        
+
+        
+"To virtualize heritage means to actualize it digitally, to simulate it using computer graphics technology..."
+        
+Lots more, etc.
+
+%=======
+
+\textbf{***Use as reference for performance of Mirrorshades/Unity vs VTW/OpenSim - talks about a lot of fundamental graphics optimization things but in a heritage setting}
+
+willmott:largecomplex
+
+Rendering of large and complex urban environments for real time heritage reconstructions
+
+In this paper we describe a rendering package, which brings
+together a number of rendering techniques and optimisations to
+render large and complex urban environments at interactive frame
+rates. The package has been built on top of a proprietary Scene
+Graph structure developed for the CHARISMATIC project. The
+paper presents an integrated approach combining Real-time
+Optionally Adapting Meshes, View Frustum Culling, Occluder
+Shadows, Level of Detail for Houses and Motion Captured
+Avatars in a single application.
+
+We discuss the performance issues associated with our
+approaches and give comprehensive implementation details. We
+also consider implications of the trends in high performance
+graphics sub-systems for PCs in the context of data types and
+animations required for populated interactive virtual heritage
+experiences. Finally we present empirical results to demonstrate
+the importance of employing such techniques and the implications
+for practical virtual heritage applications.
+
+
+Presents a rendering package with heavy focus on optimizations such as not rendering buildings
+that are obscured by buildings in front of them, rendering buildings features like windows into
+the wall textures so from a distance it looks as though the windows are there so they only need to
+actually be rendered at closer range \& the difference is less noticeable.
+
+%=======
+
+\textbf{***This is actually from Virtual Space (Qvortrup)}
+
+Tzortzaki2002
+
+Virtual Reality as Simulation: The CAVE as "Space of Illusion" in Museum Displays
+
+But this chapter is not about virtual museums and cyberspace. It is rather concerned with the use of virtual reality (VR) within the very physical space of museums.
+
+That form of interplay between physicality and digitality in museum displays, in order for something which is not physically present to be re-presented, creates a particular ``space of illusion'', which I will explore in the following pages.
+
+%=========================================================================================================
+
+AR has been used to add artefacts, actors \& reconstructed architecture to views of present day sites that bear traces of their original status, whilst VR has been used to host more complete reconstructions of entire buildings \& settlements for interaction via screen, HMD \& CAVE, including where the present day site bears no evidence of the past status or is inaccessible for some reason (due to latter development, change in landscape, etc.).
+
+In situations where VR content exists in cultural heritage contexts, it is experienced from a static position that causes both spatial \& temporal separation from the RW location that it relates to; in order to perform comparisons between RW \& VR content, users must interact with one \& \textit{subsequently} the other. A mobile XR platform will allow VR content in cultural heritage contexts to be experienced in tandem with the real site (where accessible), combining the immediate juxtaposition of real \& virtual content of AR with the immersive \& atmospheric qualities of HMD based VR, all without requiring alterations to the VR content (for example to make it compatible with an AR framework).
+
+%fixed/anchored AR interface~\cite{Weng2012}
+
+%=========================================================================================================
+
+\subsection{Digital Heritage at the University of St Andrews}
+
+Motivation for this platform stemmed from a desire to leverage an existing virtual model of a 14th century cathedral in parallel with the present day ruins of the cathedral in the real world.
+
+To build upon existing work within the Open Virtual Worlds research group, to allow our existing content to be accessed in a new \& exciting manner that also adds to its experience \& understanding.
+
+The capacity of 3D environments to provide extensible collaborative platforms for the reconstruction of cultural heritage sites and the potential of such reconstructions to promote understanding of and engagement with cultural heritage content both in public and classroom settings has been demonstrated~\cite{Allison2012,Kennedy2012}. This research tested various deployment scenarios, leveraging different control methodologies (traditional keyboard and mouse, Xbox controllers and gesture recognition via Kinect) and display options (regular 24'' desktop monitors, larger 40'' televisions and still larger 150'' projection) along with voice interaction with actors playing the parts of historical figures. These scenarios support three deployment modes; a network of reconstructions accessible via the Internet as part of the OpenSim hypergrid; portable LAN exhibitions where multiple computers are connected to a server via local network suitable for classroom use; and immersive installations combining projection and Kinect for use in museums and cultural heritage centers. In all these scenarios a recurrent theme has been the relationship between the virtual reconstruction and the physicality of the corresponding physical site. Frequently projects have involved interactions with the reconstruction and subsequent visits and tours of the physical site; however the temporal separation between these activities makes it harder to appreciate the sometimes complex relationships between the two. To overcome this temporal separation of experiencing the virtual and the real it is necessary for the virtual representation to be accessible in tandem at the physical site by overcoming the vacancy problem.
+
+The same pioneering collaborations between computer scientists, educationalists and historians that led to the creation of the St Andrews cathedral reconstruction have also led to the creation of reconstructions of; a 6th Century Spartan Basilica, Virtual Harlem (1921), Linlithgow Palace (1561), Brora Salt Pans (1599), Featherstone Fishing Station (19th century), Eyemouth Fort (1610), an Iron Age Wheel House and Caen Township (1815). These reconstructions provide a platform for interactive historical narratives, a stage for visitors to play upon and engage in both serious (and not so serious) games both alone and with other users, and serve as a focal point for educational investigations into local history and culture [9, 18]. The reconstructions have been widely used in a range of real world educational contexts. In the formal sector they have been a vehicle for investigative research, part of degree accredited university modules and used in both primary and secondary education. They have also been used as the content for interactive museum installations, art installations and community groups. This has involved further collaborations with Education Scotland, Historic Scotland, SCAPE Trust, Timespan cultural center, the Museum of the University of St Andrews (MUSA), Madras College, Linlithgow Palace and Strathkiness Primary School.
+
+%=========================================================================================================
+
+Widespread adoption of smartphones \& tablets in recent years has enabled people to multiplex their physical reality, where they engage in face-to-face social interaction, with Web-based social networks and apps\cite{Accenture2012}. Whilst such PolySocial situations are now commonplace with such 2D apps \& Web content, using smartphones \& tablets to multiplex real \& virtual environments in a parallel reality setting has not yet been attempted.
+
+The suitability of smartphones \& tablets for location aware browsing of virtual content has been leveraged by AR apps, however their suitability for browsing a complete virtual environment parallel to the user's real location has not been thoroughly explored.

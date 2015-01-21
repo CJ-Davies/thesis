@@ -12,46 +12,47 @@ Warning--empty journal in Andersen
 Warning--empty year in Andersen
 Warning--can't use both author and editor fields in Bartle2004
 Warning--can't use both volume and number fields in Bartle2004
+Warning--empty journal in Ikeuchi2003
 Warning--empty note in IndoorAtlasLtd.2012
-You've used 64 entries,
+You've used 72 entries,
             1791 wiz_defined-function locations,
-            828 strings with 12794 characters,
-and the built_in function-call counts, 11987 in all, are:
-= -- 1047
-> -- 414
-< -- 13
-+ -- 172
-- -- 108
-* -- 622
-:= -- 1798
-add.period$ -- 175
-call.type$ -- 64
-change.case$ -- 58
+            876 strings with 14784 characters,
+and the built_in function-call counts, 14496 in all, are:
+= -- 1300
+> -- 507
+< -- 20
++ -- 206
+- -- 134
+* -- 782
+:= -- 2152
+add.period$ -- 205
+call.type$ -- 72
+change.case$ -- 66
 chr.to.int$ -- 0
-cite$ -- 74
-duplicate$ -- 582
-empty$ -- 1373
-format.name$ -- 108
-if$ -- 2756
+cite$ -- 83
+duplicate$ -- 721
+empty$ -- 1604
+format.name$ -- 134
+if$ -- 3367
 int.to.chr$ -- 0
-int.to.str$ -- 64
-missing$ -- 43
-newline$ -- 298
-num.names$ -- 69
-pop$ -- 280
+int.to.str$ -- 72
+missing$ -- 51
+newline$ -- 338
+num.names$ -- 77
+pop$ -- 311
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 322
+skip$ -- 405
 stack$ -- 0
-substring$ -- 565
-swap$ -- 143
-text.length$ -- 13
+substring$ -- 707
+swap$ -- 199
+text.length$ -- 20
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 10
-while$ -- 118
-width$ -- 66
-write$ -- 631
-(There were 10 warnings)
+warning$ -- 11
+while$ -- 143
+width$ -- 74
+write$ -- 734
+(There were 11 warnings)

@@ -15,17 +15,51 @@ This chapter presents the development of a preliminary PR system that combined a
 
 \section{Virtual Heritage}
 
-Alternate reality technologies have been used for over two decades~\cite{Roussou2002} to aid in the investigation, understanding \& dissemination of information pertaining to our past, in the fields of archaeology \& cultural heritage. Whilst archaeology studies human activity through the recovery of remains, heritage is also concerned with intangible attributes of society; tradition, art, narratives \& other cultural evidences~\cite{Roussou2002}. \textit{Virtual heritage} is the name given to the application of advanced imaging techniques, including alternate reality techniques, for the synthesis, conservation, reproduction, representation, reprocessing \& display of this cultural evidence~\cite{roussou:photorealism}.
+Alternate reality technologies have been used for over two decades~\cite{Roussou2002} to aid in the investigation, understanding \& dissemination of information pertaining to our past in the fields of archaeology \& cultural heritage. Whilst archaeology studies human activity through the recovery of remains, heritage is also concerned with intangible attributes of society; tradition, art, narratives \& other cultural evidences~\cite{Roussou2002}. \textit{Virtual heritage} is the name given to the application of advanced imaging techniques, including alternate reality techniques, for the synthesis, conservation, reproduction, representation, reprocessing \& display of this cultural evidence~\cite{roussou:photorealism}.
+
+These techniques provide access to locations \& artefacts scatted about the world, that may reside in private collections inaccessible to scholars (let alone interested amateurs) \& outwith of their original context of creation~\cite{griffin:recovering}. Many cultural heritage objects are deteriorating \& are at risk of being lost, both due to natural causes such as weather \& natural disasters but also due to acts of man such as civil war~\cite{Ikeuchi2003}.
+
+Virtual heritage techniques also offer substantial benefits to collaborative investigation of sites, where multiple users are provided the ability to collaborate via a multitude of different visualization modalities including video see-through, head-tracked head mounted displays, projected table surfaces, large screen displays \& tracked hand-held displays, including the ability for experts physically located at a particular site to collaborate with those physically remote~\cite{benko:collaborative}.
+
+The combination of different techniques not only benefits experts, but has also been used in the creation of a contiguous platform for building \& managing exhibitions of 3D models of artefacts accessed in museums, galleries \& via the Web via Web3D technologies~\cite{Wojciechowski2004}, focussed not only on the digitization \& subsequent interaction with such content to aid its preservation \& protection, but also with making these resources as widely available as possible to any interested parties (scientists, archaeologists, curators, historians \& casual citizens)~\cite{walczak:applications}.
+
+Even traditionally two-dimensional visual resources associated with cultural heritage can be integrated into state-of-the-art systems, visualized via immersive CAVE techniques as part of `information landscapes'~\cite{Ruffaldi2008}.
+
+Employing virtual heritage is of particular benefit to young people as cultural heritage sites often arouse little involvement in them, especially if the site's present day appearance bears few traces of its original stature \& makes it difficult to appreciate its original splendour \& importance~\cite{ardito:combining}.
 
 %=========================================================================================================
 
-\subsection{Alternate Realities in Virtual Heritage}
+\subsection{Alternate Reality Techniques in Cultural Heritage}
 
-Brief background/mini literature review on previous AR/VR projects in the heritage sector.
+Due to the number of combinations \& diversity in approaches that have been used in the application of visualization techniques to the cultural heritage sector, attempting to comprehensively list them is impractical. Comparison via a taxonomical model that classifies approaches according to various characteristics is thus the approach adopted by Foni et al.~\cite{Foni2010} which produced the taxonomical space shown by figure \ref{taxonomy_1.png}.
+
+This model classifies visualization strategies according to four continua, represented by the three physical dimensions of the 3D cube \& the degree of shading of each point within the cube. The x axis represents the level of automatism, which refers to the span of development cycle required to produce the visualization; the y axis represents the level of precision, referring not only to the amount of geometrical detail but to all elements that can contribute to or enhance the reliability; \& the z axis represents the level of interactivity, defined in this context as;
+
+\begin{quote}
+	\textit{``its capacity to contextually offer the possibility to subjectively experience an interactive behaviour in a synchronous way, thus enabling the user the opportunity to meaningfully contribute to a given experience or to affect in real time the visualized  item''}.
+\end{quote}
+
+Finally, the shading of each point within the cube represents its degree of virtuality, conceptually analogous to the reality-virtuality continuum of Milgram et al. (see section \ref{milgram&kishino}) with real world/world unmodelled represented as solid black, virtual reality/world completely modelled as completely white \& positions as increasing/decreasing shades of grey.
+
+\begin{figure}[h]
+\centering
+  \includegraphics[width=.7\linewidth]{taxonomy_1.png}
+  \caption{Taxonomical space of visualization strategies for cultural heritage applications.}
+  \label{taxonomy_1.png}
+\end{figure}
+
+The position of 16 exemplar visualization techniques applied to cultural heritage are shown upon the cube \& explained via the table figure \ref{taxonomy_2.png}, including both traditional techniques \& state-of-the-art methodologies.
+
+\begin{figure}[h]
+\centering
+  \includegraphics[width=.8\linewidth]{taxonomy_2.png}
+  \caption{Coordinate sets for each approach within the taxonomical space (figure \ref{taxonomy_1.png})}
+  \label{taxonomy_2.png}
+\end{figure}
 
 %=========================================================================================================
 
-\subsection{Virtual Heritage at the University of St Andrews}
+\section{Virtual Heritage at the University of St Andrews}
 
 Background into the content that the group has produced, how it produced it, how it uses it, talk about different ways of interacting with it (including John's Kinect stuff, school children using \& enjoying Rift).
 
@@ -34,6 +68,8 @@ Lots of pictures of virtual content \& of people experiencing this content via t
 %=========================================================================================================
 
 \section{The Virtual Time Window}
+
+\textbf{***Where does VTW fit in the 4D model given above?}
 
 Introduce basic concept of VTW.
 
@@ -75,7 +111,7 @@ Magnetic declination information was entered into the HMC6343 for the position o
 
 %=========================================================================================================
 
-\subsection{Exploiting the Second Life client's joystick support}
+\subsection{Exploiting Second Life's Joystick Support}
 
 Leveraging standard SL avatar/camera control interfaces was explored by programming the Arduino to mimic a standard USB HID joystick via the Lightweight USB Framework for AVRs (LUFA), sending messages that the viewer interpreted as coming from a joystick and allowing the use of the standard joystick options.
 
@@ -120,7 +156,7 @@ Calculating a global coordinate is simply a case of multiplying the position of 
 
 %=========================================================================================================
 
-\section{Modifying the Second Life client}
+\section{Modifying Second Life for Orientation \& Position Control}
 
 %for both orientation \& position
 
