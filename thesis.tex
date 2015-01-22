@@ -17,6 +17,29 @@
 
 \renewcommand{\chaptername}{}
 
+% Renders two imagegs side-by-side & scales them so height is identical
+%
+%\TwoFig{} {} {}
+%       {} {} {}
+%
+\newsavebox\IBoxA \newsavebox\IBoxB \newlength\IHeight
+\newcommand\TwoFig[6]{% Image1 Caption1 Label1 Image2 ...
+  \sbox\IBoxA{\includegraphics[width=0.49\textwidth]{#1}}
+  \sbox\IBoxB{\includegraphics[width=0.49\textwidth]{#4}}%
+  \ifdim\ht\IBoxA>\ht\IBoxB
+    \setlength\IHeight{\ht\IBoxB}\else\setlength\IHeight{\ht\IBoxA}\fi%
+  \begin{figure}[!htb]
+  \minipage[t]{0.49\textwidth}\centering
+  \includegraphics[height=\IHeight]{#1}
+  \caption{#2}\label{#3}
+  \endminipage\hfill
+  \minipage[t]{0.49\textwidth}\centering
+  \includegraphics[height=\IHeight]{#4}
+  \caption{#5}\label{#6}
+  \endminipage 
+  \end{figure}%
+}
+
 % ======= ======= ======= ======= ======= ======= =======
 
 \begin{document}

@@ -7,52 +7,54 @@ Warning--there's a number but no series in Qiu2009
 Warning--can't use both author and editor fields in Baudrillard1994
 Warning--can't use both volume and number fields in Baudrillard1994
 Warning--there's a number but no volume in Applin2012
+Warning--can't use both author and editor fields in Bartle2004
+Warning--can't use both volume and number fields in Bartle2004
 Warning--empty journal in Laureys2009
 Warning--empty journal in Andersen
 Warning--empty year in Andersen
-Warning--can't use both author and editor fields in Bartle2004
-Warning--can't use both volume and number fields in Bartle2004
 Warning--empty journal in Ikeuchi2003
+Warning--there's a number but no series in Papagiannakis2004
+Warning--empty publisher in Taketomi2011
 Warning--empty note in IndoorAtlasLtd.2012
-You've used 72 entries,
+You've used 89 entries,
             1791 wiz_defined-function locations,
-            876 strings with 14784 characters,
-and the built_in function-call counts, 14496 in all, are:
-= -- 1300
-> -- 507
-< -- 20
-+ -- 206
-- -- 134
-* -- 782
-:= -- 2152
-add.period$ -- 205
-call.type$ -- 72
-change.case$ -- 66
+            978 strings with 19365 characters,
+and the built_in function-call counts, 20418 in all, are:
+= -- 1849
+> -- 799
+< -- 33
++ -- 309
+- -- 220
+* -- 1201
+:= -- 3006
+add.period$ -- 264
+call.type$ -- 89
+change.case$ -- 83
 chr.to.int$ -- 0
-cite$ -- 83
-duplicate$ -- 721
-empty$ -- 1604
-format.name$ -- 134
-if$ -- 3367
+cite$ -- 102
+duplicate$ -- 1006
+empty$ -- 2133
+format.name$ -- 220
+if$ -- 4753
 int.to.chr$ -- 0
-int.to.str$ -- 72
-missing$ -- 51
-newline$ -- 338
-num.names$ -- 77
-pop$ -- 311
+int.to.str$ -- 89
+missing$ -- 68
+newline$ -- 423
+num.names$ -- 94
+pop$ -- 376
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 405
+skip$ -- 582
 stack$ -- 0
-substring$ -- 707
-swap$ -- 199
-text.length$ -- 20
+substring$ -- 1126
+swap$ -- 318
+text.length$ -- 33
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 11
-while$ -- 143
-width$ -- 74
-write$ -- 734
-(There were 11 warnings)
+warning$ -- 13
+while$ -- 199
+width$ -- 91
+write$ -- 938
+(There were 13 warnings)

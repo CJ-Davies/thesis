@@ -4,67 +4,11 @@ Augmented Reality
 =======
 =======
 
-Archeoguide: first results of an augmented reality, mobile computing system in cultural heritage sites
-
-\cite{vlahakis:archeoguide}
-
-The ARCHEOGUIDE project (Augmented Reality-based Cultural Heritage On-site GUIDE) aimed to provide a `personalized electronic guide \& tour assistant' to cultural heritage site visitors. On-site help \& augmented reality reconstructions of on-site ruins were presented via a laptop, a tablet computer \& a PDA, using GPS for location tracking \& magnetometer to ascertain direction such that augmentations could be placed accordingly. The applications claimed to be supported by the platform range from archaeological research to education, multimedia publishing \& cultural tourism. The platform was prototyped at the archaeological site of Olympia, Greece.
-
-=======
-=======
-=======
-
 Augmented reality tour system for immersive experience of cultural heritage
 
 \cite{Kim2009}
 
 Visual knowledge of a target scene has been employed to allow rendering of 3D virtual characters atop real views of Sajeongjeon and Gangnyeongjeon of Gyeongbokgung, representative of cultural heritage sites in Korea, without the need for additional sensors, by visually tracking a rectangular structure within the environment whose corners represented robust features for visual tracking.
-
-=======
-=======
-=======
-
-A tracking framework for augmented reality tours on cultural heritage sites
-
-\cite{Seo2010}
-
-This approach addressed the inherent issues associated with tracking for augmented reality tours in cultural heritage sites due to the variation of tracking targets \& environments at such sites, by developing a visual tracking approach that can be applied to a wider range of sites~\cite{Seo2010}.
-
-=======
-=======
-=======
-
-Fly-through Heijo Palace Site: Historical Tourism System Using Augmented Telepresence
-
-Fly-through Heijo Palace Site : Augmented Telepresence Using Aerial Omnidirectional Videos
-
-\cite{Okura2006,Okura2011}
-
-The concepts of augmented reality \& telepresence have been combined, creating `augmented telepresence', to allow participants to experience a `fly-through' of the ancient Nara Heijo-kyo capital of Japan, by combining aerially captured omnidirectional video augmented with related information using AR techniques.
-
-=======
-=======
-=======
-
-Real-time virtual humans in AR sites
-
-\cite{Papagiannakis2004}
-
-Mixing virtual and real scenes in the site of ancient Pompeii
-
-\cite{Papagiannakis2005}
-
-Mobile Augmented Heritage: Enabling Human Life in Ancient Pompeii
-
-\cite{Papagiannakis2007}
-
-Recreating Daily Life in Pompeii
-
-\cite{Papagiannakis2009}
-
-The concept of real-time humans in AR sites was further investigated in the LIFEPLUS EU IST project, which aimed to produce ``an innovative 3D reconstruction of ancient frescos-paintings through the real-time revival of their fauna and flora, featuring groups of virtual animated characters with artificial life dramaturgical behaviors, in an immersive AR environment''. This project pushed established augmented reality applications to the field by exploring narrative design in fictional spaces, with the aim of increasing immersion via realistic interaction, making use of captured/real-time video of a real scene~\cite{Papagiannakis2004}, presenting the visitor with ``an immersive and innovative multi-sensory interactive trip to the past''~\cite{Papagiannakis2005}.
-
-These realistic simulations of animated virtual human actors were employed in a mobile \& wearable setup, in abandonment of traditional concepts of static cultural artefacts or rigid augmentations of real world features, making use of a markerless camera tracker \& a PRT\textbf{(???)} mixed reality illumination model for more consistent real-virtual \& virtual-real rendering. This platform was demonstrated in a case study on the real site of ancient Pompeii. Whilst initially targetted at the cultural heritage sector, the author(s) clarifies that as a platform it in no way limited to use with such subjects~\cite{Papagiannakis2007}. The concept of extended rigid \& static AR with character-based event representations was pushed further by the author(s), with hopes of rereating not just discrete artefacts but the entirety of `daily life' in Pompeii~\cite{Papagiannakis2009}.
 
 =======
 =======

@@ -23,6 +23,12 @@ Hang Qiu and Leiting Chen.
 \newblock In {\em 2009 First International Conference on Information Science
   and Engineering}, number 2007, pages 1391--1394. Ieee, 2009.
 
+\bibitem{Scherrer2008}
+Camille Scherrer, Julien Pilet, Pascal Fua, and Vincent Lepetit.
+\newblock {The haunted book}.
+\newblock In {\em Proceedings - 7th IEEE International Symposium on Mixed and
+  Augmented Reality 2008, ISMAR 2008}, pages 163--164, 2008.
+
 \bibitem{Sheridan1992a}
 Thomas Sheridan.
 \newblock {Musings on Telepresence and Virtual Presence}.
@@ -161,6 +167,17 @@ Sherry Turkle.
 Wade Roush.
 \newblock {Second Earth}, 2007.
 
+\bibitem{Castronova2006}
+Edward Castronova.
+\newblock {\em {Synthetic Worlds: The Business and Culture of Online Games}}.
+\newblock University of Chicago Press, 2006.
+
+\bibitem{Bartle2004}
+Richard Bartle.
+\newblock {\em {Designing Virtual Worlds}}, volume~p of {\em New Riders Games
+  Series}.
+\newblock New Riders Games, 2004.
+
 \bibitem{Witmer1998}
 Bob~G Witmer and Michael~J Singer.
 \newblock {Measuring Presence in Virtual Environments: A Presence
@@ -243,17 +260,6 @@ Steve Mann and James Fung.
 Peter B\o~gh Andersen.
 \newblock {Tangible Objects : Connecting Informational and Physical space}.
 
-\bibitem{Castronova2006}
-Edward Castronova.
-\newblock {\em {Synthetic Worlds: The Business and Culture of Online Games}}.
-\newblock University of Chicago Press, 2006.
-
-\bibitem{Bartle2004}
-Richard Bartle.
-\newblock {\em {Designing Virtual Worlds}}, volume~p of {\em New Riders Games
-  Series}.
-\newblock New Riders Games, 2004.
-
 \bibitem{Roussou2002}
 Maria Roussou.
 \newblock {Virtual Heritage : From the Research Lab to the Broad Public}.
@@ -324,6 +330,124 @@ Alessandro~E Foni, George Papagiannakis, and Nadia Magnenat-Thalmann.
 \newblock {A taxonomy of visualization strategies for cultural heritage
   applications}.
 \newblock {\em Journal on Computing and Cultural Heritage}, 3(1):1--21, 2010.
+
+\bibitem{vlahakis:archeoguide}
+Vassilios Vlahakis, Nikos Ioannidis, John Karigiannis, Manolis Tsotros, Michael
+  Gounaris, Luis Almeida, Didier Stricker, Tim Gleue, Ioannis~T. Christou, and
+  Renzo Carlucci.
+\newblock {Archeoguide: first results of an augmented reality, mobile computing
+  system in cultural heritage sites}.
+\newblock In {\em Proceedings of the 2001 conference on Virtual reality,
+  archeology, and cultural heritage}, VAST '01, pages 131--140, New York, NY,
+  USA, November 2001. ACM.
+
+\bibitem{Okura2006}
+Fumio Okura, Masayuki Kanbara, and Naokazu Yokoya.
+\newblock {Fly-through Heijo Palace Site : Augmented Telepresence Using Aerial
+  Omnidirectional Videos}.
+\newblock {\em Computer}, 1:4503--4503, 2006.
+
+\bibitem{Okura2011}
+Fumio Okura, Masayuki Kanbara, and Naokazu Yokoya.
+\newblock {Fly-through Heijo Palace Site: Historical Tourism System Using
+  Augmented Telepresence}.
+\newblock In {\em International Conference on Computer Graphics and Interactive
+  Techniques, SIGGRAPH 2011, Vancouver, BC, Canada, August 7-11, 2011 , Poster
+  Proceedings}, 2011.
+
+\bibitem{Papagiannakis2004}
+George Papagiannakis, Sebastien Schertenleib, Michal Ponder, Marl\`{e}ne
+  Ar\'{e}valo-Poizat, Nadia Magnenat-Thalmann, and Daniel Thalmann.
+\newblock {Real-time virtual humans in AR sites}.
+\newblock In {\em 1st European Conference on Visual Media Production CVMP},
+  number~4, pages 273--276. IET, 2004.
+
+\bibitem{Papagiannakis2005}
+George Papagiannakis, Sbastien Schertenleib, Brian O'Kennedy, Marlene
+  Arevalo-Poizat, Nadia Magnenat-Thalmann, Andrew Stoddart, and Daniel
+  Thalmann.
+\newblock {Mixing virtual and real scenes in the site of ancient Pompeii}.
+\newblock {\em Computer Animation And Virtual Worlds}, 16(1):11--24, 2005.
+
+\bibitem{Papagiannakis2007}
+George Papagiannakis and Nadia Magnenat-Thalmann.
+\newblock {Mobile Augmented Heritage: Enabling Human Life in Ancient Pompeii}.
+\newblock {\em International Journal of Architectural Computing},
+  5(2):396--415, 2007.
+
+\bibitem{Papagiannakis2009}
+George Papagiannakis and Nadia Magnenat-Thalmann.
+\newblock {Recreating Daily Life in Pompeii}.
+\newblock {\em Arqueologica 2.0}, 1:16--20, 2009.
+
+\bibitem{Kim2009}
+Kangsoo Kim, Byung-Kuk Seo, Jae-Hyek Han, and Jong-Il Park.
+\newblock {Augmented reality tour system for immersive experience of cultural
+  heritage}.
+\newblock In {\em Proceedings of the 8th International Conference on Virtual
+  Reality Continuum and its Applications in Industry - VRCAI '09}, page 323,
+  New York, New York, USA, December 2009. ACM Press.
+
+\bibitem{Taketomi2011}
+Takafumi Taketomi, Tomokazu Sato, and Naokazu Yokoya.
+\newblock {AR Cultural Heritage Reconstruction Based on Feature Landmark
+  Database Constructed by Using Omnidirectional Range Sensor}.
+\newblock In {\em Computer Vision – ACCV 2010 Workshops}, pages 265--275.
+  2011.
+
+\bibitem{Weng2012}
+Dongdong Weng, Dewen Cheng, Yongtian Wang, and Yue Liu.
+\newblock {Display systems and registration methods for augmented reality
+  applications}.
+\newblock {\em Optik - International Journal for Light and Electron Optics},
+  123(9):769--774, 2012.
+
+\bibitem{cabral:x3dexperience}
+Marcio Cabral, Marcelo Zuffo, Silvia Ghirotti, Olavo Belloc, Leonardo Nomura,
+  Mario Nagamura, Fernanda Andrade, Regis Faria, and Leandro Ferraz.
+\newblock {An experience using X3D for virtual cultural heritage}.
+\newblock In {\em Proceedings of the twelfth international conference on 3D web
+  technology}, Web3D '07, pages 161--164, New York, NY, USA, 2007. ACM.
+
+\bibitem{Christou2006}
+Chris Christou, Cameron Angus, Celine Loscos, Andrea Dettori, and Maria
+  Roussou.
+\newblock {A versatile large-scale multimodal VR system for cultural heritage
+  visualization}.
+\newblock In {\em Proceedings of the ACM symposium on Virtual reality software
+  and technology - VRST '06}, page 133, New York, New York, USA, November 2006.
+  ACM Press.
+
+\bibitem{mcnamara:lightness}
+Ann McNamara, Alan Chalmers, Tom Troscianko, and Iain Gilchrist.
+\newblock {Comparing Real \& Synthetic Scenes using Human Judgements of
+  Lightness}.
+\newblock In {\em Proceedings of the Eurographics Workshop on Rendering
+  Techniques 2000}, pages 207--218, London, UK, June 2000. Springer-Verlag.
+
+\bibitem{willmott:largecomplex}
+J.~Willmott, L.~I. Wright, D.~B. Arnold, and A.~M. Day.
+\newblock {Rendering of large and complex urban environments for real time
+  heritage reconstructions}.
+\newblock In {\em Proceedings of the 2001 conference on Virtual reality,
+  archeology, and cultural heritage}, VAST '01, pages 111--120, New York, NY,
+  USA, November 2001. ACM.
+
+\bibitem{Getchell2007}
+K~Getchell, J~Nicoll, C~Kerbey, A~Miller, R~Sweetman, and R~Michaelson.
+\newblock {Evaluating exploratory learning in LAVA}.
+\newblock In {\em WBED'07 Proceedings of the sixth conference on IASTED
+  International Conference Web-Based Education}, pages 561--567, 2007.
+
+\bibitem{Kennedy2013}
+S.~Kennedy, R.~Fawcett, A.~Miller, L.~Dow, R.~Sweetman, A.~Field, A.~Campbell,
+  I.~Oliver, J.~McCaffery, and C.~Allison.
+\newblock {Exploring canons \& cathedrals with open virtual worlds: The
+  recreation of St Andrews Cathedral, St Andrews day, 1318}.
+\newblock In {\em Proceedings of the DigitalHeritage 2013 - Federating the 19th
+  Int'l VSMM, 10th Eurographics GCH, and 2nd UNESCO Memory of the World
+  Conferences, Plus Special Sessions fromCAA, Arqueologica 2.0 et al.},
+  volume~2, pages 273--280, 2013.
 
 \bibitem{Sevan2008}
 Yesha Sivan.
