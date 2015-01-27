@@ -238,11 +238,16 @@ Further requirements for obtaining accurate compass bearings from a MEMS magneto
 
 \subsection{Exploiting Second Life's Joystick Support}
 
-\newcommand{\ArduinoJoystickVideoFootnote}{\footnote{Video - \url{https://www.youtube.com/watch?v=-ddtmqoGNmg}}}
+\newcommand{\ArduinoJoystickVideoFootnote}{\footnote{\url{https://www.youtube.com/watch?v=-ddtmqoGNmg}}}
 
 \newcommand{\atmegaFootnote}{\footnote{\url{http://www.atmel.com/devices/ATMEGA16U2.aspx}}}
 
 \newcommand{\atmegaTFootnote}{\footnote{\url{http://www.atmel.com/devices/atmega328.aspx}}}
+
+\newcommand{\arduinousbhidFootnote}{\footnote{\url{http://hunt.net.nz/users/darran/weblog/a3599/}}}
+
+\newcommand{\lufaFootnote}{\footnote{\url{http://www.fourwalledcubicle.com/LUFA.php}}}
+
 
 %=====================
 
@@ -255,17 +260,13 @@ As highlighted in section \ref{SecondLifeMobility} the Second Life client can be
 
 Method 1 has the advantage of having no reliance upon any particular Second Life client, as all available clients are forks of the official client from Linden Lab \& maintain the same keyboard, mouse \& joystick interfaces. However if the level of control attainable by re-purposing these interfaces for control from magnetometer \& accelerometer data is not enough, method 2 will be the only option.
 
-The Arduino Uno R3 features an ATMega16U2\atmegaFootnote{} microcontroller that serves as a USB-to-serial bridge between the Arduino's central ATmega328\atmegaTFootnote{} microntroller \& the host computer. In its stock state, the ATMega16U2's firmware simply serves to allow communication between the ATMega328 (which has no native USB interface) \& a modern computer where USB connections are commonplace, appearing to the host computer's operating system as a generic USB-to-serial bridge.
+Conceptually, all Arduino boards are programmed over an RS-232 serial connection. When the platform was first launched, the Arduino boards themselves had a physical DE-9 serial connector with which to connect to a host computer's serial connector. But as serial connectors all but disappeared from modern computers, the Arduino's serial connector was replaced in later revisions with a USB connector, as USB is now all but ubiquitous on today's computers. The move from a physical RS-232 connector to a USB connector requires additional hardware upon the Arduino board to convert between RS-232 \& USB, as the ATMega328\atmegaTFootnote{} microcontroller at the heart of the Arduino Uno R3 does not have a USB interface itself. For this reason the current revision, the Arduino Uno R3, sports an ATMega16U2\atmegaFootnote{} microcontroller that serves to convert communications between the two standards, RS-232 \& USB.
 
-The ATMega16U2 can have its firmware modified/replaced to perform other tasks. Such as pretending to be a USB joystick
+With its stock firmware, the Arduino's ATMega16U2 presents itself to the host computer as a USB-to-serial bridge. However the ATMega16U2 can have this stock firmware replaced in order to change its behaviour. One of these new behaviours is to act as a USB Human Interface Device (HID) class controller, identifying itself to the host computer as one of a myriad input devices - including joysticks. Using a USB HID class joystick firmware for the ATMega16U2\arduinousbhidFootnote{}, based upon the Lightweight USB Framework for AVRs (LUFA)\lufaFootnote{}, the Arduino can imitate a standard USB joystick, sending joystick commands to the host computer using the protocol in the USB specification.
 
+%***How to flash the firmware
 
-
-
-
-Leveraging standard SL avatar/camera control interfaces was explored by programming the Arduino to mimic a standard USB HID joystick via the Lightweight USB Framework for AVRs (LUFA), sending messages that the viewer interpreted as coming from a joystick and allowing the use of the standard joystick options.
-
-%Magnetic declination information was entered into the HMC6343 for the position of the cathedral and the date of our experiments. The HMC6343's hard-iron offset calculation feature was used each time the hardware configuration was altered. The sampling frequency of the HMC6343 was set to its highest value of 10Hz. Orientation was set to `upright front' to match the physical orientation of the IC in the experiments.
+In this manner, the Arduino can marshal the values obtained from the HMC6343 into standard USB HID joystick commands, allowing the Second Life client's stock joystick interface (see figure \ref{arduino_joystick_for_second_life_3.jpg}) to be used to control the camera orientation (\& avatar movement) according to the physical orientation of the HMC6343, as can be seen in\ArduinoJoystickVideoFootnote{}.
 
 \begin{figure}[h]
 \centering
@@ -274,7 +275,7 @@ Leveraging standard SL avatar/camera control interfaces was explored by programm
   \label{arduino_joystick_for_second_life_3.jpg}
 \end{figure}
 
-However the granularity of control attainable via this method was not sufficient.
+Unfortunately, the precision attainable through this approach is not sufficient for the style of control \& interaction required for VTW. Specifically, the Second Life client's joystick interface applies smoothing/damping to the joystick inputs, preventing reliable rotations or movements of specific values - sending a joystick command to rotate the camera by $x$ degrees followed by a second command to rotate the camera by $-x$ degrees does not reliably return the camera to its original position. As the interaction required is to map the \textit{absolute} orientation of the tablet to the Second Life camera, this discrepancy (which cannot be disabled from the Second Life client's joystick configuration) renders the approach unworkable.
 
 %=========================================================================================================
 
@@ -283,6 +284,8 @@ However the granularity of control attainable via this method was not sufficient
 \textbf{***Include HEX whatnot from Arduino code}
 
 \textbf{***Include Haversine as pseudocode(?), RegionModule code \& Second Life client modification}
+
+%Magnetic declination information was entered into the HMC6343 for the position of the cathedral and the date of our experiments. The HMC6343's hard-iron offset calculation feature was used each time the hardware configuration was altered. The sampling frequency of the HMC6343 was set to its highest value of 10Hz. Orientation was set to `upright front' to match the physical orientation of the IC in the experiments.
 
 %\begin{figure}[h!tbp]
 %\begin{lstlisting}[language=Java, numbers=left, numberstyle=\tiny, stepnumber=5]
