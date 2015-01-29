@@ -172,9 +172,9 @@ The Second Life client, intended for use on a desktop or laptop computer, provid
 
 \newcommand{\HMCtwoFootnote}{\footnote{\url{http://www51.honeywell.com/aero/common/documents/myaerospacecatalog-documents/Missiles-Munitions/HMC6343.pdf}}}
 
-\newcommand{\vccFootnote}{\footnote{The HMC6343 requires 2.7-3.6V input on VCC/VDD, this wiring showing connection to 5V assumes a HMC6343 breakout with appropriate step down.}}
+\newcommand{\HMCvccFootnote}{\footnote{The HMC6343 requires 2.7 to 3.6V input on VCC/VDD, this table showing connection to 5V assumes a HMC6343 breakout with appropriate step down.}}
 
-\newcommand{\itwocFootnote}{\footnote{The HMC6343's I2C lines must be pulled up to 3.3V, this wiring shows connection to an Arduino Uno R3's I2C lines which are pulled up to 5V assuming a HMC6343 breakout with appropriate level shifters.}}
+\newcommand{\itwocFootnote}{\footnote{The HMC6343's I2C lines must be pulled up to 3.3V, this table shows connection to an Arduino Uno R3's I2C lines which are pulled up to 5V assuming a HMC6343 breakout with appropriate level shifters.}}
 
 %http://www.nxp.com/documents/user_manual/UM10204.pdf
 
@@ -195,56 +195,30 @@ Due to the fact that the WindPad tablet does not feature a built-in magnetometer
 
 %=====================
 
-
-
 \begin{figure}[h]
-
-\begin{minipage}{\linewidth}
-
+\begin{center}
+\begin{minipage}{.7\linewidth}
 \begin{center}
 %\begin{tabularx}{250pt}{|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
 \begin{tabular}{| c | c |}
-
 \hline	
-
 \textbf{HMC6343 pin} & \textbf{Arduino Uno R3 pin} \\
-
 \hline
-
-VCC/VDD & 5V\vccFootnote{} \\
-
+VCC & 5V\HMCvccFootnote{} \\
 \hline
-
 GND & GND \\
-
 \hline
-
 SDA & A4\itwocFootnote{} \\
-
 \hline
-
 SCL & A5 \\
-
 \hline
-
 \end{tabular}
 \end{center}
-
-
-
 \end{minipage}
-
-\caption{Pin designation for figure \ref{arduino_wiring_hmc.png}}
+\end{center}
+\caption{Pin designation for figure \ref{arduino_wiring_hmc.png}.}
 \label{HMC6343wiringtable}
 \end{figure}
-
-%\begin{tabularx}{\textwidth}{ |X|X|X|X| }
-%  \hline
-%  label 1 & label 2 & label 3 & label 4\vccFootnote{} \\
-%  \hline
-%  item 1  & item 2  & item 3  & item 4  \\
-%  \hline
-%\end{tabularx}
 
 %=====================
 
@@ -266,6 +240,8 @@ Further requirements for obtaining accurate compass bearings from a MEMS magneto
 \subsection{Exploiting Second Life's Joystick Support}
 
 \label{exploitJoystick}
+
+\textbf{***Go through Arduino sketch \& talk about things like magnetic declination, etc.}
 
 \newcommand{\ArduinoJoystickVideoFootnote}{\footnote{\url{https://www.youtube.com/watch?v=-ddtmqoGNmg}}}
 
@@ -361,11 +337,21 @@ The prerequisites for this approach are that the Second Life model is aligned co
 
 \newcommand{\sarantelFootnote}{\footnote{\url{http://www.sarantel.com/sl1200_(33).html}}}
 
+\newcommand{\MAXvccFootnote}{\footnote{The MAX-6 requires 2.5 to 3.6V input on VCC, this table showing connection to 5V assumes a MAX-6 breakout with appropriate step down.}}
+
+\newcommand{\MAXserialFootnote}{\footnote{The data pins of the MAX-6 need to be pulled up to between 0.7 to 1.0 of the supply to VCC, so a breakout with appropriate level shifters is required for connection directly to an Ardunio Uno R3's 5V digital pins.}}
+
+\newcommand{\softwareserialFootnote}{\footnote{\url{http://arduino.cc/en/Reference/SoftwareSerial}}}
+
+\newcommand{\maxProtocolFootnote}{\footnote{\url{https://u-blox.com/images/downloads/Product_Docs/u-blox6_ReceiverDescriptionProtocolSpec_(GPS.G6-SW-10018).pdf}}}
+
+\newcommand{\tinygpsFootnote}{\footnote{\url{http://arduiniana.org/libraries/tinygps/}}}
+
 %=====================
 
 The WindPad features an internal AzureWave GPS-M16 GPS receiver\azurewaveFootnote{}, however poor API provision and meagre documentation required the adoption of an alternative receiver. As an Arduino was already being used to provide orientation data from accelerometer \& magnetometer, integrating the GPS receiver into this package such that all orientation \& position data came from a single source seemed prudent. After receiving input \& advice from the UK High Altitude Society\habFootnote{}, \textit{``a loose collection of people who are interested in launching unmanned high altitude balloons into near space''} who make extensive use of GPS receivers for tracking their launches, the u-blox MAX-6\ubloxFootnote{} GPS receiver outfitted with a Sarantel SL-1202\sarantelFootnote{} passive antenna was chosen to provide position data for the VTW platform. The MAX-6 is of higher operational specification than the GPS-M16 and supports Satellite Based Augmentation Systems (SBAS) which improve the accuracy of location data by applying additional correction data received from networks of satellites and ground-based transmitters separate to those of the GPS system. These networks include the European Geostationary Navigation Overlay Service (EGNOS) that covers the UK where the experiments took place.
 
-Figure \ref{arduino_wiring_hmc_ublox.png} provides a wiring diagram for connectivity of a u-blox MAX-6 to an Arduino Uno R3, along with the HMC6343 from section \ref{OrientationControl}, with the pinout values provided by figure \ref{}. The wiring shown here for a MAX-6 breakout without I2C connectivity
+Figure \ref{arduino_wiring_hmc_ublox.png} provides a wiring diagram for connectivity of a u-blox MAX-6 to an Arduino Uno R3, along with the HMC6343 from section \ref{OrientationControl}, with the pinout values provided by figure \ref{arduino_wiring_hmc_ublox.png}. The LED \& 220$\Omega$ resistor on digital pin 12 is used for diagnostic output. The wiring shown here for a MAX-6 breakout without I2C connectivity, instead using Arduino's SoftwareSerial\softwareserialFootnote{} library.
 
 \begin{figure}[h]
 \centering
@@ -374,91 +360,94 @@ Figure \ref{arduino_wiring_hmc_ublox.png} provides a wiring diagram for connecti
   \label{arduino_wiring_hmc_ublox.png}
 \end{figure}
 
-
-
-
-
-
+\begin{figure}[h]
+\begin{center}
+\begin{minipage}[t]{.47\linewidth}
+\begin{center}
 \begin{tabular}{| c | c |}
-
 \hline	
-
 \textbf{HMC6343 pin} & \textbf{Arduino Uno R3 pin} \\
-
 \hline
-
-VCC/VDD & 5V \\
-
+VCC & 5V\HMCvccFootnote{} \\
 \hline
-
 GND & GND \\
-
 \hline
-
-SDA & A4 \\
-
+SDA & A4\itwocFootnote{} \\
 \hline
-
 SCL & A5 \\
-
 \hline
-
 \end{tabular}
-
-
-
+\end{center}
+\end{minipage}
+%
+\begin{minipage}[t]{.47\linewidth}
+\begin{center}
 \begin{tabular}{| c | c |}
-
 \hline	
-
 \textbf{MAX-6 pin} & \textbf{Arduino Uno R3 pin} \\
-
 \hline
-
-VCC/VDD & 5V \\ %note conversion
-
+VCC & 5V\MAXvccFootnote{} \\
 \hline
-
 GND & GND \\
-
 \hline
-
-RXD & D4 \\
-
+RXD & D4 \MAXserialFootnote{}\\
 \hline
-
 TXD & D5 \\
-
 \hline
-
 \end{tabular}
+\end{center}
+\end{minipage}
+\caption{Pin designation for figure \ref{arduino_wiring_hmc_ublox.png}.}
+\label{HMC6343_MAX6_wiringtable}
+\end{center}
+\end{figure}
 
-
-
-%=========================================================================================================
-
-
-
-
-
-The TinyGPS library~\cite{Hart} was used to abstract processing of NMEA messages from the MAX-6 to obtain the required latitude and longitude values.
-
-HMC6343 SDA A4
-HMC6343 SCL A5
-
-ublox TX digital 5
-ublox RX digital 4
-
-LED on digital 12
-
-5v \& gnd where appropriate (boards used have step downs to 3.3v where required)
-
-Go through Arduino sketch \& talk about things like magnetic declination, etc.
-
-
+Figure \ref{arduino_hmc6343_u-blox_MAX-6.jpg} shows an the assembled unit, comprising an Arduino Uno R3, prototyping shield, HMC6343 \& MAX-6, while figure \ref{pangolin_tablet_back.jpg} shows the packaged unit attached to the back of the WindPad.
 
 \TwoFig{arduino_hmc6343_u-blox_MAX-6.jpg} {Assembled Arduino/sensors.} {arduino_hmc6343_u-blox_MAX-6.jpg}
        {pangolin_tablet_back.jpg} {Arduino/sensors attached to tabet.} {pangolin_tablet_back.jpg}
+       
+%=========================================================================================================
+
+The MAX-6 is configured as follows;
+
+\begin{enumerate}
+	\item Dynamic Platform Model set to Pedestrian.
+	\item SBAS via EGNOS is enabled,
+	\item GPGLL/GPGSA/GPGSV/GPVTG messages are disabled,
+	\item GPRMC/GPGGA messages are enabled.
+\end{enumerate}
+
+The Dynamic Platform Models adjust how the navigation engine processes the readings that the receiver produces \& by choosing the correct model for the receiver's application accuracy of position output is increased. As VTW is an application in which the user walks about an outdoor cultural heritage site, the pedestrian model is most suitable. Satellite Based Augmentation System (SBAS) is enabled for the European Geostationary Navigation Overlay Service (EGNOS), which is available at the cultural heritage sites in Scotland that VTW will be used at, to improve the accuracy of the position output.
+
+The output of the receiver is in the form of messages in the NMEA 0183 protocol from the National Marine Electronics Association. By default, the MAX-6 sends many more message types than are required for VTW \& as the Arduino's processing power is limited the superfluous messages are disabled. The GPRMC message format contains the recommended minimum amount of information for transit applications, including time, latitude \& longitude.
+
+These configurations are effected by sending the MAX-6 commands encoded in the UBX protocol as arrays of hex values. For example, setting the Dynamic Platform Model to Pedestrian is performed with the code in figure \ref{arduinoMAX6hex}, where \texttt{sendUBX} is a function that writes out using SoftwareSerial;
+
+\begin{figure}[h]
+\begin{lstlisting}[language=C, numbers=left, numberstyle=\small, stepnumber=1, frame=single, breaklines=true, backgroundcolor=\color{codebackground}, showstringspaces=false]
+uint8_t CFG_NAV5[] = {0xB5, 0x62, 0x06, 0x24, 0x24, 0x00, 0xFF, 0xFF,
+                      0x03, 0x03, 0x00, 0x00, 0x00, 0x00, 0x10, 0x27,
+                      0x00, 0x00, 0x05, 0x00, 0xFA, 0x00, 0xFA, 0x00,
+                      0x64, 0x00, 0x2C, 0x01, 0x32, 0x3C, 0x00, 0x00,
+                      0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+                      0x00, 0x00, 0x00, 0x00};
+calculateUBXChecksum(CFG_NAV5, (sizeof(CFG_NAV5)/sizeof(uint8_t)));
+
+while (!success)
+{
+  sendUBX(CFG_NAV5, (sizeof(CFG_NAV5)/sizeof(uint8_t)));
+  success = getUBX_ACK(CFG_NAV5);
+}
+success = 0;
+\end{lstlisting}
+\caption{Setting MAX-6 Dynamic Platform Model to Pedestrian in an Arduino sketch.}
+\label{arduinoMAX6hex}
+\end{figure}
+
+These hex arrays can be generated by hand from the UBX protocol specification\maxProtocolFootnote{}, or the MAX-6 can be configured by connecting it directly to a host computer (such as by using an Arduino as an UART by connecting the MAX-6 to digital pins 0 \& 1), configuring the MAX-6 using the u-blox u-center software \& then copying the resultant config as hex messages from the relevant console window.
+
+NMEA messages from the MAX-6 are processed on the Arduino using the TinyGPS library\tinygpsFootnote{}, extracting the latitude \& longitude values before combining them with magnetic compass bearing (yaw) \& pitch values from the HMC6343 \& sending these to the host computer via the Arduino's USB connective.
 
 %=========================================================================================================
 
@@ -509,8 +498,8 @@ private Vector3 LatitudeLongitudeToRegionCoordinate(double newLat, double newLon
         Y = (anchorVector.Y - d);
     }
 \end{lstlisting}
-\label{RegionModuleCode1}
 \caption{Excerpt of OpenSim Region Module for avatar movement via GPS.}
+\label{RegionModuleCode1}
 \end{figure}
 
 %=========================================================================================================
@@ -520,6 +509,28 @@ private Vector3 LatitudeLongitudeToRegionCoordinate(double newLat, double newLon
 %=========================================================================================================
 
 \section{Modifying Second Life for Orientation \& Position Control}
+
+Replaced the Linden Boost binary with that built by LightDrake
+
+Included the AsyncSerial class from Terraneo Federico (licensed under the Boost Software License)
+
+Wrote LLViewerSerialmovement which uses AsyncSerial to read the Arduino's messages
+
+Instantiate LLViewerSerialmovement in LLAppViewer
+
+Run LLViewerSerialmovement::update() in LLAppViewer::mainLoop()
+
+Wrote LLFloaterSerialMonitor as GUI for configuring/activating/deactivating serial control
+
+
+
+haversine implementation is in LLViewerSerialMovement::latitudeLongitudeToRegionCoordinate
+
+
+
+
+%=========================================================================================================
+
 Due to the Second Life client's existing control interfaces not allowing enough control over camera orientation for VTW's purposes (section \ref{exploitJoystick}), it was necessary to modify the client's codebase to produce a bespoke client allowing complete control over orientation for use with magnetometer \& accelerometer input. Although sufficient position control could be achieved via an OpenSim region module (section \ref{regionModule}) it was prudent to encapsulate position control through the modified client; not only would it allow finer grain control, but it would remove the dependency upon the virtual reconstruction being hosted upon an OpenSim server (Second Life's own servers do not support extension via Region Modules).
 
 
