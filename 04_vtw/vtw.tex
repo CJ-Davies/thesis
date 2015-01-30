@@ -325,6 +325,14 @@ d & = 2r \arcsin\left( \sqrt{\text{haversin} \left( \phi_{2} - \phi_{1} \right) 
 
 The prerequisites for this approach are that the Second Life model is aligned correctly to the Second Life compass as the real location is aligned to real bearings (also required for orientation control from the previous section), a single anchor point for which both the real world latitude \& longitude \& the corresponding virtual world X \& Y coordinates are known \& that the reconstruction adheres to a known, consistent scale.
 
+\textbf{***worked haversine example, with diagram}
+
+%Using the haversine formula the great-circle (or orthodromic) distance between the latitude of the anchor point and the latitude of the new GPS reading is calculated, then applying the scale of the model results in the equivalent distance in OpenSim metrics between the Y coordinate of the anchor point and the Y coordinate of the position corresponding to the new GPS reading. Repeating the same calculations with the longitude of the new GPS reading provides the distance between the X coordinate of the anchor point and the X coordinate of the position corresponding to the new GPS reading. Adding or subtracting these distances as appropriate to the OpenSim coordinates of the anchor point provides the OpenSim coordinates that correspond to the new GPS reading, to which the avatar is then instructed to move.
+
+%The anchor point is specified using global coordinates, not local coordinates. This allows navigation to operate across region boundaries and within mega regions (it is not limited to a single 256x256 meter OpenSim region) and there are no restrictions for the placement of the OpenSim component of the anchor point (it can be anywhere in any region, movement of the avatar can be in any direction from it (positive and negative), it does not have to be at the center of the model or even in a region that the model occupies).
+
+%Calculating a global coordinate is simply a case of multiplying the position of the region by 256 and then adding the local coordinate. For example, for an anchor at local coordinate $(127,203,23)$ within a region that is at $(1020,1042)$ the global X coordinate is calculated as $(1020 * 256) + 127 = 261247$ and the global Y coordinate as $(1043 * 256) + 203 = 267211$. Elevation (Z) is ignored due to a combination of the relatively low accuracy of these data attainable via GPS (when compared to the longitudinal/latitudinal accuracy) and as the case study explored involved users navigating outdoor ruins remaining at ground level.
+
 %=========================================================================================================
 
 \subsection{GPS Receivers}
@@ -510,28 +518,124 @@ private Vector3 LatitudeLongitudeToRegionCoordinate(double newLat, double newLon
 
 \section{Modifying Second Life for Orientation \& Position Control}
 
-Replaced the Linden Boost binary with that built by LightDrake
+Due to the Second Life client's existing control interfaces not allowing enough control over camera orientation for VTW's purposes (section \ref{exploitJoystick}), it was necessary to modify the client's codebase to produce a bespoke client allowing complete control over orientation for use with magnetometer \& accelerometer input. Although sufficient position control could be achieved via an OpenSim region module (section \ref{regionModule}) it was prudent to also encapsulate position control through the modified client; not only does it allow for finer grain control, but it also removes the dependency upon the virtual reconstruction being hosted upon an OpenSim server (Second Life's own servers do not support extension via Region Modules). Thus, the Second Life client was modified with the additions of the ability to;
 
-Included the AsyncSerial class from Terraneo Federico (licensed under the Boost Software License)
+\begin{itemize}
+	\item connect to a serial device for I/O,
+	\item control movement of the avatar according to input from a serial device,
+	\item control the camera according to input from a serial device.
+\end{itemize}
 
-Wrote LLViewerSerialmovement which uses AsyncSerial to read the Arduino's messages
+%=========================================================================================================
 
-Instantiate LLViewerSerialmovement in LLAppViewer
+\subsection{Overview of Second Life Modifications}
 
-Run LLViewerSerialmovement::update() in LLAppViewer::mainLoop()
+\newcommand{\asioFootnote}{\footnote{\url{http://www.boost.org/doc/libs/1_57_0/doc/html/boost_asio.html}}}
+
+\newcommand{\boostFootnote}{\footnote{\url{http://www.boost.org/}}}
+
+\newcommand{\fedetftFootnote}{\footnote{\url{http://www.webalice.it/fede.tft/serial_port/serial_port.html}}}
+
+%=====================
+
+%Replaced the Linden Boost binary with that built by LightDrake
+
+The Second Life client is written predominantly in C++ so the Asio library\asioFootnote{} from the popular Boost project\boostFootnote{} is used to imbue it with serial connectivity. The fundamental buffered asynchronous serial handling is implemented using Terraneo Federico's AsyncSerial class\fedetftFootnote{} which is included in the client codebase as \texttt{/indra/newview/AsyncSerial}. The majority of the modifications are then contained within \texttt{/indra/newview/LLViewerSerialMovement}. The core executable of the viewer, \texttt{/indra/newview/LLAppViewer} obtains an instance of \texttt{LLViewerSerialMovement} \& then calls \texttt{LLViewerSerialMovement::update()} upon each iteration of the client's main update loop, \texttt{LLAppViewer::mainLoop()}.
+
+%=========================================================================================================
+
+\subsection{\texttt{LLViewerSerialMovement} reference}
+
+\begin{center}
+\begin{longtable}{| p{4.2cm} | p{10cm} |}
+
+\hline	
+	
+%=========================================================================================================
+		
+\texttt{::connect} & Safely connects to a serial device (if not already connected). \\
+		
+\hline
+
+%=========================================================================================================
+
+\texttt{::disconnect} & Safely disconnects from a serial device (if already connected). \\
+		
+\hline
+
+%=========================================================================================================
+
+\texttt{::received} & A callback method registered to the \texttt{CallbackAsyncSerial} class in \texttt{/indra/newview/AsyncSerial}. This function parses the data (\texttt{const char *data}) from the serial device, extracting complete messages to the variable \texttt{mostRecentMessage}. Because of the nature of the serial I/O, \texttt{const char *data} is not guaranteed to contain a discrete message from the Arduino containing both orientation \& position data, thus this function has to parse the array \& assemble discrete messages from several subsequent callbacks. \\
+		
+\hline
+
+%=========================================================================================================
+
+\texttt{::update} & Called upon each iteration of \texttt{LLAppViwer::mainLoop()} \& further calls \texttt{::updateFromMostRecentMessage()}, \texttt{::updateOrientation()} \& \texttt{::updatePosition()}. \\
+		
+\hline
+
+%=========================================================================================================
+
+\texttt{::updateFromMostRecent- Message} & Processes a complete message from the Arduino which has been assembled by \texttt{::received()} \& extracts the constituent orientation \& position values. \\
+		
+\hline
+
+%=========================================================================================================
+
+\texttt{::updateOrientation} & Applies the orientation values extracted from an Arduino message to the avatar's camera. This is achieved by a call to \texttt{LLAgent::setAxes} which was added to \texttt{/indra/newview/LLAgent} \& in turn calls \texttt{LLCoordFrame::setAxes()} in \texttt{/indra/newview/LLCoordFrame}. \\
+		
+\hline
+
+%=========================================================================================================
+
+\texttt{::updatePosition} &  \\
+		
+\hline
+
+%=========================================================================================================
+
+\texttt{::quaternionFromDegrees} &  \\
+		
+\hline
+
+%=========================================================================================================
+
+\texttt{::smooth} &  \\
+		
+\hline
+
+%=========================================================================================================
+
+\texttt{::latitudeLongitudeTo- RegionCoordinate} &  \\
+		
+\hline
+
+%=========================================================================================================
+
+\texttt{::degreesToRadians}        &  \\
+		
+\hline
+
+%=========================================================================================================
+
+\end{longtable}
+\end{center}
+
 
 Wrote LLFloaterSerialMonitor as GUI for configuring/activating/deactivating serial control
 
 
-
 haversine implementation is in LLViewerSerialMovement::latitudeLongitudeToRegionCoordinate
-
-
-
 
 %=========================================================================================================
 
-Due to the Second Life client's existing control interfaces not allowing enough control over camera orientation for VTW's purposes (section \ref{exploitJoystick}), it was necessary to modify the client's codebase to produce a bespoke client allowing complete control over orientation for use with magnetometer \& accelerometer input. Although sufficient position control could be achieved via an OpenSim region module (section \ref{regionModule}) it was prudent to encapsulate position control through the modified client; not only would it allow finer grain control, but it would remove the dependency upon the virtual reconstruction being hosted upon an OpenSim server (Second Life's own servers do not support extension via Region Modules).
+
+
+
+
+
+
 
 
 
@@ -552,11 +656,7 @@ Due to the Second Life client's existing control interfaces not allowing enough 
 
 
 
-Using the haversine formula the great-circle (or orthodromic) distance between the latitude of the anchor point and the latitude of the new GPS reading is calculated, then applying the scale of the model results in the equivalent distance in OpenSim metrics between the Y coordinate of the anchor point and the Y coordinate of the position corresponding to the new GPS reading. Repeating the same calculations with the longitude of the new GPS reading provides the distance between the X coordinate of the anchor point and the X coordinate of the position corresponding to the new GPS reading. Adding or subtracting these distances as appropriate to the OpenSim coordinates of the anchor point provides the OpenSim coordinates that correspond to the new GPS reading, to which the avatar is then instructed to move.
 
-The anchor point is specified using global coordinates, not local coordinates. This allows navigation to operate across region boundaries and within mega regions (it is not limited to a single 256x256 meter OpenSim region) and there are no restrictions for the placement of the OpenSim component of the anchor point (it can be anywhere in any region, movement of the avatar can be in any direction from it (positive and negative), it does not have to be at the center of the model or even in a region that the model occupies).
-
-Calculating a global coordinate is simply a case of multiplying the position of the region by 256 and then adding the local coordinate. For example, for an anchor at local coordinate $(127,203,23)$ within a region that is at $(1020,1042)$ the global X coordinate is calculated as $(1020 * 256) + 127 = 261247$ and the global Y coordinate as $(1043 * 256) + 203 = 267211$. Elevation (Z) is ignored due to a combination of the relatively low accuracy of these data attainable via GPS (when compared to the longitudinal/latitudinal accuracy) and as the case study explored involved users navigating outdoor ruins remaining at ground level.
 
 
 \textbf{***Include code \& structure of modifications from Second Life client itself}
