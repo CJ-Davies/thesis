@@ -120,7 +120,14 @@ Applying the concept of parallel reality to virtual heritage represents an oppor
 \section{The Virtual Time Window}
 The Virtual Time Window (VTW) is an application of parallel reality to virtual heritage, leveraging the OVW group's existing OpenSim virtual reconstructions of cultural heritage sites in a handheld package that allows tandem exploration of both the real cultural heritage sites \& their spatially equivalent virtual reconstructions.
 
-VTW manifests as a tablet computer which is capable of tracking its position via GPS, its compass heading via magnetometer (`electronic compass') \& its pitch via accelerometer. Existing AR projects have proven through application the suitability of smartphones \& tablets for mobile, position \& orientation aware applications that present virtual content within a cultural heritage context. These devices are also entering ubiquity today \& thus present a platform that can be quickly assimilated by most users. The tablet runs a modified version of the Second Life client in order to access, via wifi, a virtual reconstruction of a cultural heritage site hosted by an OpenSim server. The Second Life client is controlled entirely by the tablet's position \& orientation - the user does not manually control any aspect. The modality of interaction offered is similar to that of using a smartphone to take a photograph, but whereas the screen of the smartphone shows the real environment as it is, the screen of the VTW tablet shows the environment as it was in the past - a window to the past, or \textit{Virtual Time Window}. The user is free to explore the real cultural heritage site, observing it in its current state, whilst at any moment `looking through' VTW to see what a particular vantage looked like in the past.
+VTW manifests as a tablet computer which is capable of tracking its position via GPS, its compass heading via magnetometer (`electronic compass') \& its pitch via accelerometer. Existing AR projects have proven through application the suitability of smartphones \& tablets for mobile, position \& orientation aware applications that present virtual content within a cultural heritage context. These devices are also entering ubiquity today \& thus present a platform that can be quickly assimilated by most users. The tablet runs a modified version of the Second Life client in order to access, via wifi, a virtual reconstruction of a cultural heritage site hosted by an OpenSim server. The Second Life client is controlled entirely by the tablet's position \& orientation - the user does not manually control any aspect. The modality of interaction offered is similar to that of using a smartphone to take a photograph, but whereas the screen of the smartphone shows the real environment as it is, the screen of the VTW tablet shows the environment as it was in the past - a window to the past, or \textit{Virtual Time Window}. The user is free to explore the real cultural heritage site, observing it in its current state, whilst at any moment `looking through' VTW to see what a particular vantage looked like in the past. See figure \ref{vtw_high_level.png} for a representation of the components of the platform at the conceptual level.
+
+\begin{figure}[h]
+\centering
+  \includegraphics[width=.7\linewidth]{vtw_high_level.png}
+  \caption{High level architecture of VTW.}
+  \label{vtw_high_level.png}
+\end{figure}
 
 In terms of the combined Milgram/Waterworth model, the displacement along the locus axis when the user switches their attention between their real environment \& the virtual environment upon the tablet will displace less toward the VR extremum than shown in figure \ref{focus-locus-sensus-with-virtuality-continuum-with-transition} which represents transitions between real \& virtual environments when using a HMD that effectively blocks all stimuli from the real world when observing the virtual. When considering the environmental provision, VTW features two complete environments, one real \& the other virtual. From the perspective of transitioning between receiving stimuli from each environment, there is an obvious difference between VTW's tablet based approach compared to a HMD approach, as the latter effectively forces all percepts to emanate from one environment whilst the former allows percepts emanating from both environments to be perceived simultaneously.
 
@@ -528,7 +535,7 @@ Due to the Second Life client's existing control interfaces not allowing enough 
 
 %=========================================================================================================
 
-\subsection{Overview of Second Life Modifications}
+\subsection{Overview of Second Life Client Modifications}
 
 \newcommand{\asioFootnote}{\footnote{\url{http://www.boost.org/doc/libs/1_57_0/doc/html/boost_asio.html}}}
 
@@ -674,29 +681,22 @@ boost::tuple<float, float, float> LLViewerSerialMovement::latitudeLongitudeToReg
 \label{secondlifehaversine}
 \end{figure}
 
+These modifications to the Second Life client are configured/controlled via a window added to the client \& accessed via a menu entry (see figure \ref{pangolin_second_life_dialogue.png}). The implementation of this resides in \path{/indra/newview/LLViewerSerialMonitor}. This allows for specification of the path to the serial device, along with its baudrate, as well as the specification of the anchor point - the latitude \& longitude of the point in the real world \& the equivalent X/Y coordinates in the Second Life reconstruction. The window then provides diagnostic output showing the messages coming in from the serial device, along with controls to individually enable/disable orientation \& position control \& alter the high-pass \& smoothing applied to both controls.
 
-Wrote LLFloaterSerialMonitor as GUI for configuring/activating/deactivating serial control
+\begin{figure}[h]
+\centering
+  \includegraphics[width=0.6\linewidth]{pangolin_second_life_dialogue.png}
+  \caption{Config pane in modified Second Life client for HMC6343 + MAX-6.}
+  \label{pangolin_second_life_dialogue.png}
+\end{figure}
 
-
-
-
-
-
-
-
-
-
+%=========================================================================================================
 
 
 
 
 
-
-
-
-\textbf{***Include HEX whatnot from Arduino code}
-
-\textbf{***Include Haversine as pseudocode(?), RegionModule code \& Second Life client modification}
+%\textbf{***Include HEX whatnot from Arduino code}
 
 %Magnetic declination information was entered into the HMC6343 for the position of the cathedral and the date of our experiments. The HMC6343's hard-iron offset calculation feature was used each time the hardware configuration was altered. The sampling frequency of the HMC6343 was set to its highest value of 10Hz. Orientation was set to `upright front' to match the physical orientation of the IC in the experiments.
 
@@ -711,10 +711,16 @@ Wrote LLFloaterSerialMonitor as GUI for configuring/activating/deactivating seri
 
 
 
+\subsection{I like wine}
 
-\textbf{***Include code \& structure of modifications from Second Life client itself}
+\textbf{***Figure \ref{vtw_implementation.png} needs referencing somewhere around here.}
 
-
+\begin{figure}[h]
+\centering
+  \includegraphics[width=\linewidth]{vtw_implementation.png}
+  \caption{Implementation of VTW.}
+  \label{vtw_implementation.png}
+\end{figure}
 
 The product summary for the MAX-6 claims accuracy of 2.5m Circular Error Probable (CEP) without SBAS corrections and 2m CEP with SBAS corrections ``demonstrated with a good active antenna''~\cite{U-bloxAG2012}. This means that, in an ideal situation with SBAS correction data available, there would be 50\% certainty that each position reported by the GPS receiver would be within 2m of its actual position. The SL-1202 antenna used is passive, however as the distance between antenna and the MAX-6 IC itself in the hardware application is only a few millimeters there would have been negligible benefit from using an active antenna. However whether the SL-1202 constitutes `good' for achieving the headlining performance characteristics of the MAX-6 is debatable as the definition of `good' was not provided in the product summary.
 
@@ -738,12 +744,7 @@ $\langle bearing \rangle$ $\langle pitch \rangle$ $\langle roll \rangle$ $\langl
 
 The viewer's GUI was modified with the addition of a dialogue that allows the user to specify the path of the serial device, separately enable or disable sensor-driven camera and movement control, as well as providing numerous controls for fine-tuning its behavior, including the ability to specify high-pass filters for avatar movement and specify the smoothing applied to camera control. This GUI also presents the necessary fields for input of the anchor point details and fields for diagnostic output of the received information. Figure \ref{pangolin_screenshot} shows this GUI within the Pangolin viewer.
 
-\begin{figure}[h]
-\centering
-  \includegraphics[width=0.6\linewidth]{pangolin_second_life_dialogue.png}
-  \caption{Config pane in modified Second Life client for HMC6343 + MAX-6.}
-  \label{pangolin_second_life_dialogue.png}
-\end{figure}
+
 
 %=========================================================================================================
 
