@@ -430,7 +430,7 @@ The Dynamic Platform Models adjust how the navigation engine processes the readi
 
 The output of the receiver is in the form of messages in the NMEA 0183 protocol from the National Marine Electronics Association. By default, the MAX-6 sends many more message types than are required for VTW \& as the Arduino's processing power is limited the superfluous messages are disabled. The GPRMC message format contains the recommended minimum amount of information for transit applications, including time, latitude \& longitude.
 
-These configurations are effected by sending the MAX-6 commands encoded in the UBX protocol as arrays of hex values. For example, setting the Dynamic Platform Model to Pedestrian is performed with the code in figure \ref{arduinoMAX6hex}, where \texttt{sendUBX} is a function that writes out using SoftwareSerial;
+These configurations are effected by sending the MAX-6 commands encoded in the UBX protocol as arrays of hex values. For example, setting the Dynamic Platform Model to Pedestrian is performed with the code in figure \ref{arduinoMAX6hex}, where \path{sendUBX} is a function that writes out using SoftwareSerial;
 
 \begin{figure}[h]
 \begin{lstlisting}[language=C, numbers=left, numberstyle=\small, stepnumber=1, frame=single, breaklines=true, backgroundcolor=\color{codebackground}, showstringspaces=false]
@@ -518,12 +518,12 @@ private Vector3 LatitudeLongitudeToRegionCoordinate(double newLat, double newLon
 
 \section{Modifying Second Life for Orientation \& Position Control}
 
-Due to the Second Life client's existing control interfaces not allowing enough control over camera orientation for VTW's purposes (section \ref{exploitJoystick}), it was necessary to modify the client's codebase to produce a bespoke client allowing complete control over orientation for use with magnetometer \& accelerometer input. Although sufficient position control could be achieved via an OpenSim region module (section \ref{regionModule}) it was prudent to also encapsulate position control through the modified client; not only does it allow for finer grain control, but it also removes the dependency upon the virtual reconstruction being hosted upon an OpenSim server (Second Life's own servers do not support extension via Region Modules). Thus, the Second Life client was modified with the additions of the ability to;
+Due to the Second Life client's existing control interfaces not allowing enough control over camera orientation for VTW's requirements (section \ref{exploitJoystick}), it was necessary to modify the client's codebase to produce a bespoke client allowing complete control over orientation by magnetometer \& accelerometer input. Although sufficient position control could be achieved via an OpenSim region module (section \ref{regionModule}) it was prudent to also encapsulate position control through the modified client; not only does this allow for finer grain control, it also removes the dependency upon the virtual reconstruction being hosted upon an OpenSim server (Second Life's own servers do not support extension via Region Modules). Thus, the Second Life client was modified with the addition of the ability to;
 
 \begin{itemize}
 	\item connect to a serial device for I/O,
-	\item control movement of the avatar according to input from a serial device,
-	\item control the camera according to input from a serial device.
+	\item control movement of the avatar according to input from this serial device,
+	\item control the camera according to input from this serial device.
 \end{itemize}
 
 %=========================================================================================================
@@ -536,16 +536,20 @@ Due to the Second Life client's existing control interfaces not allowing enough 
 
 \newcommand{\fedetftFootnote}{\footnote{\url{http://www.webalice.it/fede.tft/serial_port/serial_port.html}}}
 
+\newcommand{\regionmodulelimitationFootnote}{\footnote{This is not due to any limitation on the part of OpenSim, but simply due to the Second Life client modifications being pursued further than the OpenSim module.}}
+
+\newcommand{\megaregionFootnote}{\footnote{\url{http://opensimulator.org/wiki/Setting_Up_Mega-Regions}}}
+
 %=====================
 
 %Replaced the Linden Boost binary with that built by LightDrake
 
-The Second Life client is written predominantly in C++ so the Asio library\asioFootnote{} from the popular Boost project\boostFootnote{} is used to imbue it with serial connectivity. The fundamental buffered asynchronous serial handling is implemented using Terraneo Federico's AsyncSerial class\fedetftFootnote{} which is included in the client codebase as \texttt{/indra/newview/AsyncSerial}. The majority of the modifications are then contained within \texttt{/indra/newview/LLViewerSerialMovement}. The core executable of the viewer, \texttt{/indra/newview/LLAppViewer} obtains an instance of \texttt{LLViewerSerialMovement} \& then calls \texttt{LLViewerSerialMovement::update()} upon each iteration of the client's main update loop, \texttt{LLAppViewer::mainLoop()}.
+The Second Life client is written predominantly in C++ so the Asio library\asioFootnote{} from the popular Boost project\boostFootnote{} is used to imbue it with serial connectivity. The fundamental buffered asynchronous serial handling is implemented using Terraneo Federico's \path{AsyncSerial} class\fedetftFootnote{} which is included in the client codebase as \path{/indra/newview/AsyncSerial}. The majority of the functionality added to the client is then contained within \path{/indra/newview/LLViewerSerialMovement}. The core executable of the viewer, \path{/indra/newview/LLAppViewer} obtains an instance of \path{LLViewerSerialMovement} \& then calls \path{LLViewerSerialMovement::update()} upon each iteration of the client's main update loop, \path{LLAppViewer::mainLoop()}.
 
 %=========================================================================================================
 
 \subsection{\texttt{LLViewerSerialMovement} reference}
-
+Brief documentation of the functions in \path{/indra/newview/LLViewerSerialMovement} follows.
 \begin{center}
 \begin{longtable}{| p{4.2cm} | p{10cm} |}
 
@@ -565,55 +569,49 @@ The Second Life client is written predominantly in C++ so the Asio library\asioF
 
 %=========================================================================================================
 
-\texttt{::received} & A callback method registered to the \texttt{CallbackAsyncSerial} class in \texttt{/indra/newview/AsyncSerial}. This function parses the data (\texttt{const char *data}) from the serial device, extracting complete messages to the variable \texttt{mostRecentMessage}. Because of the nature of the serial I/O, \texttt{const char *data} is not guaranteed to contain a discrete message from the Arduino containing both orientation \& position data, thus this function has to parse the array \& assemble discrete messages from several subsequent callbacks. \\
+\texttt{::received} & A callback method registered to the \path{CallbackAsyncSerial} class in \path{/indra/newview/AsyncSerial}. This function parses the data (\path{const} \path{char} \path{*data}) from the serial device, extracting complete messages to the variable \path{mostRecentMessage}. Because of the nature of the serial I/O, \path{*data} is not guaranteed to contain a discrete message from the Arduino containing both orientation \& position data, thus this function must parse the array \& assemble discrete messages from possibly multiple subsequent callbacks. \\
 		
 \hline
 
 %=========================================================================================================
 
-\texttt{::update} & Called upon each iteration of \texttt{LLAppViwer::mainLoop()} \& further calls \texttt{::updateFromMostRecentMessage()}, \texttt{::updateOrientation()} \& \texttt{::updatePosition()}. \\
+\texttt{::update} & Called upon each iteration of \path{LLAppViwer::mainLoop()} \& further calls \path{::updateFromMostRecentMessage()}, \path{::updateOrientation()} \& \path{::updatePosition()}. \\
 		
 \hline
 
 %=========================================================================================================
 
-\texttt{::updateFromMostRecent- Message} & Processes a complete message from the Arduino which has been assembled by \texttt{::received()} \& extracts the constituent orientation \& position values. \\
+\texttt{::updateFromMostRecent- Message} & Processes a complete message from the Arduino which has been assembled by \path{::received()} \& extracts the constituent orientation \& position values. \\
 		
 \hline
 
 %=========================================================================================================
 
-\texttt{::updateOrientation} & Applies the orientation values extracted from an Arduino message to the avatar's camera. This is achieved by a call to \texttt{LLAgent::setAxes} which was added to \texttt{/indra/newview/LLAgent} \& in turn calls \texttt{LLCoordFrame::setAxes()} in \texttt{/indra/newview/LLCoordFrame}. \\
+\texttt{::updateOrientation} & Applies the orientation values extracted from an Arduino message to the avatar's camera. This is achieved by a call to \path{LLAgent::setAxes()} which calls \path{LLCoordFrame::setAxes()} in \path{/indra/llmath/LLCoordFrame}. The orientation values are passed as a quaternion, converting the bearing, pitch \& roll values extracted from the Arduino message as degrees using \path{::quaternionFromDegrees()}.\\
 		
 \hline
 
 %=========================================================================================================
 
-\texttt{::updatePosition} &  \\
+\texttt{::updatePosition} & Applies the position data extracted from an Arduino message to the avatar, using \path{LLAgent::startAutoPilotGlobal()} to perform smooth movement between the avatar's current position (obtained with \path{LLAgent::getPositionGlobal()}) \& the new position from the Arduino (converted from latitude \& longitude to Second Life region coordinates in \path{::latitudeLongitudeToRegionCoordinates()}). \\
 		
 \hline
 
 %=========================================================================================================
 
-\texttt{::quaternionFromDegrees} &  \\
+\texttt{::quaternionFromDegrees} & A helper method to convert bearing, pitch \& roll expressed in degrees, into a single quaternion. Quaternions are frequently used to represent rotations in 3D applications, as they do not suffer from gimbal lock - Second Life is no exception to this \& internally uses quaternions for all rotation data, providing \path{/indra/llmath/LLQuaternion} for this purpose. \\
 		
 \hline
 
 %=========================================================================================================
 
-\texttt{::smooth} &  \\
+\texttt{::latitudeLongitudeTo- RegionCoordinate} & Converts a real world position, expressed as a longitude \& latitude pair, to the equivalent Second Life coordinates, applying the haversine formula using knowledge of the real world \& corresponding Second Life position of the anchor point \& the scale of the Second Life reconstruction compared to the real world. \\
 		
 \hline
 
 %=========================================================================================================
 
-\texttt{::latitudeLongitudeTo- RegionCoordinate} &  \\
-		
-\hline
-
-%=========================================================================================================
-
-\texttt{::degreesToRadians}        &  \\
+\texttt{::degreesToRadians} & A helper method to convert values expressed in degrees to the equivalent value expressed in radians (implementations of the haversine formula usually make use of radians). \\
 		
 \hline
 
@@ -622,13 +620,68 @@ The Second Life client is written predominantly in C++ so the Asio library\asioF
 \end{longtable}
 \end{center}
 
+%=========================================================================================================
+
+Controlling the avatar's position according to latitude \& longitude readings from the GPS receiver is once again implemented using the haversine formula. This implementation, included as figure \ref{secondlifehaversine} can be compared to the OpenSim region module version included previously as figure \ref{RegionModuleCode1}. One important difference between the Second Life client implementation \& the OpenSim region module implementation is that the former uses global coordinates, rather than local coordinates\regionmodulelimitationFootnote{}. This means that the Second Life client implementation allows positional control of an avatar across region boundaries, crucial for use with a cultural heritage reconstruction that spans multiple regions in an OpenSim `megaregion'\megaregionFootnote{} such as that used for testing of VTW.
+
+\begin{figure}[h]
+\begin{lstlisting}[language=C++, numbers=left, numberstyle=\small, stepnumber=1, frame=single, breaklines=true, backgroundcolor=\color{codebackground}, showstringspaces=false]
+boost::tuple<float, float, float> LLViewerSerialMovement::latitudeLongitudeToRegionCoordinate(double newLat, double newLong, float anchorLat, float anchorLong, float scale, boost::tuple<float, float, float> anchorCoordinates) {
+
+    double d, a, c, X, Y;
+
+    // calculate difference in y (latitude) between anchor & new reading
+    d = fabs(degreesToRadians(newLat - anchorLat));
+    a = sin(d / 2) * sin(d / 2);
+    c = 2 * atan2(sqrt(a), sqrt(1 - a));
+
+    // mean radius of the Earth is 6371km (6371000m)
+    d = 6371000 * c;
+
+    // apply scale
+    d *= scale;
+
+    // sum appropriately from the anchor
+    if (newLat > anchorLat) {
+        Y = (anchorCoordinates.get<1>() + d);
+    }
+    else {
+        Y = (anchorCoordinates.get<1>() - d);
+    }
+
+    // calculate difference in x (longitude) between anchor & new reading
+    d = fabs(degreesToRadians((newLong - anchorLong)));
+    a = sin(d / 2) * sin(d / 2) * cos(degreesToRadians(newLat)) * cos(degreesToRadians(anchorLat));
+    c = 2 * atan2(sqrt(a), sqrt(1 - a));
+    
+    d = 6371000 * c;
+
+    // apply scale
+    d *= scale;
+
+    // sum appropriately from anchor
+    if (newLong > anchorLong) {
+        X = (anchorCoordinates.get<0>() + d);
+    }
+    else {
+        X = (anchorCoordinates.get<0>() - d);
+    }
+
+    return boost::make_tuple(X, Y, anchorCoordinates.get<2>());
+}
+\end{lstlisting}
+\caption{Converting longitude \& latitude to Second Life coordinates using haversine.}
+\label{secondlifehaversine}
+\end{figure}
+
 
 Wrote LLFloaterSerialMonitor as GUI for configuring/activating/deactivating serial control
 
 
-haversine implementation is in LLViewerSerialMovement::latitudeLongitudeToRegionCoordinate
 
-%=========================================================================================================
+
+
+
 
 
 
