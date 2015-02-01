@@ -41,17 +41,18 @@
 \contentsline {figure}{\numberline {4.19}{\ignorespaces Pin designation for figure 4.18\hbox {}.\relax }}{41}
 \contentsline {figure}{\numberline {4.20}{\ignorespaces Assembled Arduino Uno R3 + HMC6343.\relax }}{42}
 \contentsline {figure}{\numberline {4.21}{\ignorespaces Configuration in Second Life client for Arduino + HMC6343 `joystick'.\relax }}{43}
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Example wiring for Arduino with HMC6343 + u-blox MAX-6.\relax }}{45}
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Pin designation for figure 4.22\hbox {}.\relax }}{46}
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Assembled Arduino/sensors.\relax }}{46}
-\contentsline {figure}{\numberline {4.25}{\ignorespaces Arduino/sensors attached to tabet.\relax }}{46}
-\contentsline {figure}{\numberline {4.26}{\ignorespaces Setting MAX-6 Dynamic Platform Model to Pedestrian in an Arduino sketch.\relax }}{47}
-\contentsline {figure}{\numberline {4.27}{\ignorespaces Excerpt of OpenSim Region Module for avatar movement via GPS.\relax }}{48}
-\contentsline {figure}{\numberline {4.28}{\ignorespaces Converting longitude \& latitude to Second Life coordinates using haversine.\relax }}{54}
-\contentsline {figure}{\numberline {4.29}{\ignorespaces Config pane in modified Second Life client for HMC6343 + MAX-6.\relax }}{55}
-\contentsline {figure}{\numberline {4.30}{\ignorespaces Implementation of VTW.\relax }}{55}
-\contentsline {figure}{\numberline {4.31}{\ignorespaces OpenSim Server \& wireless AP.\relax }}{56}
-\contentsline {figure}{\numberline {4.32}{\ignorespaces VTW at the cathedral.\relax }}{56}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Using haversine to mimic real world movement in a virtual world.\relax }}{44}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Example wiring for Arduino with HMC6343 + u-blox MAX-6.\relax }}{45}
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Pin designation for figure 4.23\hbox {}.\relax }}{46}
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Assembled Arduino/sensors.\relax }}{46}
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Arduino/sensors attached to tabet.\relax }}{46}
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Setting MAX-6 Dynamic Platform Model to Pedestrian in an Arduino sketch.\relax }}{47}
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Excerpt of OpenSim Region Module for avatar movement via GPS.\relax }}{48}
+\contentsline {figure}{\numberline {4.29}{\ignorespaces Converting longitude \& latitude to Second Life coordinates using haversine.\relax }}{54}
+\contentsline {figure}{\numberline {4.30}{\ignorespaces Config pane in modified Second Life client for HMC6343 + MAX-6.\relax }}{55}
+\contentsline {figure}{\numberline {4.31}{\ignorespaces Implementation of VTW.\relax }}{55}
+\contentsline {figure}{\numberline {4.32}{\ignorespaces OpenSim Server \& wireless AP.\relax }}{56}
+\contentsline {figure}{\numberline {4.33}{\ignorespaces VTW at the cathedral.\relax }}{56}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Floor plan of St Salvator's chapel, with IPS routes.\relax }}{58}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Overview of the Mirrorshades platform.\relax }}{59}
