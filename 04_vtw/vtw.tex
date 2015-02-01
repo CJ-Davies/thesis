@@ -572,7 +572,14 @@ Due to the Second Life client's existing control interfaces not allowing enough 
 
 %Replaced the Linden Boost binary with that built by LightDrake
 
-The Second Life client is written predominantly in C++ so the Asio library\asioFootnote{} from the popular Boost project\boostFootnote{} is used to imbue it with serial connectivity. The fundamental buffered asynchronous serial handling is implemented using Terraneo Federico's \path{AsyncSerial} class\fedetftFootnote{} which is included in the client codebase as \path{/indra/newview/AsyncSerial}. The majority of the functionality added to the client is then contained within \path{/indra/newview/LLViewerSerialMovement}. The core executable of the viewer, \path{/indra/newview/LLAppViewer} obtains an instance of \path{LLViewerSerialMovement} \& then calls \path{LLViewerSerialMovement::update()} upon each iteration of the client's main update loop, \path{LLAppViewer::mainLoop()}.
+The Second Life client is written predominantly in C++ so the Asio library\asioFootnote{} from the popular Boost project\boostFootnote{} is used to imbue it with serial connectivity. The fundamental buffered asynchronous serial handling is implemented using Terraneo Federico's \path{AsyncSerial} class\fedetftFootnote{} which is included in the client codebase as \path{/indra/newview/AsyncSerial}. The majority of the functionality added to the client is then contained within \path{/indra/newview/LLViewerSerialMovement}. The core executable of the viewer, \path{/indra/newview/LLAppViewer} obtains an instance of \path{LLViewerSerialMovement} \& then calls \path{LLViewerSerialMovement::update()} upon each iteration of the client's main update loop, \path{LLAppViewer::mainLoop()}. These modifications are visualised by figure \ref{second_life_structure.png}.
+
+\begin{figure}[h]
+\centering
+  \includegraphics[width=.7\linewidth]{second_life_structure.png}
+  \caption{Overview of modifications to Second Life client.}
+  \label{second_life_structure.png}
+\end{figure}
 
 %=========================================================================================================
 
@@ -732,7 +739,7 @@ These modifications to the Second Life client are configured/controlled via a wi
 
 
 
-\subsection{I like wine}
+\subsection{Scratch}
 
 \textbf{***Figure \ref{vtw_implementation.png} needs referencing somewhere around here.}
 
