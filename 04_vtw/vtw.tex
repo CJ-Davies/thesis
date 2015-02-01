@@ -341,24 +341,13 @@ The prerequisites for this approach are that the Second Life model is aligned co
   \label{haversine_example.png}
 \end{figure}
 
-Figure \ref{haversine_example.png} illustrates an example of using haversine to calculate the user's position within the virtual environment that is equivalent to their current position in the real world. For the real world, we know the latitude ($\psi$) \& longitude ($\phi$) of the anchor point \& we are told the latitude \& longitude of the user from GPS. For the virtual world, we know the X,Y coordinates of the anchor point \& we need to calculate the X,Y coordinates of the user.
+%Figure \ref{haversine_example.png} illustrates an example of using haversine to calculate the user's position within the virtual environment that is equivalent to their current position in the real world. For the real world, we know the latitude ($\psi$) \& longitude ($\phi$) of the anchor point \& we are told the latitude \& longitude of the user from GPS. For the virtual world, we know the X,Y coordinates of the anchor point \& we need to calculate the X,Y coordinates of the user.
 
-To obtain the user's Y coordinate, $\upsilon_{2}(y)$, we calculate the difference between the latitude of the anchor point \& the latitude of the user's position reported by GPS, converting to radians where necessary, then add/subtract this value from the anchor point's Y coordinate;
+%To obtain the user's Y coordinate, $\upsilon_{2}(y)$, we calculate the difference between the latitude of the anchor point \& the latitude of the user's position reported by GPS, converting to radians where necessary, then add/subtract this value from the anchor point's Y coordinate;
 
-\begin{equation}
-d = \Delta{\phi} = 3.5779250e^{-06}
-
-a = \sin^{2}(d/2) =  3.200387e^{-12}
-
-\end{equation}
-
-
-
-
-
-%c = \text{atan2} \left( \sqrt[]{a}, \sqrt[]{1-a} \right) \times 6371km = 22.794960m
-%\phi_{2} < \phi_{1} \therefore \upsilon_{2}(y) = 88.862 - 22.794960 = 66.06704
-
+\begin{align}
+& d = \Delta{\phi} = 3.5779250e^{-06} \\ & a = \sin^{2}\left( d / 2 \right) = 3.200387e^{-12} \\ & c = \text{atan2} \left( \sqrt[]{a}, \sqrt[]{1-a} \right) \times 6371km = 22.794960m \\ & \phi_{2} < \phi_{1} \therefore \upsilon_{2}(y) = 88.862 - 22.794960 = 66.06704
+\end{align}
 
 
 
