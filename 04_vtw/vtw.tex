@@ -47,7 +47,7 @@ The shading of each point within the cube represents its degree of virtuality, c
 \begin{figure}[h]
 \centering
   \includegraphics[width=.8\linewidth]{taxonomy_2.png}
-  \caption{Coordinate sets for each approach within the taxonomical space (figure \ref{taxonomy_1.png})}
+  \caption{Coordinate sets for each approach within the taxonomical space (figure \ref{taxonomy_1.png}).}
   \label{taxonomy_2.png}
 \end{figure}
 
@@ -77,10 +77,7 @@ Whereas many heritage representations, architectural walkthroughs \& simulations
 
 \textbf{***Include references to Kris Getchell's thesis? Experiential learning, etc?}
 
-The Open Virtual Worlds (OVW) research group at the School of Computer Science at the University of St Andrews has been employed in virtual heritage projects since 2007~\cite{Getchell2007}, producing a number of reconstructions of cultural heritage sites in Scotland \& further afield. These reconstructions have been produced through collaborations with academics from the university's Art History, History \& Archaeology departments, as well as with domain experts from heritage organisations including Historic Scotland \& the National Trust for Scotland. These projects range from small reconstructions of a church to much larger reconstructions such as that of the cathedral at St Andrews (figure \ref{cathedral_real_outside.jpg}, \ref{cathedral_reconstruction_above.jpg}) which represents several years of work~\cite{Kennedy2013}. Whilst the cathedral reconstruction was completed as a research project, other reconstructions were produced specifically for use in schools in Scotland (such as Linlithgow palace, figure \ref{linlithgow_real.jpg}, \ref{linlithgow_reconstruction.png}), others for outreach purposes (Mosfell Viking farmstead, figure \ref{mosfell_outside.jpg}, \ref{mosfell_inside.jpg}) \& still others were built specifically for installation into museums (Caen Township, figure \ref{caen_township_outside.jpg}, \ref{caen_township_inside_wireframe.jpg}). Some of these reconstructions are inhabited with virtual humans that are scripted to perform certain actions specific to the role they depict at the site (figure \ref{cathedral_npc_standing.png}, \ref{cathedral_npc_talking.png}).
-
-\TwoFig{cathedral_real_outside.jpg} {St Andrews cathedral today.} {cathedral_real_outside.jpg}
-       {cathedral_reconstruction_above.jpg} {St Andrews cathedral reconstruction.} {cathedral_reconstruction_above.jpg}
+The Open Virtual Worlds (OVW) research group at the School of Computer Science at the University of St Andrews has been employed in virtual heritage projects since 2007~\cite{Getchell2007}, producing a number of reconstructions of cultural heritage sites in Scotland \& further afield. These reconstructions have been produced through collaborations with academics from the university's Art History, History \& Archaeology departments, as well as with domain experts from heritage organisations including Historic Scotland \& the National Trust for Scotland. These projects range from small reconstructions of a church, to much larger reconstructions such as that of the cathedral at St Andrews which represents several years of work~\cite{Kennedy2013}. Whilst the cathedral reconstruction was completed as a research project, other reconstructions were produced specifically for use in schools in Scotland (such as Linlithgow palace, figure \ref{linlithgow_real.jpg}, \ref{linlithgow_reconstruction.png}), others for outreach purposes (Mosfell Viking farmstead, figure \ref{mosfell_outside.jpg}, \ref{mosfell_inside.jpg}) \& still others were built specifically for installation into museums (Caen Township, figure \ref{caen_township_outside.jpg}, \ref{caen_township_inside_wireframe.jpg}). Some of these reconstructions are inhabited with virtual humans that are scripted to perform certain actions specific to the role they depict at the site (figure \ref{cathedral_npc_standing.png}, \ref{cathedral_npc_talking.png}).
 
 \TwoFig{linlithgow_real.jpg} {Linlithgow Palace today.} {linlithgow_real.jpg}
        {linlithgow_reconstruction.png} {Linlithgow Palace reconstruction.} {linlithgow_reconstruction.png}
@@ -110,7 +107,7 @@ In addition to these temporary workshops, the reconstructions have also been use
 
 %=========================================================================================================
 
-\subsection{Parallel Reality in Virtual Heritage}
+\section{Parallel Reality in Virtual Heritage}
 Applications of alternate reality techniques within virtual heritage have thus far broadly fallen into the categories of AR, experienced at the site, or VR, experienced away from the site (in terms of space, time, or both). The dissemination of the OVW group's content has been no exception to this observation, falling into categories 10-12 of figure \ref{taxonomy_2.png}, with complete virtual environments that are experienced with both spatial \& temporal separation from the real site that they represent.
 
 Applying the concept of parallel reality to virtual heritage represents an opportunity to explore an exciting new modality of interaction that combines the complete virtual environments of categories 10-12 with the real time juxtaposition between real \& virtual environments of AR systems from category 13. In terms of the four categories of the taxonomic space, such a PR system would combine the high precision \& interactivity of a VR system (category 10) with two values of viruality, as the user is provided the ability to observe either the complete virtual environment (virtuality = 1) or the unmodified real environment (virtuality = 0). The automatism of such a system would occupy a position between that of VR \& AR; whilst the system will require a more involved development cycle than a purely VR one, the slackened requirements on registrational accuracy of a PR system compared to an AR system promise higher automatism than a purely AR system.
@@ -248,8 +245,6 @@ Further requirements for obtaining accurate compass bearings from a MEMS magneto
 
 \label{exploitJoystick}
 
-\textbf{***Go through Arduino sketch \& talk about things like magnetic declination, etc.}
-
 \newcommand{\ArduinoJoystickVideoFootnote}{\footnote{\url{https://www.youtube.com/watch?v=-ddtmqoGNmg}}}
 
 \newcommand{\atmegaFootnote}{\footnote{\url{http://www.atmel.com/devices/ATMEGA16U2.aspx}}}
@@ -295,7 +290,7 @@ In order to control the position of the Second Life avatar, sensor data are requ
 
 %***diagram showing this
 
-In order for readings from a GPS receiver to be used to control the position of the Second Life avatar within a reconstruction, a translation must be performed between the coordinate system of GPS (latitude \& longitude) \& the coordinate system of Second Life (simple X,Y coordinates within 256 metre square `regions'). This is achieved by use of a single `anchor point', for which both the real world latitude \& longitude \& the corresponding virtual world X,Y coordinates are known. Calculating Second Life displacement from these X,Y coordinates is achieved by applying the scale of the reconstruction to the displacement between the anchor point's latitude \& longitude \& the user's current position reported as latitude \& longitude by a GPS receiver. This real world displacement is calculated using the haversine formula~\cite{Gellert1989}, which is used to calculate the `great circle' (orthodromic) distance between two points on the surface of a sphere (such as the Earth, when simplified from its oblate spheroid shape). The central angle \text{$\left(\frac{d}{r}\right)$} between the two points is given by;
+In order for readings from a GPS receiver to be used to control the position of the Second Life avatar within a reconstruction, a translation must be performed between the coordinate system of GPS (latitude \& longitude) \& the coordinate system of Second Life (simple X,Y coordinates within 256 metre square `regions'). This is achieved by use of a single `anchor point', for which both the real world latitude \& longitude \& the corresponding virtual world X,Y coordinates are known. Calculating Second Life displacement from these X,Y coordinates is achieved by applying the scale of the reconstruction to the displacement between the anchor point's latitude \& longitude \& the user's current position reported as latitude \& longitude by a GPS receiver. This real world displacement is calculated using the haversine formula~\cite{VanBrummelen2012}, which is used to calculate the `great circle' (orthodromic) distance between two points on the surface of a sphere (such as the Earth, when simplified from its oblate spheroid shape). The central angle \text{$\left(\frac{d}{r}\right)$} between the two points is given by;
 
 \begin{equation}
 \label{haversine1}
@@ -540,7 +535,7 @@ private Vector3 LatitudeLongitudeToRegionCoordinate(double newLat, double newLon
 
 %=========================================================================================================
 
-\clearpage
+%\clearpage
 
 %=========================================================================================================
 
@@ -572,7 +567,7 @@ Due to the Second Life client's existing control interfaces not allowing enough 
 
 %Replaced the Linden Boost binary with that built by LightDrake
 
-The Second Life client is written predominantly in C++ so the Asio library\asioFootnote{} from the popular Boost project\boostFootnote{} is used to imbue it with serial connectivity. The fundamental buffered asynchronous serial handling is implemented using Terraneo Federico's \path{AsyncSerial} class\fedetftFootnote{} which is included in the client codebase as \path{/indra/newview/AsyncSerial}. The majority of the functionality added to the client is then contained within \path{/indra/newview/LLViewerSerialMovement}. The core executable of the viewer, \path{/indra/newview/LLAppViewer} obtains an instance of \path{LLViewerSerialMovement} \& then calls \path{LLViewerSerialMovement::update()} upon each iteration of the client's main update loop, \path{LLAppViewer::mainLoop()}. These modifications are visualised by figure \ref{second_life_structure.png}.
+The Second Life client is written predominantly in C++ so the Asio library\asioFootnote{} from the popular Boost project\boostFootnote{} is used to imbue it with serial connectivity, allowing it to receive messages from the Arduino in an asynchronous non-blocking fashion. The fundamental buffered asynchronous serial handling is implemented using Terraneo Federico's \path{AsyncSerial} class\fedetftFootnote{} which is included in the client codebase as \path{/indra/newview/AsyncSerial}. The majority of the functionality added to the client is then contained within \path{/indra/newview/LLViewerSerialMovement}. The core executable of the viewer, \path{/indra/newview/LLAppViewer} obtains an instance of \path{LLViewerSerialMovement} \& then calls \path{LLViewerSerialMovement::update()} upon each iteration of the client's main update loop, \path{LLAppViewer::mainLoop()}. These modifications are visualised by figure \ref{second_life_structure.png}.
 
 \begin{figure}[h]
 \centering
@@ -659,6 +654,15 @@ Brief documentation of the functions in \path{/indra/newview/LLViewerSerialMovem
 
 Controlling the avatar's position according to latitude \& longitude readings from the GPS receiver is once again implemented using the haversine formula. This implementation, included as figure \ref{secondlifehaversine} can be compared to the OpenSim region module version included previously as figure \ref{RegionModuleCode1}. One important difference between the Second Life client implementation \& the OpenSim region module implementation is that the former uses global coordinates, rather than local coordinates\regionmodulelimitationFootnote{}. This means that the Second Life client implementation allows positional control of an avatar across region boundaries, crucial for use with a cultural heritage reconstruction that spans multiple regions in an OpenSim `megaregion'\megaregionFootnote{} such as that used for testing of VTW.
 
+These modifications to the Second Life client are configured/controlled via a window added to the client \& accessed via a menu entry (see figure \ref{pangolin_second_life_dialogue.png}). The implementation of this resides in \path{/indra/newview/LLViewerSerialMonitor}. This allows for specification of the path to the serial device, along with its baudrate, as well as the specification of the anchor point - the latitude \& longitude of the point in the real world \& the equivalent X/Y coordinates in the Second Life reconstruction. The window then provides diagnostic output showing the messages coming in from the serial device, along with controls to individually enable/disable orientation \& position control \& alter the high-pass \& smoothing applied to both controls.
+
+\begin{figure}[h]
+\centering
+  \includegraphics[width=0.6\linewidth]{pangolin_second_life_dialogue.png}
+  \caption{Config pane in modified Second Life client for HMC6343 + MAX-6.}
+  \label{pangolin_second_life_dialogue.png}
+\end{figure}
+
 \begin{figure}[h]
 \begin{lstlisting}[language=C++, numbers=left, numberstyle=\small, stepnumber=1, frame=single, breaklines=true, backgroundcolor=\color{codebackground}, showstringspaces=false]
 boost::tuple<float, float, float> LLViewerSerialMovement::latitudeLongitudeToRegionCoordinate(double newLat, double newLong, float anchorLat, float anchorLong, float scale, boost::tuple<float, float, float> anchorCoordinates) {
@@ -709,39 +713,56 @@ boost::tuple<float, float, float> LLViewerSerialMovement::latitudeLongitudeToReg
 \label{secondlifehaversine}
 \end{figure}
 
-These modifications to the Second Life client are configured/controlled via a window added to the client \& accessed via a menu entry (see figure \ref{pangolin_second_life_dialogue.png}). The implementation of this resides in \path{/indra/newview/LLViewerSerialMonitor}. This allows for specification of the path to the serial device, along with its baudrate, as well as the specification of the anchor point - the latitude \& longitude of the point in the real world \& the equivalent X/Y coordinates in the Second Life reconstruction. The window then provides diagnostic output showing the messages coming in from the serial device, along with controls to individually enable/disable orientation \& position control \& alter the high-pass \& smoothing applied to both controls.
+%=========================================================================================================
 
-\begin{figure}[h]
-\centering
-  \includegraphics[width=0.6\linewidth]{pangolin_second_life_dialogue.png}
-  \caption{Config pane in modified Second Life client for HMC6343 + MAX-6.}
-  \label{pangolin_second_life_dialogue.png}
-\end{figure}
+\clearpage
 
 %=========================================================================================================
 
+\section{VTW in Use}
 
+\newcommand{\thinkpadFootnote}{\footnote{\url{http://support.lenovo.com/us/en/documents/pd012148}}}
 
+\newcommand{\wrtFootnote}{\footnote{\url{http://support.linksys.com/en-eu/support/routers/WRT54G}}}
 
+%=====================
 
-%\textbf{***Include HEX whatnot from Arduino code}
+The backdrop for real world experimentation with the VTW platform was the impressive ruins of St Andrews cathedral.
 
-%Magnetic declination information was entered into the HMC6343 for the position of the cathedral and the date of our experiments. The HMC6343's hard-iron offset calculation feature was used each time the hardware configuration was altered. The sampling frequency of the HMC6343 was set to its highest value of 10Hz. Orientation was set to `upright front' to match the physical orientation of the IC in the experiments.
+\begin{figure}[h]
+\centering
+  \includegraphics[width=\linewidth]{cathedral_reconstruction_side.png}
+  \caption{St Andrews Cathedral recreation set on the sunny St Andrews day afternoon 1318, showing the West Gate in the foreground \& ships in the background.}
+  \label{cathedral_reconstruction_side.png}
+\end{figure}
 
-%\begin{figure}[h!tbp]
-%\begin{lstlisting}[language=Java, numbers=left, numberstyle=\tiny, stepnumber=5]
+%=====================
 
+%~\cite{Kennedy2013} Canons \& Cathedrals
 
+St Andrews Cathedral occupies a site used for worship since the 8th Century AD. Work on the Cathedral began around 1160 and was completed nearly 150 years later (the west fa\c{c}ade and parts of the nave collapsed in a storm around 1270). It was finally consecrated in 1318 four years after the battle of Bannockburn and in the presence of King Robert I of Scotland. St Andrews Cathedral was in its prime, the centre of Scotland’s religious life, its largest and most magnificent church. In 1378 the Cathedral suffered a significant fire prompting
+a reworking of many of its features including the West and East End windows. Its presence was the catalyst for the foundation of a university at St Andrews in the early fifteenth century~\cite{Fawcett2011}, which remains an important seat of learning to this day. In 1561 following the Scottish reformation the Cathedral was abandoned by the Bishops and replaced by the parish church as the chief place of worship. The former headquarters of the Scottish Church was left to fall into ruin, with much of its stone being used in the construction of town dwellings.
 
-%Indoor Positioning - a roundup of such technologies is available in~\cite{Mautz2012}.
+During its time the Cathedral was central to Scottish personalities and history. St Andrews was the highest ranking Scottish see. The establishment of Augustinian Cannons followed by the initiation of
+building work by Bishop Ernald reflected integration with the European church, economic dynamism and decline of the Celtic Church. The diocese funded Robert Bruce during the Wars of Independence. Its Bishop William de Lamberton contributed to the formulation of the Declaration of Arbroath, a central document in the formation of
+Scottish Nationhood. Isabella, sister of Donnchadh IV, last Pictish Earl of Fife, crowned Bruce King. John Knox personally lead his congregation against the Cathedral’s finery and following the murder of Cardinal Beaton the first Scottish protestant congregation was established in the Bishop’s palace.
 
+Important fragments of the remain. The east gable of the presbytery, where the relics of St Andrew were purported to be kept, along with the south wall of the nave, and the majestic West Entrance all point to the Cathedral’s former majesty. The cloister retains its ruined chapter house and stone-vaulted under crofts. Consequently, much evidence of the Cathedral’s form exists. A view from the nave looking towards the choir in figure \ref{cathedral_real_outside.jpg}.
 
+%=====================
 
+The OVW Group's reconstruction of St Andrews cathedral, as shown in figures \ref{cathedral_reconstruction_side.png} \& \ref{cathedral_reconstruction_above.jpg}, represents the site as it stood in 1318, the year of its consecration. This virtual reconstruction, presenting a historically accurate model of the cathedral as it stood at the peak of its former glory, is very large at over 400m by 600m \& spanning multiple storeys, featuring the cloisters as well as the Cannons' living quarters.
 
+\TwoFig{cathedral_real_outside.jpg} {St Andrews cathedral today.} {cathedral_real_outside.jpg}
+       {cathedral_reconstruction_above.jpg} {St Andrews cathedral reconstruction.} {cathedral_reconstruction_above.jpg}
 
-\subsection{Scratch}
+%=========================================================================================================
 
-\textbf{***Figure \ref{vtw_implementation.png} needs referencing somewhere around here.}
+\subsection{Experimental Implementation}
+For the purposes of testing VTW at the cathedral, a temporary server \& network setup was effected using a Lenovo ThinkPad X61s\thinkpadFootnote{} laptop computer to host the OpenSim server with a Linksys WRT54G\wrtFootnote{} wireless router powered from a 12V sealed lead-acid battery to provide wireless communication between the OpenSim server \& the WindPad over a much larger range than the laptop's internal wireless interface could provide. This setup is shown in use at the cathedral by figure \ref{server} \& the architecture of this experimental implementation is shown by figure \ref{vtw_implementation.png}.
+
+\TwoFig{pangolin_laptop_router_battery.jpg} {OpenSim Server \& wireless AP.} {pangolin_laptop_router_battery.jpg}
+       {pangolin_in_use.jpg} {VTW at the cathedral.} {pangolin_in_use.jpg}
 
 \begin{figure}[h]
 \centering
@@ -750,43 +771,29 @@ These modifications to the Second Life client are configured/controlled via a wi
   \label{vtw_implementation.png}
 \end{figure}
 
-The product summary for the MAX-6 claims accuracy of 2.5m Circular Error Probable (CEP) without SBAS corrections and 2m CEP with SBAS corrections ``demonstrated with a good active antenna''~\cite{U-bloxAG2012}. This means that, in an ideal situation with SBAS correction data available, there would be 50\% certainty that each position reported by the GPS receiver would be within 2m of its actual position. The SL-1202 antenna used is passive, however as the distance between antenna and the MAX-6 IC itself in the hardware application is only a few millimeters there would have been negligible benefit from using an active antenna. However whether the SL-1202 constitutes `good' for achieving the headlining performance characteristics of the MAX-6 is debatable as the definition of `good' was not provided in the product summary.
+%=========================================================================================================
 
-The MAX-6 was operated in `pedestrian' dynamic platform model, use of SBAS correction data was enabled and frequency of readings was set to the maximum of 5Hz.
+\textbf{***Go through Arduino sketch \& talk about things like magnetic declination, etc.}
+
+%Magnetic declination information was entered into the HMC6343 for the position of the cathedral and the date of our experiments. The HMC6343's hard-iron offset calculation feature was used each time the hardware configuration was altered. The sampling frequency of the HMC6343 was set to its highest value of 10Hz. Orientation was set to `upright front' to match the physical orientation of the IC in the experiments.
+
+
+%The MAX-6 was operated in `pedestrian' dynamic platform model, use of SBAS correction data was enabled and frequency of readings was set to the maximum of 5Hz.
+
+%=========================================================================================================
+
+\subsection{Real World Performance of VTW}
+
+\newcommand{\ubloxcepFootnote}{\footnote{\url{https://u-blox.com/images/downloads/Product_Docs/MAX-6_ProductSummary_(GPS.G6-HW-10089).pdf}}}
+
+%=====================
+
+The product summary for the MAX-6 claims accuracy of 2.5m Circular Error Probable (CEP) without SBAS corrections and 2m CEP with SBAS corrections \textit{``demonstrated with a good active antenna''}\ubloxcepFootnote{}. This means that, in an ideal situation with SBAS correction data available, there would be 50\% certainty that each position reported by the GPS receiver would be within 2m of its actual position. The SL-1202 antenna used is passive, however as the distance between antenna and the MAX-6 IC itself in the hardware application is only a few millimeters there would have been negligible benefit from using an active antenna. However whether the SL-1202 constitutes `good' for achieving the headlining performance characteristics of the MAX-6 is debatable as the definition of `good' was not provided in the product summary.
+
 
 To determine the real world accuracy attainable with the MAX-6 outfitted with the SL-1202 in situations akin to those of the cultural heritage case study, a walking route around the St Andrews cathedral ruins, akin to the route that an individual visitor or school group might take, was planned and then walked with the MAX-6 connected to a laptop computer via an Arduino operating as a Universal Asynchronous Receiver/Transmitter (UART) feeding the raw National Marine Electronics Association (NMEA) messages into the `u-center'GPS evaluation software version 7.0 which logged the messages for later evaluation. Simultaneously for comparative purposes a mid-range consumer Android smartphone was used to record the same track; a HTC One S~\cite{HTCCorporation2013} containing a gpsOne Gen 8A solution within its Qualcomm Snapdragon S4 processor~\cite{QualcommIncorporated2013} and using Google's `My Tracks' app version 2.0.3 to record the data. The three sets of positional data (planned route, MAX-6 recorded route and smartphone recorded route) were entered into a PostgreSQL database~\cite{Daviesc,Daviesb} and the PostGIS database extender's ST\_HausdorffDistance algorithm~\cite{PostGIS} was used to calculate the Hausdorff distances between the recorded routes and the planned route and between the recorded routes themselves. In this scenario, the Hausdorff distance represents the furthest distance needed to travel from any point on the route recorded by the GPS receiver to reach the nearest point on the planned route. Because of the substantially greater inaccuracies identified in the latter part of the recorded tracks, separate Hausdorff distances were calculated both for the complete tracks and also for truncated first and second sub-tracks.
 
 This ability to control navigation within the 3D virtual environment without explicit conscious input of keyboard/mouse/touch commands is integral to reducing the cognitive load required to maintain a presence within a virtual environment which is a key requirement for overcoming the vacancy problem and achieving successful mobile cross reality.
-
-
-
-To reduce computational load on the 110W, the OpenSim server was run on a separate Lenovo ThinkPad X61s laptop computer during the experiments. Due to the limited range of the laptop's wireless interface, the laptop was connected by RJ45 ethernet cable to a Linksys WRT54G wireless router to allow the 110W to access the OpenSim server wirelessly from anywhere within the experiment area. The router was powered from a 12V sealed lead-acid battery. This setup is shown in figure \ref{server}.
-
-
-
-
-
-the viewer was modified (giving rise to the Pangolin viewer) to make use of the Boost.Asio C++ library to support receiving data via serial port and to use these data to control the movement of the avatar and camera by directly interfacing with the control functions at a lower level of abstraction. Receipt of messages is performed in an asynchronous non-blocking fashion, with the viewer's main loop processing the most recently received message in each iteration. Messages follow the format
-
-$\langle bearing \rangle$ $\langle pitch \rangle$ $\langle roll \rangle$ $\langle latitude \rangle$ $\langle longitude \rangle$
-
-The viewer's GUI was modified with the addition of a dialogue that allows the user to specify the path of the serial device, separately enable or disable sensor-driven camera and movement control, as well as providing numerous controls for fine-tuning its behavior, including the ability to specify high-pass filters for avatar movement and specify the smoothing applied to camera control. This GUI also presents the necessary fields for input of the anchor point details and fields for diagnostic output of the received information. Figure \ref{pangolin_screenshot} shows this GUI within the Pangolin viewer.
-
-
-
-%=========================================================================================================
-
-\section{Using the Virtual Time Window}
-
-\TwoFig{pangolin_laptop_router_battery.jpg} {OpenSim Server \& wireless AP.} {pangolin_laptop_router_battery.jpg}
-       {pangolin_in_use.jpg} {VTW at the cathedral.} {pangolin_in_use.jpg}
-
-Two plausible modalities of interaction were identified for this system, with each presenting different requirements with regards to accuracy of position tracking.
-
-The first modality is one in which a number of locations that represent points of particular interest are identified. This is already a common practice at cultural heritage sites, with such locations often bearing signs or placards presenting text and/or images explaining what can be observed from the position. With Pangolin, when a user walks within a certain range of such a point, their avatar can be moved to the corresponding location within the reconstruction (and a sound played to alert the user to the fact that there is something of interest to observe) from which they can then move the tablet around them to examine their surroundings in the reconstruction. This modality is similar to audio tours employed by many museums and cultural heritage sites, but replaces the requirement to follow a static route or type in numbers of locations with the ability to freely navigate the real environment with access to additional information being triggered automatically once within the required range of a point of interest.
-
-The second modality is one of free roaming exploration, in which the movements of the user's avatar within the reconstruction mimic the user's movements within the real world as closely as possible.
-The first modality can be scaled to function with different accuracies of position tracking; as long as the distance between any two points of interest is at least as much as the worst case performance of the position tracking then distinguishing correctly between different points will always succeed. The second modality requires extremely accurate position tracking, arguably surpassing the capabilities of mainstream GPS technology even in ideal situations.
 
 During the experiments the MAX-6 was unable to maintain reception of the additional correction data required for SBAS operation; when left stationary for several minutes reception was possible however subsequent movement of only a few meters at walking pace broke the connection. This reduced the theoretical maximum performance of the unit to 2.5m CEP, with observed performance being lower. Figure \ref{map_one} depicts an aerial view of the St Andrews cathedral ruins; the blue line represents the planned route, red the route recorded by the MAX-6 receiver and green the route recorded by the smartphone for comparative purposes, both while walking the planned route.
 
@@ -836,5 +843,16 @@ The positional accuracy of $1.02e^{-04\circ}$ attained by the MAX-6 is sufficien
 Use of a GPS receiver that is lower performance than the MAX-6 used by Pangolin, but more common due to being of the calibre integrated into smartphones and tablets such as that used in the experiments, is still sufficient for the first modality but with a larger minimum distance required between any two points of interest. The Hausdorff distance of $1.33e^{-04\circ}$ recorded by the smartphone used in the experiments is analogous to $\pm14.8$m N/S or $\pm8.2$m E/W around the location of the cathedral.
 
 Observed accuracy of the orientation tracking is sufficient for both modalities of interaction; the accuracy of orientation tracking required does not change with different positional accuracy and the accuracy of orientation attained in the experiments is sufficient for an acceptable user experience, however the experience would benefit from better graphical quality and higher responsiveness to changes in user orientation.
+
+%=========================================================================================================
+
+\section{Using the Virtual Time Window}
+
+Two plausible modalities of interaction were identified for this system, with each presenting different requirements with regards to accuracy of position tracking.
+
+The first modality is one in which a number of locations that represent points of particular interest are identified. This is already a common practice at cultural heritage sites, with such locations often bearing signs or placards presenting text and/or images explaining what can be observed from the position. With Pangolin, when a user walks within a certain range of such a point, their avatar can be moved to the corresponding location within the reconstruction (and a sound played to alert the user to the fact that there is something of interest to observe) from which they can then move the tablet around them to examine their surroundings in the reconstruction. This modality is similar to audio tours employed by many museums and cultural heritage sites, but replaces the requirement to follow a static route or type in numbers of locations with the ability to freely navigate the real environment with access to additional information being triggered automatically once within the required range of a point of interest.
+
+The second modality is one of free roaming exploration, in which the movements of the user's avatar within the reconstruction mimic the user's movements within the real world as closely as possible.
+The first modality can be scaled to function with different accuracies of position tracking; as long as the distance between any two points of interest is at least as much as the worst case performance of the position tracking then distinguishing correctly between different points will always succeed. The second modality requires extremely accurate position tracking, arguably surpassing the capabilities of mainstream GPS technology even in ideal situations.
 
 %=========================================================================================================

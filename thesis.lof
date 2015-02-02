@@ -21,39 +21,40 @@
 \contentsline {figure}{\numberline {3.18}{\ignorespaces Operation of a PR system represented upon the combined model.\relax }}{29}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Taxonomical space of visualization strategies used in cultural heritage.\relax }}{33}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Coordinate sets for each approach within the taxonomical space (figure 4.1\hbox {})\relax }}{34}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces St Andrews cathedral today.\relax }}{36}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces St Andrews cathedral reconstruction.\relax }}{36}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Linlithgow Palace today.\relax }}{36}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Linlithgow Palace reconstruction.\relax }}{36}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Mosfell Viking Longhouse.\relax }}{36}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Longhouse interior.\relax }}{36}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Caen Township.\relax }}{36}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Caen Township wireframe detail.\relax }}{36}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Virtual humans in cathedral reconstruction.\relax }}{37}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Conversing with virtual humans.\relax }}{37}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces School students learning via a reconstruction.\relax }}{38}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces VTTP installation at Timespan.\relax }}{38}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces OVW via Oculus Rift.\relax }}{38}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Museum workshop.\relax }}{38}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces High level architecture of VTW.\relax }}{39}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Example wiring for Arduino with HMC6343 for joystick operation.\relax }}{41}
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Pin designation for figure 4.18\hbox {}.\relax }}{41}
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Assembled Arduino Uno R3 + HMC6343.\relax }}{42}
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Configuration in Second Life client for Arduino + HMC6343 `joystick'.\relax }}{43}
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Using haversine to mimic real world movement in a virtual world.\relax }}{44}
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Example wiring for Arduino with HMC6343 + u-blox MAX-6.\relax }}{46}
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Pin designation for figure 4.23\hbox {}.\relax }}{47}
-\contentsline {figure}{\numberline {4.25}{\ignorespaces Assembled Arduino/sensors.\relax }}{47}
-\contentsline {figure}{\numberline {4.26}{\ignorespaces Arduino/sensors attached to tabet.\relax }}{47}
-\contentsline {figure}{\numberline {4.27}{\ignorespaces Setting MAX-6 Dynamic Platform Model to Pedestrian in an Arduino sketch.\relax }}{48}
-\contentsline {figure}{\numberline {4.28}{\ignorespaces Excerpt of OpenSim Region Module for avatar movement via GPS.\relax }}{48}
-\contentsline {figure}{\numberline {4.29}{\ignorespaces Overview of modifications to Second Life client.\relax }}{51}
-\contentsline {figure}{\numberline {4.30}{\ignorespaces Converting longitude \& latitude to Second Life coordinates using haversine.\relax }}{55}
-\contentsline {figure}{\numberline {4.31}{\ignorespaces Config pane in modified Second Life client for HMC6343 + MAX-6.\relax }}{56}
-\contentsline {figure}{\numberline {4.32}{\ignorespaces Implementation of VTW.\relax }}{56}
-\contentsline {figure}{\numberline {4.33}{\ignorespaces OpenSim Server \& wireless AP.\relax }}{57}
-\contentsline {figure}{\numberline {4.34}{\ignorespaces VTW at the cathedral.\relax }}{57}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Coordinate sets for each approach within the taxonomical space (figure 4.1\hbox {}).\relax }}{34}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Linlithgow Palace today.\relax }}{36}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Linlithgow Palace reconstruction.\relax }}{36}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Mosfell Viking Longhouse.\relax }}{36}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Longhouse interior.\relax }}{36}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Caen Township.\relax }}{36}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Caen Township wireframe detail.\relax }}{36}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Virtual humans in cathedral reconstruction.\relax }}{37}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Conversing with virtual humans.\relax }}{37}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces School students learning via a reconstruction.\relax }}{37}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces VTTP installation at Timespan.\relax }}{37}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces OVW via Oculus Rift.\relax }}{37}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Museum workshop.\relax }}{37}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces High level architecture of VTW.\relax }}{39}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Example wiring for Arduino with HMC6343 for joystick operation.\relax }}{40}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Pin designation for figure 4.16\hbox {}.\relax }}{40}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Assembled Arduino Uno R3 + HMC6343.\relax }}{41}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Configuration in Second Life client for Arduino + HMC6343 `joystick'.\relax }}{42}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Using haversine to mimic real world movement in a virtual world.\relax }}{44}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Example wiring for Arduino with HMC6343 + u-blox MAX-6.\relax }}{45}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Pin designation for figure 4.21\hbox {}.\relax }}{45}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Assembled Arduino/sensors.\relax }}{46}
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Arduino/sensors attached to tabet.\relax }}{46}
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Setting MAX-6 Dynamic Platform Model to Pedestrian in an Arduino sketch.\relax }}{47}
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Excerpt of OpenSim Region Module for avatar movement via GPS.\relax }}{48}
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Overview of modifications to Second Life client.\relax }}{49}
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Config pane in modified Second Life client for HMC6343 + MAX-6.\relax }}{51}
+\contentsline {figure}{\numberline {4.29}{\ignorespaces Converting longitude \& latitude to Second Life coordinates using haversine.\relax }}{52}
+\contentsline {figure}{\numberline {4.30}{\ignorespaces St Andrews Cathedral recreation set on the sunny St Andrews day afternoon 1318, showing the West Gate in the foreground \& ships in the background.\relax }}{53}
+\contentsline {figure}{\numberline {4.31}{\ignorespaces St Andrews cathedral today.\relax }}{54}
+\contentsline {figure}{\numberline {4.32}{\ignorespaces St Andrews cathedral reconstruction.\relax }}{54}
+\contentsline {figure}{\numberline {4.33}{\ignorespaces OpenSim Server \& wireless AP.\relax }}{54}
+\contentsline {figure}{\numberline {4.34}{\ignorespaces VTW at the cathedral.\relax }}{54}
+\contentsline {figure}{\numberline {4.35}{\ignorespaces Implementation of VTW.\relax }}{55}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Floor plan of St Salvator's chapel, with IPS routes.\relax }}{59}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Overview of the Mirrorshades platform.\relax }}{60}
