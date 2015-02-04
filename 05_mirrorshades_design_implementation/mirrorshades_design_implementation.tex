@@ -24,7 +24,6 @@ This chapter discusses the design \& development of a hardware \& software platf
 Figure \ref{systemarchitecture} presents a high level architectural overview of our mobile XR platform, dubbed Mirrorshades\footnote{\textbf{Mirrorshades: The Cyberpunk Anthology} (1986) is a defining cyberpunk short story collection, edited by Bruce Sterling.}.
 
 \begin{figure}[h]
-	\thispagestyle{empty}
 	\begin{center}
 		\includegraphics[width=.5\linewidth]{system-architecture.png}
 		\caption{Overview of the Mirrorshades platform.}
@@ -33,6 +32,32 @@ Figure \ref{systemarchitecture} presents a high level architectural overview of 
 \end{figure}
 
 %=========================================================================================================
+
+\section{Indoor Positioning}
+
+PSMove - talk about how even in relatively dimly lit conditions (screencap video) it cannot track, so no chance in real world virtual heritage (or otherwise) conditions
+	%https://www.youtube.com/watch?v=n_jGShUAqJg
+	
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=.8\linewidth]{psmove-screenshot.png}
+		\caption{psmove-screenshot.png}
+		\label{psmove-screenshot.png}
+	\end{center}
+\end{figure}
+
+
+Arduino ultrasonics
+
+Habilitation thesis on indoor positioning systems\cite{Mautz2012}
+
+Email from cricket guy
+
+Indoor Atlas
+
+%=========================================================================================================
+
+\section{Modifying the Oculus Rift for Stereoscopic See Through Video}
 
 \textbf{***Mention first Mirrorshades test with single webcam providing small floating window in corner of virtual view (video is on youtube/Mirrorshades repo).}
 
@@ -48,7 +73,45 @@ Figure \ref{systemarchitecture} presents a high level architectural overview of 
 
 \textbf{**Show lens comparison picture from blog \& a (new?) screenshot showing FoV of the camera feeds compared to that of Rift \& explain why the discrepancy doesn't matter, especially when the Rift is fully extended.}
 
-\textbf{***This chapter has none of the actual design/development really, it just presents the finished platform.}
+\begin{figure}[!htb]
+    \centering
+    \begin{minipage}{.33\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{rift-clips-cameras/clips.jpg}
+        \caption{bar}
+        \label{bar}
+    \end{minipage}%
+    \begin{minipage}{0.33\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{rift-clips-cameras/clips-hori-plate.jpg}
+        \caption{foo}
+        \label{foo}
+    \end{minipage}
+    \begin{minipage}{0.33\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{rift-clips-cameras/hori-1.jpg}
+        \caption{baz}
+        \label{baz}
+    \end{minipage}
+\end{figure}
+
+\TwoFig{rift-clips-cameras/hori-2.jpg}{hori-2.jpg}{hori-2.jpg}
+       {rift-clips-cameras/hori-3.jpg}{hori-3.jpg}{hori-3.jpg}
+
+\TwoFig{rift-clips-cameras/lens-comparison-on-ps3eye-pcb.jpg}{lens-comparison-on-ps3eye-pcb.jpg}{lens-comparison-on-ps3eye-pcb.jpg}
+       {rift-clips-cameras/lens-comparison.jpg}{lens-comparison.jpg}{lens-comparison.jpg}
+
+\TwoFig{rift-clips-cameras/clips-vert.jpg}{clips-vert.jpg}{clips-vert.jpg}
+       {rift-clips-cameras/vert-6.jpg}{vert-6.jpg}{vert-6.jpg}
+
+\TwoFig{rift-clips-cameras/vert-1.jpg}{vert-1.jpg}{vert-1.jpg}
+       {rift-clips-cameras/vert-4.jpg}{vert-4.jpg}{vert-4.jpg}
+
+\TwoFig{rift-clips-cameras/new/thermoplastic.jpg}{thermoplastic.jpg}{thermoplastic.jpg}
+       {rift-clips-cameras/vert-7.jpg}{vert-7.jpg}{vert-7.jpg}
+
+\TwoFig{rift-clips-cameras/new/middle.jpg}{middle.jpg}{middle.jpg}
+       {rift-clips-cameras/new/right.jpg}{right.jpg}{right.jpg}
 
 %=========================================================================================================
 
@@ -77,23 +140,13 @@ The hardware of the implementation comprises;
 	\item an Xbox 360 wireless controller, with USB receiver.
 \end{itemize}
 
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=0.6\textwidth]{rift.png}
-		\caption{HMD with stereo camera solution.}
-		\label{rift}
-	\end{center}
-\end{figure}
-
-%=========================================================================================================
-
-\section{Modifying the Oculus Rift for Stereoscopic See Through Video}
-
-\TwoFig{rift-clips-cameras/clips.jpg} {clips.jpg} {clips.jpg}
-       {rift-clips-cameras/clips-hori-plate.jpg} {clips-hori-plate.jpg} {clips-hori-plate.jpg}
-
-\TwoFig{rift-clips-cameras/hori-1.jpg} {hori-1.jpg} {hori-1.jpg}
-       {rift-clips-cameras/hori-2.jpg} {hori-2.jpg} {hori-2.jpg}
+%\begin{figure}[h]
+%	\begin{center}
+%		\includegraphics[width=0.6\textwidth]{rift.png}
+%		\caption{HMD with stereo camera solution.}
+%		\label{rift}
+%	\end{center}
+%\end{figure}
 
 %=========================================================================================================
 
