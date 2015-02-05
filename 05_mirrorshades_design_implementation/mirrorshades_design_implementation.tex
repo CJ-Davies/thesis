@@ -64,9 +64,35 @@ A high update frequency is not especially important to Mirrorshades. The envisag
 
 Similarly, low latency is not critical. Even if the IPS takes a few seconds to `catch up' with the user, as the user is committed to a deliberate study \& comparison of their real \& virtual surroundings they are not going to be foiled in their task if they find they have to wait momentarily when switching from real to virtual views.
 
+Cost
+
+%https://www.youtube.com/watch?v=LtMfrkRqlRs
+email from xsens confirming price
+``A complete standard Xsens MVN system is available at around \euro{}50000''
 
 
 
+%http://www.memsic.com/wireless-sensor-networks/MCS-KIT410CA
+8x Crickets
+GBP1850
+email from Willow.co.uk
+
+
+
+
+email from Sonitor
+To cover ground floor and have room level accuracy in each room + tracking
+in the corridors, the cost would be ca. \$25K (includes software)
+Adding the first floor (room accuracy in all rooms + corridor tracking)
+would add another \$15K (assumes software already included in ground floor)
+
+Infrastructure
+
+Privacy
+
+Robustness
+
+Intrusiveness
 
 from vtw we know that accuracy has to be greater than that achievable from a standalone GPS receiver, being on the wrong side of a virtual wall is not sufficient
 for a pedestrian application
@@ -100,9 +126,20 @@ Habilitation thesis on indoor positioning systems\cite{Mautz2012}
 
 Email from cricket guy
 
-Indoor Atlas
+%=========================================================================================================
+
+\subsection{Indoor Atlas}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=0.7\textwidth]{jack-cole-splodges-black.png}
+		\caption{Positions (black circles) reported whilst walking a slow lap ($<1$ms$^{-1}$, following gray path) of a departmental building. The building is approximately 40m wide by 30m tall.}
+		\label{jack-cole-splodges}
+	\end{center}
+\end{figure}
 
 %=========================================================================================================
+
 
 \section{Modifying the Oculus Rift for Stereoscopic See Through Video}
 
@@ -263,14 +300,6 @@ As the user presses buttons or pulls triggers upon the Xbox controller, the visu
 
 \subsection{Transition Methods}
 Attending to visual stimuli from the RW environment via the webcams is required for the user to safely move around. Delay in the IPS reporting their position \& inaccuracies in these position data (see figure \ref{jack-cole-splodges} for a set of example position data) mean that moving around while attending only to visual stimuli from the VR environment would not be safe for the user, even with unchanging RW obstacles with perfectly accurate representations in the VR environment. Furthermore it is actually likely that RW obstacles will not have equivalent VR representations, such as in a scenario where XR is used to compare \& contrast changes to a building's interior over extended periods of time (such as with the chapel investigations).
-
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=0.7\textwidth]{jack-cole-splodges-black.png}
-		\caption{Positions (black circles) reported whilst walking a slow lap ($<1$ms$^{-1}$, following gray path) of a departmental building. The building is approximately 40m wide by 30m tall.}
-		\label{jack-cole-splodges}
-	\end{center}
-\end{figure}
 
 Thus the HMD displays the feeds from the webcams as default \& the user must trigger transitions to view the VR environment by pressing a button or pulling a trigger on the controller. Releasing the button/trigger causes the webcam feeds to be displayed again.
 
