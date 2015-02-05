@@ -20,8 +20,17 @@ This chapter discusses the design \& development of a hardware \& software platf
 
 %=========================================================================================================
 
-\section{The Mirrorshades Platform}
-Figure \ref{systemarchitecture} presents a high level architectural overview of our mobile XR platform, dubbed Mirrorshades\footnote{\textbf{Mirrorshades: The Cyberpunk Anthology} (1986) is a defining cyberpunk short story collection, edited by Bruce Sterling.}.
+\section{Lessons from VTW}
+The development of the VTW platform as a first foray into applying the concept of PR to the field of virtual heritage was met with concerns, in terms of both quantitative performance \& qualitative experience. Firstly \& most critically, the accuracy of position tracking attainable by using a GPS receiver, even one of higher specification \& real world performance than those commonly found in smartphones, was not sufficient for the envisaged style of interaction. Secondly, the ability of a hand held  display (the tablet) to provide immersive 3D graphics of a complete, atmospheric reconstruction was limited. Moving forward from VTW, a new project was embarked upon to address these concerns with aims to greatly improve the experience of PR in a virtual heritage scenario.
+
+In contrast to VTW, which was intended for outdoor use upon cultural heritage sites where either no remnants or only parts of original structures still stand, the successive platform is intended for use indoors. This not only allows the investigation of the application of PR to cultural heritage to be expanded to indoor scenarios, for sites where more of a historic structure still stands, but also allows for the use of an indoor positioning system, many of which offer substantially more accurate proven real world accuracy.
+
+Furthermore, in place of a hand held display such as the tablet used by VTW, the successive platform makes use of a head mounted display offering stereoscopic 3D graphics, that promise much greater immersion, with a head tracking solution that substantially outperforms the orientation tracking employed by VTW both in terms of accuracy \& responsiveness.
+
+%=========================================================================================================
+
+\subsection{The Mirrorshades Platform}
+Figure \ref{systemarchitecture} presents a high level architectural overview of the successive PR platform, dubbed Mirrorshades\footnote{\textbf{Mirrorshades: The Cyberpunk Anthology} (1986) is a defining cyberpunk short story collection, edited by Bruce Sterling. Mirrored sunglasses are an object often considered synonymous of cyberpunk, a genre whose fiction has frequently involved immersive multi-user virtual environments \& head mounted displays.}. This is a hardware \& software platform which allows its user to observe \& move around their Real World (RW) environment whilst wearing a wide field of view (FOV), stereoscopic 3D, Head Mounted Display (HMD) which allows them to alternatively view an immersive Virtual Reality (VR) environment from the equivalent vantage point. The HMD is imbued with video see-through functionality by the addition of cameras, to allow the user to see their RW environment \& a controller held by the user allows them to trigger their view to switch between RW \& VR.
 
 \begin{figure}[h]
 	\begin{center}
@@ -33,7 +42,45 @@ Figure \ref{systemarchitecture} presents a high level architectural overview of 
 
 %=========================================================================================================
 
-\section{Indoor Positioning}
+\section{Indoor Positioning Systems}
+
+For outdoor applications, GPS represents a suitable solution for the vast majority of position tracking requirements. Global coverage \& the ability to scale accuracy as required, from many metres with a basic GPS receiver such as might be integrated into a smartphone, to a few metres with SBAS augmentations \& further to as little as 10cm with the deployment of Differential GPS (DGPS) beacons, has led to GPS occupying the role of the `go to' solution where position tracking is required for an outdoor application. For indoor applications however, there is no single technology or solution that provides similar coverage or suitability as GPS does outside: a large number of different technologies have been employed to produce Indoor Positioning Systems (IPS). At the highest level of abstraction, all IPS can be divided into three categories based upon the technology that they employ;
+
+\begin{itemize}
+	\item inertial navigation (using accelerometers \& gyroscopes)
+	\item mechanical waves (audible \& ultra-sound)
+	\item electromagnetic waves (visible \& infrared light, microwaves, radio waves)~\cite{Mautz2012}
+\end{itemize}
+
+Because of this diversity in technology, thus also diversity in performance \& suitability to different situations, it is necessary to carefully consider the requirements of the platform \& then choose the best suited of the many different approaches. Requirements to consider include accuracy, coverage, update frequency, latency, cost, infrastructure, privacy, robustness \& intrusiveness. Unsurprisingly, selection of a particular IPS usually leads to balancing these requirements in a trade-off, as each of the challenges of indoor positioning effects each technology more or less than others~\cite{Mautz2009}.
+
+Considering these requirements for the Mirrorshades platform;
+
+The accuracy required for the Mirrorshades platform needs to be substantially better than that observed during the VTW experiments. As a pedestrian application wherein the user walks through doorways (whether real or virtual) \& observes multiple rooms within a building, it is necessary to achieve a level of accuracy that allows, for example, discerning between adjacent rooms \& discerning between a doorway \& its surrounding walls.
+
+Coverage depends largely upon the size of the cultural heritage site that Mirrorshades is deployed to. However it is prudent to make use of an IPS that can scale quite arbitrarily from small scenarios (perhaps of a small village church) to substantially larger scenarios (such as a cathedral similar to that at St Andrews).
+
+A high update frequency is not especially important to Mirrorshades. The envisaged style of interaction is one wherein users walk relatively slowly through the environments, as they wish to observer \& take in their surroundings. Updates in the range of several hz will likely be sufficient, especially if users are attending more to their real environment than the equivalent virtual environment when actively moving around (which is to be encouraged, as one cannot walk through a RW obstacle as one can a VR one!).
+
+Similarly, low latency is not critical. Even if the IPS takes a few seconds to `catch up' with the user, as the user is committed to a deliberate study \& comparison of their real \& virtual surroundings they are not going to be foiled in their task if they find they have to wait momentarily when switching from real to virtual views.
+
+
+
+
+
+from vtw we know that accuracy has to be greater than that achievable from a standalone GPS receiver, being on the wrong side of a virtual wall is not sufficient
+for a pedestrian application
+
+infrastructure - many cultural heritage sites will not allow the installation of any infrastructure into the site/environment, or may only allow strictly temporary infrastructure to be deployed, which means that approaches that require extensive infrastructure to be deployed or for which the deployment \& calibration phase is long \& thus not suitable for temporary deployments unusable.
+
+also cost is
+
+
+%=========================================================================================================
+
+PlayStation Move
+
+%http://projects.ict.usc.edu/mxr/blog/project-holodeck-wows-in-dublin/
 
 PSMove - talk about how even in relatively dimly lit conditions (screencap video) it cannot track, so no chance in real world virtual heritage (or otherwise) conditions
 	%https://www.youtube.com/watch?v=n_jGShUAqJg
@@ -65,9 +112,9 @@ Indoor Atlas
 
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[width=0.7\textwidth]{floating_webcam_window.png}
+		\includegraphics[width=0.7\textwidth]{floating-webcam-window.png}
 		\caption{Early floating window Rift/webcam prototype.}
-		\label{floating_webcam_window.png}
+		\label{floating-webcam-window.png}
 	\end{center}
 \end{figure}
 
