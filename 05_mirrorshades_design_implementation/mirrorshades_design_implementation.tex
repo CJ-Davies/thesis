@@ -44,91 +44,67 @@ Figure \ref{systemarchitecture} presents a high level architectural overview of 
 
 \section{Indoor Positioning Systems}
 
-For outdoor applications, GPS represents a suitable solution for the vast majority of position tracking requirements. Global coverage \& the ability to scale accuracy as required, from many metres with a basic GPS receiver such as might be integrated into a smartphone, to a few metres with SBAS augmentations \& further to as little as 10cm with the deployment of Differential GPS (DGPS) beacons, has led to GPS occupying the role of the `go to' solution where position tracking is required for an outdoor application. For indoor applications however, there is no single technology or solution that provides similar coverage or suitability as GPS does outside: a large number of different technologies have been employed to produce Indoor Positioning Systems (IPS). At the highest level of abstraction, all IPS can be divided into three categories based upon the technology that they employ;
+For outdoor applications, GPS represents a suitable solution for the vast majority of position tracking requirements. Global coverage \& the ability to scale accuracy as required, from many metres with a basic GPS receiver such as those integrated into smartphones, to a few metres with SBAS augmentations \& further to as little as 10cm with the deployment of Differential GPS (DGPS) beacons, has led to GPS occupying the role of the `go to' solution where position tracking is required for an outdoor application. For indoor applications however, there is no single technology or solution that provides similar coverage or suitability as GPS does outside: a large number of different technologies have been employed to produce Indoor Positioning Systems (IPS), which are summarised in figure \ref{mautz-table.png}.
 
-\begin{itemize}
-	\item inertial navigation (using accelerometers \& gyroscopes)
-	\item mechanical waves (audible \& ultra-sound)
-	\item electromagnetic waves (visible \& infrared light, microwaves, radio waves)~\cite{Mautz2012}
-\end{itemize}
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=\linewidth]{mautz-table.png}
+		\caption{Overview of IPS technologies, from~\cite{Mautz2012}.}
+		\label{mautz-table.png}
+	\end{center}
+\end{figure}
 
-Because of this diversity in technology, thus also diversity in performance \& suitability to different situations, it is necessary to carefully consider the requirements of the platform \& then choose the best suited of the many different approaches. Requirements to consider include accuracy, coverage, update frequency, latency, cost, infrastructure, privacy, robustness \& intrusiveness. Unsurprisingly, selection of a particular IPS usually leads to balancing these requirements in a trade-off, as each of the challenges of indoor positioning effects each technology more or less than others~\cite{Mautz2009}.
+Because of this diversity in technology, with different IPS solutions covering various swathes of the continuums of accuracy \& coverage (see figure \ref{Mautz-000.png}), introducing a host of performance \& suitability considerations (see figure \ref{Mautz-003.png}), it is necessary to carefully consider the requirements of the application \& then choose the best suited of the many different IPS approaches. Unsurprisingly, selection of a particular IPS usually leads to balancing these requirements in a trade-off, as each of the challenges of indoor positioning effects each technology more or less than others~\cite{Mautz2009}.
 
-Considering these requirements for the Mirrorshades platform;
-
-The accuracy required for the Mirrorshades platform needs to be substantially better than that observed during the VTW experiments. As a pedestrian application wherein the user walks through doorways (whether real or virtual) \& observes multiple rooms within a building, it is necessary to achieve a level of accuracy that allows, for example, discerning between adjacent rooms \& discerning between a doorway \& its surrounding walls.
-
-Coverage depends largely upon the size of the cultural heritage site that Mirrorshades is deployed to. However it is prudent to make use of an IPS that can scale quite arbitrarily from small scenarios (perhaps of a small village church) to substantially larger scenarios (such as a cathedral similar to that at St Andrews).
-
-A high update frequency is not especially important to Mirrorshades. The envisaged style of interaction is one wherein users walk relatively slowly through the environments, as they wish to observer \& take in their surroundings. Updates in the range of several hz will likely be sufficient, especially if users are attending more to their real environment than the equivalent virtual environment when actively moving around (which is to be encouraged, as one cannot walk through a RW obstacle as one can a VR one!).
-
-Similarly, low latency is not critical. Even if the IPS takes a few seconds to `catch up' with the user, as the user is committed to a deliberate study \& comparison of their real \& virtual surroundings they are not going to be foiled in their task if they find they have to wait momentarily when switching from real to virtual views.
-
-Cost
-
-%https://www.youtube.com/watch?v=LtMfrkRqlRs
-email from xsens confirming price
-``A complete standard Xsens MVN system is available at around \euro{}50000''
-
-
-
-%http://www.memsic.com/wireless-sensor-networks/MCS-KIT410CA
-8x Crickets
-GBP1850
-email from Willow.co.uk
-
-
-
-
-email from Sonitor
-To cover ground floor and have room level accuracy in each room + tracking
-in the corridors, the cost would be ca. \$25K (includes software)
-Adding the first floor (room accuracy in all rooms + corridor tracking)
-would add another \$15K (assumes software already included in ground floor)
-
-Infrastructure
-
-Privacy
-
-Robustness
-
-Intrusiveness
-
-from vtw we know that accuracy has to be greater than that achievable from a standalone GPS receiver, being on the wrong side of a virtual wall is not sufficient
-for a pedestrian application
-
-infrastructure - many cultural heritage sites will not allow the installation of any infrastructure into the site/environment, or may only allow strictly temporary infrastructure to be deployed, which means that approaches that require extensive infrastructure to be deployed or for which the deployment \& calibration phase is long \& thus not suitable for temporary deployments unusable.
-
-also cost is
-
+\TwoFig{Mautz-000.png}{IPS technologies plotted against their accuracy \& coverage, from~\cite{Mautz2012}.}{Mautz-000.png}
+       {Mautz-003.png}{Requirements parameters of IPS, from~\cite{Mautz2012}.}{Mautz-003.png}
 
 %=========================================================================================================
 
-PlayStation Move
+\subsection{IPS Requirements for Mirrorshades}
+The positional accuracy of the IPS used for the Mirrorshades platform needs to be substantially higher than that of the GPS solution used for VTW. As a pedestrian application wherein the user walks through doorways (whether real or virtual) \& observes multiple rooms within a building, it is necessary to achieve a level of accuracy that allows, for example, discerning between adjacent rooms \& discerning between a doorway \& its surrounding walls.
 
-%http://projects.ict.usc.edu/mxr/blog/project-holodeck-wows-in-dublin/
+Coverage required depends largely upon the size of the cultural heritage site that Mirrorshades is deployed to. However it is prudent to select an IPS that can scale quite arbitrarily from small scenarios (perhaps of a small village church) to substantially larger scenarios (such as a cathedral similar to that at St Andrews).
 
-PSMove - talk about how even in relatively dimly lit conditions (screencap video) it cannot track, so no chance in real world virtual heritage (or otherwise) conditions
-	%https://www.youtube.com/watch?v=n_jGShUAqJg
-	
+A high update frequency is not especially important to Mirrorshades. The envisaged style of interaction is one wherein users walk relatively slowly through the environments, as they wish to observer \& take in their surroundings. Updates in the range of several hz will be sufficient, especially if users are attending more to their real environment than the equivalent virtual environment when actively moving around (which is to be encouraged, as one cannot walk through a RW obstacle as one can a VR one!). Similarly, low latency is not critical. Even if the IPS takes a few seconds to `catch up' with the user, because the user is committed to a deliberate study \& comparison of their real \& virtual surroundings they are not going to be foiled in their task if they find they have to wait momentarily when switching from real to virtual views.
+
+Cost represents a more concrete restriction for Mirrorshades, as the costs of installing \& using different IPS range drastically. For example, an IPS that locates users via propagation modelling/empirical fingerprinting/pathloss of WiFi signals can make use of existing WiFi infrastructure installed in a building \& use nothing more expensive than a smartphone carried by the mobile user. Conversely, using a motion capture suit as an IPS solution will incur costs in the region of \euro{}50000 per mobile user for the suit alone, with additional costs for the supporting infrastructure. In a similar vein to the vision of Mirrorshades, a existing project combined the Oculus Rift HMD with an Xsens MVN motion capture suit, allowing participants to walk around a virtual environment of the same layout \& dimensions as their real environment\footnote{\url{https://www.youtube.com/watch?v=LtMfrkRqlRs}}, but without any video see-through of the real environment. The use of a motion capture suit allowed extremely accurate positional tracking, however as a \textit{``complete standard Xsens MVN system is available at around \euro{}50000''}\footnote{Personal correspondence with Xsens EMEA Entertainment Business Manager.} \& requires a not insubstantial setup phase of the participant donning the suit, it is unsuitable for a virtual heritage scenario where budget is likely to be substantially more limited \&  where visitors are unlikely to be willing to don a complex motion capture suit in order to explore the site.
+
+Reliance upon deployed infrastructure such as beacons \& markers needs to be avoided for Mirrorshades, as most cultural heritage sites will not allow the installation of any such infrastructure into the site/environment, or may only allow strictly temporary infrastructure to be deployed. Thus approaches that require extensive infrastructure to be deployed, or for which the deployment \& calibration phase of infrastructure is long \& thus not suitable for temporary deployments, are unusable. Similarly, intrusiveness of the IPS used for Mirrorshades needs to be considered such that the IPS does not negatively affect the user's ability to observe the real \& virtual sites around them.
+
+Robustness of all aspects of a virtual heritage system is critical for enjoyment \& beneficial experience by the user. Visitors to a cultural heritage site, especially if they are only visiting for a short period of time in passing, are not going to be pliant to waiting for a malfunctioning virtual heritage system to right itself \& many virtual heritage systems are installed in situations in which the on-site staff do not have the technical knowledge or experience to troubleshoot \& repair them so these systems must be robust enough to continue successful operation for extended periods of time without intervention by knowledgeable administration.
+
+%http://www.memsic.com/wireless-sensor-networks/MCS-KIT410CA
+%8x Crickets
+%GBP1850
+%email from Willow.co.uk
+
+%email from Sonitor
+%To cover ground floor and have room level accuracy in each room + tracking in the corridors, the cost would be ca. \$25K (includes software) Adding the first floor (room accuracy in all rooms + corridor tracking) would add another \$15K (assumes software already included in ground floor)
+
+%=========================================================================================================
+
+\subsection{PlayStation Move}
+
+An initial technology investigated for suitability as an IPS for use with Mirrorshades was PlayStation Move (PSMove), a game controller platform released by Sony for use with their PlayStation 3 console. The platform comprises a hand held controller which contains inertial sensors \& has a plastic sphere on its end that is illuminated from within by a RGB LED. A bundled webcam, the PlayStation Eye (referred to as `PS3 Eye', `PS3Eye' \& `PSEye' among the literature \& community) uses vision tracking to track the controller's position in relation to the camera. Through use of the PSMove API~\cite{Perl2012}, the PSMove platform can be used by a regular computerm, making use of the OpenCV\footnote{\url{http://opencv.org/}} computer vision project.
+
+Whilst the PSMove had been used successfully for pedestrian position tracking in previous projects, included those that used an Oculus Rift HMD\footnote{\url{http://projects.ict.usc.edu/mxr/blog/project-holodeck-wows-in-dublin/}}, it quickly became apparent when auditioning the platform that it only performs reliably when in very dimly lit conditions. Even the relatively dim scene shown by figure \ref{psmove-screenshot.png} (see also ) represented too much ambient light for reliable tracking, so the suitability of the platform for use at a cultural heritage site was removed.
+
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=.8\linewidth]{psmove-screenshot.png}
-		\caption{psmove-screenshot.png}
+		\caption{PSMove failing to locate even in dim conditions.}.
 		\label{psmove-screenshot.png}
 	\end{center}
 \end{figure}
 
-
-Arduino ultrasonics
-
-Habilitation thesis on indoor positioning systems\cite{Mautz2012}
-
-Email from cricket guy
-
 %=========================================================================================================
 
 \subsection{Indoor Atlas}
+
+Original research~\cite{Haverinen2009,Haverinen2009a}
+
+Media Lab research~\cite{Chung2011}
 
 \begin{figure}[h]
 	\begin{center}

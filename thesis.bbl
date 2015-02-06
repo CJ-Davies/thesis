@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{Mautz2012}
+Rainer Mautz.
+\newblock {\em {Indoor Positioning Technologies}}.
+\newblock PhD thesis, ETH Zurich, 2012.
+
 \bibitem{Warburton2009}
 Steven Warburton.
 \newblock {Second Life in higher education: Assessing the potential for and the
@@ -460,15 +465,32 @@ R.~Fawcett.
 \newblock {\em {The Architecture of the Scottish Medieval Church}}.
 \newblock Yale University Press, 2011.
 
-\bibitem{Mautz2012}
-Rainer Mautz.
-\newblock {\em {Indoor Positioning Technologies}}.
-\newblock PhD thesis, ETH Zurich, 2012.
-
 \bibitem{Mautz2009}
 R~Mautz.
 \newblock {The challenges of indoor environments and specification on some
   alternative positioning systems}, 2009.
+
+\bibitem{Perl2012}
+Thomas Perl.
+\newblock {\em {Cross-Platform Tracking of a 6DoF Motion Controller}}.
+\newblock PhD thesis, Vienna University of Technology, 2012.
+
+\bibitem{Haverinen2009}
+J~Haverinen and A~Kemppainen.
+\newblock {A global self-localization technique utilizing local anomalies of
+  the ambient magnetic field}, 2009.
+
+\bibitem{Haverinen2009a}
+Janne Haverinen and Anssi Kemppainen.
+\newblock {Global indoor self-localization based on the ambient magnetic
+  field}.
+\newblock {\em Robotics and Autonomous Systems}, 57(10):1028--1035, 2009.
+
+\bibitem{Chung2011}
+Jaewoo Chung, Matt Donahoe, Chris Schmandt, Ig-jae Kim, Pedram Razavai, and
+  Micaela Wiseman.
+\newblock {Indoor Location Sensing Using Geo-Magnetism}.
+\newblock {\em System}, pages 141--154, 2011.
 
 \bibitem{IndoorAtlasLtd.2012}
 {IndoorAtlas Ltd.}
