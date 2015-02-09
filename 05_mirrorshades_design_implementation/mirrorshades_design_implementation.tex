@@ -93,7 +93,7 @@ Whilst the PSMove had been used successfully for pedestrian position tracking in
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=.8\linewidth]{psmove-screenshot.png}
-		\caption{PSMove failing to locate even in dim conditions.}.
+		\caption{PSMove failing to locate even in dim conditions.}
 		\label{psmove-screenshot.png}
 	\end{center}
 \end{figure}
@@ -102,22 +102,57 @@ Whilst the PSMove had been used successfully for pedestrian position tracking in
 
 \subsection{Indoor Atlas}
 
-Original research~\cite{Haverinen2009,Haverinen2009a}
+During the evaluation phase of different IPS \& their suitability to the envisaged Mirrorshades platform, Finnish startup IndoorAtlas\footnote{\url{https://www.indooratlas.com/}} released the first public beta of their indoor positioning technology that uses the magnetometers found in smartphones to locate a user within a magnetic `fingerprint' of a particular building. A spin out from research at the University of Oulu in 2009~\cite{Haverinen2009,Haverinen2009a}, with a similar project undertaken by Media Lab researchers in 2011~\cite{Chung2011}, IndoorAtlas exploits how the Earth's magnetic field is distorted by both natural \& man-made sources. Indoors, these distortions come from building materials, especially in structures employing a framework of metal beams, but also from electrical cabling, HVAC ducting, etc. By recording a map of these distortions in an offline mapping phase, producing a fingerpint of the magnetic field around a building, the location of a user can be deduced by comparing the readings from their smartphone's magnetometer to this fingerprint.
 
-Media Lab research~\cite{Chung2011}
+IndoorAtlas promised to be a good match for the IPS requirements of the Mirrorshades platform. In particular, the lack of dependence upon any deployed infrastructure such as ultrasound beacons or visual tracking targets suits the deployment area of Mirrorshades well, as most cultural heritage sites will not be amenable to the deployment of such hardware. Furthermore, the reliance upon only a smartphone held by the user means that coverage is only limited by the are that has prior been mapped in an offline mapping phase, allowing the positioning to scale to arbitrarily large indoor cultural heritage sites. This dependence upon only a smartphone also meets the low cost requirement of the Mirrorshades platform, as mid to high end smartphones with sensitive magnetometers can be purchased for just a few hundred dollars.
+
+The major concern at this point was whether the building materials employed in the construction of cultural heritage sites such as chapels, castles \& cathedrals would pose great enough distortions to the Earth's magnetic field for IndoorAtlas to provide its boasted accuracy (which would be sufficient to discern between adjacent rooms, between doorways \& their surrounding walls, etc). These building materials are largely various types of stone, along with wood, a far cry from the metal framework that permeates most modern buildings.
+
+Whilst initial tests of the IndoorAtlas beta technology within a departmental building were promising, this was a modern building with a steel beam structure \& an abundance of computing infrastructure \& its associated cabling \& cooling provision. Figure \ref{jack-cole-splodges-black.png} shows the results of one of these tests; the light grey line represents the path walked around the building at a slow walking pace ($<1$ms$^{-1}$, akin to a visitor to a cultural heritage site might walk through it) with each black dot representing a position reported by the IndoorAtlas platform.
+
+It should be noted that the IndoorAtlas technology only reports positions upon routes that have been previously mapped in an offline mapping phase; in figure \ref{jack-cole-splodges-black.png} this offline mapping phase comprised walking the same light grey route several times. In the following test, had the user walked off the light grey route, IndoorAtlas would still have reported the user as being somewhere upon it; it would not attempt to extrapolate their position into unmapped territory. This is presumably because the scale of distortions in the Earth's magnetic field is quite fine grained, supported by the fact that many of the black dots are less than a meter apart, thus extrapolation would not fair well at all. This is an important aspect to take into account when performing the offline mapping phase, as one must map sufficient paths to cover all possible places \& routes that a user may walk. For locations comprised mainly of corridors \& small rooms, this is not an issue, however for a location that contains a large open space in which the user is free to meander, a more involved mapping process in which the entire space is systematically covered by back \& forth routes that progress across the space would be required.
 
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=0.7\textwidth]{jack-cole-splodges-black.png}
-		\caption{Positions (black circles) reported whilst walking a slow lap ($<1$ms$^{-1}$, following gray path) of a departmental building. The building is approximately 40m wide by 30m tall.}
+		\caption{Testing of IndoorAtlas in a department building, approximately 40m wide by 30m tall.}
 		\label{jack-cole-splodges}
 	\end{center}
 \end{figure}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 %=========================================================================================================
 
+\section{HMD with See-Through Video}
 
-\section{Modifying the Oculus Rift for Stereoscopic See Through Video}
+Talk about the resurgence of VR thanks to the Oculus Rift \& how it has brought a cheap, wide FoV, fast head tracked, HMD to market for researchers \& enthusiasts.
+
+Brief history of VR headsets, maybe take bits from that youtube video from Samsung developers?
+
+%=========================================================================================================
+
+\subsection{Modifying the Oculus Rift for Stereoscopic See Through Video}
 
 \textbf{***Mention first Mirrorshades test with single webcam providing small floating window in corner of virtual view (video is on youtube/Mirrorshades repo).}
 
@@ -211,9 +246,11 @@ Media Lab research~\cite{Chung2011}
 
 %=========================================================================================================
 
-\section{Platform}
+\section{Mobile Client}
 
 Talk about trying Oculus on Android (ODROID) \& how now Samsung Gear VR would be ideal, but yolo laptop in a bag. Photo of ODROID/screencap of (\& link to) video showing Rift working (at least tracking) with ODROID?
+
+Talk about ease of Unity integration with Oculus at the time (UE4 wasn't really on the scene?).
 
 %=========================================================================================================
 
