@@ -42,25 +42,24 @@
 \contentsline {subsection}{\numberline {4.6.3}Performance Implications}{57}
 \contentsline {section}{\numberline {4.7}Conclusions}{58}
 \contentsline {chapter}{\numberline {5}Mirrorshades - Development}{59}
-\contentsline {section}{\numberline {5.1}Lessons from VTW}{59}
-\contentsline {subsection}{\numberline {5.1.1}The Mirrorshades Platform}{60}
+\contentsline {section}{\numberline {5.1}Learning from VTW}{59}
 \contentsline {section}{\numberline {5.2}Indoor Positioning Systems}{60}
 \contentsline {subsection}{\numberline {5.2.1}IPS Requirements for Mirrorshades}{61}
 \contentsline {subsection}{\numberline {5.2.2}PlayStation Move}{62}
 \contentsline {subsection}{\numberline {5.2.3}Indoor Atlas}{63}
 \contentsline {section}{\numberline {5.3}HMD with See-Through Video}{65}
-\contentsline {subsection}{\numberline {5.3.1}Modifying the Oculus Rift for Stereoscopic See Through Video}{65}
+\contentsline {subsection}{\numberline {5.3.1}Modifying the Oculus Rift for Stereoscopic See Through Video}{66}
 \contentsline {section}{\numberline {5.4}Mobile Client}{66}
-\contentsline {subsection}{\numberline {5.4.1}Implementation}{67}
+\contentsline {subsection}{\numberline {5.4.1}Implementation}{66}
 \contentsline {subsection}{\numberline {5.4.2}Hardware Components}{67}
-\contentsline {subsection}{\numberline {5.4.3}Software Components}{69}
-\contentsline {subsection}{\numberline {5.4.4}Integration of Components}{69}
-\contentsline {subsection}{\numberline {5.4.5}Transition Methods}{70}
-\contentsline {subsubsection}{Hard switch}{70}
-\contentsline {subsubsection}{Switch with linear interpolation}{70}
+\contentsline {subsection}{\numberline {5.4.3}Software Components}{68}
+\contentsline {subsection}{\numberline {5.4.4}Integration of Components}{70}
+\contentsline {subsection}{\numberline {5.4.5}Transition Methods}{71}
+\contentsline {subsubsection}{Hard switch}{71}
+\contentsline {subsubsection}{Switch with linear interpolation}{71}
 \contentsline {subsubsection}{Analogue selectable opacity}{71}
 \contentsline {subsubsection}{Periodic hard switches}{72}
-\contentsline {subsubsection}{Reduced maximum opacity}{72}
+\contentsline {subsubsection}{Reduced maximum opacity}{73}
 \contentsline {chapter}{\numberline {6}Mirrorshades - Evaluation}{74}
 \contentsline {subsection}{\numberline {6.0.6}Case Study - St Salvator's Chapel}{74}
 \contentsline {section}{\numberline {6.1}Investigation 1 - The Case for Mobile XR}{74}
