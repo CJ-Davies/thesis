@@ -29,7 +29,8 @@ Furthermore, in place of a hand held display such as the tablet used by VTW, the
 
 %=========================================================================================================
 
-%\subsection{The Mirrorshades Platform}
+\subsection{The Mirrorshades Platform}
+
 Figure \ref{systemarchitecture} presents a high level architectural overview of the successive PR platform, dubbed Mirrorshades\footnote{\textbf{Mirrorshades: The Cyberpunk Anthology} (1986) is a defining cyberpunk short story collection, edited by Bruce Sterling. Mirrored sunglasses are a symbol considered synonymous of cyberpunk, a genre whose fiction has frequently involved immersive multi-user virtual environments \& head mounted displays.}. This is a hardware \& software platform which allows its user to observe \& move around their Real World (RW) environment whilst wearing a wide field of view (FOV), stereoscopic 3D, Head Mounted Display (HMD) which allows them to alternatively view an immersive Virtual Reality (VR) environment from the equivalent vantage point. The HMD is imbued with video see-through functionality by the addition of cameras, to allow the user to see their RW environment \& a controller held by the user allows them to trigger their view to switch between RW \& VR.
 
 \begin{figure}[h]
@@ -42,7 +43,23 @@ Figure \ref{systemarchitecture} presents a high level architectural overview of 
 
 \textbf{***I think there needs to be some more explanation/diagram/picture of the system here before I start talking about the specifics of the implementation?}
 
-\textbf{***Introduce Sallies as case study/experimental location here?}
+%=========================================================================================================
+
+\subsection{St Salvator's Chapel}
+
+Founded in 1450 but internally stripped of its medieval fittings during the Protestant Reformation (1517 - 1648), St Salvator's chapel in St Andrews looks markedly different in the present day than it did upon its completion. An existing VR reconstruction of the chapel as it stood in the period 1450-1460 \& the marked differences between the internal appearance of the VR building \& the current building (including the replacement of the original stone roof with a wooden one \& drastically different dividing of the internal space) make this chapel an ideal candidate within the context of cultural heritage for the Mirrorshades PR system to be applied.
+
+%Figure \ref{sallies_layout} shows the 1450-1460 layout of the chapel (including the paths that the IPS has been prepared upon).
+
+This reconstruction project has virtually recreated St Salvator’s chapel as it was built and furnished for Bishop James Kennedy between 1450 \& 1460. The chapel was of the greatest significance for the new architectural ideas that it introduced into Scotland, at a time when Scotland was particularly open to external artistic influences. However, although the shell of the chapel survives and remains in use, it has lost its vault, its window tracery and its liturgical furnishings, and it now requires specialist skills to appreciate the quality of its original state. As with other reconstructions from the OVW group, the virtual St Salvator's chapel is a product of a collaboration between architectural \& art history \& computer science scholarship. On the combined evidence of a highly detailed late medieval inventory and of the architecture itself, it has been possible to show how the chapel was furnished internally with altars, choir stalls, lecterns, screens, stained glass and wall paintings. The virtual chapel is enhanced with lighting, sound and movement may be explored from a variety of physical and temporal locations through an avatar. The architectural, liturgical and spatial analysis allows our understanding of the history of the Chapel as a living building to be enormously enhanced by experiencing the building in its original context.
+
+St Salvator's college was founded on 27 August 1450 by Bishop James Kennedy, who played a leading role in Scottish \& international politics. St Salvator’s was to be open to students who were prepared to live within the college. In this, St Salvator’s was the first college in Scotland to place the education of students so firmly at the heart of its role. It was dedicated for worship in 1460. The chapel is an aisle-less rectangle with a three-sided east apse. Deeply projecting three-stage buttresses define the bays, which are now capped by pinnacles of 1861–2. The windows which occupy the full space available between the buttresses, no longer reflect their original forms. The main entrance to the chapel was through a doorway in the second bay from the west of the south flank, which is covered by a vaulted porch between the buttresses. Two doorways on the north side presumably opened into a lost sacristy and treasury range.
+
+The interior of the chapel is known to have been covered by a stone vault, which is assumed to have been of pointed barrel form with a decorative pattern of ribs, like the small vault over the south porch. The interior is now covered by an inappropriate timber roof.
+
+St Salvator’s chapel is considered the first Scottish example of a church planned with an aisle-less rectangular main body terminating in a polygonal eastern apse, a type that was to have a long future for a range of Scottish church types. Such chapels were common in university colleges in France \& since Bishop Kennedy had a highly placed kinsman in the university of Paris and drew many ideas for the organisation of his college from that university’s constitution, it is reasonable to assume that he also drew some of his ideas for the architecture of his chapel from there. On this basis, St Salvator’s must be seen as an outstandingly important channel for the introduction into Scotland of new architectural ideas from France. The new architecture made a significant statement in its Scottish context. 
+
+The reconstruction of the chapel involved both the mental reconstruction of modified and lost features, and the establishment of the range of ways in which buildings that represent a spirituality alien to modern students were intended to function. As such it offers an invaluable academic discipline for those involved in the reconstruction, providing eminently practical ways of testing theories and assumptions. It is then of the greatest value for conveying more widely the understanding that has been gained. The development of a PR system which enables comparison between the real and virtual chapel in the same time and place aims to further enhance the value of the reconstruction.
 
 %=========================================================================================================
 
@@ -119,7 +136,7 @@ It should be noted that the IndoorAtlas technology only reports positions upon r
 	\end{center}
 \end{figure}
 
-Initial testing of IndoorAtlas at a 15th century chapel proved surprisingly successful, with the platform able to track the smartphone accurately throughout the building even without any obvious overbearing metal content in the structure or furnishing. Figure \ref{sallies.png} shows the set of positions reported by the IndoorAtlas platform whilst walking throughout the chapel, which is roughly 30m across. Upon closer inspection of the building, metal grating that runs along the ground along the central nave (representing much of the horizontal movement in figure \ref{sallies.png}) might help to explain this unexpected performance, however in other areas such as when walking to either side of the altar there were no obvious sources of magnetic interference to account for the maintained accuracy. Possible hidden explanations could be the ferromagnetic properties of certain types of stone \& the electrical lighting \& audio systems installed into the chapel, which make use of electrical cables routed throughout the building.
+Initial testing of IndoorAtlas at a 15th century chapel proved surprisingly successful, with the platform able to track the smartphone accurately throughout the building even without any obvious overbearing metal content in the structure or furnishing. Figure \ref{sallies.png} shows the set of positions reported by the IndoorAtlas platform whilst walking throughout the chapel, which is roughly 30m across. Upon closer inspection of the building, metal grating that runs along the ground along the central nave (representing much of the horizontal movement in figure \ref{sallies.png}) as shown in figure \ref{DSCN0172.JPG} \& in detail in figure \ref{DSCN0174.JPG} \& also extends to the open area in front of the altar (figure \ref{DSCN0175.JPG}) might help to explain this unexpected performance, however in other areas such as when walking to either side of the altar there were no obvious sources of magnetic interference to account for the maintained accuracy (figure \ref{DSCN0176.JPG}. Possible hidden explanations could be the ferromagnetic properties of certain types of stone \& the electrical lighting \& audio systems installed into the chapel (loudspeaker \& light fixture visible in figure \ref{DSCN0177.JPG}), which make use of electrical cables routed throughout the building.
 
 \begin{figure}[h]
 	\begin{center}
@@ -131,6 +148,37 @@ Initial testing of IndoorAtlas at a 15th century chapel proved surprisingly succ
 
 \textbf{***Photos of metal grate along nave \& of altar showing not much obvious metal.}
 
+\begin{figure}[h]
+    \begin{center}
+    \begin{minipage}{.32\textwidth}
+        \begin{center}
+        \includegraphics[width=\textwidth]{Sallies-photos/DSCN0172.JPG}
+        \caption{DSCN0172.JPG}
+        \label{DSCN0172.JPG}
+        \end{center}
+    \end{minipage}%
+    \hspace{.01\textwidth}
+    \begin{minipage}{.32\textwidth}
+		\begin{center}
+        \includegraphics[width=\textwidth]{Sallies-photos/DSCN0174.JPG}
+        \caption{DSCN0174.JPG}
+        \label{DSCN0174.JPG}
+        \end{center}
+    \end{minipage}%
+    \hspace{.01\textwidth}
+    \begin{minipage}{.32\textwidth}
+        \begin{center}
+        \includegraphics[width=\textwidth]{Sallies-photos/DSCN0175.JPG}
+        \caption{DSCN0175.JPG}
+        \label{DSCN0175.JPG}
+        \end{center}
+    \end{minipage}
+    \end{center}
+\end{figure}
+
+\TwoFig{Sallies-photos/DSCN0176.JPG}{DSCN0176.JPG}{DSCN0176.JPG}
+       {Sallies-photos/DSCN0177.JPG}{DSCN0177.JPG}{DSCN0177.JPG}
+
 %=========================================================================================================
 
 \section{HMD with See-Through Video}
@@ -141,9 +189,25 @@ The concept of virtual reality \& the associated head mounted displays that prov
 
 %Virtual Reality - Rheingold, 1992 - 'revolutionary technology...how it promises to transform society'
 %\cite{Rheingold1992}
+%photo, root of external
 
+
+%http://www.quora.com/How-is-the-Oculus-Rift-any-different-from-attempts-at-creating-virtual-reality-in-the-90s
+
+%http://www.expertreviews.co.uk/games/8054/can-oculus-rift-end-virtual-realitys-thirty-year-struggle
 
 Whilst the first head mounted computer display was created back in the 1960s by Ivan Sutherland, it was not until the late 1980s \& early 1990s that VR began to be pushed to the consumer. Unfortunately, both the hardware \& software was not ready for consumer release \& the systems failed to live up to the substantial hype, resulting in the VR bubble bursting in the 1990s.
+
+
+which described VR as a \textit{``revolutionary technology''} which \textit{``promises to transform society''}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=0.4\textwidth]{rheingold-virtual-reality.jpg}
+		\caption{Howard Rheingold's 1992 bestseller \textit{Virtual Reality}.}
+		\label{rheingold-virtual-reality.jpg}
+	\end{center}
+\end{figure}
 
 After this disappointment, Oculus now looks set to finally begin realising a successful consumer VR platform, thanks largely to substantial advances in display technologies during the past decade, driven largely by the explosive popularity of smartphones \& tablets. Pre-Oculus HMDs largely made use of two separate microdisplays, one for each eye. Sutherland's original Sword of Damocles made use of two micro CRT screens, whilst later HMDs made use of OLED displays. As the number of market applications for microdisplay technology was (\& continues to be) relatively small, this meant that these headsets had a limited number of displays to choose from \& that they were relatively expensive.
 
@@ -177,6 +241,10 @@ Brief history of VR headsets, maybe take bits from that youtube video from Samsu
 \textbf{***Mention first Mirrorshades test with single webcam providing small floating window in corner of virtual view (video is on youtube/Mirrorshades repo).}
 
 \newcommand{\floatingwebcamFootnote}{\footnote{\url{https://www.youtube.com/watch?v=tS0FGZxQzCU}}}
+
+
+Japanese Unity dual PS3 Eye blog post\footnote{\url{http://tips.hecomi.com/entry/20130731/1375279561} (Japanese)}
+
 
 \begin{figure}[h]
 	\begin{center}

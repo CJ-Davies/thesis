@@ -1,24 +1,17 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.9)  10 JUL 2014 02:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2015.2.6)  11 FEB 2015 15:08
 entering extended mode
-**H:/vrst/viewfromthehill.tex
-(H:/vrst/viewfromthehill.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
- lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
-ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
-an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
-ishmax, welsh, loaded.
-(H:\vrst\acmsiggraph.cls
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**viewfromthehill.tex
+(./viewfromthehill.tex
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 79 languages loaded.
+(./acmsiggraph.cls
 Document Class: acmsiggraph 2013/12/06 ACM SIGGRAPH class
 \ACMpointsize=\skip41
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+(/usr/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+(/usr/share/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -33,24 +26,24 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip43
 \bibindent=\dimen102
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+(/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip44
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks14
 \ex@=\dimen103
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+(/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen104
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+(/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count87
@@ -91,7 +84,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\lineno\lineno.sty"
+(/usr/share/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \linenopenalty=\count99
 \output=\toks19
@@ -109,37 +102,37 @@ Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \bframebox=\box28
 LaTeX Info: Redefining \\ on input line 3056.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\helvet.sty"
+(/usr/share/texmf-dist/tex/latex/psnfss/helvet.sty
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
 \KV@toks@=\toks20
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\times.sty"
+(/usr/share/texmf-dist/tex/latex/psnfss/times.sty
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+(/usr/share/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+(/usr/share/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+(/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+(/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count106
@@ -147,10 +140,10 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen117
 \Gin@req@width=\dimen118
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
+(/usr/share/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+(/usr/share/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
 \captionmargin=\dimen119
@@ -163,7 +156,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 )
 \c@ContinuedFloat=\count107
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\parskip.sty"
+(/usr/share/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2001/04/09 non-zero parskip adjustments
 )
 \ACMcopyrightspace=\skip47
@@ -172,20 +165,20 @@ Package: parskip 2001/04/09 non-zero parskip adjustments
 \teaserspace=\skip50
 \@ACMabs=\toks21
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+(/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
-Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
+(/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
-Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
+(/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
 Package hobsub Info: Skipping package `ltxcmds' (already loaded).
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
@@ -215,7 +208,7 @@ Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
 )
 Package hobsub Info: Skipping package `hobsub' (already loaded).
 Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
-Package: hopatch 2011/06/24 v1.1 Wrapper for package hooks (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
 Package: xcolor-patch 2011/01/30 xcolor patch
 Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
@@ -223,25 +216,25 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+(/usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+(/usr/share/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+(/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen126
 \Hy@linkcounter=\count108
 \Hy@pagecounter=\count109
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+(/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count110
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+(/usr/share/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Option `breaklinks' set `true' on input line 4319.
@@ -256,7 +249,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks OFF on input line 4694.
 \c@Hy@tempcnt=\count111
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
+(/usr/share/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -280,12 +273,12 @@ LaTeX Info: Redefining \pageref on input line 6369.
 
 Package hyperref Message: Driver: hpdftex.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+(/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count115
 \c@bookmark@seq@number=\count116
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+(/usr/share/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
@@ -295,7 +288,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 Package hyperref Info: Option `colorlinks' set `true' on input line 505.
 Package hyperref Info: Option `breaklinks' set `true' on input line 505.
 )
-(H:\vrst\viewfromthehill.aux
+(./viewfromthehill.aux
 
 LaTeX Warning: Label `community' multiply defined.
 
@@ -303,6 +296,8 @@ LaTeX Warning: Label `community' multiply defined.
 LaTeX Warning: Label `erosion' multiply defined.
 
 )
+\openout1 = `viewfromthehill.aux'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
@@ -318,10 +313,10 @@ LaTeX Font Info:    ... okay on input line 29.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 29.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+ (/usr/share/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+(/usr/share/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count117
 \scratchdimen=\dimen130
@@ -334,25 +329,40 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 \MPnumerator=\count121
 \makeMPintoPDFobject=\count122
 \everyMPtoPDFconversion=\toks23
+) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box30
- ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
-Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+(/usr/share/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2014/04/23 v1.1a Standard LaTeX Color (DPC)
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 130.
+Package color Info: Driver file: pdftex.def on input line 137.
 )
 Package hyperref Info: Link coloring ON on input line 29.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+(/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+(/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count123
@@ -362,7 +372,7 @@ LaTeX Info: Redefining \pageref on input line 29.
 LaTeX Info: Redefining \nameref on input line 29.
 LaTeX Font Info:    Try loading font information for OT1+phv on input line 36.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1phv.fd"
+(/usr/share/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
@@ -380,7 +390,7 @@ LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 44.
 
-<images/sally.png, id=11, 284.85368pt x 193.9879pt>
+<images/sally.png, id=12, 284.85368pt x 193.9879pt>
 File: images/sally.png Graphic file (type png)
  <use images/sally.png>
 Package pdftex.def Info: images/sally.png used on input line 71.
@@ -390,7 +400,7 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 71--72
  [] 
  []
 
-<images/virtuality-continuum-original.png, id=13, 1927.2pt x 293.095pt>
+<images/virtuality-continuum-original.png, id=14, 1927.2pt x 293.095pt>
 File: images/virtuality-continuum-original.png Graphic file (type png)
 
 <use images/virtuality-continuum-original.png>
@@ -402,12 +412,11 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 81--82
  [] 
  []
 
-[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <H:/vrst/images/sally.png> <H:/vrst/images/virtuality-continuum-original.png>]
-
-<images/virtuality-continuum-cross-reality-1.png, id=38, 1927.2pt x 322.20375pt
+ <./images/sally.png> <./images/virtuality-continuum-original.png>]
+<images/virtuality-continuum-cross-reality-1.png, id=39, 1927.2pt x 322.20375pt
 >
 File: images/virtuality-continuum-cross-reality-1.png Graphic file (type png)
  <use images/virtuality-continuum-cross-reality-1.png>
@@ -420,7 +429,7 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 103--104
  []
 
 
-<images/virtuality-continuum-cross-reality-3.png, id=39, 1927.2pt x 354.32375pt
+<images/virtuality-continuum-cross-reality-3.png, id=40, 1927.2pt x 354.32375pt
 >
 File: images/virtuality-continuum-cross-reality-3.png Graphic file (type png)
  <use images/virtuality-continuum-cross-reality-3.png>
@@ -435,7 +444,7 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 119--120
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 132.
 
-<images/focus-locus-sensus-with-virtuality-continuum.png, id=45, 1927.2pt x 225
+<images/focus-locus-sensus-with-virtuality-continuum.png, id=46, 1927.2pt x 225
 2.415pt>
 File: images/focus-locus-sensus-with-virtuality-continuum.png Graphic file (typ
 e png)
@@ -459,13 +468,13 @@ LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
 (Font)              scaled to size 9.19998pt on input line 150.
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 157.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
+(/usr/share/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 157.
 
-<images/sallies_layout.png, id=46, 1383.1675pt x 662.475pt>
+<images/sallies_layout.png, id=47, 1383.1675pt x 662.475pt>
 File: images/sallies_layout.png Graphic file (type png)
 
 <use images/sallies_layout.png>
@@ -476,10 +485,10 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 164--165
  [] 
  []
 
-[2 <H:/vrst/images/virtuality-continuum-cross-reality-1.png> <H:/vrst/images/vi
-rtuality-continuum-cross-reality-3.png> <H:/vrst/images/focus-locus-sensus-with
--virtuality-continuum.png> <H:/vrst/images/sallies_layout.png>]
-<images/frmquad.jpg, id=88, 282.05376pt x 179.67125pt>
+[2 <./images/virtuality-continuum-cross-reality-1.png> <./images/virtuality-con
+tinuum-cross-reality-3.png> <./images/focus-locus-sensus-with-virtuality-contin
+uum.png> <./images/sallies_layout.png>]
+<images/frmquad.jpg, id=89, 282.05376pt x 179.67125pt>
 File: images/frmquad.jpg Graphic file (type jpg)
 
 <use images/frmquad.jpg>
@@ -490,7 +499,7 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 181--182
  [][] 
  []
 
-<images/sallyold.png, id=90, 1927.2pt x 1071.00125pt>
+<images/sallyold.png, id=91, 1927.2pt x 1071.00125pt>
 File: images/sallyold.png Graphic file (type png)
 
 <use images/sallyold.png>
@@ -522,21 +531,21 @@ Missing character: There is no ™ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
-[3 <H:/vrst/images/frmquad.jpg> <H:/vrst/images/sallyold.png (PNG copy)>]
-<images/Snapshot_001.png, id=124, 1927.2pt x 1021.8175pt>
+[3 <./images/frmquad.jpg> <./images/sallyold.png (PNG copy)>]
+<images/Snapshot_001.png, id=125, 1927.2pt x 1021.8175pt>
 File: images/Snapshot_001.png Graphic file (type png)
 
 <use images/Snapshot_001.png>
 Package pdftex.def Info: images/Snapshot_001.png used on input line 230.
 (pdftex.def)             Requested size: 240.94499pt x 127.74246pt.
 
-<images/IMGP4109.jpg, id=125, 4304.08pt x 2858.68pt>
-File: images/IMGP4109.jpg Graphic file (type jpg)
- <use images/IMGP4109.jpg>
-Package pdftex.def Info: images/IMGP4109.jpg used on input line 242.
+<images/IMGP4109.JPG, id=126, 4304.08pt x 2858.68pt>
+File: images/IMGP4109.JPG Graphic file (type jpg)
+ <use images/IMGP4109.JPG>
+Package pdftex.def Info: images/IMGP4109.JPG used on input line 242.
 (pdftex.def)             Requested size: 240.94499pt x 159.99774pt.
 
-<images/system-architecture.png, id=128, 373.395pt x 271.0125pt>
+<images/system-architecture.png, id=129, 373.395pt x 271.0125pt>
 File: images/system-architecture.png Graphic file (type png)
 
 <use images/system-architecture.png>
@@ -544,7 +553,7 @@ Package pdftex.def Info: images/system-architecture.png used on input line 266.
 
 (pdftex.def)             Requested size: 240.94499pt x 174.87822pt.
 
-<images/experimental-implementation.png, id=129, 743.8992pt x 325.9377pt>
+<images/experimental-implementation.png, id=130, 743.8992pt x 325.9377pt>
 File: images/experimental-implementation.png Graphic file (type png)
 
 <use images/experimental-implementation.png>
@@ -557,7 +566,7 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
 
-<images/rift.png, id=130, 584.1825pt x 476.78125pt>
+<images/rift.png, id=131, 584.1825pt x 476.78125pt>
 File: images/rift.png Graphic file (type png)
  <use images/rift.png>
 Package pdftex.def Info: images/rift.png used on input line 285.
@@ -570,12 +579,11 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 285--286
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[4 <H:/vrst/images/Snapshot_001.png (PNG copy)> <H:/vrst/images/IMGP4109.jpg> <
-H:/vrst/images/system-architecture.png> <H:/vrst/images/experimental-implementa
-tion.png>] <images/pews.png, id=141, 1371.1225pt x 616.3025pt>
+[4 <./images/Snapshot_001.png (PNG copy)> <./images/IMGP4109.JPG> <./images/sys
+tem-architecture.png> <./images/experimental-implementation.png>]
+<images/pews.png, id=142, 1371.1225pt x 616.3025pt>
 File: images/pews.png Graphic file (type png)
-
-<use images/pews.png>
+ <use images/pews.png>
 Package pdftex.def Info: images/pews.png used on input line 300.
 (pdftex.def)             Requested size: 252.94499pt x 113.69444pt.
 
@@ -583,7 +591,7 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 300--301
  [] 
  []
 
-<images/ceiling.png, id=142, 1371.1225pt x 616.3025pt>
+<images/ceiling.png, id=143, 1371.1225pt x 616.3025pt>
 File: images/ceiling.png Graphic file (type png)
 
 <use images/ceiling.png>
@@ -602,7 +610,7 @@ LaTeX Warning: Reference `waterworth' on page 5 undefined on input line 348.
 
 
 <images/focus-locus-sensus-with-virtuality-continuum-with-transition-updated.pn
-g, id=146, 1927.2pt x 2252.415pt>
+g, id=147, 1927.2pt x 2252.415pt>
 File: images/focus-locus-sensus-with-virtuality-continuum-with-transition-updat
 ed.png Graphic file (type png)
 
@@ -619,20 +627,19 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 354--355
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5 <H:/vrst/images/rift.png (PNG copy)> <H:/vrst/images/pews.png> <H:/vrst/imag
-es/ceiling.png>]
+[5 <./images/rift.png (PNG copy)> <./images/pews.png> <./images/ceiling.png>]
 
 LaTeX Warning: Reference `waterworth' on page 6 undefined on input line 369.
 
 
-<images/switching-hard-with-controller.png, id=168, 1040.88875pt x 494.84875pt>
+<images/switching-hard-with-controller.png, id=169, 1040.88875pt x 494.84875pt>
 File: images/switching-hard-with-controller.png Graphic file (type png)
 <use images/switching-hard-with-controller.png>
 Package pdftex.def Info: images/switching-hard-with-controller.png used on inpu
 t line 379.
 (pdftex.def)             Requested size: 240.94499pt x 114.54524pt.
 
-<images/switching-soft-with-controller.png, id=169, 1760.5775pt x 597.23125pt>
+<images/switching-soft-with-controller.png, id=170, 1760.5775pt x 597.23125pt>
 File: images/switching-soft-with-controller.png Graphic file (type png)
 
 <use images/switching-soft-with-controller.png>
@@ -640,7 +647,7 @@ Package pdftex.def Info: images/switching-soft-with-controller.png used on inpu
 t line 385.
 (pdftex.def)             Requested size: 240.94499pt x 81.73451pt.
 
-<images/switching-analogue-with-controller.png, id=170, 1760.5775pt x 575.14874
+<images/switching-analogue-with-controller.png, id=171, 1760.5775pt x 575.14874
 pt>
 File: images/switching-analogue-with-controller.png Graphic file (type png)
  <use images/switching-analogue-with-controller.png>
@@ -660,34 +667,34 @@ LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
 (Font)              scaled to size 8.27998pt on input line 415.
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 415.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
+(/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [6 <H:/vrst/images/focus-locus-sensus-with-virtuality-continuum-with-transiti
-on-updated.png (PNG copy)> <H:/vrst/images/switching-hard-with-controller.png (
-PNG copy)> <H:/vrst/images/switching-soft-with-controller.png (PNG copy)> <H:/v
-rst/images/switching-analogue-with-controller.png (PNG copy)>]
-<images/00000MTS_Still001.jpg, id=180, 903.375pt x 507.8975pt>
+) [6 <./images/focus-locus-sensus-with-virtuality-continuum-with-transition-upd
+ated.png (PNG copy)> <./images/switching-hard-with-controller.png (PNG copy)> <
+./images/switching-soft-with-controller.png (PNG copy)> <./images/switching-ana
+logue-with-controller.png (PNG copy)>] <images/00000MTS_Still001.jpg, id=182, 9
+03.375pt x 507.8975pt>
 File: images/00000MTS_Still001.jpg Graphic file (type jpg)
 
 <use images/00000MTS_Still001.jpg>
 Package pdftex.def Info: images/00000MTS_Still001.jpg used on input line 452.
 (pdftex.def)             Requested size: 240.94499pt x 135.46017pt.
 
-<images/00000MTS_Still002.jpg, id=181, 903.375pt x 507.8975pt>
+<images/00000MTS_Still002.jpg, id=183, 903.375pt x 507.8975pt>
 File: images/00000MTS_Still002.jpg Graphic file (type jpg)
 
 <use images/00000MTS_Still002.jpg>
 Package pdftex.def Info: images/00000MTS_Still002.jpg used on input line 456.
 (pdftex.def)             Requested size: 240.94499pt x 135.46017pt.
 
-<images/2chapels.png, id=184, 540.54579pt x 285.91026pt>
+<images/2chapels.png, id=186, 540.54579pt x 285.91026pt>
 File: images/2chapels.png Graphic file (type png)
 
 <use images/2chapels.png>
 Package pdftex.def Info: images/2chapels.png used on input line 488.
 (pdftex.def)             Requested size: 240.94499pt x 127.4456pt.
 
-<images/tankview.png, id=185, 540.96841pt x 304.29474pt>
+<images/tankview.png, id=187, 540.96841pt x 304.29474pt>
 File: images/tankview.png Graphic file (type png)
 
 <use images/tankview.png>
@@ -703,8 +710,7 @@ y
 LaTeX Warning: Reference `subsub-baseopacity' on page 7 undefined on input line
  510.
 
-[7 <H:/vrst/images/00000MTS_Still001.jpg> <H:/vrst/images/00000MTS_Still002.jpg
->]
+[7 <./images/00000MTS_Still001.jpg> <./images/00000MTS_Still002.jpg>]
 
 LaTeX Warning: Reference `subsub-periodic' on page 8 undefined on input line 51
 2.
@@ -715,7 +721,7 @@ Underfull \hbox (badness 1038) in paragraph at lines 514--515
 me rate
  []
 
-<images/framerate3.png, id=198, 803.0pt x 803.0pt>
+<images/framerate3.png, id=200, 803.0pt x 803.0pt>
 File: images/framerate3.png Graphic file (type png)
  <use images/framerate3.png>
 Package pdftex.def Info: images/framerate3.png used on input line 522.
@@ -724,7 +730,7 @@ Package pdftex.def Info: images/framerate3.png used on input line 522.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/graph.png, id=199, 1927.2pt x 652.4375pt>
+<images/graph.png, id=201, 1927.2pt x 652.4375pt>
 File: images/graph.png Graphic file (type png)
  <use images/graph.png>
 Package pdftex.def Info: images/graph.png used on input line 531.
@@ -743,9 +749,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 566--566
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
-[8 <H:/vrst/images/2chapels.png> <H:/vrst/images/tankview.png> <H:/vrst/images/
-framerate3.png>] (H:\vrst\viewfromthehill.bbl [9 <H:/vrst/images/graph.png (PNG
- copy)>]
+[8 <./images/2chapels.png> <./images/tankview.png> <./images/framerate3.png>]
+(./viewfromthehill.bbl [9 <./images/graph.png (PNG copy)>]
 Underfull \hbox (badness 7186) in paragraph at lines 84--88
 []\OT1/ptm/m/sc/9 Magnenat-Thalmann, N., Pa-pa-gian-nakis, G., and
  []
@@ -762,7 +767,7 @@ Missing character: There is no “ in font ptmri7t!
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 603.
  [10]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 603.
- (H:\vrst\viewfromthehill.aux)
+ (./viewfromthehill.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 603.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 603.
 
@@ -775,22 +780,23 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 603.
  ) 
 Here is how much of TeX's memory you used:
- 7313 strings out of 493921
- 112072 string characters out of 3147286
- 199560 words of memory out of 3000000
- 10417 multiletter control sequences out of 15000+200000
- 31595 words of font info for 61 fonts, out of 3000000 for 9000
- 841 hyphenation exceptions out of 8191
- 43i,8n,40p,1347b,402s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utm
-b8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on viewfromthehill.pdf (10 pages, 22273850 bytes).
+ 7431 strings out of 493108
+ 113601 string characters out of 6140726
+ 207515 words of memory out of 5000000
+ 10689 multiletter control sequences out of 15000+600000
+ 31595 words of font info for 61 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 43i,8n,40p,1339b,402s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-dist/fonts/type1/urw/co
+urier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></u
+sr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fon
+ts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr
+i8a.pfb>
+Output written on viewfromthehill.pdf (10 pages, 22277345 bytes).
 PDF statistics:
- 264 PDF objects out of 1000 (max. 8388607)
+ 268 PDF objects out of 1000 (max. 8388607)
+ 214 compressed objects within 3 object streams
  83 named destinations out of 1000 (max. 500000)
  126 words of extra memory for PDF output out of 10000 (max. 10000000)
 
