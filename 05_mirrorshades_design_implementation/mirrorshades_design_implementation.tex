@@ -227,20 +227,16 @@ When choosing cameras for this task, there were several desired features;
 	\item ease of integration with the Unity platform.
 \end{itemize}
 
-The PS3 Eye camera met most of these requirements. It's resolution is only 640x480 pixels, whilst each half of the DK1's display is 600x800 pixels, however unusually for a USB camera it is capable of running at 60fps. Furthermore, once dismantled to its bare PCB it features mounting holes for a standard M12 lens mount which allows alternative focal length lenses to be easy fitted.
+The PS3 Eye camera met most of these requirements. It's resolution is only 640x480 pixels, whilst each half of the DK1's display is 600x800 pixels, however unusually for a USB camera it is capable of running at 60fps. Furthermore, once dismantled to its bare PCB it features mounting holes for a standard S-mount (M12x0.5mm) lens mount commonly used for CCTV cameras, allowing alternative focal length lenses to be easy fitted.
 
 A very early test with the PS3 Eye \& the DK1\footnote{\url{https://www.youtube.com/watch?v=tS0FGZxQzCU}} was performed by simply attaching a single unmodified PS3 Eye camera to the top of the DK1 (figure \ref{rift-ps3eye-ziptied.jpg}), with its stock lens set to its `wide' setting ($75\textdegree$\footnote{\url{http://uk.playstation.com/media/247868/7010571 PS3 Eye Web_GB.pdf}}). One purpose of this test was to explore the suitability of Unity's \texttt{WebCamTexture}\footnote{\url{http://docs.unity3d.com/ScriptReference/WebCamTexture.html}} feature for integrating the stream from a USB camera into a 3D application. In this early test, the mediated RW video stream was rendered to a small `floating' window that moved with the user's head (figure \ref{floating-webcam-window.png}), allowing the user to view both environments at once, with the real environment in their peripheral whilst they were attending to the virtual. Whilst an interesting concept, the decision was made to instead render the mediated RW stream to the full DK1 screen so as to allow the user to better observe their real environment thanks to the larger image \& higher resolution.
 
 \TwoFig{rift-pseye-ziptied.jpg}{First monoscopic see through hardware.}{rift-pseye-ziptied.jpg}
        {floating-webcam-window.png}{Early `floating' window see through video.}{floating-webcam-window.png}
 
-A pair of PS3 Eye cameras were dismantled, removing their outer plastic housing \& stock lenses. M12 lens mounts, commonly used by CCTV cameras, were fitted \& several different focal length M12 lenses were auditioned.
+A pair of PS3 Eye cameras were dismantled, removing their outer plastic housing \& stock lenses. S-mount lens mounts were fitted \& the search for suitable lenses began. Ideally, the lenses used would provide the same FOV as the Rift itself is capable of displaying, such that the mediate RW stream from the cameras could be displayed at the full size of the Rift \& `match' the FOV of whatever virtual content would alternatively be displayed. However there is a trade off with lenses between focal length \& distortion; shorter focal lengths mean a wider FOV, however they also introduce more distortion. The PS3 Eye has a `1/4'' type' sensor which is only an indication of its true dimensions\footnote{\url{http://www.dpreview.com/glossary/camera-system/sensor-sizes}} \& as Sony has not published the actual dimensions of the sensor we adopt the typical 1/4'' type dimensions\footnote{\url{http://www.photoreview.com.au/tips/buying/unravelling-sensor-sizes}} of 4.5mm diagonal, 3.6mm horizontally, 2.7mm vertically. Empirical accounts of very short focal length S-mount lenses mounted to the PS3 Eye camera indicated that the distortion becomes very high at around 2.1mm\footnote{\url{http://peauproductions.com/store/index.php?main_page=index&cPath=26_4}}. Table \ref{fov-table} gives the diagonal, horizontal \& vertical FOV of the widest commonly available S-mount lenses.
 
-
-Pick a lens. Want to be wide, because the rift has wide FOV, but the wider the lens the more distortion.
-
-The PS3 Eye has a `1/4'' type' sensor which is only an indication of its true dimensions\footnote{\url{http://www.dpreview.com/glossary/camera-system/sensor-sizes}} \& as Sony has not published the actual dimensions of the sensor we adopt the typical 1/4'' type dimensions\footnote{\url{http://www.photoreview.com.au/tips/buying/unravelling-sensor-sizes}} of 4.5mm diagonal, 3.6mm horizontally, 2.7mm vertically.
-
+\begin{table}
 \begin{center}
 \begin{tabular}{|c|c|c|c|}
 \hline
@@ -254,13 +250,27 @@ Focal length (mm) & Diagonal FOV (\textdegree) & Horizontal FOV (\textdegree) & 
 1.7mm & 93.3 & 76.9  & 105.9 \\
 \hline
 \end{tabular}
+\caption{FOV of various focal lengths resolving onto a 1/4'' type sensor.}
+\label{fov-table}
 \end{center}
+\end{table}
 
-
-
+However, using a lens with a short enough focal length to provide a FOV as wide as the Rift isn't strictly necessary as, when wearing the Rift, the edges of the image presented to each eye is not necessarily visible to the user, especially if the Rift's adjustable distance from the eyes is adjusted such that it sits at its furthest position. Such adjustment is actually prudent, as using the Rift at its maximum extension from the eyes ensures maximum compatibility \& comfort with users \& also removes a variable between users compared to if each user were permitted to chose the extension themselves. So the choice of lens is now down to identifying the FOV required to fill the portion of the Rift's images that are visible when the headset is extended to its maximal position.
 
 \TwoFig{rift-clips-cameras/lens-comparison-on-ps3eye-pcb.jpg}{lens-comparison-on-ps3eye-pcb.jpg}{lens-comparison-on-ps3eye-pcb.jpg}
        {rift-clips-cameras/lens-comparison.jpg}{lens-comparison.jpg}{lens-comparison.jpg}
+
+
+\TwoFig{fov-comparison-1.png}{}{fov-comparison-1.png}
+        {fov-comparison-2.png}{}{fov-comparison-2.png}
+
+
+
+
+
+
+
+
 
 
 Japanese Unity dual PS3 Eye blog post\footnote{\url{http://tips.hecomi.com/entry/20130731/1375279561} (Japanese)}
