@@ -129,137 +129,145 @@ Whilst the PSMove has been used successfully for pedestrian position tracking in
 
 \subsection{Indoor Atlas}
 
-During the evaluation phase of different IPS \& their suitability to the envisaged Mirrorshades platform, Finnish startup IndoorAtlas\footnote{\url{https://www.indooratlas.com/}} released the first public beta of their indoor positioning technology that uses the magnetometers found in smartphones to locate a user within a magnetic `fingerprint' of a particular building, taking inspiration from animals, such as the spiny lobster, that are able to determine their position as well as their direction from the Earth's magnetic field~\cite{Boles2003}. A spin out from research at the University of Oulu in 2009~\cite{Haverinen2009,Haverinen2009a}, with a similar project undertaken by Media Lab researchers in 2011~\cite{Chung2011}, IndoorAtlas exploits how the Earth's magnetic field is distorted by both natural \& man-made sources. Indoors, these distortions come from building materials, especially in structures employing a framework of metal beams, but also from electrical cabling, HVAC ducting, etc. By recording a map of these distortions in an offline mapping phase, producing a fingerpint of the magnetic field around a building, the location of a user can be deduced by comparing the readings from their smartphone's magnetometer to this fingerprint.
+During the evaluation phase of different IPS \& their suitability to the envisaged Mirrorshades platform, Finnish startup IndoorAtlas\footnote{\url{https://www.indooratlas.com/}} released the first public beta of their indoor positioning technology that uses the magnetometers found in smartphones to locate a user within a magnetic `fingerprint' of a particular building, taking inspiration from animals, such as the spiny lobster, that are able to determine their position in addition to their direction from the Earth's magnetic field~\cite{Boles2003}. A spin out from research at the University of Oulu in 2009~\cite{Haverinen2009,Haverinen2009a}, with a similar project undertaken by Media Lab researchers in 2011~\cite{Chung2011}, IndoorAtlas exploits how the Earth's magnetic field is distorted by both natural \& man-made sources. Indoors, these distortions come from building materials, especially in structures employing a framework of metal beams, but also from electrical cabling, HVAC ducting, etc. By recording a map of these distortions in an offline mapping phase, producing a fingerpint of the magnetic field around a building, the location of a user can be deduced by comparing the readings from their smartphone's magnetometer to this fingerprint in real time.
 
 IndoorAtlas promised to be a good match for the IPS requirements of the Mirrorshades platform. In particular, the lack of dependence upon any deployed infrastructure such as ultrasound beacons or visual tracking targets suits the deployment area of Mirrorshades well, as most cultural heritage sites will not be amenable to the deployment of such hardware. Furthermore, the reliance upon only a smartphone held by the user means that coverage is only limited by the area that has prior been mapped in an offline mapping phase, allowing the positioning to scale to arbitrarily large indoor cultural heritage sites. This dependence upon only a smartphone also meets the low cost requirement of the Mirrorshades platform, as mid to high end smartphones with sensitive magnetometers can be purchased for just a few hundred dollars.
 
-The major concern at this point was whether the building materials employed in the construction of cultural heritage sites such as chapels, castles \& cathedrals would create great enough distortions to the Earth's magnetic field for IndoorAtlas to provide its boasted accuracy (which would be sufficient to discern between adjacent rooms, between doorways \& their surrounding walls \& estimate position within rooms \& corridors). These building materials are largely various types of stone, along with wood, a far cry from the metal framework that permeates most modern buildings. Whilst initial tests of the IndoorAtlas beta technology within a departmental building\footnote{\url{https://www.youtube.com/watch?v=l-eIvzpScRs}}\footnote{\url{https://www.youtube.com/watch?v=9hc2zEeQJXQ}} were promising, this was a modern building with a steel beam structure \& an abundance of computing infrastructure \& its associated cabling \& cooling provision. Figure \ref{jack-cole-splodges-black.png} shows the results of one of these tests; the light grey line represents the path walked around the building at a slow walking pace ($<1$ms$^{-1}$, akin to a visitor to a cultural heritage site might walk through it) with each black dot representing a position reported by the IndoorAtlas platform.
+The major concern at this point was whether the building materials employed in the construction of cultural heritage sites such as chapels, castles \& cathedrals would create great enough distortions to the Earth's magnetic field for IndoorAtlas to provide its boasted accuracy (which would be sufficient to discern between adjacent rooms, between doorways \& their surrounding walls \& estimate position within rooms \& corridors). These building materials are largely various types of stone, along with wood, a far cry from the metal framework that permeates most modern buildings. Whilst initial tests of the IndoorAtlas beta technology within a departmental building\footnote{\url{https://www.youtube.com/watch?v=l-eIvzpScRs}}\footnote{\url{https://www.youtube.com/watch?v=9hc2zEeQJXQ}} of roughly 40m \& 30m tall were promising, this was a modern building with a steel beam structure \& an abundance of computing infrastructure \& its associated cabling \& cooling provision. Figure \ref{jack-cole-splodges-red.png} shows the results of one of these tests, with each red dot representing a position reported by the IndoorAtlas platform while walking around the building at a slow walking pace ($<1$ms$^{-1}$, akin to how a visitor to a cultural heritage site might walk.
 
-It should be noted that the IndoorAtlas technology only reports positions upon routes that have been previously mapped in an offline mapping phase; in figure \ref{jack-cole-splodges-black.png} this offline mapping phase comprised walking the same light grey route several times. In the following test, had the user walked off the light grey route, IndoorAtlas would still have reported the user as being somewhere upon it; it would not attempt to extrapolate their position into unmapped territory. This is presumably because the scale of distortions in the Earth's magnetic field is quite fine grained, supported by the fact that many of the black dots are less than a meter apart, thus extrapolation would not fair well. This is an important aspect to take into account when performing the offline mapping phase, as one must map sufficient paths to cover all possible places \& routes that a user may walk. For locations comprised mainly of corridors \& small rooms, this is not an issue, however for a location that contains a large open space in which the user is free to meander, a more involved mapping process in which the entire space is systematically covered by back \& forth routes that progress across the space is required.
+\TwoFig{jack-cole-splodges-red.png}{Positions reported by IndoorAtlas.}{jack-cole-splodges-red.png}
+       {jack-cole-indooratlas-routes.png}{Route mapped during offline phase.}{jack-cole-indooratlas-routes.png}
 
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=0.7\textwidth]{jack-cole-splodges-black.png}
-		\caption{Testing of IndoorAtlas in a department building, approximately 40m wide by 30m tall.}
-		\label{jack-cole-splodges-black.png}
-	\end{center}
-\end{figure}
+It should be noted that the IndoorAtlas technology only reports positions upon routes that have been previously mapped in an offline mapping phase; for the test results shown by figure \ref{jack-cole-splodges-red.png}, this offline mapping phase comprised walking the route shown by the thick black line in figure \ref{jack-cole-indooratlas-routes.png} several times. In the following test, had the user deviated from this route, IndoorAtlas would still have reported them as being somewhere upon it; it would not attempt to extrapolate their position into unmapped territory. This is presumably because the scale of distortions in the Earth's magnetic field is quite fine grained, supported by the fact that many of the black dots are less than a meter apart, thus extrapolation would not fair well. This is an important aspect to take into account when performing the offline mapping phase, as one must map sufficient paths to cover all possible places \& routes that a user may walk. For locations comprised mainly of corridors \& small rooms, this is not an issue, however for a location that contains a large open space in which the user is free to meander, a more involved mapping process in which the entire space is systematically covered by back \& forth routes that progress across the space is required.
 
-Initial testing of IndoorAtlas at a St Salvator's chapel proved surprisingly successful, with the platform able to track the smartphone accurately throughout the building even without any obvious overbearing metal content in the structure or its furnishings. Figure \ref{sallies.png} shows the set of positions reported by the IndoorAtlas platform whilst walking throughout the chapel, which is roughly 30m across. Upon closer inspection of the building, metal grating that runs along the ground along the central aisle, representing much of the horizontal movement in figure \ref{sallies.png} \& shown in figure \ref{DSCN0172.JPG} \& figure \ref{DSCN0174.JPG} in detail, which also extends to the open area in front of the altar as shown in figure \ref{DSCN0175.JPG}, may explain this unexpectedly high performance, however in other areas such as when walking to either side of the altar there were no obvious sources of magnetic interference to account for the maintained accuracy (figure \ref{DSCN0176.JPG}. Possible less obvious explanations could be the ferromagnetic properties of certain types of stone used in the building's construction \& the presence of electrical lighting \& audio systems installed into the chapel (loudspeaker \& light fixture visible in figure \ref{DSCN0177.JPG}), which presumably make use of electrical cables routed throughout the building.
+Initial testing of IndoorAtlas at St Salvator's chapel proved surprisingly successful, with the platform able to track the smartphone accurately throughout the building even without any obvious overbearing metal content in the structure or its furnishings. Figure \ref{sallies-splodges-red.png} shows the set of positions reported by the IndoorAtlas platform whilst walking throughout the chapel, which is roughly 30m across, after an offline mapping phase that mapped the routes shown in figure \ref{sallies-indoor-atlas-routes.png}.
 
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=0.7\textwidth]{sallies.png}
-		\caption{Preliminary testing of IndoorAtlas in St Salvator's chapel.}
-		\label{sallies.png}
-	\end{center}
-\end{figure}
+\TwoFig{sallies-splodges-red.png}{Preliminary testing of IndoorAtlas in St Salvator's chapel.}{sallies-splodges-red.png}
+       {sallies-indoor-atlas-routes.png}{Routes mapped during offline phase.}{sallies-indoor-atlas-routes.png}
+
+Upon closer inspection of the building, metal grating that runs along the ground along the central aisle, representing much of the horizontal movement in figure \ref{sallies-splodges-red.png} \& shown in figure \ref{DSCN0172.jpg} \& figure \ref{DSCN0174.jpg} in detail, which also extends to the open area in front of the altar as shown in figure \ref{DSCN0175.jpg}, may explain this unexpectedly high performance, however in other areas such as when walking to either side of the altar (far right of figures \ref{sallies-splodges-red.png} \& \ref{sallies-indoor-atlas-routes.png}) there were no obvious sources, as seen in figure \ref{DSCN0176.jpg}, of magnetic interference to account for the maintained accuracy. Possible less obvious explanations could be the ferromagnetic properties of certain types of stone used in the building's construction \& the presence of electrical lighting \& audio systems installed into the chapel (loudspeaker \& light fixture visible in figure \ref{DSCN0177.jpg}), which presumably make use of electrical cables routed throughout the building.
 
 \begin{figure}[h]
     \begin{center}
     \begin{minipage}{.32\textwidth}
         \begin{center}
-        \includegraphics[width=\textwidth]{Sallies-photos/DSCN0172.JPG}
+        \includegraphics[width=\textwidth]{Sallies-photos/DSCN0172.jpg}
         \caption{Chapel aisle, flanked by gratings.}
-        \label{DSCN0172.JPG}
+        \label{DSCN0172.jpg}
         \end{center}
     \end{minipage}%
     \hspace{.01\textwidth}
     \begin{minipage}{.32\textwidth}
 		\begin{center}
-        \includegraphics[width=\textwidth]{Sallies-photos/DSCN0174.JPG}
+        \includegraphics[width=\textwidth]{Sallies-photos/DSCN0174.jpg}
         \caption{Grating detail.}
-        \label{DSCN0174.JPG}
+        \label{DSCN0174.jpg}
         \end{center}
     \end{minipage}%
     \hspace{.01\textwidth}
     \begin{minipage}{.32\textwidth}
         \begin{center}
-        \includegraphics[width=\textwidth]{Sallies-photos/DSCN0175.JPG}
+        \includegraphics[width=\textwidth]{Sallies-photos/DSCN0175.jpg}
         \caption{Gratings before altar.}
-        \label{DSCN0175.JPG}
+        \label{DSCN0175.jpg}
         \end{center}
     \end{minipage}
     \end{center}
 \end{figure}
 
-\TwoFig{Sallies-photos/DSCN0176.JPG}{No obvious metal around altar.}{DSCN0176.JPG}
-       {Sallies-photos/DSCN0177.JPG}{Loudspeaker \& electric light fixture.}{DSCN0177.JPG}
+\TwoFig{Sallies-photos/DSCN0176.jpg}{No obvious metal around altar.}{DSCN0176.jpg}
+       {Sallies-photos/DSCN0177.jpg}{Loudspeaker \& electric light fixture.}{DSCN0177.jpg}
 
 %=========================================================================================================
 
-\section{HMD with See-Through Video}
-The concept of virtual reality \& the associated head mounted displays that provide stereoscopic 3D graphics coupled with head tracking are currently experiencing a resurgence of interest \& investment, thanks largely to the advent of Oculus \& their Rift platform.
-
-%1965 The Ultimate Display
-%1968 demonstrated the Sword of Damocles
-
-%Virtual Reality - Rheingold, 1992 - 'revolutionary technology...how it promises to transform society'
-%\cite{Rheingold1992}
-%photo, root of external
-
-
-%http://www.quora.com/How-is-the-Oculus-Rift-any-different-from-attempts-at-creating-virtual-reality-in-the-90s
-
-%http://www.expertreviews.co.uk/games/8054/can-oculus-rift-end-virtual-realitys-thirty-year-struggle
-
-Whilst the first head mounted computer display was created back in the 1960s by Ivan Sutherland, it was not until the late 1980s \& early 1990s that VR began to be pushed to the consumer. Unfortunately, both the hardware \& software was not ready for consumer release \& the systems failed to live up to the substantial hype, resulting in the VR bubble bursting in the 1990s.
-
-
-which described VR as a \textit{``revolutionary technology''} which \textit{``promises to transform society''}
+\section{Virtual Reality Head Mounted Displays}
+The concept of virtual reality \& the associated head mounted displays that provide wide field of view, stereoscopic 3D graphics coupled with head tracking is currently experiencing a resurgence of interest \& investment, thanks largely to the advent of Oculus \& their Rift platform. Whilst the first head mounted computer display was created back in the late 1960s by Ivan Sutherland~\cite{Rheingold1992}, it was not until the late 1980s \& early 1990s that VR began to be pushed to the consumer. Unfortunately, both the hardware \& software was not ready for consumer adoption \& these systems failed to live up to the substantial hype of being a \textit{``revolutionary technology''} which \textit{``promises to transform society''} (see figure \ref{rheingold-virtual-reality.jpg}), resulting in the VR bubble bursting.
 
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=0.4\textwidth]{rheingold-virtual-reality.jpg}
-		\caption{Howard Rheingold's 1992 bestseller \textit{Virtual Reality}.}
+		\caption{Howard Rheingold's 1992 bestseller \textit{Virtual Reality}~\cite{Rheingold1992}.}
 		\label{rheingold-virtual-reality.jpg}
 	\end{center}
 \end{figure}
 
-After this disappointment, Oculus now looks set to finally begin realising a successful consumer VR platform, thanks largely to substantial advances in display technologies during the past decade, driven largely by the explosive popularity of smartphones \& tablets. Pre-Oculus HMDs largely made use of two separate microdisplays, one for each eye. Sutherland's original Sword of Damocles made use of two micro CRT screens, whilst later HMDs made use of OLED displays. As the number of market applications for microdisplay technology was (\& continues to be) relatively small, this meant that these headsets had a limited number of displays to choose from \& that they were relatively expensive.
+Decades after this initial disappointment with consumer VR, Oculus now looks set to finally begin realising a successful consumer VR platform, thanks largely to the substantial advances in display technologies made during the past decade, driven by the explosive popularity of smartphones \& tablets. Pre-Oculus HMDs predominantly made use of two separate microdisplays, one for each eye; Sutherland's original `Sword of Damocles' made use of two tiny CRT screens, whilst later HMDs made use of two OLED microdisplays. As the number of market applications for microdisplay technology was (\& continues to be) relatively small, there are limited models to chose from \& they command high prices when considering integration into a consumer device.
 
+Oculus have taken a different approach for their Rift HMD. Instead of using two small displays, one for each eye, it uses a single larger display upon which two separate images are rendered, side-by-side. This approach has two distinct advantages compared to prior dual display techniques. Firstly, the complexity of the device is reduced, which effects both price, integration \& content development. Secondly, the cost of a single display in the 5"-7" range is drastically lower than the cost of a pair of microdisplays, thanks to the surging popularity of smartphones \& tablet computers. By making use of readily available displays intended for smartphone/tablet manufacturers, Oculus were able to bring their first Development Kit (DK1) to market for researchers \& enthusiasts at a price of only \$300, but still providing substantially wider FOV than the vast majority of existing HMDs (even those with vastly higher price points).
 
+For comparison, examples of consumer-grade commercial HMDs that use the twin OLED microdisplay approach, the Sony HMZ-T1, which launched with a price of \textyen60,000 (\$800 at exchange rates of the time) \& its successor the HMZ-T2 which launched with a price of \textyen70,000 (\$900 at exchange rates of the time), provide $45\textdegree$ horizontal FOV/$51.6\textdegree$ diagonal \& no head tracking (intended primarily as a personal 3D cinema experience), whilst Oculus' DK1 provides more than $90\textdegree$ horizontal \& $110\textdegree$ diagonal FOV. Furthermore, the DK1 integrates a head tracking solution operating at a rate of 1kHz \& providing best in class accuracy. Combined with advances in both hardware \& software tasked with producing 3D graphics, the user experience of Oculus' HMD offerings is promising to finally deliver on the promises of 30 years previous. The March 2014 acquisition of Oculus by Facebook\footnote{\url{https://www.facebook.com/zuck/posts/10101319050523971}} for \$2 billion\footnote{\url{http://www.theguardian.com/technology/2014/jul/22/facebook-oculus-rift-acquisition-virtual-reality}} \& Oculus partnership with Samsung, one of the world's leading display manufacturers, which has already led to the release of an innovative VR HMD that makes use of an existing smartphone as its display\footnote{\url{https://www.oculus.com/gear-vr/}}, lends hope that this wave of VR hype won't suffer the fate of its 90's cousin.
 
+\textbf{***Maybe talk about what other HMDs there were actually available to me on the market? Vuzix 1200/900/whatever?}
 
-late 1980s \& early 1990s that the appeal of VR began to enter the mainstream
-
-
-
-The Oculus Rift takes a different approach. Instead of using two small displays, one for each eye, it uses a single larger display upon which two separate images are rendered, side-by-side. This approach has two distinct advantages compared to prior dual display techniques. Firstly, the complexity of the device is reduced. Secondly, the cost of a single display in the 5"-7" size is drastically lower than the cost of a pair of OLED microdisplays, largely thanks to the surging popularity of smartphones \& tablet computers.
-
-The larger size of the display adopted by the Oculus approach also allows for a far greater field of view (FOV) than the microdisplay approach.
-
-Examples of consumer-grade commercial HMDs that use the twin OLED microdisplay approach, the Sony HMZ-T1, which launched with a price of \textyen60,000 (\$800 at exchange rates of the time) \& its successor the HMZ-T2 which launched with a price of \textyen70,000 (\$900 at exchange rates of the time), provided $45\textdegree$ horizontal FOV/$51.6\textdegree$ diagonal \& no head tracking, intended primarily as a personal 3D cinema experience.
-
-
-
-In comparison, the first Oculus Rift development kit (DK1) launched at a price of \$300, providing over $90\textdegree$ horizontal FOV/$110\textdegree$ diagonal
-
-
-
-Talk about the resurgence of VR thanks to the Oculus Rift \& how it has brought a cheap, wide FoV, fast head tracked, HMD to market for researchers \& enthusiasts.
-
-Brief history of VR headsets, maybe take bits from that youtube video from Samsung developers?
+%take bits from that youtube video from Samsung developers?
 
 %=========================================================================================================
 
-\subsection{Modifying the Oculus Rift for Stereoscopic See Through Video}
+\subsection{The Oculus Rift DK1 \& Unity Game Engine}
 
-\textbf{***Mention first Mirrorshades test with single webcam providing small floating window in corner of virtual view (video is on youtube/Mirrorshades repo).}
+The OVW group took delivery of an Oculus Rift DK1 from the first batch of units shipped to the EU, in August 2013. The immersive experience of using the DK1, thanks to its wide FOV, fast \& accurate head tracking, stereoscopic 3D \& novelty compared to traditional 2D displays, easily met the requirements of the display aspect of the Mirrorshades platform to exceed that of VTW in terms of user experience.
 
-\newcommand{\floatingwebcamFootnote}{\footnote{\url{https://www.youtube.com/watch?v=tS0FGZxQzCU}}}
+At this early stage in the DK1's release, the best supported software platform in terms of API provision \& integration was the Unity game engine. After experience with modifying the Second Life client with the VTW project, it was decided prudent to convert the OVW group's OpenSim model of St Salvator's chapel into a Unity compatible format, rather than embarking upon further modification to the Second Life client to support the DK1.
+
+One deciding factor in this deliberation was the more stringent performance requirements for an enjoyable HMD experience compared to those of a traditional desktop/handhend display experience; when using a HMD such as the DK1, a high \& smooth framerate is required to avoid a kind of motion sickness referred to as `simulator sickness', with Oculus' official guidelines being for Rift applications to \textit{``run at a frame rate equal to or greater than the Rift display refresh rate''}\footnote{\url{http://static.oculus.com/sdk-downloads/documents/Oculus_Best_Practices_Guide.pdf}} which in the case of the DK1 is 60Hz. Due to the possibly ephemeral nature of Second Life content, where users are free to create, modify \& destroy content in real time, Second Life as a 3D platform suffers in terms of performance compared to game engines such as Unity due to not being able to exploit techniques such as occlusion culling~\cite{willmott:largecomplex} as these require an offline processing phase that requires environmental content to be static \& unchanging. The OVW group's experience in presenting Second Life/OpenSim content on a range of different hardware did not point to good odds of managing to render the St Salvator's chapel scene at 60fps, especially when considering that stereoscopic rendering introduces an overhead even when the total resolution of the two side-by-side images is no greater than the single monoscopic image. As Mirrorshades is a mobile application \& the computer producing the visuals may have to be worn \& carried by the user, the specification of this client may also be limited.
+
+\textbf{***Some fps graphs of Second Life/OpenSim content with different hardware?}
+
+%=========================================================================================================
+
+\subsection{Modifying the DK1 for See Through Video}
+
+The Oculus Rift DK1 covers the user's entire view, such that they cannot see any of their real world surroundings whilst wearing it, \& it does not feature any camera provision to allow a mediated view of the real world to be presented to the user. As such, it was necessary to modify the DK1 to provide such capability.
+
+When choosing cameras for this task, there were several desired features;
+\begin{itemize}
+	\item resolution \& refresh rate that match those of the DK1,
+	\item sensor aspect ratio that matches that of the DK1's display halves,
+	\item combined lens focal length \& sensor dimension to provide wide FOV (ideally matching the FOV of the DK1),
+	\item ease of integration with the Unity platform.
+\end{itemize}
+
+The PS3 Eye camera met most of these requirements. It's resolution is only 640x480 pixels, whilst each half of the DK1's display is 600x800 pixels, however unusually for a USB camera it is capable of running at 60fps. Furthermore, once dismantled to its bare PCB it features mounting holes for a standard M12 lens mount which allows alternative focal length lenses to be easy fitted.
+
+A very early test with the PS3 Eye \& the DK1\footnote{\url{https://www.youtube.com/watch?v=tS0FGZxQzCU}} was performed by simply attaching a single unmodified PS3 Eye camera to the top of the DK1 (figure \ref{rift-ps3eye-ziptied.jpg}), with its stock lens set to its `wide' setting ($75\textdegree$\footnote{\url{http://uk.playstation.com/media/247868/7010571 PS3 Eye Web_GB.pdf}}). One purpose of this test was to explore the suitability of Unity's \texttt{WebCamTexture}\footnote{\url{http://docs.unity3d.com/ScriptReference/WebCamTexture.html}} feature for integrating the stream from a USB camera into a 3D application. In this early test, the mediated RW video stream was rendered to a small `floating' window that moved with the user's head (figure \ref{floating-webcam-window.png}), allowing the user to view both environments at once, with the real environment in their peripheral whilst they were attending to the virtual. Whilst an interesting concept, the decision was made to instead render the mediated RW stream to the full DK1 screen so as to allow the user to better observe their real environment thanks to the larger image \& higher resolution.
+
+\TwoFig{rift-pseye-ziptied.jpg}{First monoscopic see through hardware.}{rift-pseye-ziptied.jpg}
+       {floating-webcam-window.png}{Early `floating' window see through video.}{floating-webcam-window.png}
+
+A pair of PS3 Eye cameras were dismantled, removing their outer plastic housing \& stock lenses. M12 lens mounts, commonly used by CCTV cameras, were fitted \& several different focal length M12 lenses were auditioned.
+
+
+Pick a lens. Want to be wide, because the rift has wide FOV, but the wider the lens the more distortion.
+
+The PS3 Eye has a `1/4'' type' sensor which is only an indication of its true dimensions\footnote{\url{http://www.dpreview.com/glossary/camera-system/sensor-sizes}} \& as Sony has not published the actual dimensions of the sensor we adopt the typical 1/4'' type dimensions\footnote{\url{http://www.photoreview.com.au/tips/buying/unravelling-sensor-sizes}} of 4.5mm diagonal, 3.6mm horizontally, 2.7mm vertically.
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Focal length (mm) & Diagonal FOV (\textdegree) & Horizontal FOV (\textdegree) & Vertical FOV (\textdegree) \\
+\hline
+2.5mm & 71.5 & 56.7  & 84 \\
+2.1mm & 81.2 & 65.5  & 93.9 \\
+2.0mm & 84   & 68    & 96.7 \\
+1.9mm & 86.9 & 70.8  & 99.6 \\
+1.8mm & 90   & 73.7  & 102.7 \\
+1.7mm & 93.3 & 76.9  & 105.9 \\
+\hline
+\end{tabular}
+\end{center}
+
+
+
+
+\TwoFig{rift-clips-cameras/lens-comparison-on-ps3eye-pcb.jpg}{lens-comparison-on-ps3eye-pcb.jpg}{lens-comparison-on-ps3eye-pcb.jpg}
+       {rift-clips-cameras/lens-comparison.jpg}{lens-comparison.jpg}{lens-comparison.jpg}
 
 
 Japanese Unity dual PS3 Eye blog post\footnote{\url{http://tips.hecomi.com/entry/20130731/1375279561} (Japanese)}
 
 
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=0.7\textwidth]{floating-webcam-window.png}
-		\caption{Early floating window Rift/webcam prototype.}
-		\label{floating-webcam-window.png}
-	\end{center}
-\end{figure}
+
+
 
 \textbf{**Show lens comparison picture from blog \& a (new?) screenshot showing FoV of the camera feeds compared to that of Rift \& explain why the discrepancy doesn't matter, especially when the Rift is fully extended.}
 
@@ -289,9 +297,6 @@ Japanese Unity dual PS3 Eye blog post\footnote{\url{http://tips.hecomi.com/entry
 
 \TwoFig{rift-clips-cameras/hori-2.jpg}{hori-2.jpg}{hori-2.jpg}
        {rift-clips-cameras/hori-3.jpg}{hori-3.jpg}{hori-3.jpg}
-
-\TwoFig{rift-clips-cameras/lens-comparison-on-ps3eye-pcb.jpg}{lens-comparison-on-ps3eye-pcb.jpg}{lens-comparison-on-ps3eye-pcb.jpg}
-       {rift-clips-cameras/lens-comparison.jpg}{lens-comparison.jpg}{lens-comparison.jpg}
 
 \TwoFig{rift-clips-cameras/clips-vert.jpg}{clips-vert.jpg}{clips-vert.jpg}
        {rift-clips-cameras/vert-6.jpg}{vert-6.jpg}{vert-6.jpg}
