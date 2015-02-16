@@ -215,7 +215,9 @@ The C310 cameras received the same attention as the PS3 Eye cameras; they were d
 \TwoFig{rift-clips-cameras/middle.jpg}{middle.jpg}{middle.jpg}
        {rift-clips-cameras/right.jpg}{right.jpg}{right.jpg}
 
+Measurement of the end-to-end latency of the C310 solution was performed by placing the DK1, with the lens cups removed, in front of a LCD monitor displaying a timer\footnote{\url{http://www.flatpanels.dk/monitortest_inputlag_dk.php}}. In this context, end-to-end latency refers to the time taken for a visible change in the scene in front of the DK1 (in this instance, the image upon the monitor) to be reflected by a comparable change upon the DK1's display. This figure accounts for latency introduced by the C310 cameras themselves, by the Unity engine \& by the DK1's display. A digital camera was set up on a tripod behind the monitor \& DK1, such that it could record both the monitor \& the milliseconds value on the DK1's screen. The digital camera was set at a sufficiently high ISO as to record video at 50fps with a shutter speed of 1/4000 of a second.
 
+Both the monitor \& the DK1's screen refresh at 60Hz, each frame lasting for 16.67ms, whilst a 1/4000 of a second shutter on a camera means that the shutter is open for 0.25ms. The response time of the monitor (quoted by the manufacturer as 8ms grey-to-grey) was evidently much higher than that of the Rift, as the tenths \& even hundredths digit on the monitor was usually legible in each frame of the video whereas on the Rift the hundredths \& thousandths digits were always illegible. Thus to determine the latency of the DK1 + camera setup using Unity, adjacent video frames were identified where a transition from one tenth digit to the next was legible enough on the Rift's display \& the hundredths/thousandths digits were legible enough on the monitor, such as the pair shown by figures \ref{vid1.jpg} \& \ref{vid2.jpg}. From these values, it can be inferred that the tenths digit on the DK1's screen (visible through the right eyecup hole) changed from 9 (figure \ref{vid1.jpg}) to 0 (figure \ref{vid2.jpg}) sometime between 181ms (figure \ref{vid1.jpg}) \& 198ms (figure \ref{vid2.jpg}) on the monitor, which represents a latency of between 181ms \& 198ms. Out of 11 pairs of frames like this, 7 pairs showed this 181-198ms latency, while 4 showed 198-215ms latency as in figures \ref{vid3.jpg} \& \ref{vid4.jpg}.
 
 \TwoFig{latency/vid1.jpg}{vid1.jpg}{vid1.jpg}
        {latency/vid2.jpg}{vid2.jpg}{vid2.jpg}
@@ -223,7 +225,7 @@ The C310 cameras received the same attention as the PS3 Eye cameras; they were d
 \TwoFig{latency/vid3.jpg}{vid3.jpg}{vid3.jpg}
        {latency/vid4.jpg}{vid4.jpg}{vid4.jpg}
 
-
+In addition to video frames, still photographs taken at the same 1/4000 of a second shutter speed gave some better legible stills which corroborated this 181-251ms figure. This figure is substantially greater than the 30-60ms figure often quoted\footnote{\url{https://www.oculus.com/blog/the-latent-power-of-prediction/}} as the upper limit for an acceptable VR experience, however how much it affects a relatively `slow' style of interaction such as that of applying PR to a cultural heritage site versus that of a `fast' application such as a competitive twitch game is open to interpretation from experimental results.
 
 \begin{figure}[h]
     \begin{center}
