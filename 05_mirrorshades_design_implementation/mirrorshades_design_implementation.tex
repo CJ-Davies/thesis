@@ -72,6 +72,189 @@ The reconstruction of the chapel involved both the mental reconstruction of modi
 
 %=========================================================================================================
 
+\section{Virtual Reality Head Mounted Displays}
+The concept of virtual reality \& the associated head mounted displays that provide wide field of view, stereoscopic 3D graphics coupled with head tracking is currently experiencing a resurgence of interest \& investment, thanks largely to the advent of Oculus \& their Rift platform. Whilst the first head mounted computer display was created in the late 1960s by Ivan Sutherland~\cite{Rheingold1992}, it was not until the late 1980s \& early 1990s that VR began to be pushed to the consumer. Unfortunately, both the hardware \& software was not ready for consumer adoption at this time \& these systems failed to live up to the substantial hype of being a \textit{``revolutionary technology''} which \textit{``promises to transform society''} (see figure \ref{rheingold-virtual-reality.jpg}), resulting in the VR bubble bursting.
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=0.4\textwidth]{rheingold-virtual-reality.jpg}
+		\caption{Howard Rheingold's 1992 bestseller \textit{Virtual Reality}~\cite{Rheingold1992}.}
+		\label{rheingold-virtual-reality.jpg}
+	\end{center}
+\end{figure}
+
+Decades after this initial disappointment with consumer VR, Oculus now looks set to finally begin realising a successful consumer VR platform, thanks largely to the substantial advances in display technologies made during the past decade driven by the explosive popularity of smartphones \& tablets. Pre-Oculus HMDs predominantly made use of two separate microdisplays, one for each eye; Sutherland's original `Sword of Damocles' made use of two tiny CRT screens, whilst later HMDs made use of two OLED microdisplays. As the number of market applications for microdisplay technology was (\& continues to be) relatively small, there are limited models to chose from \& they command high prices when considering integration into a consumer device.
+
+Oculus have taken a different approach for their Rift HMD. Instead of using two small displays, one for each eye, it uses a single larger display upon which two separate images are rendered, side-by-side. This approach has two distinct advantages compared to prior dual display techniques. Firstly, the complexity of the device is reduced, which effects both price, integration \& content development. Secondly, the cost of a single display in the 5"-7" range is drastically lower than the cost of a pair of microdisplays, thanks to the surging popularity of smartphones \& tablet computers. By making use of readily available displays intended for smartphone/tablet manufacturers, Oculus were able to bring their first Development Kit (DK1) to market for researchers \& enthusiasts at a price of only \$300, but still providing substantially wider FOV than the vast majority of existing HMDs (even those with vastly higher price points).
+
+For comparison, examples of consumer-grade commercial HMDs that use the twin OLED microdisplay approach, the Sony HMZ-T1, which launched with a price of \textyen60,000 (\$800 at exchange rates of the time) \& its successor the HMZ-T2 which launched with a price of \textyen70,000 (\$900 at exchange rates of the time), provide $45\textdegree$ horizontal FOV/$51.6\textdegree$ diagonal \& no head tracking (intended primarily as a personal 3D cinema experience), whilst Oculus' DK1 provides more than $90\textdegree$ horizontal \& $110\textdegree$ diagonal FOV. Furthermore, the DK1 integrates a head tracking solution operating at a rate of 1kHz \& providing best in class accuracy. Combined with advances in both hardware \& software tasked with producing 3D graphics, the user experience of Oculus' HMD offerings is promising to finally deliver on the promises of 30 years previous.
+
+The March 2014 acquisition of Oculus by Facebook\footnote{\url{https://www.facebook.com/zuck/posts/10101319050523971}} for \$2 billion\footnote{\url{http://www.theguardian.com/technology/2014/jul/22/facebook-oculus-rift-acquisition-virtual-reality}} \& Oculus partnership with Samsung, one of the world's leading display manufacturers, which has already led to the release of an innovative VR HMD that makes use of an existing smartphone as its display\footnote{\url{https://www.oculus.com/gear-vr/}}, lends hope that this wave of VR hype won't suffer the fate of its 90's cousin.
+
+\textbf{***Maybe talk about what other HMDs there were actually available to me on the market? Vuzix 1200/900/whatever?}
+
+%take bits from that youtube video from Samsung developers?
+
+%=========================================================================================================
+
+\subsection{The Oculus Rift DK1 \& Unity Game Engine}
+
+The OVW group took delivery of an Oculus Rift DK1 from the first batch of units shipped to the EU, in August 2013. The immersive experience of using the DK1, thanks to its wide FOV, fast \& accurate head tracking, stereoscopic 3D \& novelty compared to traditional 2D displays, easily met the requirements of the display aspect of the Mirrorshades platform to exceed that of VTW in terms of user experience.
+
+At this early stage in the DK1's release, the best supported software platform in terms of API provision \& integration was the Unity game engine. After experience with modifying the Second Life client with the VTW project, it was decided prudent to convert the OVW group's OpenSim model of St Salvator's chapel into a Unity compatible format, rather than embarking upon further modification to the Second Life client to support the DK1.
+
+One deciding factor in this deliberation was the more stringent performance requirements for an enjoyable HMD experience compared to those of a traditional desktop/handhend display experience; when using a HMD such as the DK1, a high \& smooth framerate is required to avoid a kind of motion sickness referred to as `simulator sickness', with Oculus' official guidelines being for Rift applications to \textit{``run at a frame rate equal to or greater than the Rift display refresh rate''}\footnote{\url{http://static.oculus.com/sdk-downloads/documents/Oculus_Best_Practices_Guide.pdf}} which in the case of the DK1 is 60Hz. Due to the possibly ephemeral nature of Second Life content, where users are free to create, modify \& destroy content in real time, Second Life as a 3D platform suffers in terms of performance compared to game engines such as Unity due to not being able to exploit techniques such as occlusion culling~\cite{willmott:largecomplex} as these require an offline processing phase that depends upon environmental content to be static \& unchanging. The OVW group's experience in presenting Second Life/OpenSim content on a range of different hardware did not point to good odds of managing to render the St Salvator's chapel scene at 60fps, especially when considering that stereoscopic rendering introduces an overhead even when the total resolution of the two side-by-side images is no greater than the single monoscopic image. As Mirrorshades is a mobile application \& the computer producing the visuals may have to be worn \& carried by the user, the specification of this client may also be limited compared to those that the group has used in alternative deployments.
+
+\textbf{***Some fps graphs of Second Life/OpenSim content with different hardware?}
+
+%=========================================================================================================
+
+\subsection{Modifying the DK1 for See Through Video}
+
+The Oculus Rift DK1 covers the user's entire view, such that they cannot see any of their real world surroundings whilst wearing it, \& it does not feature any camera provision to allow a mediated view of the real world to be presented to the user. As such, it was necessary to modify the DK1 to provide such capability. When choosing cameras for this task, there were several desired ideal features;
+\begin{itemize}
+	\item resolution \& refresh rate that match (or exceed) those of the DK1,
+	\item sensor aspect ratio that matches that of the DK1's display halves,
+	\item combined lens focal length \& sensor dimension to provide wide FOV (ideally matching the FOV of the DK1),
+	\item ease of integration with the Unity platform.
+\end{itemize}
+
+The PS3 Eye camera met most of these requirements. It's resolution is only 640x480 pixels, whilst each half of the DK1's display is 640x800 pixels, however unusually for a USB camera it is capable of running at 60fps (the refresh rate of the DK1). The aspect ratio of the 640x480 sensor is 4:3, which although not identical to the 5:4 aspect ratio of each eye's 640x800 `half' of the DK1 screen is closer than the 16:10 or 16:9 aspect ratio of a `widescreen' camera sensor. Furthermore, once dismantled to its bare PCB it features mounting holes for a standard S-mount (M12x0.5mm) lens mount commonly used for CCTV cameras, allowing alternative focal length lenses to be easily fitted.
+
+A very early test with the PS3 Eye \& the DK1\footnote{\url{https://www.youtube.com/watch?v=tS0FGZxQzCU}} was performed by simply attaching a single unmodified PS3 Eye camera to the top of the DK1 (figure \ref{rift-pseye-ziptied.jpg}), with its stock lens set to its `wide' setting (75\textdegree, presumably diagonal, FOV\footnote{\url{http://uk.playstation.com/media/247868/7010571 PS3 Eye Web_GB.pdf}}). One purpose of this test was to explore the suitability of Unity's \texttt{WebCamTexture}\footnote{\url{http://docs.unity3d.com/ScriptReference/WebCamTexture.html}} feature for integrating the stream from a USB camera into a 3D application. In this early test, the mediated RW video stream was rendered to a small `floating' window that moved with the user's head (figure \ref{floating-webcam-window.png}), allowing the user to view both environments at once, with the real environment in their peripheral whilst they were attending to the virtual. Whilst an interesting concept, the decision was made to instead render the mediated RW stream to the full DK1 screen so as to allow the user to better observe their real environment thanks to the larger image \& higher resolution, with the small floating window likened more to the VTW approach of PR than an experience that allows true immersion in both environments. A second benefit of this switching approach is that it helps to mitigate any detrimental affect of latency in the camera image(s) not matching that of the virtual image(s).
+
+\TwoFig{rift-pseye-ziptied.jpg}{First monoscopic see through hardware.}{rift-pseye-ziptied.jpg}
+       {floating-webcam-window.png}{Early `floating' window see through video.}{floating-webcam-window.png}
+
+A pair of PS3 Eye cameras were dismantled, removing their outer plastic housing \& stock lenses then fitting S-mount lens mounts. Ideally, the lenses used would provide the same FOV as the Rift itself is capable of displaying, such that the mediate RW stream from the cameras could be displayed at the full size of the Rift \& `match' the FOV of whatever virtual content would alternatively be displayed. However there is a trade off with lenses between focal length \& distortion; shorter focal lengths mean a wider FOV, however they also introduce more distortion which is not necessarily corrected by the shader that the Rift uses to compensate for the distortion of its own plastic lenses through which the image is viewed.
+
+The PS3 Eye has a `1/4'' type' sensor which is only an indication of its true dimensions\footnote{\url{http://www.dpreview.com/glossary/camera-system/sensor-sizes}} \& as Sony has not published the actual dimensions of the sensor we adopt the typical 1/4'' type dimensions\footnote{\url{http://www.photoreview.com.au/tips/buying/unravelling-sensor-sizes}} of 4.5mm diagonal, 3.6mm horizontal, 2.7mm vertical for calculating FOV estimations. Empirical accounts of very short focal length S-mount lenses mounted to the PS3 Eye camera indicated that the distortion becomes very high beneath 2.1mm\footnote{\url{http://peauproductions.com/store/index.php?main_page=index&cPath=26_4}}. Table \ref{fov-table} gives the diagonal, horizontal \& vertical FOV of the widest readily available S-mount lenses.
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Focal length (mm) & Diagonal FOV (\textdegree) & Horizontal FOV (\textdegree) & Vertical FOV (\textdegree) \\
+\hline
+2.5mm & 84    & 71.5 & 56.7 \\
+2.1mm & 93.9  & 81.2 & 65.5 \\
+2.0mm & 96.7  & 84   & 68 \\
+1.9mm & 99.6  & 86.9 & 70.8 \\
+1.8mm & 102.7 & 90   & 73.7 \\
+1.7mm & 105.9 & 93.3 & 76.9 \\
+\hline
+\end{tabular}
+\caption{FOV of various focal lengths resolving onto a 1/4'' type sensor.}
+\label{fov-table}
+\end{center}
+\end{table}
+
+Whilst 1.7mm lenses would provide almost identical FOV to the Rift's display (105.9\textdegree\ diagonal for the cameras, 110\textdegree\ diagonal for the Rift) the amount of distortion introduced would likely be of such an extent that the experience of viewing the mediate RW environment would be degraded more by distortion than by limited/non-matching FOV of longer focal length lenses, unless the lens' distortion was compensated in a separate stage. However, using a lens with a short enough focal length to provide a FOV as wide as the Rift isn't strictly necessary as, when wearing the Rift, the edges of the image presented to each eye are not necessarily visible to the user, especially if the Rift's adjustable distance from the eyes is adjusted such that it sits at its furthest position. Such adjustment is actually prudent, as using the Rift at its maximum extension from the eyes ensures maximum compatibility \& comfort with users \& also removes a variable between users compared to if each user is permitted to chose the extension themselves. Thus the choice of lens can be dictated by identifying the FOV required to fill the portion of the Rift's images that are visible when the headset is extended to its maximal position, rather than by matching the Rift's overall FOV, possibly allowing the use of lenses with focal length long enough that the distortion they introduce is not bad enough to require a separate correction phase.
+
+Experiments revealed that with the DK1 set to its maximum extension, the area of the images visible to the user was wider than that provided by 2.5mm lenses (84\textdegree\ diagonal) when scaled correctly \& narrower than that provided by 2.1mm lenses (93.9\textdegree\ diagonal) when scaled correctly. Without easy availability of a lens with a focal length between 2.5mm \& 2.1mm it was decided to make use of the 2.1mm lenses. Figure \ref{lens-comparison-on-ps3eye-pcb.jpg} shows the 2.5mm lens (right) \& 2.1mm lens (left) mounted to the PS3 Eye PCBs via S-mount lens mounts, while figure \ref{fov-comparison-1.png} shows the FOV of the selected 2.1mm lenses scaled upon the wider FOV of the DK1's images - as previously mentioned, with the DK1 at its furthest extension, users cannot perceive the area outwith the mediated camera image.
+
+\TwoFig{rift-clips-cameras/lens-comparison-on-ps3eye-pcb.jpg}{lens-comparison-on-ps3eye-pcb.jpg}{lens-comparison-on-ps3eye-pcb.jpg}
+       {fov-comparison-1.png}{}{fov-comparison-1.png}
+
+%{fov-comparison-2.png}{}{fov-comparison-2.png}
+
+The PS3 Eye cameras were mounted to the DK1 by modifying the 3D printable sensor mount design released by the University of Southern California Institute for Creative Technologies\footnote{\url{http://projects.ict.usc.edu/mxr/diy/oculus-sensor-mount/}}. The modified mount comprised a base piece (figure \ref{clips.jpg}) that clips securely over the front of the DK1 \& a slotted plate (figure \ref{clips-hori-plate.jpg}) onto which the PS3 Eye cameras are mounted. These parts were 3D printed using a MakerBot Replicator 2X\footnote{\url{http://store.makerbot.com/replicator2x}} \& then combined using epoxy resin. The combination is shown attached to the DK1 by figure \ref{hori-1.jpg}. The slots in the slotted plate are spaced to match the mounting holes of the PS3 Eye PCB, such that the cameras can be attached by metal stand-offs (figure \ref{hori-2.jpg}) \& can then be easily moved left \& right to alter the distance between them to account for different interpupillary distances of different users. Figure \ref{hori-3.jpg} shows how one camera is mounted upside down to allow enough clearance for the PCBs to be moved close enough together to accommodate short interpuillary distances.
+
+\begin{figure}[!htb]
+    \centering
+    \begin{minipage}{.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{rift-clips-cameras/clips.jpg}
+        \caption{bar}
+        \label{clips.jpg}
+    \end{minipage}%
+    \hspace{.01\textwidth}
+    \begin{minipage}{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{rift-clips-cameras/clips-hori-plate.jpg}
+        \caption{foo}
+        \label{clips-hori-plate.jpg}
+    \end{minipage}%
+    \hspace{.01\textwidth}
+    \begin{minipage}{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{rift-clips-cameras/hori-1.jpg}
+        \caption{baz}
+        \label{hori-1.jpg}
+    \end{minipage}
+\end{figure}
+
+\TwoFig{rift-clips-cameras/hori-2.jpg}{hori-2.jpg}{hori-2.jpg}
+       {rift-clips-cameras/hori-3.jpg}{hori-3.jpg}{hori-3.jpg}
+
+Although the initial integration test with a single PS3 Eye camera revealed easy accessibility of the camera within Unity, using two PS3 Eye cameras proved temperamental. Unity's \texttt{WebCamTexture} support identifies webcams via their `name' as provided by their driver. In the case of the PS3 Eye using the driver provided by Code Laboratories\footnote{\\url{https://codelaboratories.com/products/eye/driver/}} (this third party driver must be used as no official Windows driver is available with Sony only marketing the PS3 Eye for use with their PS3 console) an issue arises where both cameras present the same name to Unity \& the second camera overwrite the reference to the first, only allowing access to a single camera. Figure \ref{ps3-eye-unity-overwrite.png} shows this issue, that whilst Windows' device manager successfully identifies both cameras independently, Unity's \path{WebCamTexture.devices()} function returns a reference to only one (the \texttt{BisonCam, NB Pro} entry is the laptop's internal webcam). A partial solution to this issue was presented by a community provided Unity package\footnote{\url{http://tips.hecomi.com/entry/20130731/1375279561} (Japanese)}, which allowed the setup up to be successfully tested within a departmental building\footnote{\url{https://www.youtube.com/watch?v=oy5NqqDtkJ4}}.
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=.8\linewidth]{ps3-eye-unity-overwrite.png}
+		\caption{Unity struggling with multiple PS3 Eye cameras.}
+		\label{ps3-eye-unity-overwrite.png}
+	\end{center}
+\end{figure}
+
+An oversight in the design of the camera mounts was realised by when William Steptoe later released details of his `AR Rift' project\footnote{\url{http://willsteptoe.com/post/66968953089/ar-rift-part-1}}. Although the DK1's overall screen has a resolution of 1280x800 in a `horizontal' 16:10 aspect ratio, each `half' of this screen as presented individually to each eye has a resolution of 640x800 in a `vertical' 4:5 aspect ratio. Thus to best match the aspect ratio of a 4:3 camera sensor, such as that of the PS3 Eye, to each half of the DK1's screen, that camera should be oriented in a portrait orientation rather than the landscape orientation employed by this project with the PS3 Eye cameras. Thus new mounting hardware was designed \& printed, by further modification of the USC's original 3D designs, allowing for vertical mounting of the PS3 Eye cameras. This new design is shown in figure \ref{clips-vert.jpg} (the recessed section in the centre of the clip allows for the heads of bolts to clear the front of the DK1) \& the assembled units are shown attached to the DK1 in figure \ref{vert-6.jpg}. Additionally soon after this point, the metal stand-offs that had been used to mount the camera PCBs to the clips (see figure \ref{vert-1.jpg}) were replaced with a combination of rubber washers \& threaded bolts (see figure \ref{vert-4.jpg}) both to reduce the discrepancy in the mediated RW images caused by the distance between the camera sensors \& the user's eyes (by reducing this distance) \& to allow for finer alteration of the orientation of the cameras.
+
+\TwoFig{rift-clips-cameras/clips-vert.jpg}{clips-vert.jpg}{clips-vert.jpg}
+       {rift-clips-cameras/vert-6.jpg}{vert-6.jpg}{vert-6.jpg}
+
+\TwoFig{rift-clips-cameras/vert-1.jpg}{vert-1.jpg}{vert-1.jpg}
+       {rift-clips-cameras/vert-4.jpg}{vert-4.jpg}{vert-4.jpg}
+
+Unfortunately the PS3 Eye naming solution was temperamental at best \& two camera compatibility was frequently lost. It was decided prudent to therefore replace the PS3 Eye cameras with alternatives, rather than attempting to glean a solution to their reliable compatibility with Unity. Using Steptoe's project as a guide, a pair of Logitech C310\footnote{\url{http://www.logitech.com/en-gb/product/hd-webcam-c310}} cameras were sourced. Whilst the stated refresh rate of the C310 is only 30Hz, half that of the PS3 Eye, it supports a resolution of 1280x960, which is higher than that of the PS3 Eye \& of each half of the DK1's display. Thus the switch from the PS3 Eye cameras to the C310 represented a sacrifice in framerate, but an increase in resolution. Empirically the increase in resolution was however indiscernible, likely due to the effect of the DK1's optics reducing the visual acuity of its display, whilst the reduction in framerate was more prominently noticeable.
+
+The C310 cameras received the same attention as the PS3 Eye cameras; they were dismantled \& outfitted with S-mount lens mounts. As the sensor in the C310 is also of the 1/4" type, the FOV provided by the 2.1mm lenses on the C310 cameras will be comparable to that of the same lenses mounted to the PS3 Eye cameras. Due to the lack of mounting holes present on the C310 PCB, the PCBs were set into a thin sheet of thermoplastic (figure \ref{thermoplastic.jpg}) which was then attached to the 3D printed clips with the same rubber washer \& threaded bolt arrangement as the PS3 Eye cameras. The assembled DK1 + dual C310 solution is shown by figures \ref{vert-7.jpg} (3/4 view), \ref{middle.jpg} (profile view) \& \ref{right.jpg} (detail view).
+
+\TwoFig{rift-clips-cameras/thermoplastic.jpg}{thermoplastic.jpg}{thermoplastic.jpg}
+       {rift-clips-cameras/vert-7.jpg}{vert-7.jpg}{vert-7.jpg}
+
+\TwoFig{rift-clips-cameras/middle.jpg}{middle.jpg}{middle.jpg}
+       {rift-clips-cameras/right.jpg}{right.jpg}{right.jpg}
+
+
+
+\TwoFig{latency/vid1.jpg}{vid1.jpg}{vid1.jpg}
+       {latency/vid2.jpg}{vid2.jpg}{vid2.jpg}
+
+\TwoFig{latency/vid3.jpg}{vid3.jpg}{vid3.jpg}
+       {latency/vid4.jpg}{vid4.jpg}{vid4.jpg}
+
+
+
+\begin{figure}[h]
+    \begin{center}
+    \begin{minipage}{.32\textwidth}
+        \begin{center}
+        \includegraphics[width=\textwidth]{latency/still1.jpg}
+        \caption{still1.jpg}
+        \label{still1.jpg}
+        \end{center}
+    \end{minipage}%
+    \hspace{.01\textwidth}
+    \begin{minipage}{.32\textwidth}
+		\begin{center}
+        \includegraphics[width=\textwidth]{latency/still2.jpg}
+        \caption{still2.jpg}
+        \label{still2.jpg}
+        \end{center}
+    \end{minipage}%
+    \hspace{.01\textwidth}
+    \begin{minipage}{.32\textwidth}
+        \begin{center}
+        \includegraphics[width=\textwidth]{latency/still3.jpg}
+        \caption{still3.jpg}
+        \label{still3.jpg}
+        \end{center}
+    \end{minipage}
+    \end{center}
+\end{figure}
+
+%=========================================================================================================
+
 \section{Indoor Positioning Systems}
 
 For outdoor applications, GPS represents a suitable solution for the vast majority of position tracking requirements. Global coverage \& the ability to scale accuracy as required, from many metres with a basic GPS receiver such as those integrated into smartphones, to a few metres with SBAS augmentations \& further to as little as 10cm with the deployment of Differential GPS (DGPS) beacons, has led to GPS occupying the role of the `go to' solution where position tracking is required for an outdoor application. For indoor applications however, there is no single technology or solution that provides similar coverage or suitability as GPS does outside: a large number of different technologies have been employed to produce Indoor Positioning Systems (IPS), which are summarised in figure \ref{mautz-table.png}.
@@ -177,182 +360,6 @@ Upon closer inspection of the building, metal grating that runs along the ground
 
 \TwoFig{Sallies-photos/DSCN0176.jpg}{No obvious metal around altar.}{DSCN0176.jpg}
        {Sallies-photos/DSCN0177.jpg}{Loudspeaker \& electric light fixture.}{DSCN0177.jpg}
-
-%=========================================================================================================
-
-\section{Virtual Reality Head Mounted Displays}
-The concept of virtual reality \& the associated head mounted displays that provide wide field of view, stereoscopic 3D graphics coupled with head tracking is currently experiencing a resurgence of interest \& investment, thanks largely to the advent of Oculus \& their Rift platform. Whilst the first head mounted computer display was created back in the late 1960s by Ivan Sutherland~\cite{Rheingold1992}, it was not until the late 1980s \& early 1990s that VR began to be pushed to the consumer. Unfortunately, both the hardware \& software was not ready for consumer adoption \& these systems failed to live up to the substantial hype of being a \textit{``revolutionary technology''} which \textit{``promises to transform society''} (see figure \ref{rheingold-virtual-reality.jpg}), resulting in the VR bubble bursting.
-
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=0.4\textwidth]{rheingold-virtual-reality.jpg}
-		\caption{Howard Rheingold's 1992 bestseller \textit{Virtual Reality}~\cite{Rheingold1992}.}
-		\label{rheingold-virtual-reality.jpg}
-	\end{center}
-\end{figure}
-
-Decades after this initial disappointment with consumer VR, Oculus now looks set to finally begin realising a successful consumer VR platform, thanks largely to the substantial advances in display technologies made during the past decade, driven by the explosive popularity of smartphones \& tablets. Pre-Oculus HMDs predominantly made use of two separate microdisplays, one for each eye; Sutherland's original `Sword of Damocles' made use of two tiny CRT screens, whilst later HMDs made use of two OLED microdisplays. As the number of market applications for microdisplay technology was (\& continues to be) relatively small, there are limited models to chose from \& they command high prices when considering integration into a consumer device.
-
-Oculus have taken a different approach for their Rift HMD. Instead of using two small displays, one for each eye, it uses a single larger display upon which two separate images are rendered, side-by-side. This approach has two distinct advantages compared to prior dual display techniques. Firstly, the complexity of the device is reduced, which effects both price, integration \& content development. Secondly, the cost of a single display in the 5"-7" range is drastically lower than the cost of a pair of microdisplays, thanks to the surging popularity of smartphones \& tablet computers. By making use of readily available displays intended for smartphone/tablet manufacturers, Oculus were able to bring their first Development Kit (DK1) to market for researchers \& enthusiasts at a price of only \$300, but still providing substantially wider FOV than the vast majority of existing HMDs (even those with vastly higher price points).
-
-For comparison, examples of consumer-grade commercial HMDs that use the twin OLED microdisplay approach, the Sony HMZ-T1, which launched with a price of \textyen60,000 (\$800 at exchange rates of the time) \& its successor the HMZ-T2 which launched with a price of \textyen70,000 (\$900 at exchange rates of the time), provide $45\textdegree$ horizontal FOV/$51.6\textdegree$ diagonal \& no head tracking (intended primarily as a personal 3D cinema experience), whilst Oculus' DK1 provides more than $90\textdegree$ horizontal \& $110\textdegree$ diagonal FOV. Furthermore, the DK1 integrates a head tracking solution operating at a rate of 1kHz \& providing best in class accuracy. Combined with advances in both hardware \& software tasked with producing 3D graphics, the user experience of Oculus' HMD offerings is promising to finally deliver on the promises of 30 years previous. The March 2014 acquisition of Oculus by Facebook\footnote{\url{https://www.facebook.com/zuck/posts/10101319050523971}} for \$2 billion\footnote{\url{http://www.theguardian.com/technology/2014/jul/22/facebook-oculus-rift-acquisition-virtual-reality}} \& Oculus partnership with Samsung, one of the world's leading display manufacturers, which has already led to the release of an innovative VR HMD that makes use of an existing smartphone as its display\footnote{\url{https://www.oculus.com/gear-vr/}}, lends hope that this wave of VR hype won't suffer the fate of its 90's cousin.
-
-\textbf{***Maybe talk about what other HMDs there were actually available to me on the market? Vuzix 1200/900/whatever?}
-
-%take bits from that youtube video from Samsung developers?
-
-%=========================================================================================================
-
-\subsection{The Oculus Rift DK1 \& Unity Game Engine}
-
-The OVW group took delivery of an Oculus Rift DK1 from the first batch of units shipped to the EU, in August 2013. The immersive experience of using the DK1, thanks to its wide FOV, fast \& accurate head tracking, stereoscopic 3D \& novelty compared to traditional 2D displays, easily met the requirements of the display aspect of the Mirrorshades platform to exceed that of VTW in terms of user experience.
-
-At this early stage in the DK1's release, the best supported software platform in terms of API provision \& integration was the Unity game engine. After experience with modifying the Second Life client with the VTW project, it was decided prudent to convert the OVW group's OpenSim model of St Salvator's chapel into a Unity compatible format, rather than embarking upon further modification to the Second Life client to support the DK1.
-
-One deciding factor in this deliberation was the more stringent performance requirements for an enjoyable HMD experience compared to those of a traditional desktop/handhend display experience; when using a HMD such as the DK1, a high \& smooth framerate is required to avoid a kind of motion sickness referred to as `simulator sickness', with Oculus' official guidelines being for Rift applications to \textit{``run at a frame rate equal to or greater than the Rift display refresh rate''}\footnote{\url{http://static.oculus.com/sdk-downloads/documents/Oculus_Best_Practices_Guide.pdf}} which in the case of the DK1 is 60Hz. Due to the possibly ephemeral nature of Second Life content, where users are free to create, modify \& destroy content in real time, Second Life as a 3D platform suffers in terms of performance compared to game engines such as Unity due to not being able to exploit techniques such as occlusion culling~\cite{willmott:largecomplex} as these require an offline processing phase that requires environmental content to be static \& unchanging. The OVW group's experience in presenting Second Life/OpenSim content on a range of different hardware did not point to good odds of managing to render the St Salvator's chapel scene at 60fps, especially when considering that stereoscopic rendering introduces an overhead even when the total resolution of the two side-by-side images is no greater than the single monoscopic image. As Mirrorshades is a mobile application \& the computer producing the visuals may have to be worn \& carried by the user, the specification of this client may also be limited.
-
-\textbf{***Some fps graphs of Second Life/OpenSim content with different hardware?}
-
-%=========================================================================================================
-
-\subsection{Modifying the DK1 for See Through Video}
-
-The Oculus Rift DK1 covers the user's entire view, such that they cannot see any of their real world surroundings whilst wearing it, \& it does not feature any camera provision to allow a mediated view of the real world to be presented to the user. As such, it was necessary to modify the DK1 to provide such capability.
-
-When choosing cameras for this task, there were several desired features;
-\begin{itemize}
-	\item resolution \& refresh rate that match those of the DK1,
-	\item sensor aspect ratio that matches that of the DK1's display halves,
-	\item combined lens focal length \& sensor dimension to provide wide FOV (ideally matching the FOV of the DK1),
-	\item ease of integration with the Unity platform.
-\end{itemize}
-
-The PS3 Eye camera met most of these requirements. It's resolution is only 640x480 pixels, whilst each half of the DK1's display is 600x800 pixels, however unusually for a USB camera it is capable of running at 60fps. Furthermore, once dismantled to its bare PCB it features mounting holes for a standard S-mount (M12x0.5mm) lens mount commonly used for CCTV cameras, allowing alternative focal length lenses to be easy fitted.
-
-A very early test with the PS3 Eye \& the DK1\footnote{\url{https://www.youtube.com/watch?v=tS0FGZxQzCU}} was performed by simply attaching a single unmodified PS3 Eye camera to the top of the DK1 (figure \ref{rift-ps3eye-ziptied.jpg}), with its stock lens set to its `wide' setting ($75\textdegree$\footnote{\url{http://uk.playstation.com/media/247868/7010571 PS3 Eye Web_GB.pdf}}). One purpose of this test was to explore the suitability of Unity's \texttt{WebCamTexture}\footnote{\url{http://docs.unity3d.com/ScriptReference/WebCamTexture.html}} feature for integrating the stream from a USB camera into a 3D application. In this early test, the mediated RW video stream was rendered to a small `floating' window that moved with the user's head (figure \ref{floating-webcam-window.png}), allowing the user to view both environments at once, with the real environment in their peripheral whilst they were attending to the virtual. Whilst an interesting concept, the decision was made to instead render the mediated RW stream to the full DK1 screen so as to allow the user to better observe their real environment thanks to the larger image \& higher resolution.
-
-\TwoFig{rift-pseye-ziptied.jpg}{First monoscopic see through hardware.}{rift-pseye-ziptied.jpg}
-       {floating-webcam-window.png}{Early `floating' window see through video.}{floating-webcam-window.png}
-
-A pair of PS3 Eye cameras were dismantled, removing their outer plastic housing \& stock lenses. S-mount lens mounts were fitted \& the search for suitable lenses began. Ideally, the lenses used would provide the same FOV as the Rift itself is capable of displaying, such that the mediate RW stream from the cameras could be displayed at the full size of the Rift \& `match' the FOV of whatever virtual content would alternatively be displayed. However there is a trade off with lenses between focal length \& distortion; shorter focal lengths mean a wider FOV, however they also introduce more distortion. The PS3 Eye has a `1/4'' type' sensor which is only an indication of its true dimensions\footnote{\url{http://www.dpreview.com/glossary/camera-system/sensor-sizes}} \& as Sony has not published the actual dimensions of the sensor we adopt the typical 1/4'' type dimensions\footnote{\url{http://www.photoreview.com.au/tips/buying/unravelling-sensor-sizes}} of 4.5mm diagonal, 3.6mm horizontally, 2.7mm vertically. Empirical accounts of very short focal length S-mount lenses mounted to the PS3 Eye camera indicated that the distortion becomes very high at around 2.1mm\footnote{\url{http://peauproductions.com/store/index.php?main_page=index&cPath=26_4}}. Table \ref{fov-table} gives the diagonal, horizontal \& vertical FOV of the widest commonly available S-mount lenses.
-
-\begin{table}
-\begin{center}
-\begin{tabular}{|c|c|c|c|}
-\hline
-Focal length (mm) & Diagonal FOV (\textdegree) & Horizontal FOV (\textdegree) & Vertical FOV (\textdegree) \\
-\hline
-2.5mm & 71.5 & 56.7  & 84 \\
-2.1mm & 81.2 & 65.5  & 93.9 \\
-2.0mm & 84   & 68    & 96.7 \\
-1.9mm & 86.9 & 70.8  & 99.6 \\
-1.8mm & 90   & 73.7  & 102.7 \\
-1.7mm & 93.3 & 76.9  & 105.9 \\
-\hline
-\end{tabular}
-\caption{FOV of various focal lengths resolving onto a 1/4'' type sensor.}
-\label{fov-table}
-\end{center}
-\end{table}
-
-However, using a lens with a short enough focal length to provide a FOV as wide as the Rift isn't strictly necessary as, when wearing the Rift, the edges of the image presented to each eye is not necessarily visible to the user, especially if the Rift's adjustable distance from the eyes is adjusted such that it sits at its furthest position. Such adjustment is actually prudent, as using the Rift at its maximum extension from the eyes ensures maximum compatibility \& comfort with users \& also removes a variable between users compared to if each user were permitted to chose the extension themselves. So the choice of lens is now down to identifying the FOV required to fill the portion of the Rift's images that are visible when the headset is extended to its maximal position.
-
-\TwoFig{rift-clips-cameras/lens-comparison-on-ps3eye-pcb.jpg}{lens-comparison-on-ps3eye-pcb.jpg}{lens-comparison-on-ps3eye-pcb.jpg}
-       {rift-clips-cameras/lens-comparison.jpg}{lens-comparison.jpg}{lens-comparison.jpg}
-
-
-\TwoFig{fov-comparison-1.png}{}{fov-comparison-1.png}
-        {fov-comparison-2.png}{}{fov-comparison-2.png}
-
-
-
-
-
-
-
-
-
-
-Japanese Unity dual PS3 Eye blog post\footnote{\url{http://tips.hecomi.com/entry/20130731/1375279561} (Japanese)}
-
-
-
-
-
-\textbf{**Show lens comparison picture from blog \& a (new?) screenshot showing FoV of the camera feeds compared to that of Rift \& explain why the discrepancy doesn't matter, especially when the Rift is fully extended.}
-
-\begin{figure}[!htb]
-    \centering
-    \begin{minipage}{.32\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{rift-clips-cameras/clips.jpg}
-        \caption{bar}
-        \label{bar}
-    \end{minipage}%
-    \hspace{.01\textwidth}
-    \begin{minipage}{0.32\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{rift-clips-cameras/clips-hori-plate.jpg}
-        \caption{foo}
-        \label{foo}
-    \end{minipage}%
-    \hspace{.01\textwidth}
-    \begin{minipage}{0.32\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{rift-clips-cameras/hori-1.jpg}
-        \caption{baz}
-        \label{baz}
-    \end{minipage}
-\end{figure}
-
-\TwoFig{rift-clips-cameras/hori-2.jpg}{hori-2.jpg}{hori-2.jpg}
-       {rift-clips-cameras/hori-3.jpg}{hori-3.jpg}{hori-3.jpg}
-
-\TwoFig{rift-clips-cameras/clips-vert.jpg}{clips-vert.jpg}{clips-vert.jpg}
-       {rift-clips-cameras/vert-6.jpg}{vert-6.jpg}{vert-6.jpg}
-
-\TwoFig{rift-clips-cameras/vert-1.jpg}{vert-1.jpg}{vert-1.jpg}
-       {rift-clips-cameras/vert-4.jpg}{vert-4.jpg}{vert-4.jpg}
-
-\TwoFig{rift-clips-cameras/thermoplastic.jpg}{thermoplastic.jpg}{thermoplastic.jpg}
-       {rift-clips-cameras/vert-7.jpg}{vert-7.jpg}{vert-7.jpg}
-
-\TwoFig{rift-clips-cameras/middle.jpg}{middle.jpg}{middle.jpg}
-       {rift-clips-cameras/right.jpg}{right.jpg}{right.jpg}
-
-\TwoFig{latency/vid1.jpg}{vid1.jpg}{vid1.jpg}
-       {latency/vid2.jpg}{vid2.jpg}{vid2.jpg}
-
-\TwoFig{latency/vid3.jpg}{vid3.jpg}{vid3.jpg}
-       {latency/vid4.jpg}{vid4.jpg}{vid4.jpg}
-
-\begin{figure}[h]
-    \begin{center}
-    \begin{minipage}{.32\textwidth}
-        \begin{center}
-        \includegraphics[width=\textwidth]{latency/still1.jpg}
-        \caption{still1.jpg}
-        \label{still1.jpg}
-        \end{center}
-    \end{minipage}%
-    \hspace{.01\textwidth}
-    \begin{minipage}{.32\textwidth}
-		\begin{center}
-        \includegraphics[width=\textwidth]{latency/still2.jpg}
-        \caption{still2.jpg}
-        \label{still2.jpg}
-        \end{center}
-    \end{minipage}%
-    \hspace{.01\textwidth}
-    \begin{minipage}{.32\textwidth}
-        \begin{center}
-        \includegraphics[width=\textwidth]{latency/still3.jpg}
-        \caption{still3.jpg}
-        \label{still3.jpg}
-        \end{center}
-    \end{minipage}
-    \end{center}
-\end{figure}
 
 %=========================================================================================================
 
