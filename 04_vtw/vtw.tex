@@ -188,7 +188,7 @@ In order to control Second Life's camera in the fashion required of VTW, sensor 
 
 VTW considers yaw in terms of magnetic compass bearing, as this provides a value that can be used to directly control the yaw of the virtual camera while the virtual reconstruction within OpenSim is correctly oriented to OpenSim's own compass. Magnetic compass bearings are sensed electronically via a 3-axis microelectromechanical (MEMS) magnetometer, which measures the strength of magnetic field being experienced along each of its 3 axes. By comparing the values of each axis to the known direction of the field lines of Earth's magnetic field, a compass bearing relative to the magnetometer's orientation can be calculated. Pitch is sensed using a 3-axis MEMS accelerometer, which measures force of acceleration along each of its 3 axes. In the case of static or slow moving applications, this acceleration is predominantly that caused by the Earth's gravitational pull \& by comparing the values of each axis the direction of this acceleration (down toward the centre of the Earth) can be determined in relation to the orientation of the accelerometer itself \& thus the accelerometer's own orientation can be deduced.
 
-Due to the fact that the WindPad tablet does not feature a built-in magnetometer \& its built-in accelerometer is little more than a rudimentary tilt sensor for differentiating between discrete cases of landscape and portrait orientation for screen rotation, it was necessary to interface external magnetometer \& accelerometer sensors. The popular Arduino\ArduinoFootnote{} microcontroller platform was used for prototyping with several different sensor packages, including the MMA8452\MMAfootnote{}, the ADXL335\ADXLfootnote{} \& the HMC5883L\HMCfootnote{}. The package adopted for use with VTW from this prototyping stage was the HMC6343\HMCtwoFootnote{}, which combines a 3-axis MEMS magnetometer \& 3-axis MEMs accelerometer into a single package sporting an I2C interface, along with algorithms to internally apply the accelerometer's readings to `tilt compensate' the magnetometer's readings. Figure \ref{arduino_wiring_hmc.png} provides a wiring diagram for connectivity of a HMC6343 to an Arduino Uno R3, with the pinout values provided by figure \ref{HMC6343wiringtable} \& Figure \ref{arduino_joystick_for_second_life_1.jpg} shows an assembled unit.
+Due to the fact that the WindPad tablet does not feature a built-in magnetometer \& its built-in accelerometer is little more than a rudimentary tilt sensor for differentiating between discrete cases of landscape and portrait orientation for screen rotation, it was necessary to interface external magnetometer \& accelerometer sensors. The popular Arduino\ArduinoFootnote{} microcontroller platform was used for prototyping with several different sensor packages, including the MMA8452\MMAfootnote{}, the ADXL335\ADXLfootnote{} \& the HMC5883L\HMCfootnote{}. The package adopted for use with VTW from this prototyping stage was the HMC6343\HMCtwoFootnote{}, which combines a 3-axis MEMS magnetometer \& 3-axis MEMs accelerometer into a single package sporting an I2C interface, along with algorithms to internally apply the accelerometer's readings to `tilt compensate' the magnetometer's readings. Figure \ref{arduino_wiring_hmc.png} provides a wiring diagram for connectivity of a HMC6343 to an Arduino Uno R3, with the pinout values provided by table \ref{HMC6343wiringtable} \& Figure \ref{arduino_joystick_for_second_life_1.jpg} shows an assembled unit.
 
 \begin{figure}[h]
 \centering
@@ -199,11 +199,10 @@ Due to the fact that the WindPad tablet does not feature a built-in magnetometer
 
 %=====================
 
-\begin{figure}[h]
+\begin{table}
 \begin{center}
 \begin{minipage}{.7\linewidth}
 \begin{center}
-%\begin{tabularx}{250pt}{|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
 \begin{tabular}{| c | c |}
 \hline	
 \textbf{HMC6343 pin} & \textbf{Arduino Uno R3 pin} \\
@@ -222,7 +221,7 @@ SCL & A5 \\
 \end{center}
 \caption{Pin designation for figure \ref{arduino_wiring_hmc.png}.}
 \label{HMC6343wiringtable}
-\end{figure}
+\end{table}
 
 %=====================
 
@@ -382,7 +381,7 @@ Applying the scale of the reconstruction to these values gives $\Delta$x \& $\De
 
 The WindPad features an internal AzureWave GPS-M16 GPS receiver\azurewaveFootnote{}, however poor API provision and meagre documentation required the adoption of an alternative receiver. As an Arduino was already being used to provide orientation data from accelerometer \& magnetometer, integrating the GPS receiver into this package such that all orientation \& position data came from a single source seemed prudent. After receiving input \& advice from the UK High Altitude Society\habFootnote{}, \textit{``a loose collection of people who are interested in launching unmanned high altitude balloons into near space''} who make extensive use of GPS receivers for tracking their launches, the u-blox MAX-6\ubloxFootnote{} GPS receiver outfitted with a Sarantel SL-1202\sarantelFootnote{} passive antenna was chosen to provide position data for the VTW platform. The MAX-6 is of higher operational specification than the GPS-M16 and supports Satellite Based Augmentation Systems (SBAS) which improve the accuracy of location data by applying additional correction data received from networks of satellites and ground-based transmitters separate to those of the GPS system. These networks include the European Geostationary Navigation Overlay Service (EGNOS) that covers the UK where the experiments took place.
 
-Figure \ref{arduino_wiring_hmc_ublox.png} provides a wiring diagram for connectivity of a u-blox MAX-6 to an Arduino Uno R3, along with the HMC6343 from section \ref{OrientationControl}, with the pinout values provided by figure \ref{arduino_wiring_hmc_ublox.png}. The LED \& 220$\Omega$ resistor on digital pin 12 is used for diagnostic output. The wiring shown here for a MAX-6 breakout without I2C connectivity, instead using Arduino's SoftwareSerial\softwareserialFootnote{} library.
+Figure \ref{arduino_wiring_hmc_ublox.png} provides a wiring diagram for connectivity of a u-blox MAX-6 to an Arduino Uno R3, along with the HMC6343 from section \ref{OrientationControl}, with the pinout values provided by tables \ref{HMC6343_MAX6_wiringtable_HMC6343} \& \ref{HMC6343_MAX6_wiringtable_MAX6}. The LED \& 220$\Omega$ resistor on digital pin 12 is used for diagnostic output. The wiring shown here for a MAX-6 breakout without I2C connectivity, instead using Arduino's SoftwareSerial\softwareserialFootnote{} library.
 
 \begin{figure}[h]
 \centering
@@ -391,7 +390,7 @@ Figure \ref{arduino_wiring_hmc_ublox.png} provides a wiring diagram for connecti
   \label{arduino_wiring_hmc_ublox.png}
 \end{figure}
 
-\begin{figure}[h]
+\begin{table}
 \begin{center}
 \begin{minipage}[t]{.47\linewidth}
 \begin{center}
@@ -408,6 +407,8 @@ SDA & A4\itwocFootnote{} \\
 SCL & A5 \\
 \hline
 \end{tabular}
+\caption{Pin designation for figure HMC6343.}
+\label{HMC6343_MAX6_wiringtable_HMC6343}
 \end{center}
 \end{minipage}
 %
@@ -426,12 +427,12 @@ RXD & D4 \MAXserialFootnote{}\\
 TXD & D5 \\
 \hline
 \end{tabular}
+\caption{Pin designation for figure MAX-6.}
+\label{HMC6343_MAX6_wiringtable_MAX6}
 \end{center}
 \end{minipage}
-\caption{Pin designation for figure \ref{arduino_wiring_hmc_ublox.png}.}
-\label{HMC6343_MAX6_wiringtable}
 \end{center}
-\end{figure}
+\end{table}
 
 Figure \ref{arduino_hmc6343_u-blox_MAX-6.jpg} shows an the assembled unit, comprising an Arduino Uno R3, prototyping shield, HMC6343 \& MAX-6, while figure \ref{pangolin_tablet_back.jpg} shows the packaged unit attached to the back of the WindPad.
 

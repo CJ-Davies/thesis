@@ -153,8 +153,8 @@ Whilst 1.7mm lenses would provide almost identical FOV to the Rift's display (10
 
 Experiments revealed that with the DK1 set to its maximum extension, the area of the images visible to the user was wider than that provided by 2.5mm lenses (84\textdegree\ diagonal) when scaled correctly \& narrower than that provided by 2.1mm lenses (93.9\textdegree\ diagonal) when scaled correctly. Without easy availability of a lens with a focal length between 2.5mm \& 2.1mm it was decided to make use of the 2.1mm lenses. Figure \ref{lens-comparison-on-ps3eye-pcb.jpg} shows the 2.5mm lens (right) \& 2.1mm lens (left) mounted to the PS3 Eye PCBs via S-mount lens mounts, while figure \ref{fov-comparison-1.png} shows the FOV of the selected 2.1mm lenses scaled upon the wider FOV of the DK1's images - as previously mentioned, with the DK1 at its furthest extension, users cannot perceive the area outwith the mediated camera image.
 
-\TwoFig{rift-clips-cameras/lens-comparison-on-ps3eye-pcb.jpg}{lens-comparison-on-ps3eye-pcb.jpg}{lens-comparison-on-ps3eye-pcb.jpg}
-       {fov-comparison-1.png}{}{fov-comparison-1.png}
+\TwoFig{rift-clips-cameras/lens-comparison-on-ps3eye-pcb.jpg}{S-mount lenses on PS3 Eye camera PCBs.}{lens-comparison-on-ps3eye-pcb.jpg}
+       {fov-comparison-1.png}{FOV comparison between DK1 \& 2.1mm lenses.}{fov-comparison-1.png}
 
 %{fov-comparison-2.png}{}{fov-comparison-2.png}
 
@@ -165,55 +165,99 @@ The PS3 Eye cameras were mounted to the DK1 by modifying the 3D printable sensor
     \begin{minipage}{.32\textwidth}
         \centering
         \includegraphics[width=\textwidth]{rift-clips-cameras/clips.jpg}
-        \caption{bar}
+        \caption{Camera mount base.}
         \label{clips.jpg}
     \end{minipage}%
     \hspace{.01\textwidth}
     \begin{minipage}{0.32\textwidth}
         \centering
         \includegraphics[width=\textwidth]{rift-clips-cameras/clips-hori-plate.jpg}
-        \caption{foo}
+        \caption{Camera mount slotted plate.}
         \label{clips-hori-plate.jpg}
     \end{minipage}%
     \hspace{.01\textwidth}
     \begin{minipage}{0.32\textwidth}
         \centering
         \includegraphics[width=\textwidth]{rift-clips-cameras/hori-1.jpg}
-        \caption{baz}
+        \caption{Camera mount attached to DK1.}
         \label{hori-1.jpg}
     \end{minipage}
 \end{figure}
 
-\TwoFig{rift-clips-cameras/hori-2.jpg}{hori-2.jpg}{hori-2.jpg}
-       {rift-clips-cameras/hori-3.jpg}{hori-3.jpg}{hori-3.jpg}
+\TwoFig{rift-clips-cameras/hori-2.jpg}{Cameras mounted using stand-offs.}{hori-2.jpg}
+       {rift-clips-cameras/hori-3.jpg}{Two PS3 Eye cameras mounted on DK1.}{hori-3.jpg}
 
-Although the initial integration test with a single PS3 Eye camera revealed easy accessibility of the camera within Unity, using two PS3 Eye cameras proved temperamental. Unity's \texttt{WebCamTexture} support identifies webcams via their `name' as provided by their driver. In the case of the PS3 Eye using the driver provided by Code Laboratories\footnote{\\url{https://codelaboratories.com/products/eye/driver/}} (this third party driver must be used as no official Windows driver is available with Sony only marketing the PS3 Eye for use with their PS3 console) an issue arises where both cameras present the same name to Unity \& the second camera overwrite the reference to the first, only allowing access to a single camera. Figure \ref{ps3-eye-unity-overwrite.png} shows this issue, that whilst Windows' device manager successfully identifies both cameras independently, Unity's \path{WebCamTexture.devices()} function returns a reference to only one (the \texttt{BisonCam, NB Pro} entry is the laptop's internal webcam). A partial solution to this issue was presented by a community provided Unity package\footnote{\url{http://tips.hecomi.com/entry/20130731/1375279561} (Japanese)}, which allowed the setup up to be successfully tested within a departmental building\footnote{\url{https://www.youtube.com/watch?v=oy5NqqDtkJ4}}.
+Although the initial integration test with a single PS3 Eye camera revealed easy accessibility of the camera within Unity, using two PS3 Eye cameras proved temperamental. Unity's \texttt{WebCamTexture} support identifies webcams via their `name' as provided by their driver. In the case of the PS3 Eye using the driver provided by Code Laboratories\footnote{\url{https://codelaboratories.com/products/eye/driver/}} (this third party driver must be used as no official Windows driver is available with Sony only marketing the PS3 Eye for use with their PS3 console) an issue arises where both cameras present the same name to Unity \& the second camera overwrite the reference to the first, only allowing access to a single camera. Figure \ref{ps3-eye-unity-overwrite.png} shows this issue, that whilst Windows' device manager successfully identifies both cameras independently, Unity's \path{WebCamTexture.devices()} function returns a reference to only one (the \texttt{BisonCam, NB Pro} entry is the laptop's internal webcam). A partial solution to this issue was presented by a community provided Unity package\footnote{\url{http://tips.hecomi.com/entry/20130731/1375279561} (Japanese)}, which allowed the setup up to be successfully tested within a departmental building\footnote{\url{https://www.youtube.com/watch?v=oy5NqqDtkJ4}}.
 
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=.8\linewidth]{ps3-eye-unity-overwrite.png}
-		\caption{Unity struggling with multiple PS3 Eye cameras.}
+		\caption{Unity failing to stat multiple PS3 Eye cameras.}
 		\label{ps3-eye-unity-overwrite.png}
 	\end{center}
 \end{figure}
 
 An oversight in the design of the camera mounts was realised by when William Steptoe later released details of his `AR Rift' project\footnote{\url{http://willsteptoe.com/post/66968953089/ar-rift-part-1}}. Although the DK1's overall screen has a resolution of 1280x800 in a `horizontal' 16:10 aspect ratio, each `half' of this screen as presented individually to each eye has a resolution of 640x800 in a `vertical' 4:5 aspect ratio. Thus to best match the aspect ratio of a 4:3 camera sensor, such as that of the PS3 Eye, to each half of the DK1's screen, that camera should be oriented in a portrait orientation rather than the landscape orientation employed by this project with the PS3 Eye cameras. Thus new mounting hardware was designed \& printed, by further modification of the USC's original 3D designs, allowing for vertical mounting of the PS3 Eye cameras. This new design is shown in figure \ref{clips-vert.jpg} (the recessed section in the centre of the clip allows for the heads of bolts to clear the front of the DK1) \& the assembled units are shown attached to the DK1 in figure \ref{vert-6.jpg}. Additionally soon after this point, the metal stand-offs that had been used to mount the camera PCBs to the clips (see figure \ref{vert-1.jpg}) were replaced with a combination of rubber washers \& threaded bolts (see figure \ref{vert-4.jpg}) both to reduce the discrepancy in the mediated RW images caused by the distance between the camera sensors \& the user's eyes (by reducing this distance) \& to allow for finer alteration of the orientation of the cameras.
 
-\TwoFig{rift-clips-cameras/clips-vert.jpg}{clips-vert.jpg}{clips-vert.jpg}
-       {rift-clips-cameras/vert-6.jpg}{vert-6.jpg}{vert-6.jpg}
+\TwoFig{rift-clips-cameras/clips-vert.jpg}{Updated camera mount.}{clips-vert.jpg}
+       {rift-clips-cameras/vert-6.jpg}{Two PS3 Eye cameras using updated mounts.}{vert-6.jpg}
 
-\TwoFig{rift-clips-cameras/vert-1.jpg}{vert-1.jpg}{vert-1.jpg}
-       {rift-clips-cameras/vert-4.jpg}{vert-4.jpg}{vert-4.jpg}
+\TwoFig{rift-clips-cameras/vert-1.jpg}{Updated mount with stand-offs.}{vert-1.jpg}
+       {rift-clips-cameras/vert-4.jpg}{Updated mount with rubber washers.}{vert-4.jpg}
 
 Unfortunately the PS3 Eye naming solution was temperamental at best \& two camera compatibility was frequently lost. It was decided prudent to therefore replace the PS3 Eye cameras with alternatives, rather than attempting to glean a solution to their reliable compatibility with Unity. Using Steptoe's project as a guide, a pair of Logitech C310\footnote{\url{http://www.logitech.com/en-gb/product/hd-webcam-c310}} cameras were sourced. Whilst the stated refresh rate of the C310 is only 30Hz, half that of the PS3 Eye, it supports a resolution of 1280x960, which is higher than that of the PS3 Eye \& of each half of the DK1's display. Thus the switch from the PS3 Eye cameras to the C310 represented a sacrifice in framerate, but an increase in resolution. Empirically the increase in resolution was however indiscernible, likely due to the effect of the DK1's optics reducing the visual acuity of its display, whilst the reduction in framerate was more prominently noticeable.
 
 The C310 cameras received the same attention as the PS3 Eye cameras; they were dismantled \& outfitted with S-mount lens mounts. As the sensor in the C310 is also of the 1/4" type, the FOV provided by the 2.1mm lenses on the C310 cameras will be comparable to that of the same lenses mounted to the PS3 Eye cameras. Due to the lack of mounting holes present on the C310 PCB, the PCBs were set into a thin sheet of thermoplastic (figure \ref{thermoplastic.jpg}) which was then attached to the 3D printed clips with the same rubber washer \& threaded bolt arrangement as the PS3 Eye cameras. The assembled DK1 + dual C310 solution is shown by figures \ref{vert-7.jpg} (3/4 view), \ref{middle.jpg} (profile view) \& \ref{right.jpg} (detail view).
 
-\TwoFig{rift-clips-cameras/thermoplastic.jpg}{thermoplastic.jpg}{thermoplastic.jpg}
-       {rift-clips-cameras/vert-7.jpg}{vert-7.jpg}{vert-7.jpg}
+\TwoFig{rift-clips-cameras/thermoplastic.jpg}{Setting C310 PCBs into thermoplastic.}{thermoplastic.jpg}
+       {rift-clips-cameras/vert-7.jpg}{Two C310 mounted to DK1 (3/4).}{vert-7.jpg}
 
-\TwoFig{rift-clips-cameras/middle.jpg}{middle.jpg}{middle.jpg}
-       {rift-clips-cameras/right.jpg}{right.jpg}{right.jpg}
+\TwoFig{rift-clips-cameras/middle.jpg}{Two C310 mounted to DK1 (front).}{middle.jpg}
+       {rift-clips-cameras/right.jpg}{Two C310 mounted to DK1 (detail).}{right.jpg}
+
+\clearpage
+
+%=========================================================================================================
+
+\subsection{Switchable Stereoscopic See Through Video with Unity}
+
+Unity's \texttt{WebCamTexture} support was used to gain access to the C310 video streams within Unity. These video streams were applied to a pair of planes, of matching orientation \& aspect ratio to the video stream, that are situated perpendicular to the two virtual cameras of the Oculus Unity prefab. This is shown by figure \ref{unity-screenshot-1.png} in which the smaller portrait planes in the centre of the image are those onto which the camera streams are rendered.
+
+By placing each of these two planes in a separate layer \& setting the culling mask of the virtual cameras to cull/not-cull these layers appropriately (such that the left virtual camera culls the layer of the right plane but not the left plane \& the right virtual camera culls the layer of the left plane but not the right plane) the appropriate virtual camera only sees the appropriate webcam image, even though they `overlap'.
+
+
+
+\begin{figure}[h]
+    \begin{center}
+    \begin{minipage}{.32\textwidth}
+        \begin{center}
+        \includegraphics[width=\textwidth]{unity-screenshots/unity-screenshot-1.png}
+        \caption{Two camera planes \& backing planes.}
+        \label{unity-screenshot-1.png}
+        \end{center}
+    \end{minipage}%
+    \hspace{.01\textwidth}
+    \begin{minipage}{.32\textwidth}
+		\begin{center}
+        \includegraphics[width=\textwidth]{unity-screenshots/unity-screenshot-2.png}
+        \caption{Left camera plane.}
+        \label{unity-screenshot-2.png}
+        \end{center}
+    \end{minipage}%
+    \hspace{.01\textwidth}
+    \begin{minipage}{.32\textwidth}
+        \begin{center}
+        \includegraphics[width=\textwidth]{unity-screenshots/unity-screenshot-3.png}
+        \caption{Right camera plane.}
+        \label{unity-screenshot-3.png}
+        \end{center}
+    \end{minipage}
+    \end{center}
+\end{figure}
+
+%=========================================================================================================
+
+\subsection{Latency of DK1 See Through Video Solution}
 
 Measurement of the end-to-end latency of the C310 solution was performed by placing the DK1, with the lens cups removed, in front of a LCD monitor displaying a timer\footnote{\url{http://www.flatpanels.dk/monitortest_inputlag_dk.php}}. In this context, end-to-end latency refers to the time taken for a visible change in the scene in front of the DK1 (in this instance, the image upon the monitor) to be reflected by a comparable change upon the DK1's display. This figure accounts for latency introduced by the C310 cameras themselves, by the Unity engine \& by the DK1's display. A digital camera was set up on a tripod behind the monitor \& DK1, such that it could record both the monitor \& the milliseconds value on the DK1's screen. The digital camera was set at a sufficiently high ISO as to record video at 50fps with a shutter speed of 1/4000 of a second.
 
