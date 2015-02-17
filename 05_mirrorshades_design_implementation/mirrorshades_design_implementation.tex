@@ -110,7 +110,7 @@ One deciding factor in this deliberation was the more stringent performance requ
 %=========================================================================================================
 
 \subsection{Modifying the DK1 for See Through Video}
-
+\label{modifying-dk1}
 The Oculus Rift DK1 covers the user's entire view, such that they cannot see any of their real world surroundings whilst wearing it, \& it does not feature any camera provision to allow a mediated view of the real world to be presented to the user. As such, it was necessary to modify the DK1 to provide such capability. When choosing cameras for this task, there were several desired ideal features;
 \begin{itemize}
 	\item resolution \& refresh rate that match (or exceed) those of the DK1,
@@ -221,23 +221,23 @@ The C310 cameras received the same attention as the PS3 Eye cameras; they were d
 
 \subsection{Switchable Stereoscopic See Through Video with Unity}
 
-Unity's \texttt{WebCamTexture} support was used to gain access to the C310 video streams within Unity. These video streams were applied to a pair of planes, of matching orientation \& aspect ratio to the video stream, that are situated perpendicular to the two virtual cameras of the Oculus Unity prefab. This is shown by figure \ref{unity-screenshot-1.png} in which the smaller portrait planes in the centre of the image are those onto which the camera streams are rendered.
+Unity's \texttt{WebCamTexture} support was used to gain access to the C310 video streams within Unity. Due to better provisioned drivers, there was no issue with Unity obtaining references to both C310 as there had been with two PS3 Eye cameras. These video streams were applied to a pair of planes, of matching orientation \& aspect ratio to the video stream, that are situated perpendicular to the two virtual cameras of the Oculus Unity prefab. This is shown by figure \ref{unity-screenshot-1.png} in which the smaller portrait planes in the centre of the image are those onto which the camera streams are rendered.
 
-By placing each of these two planes in a separate layer \& setting the culling mask of the virtual cameras to cull/not-cull these layers appropriately (such that the left virtual camera culls the layer of the right plane but not the left plane \& the right virtual camera culls the layer of the left plane but not the right plane) the appropriate virtual camera only sees the appropriate webcam image, even though they `overlap'.
+It can be seen that these planes overlap considerably as they are only horizontally spaced the same amount as the virtual cameras are spaced, which is derived from the interpupillary distance that the user inputs to the Oculus configuration utility. By placing each of these two planes in a separate layer \& setting the culling mask of the virtual cameras to cull/not-cull these layers appropriately (such that the left virtual camera culls the layer of the right plane but not the left plane \& the right virtual camera culls the layer of the left plane but not the right plane) the appropriate virtual camera only sees the appropriate webcam image, even though they overlap - the left virtual camera sees only the camera plane shown by figure \ref{unity-screenshot-2.png} while the right virtual camera sees only the camera plane shown by figure \ref{unity-screenshot-3.png}.
 
-
+As the Mirrorshades platform required the user to be able to control which environment they are perceiving, either real or virtual, the visibility of these camera planes (\& the virtual environment behind them) must thus be controllable. The opacity of the camera planes is therefore linked to the control mechanisms, however because the camera planes do not completely fill the DK1's FOV (see section \ref{modifying-dk1} \& figure \ref{fov-comparison-1.png}) two further, larger, planes are situated behind the camera planes which cover the entire FOV of the DK1. The opacity of these planes is also linked to the control mechanisms, such that when the user operates the control mechanism in a manner to view VR, they are completely transparent to allow VR visual stimuli to pass, but when the user operates the control mechanism in a manner to see RW, they become opaque in order to prevent any RW visual stimuli from passing around the camera planes.
 
 \begin{figure}[h]
     \begin{center}
-    \begin{minipage}{.32\textwidth}
+    \begin{minipage}[t]{.32\textwidth}
         \begin{center}
         \includegraphics[width=\textwidth]{unity-screenshots/unity-screenshot-1.png}
-        \caption{Two camera planes \& backing planes.}
+        \caption{Camera \& backing planes.}
         \label{unity-screenshot-1.png}
         \end{center}
     \end{minipage}%
     \hspace{.01\textwidth}
-    \begin{minipage}{.32\textwidth}
+    \begin{minipage}[t]{.32\textwidth}
 		\begin{center}
         \includegraphics[width=\textwidth]{unity-screenshots/unity-screenshot-2.png}
         \caption{Left camera plane.}
@@ -245,7 +245,7 @@ By placing each of these two planes in a separate layer \& setting the culling m
         \end{center}
     \end{minipage}%
     \hspace{.01\textwidth}
-    \begin{minipage}{.32\textwidth}
+    \begin{minipage}[t]{.32\textwidth}
         \begin{center}
         \includegraphics[width=\textwidth]{unity-screenshots/unity-screenshot-3.png}
         \caption{Right camera plane.}
@@ -253,6 +253,24 @@ By placing each of these two planes in a separate layer \& setting the culling m
         \end{center}
     \end{minipage}
     \end{center}
+\end{figure}
+
+The arrangement of these planes in relation to the virtual cameras is shown by figure \ref{unity-screenshot-6.png}, where it can be seen that the smaller camera planes do not fill the virtual cameras' frustum due to the lower FOV of the C310 than of the DK1. Figure \ref{unity-screenshot-7.png} shows a space between the camera planes \& the backing planes, required to avoid a rendering bug that arose when the planes were placed together.
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=.85\linewidth]{unity-screenshots/unity-screenshot-6.png}
+		\caption{Arrangement of camera planes \& backing planes.}
+		\label{unity-screenshot-6.png}
+	\end{center}
+\end{figure}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=.85\linewidth]{unity-screenshots/unity-screenshot-7.png}
+		\caption{Spacing between camera planes \& backing planes.}
+		\label{unity-screenshot-7.png}
+	\end{center}
 \end{figure}
 
 %=========================================================================================================
@@ -301,19 +319,23 @@ In addition to video frames, still photographs taken at the same 1/4000 of a sec
 
 %=========================================================================================================
 
+\clearpage
+
+%=========================================================================================================
+
 \section{Indoor Positioning Systems}
 
 \textbf{*** \url{https://www.youtube.com/watch?v=i3lEnXZMjms}}
 
 For outdoor applications, GPS represents a suitable solution for the vast majority of position tracking requirements. Global coverage \& the ability to scale accuracy as required, from many metres with a basic GPS receiver such as those integrated into smartphones, to a few metres with SBAS augmentations \& further to as little as 10cm with the deployment of Differential GPS (DGPS) beacons, has led to GPS occupying the role of the `go to' solution where position tracking is required for an outdoor application. For indoor applications however, there is no single technology or solution that provides similar coverage or suitability as GPS does outside: a large number of different technologies have been employed to produce Indoor Positioning Systems (IPS), which are summarised in figure \ref{mautz-table.png}.
 
-\begin{figure}[h]
+\begin{table}[h]
 	\begin{center}
 		\includegraphics[width=\linewidth]{mautz-table.png}
-		\caption{Overview of IPS technologies, from~\cite{Mautz2012}.}
-		\label{mautz-table.png}
 	\end{center}
-\end{figure}
+	\caption{Overview of IPS technologies, from~\cite{Mautz2012}.}
+	\label{mautz-table.png}
+\end{table}
 
 Because of this diversity in technology, with different IPS solutions covering various swathes of the continuums of accuracy \& coverage (see figure \ref{Mautz-000.png}), introducing a host of performance \& suitability considerations, it is necessary to carefully consider the requirements of the application (see figure \ref{Mautz-003.png}) \& then choose the best suited of the many different IPS approaches. Unsurprisingly, selection of a particular IPS usually leads to balancing these requirements in a trade-off, as each of the challenges of indoor positioning effects each technology more or less than others~\cite{Mautz2009}.
 
