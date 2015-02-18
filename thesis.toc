@@ -54,61 +54,61 @@
 \contentsline {section}{\numberline {5.3}Indoor Positioning Systems}{77}
 \contentsline {subsection}{\numberline {5.3.1}IPS Requirements for Mirrorshades}{77}
 \contentsline {subsection}{\numberline {5.3.2}PlayStation Move}{79}
-\contentsline {subsection}{\numberline {5.3.3}Indoor Atlas}{79}
-\contentsline {subsection}{\numberline {5.3.4}Integrating IndoorAtlas \& Unity}{81}
+\contentsline {subsection}{\numberline {5.3.3}Indoor Atlas}{80}
 \contentsline {section}{\numberline {5.4}Mobile Client}{82}
-\contentsline {subsection}{\numberline {5.4.1}Implementation}{82}
-\contentsline {subsection}{\numberline {5.4.2}Hardware Components}{83}
-\contentsline {subsection}{\numberline {5.4.3}Software Components}{84}
-\contentsline {subsection}{\numberline {5.4.4}Integration of Components}{84}
-\contentsline {subsection}{\numberline {5.4.5}Transition Methods}{85}
-\contentsline {subsubsection}{Hard switch}{85}
-\contentsline {subsubsection}{Switch with linear interpolation}{85}
-\contentsline {subsubsection}{Analogue selectable opacity}{86}
-\contentsline {subsubsection}{Periodic hard switches}{87}
-\contentsline {subsubsection}{Reduced maximum opacity}{87}
-\contentsline {chapter}{\numberline {6}Mirrorshades - Evaluation}{88}
-\contentsline {subsection}{\numberline {6.0.6}Case Study - St Salvator's Chapel}{88}
-\contentsline {section}{\numberline {6.1}Investigation 1 - The Case for Mobile XR}{88}
-\contentsline {subsection}{\numberline {6.1.1}Setting \& Task}{89}
-\contentsline {subsection}{\numberline {6.1.2}Evaluation Techniques}{89}
-\contentsline {subsection}{\numberline {6.1.3}Hypothesis}{89}
-\contentsline {subsection}{\numberline {6.1.4}Experimental Task \& Setting}{89}
-\contentsline {subsection}{\numberline {6.1.5}Evaluation}{89}
-\contentsline {subsubsection}{Subjective Quantitative - Post-Task Questionnaire}{90}
-\contentsline {subsubsection}{Subjective Qualitative - Interview}{90}
-\contentsline {subsubsection}{Objective Quantitative - Automatic Data Logging}{90}
-\contentsline {subsubsection}{Objective Qualitative - Video Recording}{91}
-\contentsline {section}{\numberline {6.2}The Case for Mobile XR}{91}
-\contentsline {section}{\numberline {6.3}Process}{92}
-\contentsline {section}{\numberline {6.4}The Scenarios}{93}
-\contentsline {section}{\numberline {6.5}Hypotheses}{93}
-\contentsline {section}{\numberline {6.6}SUS}{94}
-\contentsline {section}{\numberline {6.7}12-item Questionnaire}{94}
-\contentsline {section}{\numberline {6.8}Log data}{95}
-\contentsline {section}{\numberline {6.9}Interviews}{95}
-\contentsline {section}{\numberline {6.10}Phase 1 Results}{95}
-\contentsline {subsection}{\numberline {6.10.1}Pre-task Questionnaire}{95}
-\contentsline {subsection}{\numberline {6.10.2}SUS}{96}
-\contentsline {subsection}{\numberline {6.10.3}12-item Questionnaire}{97}
-\contentsline {subsection}{\numberline {6.10.4}Participant 1}{98}
-\contentsline {subsection}{\numberline {6.10.5}Participant 3}{100}
-\contentsline {subsection}{\numberline {6.10.6}Participant 4}{102}
-\contentsline {subsection}{\numberline {6.10.7}Participant 5}{103}
-\contentsline {subsection}{\numberline {6.10.8}Participant 6}{105}
-\contentsline {section}{\numberline {6.11}Phase 2.1 Results}{108}
-\contentsline {subsection}{\numberline {6.11.1}Participant 7}{109}
-\contentsline {subsection}{\numberline {6.11.2}Participant 8}{110}
-\contentsline {subsection}{\numberline {6.11.3}Participant 9}{112}
-\contentsline {subsection}{\numberline {6.11.4}Participant 10}{114}
-\contentsline {subsection}{\numberline {6.11.5}Participant 11}{116}
-\contentsline {subsection}{\numberline {6.11.6}Participant 12}{118}
-\contentsline {subsection}{\numberline {6.11.7}Participant 13}{120}
-\contentsline {section}{\numberline {6.12}Phase 2.2 Results}{122}
-\contentsline {subsection}{\numberline {6.12.1}Participant 14}{123}
-\contentsline {subsection}{\numberline {6.12.2}Participant 15}{125}
-\contentsline {subsection}{\numberline {6.12.3}Participant 16}{127}
-\contentsline {subsection}{\numberline {6.12.4}Participant 17}{129}
-\contentsline {chapter}{\numberline {7}Conclusions \& Discussion}{131}
-\contentsline {chapter}{Appendices}{131}
-\contentsline {chapter}{Bibliography}{131}
+\contentsline {subsection}{\numberline {5.4.1}Integrating IndoorAtlas \& Unity}{83}
+\contentsline {subsection}{\numberline {5.4.2}Implementation}{85}
+\contentsline {subsection}{\numberline {5.4.3}Hardware Components}{85}
+\contentsline {subsection}{\numberline {5.4.4}Software Components}{86}
+\contentsline {subsection}{\numberline {5.4.5}Integration of Components}{86}
+\contentsline {subsection}{\numberline {5.4.6}Transition Methods}{87}
+\contentsline {subsubsection}{Hard switch}{87}
+\contentsline {subsubsection}{Switch with linear interpolation}{87}
+\contentsline {subsubsection}{Analogue selectable opacity}{87}
+\contentsline {subsubsection}{Periodic hard switches}{88}
+\contentsline {subsubsection}{Reduced maximum opacity}{89}
+\contentsline {chapter}{\numberline {6}Mirrorshades - Evaluation}{90}
+\contentsline {subsection}{\numberline {6.0.7}Case Study - St Salvator's Chapel}{90}
+\contentsline {section}{\numberline {6.1}Investigation 1 - The Case for Mobile XR}{90}
+\contentsline {subsection}{\numberline {6.1.1}Setting \& Task}{91}
+\contentsline {subsection}{\numberline {6.1.2}Evaluation Techniques}{91}
+\contentsline {subsection}{\numberline {6.1.3}Hypothesis}{91}
+\contentsline {subsection}{\numberline {6.1.4}Experimental Task \& Setting}{91}
+\contentsline {subsection}{\numberline {6.1.5}Evaluation}{91}
+\contentsline {subsubsection}{Subjective Quantitative - Post-Task Questionnaire}{92}
+\contentsline {subsubsection}{Subjective Qualitative - Interview}{92}
+\contentsline {subsubsection}{Objective Quantitative - Automatic Data Logging}{92}
+\contentsline {subsubsection}{Objective Qualitative - Video Recording}{93}
+\contentsline {section}{\numberline {6.2}The Case for Mobile XR}{93}
+\contentsline {section}{\numberline {6.3}Process}{94}
+\contentsline {section}{\numberline {6.4}The Scenarios}{95}
+\contentsline {section}{\numberline {6.5}Hypotheses}{95}
+\contentsline {section}{\numberline {6.6}SUS}{96}
+\contentsline {section}{\numberline {6.7}12-item Questionnaire}{96}
+\contentsline {section}{\numberline {6.8}Log data}{97}
+\contentsline {section}{\numberline {6.9}Interviews}{97}
+\contentsline {section}{\numberline {6.10}Phase 1 Results}{97}
+\contentsline {subsection}{\numberline {6.10.1}Pre-task Questionnaire}{97}
+\contentsline {subsection}{\numberline {6.10.2}SUS}{98}
+\contentsline {subsection}{\numberline {6.10.3}12-item Questionnaire}{99}
+\contentsline {subsection}{\numberline {6.10.4}Participant 1}{100}
+\contentsline {subsection}{\numberline {6.10.5}Participant 3}{102}
+\contentsline {subsection}{\numberline {6.10.6}Participant 4}{104}
+\contentsline {subsection}{\numberline {6.10.7}Participant 5}{105}
+\contentsline {subsection}{\numberline {6.10.8}Participant 6}{107}
+\contentsline {section}{\numberline {6.11}Phase 2.1 Results}{110}
+\contentsline {subsection}{\numberline {6.11.1}Participant 7}{111}
+\contentsline {subsection}{\numberline {6.11.2}Participant 8}{112}
+\contentsline {subsection}{\numberline {6.11.3}Participant 9}{114}
+\contentsline {subsection}{\numberline {6.11.4}Participant 10}{116}
+\contentsline {subsection}{\numberline {6.11.5}Participant 11}{118}
+\contentsline {subsection}{\numberline {6.11.6}Participant 12}{120}
+\contentsline {subsection}{\numberline {6.11.7}Participant 13}{122}
+\contentsline {section}{\numberline {6.12}Phase 2.2 Results}{124}
+\contentsline {subsection}{\numberline {6.12.1}Participant 14}{125}
+\contentsline {subsection}{\numberline {6.12.2}Participant 15}{127}
+\contentsline {subsection}{\numberline {6.12.3}Participant 16}{129}
+\contentsline {subsection}{\numberline {6.12.4}Participant 17}{131}
+\contentsline {chapter}{\numberline {7}Conclusions \& Discussion}{133}
+\contentsline {chapter}{Appendices}{133}
+\contentsline {chapter}{Bibliography}{133}

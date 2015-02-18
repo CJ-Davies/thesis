@@ -335,11 +335,12 @@ With toed-in cameras, the distance of the convergence point from the user should
 
 Toed-in cameras lead to both depth plane curvature, which causes objects at the corners of the image to appear further away than those toward the centre, \& , keystone distortion, which causes vertical discrepancy between each image, as the cameras' sensors are oriented in different planes, such that for one camera an image will appear larger at one side than the other, whilst for the other camera the image will appear larger on the other side~\cite{Woods1993}. As with depth plane curvature, keystone distortion is worse toward the corners.
 
-A further consideration is the discrepancy between the cameras' sensors \& the users' eyes, caused due to the fact that the cameras must be mounted to the front of the DK1 \& thus several inches in front of the user's eyes. This has the effect of making the user experience viewing the real world from several inches in front of where their eyes truly are (as if their eyes were `on stalks'), whilst viewing VR through the same setup does not have this effect. The distance between the sensors \& the user's eyes was reduced when iterating from the first mounting mechanism with metal stand-offs to the second mechanism with rubber washers, however with the interaction style of Mirrorshades where the user is predominantly focussed on observing objects \& architecture 15-20ft away from them the discrepancy is not particularly noticeable - it is when trying to manipulate objects much closer to the eyes that the discrepancy becomes prominent.
+It should also be noted in this discussion that the DK1's combination of optics \& rendering shader means that the user's eyes focus at infinity. This is intentional, as focussing on far away plane is less strenuous than focussing on one closer, especially one only a few inches from the eyes. However this has the effect that the user is focussing their eyes at infinity, whilst perceiving objects at varying distances between them \& infinity. This is a caveat inherent to the DK1 that cannot be avoided, however it should be noted that this is an additional degradation to the user's view of their RW environment whilst using the experimental setup, compared to viewing the RW environment directly.
 
-%With a HMD like the DK1, the screen's surface in these discussions is the virtual screen surface that the eye focusses upon, which is different to the physical screen surface. Although the physical screen surface of the DK1 sits only a few inches from the user's face, the virtual screen surface that they actually focus upon appears to be at infinity, thanks to the combination of optics \& rendering shader.
+A further consideration is the discrepancy between the cameras' sensors \& the users' eyes, caused due to the fact that the cameras must be mounted to the front of the DK1 \& thus several inches in front of the user's eyes. This has the effect of making the user experience viewing the real world from several inches in front of where their eyes truly are (as if their eyes were `on stalks'), whilst viewing VR through the same setup does not have this effect. The distance between the sensors \& the user's eyes was reduced when iterating from the first mounting mechanism with metal stand-offs (figure \ref{deep-mounts.jpg}) to the second mechanism with rubber washers (figure \ref{shallow-mounts.jpg}), however with the interaction style of Mirrorshades where the user is predominantly focussed on observing objects \& architecture 15-20ft away from them the discrepancy is not particularly noticeable - it is when trying to manipulate objects much closer to the eyes that the discrepancy becomes prominent.
 
-%but always focus on infinity
+\TwoFig{rift-clips-cameras/deep-mounts.jpg}{Early mounts, large eye/sensor distance.}{deep-mounts.jpg}
+       {rift-clips-cameras/shallow-mounts.jpg}{Later mounts, smaller eye/sensor distance.}{shallow-mounts.jpg}
 
 %Because of the approach that the DK1 uses to produce a `3D' image, by using side-by-side stereoscopic rendering where each eye receives a different image, with these images horizontally separated on the single screen, the solution does not feature zero parallax.
 
@@ -348,10 +349,6 @@ A further consideration is the discrepancy between the cameras' sensors \& the u
 %This is however inherent to all side-by-side stereoscopic HMDs \& is not a product of the modifications to the DK1 to afford it with video see through capabilities.
 
 %(autostereoscopic displays feature zero parallax when the image is being formed on the monitor surface)
-
-%=========================================================================================================
-
-\clearpage
 
 %=========================================================================================================
 
@@ -465,80 +462,50 @@ Upon closer inspection of the building, metal grating that runs along the ground
 
 \section{Mobile Client}
 
-This needs to come before IndoorAtlas \& Unity section, as using the laptop is important for why the whole MySQL step in the middle was used.
+Although the Unity engine allows for executables to be built for myriad platforms, including popular mobile platforms such as Android, iOS \& Windows Phone, at the time of Mirrorshades' development the only platforms upon which Oculus' Unity integration for the DK1 was available were Windows \& Mac OS standalone \& community efforts to support the DK1 on Android were at a rudimentary stage of functional head tracking but no distortion shader\footnote{\url{https://www.youtube.com/watch?v=pO2Vt8CuxsA}}. Thus the mobile client used for the Mirrorshades platform was a small Windows laptop computer, an 11'' Clevo W110ER with an Intel i7-3632QM 4-core/8-thread processor, Nvidia GT 650M graphics card \& 16GiB system memory, to be worn in a satchel that would also serve to hold other hardware \& cables required for the platform to operate.
 
-Talk about Unity being inherently multiplatform, but there only being Rift support for Windows \& Mac OS at the time (no Android support \& Gear VR wasn't even announced). But mention that Gear VR would now be the ideal platform for this, as it would cut down on so much weight \& complexity \& allow the mobile client \& the IPS to be the same physical device rather than two separate ones - Gear VR even has that convenient input on the side so the controller wouldn't even be strictly necessary.
+Since the development of Mirrorshades, Oculus' have partnered with Samsung to produce the Samsung Gear VR, a device that combines Samsung's Galaxy Note 4 smartphone with a HMD housing containing lenses \& head tracker, to produce a mobile VR HMD. Although not available at the time of the development \& experimentation with Mirrorshades, Gear VR now represents an ideal platform for a PR system such as Mirrorshades to be implemented upon. Whilst the graphical quality of the visuals of a smartphone based approach may not match those of a laptop powered approach, the physical modality of the Gear VR is ideal for a mobile application such as the PR exploration of a cultural heritage site, as even in a more graceful setup as those used during Mirrorshades experiments (see figure \ref{mirrorshades-messy-setup.jpg}) the reliance upon a separate HMD, laptop, smartphone \& control device make for a physical modality not suited for anything but research in the lab or field. As Gear VR is based around an Android smartphone it would not only remove the requirement for separate HMD \& client to produce its visuals, as the hardware \& software provision to operate IndoorAtlas is already present within the Note 4 \& the Gear VR HMD housing even features an input area that would negate the requirement for the user to carry a separate control device to perform transitions between their real \& virtual environments.
 
-Picture from video of ODROID working (at least headtracking) with Rift, maybe link to video.
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=.8\linewidth]{mirrorshades-messy-setup.jpg}
+		\caption{Part of an early Mirrorshades hardware setup.}
+		\label{mirrorshades-messy-setup.jpg}
+	\end{center}
+\end{figure}
 
 %=========================================================================================================
 
 \subsection{Integrating IndoorAtlas \& Unity}
 
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=.8\linewidth]{Jack-Cole-unity-anchor-new.png}
-		\caption{Anchor point (yellow) \& avatar position (red).}
-		\label{Jack-Cole-unity-anchor-new.png}
-	\end{center}
-\end{figure}
+Due to the role of the mobile client being filled by a laptop computer, position data obtained via IndoorAtlas using an Android smartphone had to be relayed to the laptop. Modifications were made to an IndoorAtlas SDK beta example app, such that it submits position data to a remote MySQL database server via a PHP/HTTP POST mechanism. This not only allows the mobile client to determine its position by polling the database server for the most up-to-date data, but also allows for remote logging (unrestricted by local storage on the smartphone) \& for other applications to easily make use of the location data; during development, a Web based visualisation of the position data was used for both the department building (figure \ref{indooratlas-webpage-jack-cole.png}) \& St Salvator's chapel (figure \ref{indooratlas-webpage-sallies.png}). These Web pages render the position of the user as a red mark using a relative position \texttt{div} \& served as a source of diagnostic information that was quickly accessible from any platform.
 
 \TwoFig{indooratlas-webpage-jack-cole.png}{foo}{indooratlas-webpage-jack-cole.png}
         {indooratlas-webpage-sallies.png}{bar}{indooratlas-webpage-sallies.png}
 
-IndoorAtlas works on phone, assumes application using the position will be on same phone
-	so modified example app to submit data via PHP/HTTP POST to a MySQL database for use by other things
+Translating RW positions reported by IndoorAtlas into VR positions within the Unity environments is performed in a similar same way as RW positions reported by GPS were translated into VR positions within the OpenSim environment in section \ref{second_life_position_control}, except that the myriad formats that position data are reported by the IndoorAtlas API negates the requirement to use the haversine formula. As well as providing indoor positions in the form of longitude \& latitude pairs, the API also provides positions as offsets from the origin of the floorplan image file used when performing the offline mapping phase, in both pixels \& meters. Thus, instead of deriving the displacement between the anchor point \& the user's position by using haversine to calculate great circle distances between pairs of longitude \& latitude, the displacement is instead obtained by simply adding/negating the position of the user reported in meters from the position of the anchor point also in meters. This approach is possible with IndoorAtlas as the use of a floorplan image provides a frame of reference, that can be indexed by 2D pixel coordinates \& converted into meters using a pixels-per-meter value, that did not exist with the GPS approach adopted for VTW that requires no offline mapping phase.
+
+%\begin{figure}[h]
+%	\begin{center}
+%		\includegraphics[width=.8\linewidth]{Jack-Cole-unity-anchor-new.png}
+%		\caption{Anchor point (yellow) \& avatar position (red).}
+%		\label{Jack-Cole-unity-anchor-new.png}
+%	\end{center}
+%\end{figure}
 	
-Web pages (both Jack Cole \& Sallies) that used this information
+Using IndoorAtlas reported positions in Unity is configured \& achieved by a combination of two scripted objects. One object, the anchor point, simply contains fields for the entry \& storage of the RW position information of the anchor point. In the Unity environment this object can be rendered with no texture or collider, such that it does not interfere with the environment in any way, but by using a dedicated object for the anchor point rather than attaching the script to another object, the anchor point object itself can be moved throughout the environment to the correct VR position instead of the user having to enter these details in addition to the corresponding RW ones \& this inferred position then used in the calculations.
 
-Built Unity application for Android that showed topdown view of Jack Cole using this information
-\url{https://www.youtube.com/watch?v=i3lEnXZMjms}
-Have screenshot from this video
+Thanks to the ability of the Unity engine to build applications for myriad platforms, the integration of IndoorAtlas IPS into Unity could be tested within the department building using a pair of Android smartphones\footnote{\url{https://www.youtube.com/watch?v=i3lEnXZMjms}} before moving on to the full DK1 based setup. This can be seen in figure \ref{indooratlas-two-phones.png}, where the smartphone in the right hand (a Google Nexus 4) is running the modified IndoorAtlas SDK beta example app, POSTing position data to the remote MySQL server, while the smartphone in the left hand (a Google Nexus 5) is running a Unity application that depicts a top-down view of the user's current position within a 3D model of the department building.
 
-Haversine implementation in Unity
-
-
-
-
-
-%=========================================================================================================
-
-This lot should come after the section on designing/implementing the different transition types.
-
-First time trying it all together - Rift with cameras \& controller, phone providing position data
-\url{https://www.youtube.com/watch?v=oy5NqqDtkJ4}
-screenshots
-
-First time trying it at St Salvator's (myself, just headset video)
-\url{https://www.youtube.com/watch?v=W4oPIHIr9Z4}
-screenshots
-
-First time trying it at St Salvator's with other people (Ariana \& Alan)
-\url{https://www.youtube.com/watch?v=pvGV5dCjt4U}
-screenshots
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=.7\linewidth]{indooratlas-two-phones.png}
+		\caption{Anchor point (yellow) \& avatar position (red).}
+		\label{indooratlas-two-phones.png}
+	\end{center}
+\end{figure}
 
 %=========================================================================================================
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -689,7 +656,21 @@ Independent or in addition to any of the previous scenarios, the maximum opacity
 
 
 
+\section{Putting it all together}
 
+This lot should come after the section on designing/implementing the different transition types.
+
+First time trying it all together - Rift with cameras \& controller, phone providing position data
+\url{https://www.youtube.com/watch?v=oy5NqqDtkJ4}
+screenshots
+
+First time trying it at St Salvator's (myself, just headset video)
+\url{https://www.youtube.com/watch?v=W4oPIHIr9Z4}
+screenshots
+
+First time trying it at St Salvator's with other people (Ariana \& Alan)
+\url{https://www.youtube.com/watch?v=pvGV5dCjt4U}
+screenshots
 
 
 
