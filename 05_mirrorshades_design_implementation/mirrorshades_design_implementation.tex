@@ -321,6 +321,8 @@ In addition to video frames, still photographs taken at the same 1/4000 of a sec
 
 \subsection{Constraints of DK1 See Through Solution}
 
+\label{constraints_of_dk1_see_through_solution}
+
 Whilst the FOV of the image produced by the C310 is sufficient to fill the area of the DK1's screen visible when extended to its furthest position, there are other aspects of the camera solution to consider, including the depth of field (DoF) of the camera solution \& the fixed convergence of the cameras.
 
 Due to the fact that depth of field of an image captured by a camera increases both as lens focal length \& sensor size decreases, combining a short focal length lens (such as the 2.1mm used in the solution) with a small sensor (such as the 1/4'' type used in the solution) results in a plenty sufficient depth of field when looking through the DK1 with C310 so as not to feel markedly different in this respect to viewing in the same lighting conditions with bare eyes.
@@ -507,26 +509,130 @@ Thanks to the ability of the Unity engine to build applications for myriad platf
 
 %=========================================================================================================
 
+\section{Transitions Between RW \& VR}
+Attending to visual stimuli from the RW environment via the cameras is required for the user to safely move around. Delay in IndoorAtlas reporting their position \& inaccuracies in these position data mean that moving around while attending only to visual stimuli from the VR environment would not be safe for the user, even with unchanging RW obstacles with perfectly accurate representations in the VR environment. Furthermore it is likely, especially in a cultural heritage scenario, that many RW obstacles won't have equivalent VR representations. Whilst one can walk through a virtual wall, the same is not true of a real one!
 
+Thus the `default' view through the DK1 must display enough of the view through the cameras for the user to safely navigate their environment, including any obstacles within it (whether these are static objects or dynamic objects such as other humans). For the user to alternatively view through the DK1 a scene that is more, or completely, virtual, thus requires a transition to be performed in which the visual stimuli presented to the user via the DK1 are changed from the default view to the new view.
 
+As discussed in section \ref{transitions_in_parallel_reality}, when a user experiences such a transition from viewing the visual stimuli of one environment (or combination of environments) to viewing the visual stimuli from another environment (or different combination of environments), this will have an effect upon their sense of presence - a break in presence. When experiencing a transition between an environment that is predominantly real \& one that is predominantly virtual, as depicted by figure \ref{focus-locus-sensus-with-virtuality-continuum-with-transition}, this break is expected to manifest with a temporary increase in conceptual/abstract reasoning (a movement upon the focus access from presence towards absence), as the user compares \& contrasts the visual stimuli that they are now perceiving from the new environment to those that they were just perceiving from the previous environment until they can successfully position \& relate the new against the old, accompanied with a temporary increase in wakefulness as they have to more consciously consider the environment presented to them rather than passively receiving it.
 
+The manner in which these transitions are performed is expected to have an effect upon the severity of these breaks. The transitions can be performed differently in two regards;
+\begin{enumerate}
+	\item The starting \& ending position upon the locus axis;
+	\item The implementation of replacing one set of visual stimuli with the other.
+\end{enumerate}
 
+At the extremes, performing an immediate switch from 100\% real to 100\% virtual is expected to cause the worst break. Performing a slow transition between 100\% real \& 100\% virtual is expected to cause a lesser break. Performing a transition from a combination environment to a non combination environment is expected to cause a lesser break than performing a transition between two non combination environments.
 
+In order to best implement PR for situations such as cultural heritage, ascertaining the optimum manner in which to perform transitions between the constituent environments is important. As such, a number of different transition methods have been implemented.
 
+Whilst in the first phase of user studies, which intended to test the basic concept of a mobile PR system in a cultural heritage scenario, the users only had access to a single type of transition, latter user studies actively compared different transitions within groups. Whilst some of these transitions were performed by the system, outwith of the users' control, the majority were controlled by user triggers. It was thus necessary to provide the user with a control modality with which they could trigger from a set of transitions.
 
+Ideally this control methodology would be something that would not detract from the user's ability to process the visual stimuli they received from the DK1 \& as the camera solution mounted to the DK1 is set up in a manner such that looking at things close to the user (such as a control) in order to differentiate between controls would be uncomfortable due to the heightened negative parallax (see section \ref{constraints_of_dk1_see_through_solution}), a control modality that could be quickly learned \& then used by touch/memory was preferable.
 
+The mobile phone was auditioned, however with only a single input device (a featureless screen, with no touch feedback for different sections \& the difficulty of discerning areas by looking due to the cameras, plus the fact we don't want to have to look) it was decided against.
 
+For another interface to be used, it would have to be usable by a single hand. Although placing the smartphone in a pocket, or in the satchel, was attempted, it had a severe negative impact on the performance of IndoorAtlas, so holding it in a hand is required.
 
+An Xbox 360 controller was chosen to accomplish this goal. When held with just the right hand, the controller features multiple push buttons \& an analogue trigger accessible to the thumb \& first finger. These buttons are easily distinguishable from each other via touch, due to their simple geometric layout.
 
+reference for the fundamentals of HCI, buttons size/shape/placement, etc.
 
+Releasing the button/trigger causes the `default' (thee camera feeds) to be displayed again.
 
+%=========================================================================================================
+
+\subsection{Hard switch}
+\label{sub-hardswitch}
+The user presses \& holds the \texttt{[A]} button on the controller to switch the visual stimuli displayed by the HMD from RW to VR. When the \texttt{[A]} button is released, the visual stimuli displayed by the HMD switch back from VR to RW. This is a `hard' or `immediate' switch with no fading or transition effect. Figure \ref{scenario1} illustrates this scenario.
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=0.7\textwidth]{switching-hard-with-controller.png}
+		\caption{Hard switch.}
+		\label{scenario1}
+	\end{center}
+\end{figure}
+
+%=========================================================================================================
+
+\subsection{Switch with linear interpolation}
+The user presses \& holds the \texttt{[B]} button on the controller to switch the visual stimuli displayed by the HMD from RW to VR. When the \texttt{[B]} button is released, the visual stimuli displayed by the HMD switch back from VR to RW. This switch fades between RW \& VR  visual stimuli using linear interpolation on the opacity of the game objects that the webcam feeds are rendered upon. Figure \ref{scenario12} illustrates this scenario.
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=\textwidth]{switching-soft-with-controller.png}
+		\caption{Switch with linear interpolation.}
+		\label{scenario12}
+	\end{center}
+\end{figure}
+
+%=========================================================================================================
+
+\subsection{Analogue selectable opacity}
+The user pulls the right analogue trigger (\texttt{[RT]}) on the controller, where the position of the trigger maps directly to the opacity of the game objects that the webcam feeds are rendered upon. The user can choose to stop at any intermediary position that suits their needs, keeping the level of opacity of the webcam feeds at that position, as well as controlling the rate at which the visual stimuli from the RW environment fade (by changing how quickly they change their depression of the trigger). Pulling the trigger all the way in displays only visual stimuli from the VR environment, while releasing it completely displays only visual stimuli from the RW environment. The number of intermediary positions is limited only by the resolution of the trigger \& the encoding of the value.
+
+This method allows the user to superimpose VR visual stimuli upon RW visual stimuli. This is similar, but not identical, to AR, as instead of displaying a small number of virtual objects upon the user's view of their RW environment, a complete VR environment is superimposed upon the user's view of their RW environment. Figure \ref{scenario2} illustrates this scenario.
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=.9\textwidth]{switching-analogue-with-controller.png}
+		\caption{Analogue selectable opacity.}
+		\label{scenario2}
+	\end{center}
+\end{figure}
+
+%=========================================================================================================
+
+\subsection{Periodic hard switches}
+\label{subsub-periodic}
+Independent or in addition to any of the previous scenarios, the visual stimuli displayed by the HMD switch from RW to VR at a set interval \& for a set amount of time. For example, every 3 seconds the stimuli switch from RW to VR for 0.2 of a second before switching back from VR to RW. Any user triggered transitions cause the interval timer to be reset, such that an `automated' switch will never occur after less time from a user triggered switch than the set interval. Automated transitions are disabled whilst \texttt{[RT]} is at all depressed. Figure \ref{scenariotimed} illustrates this scenario, where \texttt{i} represents the interval between switches \& \texttt{d} represents the duration of the switch from RW to VR.
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=\textwidth]{timed-switch.png}
+		\caption{Periodic hard switches.}
+		\label{scenariotimed}
+	\end{center}
+\end{figure}
+
+%=========================================================================================================
+
+\subsection{Reduced maximum opacity}
+\label{subsub-baseopacity}
+Independent or in addition to any of the previous scenarios, the maximum opacity of the game objects that the webcam feeds are rendered upon is reduced, such that the `default' position at which a transition has not been triggered (either by a button press, trigger movement or by a periodic switch) displays VR superimposed upon RW. Figure \ref{scenariobaseopacity} illustrates this scenario in combination with a hard switch (from section \ref{sub-hardswitch}) in which the user triggers hard switches between the default position of a superimposition of VR upon RW \& a position where only VR stimuli are present.
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=0.7\textwidth]{base-opacity-hard-switch.png}
+		\caption{Hard switch from reduced maximum opacity.}
+		\label{scenariobaseopacity}
+	\end{center}
+\end{figure}
+
+%=========================================================================================================
+
+%=========================================================================================================
 
 
 
 %=========================================================================================================
 
-\subsection{Implementation}
-Figure \ref{experimentalimplementation} presents an overview of the implementation of the Mirrorshades platform design for use in the chapel investigations.
+
+
+
+
+
+
+
+
+
+
+\section{Bring it all together}
+
+Figure \ref{experimentalimplementation} presents an overview of the integration of components that made up the Mirrorshades platform as used in user studies
+
+implementation of the Mirrorshades platform design for use in the chapel investigations.
 
 \begin{figure}[h]
 	\thispagestyle{empty}
@@ -571,88 +677,6 @@ As the user moves their head, the visuals that are presented to them upon the HM
 As the user changes their position by walking, the visuals that are presented to them upon the HMD's display also change accordingly; again the RW visuals change due to the webcams' position upon the HMD whilst the VR visuals change due to the user's position, as reported by the smartphone \& the IndoorAtlas solution, being used to move the position of the in game cameras to the equivalent position within the VR representation.
 
 As the user presses buttons or pulls triggers upon the Xbox controller, the visuals that are presented to them upon the HMD's display transition between RW \& VR in different styles depending upon which button/trigger was activated.
-
-%=========================================================================================================
-
-\subsection{Transition Methods}
-Attending to visual stimuli from the RW environment via the webcams is required for the user to safely move around. Delay in the IPS reporting their position \& inaccuracies in these position data (see figure \ref{jack-cole-splodges} for a set of example position data) mean that moving around while attending only to visual stimuli from the VR environment would not be safe for the user, even with unchanging RW obstacles with perfectly accurate representations in the VR environment. Furthermore it is actually likely that RW obstacles will not have equivalent VR representations, such as in a scenario where XR is used to compare \& contrast changes to a building's interior over extended periods of time (such as with the chapel investigations).
-
-Thus the HMD displays the feeds from the webcams as default \& the user must trigger transitions to view the VR environment by pressing a button or pulling a trigger on the controller. Releasing the button/trigger causes the webcam feeds to be displayed again.
-
-%=========================================================================================================
-
-\subsubsection{Hard switch}
-\label{sub-hardswitch}
-The user presses \& holds the \texttt{[A]} button on the controller to switch the visual stimuli displayed by the HMD from RW to VR. When the \texttt{[A]} button is released, the visual stimuli displayed by the HMD switch back from VR to RW. This is a `hard' or `immediate' switch with no fading or transition effect. Figure \ref{scenario1} illustrates this scenario.
-
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=0.7\textwidth]{switching-hard-with-controller.png}
-		\caption{Hard switch.}
-		\label{scenario1}
-	\end{center}
-\end{figure}
-
-%=========================================================================================================
-
-\subsubsection{Switch with linear interpolation}
-The user presses \& holds the \texttt{[B]} button on the controller to switch the visual stimuli displayed by the HMD from RW to VR. When the \texttt{[B]} button is released, the visual stimuli displayed by the HMD switch back from VR to RW. This switch fades between RW \& VR  visual stimuli using linear interpolation on the opacity of the game objects that the webcam feeds are rendered upon. Figure \ref{scenario12} illustrates this scenario.
-
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=\textwidth]{switching-soft-with-controller.png}
-		\caption{Switch with linear interpolation.}
-		\label{scenario12}
-	\end{center}
-\end{figure}
-
-%=========================================================================================================
-
-\subsubsection{Analogue selectable opacity}
-The user pulls the right analogue trigger (\texttt{[RT]}) on the controller, where the position of the trigger maps directly to the opacity of the game objects that the webcam feeds are rendered upon. The user can choose to stop at any intermediary position that suits their needs, keeping the level of opacity of the webcam feeds at that position, as well as controlling the rate at which the visual stimuli from the RW environment fade (by changing how quickly they change their depression of the trigger). Pulling the trigger all the way in displays only visual stimuli from the VR environment, while releasing it completely displays only visual stimuli from the RW environment. The number of intermediary positions is limited only by the resolution of the trigger \& the encoding of the value.
-
-This method allows the user to superimpose VR visual stimuli upon RW visual stimuli. This is similar, but not identical, to AR, as instead of displaying a small number of virtual objects upon the user's view of their RW environment, a complete VR environment is superimposed upon the user's view of their RW environment. Figure \ref{scenario2} illustrates this scenario.
-
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=.9\textwidth]{switching-analogue-with-controller.png}
-		\caption{Analogue selectable opacity.}
-		\label{scenario2}
-	\end{center}
-\end{figure}
-
-%=========================================================================================================
-
-\subsubsection{Periodic hard switches}
-\label{subsub-periodic}
-Independent or in addition to any of the previous scenarios, the visual stimuli displayed by the HMD switch from RW to VR at a set interval \& for a set amount of time. For example, every 3 seconds the stimuli switch from RW to VR for 0.2 of a second before switching back from VR to RW. Any user triggered transitions cause the interval timer to be reset, such that an `automated' switch will never occur after less time from a user triggered switch than the set interval. Automated transitions are disabled whilst \texttt{[RT]} is at all depressed. Figure \ref{scenariotimed} illustrates this scenario, where \texttt{i} represents the interval between switches \& \texttt{d} represents the duration of the switch from RW to VR.
-
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=\textwidth]{timed-switch.png}
-		\caption{Periodic hard switches.}
-		\label{scenariotimed}
-	\end{center}
-\end{figure}
-
-%=========================================================================================================
-
-\subsubsection{Reduced maximum opacity}
-\label{subsub-baseopacity}
-Independent or in addition to any of the previous scenarios, the maximum opacity of the game objects that the webcam feeds are rendered upon is reduced, such that the `default' position at which a transition has not been triggered (either by a button press, trigger movement or by a periodic switch) displays VR superimposed upon RW. Figure \ref{scenariobaseopacity} illustrates this scenario in combination with a hard switch (from section \ref{sub-hardswitch}) in which the user triggers hard switches between the default position of a superimposition of VR upon RW \& a position where only VR stimuli are present.
-
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=0.7\textwidth]{base-opacity-hard-switch.png}
-		\caption{Hard switch from reduced maximum opacity.}
-		\label{scenariobaseopacity}
-	\end{center}
-\end{figure}
-
-%=========================================================================================================
-
-
-
 
 
 
