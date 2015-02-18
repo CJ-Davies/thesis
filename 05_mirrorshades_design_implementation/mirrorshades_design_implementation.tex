@@ -319,13 +319,43 @@ In addition to video frames, still photographs taken at the same 1/4000 of a sec
 
 %=========================================================================================================
 
+\subsection{Constraints of DK1 See Through Solution}
+
+Whilst the FOV of the image produced by the C310 is sufficient to fill the area of the DK1's screen visible when extended to its furthest position, there are other aspects of the camera solution to consider, including the depth of field (DoF) of the camera solution \& the fixed convergence of the cameras.
+
+Due to the fact that depth of field of an image captured by a camera increases both as lens focal length \& sensor size decreases, combining a short focal length lens (such as the 2.1mm used in the solution) with a small sensor (such as the 1/4'' type used in the solution) results in a plenty sufficient depth of field when looking through the DK1 with C310 so as not to feel markedly different in this respect to viewing in the same lighting conditions with bare eyes.
+
+With regards to convergence, when viewing an object in the real world the eyes rotate such that the perpendicular axes that bisect each eye converge at the point that one is looking at. This results in disparity between the images produced by each eye, as each sees the object from a different angle due to the physical distance between the eyes. This disparity leads to stereopsis which is one of the contributing factors that leads to our ability to perceive depth. Oculus exploit this situation with their HMDs, by presenting a slightly different image to each eye, allowing virtual objects to appear at varying distances behind or in front of the virtual display.
+
+For a stereo camera video see through solution, however, the convergence between the cameras is fixed, unless one were to implement a complex system employing eye tracking to dynamically physically reorient the cameras to match the orientation of the eyes. Thus one can either chose to mount the cameras parallel to each other, such that their optical axes never converge/converge at infinity, or to fix them `toed-in' such that they converge at a non infinite distance.
+
+With parallel cameras, any object captured by the cameras at infinity will be cast to the virtual screen. However any object captured by the cameras closer than infinity will be cast in front of the virtual screen with negative parallax. Viewing an entire scene in this manner is uncomfortable \& should be avoided. With toed-in cameras, objects behind the convergence point will be rendered with positive parallax \& will appear to be behind the virtual screen, whilst objects before the convergence point will be rendered with negative parallax \& will appear to be in front of the virtual screen.
+
+With toed-in cameras, the distance of the convergence point from the user should be chosen to sit somewhere in the middle of the environment \& task. For Mirrorshades, this distance was set by trial \& error to be somewhere in the region of 15 to 20ft, which resulted in the most comfortable \& natural feeling experience when engaging in the sort of behaviour of a visitor to a cultural heritage site such as St Salvator's chapel, which involves mainly observing aspects of the building \& architecture in this sort of distance range.
+
+Toed-in cameras lead to both depth plane curvature, which causes objects at the corners of the image to appear further away than those toward the centre, \& , keystone distortion, which causes vertical discrepancy between each image, as the cameras' sensors are oriented in different planes, such that for one camera an image will appear larger at one side than the other, whilst for the other camera the image will appear larger on the other side~\cite{Woods1993}. As with depth plane curvature, keystone distortion is worse toward the corners.
+
+A further consideration is the discrepancy between the cameras' sensors \& the users' eyes, caused due to the fact that the cameras must be mounted to the front of the DK1 \& thus several inches in front of the user's eyes. This has the effect of making the user experience viewing the real world from several inches in front of where their eyes truly are (as if their eyes were `on stalks'), whilst viewing VR through the same setup does not have this effect. The distance between the sensors \& the user's eyes was reduced when iterating from the first mounting mechanism with metal stand-offs to the second mechanism with rubber washers, however with the interaction style of Mirrorshades where the user is predominantly focussed on observing objects \& architecture 15-20ft away from them the discrepancy is not particularly noticeable - it is when trying to manipulate objects much closer to the eyes that the discrepancy becomes prominent.
+
+%With a HMD like the DK1, the screen's surface in these discussions is the virtual screen surface that the eye focusses upon, which is different to the physical screen surface. Although the physical screen surface of the DK1 sits only a few inches from the user's face, the virtual screen surface that they actually focus upon appears to be at infinity, thanks to the combination of optics \& rendering shader.
+
+%but always focus on infinity
+
+%Because of the approach that the DK1 uses to produce a `3D' image, by using side-by-side stereoscopic rendering where each eye receives a different image, with these images horizontally separated on the single screen, the solution does not feature zero parallax.
+
+%By displaying a different image to each eye, which are 
+
+%This is however inherent to all side-by-side stereoscopic HMDs \& is not a product of the modifications to the DK1 to afford it with video see through capabilities.
+
+%(autostereoscopic displays feature zero parallax when the image is being formed on the monitor surface)
+
+%=========================================================================================================
+
 \clearpage
 
 %=========================================================================================================
 
 \section{Indoor Positioning Systems}
-
-\textbf{*** \url{https://www.youtube.com/watch?v=i3lEnXZMjms}}
 
 For outdoor applications, GPS represents a suitable solution for the vast majority of position tracking requirements. Global coverage \& the ability to scale accuracy as required, from many metres with a basic GPS receiver such as those integrated into smartphones, to a few metres with SBAS augmentations \& further to as little as 10cm with the deployment of Differential GPS (DGPS) beacons, has led to GPS occupying the role of the `go to' solution where position tracking is required for an outdoor application. For indoor applications however, there is no single technology or solution that provides similar coverage or suitability as GPS does outside: a large number of different technologies have been employed to produce Indoor Positioning Systems (IPS), which are summarised in figure \ref{mautz-table.png}.
 
@@ -430,14 +460,101 @@ Upon closer inspection of the building, metal grating that runs along the ground
 
 \TwoFig{Sallies-photos/DSCN0176.jpg}{No obvious metal around altar.}{DSCN0176.jpg}
        {Sallies-photos/DSCN0177.jpg}{Loudspeaker \& electric light fixture.}{DSCN0177.jpg}
-
+       
 %=========================================================================================================
 
 \section{Mobile Client}
 
-Talk about trying Oculus on Android (ODROID) \& how now Samsung Gear VR would be ideal, but yolo laptop in a bag. Photo of ODROID/screencap of (\& link to) video showing Rift working (at least tracking) with ODROID?
+This needs to come before IndoorAtlas \& Unity section, as using the laptop is important for why the whole MySQL step in the middle was used.
 
-Talk about ease of Unity integration with Oculus at the time (UE4 wasn't really on the scene?).
+Talk about Unity being inherently multiplatform, but there only being Rift support for Windows \& Mac OS at the time (no Android support \& Gear VR wasn't even announced). But mention that Gear VR would now be the ideal platform for this, as it would cut down on so much weight \& complexity \& allow the mobile client \& the IPS to be the same physical device rather than two separate ones - Gear VR even has that convenient input on the side so the controller wouldn't even be strictly necessary.
+
+Picture from video of ODROID working (at least headtracking) with Rift, maybe link to video.
+
+%=========================================================================================================
+
+\subsection{Integrating IndoorAtlas \& Unity}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=.8\linewidth]{Jack-Cole-unity-anchor-new.png}
+		\caption{Anchor point (yellow) \& avatar position (red).}
+		\label{Jack-Cole-unity-anchor-new.png}
+	\end{center}
+\end{figure}
+
+\TwoFig{indooratlas-webpage-jack-cole.png}{foo}{indooratlas-webpage-jack-cole.png}
+        {indooratlas-webpage-sallies.png}{bar}{indooratlas-webpage-sallies.png}
+
+IndoorAtlas works on phone, assumes application using the position will be on same phone
+	so modified example app to submit data via PHP/HTTP POST to a MySQL database for use by other things
+	
+Web pages (both Jack Cole \& Sallies) that used this information
+
+Built Unity application for Android that showed topdown view of Jack Cole using this information
+\url{https://www.youtube.com/watch?v=i3lEnXZMjms}
+Have screenshot from this video
+
+Haversine implementation in Unity
+
+
+
+
+
+%=========================================================================================================
+
+This lot should come after the section on designing/implementing the different transition types.
+
+First time trying it all together - Rift with cameras \& controller, phone providing position data
+\url{https://www.youtube.com/watch?v=oy5NqqDtkJ4}
+screenshots
+
+First time trying it at St Salvator's (myself, just headset video)
+\url{https://www.youtube.com/watch?v=W4oPIHIr9Z4}
+screenshots
+
+First time trying it at St Salvator's with other people (Ariana \& Alan)
+\url{https://www.youtube.com/watch?v=pvGV5dCjt4U}
+screenshots
+
+%=========================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %=========================================================================================================
 
@@ -465,14 +582,6 @@ The hardware of the implementation comprises;
 	\item an Android smartphone, running Android 4.4.4;
 	\item an Xbox 360 wireless controller, with USB receiver.
 \end{itemize}
-
-%\begin{figure}[h]
-%	\begin{center}
-%		\includegraphics[width=0.6\textwidth]{rift.png}
-%		\caption{HMD with stereo camera solution.}
-%		\label{rift}
-%	\end{center}
-%\end{figure}
 
 %=========================================================================================================
 
