@@ -495,17 +495,12 @@ Translating RW positions reported by IndoorAtlas into VR positions within the Un
 %	\end{center}
 %\end{figure}
 	
-Using IndoorAtlas reported positions in Unity is configured \& achieved by a combination of two scripted objects. One object, the anchor point, simply contains fields for the entry \& storage of the RW position information of the anchor point. In the Unity environment this object can be rendered with no texture or collider, such that it does not interfere with the environment in any way, but by using a dedicated object for the anchor point rather than attaching the script to another object, the anchor point object itself can be moved throughout the environment to the correct VR position instead of the user having to enter these details in addition to the corresponding RW ones \& this inferred position then used in the calculations.
+Using IndoorAtlas reported positions in Unity is configured \& achieved by a combination of two scripted objects. One object, the anchor point, simply contains fields for the entry \& storage of the RW position information of the anchor point (see figure \ref{unity-anchor-point.png}). In the Unity environment this object can be rendered with no texture or collider, such that it does not interfere with the environment in any way, but by using a dedicated object for the anchor point rather than attaching the script to another object, the anchor point object itself can be moved throughout the environment to the correct VR position instead of the user having to enter these details in addition to the corresponding RW ones \& this inferred position then used in the calculations.
 
 Thanks to the ability of the Unity engine to build applications for myriad platforms, the integration of IndoorAtlas IPS into Unity could be tested within the department building using a pair of Android smartphones\footnote{\url{https://www.youtube.com/watch?v=i3lEnXZMjms}} before moving on to the full DK1 based setup. This can be seen in figure \ref{indooratlas-two-phones.png}, where the smartphone in the right hand (a Google Nexus 4) is running the modified IndoorAtlas SDK beta example app, POSTing position data to the remote MySQL server, while the smartphone in the left hand (a Google Nexus 5) is running a Unity application that depicts a top-down view of the user's current position within a 3D model of the department building.
 
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=.7\linewidth]{indooratlas-two-phones.png}
-		\caption{Anchor point (yellow) \& avatar position (red).}
-		\label{indooratlas-two-phones.png}
-	\end{center}
-\end{figure}
+\TwoFig{indooratlas-two-phones.png}{Anchor point (yellow) \& avatar position (red).}{indooratlas-two-phones.png}
+       {unity-screenshots/unity-anchor-point.png}{RW anchor point settings in Unity.}{unity-anchor-point.png}
 
 %=========================================================================================================
 
