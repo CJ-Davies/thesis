@@ -223,10 +223,6 @@ The C310 cameras received the same attention as the PS3 Eye cameras; they were d
 
 Unity's \texttt{WebCamTexture} support was used to gain access to the C310 video streams within Unity. Due to better provisioned drivers, there was no issue with Unity obtaining references to both C310 as there had been with two PS3 Eye cameras. These video streams were applied to a pair of planes, of matching orientation \& aspect ratio to the video stream, that are situated perpendicular to the two virtual cameras of the Oculus Unity prefab. This is shown by figure \ref{unity-screenshot-1.png} in which the smaller portrait planes in the centre of the image are those onto which the camera streams are rendered.
 
-It can be seen that these planes overlap considerably as they are only horizontally spaced the same amount as the virtual cameras are spaced, which is derived from the interpupillary distance that the user inputs to the Oculus configuration utility. By placing each of these two planes in a separate layer \& setting the culling mask of the virtual cameras to cull/not-cull these layers appropriately (such that the left virtual camera culls the layer of the right plane but not the left plane \& the right virtual camera culls the layer of the left plane but not the right plane) the appropriate virtual camera only sees the appropriate webcam image, even though they overlap - the left virtual camera sees only the camera plane shown by figure \ref{unity-screenshot-2.png} while the right virtual camera sees only the camera plane shown by figure \ref{unity-screenshot-3.png}.
-
-As the Mirrorshades platform required the user to be able to control which environment they are perceiving, either real or virtual, the visibility of these camera planes (\& the virtual environment behind them) must thus be controllable. The opacity of the camera planes is therefore linked to the control mechanisms, however because the camera planes do not completely fill the DK1's FOV (see section \ref{modifying-dk1} \& figure \ref{fov-comparison-1.png}) two further, larger, planes are situated behind the camera planes which cover the entire FOV of the DK1. The opacity of these planes is also linked to the control mechanisms, such that when the user operates the control mechanism in a manner to view VR, they are completely transparent to allow VR visual stimuli to pass, but when the user operates the control mechanism in a manner to see RW, they become opaque in order to prevent any RW visual stimuli from passing around the camera planes.
-
 \begin{figure}[h]
     \begin{center}
     \begin{minipage}[t]{.32\textwidth}
@@ -254,6 +250,18 @@ As the Mirrorshades platform required the user to be able to control which envir
     \end{minipage}
     \end{center}
 \end{figure}
+
+It can be seen that these planes overlap considerably as they are only horizontally spaced the same amount as the virtual cameras are spaced (see also figure \ref{webcam-overlap.png}), which is derived from the interpupillary distance that the user inputs to the Oculus configuration utility. By placing each of these two planes in a separate layer \& setting the culling mask of the virtual cameras to cull/not-cull these layers appropriately (such that the left virtual camera culls the layer of the right plane but not the left plane \& the right virtual camera culls the layer of the left plane but not the right plane) the appropriate virtual camera only sees the appropriate webcam image, even though they overlap - the left virtual camera sees only the camera plane shown by figure \ref{unity-screenshot-2.png} while the right virtual camera sees only the camera plane shown by figure \ref{unity-screenshot-3.png}.
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=.5\linewidth]{webcam-overlap.png}
+		\caption{Overlap between camera planes.}
+		\label{webcam-overlap.png}
+	\end{center}
+\end{figure}
+
+As the Mirrorshades platform required the user to be able to control which environment they are perceiving, either real or virtual, the visibility of these camera planes (\& the virtual environment behind them) must thus be controllable. The opacity of the camera planes is therefore linked to the control mechanisms, however because the camera planes do not completely fill the DK1's FOV (see section \ref{modifying-dk1} \& figure \ref{fov-comparison-1.png}) two further, larger, planes are situated behind the camera planes which cover the entire FOV of the DK1. The opacity of these planes is also linked to the control mechanisms, such that when the user operates the control mechanism in a manner to view VR, they are completely transparent to allow VR visual stimuli to pass, but when the user operates the control mechanism in a manner to see RW, they become opaque in order to prevent any RW visual stimuli from passing around the camera planes.
 
 The arrangement of these planes in relation to the virtual cameras is shown by figure \ref{unity-screenshot-6.png}, where it can be seen that the smaller camera planes do not fill the virtual cameras' frustum due to the lower FOV of the C310 than of the DK1. Figure \ref{unity-screenshot-7.png} shows a space between the camera planes \& the backing planes, required to avoid a rendering bug that arose when the planes were placed together.
 
@@ -466,15 +474,7 @@ Upon closer inspection of the building, metal grating that runs along the ground
 
 Although the Unity engine allows for executables to be built for myriad platforms, including popular mobile platforms such as Android, iOS \& Windows Phone, at the time of Mirrorshades' development the only platforms upon which Oculus' Unity integration for the DK1 was available were Windows \& Mac OS standalone \& community efforts to support the DK1 on Android were at a rudimentary stage of functional head tracking but no distortion shader\footnote{\url{https://www.youtube.com/watch?v=pO2Vt8CuxsA}}. Thus the mobile client used for the Mirrorshades platform was a small Windows laptop computer, an 11'' Clevo W110ER with an Intel i7-3632QM 4-core/8-thread processor, Nvidia GT 650M graphics card \& 16GiB system memory, to be worn in a satchel that would also serve to hold other hardware \& cables required for the platform to operate.
 
-Since the development of Mirrorshades, Oculus' have partnered with Samsung to produce the Samsung Gear VR, a device that combines Samsung's Galaxy Note 4 smartphone with a HMD housing containing lenses \& head tracker, to produce a mobile VR HMD. Although not available at the time of the development \& experimentation with Mirrorshades, Gear VR now represents an ideal platform for a PR system such as Mirrorshades to be implemented upon. Whilst the graphical quality of the visuals of a smartphone based approach may not match those of a laptop powered approach, the physical modality of the Gear VR is ideal for a mobile application such as the PR exploration of a cultural heritage site, as even in a more graceful setup as those used during Mirrorshades experiments (see figure \ref{mirrorshades-messy-setup.jpg}) the reliance upon a separate HMD, laptop, smartphone \& control device make for a physical modality not suited for anything but research in the lab or field. As Gear VR is based around an Android smartphone it would not only remove the requirement for separate HMD \& client to produce its visuals, as the hardware \& software provision to operate IndoorAtlas is already present within the Note 4 \& the Gear VR HMD housing even features an input area that would negate the requirement for the user to carry a separate control device to perform transitions between their real \& virtual environments.
-
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=.8\linewidth]{mirrorshades-messy-setup.jpg}
-		\caption{Part of an early Mirrorshades hardware setup.}
-		\label{mirrorshades-messy-setup.jpg}
-	\end{center}
-\end{figure}
+Since the development of Mirrorshades, Oculus' have partnered with Samsung to produce the Samsung Gear VR, a device that combines Samsung's Galaxy Note 4 smartphone with a HMD housing containing lenses \& head tracker, to produce a mobile VR HMD. Although not available at the time of the development \& experimentation with Mirrorshades, Gear VR now represents an ideal platform for a PR system such as Mirrorshades to be implemented upon. Whilst the graphical quality of the visuals of a smartphone based approach may not match those of a laptop powered approach, the physical modality of the Gear VR is ideal for a mobile application such as the PR exploration of a cultural heritage site, as even in a more graceful setup as those used during Mirrorshades experiments the reliance upon a separate HMD, laptop, smartphone \& control device make for a physical modality not suited for anything but research in the lab or field. As Gear VR is based around an Android smartphone it would not only remove the requirement for separate HMD \& client to produce its visuals, as the hardware \& software provision to operate IndoorAtlas is already present within the Note 4 \& the Gear VR HMD housing even features an input area that would negate the requirement for the user to carry a separate control device to perform transitions between their real \& virtual environments.
 
 %=========================================================================================================
 
@@ -637,6 +637,9 @@ implementation of the Mirrorshades platform design for use in the chapel investi
 		\label{experimentalimplementation}
 	\end{center}
 \end{figure}
+
+\TwoFig{DSCN0198.jpg}{Mirrorshades hardware.}{DSCN0198.jpg}
+       {DSCN0191.jpg}{Detail of control box.}{DSCN0191.jpg}
 
 %=========================================================================================================
 
