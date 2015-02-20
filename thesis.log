@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2015.2.6)  20 FEB 2015 18:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2015.2.6)  20 FEB 2015 18:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2515,63 +2515,61 @@ ity-hard-switch.png used on input line 620.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
+[90 <./05_mirrorshades_design_implementation/images/switching-analogue-with-con
+troller.png (PNG copy)> <./05_mirrorshades_design_implementation/images/timed-s
+witch.png (PNG copy)>] [91 <./05_mirrorshades_design_implementation/images/base
+-opacity-hard-switch.png>]
 <05_mirrorshades_design_implementation/images/experimental-implementation.png, 
-id=462, 743.8992pt x 325.9377pt>
+id=470, 743.8992pt x 325.9377pt>
 File: 05_mirrorshades_design_implementation/images/experimental-implementation.
 png Graphic file (type png)
 
 <use 05_mirrorshades_design_implementation/images/experimental-implementation.p
 ng>
 Package pdftex.def Info: 05_mirrorshades_design_implementation/images/experimen
-tal-implementation.png used on input line 653.
+tal-implementation.png used on input line 646.
 (pdftex.def)             Requested size: 434.52483pt x 190.38681pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-<05_mirrorshades_design_implementation/images/DSCN0198.jpg, id=463, 903.375pt x
+<05_mirrorshades_design_implementation/images/DSCN0198.jpg, id=471, 903.375pt x
  765.86125pt>
 File: 05_mirrorshades_design_implementation/images/DSCN0198.jpg Graphic file (t
 ype jpg)
  <use 05_mirrorshades_design_implementation/images/DSCN0198.jpg>
 Package pdftex.def Info: 05_mirrorshades_design_implementation/images/DSCN0198.
-jpg used on input line 660.
+jpg used on input line 653.
 (pdftex.def)             Requested size: 230.18253pt x 195.14595pt.
 
-<05_mirrorshades_design_implementation/images/DSCN0191.jpg, id=464, 903.375pt x
+<05_mirrorshades_design_implementation/images/DSCN0191.jpg, id=472, 903.375pt x
  752.8125pt>
 File: 05_mirrorshades_design_implementation/images/DSCN0191.jpg Graphic file (t
 ype jpg)
  <use 05_mirrorshades_design_implementation/images/DSCN0191.jpg>
 Package pdftex.def Info: 05_mirrorshades_design_implementation/images/DSCN0191.
-jpg used on input line 660.
+jpg used on input line 653.
 (pdftex.def)             Requested size: 230.18253pt x 191.82106pt.
 File: 05_mirrorshades_design_implementation/images/DSCN0198.jpg Graphic file (t
 ype jpg)
 
 <use 05_mirrorshades_design_implementation/images/DSCN0198.jpg>
 Package pdftex.def Info: 05_mirrorshades_design_implementation/images/DSCN0198.
-jpg used on input line 660.
+jpg used on input line 653.
 (pdftex.def)             Requested size: 226.25673pt x 191.82106pt.
 File: 05_mirrorshades_design_implementation/images/DSCN0191.jpg Graphic file (t
 ype jpg)
 
 <use 05_mirrorshades_design_implementation/images/DSCN0191.jpg>
 Package pdftex.def Info: 05_mirrorshades_design_implementation/images/DSCN0191.
-jpg used on input line 660.
+jpg used on input line 653.
 (pdftex.def)             Requested size: 230.18527pt x 191.82106pt.
- [90 <./05_mirrorshades_design_implementation/images/switching-analogue-with-co
-ntroller.png (PNG copy)> <./05_mirrorshades_design_implementation/images/timed-
-switch.png (PNG copy)>]
 
-LaTeX Warning: Reference `rift' on page 91 undefined on input line 668.
 
-[91 <./05_mirrorshades_design_implementation/images/base-opacity-hard-switch.pn
-g> <./05_mirrorshades_design_implementation/images/experimental-implementation.
-png>] [92 <./05_mirrorshades_design_implementation/images/DSCN0198.jpg> <./05_m
-irrorshades_design_implementation/images/DSCN0191.jpg>]) [93]
+LaTeX Warning: Reference `rift' on page 92 undefined on input line 661.
+
+[92
+
+ <./05_mirrorshades_design_implementation/images/experimental-implementation.pn
+g> <./05_mirrorshades_design_implementation/images/DSCN0198.jpg> <./05_mirrorsh
+ades_design_implementation/images/DSCN0191.jpg>]) [93]
  6.
 (./06_mirrorshades_studies_results/mirrorshades_studies_results.tex
 <06_mirrorshades_studies_results/images/sallies_layout.png, id=479, 1383.1675pt
@@ -3099,7 +3097,7 @@ t12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/s
 hare/texmf-dist/fonts/type1/public/eurosym/feymo10.pfb></usr/share/texmf-dist/f
 onts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/publ
 ic/cm-super/sfti1000.pfb>
-Output written on thesis.pdf (143 pages, 77468258 bytes).
+Output written on thesis.pdf (143 pages, 77473309 bytes).
 PDF statistics:
  759 PDF objects out of 1000 (max. 8388607)
  390 compressed objects within 4 object streams
