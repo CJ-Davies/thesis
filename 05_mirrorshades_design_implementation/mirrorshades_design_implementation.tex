@@ -423,7 +423,15 @@ During the evaluation phase of different IPS \& their suitability to the envisag
 
 IndoorAtlas promised to be a good match for the IPS requirements of the Mirrorshades platform. In particular, the lack of dependence upon any deployed infrastructure such as ultrasound beacons or visual tracking targets suits the deployment area of Mirrorshades well, as most cultural heritage sites will not be amenable to the deployment of such hardware. Furthermore, the reliance upon only a smartphone held by the user means that coverage is only limited by the area that has prior been mapped in an offline mapping phase, allowing the positioning to scale to arbitrarily large indoor cultural heritage sites. This dependence upon only a smartphone also meets the low cost requirement of the Mirrorshades platform, as mid to high end smartphones with sensitive magnetometers can be purchased for just a few hundred dollars.
 
-The major concern at this point was whether the building materials employed in the construction of cultural heritage sites such as chapels, castles \& cathedrals would create great enough distortions to the Earth's magnetic field for IndoorAtlas to provide its boasted accuracy (which would be sufficient to discern between adjacent rooms, between doorways \& their surrounding walls \& estimate position within rooms \& corridors). These building materials are largely various types of stone, along with wood, a far cry from the metal framework that permeates most modern buildings. Whilst initial tests of the IndoorAtlas beta technology within a departmental building\footnote{\url{https://www.youtube.com/watch?v=l-eIvzpScRs}}\footnote{\url{https://www.youtube.com/watch?v=9hc2zEeQJXQ}} of roughly 40m \& 30m tall were promising, this was a modern building with a steel beam structure \& an abundance of computing infrastructure \& its associated cabling \& cooling provision. Figure \ref{jack-cole-splodges-red.png} shows the results of one of these tests, with each red dot representing a position reported by the IndoorAtlas platform while walking around the building at a slow walking pace ($<1$ms$^{-1}$, akin to how a visitor to a cultural heritage site might walk.
+The major concern at this point was whether the building materials employed in the construction of cultural heritage sites such as chapels, castles \& cathedrals would create great enough distortions to the Earth's magnetic field for IndoorAtlas to provide its boasted accuracy (which would be sufficient to discern between adjacent rooms, between doorways \& their surrounding walls \& estimate position within rooms \& corridors). These building materials are largely various types of stone, along with wood, a far cry from the metal framework that permeates most modern buildings. Whilst initial tests of the IndoorAtlas beta technology within a departmental building\footnote{\url{https://www.youtube.com/watch?v=l-eIvzpScRs}}\footnote{\url{https://www.youtube.com/watch?v=9hc2zEeQJXQ}} of roughly 40m \& 30m tall were promising, this was a modern building with a steel beam structure \& an abundance of computing infrastructure \& its associated cabling \& cooling provision (see figure \ref{jack-cole-ceiling.jpg}). Figure \ref{jack-cole-splodges-red.png} shows the results of one of these tests, with each red dot representing a position reported by the IndoorAtlas platform while walking around the building at a slow walking pace ($<1$ms$^{-1}$, akin to how a visitor to a cultural heritage site might walk.
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=.6\linewidth]{jack-cole-ceiling.jpg}
+		\caption{Metalwork in department building ceiling.}
+		\label{jack-cole-ceiling.jpg}
+	\end{center}
+\end{figure}
 
 \TwoFig{jack-cole-splodges-red.png}{Positions reported by IndoorAtlas.}{jack-cole-splodges-red.png}
        {jack-cole-indooratlas-routes.png}{Route mapped during offline phase.}{jack-cole-indooratlas-routes.png}
@@ -482,8 +490,8 @@ Since the development of Mirrorshades, Oculus' have partnered with Samsung to pr
 
 Due to the role of the mobile client being filled by a laptop computer, position data obtained via IndoorAtlas using an Android smartphone had to be relayed to the laptop. Modifications were made to an IndoorAtlas SDK beta example app, such that it submits position data to a remote MySQL database server via a PHP/HTTP POST mechanism. This not only allows the mobile client to determine its position by polling the database server for the most up-to-date data, but also allows for remote logging (unrestricted by local storage on the smartphone) \& for other applications to easily make use of the location data; during development, a Web based visualisation of the position data was used for both the department building (figure \ref{indooratlas-webpage-jack-cole.png}) \& St Salvator's chapel (figure \ref{indooratlas-webpage-sallies.png}). These Web pages render the position of the user as a red mark using a relative position \texttt{div} \& served as a source of diagnostic information that was quickly accessible from any platform.
 
-\TwoFig{indooratlas-webpage-jack-cole.png}{foo}{indooratlas-webpage-jack-cole.png}
-        {indooratlas-webpage-sallies.png}{bar}{indooratlas-webpage-sallies.png}
+\TwoFig{indooratlas-webpage-jack-cole.png}{Web visualisation of department building positioning.}{indooratlas-webpage-jack-cole.png}
+        {indooratlas-webpage-sallies.png}{Web visualisation of chapel positioning.}{indooratlas-webpage-sallies.png}
 
 Translating RW positions reported by IndoorAtlas into VR positions within the Unity environments is performed in a similar same way as RW positions reported by GPS were translated into VR positions within the OpenSim environment in section \ref{second_life_position_control}, except that the myriad formats that position data are reported by the IndoorAtlas API negates the requirement to use the haversine formula. As well as providing indoor positions in the form of longitude \& latitude pairs, the API also provides positions as offsets from the origin of the floorplan image file used when performing the offline mapping phase, in both pixels \& meters. Thus, instead of deriving the displacement between the anchor point \& the user's position by using haversine to calculate great circle distances between pairs of longitude \& latitude, the displacement is instead obtained by simply adding/negating the position of the user reported in meters from the position of the anchor point also in meters. This approach is possible with IndoorAtlas as the use of a floorplan image provides a frame of reference, that can be indexed by 2D pixel coordinates \& converted into meters using a pixels-per-meter value, that did not exist with the GPS approach adopted for VTW that requires no offline mapping phase.
 
@@ -521,7 +529,7 @@ Considering the first aspect, the difference in breaks in presence is illustrate
 
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[width=\textwidth]{transition-mix-vr.png}
+		\includegraphics[width=.8\textwidth]{transition-mix-vr.png}
 		\caption{Transition between RW/VR mix \& VR.}
 		\label{transition-mix-vr.png}
 	\end{center}
@@ -533,7 +541,7 @@ Considering the second aspect, the difference in breaks is illustrated by once a
 
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[width=\textwidth]{transition-rw-vr-hard.png}
+		\includegraphics[width=.8\textwidth]{transition-rw-vr-hard.png}
 		\caption{Instantaneous replacement of visual stimuli.}
 		\label{transition-rw-vr-hard.png}
 	\end{center}
@@ -559,11 +567,15 @@ The user presses \& holds the \texttt{[A]} button on the controller to switch th
 
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[width=0.7\textwidth]{switching-hard-with-controller.png}
+		\includegraphics[width=0.5\textwidth]{switching-hard-with-controller.png}
 		\caption{Hard switch.}
 		\label{scenario1}
 	\end{center}
 \end{figure}
+
+%=========================================================================================================
+
+\pagebreak
 
 %=========================================================================================================
 
@@ -572,7 +584,7 @@ The user presses \& holds the \texttt{[B]} button on the controller to switch th
 
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[width=\textwidth]{switching-soft-with-controller.png}
+		\includegraphics[width=.8\textwidth]{switching-soft-with-controller.png}
 		\caption{Switch with linear interpolation.}
 		\label{scenario12}
 	\end{center}
@@ -587,11 +599,15 @@ This method allows the user to superimpose VR visual stimuli upon default visual
 
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[width=.9\textwidth]{switching-analogue-with-controller.png}
+		\includegraphics[width=.8\textwidth]{switching-analogue-with-controller.png}
 		\caption{Analogue selectable opacity.}
 		\label{scenario2}
 	\end{center}
 \end{figure}
+
+%=========================================================================================================
+
+\pagebreak
 
 %=========================================================================================================
 
@@ -617,7 +633,7 @@ Independent or in addition to any of the previous scenarios, the maximum opacity
 
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[width=0.7\textwidth]{base-opacity-hard-switch.png}
+		\includegraphics[width=0.5\textwidth]{base-opacity-hard-switch.png}
 		\caption{Hard switch from reduced maximum opacity.}
 		\label{scenariobaseopacity}
 	\end{center}
@@ -625,20 +641,9 @@ Independent or in addition to any of the previous scenarios, the maximum opacity
 
 %=========================================================================================================
 
-%=========================================================================================================
+\section{The Assembled Mirrorshades System}
 
-
-
-\clearpage
-
-
-
-
-\section{Bring it all together}
-
-Figure \ref{experimentalimplementation} presents an overview of the integration of components that made up the Mirrorshades platform as used in user studies
-
-implementation of the Mirrorshades platform design for use in the chapel investigations.
+Figure \ref{experimentalimplementation} presents an overview of individual components \& servuces that make up the Mirrorshades system as used in user studies at St Salvator's chapel.
 
 \begin{figure}[h]
 	\thispagestyle{empty}
@@ -649,53 +654,65 @@ implementation of the Mirrorshades platform design for use in the chapel investi
 	\end{center}
 \end{figure}
 
+\subsection{Hardware Components}
+The hardware components of the system that are carried by the user comprise;
+\begin{itemize}
+	\item an Oculus Rift DK1 HMD modified by the addition of a stereo camera video see through solution comprising 2x Logitech C310 webcams modified with S-mount lens mounts \& 2.1mm lenses to provide approximately 81.2\textdegree\ horizontal FOV of the RW environment;
+	\item a 12000mAh USB battery pack, capable of outputting 2.1A at 5V, to power the DK1;
+	\item a Clevo W110ER laptop computer, with an Intel i7-3632QM four-core/eight-thread processor, Nvidia GT 650M graphics card, 16GiB system memory \& a SSD to allow safe operation while moving;
+	\item a Google Nexus 5 smartphone, running Android 4.4.4;
+	\item an Xbox 360 wireless controller, with USB receiver;
+\end{itemize}
+
+Figure \ref{DSCN0198.jpg} shows an overview of this hardware; the laptop computer is bottom left, the DK1 control box (with USB battery pack, 4-port USB hub \& Xbox controller receiver) is bottom right, the DK1 itself (with camera solution attached) is top right, the Xbox controller is top center \& the Nexus 5 smartphone is top left. Figure \ref{DSCN0191.jpg} shows a detailed view of the USB battery pack (white, bottom), the DK1 control box (directly above battery), the USB hub (on top, right) \& the Xbox controller receiver (top, left). The use of a USB hub allows there to be only two wires running between the control box bundle \& the laptop, which can be seen in figure \ref{DSCN0198.jpg} - the grey cable atop the laptop is the cable from the USB hub \& carries the DK1 head tracker information, camera feeds \& Xbox controller commands, the black cable is the HDMI cable that carries visual output from the laptop to the DK1. Unlike the DK2, which is powered solely by its USB connection, the DK1 requires an external power source as it draws more power than a single USB socket on a computer can provide. Luckily, this external power supply is rated at 5V, the same as a USB connection, so a USB battery pack that provides sufficient current (more than a computer's USB sockets, but less than high powered USB wall chargers \& battery packs) could be used to enabled the DK1 to be used mobile.
+
 \TwoFig{DSCN0198.jpg}{Mirrorshades hardware.}{DSCN0198.jpg}
        {DSCN0191.jpg}{Detail of control box.}{DSCN0191.jpg}
 
-%=========================================================================================================
+The laptop \& control box bundle are carried in a satchel hung over the user's shoulder, the smartphone is held in their left hand \& the Xbox controller is held in their right hand. Figure \ref{participant-f.png} shows this arrangement.
 
-\subsection{Hardware Components}
-The hardware of the implementation comprises;
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=\linewidth]{participant-f.png}
+		\caption{Participant using the Mirrorshades platform at St Salvator's chapel.}
+		\label{participant-f.png}
+	\end{center}
+\end{figure}
 
-\begin{itemize}
-	\item an Oculus Rift DK1 HMD, including a 9-axis (3dof rotational) head tracker sampling at 1000Hz \& mounted with a stereo camera solution comprising 2x Logitech C310 webcams modified with M12 lens mounts \& 2.1mm lenses to provide approximately 87 degrees horizontal FOV of the RW environment (see figure \ref{rift});
-	\item a USB battery pack, to power the HMD;
-	\item a small laptop computer, with an Intel i7-3632QM processor, Nvidia GT 650M graphics card \& 16GiB system memory;
-	\item an Android smartphone, running Android 4.4.4;
-	\item an Xbox 360 wireless controller, with USB receiver.
-\end{itemize}
-
-%=========================================================================================================
+In addition to this hardware carried by the user, a remote server is used to provide a MySQL database. During the user studies at St Salvator's chapel, the server used had an Intel Xeon E3-1270 four-core/eight-thread processor, 32GiB RAM, 4x WD RE4 1TB hard disks in software RAID6 \& 100mbit/s Internet connectivity. This server ran the Debian stable release, with a standard LAMP stack \& mdadm for RAID management.
 
 \subsection{Software Components}
-The software of the implementation comprises;
-
+The software components of the system comprise;
 \begin{itemize}
-	\item an Android application that runs on the smartphone, determines the location of the phone within the building that it is in using the IndoorAtlas IPS~\cite{IndoorAtlasLtd.2012} (figure \ref{sallies_layout} shows the paths within the chapel upon which the IPS has been configured) \& submits these location data via PHP to a database server;
-	\item a MySQL database server that stores location data for the phone \& allows these data to be accessed both by the Unity application running upon the laptop \& by a web visualisation;
-	\item a Unity application that runs on the laptop.
+	\item an Android application that runs on the Nexus 5 smartphone, determines the location of the smartphone within the building that it is in using IndoorAtlas \& submits these location data via PHP to a database server;
+	\item a PHP page on the database server that allows IndoorAtlas position data to be submitted to MySQL;
+	\item a MySQL database server that stores location data for the phone \& allows these data to be accessed by any SQL capable client;
+	\item Web visualizations of position data held within the MySQL database for both the department building \& St Salvtor's chapel;
+	\item a Unity application that runs on the laptop, combining a virtual model of the building, experienced with the DK1's head tracking, with RW camera streams, controllable via Xbox controller actions.
 \end{itemize}
+
+Due to the use of a SSD with high transfer rates, the video stream sent to the DK1 from the Unity application could be recorded to the SSD, which by using Nvidia's ShadowPlay\footnote{\url{http://www.geforce.co.uk/geforce-experience/shadowplay}} technology, is accomplished without a measurable detriment to framerate of the application. Unlike traditional software video capture solutions such as FRAPS\footnote{\url{http://www.fraps.com/}}, which read individual frames from the graphics hardware's back buffer \& then encode them using the CPU, ShadowPlay makes use of hardware accelerated support built into the GPU to perform the capture \& encode process upon the GPU \& thus reduce the overhead introduced by FRAPS like methods.
 
 %=========================================================================================================
 
-\subsection{Integration of Components}
-The Unity application hosts the VR representation of the chapel \& takes in feeds from both webcams, the HMD head tracker \& the Xbox controller. It also polls the database server for the most recent position data. All of these inputs are combined together to form the visual output for the HMD to display to the user.
+\subsection{Execution}
+The Unity application hosts the VR representation of the chapel \& takes in feeds from both cameras, the DK1 head tracker \& the Xbox controller. It also polls the MySQL server for the most recent position data. All of these inputs are combined together to form the visual output for the DK1 to display to the user. As the user moves their head, the visuals that are presented to them upon the DK1's display change accordingly; the RW visuals change due to the cameras being physically fixed to the DK1 \& the VR visuals change due to data from the head tracker being used to change the orientation of the in game `cameras' accordingly.
 
-As the user moves their head, the visuals that are presented to them upon the HMD's display change accordingly; the RW visuals change due to the webcams being physically fixed to the HMD \& the VR visuals change due to data from the head tracker being used to change the orientation of the in game `cameras' accordingly.
+Alignment between RW \& VR is achieved simply by placing the DK1 in the appropriate orientation before starting the Unity application - the Unity prefab that encapsulates the avatar functionality has a known virtual origin orientation \& knowing this allows the DK1 to simply be oriented to match it to align the RW \& VR visuals. The drift inherent in the DK1 head tracker means that this alignment will eventually decay until it negatively affects the user experience, however in the initial tests of the platform in preparation for user studies it became apparent that the length of time required for this drift to post a problem is substantially longer than the amount of time a user is expected to use the platform for exploring a site such as St Salvator's chapel. Most visitors (without using the Mirrorshades platform) to the chapel were observed to spend roughly 5 minutes walking through \& observing the building \& tests of roughly 15 minutes duration with the Mirrorshades platform revealed no noticeable drift from the original quality of alignment.
 
-As the user changes their position by walking, the visuals that are presented to them upon the HMD's display also change accordingly; again the RW visuals change due to the webcams' position upon the HMD whilst the VR visuals change due to the user's position, as reported by the smartphone \& the IndoorAtlas solution, being used to move the position of the in game cameras to the equivalent position within the VR representation.
+As the user changes their position by walking, the visuals that are presented to them upon the DK1's display also change accordingly; again the RW visuals change due to the cameras' physical position upon the DK1 whilst the VR visuals change due to the user's position, as reported by the smartphone \& IndoorAtlas, being used to move the position of the relevant Unity prefab to the equivalent position within the VR representation. As the user presses buttons or pulls triggers upon the Xbox controller, the visuals that are presented to them upon the DK1's display transition between RW \& VR in different styles depending upon which button/trigger was activated.
 
-As the user presses buttons or pulls triggers upon the Xbox controller, the visuals that are presented to them upon the HMD's display transition between RW \& VR in different styles depending upon which button/trigger was activated.
+%=========================================================================================================
 
+\section{Initial Testing}
 
-
-\section{Putting it all together}
-
-This lot should come after the section on designing/implementing the different transition types.
+The completed Mirrorshades platform was initially tested within the department building
 
 First time trying it all together - Rift with cameras \& controller, phone providing position data
 \url{https://www.youtube.com/watch?v=oy5NqqDtkJ4}
 screenshots
+
+Note that in this footage \& screencaps, the camera feeds are rendered to the full expanse of the DK1's display, something which would later be changed to match FOV correctly (see section \ref{modifying-dk1}).
 
 First time trying it at St Salvator's (myself, just headset video)
 \url{https://www.youtube.com/watch?v=W4oPIHIr9Z4}
@@ -704,3 +721,5 @@ screenshots
 First time trying it at St Salvator's with other people (Ariana \& Alan)
 \url{https://www.youtube.com/watch?v=pvGV5dCjt4U}
 screenshots
+
+Using fade as the default.
