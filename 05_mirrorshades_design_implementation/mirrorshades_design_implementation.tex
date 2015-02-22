@@ -579,7 +579,8 @@ The user presses \& holds the \texttt{[A]} button on the controller to switch th
 
 %=========================================================================================================
 
-\subsection{Switch with linear interpolation}
+\subsection{Transition with linear interpolation}
+\label{transition-with-linear-interpolation}
 The user presses \& holds the \texttt{[B]} button on the controller to switch the visual stimuli displayed by the DK1 from the default to VR. When the \texttt{[B]} button is released, the visual stimuli displayed by the HMD switch back from VR to the default. This switch fades between the default \& VR  visual stimuli using linear interpolation on the opacity of the game objects that the webcam feeds are rendered upon. Figure \ref{scenario12} illustrates this scenario while figure \ref{focus-locus-sensus-with-virtuality-continuum-with-transition}, discussed in the previous section, alludes to the user's experience of this transition upon the combined model (assuming a default environment that is wholly RW).
 
 \begin{figure}[h]
@@ -706,20 +707,46 @@ As the user changes their position by walking, the visuals that are presented to
 
 \section{Initial Testing}
 
-The completed Mirrorshades platform was initially tested within the department building
+The completed Mirrorshades platform was initially tested within the department building\footnote{\url{https://www.youtube.com/watch?v=oy5NqqDtkJ4}}, as shown in figures \ref{testing-vids-screenshots/jc-1.png} to \ref{testing-vids-screenshots/jc-4.png}. Note that this test took place with an earlier PS3 Eye based camera solution in which the camera feeds were rendered to the full expanse of the DK1's display, rather than the later C310 solution in which the camera feeds have their FOV correctly scaled to the DK1's display (see section \ref{modifying-dk1}). This initial integration test confirmed the correct functioning of the platform as a whole \& that the accuracy of the IPS was great enough for the desired modality of interaction, at least within the department building with its abundance of metal building materials \& electricla provisions.
 
-First time trying it all together - Rift with cameras \& controller, phone providing position data
-\url{https://www.youtube.com/watch?v=oy5NqqDtkJ4}
-screenshots
+\TwoFig{testing-vids-screenshots/jc-1.png}{}{testing-vids-screenshots/jc-1.png}
+       {testing-vids-screenshots/jc-2.png}{}{testing-vids-screenshots/jc-2.png}
 
-Note that in this footage \& screencaps, the camera feeds are rendered to the full expanse of the DK1's display, something which would later be changed to match FOV correctly (see section \ref{modifying-dk1}).
+\TwoFig{testing-vids-screenshots/jc-3.png}{}{testing-vids-screenshots/jc-3.png}
+       {testing-vids-screenshots/jc-4.png}{}{testing-vids-screenshots/jc-4.png}
 
-First time trying it at St Salvator's (myself, just headset video)
-\url{https://www.youtube.com/watch?v=W4oPIHIr9Z4}
-screenshots
+\pagebreak
 
-First time trying it at St Salvator's with other people (Ariana \& Alan)
-\url{https://www.youtube.com/watch?v=pvGV5dCjt4U}
-screenshots
+The first test in St Salvator's chapel\footnote{\url{https://www.youtube.com/watch?v=W4oPIHIr9Z4}}, as shown in figures \ref{testing-vids-screenshots/sallies-first-1.png} \& \ref{testing-vids-screenshots/sallies-first-2.png}, confirmed that the accuracy of the IPS within the chapel was great enough \& that the wireless network provision within the chapel was of sufficient speed \& stability to support the operating of the platform.
 
-Using fade as the default.
+\TwoFig{testing-vids-screenshots/sallies-first-1.png}{}{testing-vids-screenshots/sallies-first-1.png}
+       {testing-vids-screenshots/sallies-first-2.png}{}{testing-vids-screenshots/sallies-first-2.png}
+
+Testing then took place with members of the Open Virtual Worlds research group\footnote{\url{https://www.youtube.com/watch?v=pvGV5dCjt4U}}, as seen in figures \ref{testing-vids-screenshots/sallies-second-1.png} to \ref{testing-vids-screenshots/sallies-second-1.png}, to provide initial feedback from participants not involved closely with the design \& development of the platform. During these early tests, there was already a strong preference expressed from the participants toward the transition with linear interpolation (see section \ref{transition-with-linear-interpolation}) which is why in the following user studies this was the transition adopted for those in which there was only a single user-controllable transition style.
+
+\TwoFig{testing-vids-screenshots/sallies-second-1.png}{}{testing-vids-screenshots/sallies-second-1.png}
+       {testing-vids-screenshots/sallies-second-4.png}{}{testing-vids-screenshots/sallies-second-4.png}
+
+\TwoFig{testing-vids-screenshots/sallies-second-5.png}{}{testing-vids-screenshots/sallies-second-5.png}
+       {testing-vids-screenshots/sallies-second-6.png}{}{testing-vids-screenshots/sallies-second-6.png}
+
+\TwoFig{testing-vids-screenshots/sallies-second-7.png}{}{testing-vids-screenshots/sallies-second-7.png}
+       {testing-vids-screenshots/sallies-second-8.png}{}{testing-vids-screenshots/sallies-second-8.png}
+
+%=========================================================================================================
+
+\section{Conclusions}
+\begin{itemize}
+	\item Learned from VTW, needed more accurate positioning \& more immersive display tech
+	\item Moving to indoor \& HMD solves both, whilst also allowing the PR investigation to cover a different deployment scenario
+	\item Sallies chapel is a perfect case study
+	\item VR is hot right now, after disappointment in the 90's, thanks to Oculus, we used a DK1
+	\item All sorts of stereoscopic vision stuff, built \& calibrated see through solution
+	\item Did latency measures, has constraints
+	\item Unlike outdoors where GPS rules, indoors is fragmented with lots of solutions, IndoorAtlas is great for MShades
+	\item Putting together Android/IndoorAtlas, to Unity, via PHP/MySQL, with Xbox controller
+	\item Informed design/implementation of transitions, using combined Milgram/Waterworth model for justification
+	\item Complete system tested in department, then in Sallies, then in Sallies with research group, informed some decisions about the user studies
+\end{itemize}
+
+%=========================================================================================================
