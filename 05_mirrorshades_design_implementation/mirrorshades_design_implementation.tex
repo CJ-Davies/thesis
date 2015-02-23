@@ -192,7 +192,7 @@ Although the initial integration test with a single PS3 Eye camera revealed easy
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=.8\linewidth]{ps3-eye-unity-overwrite.png}
-		\caption{Unity failing to stat multiple PS3 Eye cameras.}
+		\caption{Unity failing to instantiate references to multiple PS3 Eye cameras.}
 		\label{ps3-eye-unity-overwrite.png}
 	\end{center}
 \end{figure}
@@ -200,7 +200,7 @@ Although the initial integration test with a single PS3 Eye camera revealed easy
 An oversight in the design of the camera mounts was realised by when William Steptoe later released details of his `AR Rift' project\footnote{\url{http://willsteptoe.com/post/66968953089/ar-rift-part-1}}. Although the DK1's overall screen has a resolution of 1280x800 in a `horizontal' 16:10 aspect ratio, each `half' of this screen as presented individually to each eye has a resolution of 640x800 in a `vertical' 4:5 aspect ratio. Thus to best match the aspect ratio of a 4:3 camera sensor, such as that of the PS3 Eye, to each half of the DK1's screen, that camera should be oriented in a portrait orientation rather than the landscape orientation employed by this project with the PS3 Eye cameras. Thus new mounting hardware was designed \& printed, by further modification of the USC's original 3D designs, allowing for vertical mounting of the PS3 Eye cameras. This new design is shown in figure \ref{clips-vert.jpg} (the recessed section in the centre of the clip allows for the heads of bolts to clear the front of the DK1) \& the assembled units are shown attached to the DK1 in figure \ref{vert-6.jpg}. Additionally soon after this point, the metal stand-offs that had been used to mount the camera PCBs to the clips (see figure \ref{vert-1.jpg}) were replaced with a combination of rubber washers \& threaded bolts (see figure \ref{vert-4.jpg}) both to reduce the discrepancy in the mediated RW images caused by the distance between the camera sensors \& the user's eyes (by reducing this distance) \& to allow for finer alteration of the orientation of the cameras.
 
 \TwoFig{rift-clips-cameras/clips-vert.jpg}{Updated camera mount.}{clips-vert.jpg}
-       {rift-clips-cameras/vert-6.jpg}{Two PS3 Eye cameras using updated mounts.}{vert-6.jpg}
+       {rift-clips-cameras/vert-6.jpg}{PS3 Eye cameras using updated mounts.}{vert-6.jpg}
 
 \TwoFig{rift-clips-cameras/vert-1.jpg}{Updated mount with stand-offs.}{vert-1.jpg}
        {rift-clips-cameras/vert-4.jpg}{Updated mount with rubber washers.}{vert-4.jpg}
@@ -210,10 +210,10 @@ Unfortunately the PS3 Eye naming solution was temperamental at best \& two camer
 The C310 cameras received the same attention as the PS3 Eye cameras; they were dismantled \& outfitted with S-mount lens mounts. As the sensor in the C310 is also of the 1/4" type, the FOV provided by the 2.1mm lenses on the C310 cameras will be comparable to that of the same lenses mounted to the PS3 Eye cameras. Due to the lack of mounting holes present on the C310 PCB, the PCBs were set into a thin sheet of thermoplastic (figure \ref{thermoplastic.jpg}) which was then attached to the 3D printed clips with the same rubber washer \& threaded bolt arrangement as the PS3 Eye cameras. The assembled DK1 + dual C310 solution is shown by figures \ref{vert-7.jpg} (3/4 view), \ref{middle.jpg} (profile view) \& \ref{right.jpg} (detail view).
 
 \TwoFig{rift-clips-cameras/thermoplastic.jpg}{Setting C310 PCBs into thermoplastic.}{thermoplastic.jpg}
-       {rift-clips-cameras/vert-7.jpg}{Two C310 mounted to DK1 (3/4).}{vert-7.jpg}
+       {rift-clips-cameras/vert-7.jpg}{C310 mounted to DK1 (three-quarter view).}{vert-7.jpg}
 
-\TwoFig{rift-clips-cameras/middle.jpg}{Two C310 mounted to DK1 (front).}{middle.jpg}
-       {rift-clips-cameras/right.jpg}{Two C310 mounted to DK1 (detail).}{right.jpg}
+\TwoFig{rift-clips-cameras/middle.jpg}{C310 mounted to DK1 (front view).}{middle.jpg}
+       {rift-clips-cameras/right.jpg}{C310 mounted to DK1 (detail view).}{right.jpg}
 
 \clearpage
 
@@ -289,11 +289,11 @@ Measurement of the end-to-end latency of the C310 solution was performed by plac
 
 Both the monitor \& the DK1's screen refresh at 60Hz, each frame lasting for 16.67ms, whilst a 1/4000 of a second shutter on a camera means that the shutter is open for 0.25ms. The response time of the monitor (quoted by the manufacturer as 8ms grey-to-grey) was evidently much higher than that of the Rift, as the tenths \& even hundredths digit on the monitor was usually legible in each frame of the video whereas on the Rift the hundredths \& thousandths digits were always illegible. Thus to determine the latency of the DK1 + camera setup using Unity, adjacent video frames were identified where a transition from one tenth digit to the next was legible enough on the Rift's display \& the hundredths/thousandths digits were legible enough on the monitor, such as the pair shown by figures \ref{vid1.jpg} \& \ref{vid2.jpg}. From these values, it can be inferred that the tenths digit on the DK1's screen (visible through the right eyecup hole) changed from 9 (figure \ref{vid1.jpg}) to 0 (figure \ref{vid2.jpg}) sometime between 181ms (figure \ref{vid1.jpg}) \& 198ms (figure \ref{vid2.jpg}) on the monitor, which represents a latency of between 181ms \& 198ms. Out of 11 pairs of frames like this, 7 pairs showed this 181-198ms latency, while 4 showed 198-215ms latency as in figures \ref{vid3.jpg} \& \ref{vid4.jpg}.
 
-\TwoFig{latency/vid1.jpg}{vid1.jpg}{vid1.jpg}
-       {latency/vid2.jpg}{vid2.jpg}{vid2.jpg}
+\TwoFig{latency/vid1.jpg}{Measuring latency (video frame).}{vid1.jpg}
+       {latency/vid2.jpg}{Measuring latency (video frame).}{vid2.jpg}
 
-\TwoFig{latency/vid3.jpg}{vid3.jpg}{vid3.jpg}
-       {latency/vid4.jpg}{vid4.jpg}{vid4.jpg}
+\TwoFig{latency/vid3.jpg}{Measuring latency (video frame).}{vid3.jpg}
+       {latency/vid4.jpg}{Measuring latency (video frame).}{vid4.jpg}
 
 In addition to video frames, still photographs taken at the same 1/4000 of a second shutter speed gave some better legible stills which corroborated this 181-251ms figure. This figure is substantially greater than the 30-60ms figure often quoted\footnote{\url{https://www.oculus.com/blog/the-latent-power-of-prediction/}} as the upper limit for an acceptable VR experience, however how much it affects a relatively `slow' style of interaction such as that of applying PR to a cultural heritage site versus that of a `fast' application such as a competitive twitch game is open to interpretation from experimental results.
 
@@ -302,7 +302,7 @@ In addition to video frames, still photographs taken at the same 1/4000 of a sec
     \begin{minipage}{.32\textwidth}
         \begin{center}
         \includegraphics[width=\textwidth]{latency/still1.jpg}
-        \caption{still1.jpg}
+        \caption{Measuring latency (still photograph).}
         \label{still1.jpg}
         \end{center}
     \end{minipage}%
@@ -310,7 +310,7 @@ In addition to video frames, still photographs taken at the same 1/4000 of a sec
     \begin{minipage}{.32\textwidth}
 		\begin{center}
         \includegraphics[width=\textwidth]{latency/still2.jpg}
-        \caption{still2.jpg}
+        \caption{Measuring latency (still photograph).}
         \label{still2.jpg}
         \end{center}
     \end{minipage}%
@@ -318,7 +318,7 @@ In addition to video frames, still photographs taken at the same 1/4000 of a sec
     \begin{minipage}{.32\textwidth}
         \begin{center}
         \includegraphics[width=\textwidth]{latency/still3.jpg}
-        \caption{still3.jpg}
+        \caption{Measuring latency (still photograph).}
         \label{still3.jpg}
         \end{center}
     \end{minipage}
@@ -709,29 +709,29 @@ As the user changes their position by walking, the visuals that are presented to
 
 The completed Mirrorshades platform was initially tested within the department building\footnote{\url{https://www.youtube.com/watch?v=oy5NqqDtkJ4}}, as shown in figures \ref{testing-vids-screenshots/jc-1.png} to \ref{testing-vids-screenshots/jc-4.png}. Note that this test took place with an earlier PS3 Eye based camera solution in which the camera feeds were rendered to the full expanse of the DK1's display, rather than the later C310 solution in which the camera feeds have their FOV correctly scaled to the DK1's display (see section \ref{modifying-dk1}). This initial integration test confirmed the correct functioning of the platform as a whole \& that the accuracy of the IPS was great enough for the desired modality of interaction, at least within the department building with its abundance of metal building materials \& electricla provisions.
 
-\TwoFig{testing-vids-screenshots/jc-1.png}{}{testing-vids-screenshots/jc-1.png}
-       {testing-vids-screenshots/jc-2.png}{}{testing-vids-screenshots/jc-2.png}
+\TwoFig{testing-vids-screenshots/jc-1.png}{Mirrorshades test in department building.}{testing-vids-screenshots/jc-1.png}
+       {testing-vids-screenshots/jc-2.png}{Mirrorshades test in department building.}{testing-vids-screenshots/jc-2.png}
 
-\TwoFig{testing-vids-screenshots/jc-3.png}{}{testing-vids-screenshots/jc-3.png}
-       {testing-vids-screenshots/jc-4.png}{}{testing-vids-screenshots/jc-4.png}
+\TwoFig{testing-vids-screenshots/jc-3.png}{Mirrorshades test in department building.}{testing-vids-screenshots/jc-3.png}
+       {testing-vids-screenshots/jc-4.png}{Mirrorshades test in department building.}{testing-vids-screenshots/jc-4.png}
 
 \pagebreak
 
 The first test in St Salvator's chapel\footnote{\url{https://www.youtube.com/watch?v=W4oPIHIr9Z4}}, as shown in figures \ref{testing-vids-screenshots/sallies-first-1.png} \& \ref{testing-vids-screenshots/sallies-first-2.png}, confirmed that the accuracy of the IPS within the chapel was great enough \& that the wireless network provision within the chapel was of sufficient speed \& stability to support the operating of the platform.
 
-\TwoFig{testing-vids-screenshots/sallies-first-1.png}{}{testing-vids-screenshots/sallies-first-1.png}
-       {testing-vids-screenshots/sallies-first-2.png}{}{testing-vids-screenshots/sallies-first-2.png}
+\TwoFig{testing-vids-screenshots/sallies-first-1.png}{Mirrorshades test in St Salvator's chapel.}{testing-vids-screenshots/sallies-first-1.png}
+       {testing-vids-screenshots/sallies-first-2.png}{Mirrorshades test in St Salvator's chapel.}{testing-vids-screenshots/sallies-first-2.png}
 
 Testing then took place with members of the Open Virtual Worlds research group\footnote{\url{https://www.youtube.com/watch?v=pvGV5dCjt4U}}, as seen in figures \ref{testing-vids-screenshots/sallies-second-1.png} to \ref{testing-vids-screenshots/sallies-second-1.png}, to provide initial feedback from participants not involved closely with the design \& development of the platform. During these early tests, there was already a strong preference expressed from the participants toward the transition with linear interpolation (see section \ref{transition-with-linear-interpolation}) which is why in the following user studies this was the transition adopted for those in which there was only a single user-controllable transition style.
 
-\TwoFig{testing-vids-screenshots/sallies-second-1.png}{}{testing-vids-screenshots/sallies-second-1.png}
-       {testing-vids-screenshots/sallies-second-4.png}{}{testing-vids-screenshots/sallies-second-4.png}
+\TwoFig{testing-vids-screenshots/sallies-second-1.png}{Mirrorshades test with OVW group members in St Salvator's chapel.}{testing-vids-screenshots/sallies-second-1.png}
+       {testing-vids-screenshots/sallies-second-4.png}{Mirrorshades test with OVW group members in St Salvator's chapel.}{testing-vids-screenshots/sallies-second-4.png}
 
-\TwoFig{testing-vids-screenshots/sallies-second-5.png}{}{testing-vids-screenshots/sallies-second-5.png}
-       {testing-vids-screenshots/sallies-second-6.png}{}{testing-vids-screenshots/sallies-second-6.png}
+\TwoFig{testing-vids-screenshots/sallies-second-5.png}{Mirrorshades test with OVW group members in St Salvator's chapel.}{testing-vids-screenshots/sallies-second-5.png}
+       {testing-vids-screenshots/sallies-second-6.png}{Mirrorshades test with OVW group members in St Salvator's chapel.}{testing-vids-screenshots/sallies-second-6.png}
 
-\TwoFig{testing-vids-screenshots/sallies-second-7.png}{}{testing-vids-screenshots/sallies-second-7.png}
-       {testing-vids-screenshots/sallies-second-8.png}{}{testing-vids-screenshots/sallies-second-8.png}
+\TwoFig{testing-vids-screenshots/sallies-second-7.png}{Mirrorshades test with OVW group members in St Salvator's chapel.}{testing-vids-screenshots/sallies-second-7.png}
+       {testing-vids-screenshots/sallies-second-8.png}{Mirrorshades test with OVW group members in St Salvator's chapel.}{testing-vids-screenshots/sallies-second-8.png}
 
 %=========================================================================================================
 
