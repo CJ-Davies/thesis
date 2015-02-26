@@ -1,111 +1,107 @@
-\contentsline {chapter}{\numberline {1}Introduction}{13}
-\contentsline {chapter}{\numberline {2}Extended Example}{14}
-\contentsline {chapter}{\numberline {3}Background, Theory \& Rationale}{15}
-\contentsline {section}{\numberline {3.1}Defining Alternate Realities}{15}
-\contentsline {subsection}{\numberline {3.1.1}Milgram et al.'s Reality-Virtuality Continuum}{16}
-\contentsline {subsection}{\numberline {3.1.2}Roy Want's Virtuality Matrix}{17}
-\contentsline {subsection}{\numberline {3.1.3}Steve Mann's Venn Diagrams}{18}
-\contentsline {section}{\numberline {3.2}Summary of Alternate Reality Definitions}{19}
-\contentsline {section}{\numberline {3.3}Additional Alternate Reality Terms}{20}
-\contentsline {subsection}{\numberline {3.3.1}HyperReality}{20}
-\contentsline {subsection}{\numberline {3.3.2}PolySocial Reality}{21}
-\contentsline {section}{\numberline {3.4}Cross Reality}{21}
-\contentsline {subsection}{\numberline {3.4.1}Alternate Reality Definitions from Cross Reality}{23}
-\contentsline {subsection}{\numberline {3.4.2}Position of Cross Reality}{24}
-\contentsline {section}{\numberline {3.5}Parallel Reality}{25}
-\contentsline {subsection}{\numberline {3.5.1}Spatial Equivalence in Parallel Reality}{26}
-\contentsline {section}{\numberline {3.6}Summary of Additional Alternate Reality Definitions}{28}
-\contentsline {section}{\numberline {3.7}Presence}{28}
-\contentsline {subsection}{\numberline {3.7.1}Waterworth \& Waterworth's three dimensions of virtual experience}{28}
-\contentsline {section}{\numberline {3.8}Transitions in Parallel Reality}{29}
-\contentsline {subsection}{\numberline {3.8.1}Transitions using the Combined Model}{30}
-\contentsline {section}{\numberline {3.9}The Case for Parallel Reality}{31}
-\contentsline {section}{\numberline {3.10}Conclusions}{32}
-\contentsline {chapter}{\numberline {4}A Virtual Time Window}{33}
-\contentsline {section}{\numberline {4.1}Virtual Heritage}{33}
-\contentsline {subsection}{\numberline {4.1.1}Alternate Reality Techniques in Virtual Heritage}{34}
-\contentsline {subsection}{\numberline {4.1.2}Virtual Heritage at the University of St Andrews}{36}
-\contentsline {subsection}{\numberline {4.1.3}Parallel Reality in Virtual Heritage}{38}
-\contentsline {section}{\numberline {4.2}The Virtual Time Window}{39}
-\contentsline {subsection}{\numberline {4.2.1}Second Life \& Mobility}{40}
-\contentsline {section}{\numberline {4.3}Orientation Control}{40}
-\contentsline {subsection}{\numberline {4.3.1}Exploiting Second Life's Joystick Support}{42}
-\contentsline {section}{\numberline {4.4}Position Control}{43}
-\contentsline {subsection}{\numberline {4.4.1}GPS Receivers}{45}
-\contentsline {subsection}{\numberline {4.4.2}OpenSim Region Module}{48}
-\contentsline {section}{\numberline {4.5}Modifying Second Life for Orientation \& Position Control}{49}
-\contentsline {subsection}{\numberline {4.5.1}Overview of Second Life Client Modifications}{50}
-\contentsline {subsection}{\numberline {4.5.2}\texttt {LLViewerSerialMovement} reference}{51}
-\contentsline {section}{\numberline {4.6}VTW in Use}{54}
-\contentsline {subsection}{\numberline {4.6.1}Experimental Implementation}{55}
-\contentsline {subsection}{\numberline {4.6.2}Real World Performance of VTW}{55}
-\contentsline {subsection}{\numberline {4.6.3}Performance Implications}{58}
-\contentsline {section}{\numberline {4.7}Conclusions}{59}
-\contentsline {chapter}{\numberline {5}Mirrorshades - Development}{60}
-\contentsline {section}{\numberline {5.1}Learning from VTW}{60}
-\contentsline {subsection}{\numberline {5.1.1}The Mirrorshades Platform}{61}
-\contentsline {subsection}{\numberline {5.1.2}St Salvator's Chapel}{61}
-\contentsline {section}{\numberline {5.2}Virtual Reality Head Mounted Displays}{63}
-\contentsline {subsection}{\numberline {5.2.1}The Oculus Rift DK1 \& Unity Game Engine}{65}
-\contentsline {subsection}{\numberline {5.2.2}Modifying the DK1 for See Through Video}{65}
-\contentsline {subsection}{\numberline {5.2.3}Switchable Stereoscopic See Through Video with Unity}{72}
-\contentsline {subsection}{\numberline {5.2.4}Latency of DK1 See Through Video Solution}{73}
-\contentsline {subsection}{\numberline {5.2.5}Constraints of DK1 See Through Solution}{74}
-\contentsline {section}{\numberline {5.3}Indoor Positioning Systems}{76}
-\contentsline {subsection}{\numberline {5.3.1}IPS Requirements for Mirrorshades}{77}
-\contentsline {subsection}{\numberline {5.3.2}PlayStation Move}{79}
-\contentsline {subsection}{\numberline {5.3.3}Indoor Atlas}{79}
-\contentsline {section}{\numberline {5.4}Mobile Client}{82}
-\contentsline {subsection}{\numberline {5.4.1}Integrating IndoorAtlas \& Unity}{83}
-\contentsline {section}{\numberline {5.5}Informing Transitions Between RW \& VR}{84}
-\contentsline {section}{\numberline {5.6}Transition Types}{86}
-\contentsline {subsection}{\numberline {5.6.1}Hard switch}{87}
-\contentsline {subsection}{\numberline {5.6.2}Transition with linear interpolation}{88}
-\contentsline {subsection}{\numberline {5.6.3}Analogue selectable opacity}{88}
-\contentsline {subsection}{\numberline {5.6.4}Periodic hard switches}{89}
-\contentsline {subsection}{\numberline {5.6.5}Reduced maximum opacity}{89}
-\contentsline {section}{\numberline {5.7}The Assembled Mirrorshades System}{90}
-\contentsline {subsection}{\numberline {5.7.1}Hardware Components}{90}
-\contentsline {subsection}{\numberline {5.7.2}Software Components}{91}
-\contentsline {subsection}{\numberline {5.7.3}Execution}{92}
-\contentsline {section}{\numberline {5.8}Initial Testing}{93}
-\contentsline {section}{\numberline {5.9}Conclusions}{94}
-\contentsline {chapter}{\numberline {6}Mirrorshades - Evaluation}{97}
-\contentsline {section}{\numberline {6.1}Overview}{97}
-\contentsline {section}{\numberline {6.2}Stage 1 - PR for Virtual Heritage}{97}
-\contentsline {subsection}{\numberline {6.2.1}Design of the Scenarios}{98}
-\contentsline {subsection}{\numberline {6.2.2}Evaluation Techniques}{99}
-\contentsline {subsection}{\numberline {6.2.3}Process}{100}
-\contentsline {section}{\numberline {6.3}Hypotheses}{101}
-\contentsline {subsection}{\numberline {6.3.1}SUS}{101}
-\contentsline {subsection}{\numberline {6.3.2}12-item Likert-type Questionnaire}{101}
-\contentsline {subsection}{\numberline {6.3.3}Log data}{102}
-\contentsline {subsection}{\numberline {6.3.4}Interviews}{102}
-\contentsline {section}{\numberline {6.4}Stage 1 Results}{102}
-\contentsline {subsection}{\numberline {6.4.1}Pre-task Questionnaire}{103}
-\contentsline {subsection}{\numberline {6.4.2}SUS}{103}
-\contentsline {subsection}{\numberline {6.4.3}12-item Questionnaire}{103}
-\contentsline {subsection}{\numberline {6.4.4}Participant 1}{104}
-\contentsline {subsection}{\numberline {6.4.5}Participant 3}{106}
-\contentsline {subsection}{\numberline {6.4.6}Participant 4}{108}
-\contentsline {subsection}{\numberline {6.4.7}Participant 5}{109}
-\contentsline {subsection}{\numberline {6.4.8}Participant 6}{111}
-\contentsline {section}{\numberline {6.5}Stage 2}{114}
-\contentsline {subsection}{\numberline {6.5.1}Evaluation}{114}
-\contentsline {subsubsection}{Subjective Quantitative - Post-Task Questionnaire}{114}
-\contentsline {section}{\numberline {6.6}Phase 2.1 Results}{115}
-\contentsline {subsection}{\numberline {6.6.1}Participant 7}{116}
-\contentsline {subsection}{\numberline {6.6.2}Participant 8}{117}
-\contentsline {subsection}{\numberline {6.6.3}Participant 9}{119}
-\contentsline {subsection}{\numberline {6.6.4}Participant 10}{121}
-\contentsline {subsection}{\numberline {6.6.5}Participant 11}{123}
-\contentsline {subsection}{\numberline {6.6.6}Participant 12}{125}
-\contentsline {subsection}{\numberline {6.6.7}Participant 13}{127}
-\contentsline {section}{\numberline {6.7}Phase 2.2 Results}{129}
-\contentsline {subsection}{\numberline {6.7.1}Participant 14}{130}
-\contentsline {subsection}{\numberline {6.7.2}Participant 15}{132}
-\contentsline {subsection}{\numberline {6.7.3}Participant 16}{134}
-\contentsline {subsection}{\numberline {6.7.4}Participant 17}{136}
-\contentsline {chapter}{\numberline {7}Conclusions \& Discussion}{138}
-\contentsline {chapter}{Appendices}{138}
-\contentsline {chapter}{Bibliography}{138}
+\contentsline {chapter}{\numberline {1}Introduction}{16}
+\contentsline {chapter}{\numberline {2}Extended Example}{17}
+\contentsline {chapter}{\numberline {3}Background, Theory \& Rationale}{18}
+\contentsline {section}{\numberline {3.1}Defining Alternate Realities}{19}
+\contentsline {subsection}{\numberline {3.1.1}Milgram et al.'s Reality-Virtuality Continuum}{19}
+\contentsline {subsection}{\numberline {3.1.2}Roy Want's Virtuality Matrix}{21}
+\contentsline {subsection}{\numberline {3.1.3}Steve Mann's Venn Diagrams}{22}
+\contentsline {section}{\numberline {3.2}Summary of Alternate Reality Definitions}{24}
+\contentsline {section}{\numberline {3.3}Additional Alternate Reality Terms}{26}
+\contentsline {subsection}{\numberline {3.3.1}HyperReality}{26}
+\contentsline {subsection}{\numberline {3.3.2}PolySocial Reality}{26}
+\contentsline {section}{\numberline {3.4}Cross Reality}{27}
+\contentsline {subsection}{\numberline {3.4.1}Alternate Reality Definitions from Cross Reality}{29}
+\contentsline {subsection}{\numberline {3.4.2}Position of Cross Reality}{30}
+\contentsline {section}{\numberline {3.5}Parallel Reality}{32}
+\contentsline {subsection}{\numberline {3.5.1}Spatial Equivalence in Parallel Reality}{33}
+\contentsline {section}{\numberline {3.6}Summary of Additional Alternate Reality Definitions}{34}
+\contentsline {section}{\numberline {3.7}Presence}{35}
+\contentsline {subsection}{\numberline {3.7.1}Waterworth \& Waterworth's three dimensions of virtual experience}{35}
+\contentsline {section}{\numberline {3.8}Transitions in Parallel Reality}{36}
+\contentsline {subsection}{\numberline {3.8.1}Transitions using the Combined Model}{38}
+\contentsline {section}{\numberline {3.9}The Case for Parallel Reality}{39}
+\contentsline {section}{\numberline {3.10}Conclusions}{40}
+\contentsline {chapter}{\numberline {4}A Virtual Time Window}{42}
+\contentsline {section}{\numberline {4.1}Virtual Heritage}{42}
+\contentsline {subsection}{\numberline {4.1.1}Alternate Reality Techniques in Virtual Heritage}{43}
+\contentsline {subsection}{\numberline {4.1.2}Virtual Heritage at the University of St Andrews}{46}
+\contentsline {subsection}{\numberline {4.1.3}Parallel Reality in Virtual Heritage}{49}
+\contentsline {section}{\numberline {4.2}The Virtual Time Window}{50}
+\contentsline {subsection}{\numberline {4.2.1}Second Life \& Mobility}{51}
+\contentsline {section}{\numberline {4.3}Orientation Control}{52}
+\contentsline {subsection}{\numberline {4.3.1}Exploiting Second Life's Joystick Support}{54}
+\contentsline {section}{\numberline {4.4}Position Control}{56}
+\contentsline {subsection}{\numberline {4.4.1}GPS Receivers}{58}
+\contentsline {subsection}{\numberline {4.4.2}OpenSim Region Module}{61}
+\contentsline {section}{\numberline {4.5}Modifying Second Life for Orientation \& Position Control}{62}
+\contentsline {subsection}{\numberline {4.5.1}Overview of Second Life Client Modifications}{63}
+\contentsline {subsection}{\numberline {4.5.2}\texttt {LLViewerSerialMovement} reference}{63}
+\contentsline {section}{\numberline {4.6}VTW in Use}{69}
+\contentsline {subsection}{\numberline {4.6.1}Experimental Implementation}{70}
+\contentsline {subsection}{\numberline {4.6.2}Real World Performance of VTW}{71}
+\contentsline {subsection}{\numberline {4.6.3}Performance Implications}{75}
+\contentsline {section}{\numberline {4.7}Conclusions}{76}
+\contentsline {chapter}{\numberline {5}Mirrorshades - Development}{77}
+\contentsline {section}{\numberline {5.1}Learning from VTW}{77}
+\contentsline {subsection}{\numberline {5.1.1}The Mirrorshades Platform}{78}
+\contentsline {subsection}{\numberline {5.1.2}St Salvator's Chapel}{79}
+\contentsline {section}{\numberline {5.2}Virtual Reality Head Mounted Displays}{81}
+\contentsline {subsection}{\numberline {5.2.1}The Oculus Rift DK1 \& Unity Game Engine}{83}
+\contentsline {subsection}{\numberline {5.2.2}Modifying the DK1 for See Through Video}{84}
+\contentsline {subsection}{\numberline {5.2.3}Switchable Stereoscopic See Through Video with Unity}{91}
+\contentsline {subsection}{\numberline {5.2.4}Latency of DK1 See Through Video Solution}{93}
+\contentsline {subsection}{\numberline {5.2.5}Constraints of DK1 See Through Solution}{95}
+\contentsline {section}{\numberline {5.3}Indoor Positioning Systems}{97}
+\contentsline {subsection}{\numberline {5.3.1}IPS Requirements for Mirrorshades}{97}
+\contentsline {subsection}{\numberline {5.3.2}PlayStation Move}{100}
+\contentsline {subsection}{\numberline {5.3.3}Indoor Atlas}{101}
+\contentsline {section}{\numberline {5.4}Mobile Client}{103}
+\contentsline {subsection}{\numberline {5.4.1}Integrating IndoorAtlas \& Unity}{105}
+\contentsline {section}{\numberline {5.5}Informing Transitions Between RW \& VR}{106}
+\contentsline {section}{\numberline {5.6}Transition Types}{110}
+\contentsline {subsection}{\numberline {5.6.1}Hard switch}{110}
+\contentsline {subsection}{\numberline {5.6.2}Transition with linear interpolation}{111}
+\contentsline {subsection}{\numberline {5.6.3}Analogue selectable opacity}{111}
+\contentsline {subsection}{\numberline {5.6.4}Periodic hard switches}{112}
+\contentsline {subsection}{\numberline {5.6.5}Reduced maximum opacity}{113}
+\contentsline {section}{\numberline {5.7}The Assembled Mirrorshades System}{113}
+\contentsline {subsection}{\numberline {5.7.1}Hardware Components}{113}
+\contentsline {subsection}{\numberline {5.7.2}Software Components}{115}
+\contentsline {subsection}{\numberline {5.7.3}Execution}{116}
+\contentsline {section}{\numberline {5.8}Initial Testing}{117}
+\contentsline {section}{\numberline {5.9}Conclusions}{118}
+\contentsline {chapter}{\numberline {6}Mirrorshades - Evaluation}{120}
+\contentsline {section}{\numberline {6.1}Overview}{120}
+\contentsline {section}{\numberline {6.2}Stage 1 - PR for Virtual Heritage}{121}
+\contentsline {subsection}{\numberline {6.2.1}Design of the Scenarios}{123}
+\contentsline {subsection}{\numberline {6.2.2}Evaluation Techniques}{124}
+\contentsline {subsection}{\numberline {6.2.3}Process}{126}
+\contentsline {section}{\numberline {6.3}Hypotheses}{126}
+\contentsline {section}{\numberline {6.4}Stage 1 Results}{128}
+\contentsline {subsection}{\numberline {6.4.1}Pre-task Questionnaire}{129}
+\contentsline {subsection}{\numberline {6.4.2}SUS}{130}
+\contentsline {subsection}{\numberline {6.4.3}12-item Questionnaire}{130}
+\contentsline {subsection}{\numberline {6.4.4}Participant 1}{131}
+\contentsline {subsection}{\numberline {6.4.5}Participant 3}{133}
+\contentsline {subsection}{\numberline {6.4.6}Participant 4}{135}
+\contentsline {subsection}{\numberline {6.4.7}Participant 5}{136}
+\contentsline {subsection}{\numberline {6.4.8}Participant 6}{138}
+\contentsline {section}{\numberline {6.5}Stage 2}{141}
+\contentsline {subsection}{\numberline {6.5.1}Evaluation}{141}
+\contentsline {subsubsection}{Subjective Quantitative - Post-Task Questionnaire}{141}
+\contentsline {section}{\numberline {6.6}Phase 2.1 Results}{141}
+\contentsline {subsection}{\numberline {6.6.1}Participant 7}{142}
+\contentsline {subsection}{\numberline {6.6.2}Participant 8}{143}
+\contentsline {subsection}{\numberline {6.6.3}Participant 9}{145}
+\contentsline {subsection}{\numberline {6.6.4}Participant 10}{147}
+\contentsline {subsection}{\numberline {6.6.5}Participant 11}{149}
+\contentsline {subsection}{\numberline {6.6.6}Participant 12}{151}
+\contentsline {subsection}{\numberline {6.6.7}Participant 13}{153}
+\contentsline {section}{\numberline {6.7}Phase 2.2 Results}{155}
+\contentsline {subsection}{\numberline {6.7.1}Participant 14}{156}
+\contentsline {subsection}{\numberline {6.7.2}Participant 15}{158}
+\contentsline {subsection}{\numberline {6.7.3}Participant 16}{160}
+\contentsline {subsection}{\numberline {6.7.4}Participant 17}{162}
+\contentsline {chapter}{\numberline {7}Conclusions \& Discussion}{164}
+\contentsline {chapter}{Appendices}{164}
+\contentsline {chapter}{Bibliography}{164}
