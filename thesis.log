@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2015.2.5)  25 FEB 2015 21:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2015.2.6)  26 FEB 2015 14:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2918,11 +2918,8 @@ File: 06_mirrorshades_studies_results/images/chapel-path.png Graphic file (type
  png)
  <use 06_mirrorshades_studies_results/images/chapel-path.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/chapel-path.png
- used on input line 42.
+ used on input line 40.
 (pdftex.def)             Requested size: 266.14978pt x 135.14063pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 [98]
 Underfull \hbox (badness 4621) in paragraph at lines 77--78
@@ -3385,10 +3382,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 8378 strings out of 493108
- 159719 string characters out of 6140726
- 476956 words of memory out of 5000000
- 11467 multiletter control sequences out of 15000+600000
+ 8379 strings out of 493108
+ 159736 string characters out of 6140726
+ 476967 words of memory out of 5000000
+ 11468 multiletter control sequences out of 15000+600000
  14507 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,18n,51p,2114b,1372s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3413,7 +3410,7 @@ t12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/s
 hare/texmf-dist/fonts/type1/public/eurosym/feymo10.pfb></usr/share/texmf-dist/f
 onts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/publ
 ic/cm-super/sfti1000.pfb>
-Output written on thesis.pdf (144 pages, 95749257 bytes).
+Output written on thesis.pdf (144 pages, 95750326 bytes).
 PDF statistics:
  786 PDF objects out of 1000 (max. 8388607)
  392 compressed objects within 4 object streams
