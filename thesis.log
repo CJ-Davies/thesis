@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2015.2.6)  27 FEB 2015 17:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2015.2.6)  27 FEB 2015 18:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2965,6 +2965,11 @@ Missing character: There is no ™ in font cmr10!
  [129 <./06_mirrorshades_studies_results/images/1/sus.png (PNG copy)> <./06_mir
 rorshades_studies_results/images/1/post_task_questionnaire_boxplot.png (PNG cop
 y)>] [130]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 269.
+
+
 <06_mirrorshades_studies_results/images/1/1_pitch_yaw_2up.png, id=631, 1927.2pt
  x 680.5425pt>
 File: 06_mirrorshades_studies_results/images/1/1_pitch_yaw_2up.png Graphic file
@@ -2976,7 +2981,8 @@ up.png used on input line 271.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 277.
 
 
 <06_mirrorshades_studies_results/images/1/4_pitch_yaw_2up.png, id=632, 1927.2pt
@@ -2990,7 +2996,8 @@ up.png used on input line 279.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 285.
 
 
 <06_mirrorshades_studies_results/images/1/6_pitch_yaw_2up.png, id=633, 1927.2pt
@@ -3002,35 +3009,28 @@ File: 06_mirrorshades_studies_results/images/1/6_pitch_yaw_2up.png Graphic file
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/1/6_pitch_yaw_2
 up.png used on input line 287.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[131]
-<06_mirrorshades_studies_results/images/1/1_pitch_yaw.png, id=637, 1927.2pt x 6
+ [131]
+[132 <./06_mirrorshades_studies_results/images/1/1_pitch_yaw_2up.png (PNG copy)
+> <./06_mirrorshades_studies_results/images/1/4_pitch_yaw_2up.png (PNG copy)> <
+./06_mirrorshades_studies_results/images/1/6_pitch_yaw_2up.png (PNG copy)>]
+<06_mirrorshades_studies_results/images/1/1_pitch_yaw.png, id=640, 1927.2pt x 6
 80.5425pt>
 File: 06_mirrorshades_studies_results/images/1/1_pitch_yaw.png Graphic file (ty
 pe png)
  <use 06_mirrorshades_studies_results/images/1/1_pitch_yaw.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/1/1_pitch_yaw.p
-ng used on input line 386.
+ng used on input line 371.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-<06_mirrorshades_studies_results/images/1/3_pitch_yaw.png, id=638, 1927.2pt x 6
+<06_mirrorshades_studies_results/images/1/3_pitch_yaw.png, id=641, 1927.2pt x 6
 80.5425pt>
 File: 06_mirrorshades_studies_results/images/1/3_pitch_yaw.png Graphic file (ty
 pe png)
  <use 06_mirrorshades_studies_results/images/1/3_pitch_yaw.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/1/3_pitch_yaw.p
-ng used on input line 396.
+ng used on input line 381.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
 
-[132 <./06_mirrorshades_studies_results/images/1/1_pitch_yaw_2up.png (PNG copy)
-> <./06_mirrorshades_studies_results/images/1/4_pitch_yaw_2up.png (PNG copy)>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -3041,23 +3041,22 @@ File: 06_mirrorshades_studies_results/images/1/5_pitch_yaw.png Graphic file (ty
 pe png)
  <use 06_mirrorshades_studies_results/images/1/5_pitch_yaw.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/1/5_pitch_yaw.p
-ng used on input line 404.
+ng used on input line 389.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[133 <./06_mirrorshades_studies_results/images/1/6_pitch_yaw_2up.png (PNG copy)
->] [134 <./06_mirrorshades_studies_results/images/1/1_pitch_yaw.png (PNG copy)>
- <./06_mirrorshades_studies_results/images/1/3_pitch_yaw.png (PNG copy)>]
-[135 <./06_mirrorshades_studies_results/images/1/5_pitch_yaw.png (PNG copy)>]
+[133 <./06_mirrorshades_studies_results/images/1/1_pitch_yaw.png (PNG copy)>]
+[134 <./06_mirrorshades_studies_results/images/1/3_pitch_yaw.png (PNG copy)> <.
+/06_mirrorshades_studies_results/images/1/5_pitch_yaw.png (PNG copy)>] [135]
 <06_mirrorshades_studies_results/images/1/1_4up.png, id=653, 1927.2pt x 1362.08
 875pt>
 File: 06_mirrorshades_studies_results/images/1/1_4up.png Graphic file (type png
 )
  <use 06_mirrorshades_studies_results/images/1/1_4up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/1/1_4up.png use
-d on input line 538.
+d on input line 520.
 (pdftex.def)             Requested size: 443.57848pt x 313.50244pt.
  [136
 
@@ -3068,7 +3067,7 @@ File: 06_mirrorshades_studies_results/images/1/1_2up.png Graphic file (type png
 )
  <use 06_mirrorshades_studies_results/images/1/1_2up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/1/1_2up.png use
-d on input line 547.
+d on input line 529.
 (pdftex.def)             Requested size: 443.57848pt x 313.50244pt.
  [137
 
@@ -3079,7 +3078,7 @@ File: 06_mirrorshades_studies_results/images/1/3_4up.png Graphic file (type png
 )
  <use 06_mirrorshades_studies_results/images/1/3_4up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/1/3_4up.png use
-d on input line 560.
+d on input line 542.
 (pdftex.def)             Requested size: 443.57848pt x 313.50244pt.
  [138
 
@@ -3090,7 +3089,7 @@ File: 06_mirrorshades_studies_results/images/1/3_2up.png Graphic file (type png
 )
  <use 06_mirrorshades_studies_results/images/1/3_2up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/1/3_2up.png use
-d on input line 569.
+d on input line 551.
 (pdftex.def)             Requested size: 443.57848pt x 313.50244pt.
  [139
 
@@ -3101,7 +3100,7 @@ File: 06_mirrorshades_studies_results/images/1/4_4up.png Graphic file (type png
 )
  <use 06_mirrorshades_studies_results/images/1/4_4up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/1/4_4up.png use
-d on input line 582.
+d on input line 564.
 (pdftex.def)             Requested size: 443.57848pt x 313.50244pt.
  [140
 
@@ -3112,7 +3111,7 @@ File: 06_mirrorshades_studies_results/images/1/4_2up.png Graphic file (type png
 )
  <use 06_mirrorshades_studies_results/images/1/4_2up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/1/4_2up.png use
-d on input line 591.
+d on input line 573.
 (pdftex.def)             Requested size: 443.57848pt x 313.50244pt.
  [141
 
@@ -3123,7 +3122,7 @@ File: 06_mirrorshades_studies_results/images/1/5_4up.png Graphic file (type png
 )
  <use 06_mirrorshades_studies_results/images/1/5_4up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/1/5_4up.png use
-d on input line 604.
+d on input line 586.
 (pdftex.def)             Requested size: 443.57848pt x 313.50244pt.
  [142
 
@@ -3134,7 +3133,7 @@ File: 06_mirrorshades_studies_results/images/1/5_2up.png Graphic file (type png
 )
  <use 06_mirrorshades_studies_results/images/1/5_2up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/1/5_2up.png use
-d on input line 613.
+d on input line 595.
 (pdftex.def)             Requested size: 443.57848pt x 313.50244pt.
  [143
 
@@ -3145,7 +3144,7 @@ File: 06_mirrorshades_studies_results/images/1/6_4up.png Graphic file (type png
 )
  <use 06_mirrorshades_studies_results/images/1/6_4up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/1/6_4up.png use
-d on input line 626.
+d on input line 608.
 (pdftex.def)             Requested size: 443.57848pt x 313.50244pt.
  [144
 
@@ -3156,13 +3155,13 @@ File: 06_mirrorshades_studies_results/images/1/6_2up.png Graphic file (type png
 )
  <use 06_mirrorshades_studies_results/images/1/6_2up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/1/6_2up.png use
-d on input line 635.
+d on input line 617.
 (pdftex.def)             Requested size: 443.57848pt x 313.50244pt.
  [145
 
  <./06_mirrorshades_studies_results/images/1/6_2up.png (PNG copy)>]
 
-LaTeX Warning: Reference `ipqitems' on page 146 undefined on input line 681.
+LaTeX Warning: Reference `ipqitems' on page 146 undefined on input line 663.
 
 [146
 
@@ -3173,7 +3172,7 @@ File: 06_mirrorshades_studies_results/images/2.1/7_1-4_3up.png Graphic file (ty
 pe png)
  <use 06_mirrorshades_studies_results/images/2.1/7_1-4_3up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/7_1-4_3up.p
-ng used on input line 709.
+ng used on input line 691.
 (pdftex.def)             Requested size: 443.57848pt x 313.50244pt.
 
 [147
@@ -3185,7 +3184,7 @@ File: 06_mirrorshades_studies_results/images/2.1/8_1-3_3up.png Graphic file (ty
 pe png)
  <use 06_mirrorshades_studies_results/images/2.1/8_1-3_3up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/8_1-3_3up.p
-ng used on input line 722.
+ng used on input line 704.
 (pdftex.def)             Requested size: 443.57848pt x 313.50244pt.
 
 [148
@@ -3197,7 +3196,7 @@ File: 06_mirrorshades_studies_results/images/2.1/8_1-4_3up.png Graphic file (ty
 pe png)
  <use 06_mirrorshades_studies_results/images/2.1/8_1-4_3up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/8_1-4_3up.p
-ng used on input line 731.
+ng used on input line 713.
 (pdftex.def)             Requested size: 443.57848pt x 313.50244pt.
 
 [149
@@ -3209,7 +3208,7 @@ File: 06_mirrorshades_studies_results/images/2.1/9_1-3_3up.png Graphic file (ty
 pe png)
  <use 06_mirrorshades_studies_results/images/2.1/9_1-3_3up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/9_1-3_3up.p
-ng used on input line 744.
+ng used on input line 726.
 (pdftex.def)             Requested size: 443.57848pt x 313.50244pt.
 
 [150
@@ -3221,7 +3220,7 @@ File: 06_mirrorshades_studies_results/images/2.1/9_1-4_3up.png Graphic file (ty
 pe png)
  <use 06_mirrorshades_studies_results/images/2.1/9_1-4_3up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/9_1-4_3up.p
-ng used on input line 753.
+ng used on input line 735.
 (pdftex.def)             Requested size: 443.57848pt x 313.50244pt.
 
 [151
@@ -3233,7 +3232,7 @@ File: 06_mirrorshades_studies_results/images/2.1/10_1-3_3up.png Graphic file (t
 ype png)
  <use 06_mirrorshades_studies_results/images/2.1/10_1-3_3up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/10_1-3_3up.
-png used on input line 766.
+png used on input line 748.
 (pdftex.def)             Requested size: 443.57848pt x 313.50244pt.
 
 [152
@@ -3245,7 +3244,7 @@ File: 06_mirrorshades_studies_results/images/2.1/10_1-4_3up.png Graphic file (t
 ype png)
  <use 06_mirrorshades_studies_results/images/2.1/10_1-4_3up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/10_1-4_3up.
-png used on input line 775.
+png used on input line 757.
 (pdftex.def)             Requested size: 443.57848pt x 313.50244pt.
 
 [153
@@ -3257,7 +3256,7 @@ File: 06_mirrorshades_studies_results/images/2.1/11_1-3_3up.png Graphic file (t
 ype png)
  <use 06_mirrorshades_studies_results/images/2.1/11_1-3_3up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/11_1-3_3up.
-png used on input line 788.
+png used on input line 770.
 (pdftex.def)             Requested size: 443.57848pt x 313.50244pt.
 
 [154
@@ -3269,7 +3268,7 @@ File: 06_mirrorshades_studies_results/images/2.1/11_1-4_3up.png Graphic file (t
 ype png)
  <use 06_mirrorshades_studies_results/images/2.1/11_1-4_3up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/11_1-4_3up.
-png used on input line 797.
+png used on input line 779.
 (pdftex.def)             Requested size: 443.57848pt x 313.50244pt.
 
 [155
@@ -3281,7 +3280,7 @@ File: 06_mirrorshades_studies_results/images/2.1/12_1-3_3up.png Graphic file (t
 ype png)
  <use 06_mirrorshades_studies_results/images/2.1/12_1-3_3up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/12_1-3_3up.
-png used on input line 810.
+png used on input line 792.
 (pdftex.def)             Requested size: 443.57848pt x 313.50244pt.
 
 [156
@@ -3293,7 +3292,7 @@ File: 06_mirrorshades_studies_results/images/2.1/12_1-4_3up.png Graphic file (t
 ype png)
  <use 06_mirrorshades_studies_results/images/2.1/12_1-4_3up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/12_1-4_3up.
-png used on input line 819.
+png used on input line 801.
 (pdftex.def)             Requested size: 443.57848pt x 313.50244pt.
 
 [157
@@ -3305,7 +3304,7 @@ File: 06_mirrorshades_studies_results/images/2.1/13_1-3_3up.png Graphic file (t
 ype png)
  <use 06_mirrorshades_studies_results/images/2.1/13_1-3_3up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/13_1-3_3up.
-png used on input line 832.
+png used on input line 814.
 (pdftex.def)             Requested size: 443.57848pt x 313.50244pt.
 
 [158
@@ -3317,7 +3316,7 @@ File: 06_mirrorshades_studies_results/images/2.1/13_1-4_3up.png Graphic file (t
 ype png)
  <use 06_mirrorshades_studies_results/images/2.1/13_1-4_3up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/13_1-4_3up.
-png used on input line 841.
+png used on input line 823.
 (pdftex.def)             Requested size: 443.57848pt x 313.50244pt.
 
 [159
@@ -3332,7 +3331,7 @@ File: 06_mirrorshades_studies_results/images/2.2/14_75_2up.png Graphic file (ty
 pe png)
  <use 06_mirrorshades_studies_results/images/2.2/14_75_2up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.2/14_75_2up.p
-ng used on input line 860.
+ng used on input line 842.
 (pdftex.def)             Requested size: 443.57848pt x 249.50821pt.
 
 [161
@@ -3344,7 +3343,7 @@ File: 06_mirrorshades_studies_results/images/2.2/14_50_2up.png Graphic file (ty
 pe png)
  <use 06_mirrorshades_studies_results/images/2.2/14_50_2up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.2/14_50_2up.p
-ng used on input line 869.
+ng used on input line 851.
 (pdftex.def)             Requested size: 443.57848pt x 249.50821pt.
 
 [162
@@ -3356,7 +3355,7 @@ File: 06_mirrorshades_studies_results/images/2.2/15_75_2up.png Graphic file (ty
 pe png)
  <use 06_mirrorshades_studies_results/images/2.2/15_75_2up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.2/15_75_2up.p
-ng used on input line 882.
+ng used on input line 864.
 (pdftex.def)             Requested size: 443.57848pt x 249.50821pt.
 
 [163
@@ -3368,7 +3367,7 @@ File: 06_mirrorshades_studies_results/images/2.2/15_50_2up.png Graphic file (ty
 pe png)
  <use 06_mirrorshades_studies_results/images/2.2/15_50_2up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.2/15_50_2up.p
-ng used on input line 891.
+ng used on input line 873.
 (pdftex.def)             Requested size: 443.57848pt x 249.50821pt.
 
 [164
@@ -3380,7 +3379,7 @@ File: 06_mirrorshades_studies_results/images/2.2/16_75_2up.png Graphic file (ty
 pe png)
  <use 06_mirrorshades_studies_results/images/2.2/16_75_2up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.2/16_75_2up.p
-ng used on input line 904.
+ng used on input line 886.
 (pdftex.def)             Requested size: 443.57848pt x 249.50821pt.
 
 [165
@@ -3392,7 +3391,7 @@ File: 06_mirrorshades_studies_results/images/2.2/16_50_2up.png Graphic file (ty
 pe png)
  <use 06_mirrorshades_studies_results/images/2.2/16_50_2up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.2/16_50_2up.p
-ng used on input line 913.
+ng used on input line 895.
 (pdftex.def)             Requested size: 443.57848pt x 249.50821pt.
 
 [166
@@ -3404,7 +3403,7 @@ File: 06_mirrorshades_studies_results/images/2.2/17_75_2up.png Graphic file (ty
 pe png)
  <use 06_mirrorshades_studies_results/images/2.2/17_75_2up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.2/17_75_2up.p
-ng used on input line 926.
+ng used on input line 908.
 (pdftex.def)             Requested size: 443.57848pt x 249.50821pt.
 
 [167
@@ -3416,7 +3415,7 @@ File: 06_mirrorshades_studies_results/images/2.2/17_50_2up.png Graphic file (ty
 pe png)
  <use 06_mirrorshades_studies_results/images/2.2/17_50_2up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.2/17_50_2up.p
-ng used on input line 935.
+ng used on input line 917.
 (pdftex.def)             Requested size: 443.57848pt x 249.50821pt.
 )
 [168
@@ -3482,7 +3481,7 @@ hare/texmf-dist/fonts/type1/public/eurosym/feymo10.pfb></usr/share/texmf-dist/f
 onts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/publ
 ic/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sft
 i1000.pfb>
-Output written on thesis.pdf (177 pages, 96332404 bytes).
+Output written on thesis.pdf (177 pages, 96332271 bytes).
 PDF statistics:
  903 PDF objects out of 1000 (max. 8388607)
  468 compressed objects within 5 object streams
