@@ -264,7 +264,107 @@ The accuracy \& lag of the indoor positioning was cited by one participant as ne
 
 For the traditional scenario log data was recorded while each participant was engaging with the VR chapel, in a seated position \& using the Xbox controller to navigate the VR environment. For the PR scenario log data was recorded throughout the whole scenario, such that data are available for both the periods in which participants were observing the RW chapel via the DK1 \& cameras in addition to the periods in which participants were observing the VR chapel. As such, several comparisons can be made between these data. Within the PR scenario, comparisons can be made between the periods that participants were observing RW \& the periods that participants were observing VR. Between the traditional scenario \& the PR scenario, comparisons can be made between the VR section of the traditional scenario \& the periods that participants were observing VR in the PR scenario. Log data was not captured for participant 2 \& was not captured for the traditional scenario for participant 5.
 
-When comparing data between the RW \& VR periods of the PR scenario, it is immediately noticeable that for some participants there was substantially more head movement in terms of pitch (vertical movement) \& yaw (horizontal movement) while they were perceiving VR stimuli than while they were perceiving RW stimuli. This is particularly evident when plotting these pitch \& yaw data against time with the RW/VR visuals indicated. Figure \ref{1_pitch_yaw.png} shows the pitch \& yaw data for participant 1, who prominently displayed this tendency toward greater head movement while viewing VR than RW. The coloured background of the plot indicates which environment the participant was perceiving; blue for RW \& green for VR
+When looking at either scenario (the VR section of the traditional scenario \& both RW \& VR periods of the PR scenario) it is immediately obvious that participants looked to their sides \& turned their heads horizontally (yaw) far more than they looked above \& beneath themselves \& tilted their heads vertically (pitch). This relationship is shown in figures \ref{1_pitch_yaw_2up.png}, \ref{4_pitch_yaw_2up.png} \& \ref{6_pitch_yaw_2up.png}, which show pitch \& yaw plotted against time for both the traditional scenario \& the PR scenario, for participants 1, 4 \& 6 respectively.
+
+\begin{figure}[h]
+	\begin{center}
+	\includegraphics[width=\textwidth]{1/1_pitch_yaw_2up.png}
+	\caption{Pitch \& yaw against time for participant 1 in traditional \& PR scenarios.}
+	\label{1_pitch_yaw_2up.png}
+	\end{center}
+\end{figure}
+
+\begin{figure}[h]
+	\begin{center}
+	\includegraphics[width=\textwidth]{1/4_pitch_yaw_2up.png}
+	\caption{Pitch \& yaw against time for participant 4 in traditional \& PR scenarios.}
+	\label{4_pitch_yaw_2up.png}
+	\end{center}
+\end{figure}
+
+\begin{figure}[h]
+	\begin{center}
+	\includegraphics[width=\textwidth]{1/6_pitch_yaw_2up.png}
+	\caption{Pitch \& yaw against time for participant 6 in traditional \& PR scenarios.}
+	\label{6_pitch_yaw_2up.png}
+	\end{center}
+\end{figure}
+
+The relationship is also evident when considering the standard deviation in pitch \& yaw across both scenarios, shown by table \ref{sdpitchyawtrad} for the traditional scenario \& table \ref{sdpitchyawpr} for the PR scenario.
+
+\begin{table}
+\begin{center}
+\begin{minipage}[t]{.47\linewidth}
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+
+\textbf{Participant} & \textbf{Pitch (\textdegree)} & \textbf{Yaw (\textdegree)} \\
+
+\hline
+
+1 & 14.977 & 86.211 \\
+
+\hline
+
+3 & 16.684 & 60.545 \\
+
+\hline
+
+4 & 10.516 & 53.805 \\
+
+\hline
+
+5 & no data & no data \\
+
+\hline
+
+6 & 16.172 & 92.416 \\
+
+\hline
+\end{tabular}
+\caption{Standard deviation in pitch \& yaw for traditional scenario.}
+\label{sdpitchyawtrad}
+\end{center}
+\end{minipage}
+%
+\begin{minipage}[t]{.47\linewidth}
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+
+\textbf{Participant} & \textbf{Pitch (\textdegree)} & \textbf{Yaw (\textdegree)} \\
+
+\hline
+
+1 & 19.186 & 63.427 \\
+
+\hline
+
+3 & 24.228 & 51.666 \\
+
+\hline
+
+4 & 11.723 & 44.526 \\
+
+\hline
+
+5 & 16.542 & 39.601 \\
+
+\hline
+
+6 & 21.999 & 97.122 \\
+
+\hline
+\end{tabular}
+\caption{Standard deviation in pitch \& yaw for PR scenario.}
+\label{sdpitchyawpr}
+\end{center}
+\end{minipage}
+\end{center}
+\end{table}
+
+When comparing pitch \& yaw data between the RW \& VR periods within the PR scenario, it is immediately noticeable that for some participants there was substantially more head movement in terms of pitch (vertical movement) \& yaw (horizontal movement) while they were perceiving VR stimuli than while they were perceiving RW stimuli. This is particularly evident when plotting these pitch \& yaw data against time with the RW/VR visuals indicated. Figure \ref{1_pitch_yaw.png} shows the pitch \& yaw data for participant 1, who prominently displayed this tendency toward greater head movement while viewing VR than RW. The coloured background of the plot indicates which environment the participant was perceiving; blue for RW \& green for VR.
 
 \begin{figure}[h]
 	\begin{center}
@@ -274,7 +374,7 @@ When comparing data between the RW \& VR periods of the PR scenario, it is immed
 	\end{center}
 \end{figure}
 
-As can be seen in figure \ref{3_pitch_yaw.png} this relationship is even more prevalent in the data from participant 3, while the data from participant 5 in figure \ref{5_pitch_yaw.png} show the relationship to a lesser extent.
+As can be seen in figure \ref{3_pitch_yaw.png} this relationship is even more prevalent in the data from participant 3, while the data from participant 5 in figure \ref{5_pitch_yaw.png} shows the relationship to a lesser extent.
 
 \begin{figure}[h]
 	\begin{center}
@@ -292,14 +392,9 @@ As can be seen in figure \ref{3_pitch_yaw.png} this relationship is even more pr
 	\end{center}
 \end{figure}
 
+Calculating the mean standard deviation in yaw, weighted by the duration of the periods, shows this relationship more concretely. With reference to the figures in table \ref{sdyawtab} the mean standard deviation in yaw while perceiving VR stimuli is substantially higher than while perceiving RW stimuli for participant 1 (39.887\textdegree compared to 25.545\textdegree) \& for participant 3 (60.636\textdegree compared to 11.702\textdegree). The values are however very close for participant 5, due to the initial large delta in yaw just before the first transition into VR at around 130 seconds. Recalculating the mean standard deviation from 150 seconds onwards to exclude this peak gives rise to the values of 36.074\textdegree for VR stimuli compared to 17.046\textdegree for RW stimuli.
 
-\textbf{***this relationship is confirmed by statistics}
-
-%=====================
-
-Comparing between RW \& VR periods of PR scenario
-
-For several participants there was notably more head movement when they were perceiving virtual than when they were perceiving real
+Also, comparing yaw from the VR periods of the PR scenario (table \ref{sdpitchyawpr}) against yaw from the traditional scenario (table \ref{sdpitchyawtrad}) it can be seen that in most cases there is a noticeably less yaw change in the VR periods of the PR scenario than in the traditional scenario.
 
 %=====================
 
@@ -313,15 +408,19 @@ Yaw change less in VR periods of PR scenario than in VR segment of traditional s
 
 %=====================
 
-General observations
 
-Substantially more yaw change than pitch change, in both traditional VR section \& both RW \& VR PR periods
+PR scenario against VR section of traditional scenario
+PR scenario against VR \& RW section of traditional scenario
+
+More yaw than pitch is true for all participants, even those that displayed a less pronounced difference in amount of movement between VR \& RW of PR scenario.
+
+%=====================
 
 Mean time spent in each environment for PR scenario varied greatly
 
 %=====================
 
-
+\textbf{***MOVEMENT} - you know, less head movement when position moving?
 
 
 
