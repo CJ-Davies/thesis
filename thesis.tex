@@ -53,6 +53,9 @@
 %euro (currency) symbol
 \usepackage[gen]{eurosym}
 
+%to include external PDFs (eg appendices)
+\usepackage{pdfpages}
+
 \let\oldFootnote\footnote
 \newcommand\nextToken\relax
 
@@ -206,7 +209,13 @@
 
 \begin{appendices}
 
-%\input{appendices/xsens.tex}
+\chapter{Stage 1 Evaluation 12-item Likert-type Questionnaire}
+\includepdf[pages={1}]{06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-stage-1.pdf}
+\label{appendix-12-item-likert-type-questionnaire-stage-1}
+
+\chapter{Stage 1 Interview Prompts}
+\includepdf[pages={1}]{06_mirrorshades_studies_results/PDFs/interview-questions-stage-1.pdf}
+\label{appendix-interview-questions-stage-1}
 
 \end{appendices}
 
