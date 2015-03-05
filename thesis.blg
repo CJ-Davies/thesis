@@ -3,6 +3,7 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: unsrt.bst
 Database file #1: bib.bib
+Warning--I didn't find a database entry for "Slater1998"
 Warning--there's a number but no series in Qiu2009
 Warning--can't use both author and editor fields in Baudrillard1994
 Warning--can't use both volume and number fields in Baudrillard1994
@@ -16,45 +17,45 @@ Warning--empty journal in Ikeuchi2003
 Warning--there's a number but no series in Papagiannakis2004
 Warning--empty publisher in Taketomi2011
 Warning--empty publisher in VanBrummelen2012
-You've used 86 entries,
+You've used 87 entries,
             1791 wiz_defined-function locations,
-            990 strings with 20036 characters,
-and the built_in function-call counts, 20757 in all, are:
-= -- 1908
-> -- 816
-< -- 34
-+ -- 311
-- -- 225
-* -- 1279
-:= -- 3067
-add.period$ -- 264
-call.type$ -- 86
-change.case$ -- 76
+            1000 strings with 20303 characters,
+and the built_in function-call counts, 21180 in all, are:
+= -- 1949
+> -- 831
+< -- 36
++ -- 316
+- -- 229
+* -- 1307
+:= -- 3124
+add.period$ -- 268
+call.type$ -- 87
+change.case$ -- 77
 chr.to.int$ -- 0
-cite$ -- 99
-duplicate$ -- 1032
-empty$ -- 2115
-format.name$ -- 225
-if$ -- 4821
+cite$ -- 100
+duplicate$ -- 1055
+empty$ -- 2156
+format.name$ -- 229
+if$ -- 4924
 int.to.chr$ -- 0
-int.to.str$ -- 86
-missing$ -- 76
-newline$ -- 417
-num.names$ -- 91
-pop$ -- 359
+int.to.str$ -- 87
+missing$ -- 77
+newline$ -- 422
+num.names$ -- 94
+pop$ -- 365
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 554
+skip$ -- 568
 stack$ -- 0
-substring$ -- 1215
-swap$ -- 326
-text.length$ -- 34
+substring$ -- 1247
+swap$ -- 337
+text.length$ -- 36
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 13
-while$ -- 203
-width$ -- 88
-write$ -- 936
-(There were 13 warnings)
+while$ -- 208
+width$ -- 89
+write$ -- 948
+(There were 14 warnings)
