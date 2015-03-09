@@ -210,7 +210,7 @@ A total of 6 participants completed the stage 1 investigation;
 \subsection{SUS}
 As expected, the PR scenario scored lower on SUS than the traditional scenario (see figure \ref{sus.png}), but not drastically so.
 
-\TwoFig{1/sus.png}{SUS results.}{sus.png}
+\TwoFig{1/sus.png}{SUS results for stage 1.}{sus.png}
        {1/post_task_questionnaire_boxplot.png}{Likert-type questionnaire results.}{post_task_questionnaire_boxplot.png}
 
 %=========================================================================================================
@@ -567,25 +567,23 @@ However, in a PR scenario that features high spatial equivalence between its con
 
 \subsection{Design of Scenarios}
 
-Both stages 2.1 \& 2.2 followed a similar pattern to the stage 1 evaluation. Participants first received a `traditional' VR experience by using the DK1 \& Xbox controller to explore the VR chapel while seated \& subsequently completed the IPQ in order to produce baseline IPQ results for a traditional experience of the chapel model viewed via the DK1.
-
-In stage 2.1 the participants then performed two PR scenarios in which they walked through the RW/VR chapels. In the first scenario the default view on the DK1 screen was 100\% RW \& they were granted access to 3x different transition styles;
+Both stages 2.1 \& 2.2 followed a similar pattern to the stage 1 evaluation. Participants first received a `traditional' VR experience by using the DK1 \& Xbox controller to explore the VR chapel while seated \& subsequently completed the IPQ in order to produce baseline IPQ results for a traditional experience of the chapel model viewed via the DK1. In stage 2.1 the participants then performed two PR scenarios in which they walked through the RW/VR chapels. In the first scenario the default view on the DK1 screen was 100\% RW \& they were granted access to 3x different transition styles;
 
 \begin{enumerate}
-	\item hard switch (see section \ref{sub-hardswitch}) mapped to controller \texttt{[A]} button
-	\item transition with linear interpolation (see section \ref{transition-with-linear-interpolation}) mapped to controller \texttt{[B]} button
-	\item analogue selectable opacity (see section \ref{analogue-selectable-opacity}) mapped to controller right trigger \texttt{[RT]}
+	\item hard switch (see section \ref{sub-hardswitch}) mapped to controller \texttt{[A]} button (transition 1)
+	\item transition with linear interpolation (see section \ref{transition-with-linear-interpolation}) mapped to controller \texttt{[B]} button (transition 2)
+	\item analogue selectable opacity (see section \ref{analogue-selectable-opacity}) mapped to controller right trigger \texttt{[RT]} (transition 3)
 \end{enumerate}
 
-In the second stage 2.1 scenario they were granted access to the same 3x transitions \& additionally a periodic hard switch (see section \ref{subsub-periodic}) was triggered every 3 seconds for a duration of 0.15 seconds.
+In the first stage 2.1 scenario pressing \& holding the \texttt{[A]} button triggered a hard switch from 100\% RW to 100\% VR, pressing \& holding the \texttt{[B]} button triggered a linear interpolated switch from 100\% RW to 100\% VR \& pulling on the right trigger \texttt{[RT]} reduced the opacity of the game objects upon which the camera feeds were rendered from 100\% to an amount that mapped to the amount that the trigger was pulled (pulling the trigger all the way in would reduce the opacity of the objects to 0\% \& thus display 100\% VR, pulling the trigger 33\% would reduce the opacity of the objects by 33\% \& thus display 66\% RW \& 33\% VR, etc.). In the second stage 2.1 scenario they were granted access to the same 3x transitions via the Xbox controller \& additionally a 4th transition of the periodic hard switch (see section \ref{subsub-periodic}) was triggered every 3 seconds for a duration of 0.15 seconds. These two scenarios are referred to as `scenario 1-3' \& `scenario 1-4', respectively.
 
 In stage 2.2, participants again performed two PR scenarios in which they walked through the RW/VR chapels, this time with only a single transition style available (the transition with linear interpolation) but with the default view set at 75\% RW/25\% VR in the first \& at 50\% RW/50\% VR in the second.
 
-Rather than describing a path through the chapel with particular positions of interest to stop \& look around at, participants were simply told to slowly make their way from the starting position down to the altar end of the chapel. For at least one participant in the stage 1 evaluation, their exploration of the environments seemed to be subdued by their adherence to the prescribed route, so in order to promote a more natural style of exploration the route description was not used in the second stage of evaluation.
+Rather than describing a path through the chapel with particular positions of interest to stop \& look around at, participants were simply told to slowly make their way from the starting position down to the altar end of the chapel. For at least one participant in the stage 1 evaluation, their exploration of the environments seemed to be subdued by their adherence to the prescribed route. In order to promote a more natural style of exploration the route description was not used in the second stage of evaluation.
 
 %=========================================================================================================
 
-\subsection{Stage 2.1 Hypotheses}
+\subsection{Hypotheses}
 
 It was hypothesized that
 
@@ -600,11 +598,140 @@ These data are expected to reveal relationships between various different metric
 
 %=========================================================================================================
 
-\subsection{Stage 2.1 Results}
+\section{Stage 2.1 Results}
+
+A total of 7 participants completed the stage 2.1 evaluation;
+\begin{itemize}
+	\item Age range from 18 to 27, with a mean of 22.3 \& a standard deviation of 4
+	\item 5x identified as male \& 2x as female
+	\item All reported previous experience with a games console controller
+	\item None reported previous experience with a HMD
+	\item 2x reported having previously visited the chapel
+	\item None reported having previously experienced the virtual chapel
+\end{itemize}
+
+%=========================================================================================================
+
+\begin{figure}[h]
+	\begin{center}
+	\includegraphics[width=.6\textwidth]{2.1/12-item-likert-type-questionnaire-boxplot.png}
+	\caption{Likert-type questionnaire results for stage 2.1.}
+	\label{2-1-12-item-likert-type-questionnaire-boxplot.png}
+	\end{center}
+\end{figure}
+
+%=========================================================================================================
+
+\subsection{Likert-type Questionnaires}
+
+When considering the responses to the Likert-type questionnaires (see figure \ref{2-1-12-item-likert-type-questionnaire-boxplot.png}) for the two PR scenarios of the stage 2.1 evaluation, the following observations can be made.
+
+\begin{itemize}
+	\item Participants found the scenario 1-3 more enjoyable than scenario 1-4 (q1)
+	\item Preference toward one transition style over others was more varied \& in general less in scenario 1-3 than in scenario 1-4 (q2)
+	\item Participants were more aware of both environments in scenario 1-4 than in scenario 1-3 (q3)
+	\item Participants found it easier to compare features from past \& present in scenario 1-4 than in scenario 1-3 (q4)
+	\item Participants preferred to use one transition more than others in certain situations more in scenario 1-4 than they did in scenario 1-3 (q5)
+	\item Slightly more motion sickness was reported in scenario 1-4 (q7)
+	\item Participants found scenario 1-3 to be a more rewarding way to explore the chapel (q8)
+	\item Participants found that scenario 1-4 gave them a better understanding of what the chapel was like in the past (q10)
+	\item Participants found switching between RW \& VR more uncomfortable in scenario 1-4 than in scenario 1-3 (q11)
+	\item Participants reported not noticing differences slightly more in scenario 1-3 than in scenario 1-4
+\end{itemize}
+
+%=========================================================================================================
+
+\subsection{Interview Transcripts}
+
+Once again, recordings of the structured interviews were transcribed after the chapel sessions \& provided a wealth of qualitative insight into the participants' experiences with the Mirrorshades platform during the stage 2.1 evaluation.
+
+Every single participant said that they preferred scenario 1-3 over scenario 1-4. In particular, one participant  reported that each time scenario 1-4 triggered an automatic transition (transition 4), s/he had to stop to regain their bearings, with another reporting that each transition 4 meant having to having to \textit{``stop \& work it out again''}. Several participants noted that they felt more `in control' during scenario 1-3 than during scenario 1-4. Transition 4 was reported as being particularly off-putting when inaccuracy in the IPS had placed the virtual vantage at a position notably different to the participant's real position, especially when this resulted in virtual \& real positions being on opposite sides of a wall.
+
+Roughly half of the participants said that scenario 1-3 was more engaging, another found the scenarios roughly similar with regards to engagement \& 2x found scenario 1-4 to be more engaging although they mentioned that they suspected this could simply have been down to increased familiarity with the system. Several participants said that transition 4 was `unexpected', leading to a less `consistent' experience.
+
+Responses were mixed when asked about whether one scenario allowed them to perceive more differences between RW \& VR in one scenario compared to the other. 3x reported experiencing no difference between the scenarios in this regard. 2x answered that they found scenario 1-3 better, one because the flash threw him/her off, the other because \textit{``you could fade between''}  although this feature (transition 3) was available in both scenarios. 2x chose 1-4 as better, one because transition 4 would happen when s/he wasn't prepared for a transition \& thus s/he would \textit{``notice that something had moved, whereas if I knew I was switching I would maybe subconsciously expecting things to move''}.
+
+All but one participant reported preferring transition 3 accessed via the right trigger \texttt{[RT]} to the other transitions. The one participant who answered otherwise elaborated that they did not notice much difference between the different transition styles \& when thinking back to the scenarios was \textit{``not sure which one I was using now!''}. Looking at the log data for this participant however (see section \ref{2-1-log-data}) this participant did nonetheless make use of all the transition styles in both scenarios 1-3 \& 1-4, heavily favouring the hard switch transition 1 in scenario 1-4.
+
+When asked why they preferred transition 3, participants reported liking how being able to control the opacity allowed them to \textit{``see elements of both''} environments at once, to \textit{``simultaneosuly measure the historical differences''}, with the trigger giving them more `control'.
+
+Responses when asked about motion sickness varied greatly. One participant reported none at all in either scenario, while one reported some motion sickness when seated \& using the analogue stick of the Xbox controller to turn their virtual presence \& also when walking in the PR scenario when the IPS was inaccurate. One participant reported motion sickness that increased with time, being comfortable for the first 2/3rds of each scenario \& with both PR scenarios being worse than the traditional seated scenario. Three participants reported motion sickness only when walking in the PR scenarios; of these, one reported that it was worse in scenario 1-4 \& another said that motion sickness only occurred when looking at RW via the cameras. One participant only experienced motion sickness after removing the DK1.
+
+Other comments included not knowing where they were in the chapel inducing motion sickness \& that accuracy of the IPS needed improvement, with sudden large VR movements inducing motion sickness. Furthermore, one participant commented directly upon the relationship between `immersion' \& perceived realism of the VR environment - \textit{``\ldots obviously it wasn't the same quality, but I still felt so immersed in it. Even though part of me would've known it wasn't real, most of it felt real even though it didn't look like it''}.
+
+%=========================================================================================================
+
+\subsection{Log Data}
+\label{2-1-log-data}
+
+Log data were recorded during all scenarios, however these data were not recorded for 4 out of the 7 participants for the traditional seated scenario thus detailed comparisons cannot reasonably be made between the traditional scenario \& the PR scenarios. Log data were however successfully recorded for both PR scenarios \& as such comparisons can be made between the PR scenarios \& within each PR scenarios.
+
+%=====================
+
+\subsubsection{Comparing traditional \& PR scenarios}
+
+For all participants there was substantially more yaw change than pitch change, in both traditional \& PR scenarios. Can't really compare between traditional \& PR, however for what we do have of traditional they exhibit this more yaw than pitch relationship. This is the same as for stage 1.
+
+\begin{figure}[h]
+	\begin{center}
+	\includegraphics[width=\textwidth]{2.1/8-pitch-yaw-trad-1-3-1-4.png}
+	\caption{Pitch \& yaw against time for participant 8 in traditional \& both PR scenarios.}
+	\label{2-1-8-pitch-yaw-trad-1-3-1-4.png}
+	\end{center}
+\end{figure}
+
+***plots of pitch against yaw showing this for traditional \& both 1-3 \& 1-4
+
+***standard deviation tables for pitch \& yaw
+
+%=====================
+
+\subsubsection{Comparing RW \& VR periods within PR scenarios}
+
+For five out of seven participants, yaw change was greater when looking at virtual then looking at real for both 1-3 \& 1-4. Some quite substantially so. Difference between yaw change in real \& virtual greater in 1-4 than in 1-33, though this could be familiarity.
+
+%=====================
+
+\subsubsection{Other}
+
+Number of transitions in each session ranged from high teens to low sixties.
+
+Mean times spent in real/virtual are much closer than in stage 1.
+
+four of seven participants spent mroe time in real than virtual in both 1-3 \& 1-4
+	for three participants the ratio was closer in 1-4 than in 1-3
+	one spent more time in virtual than real in both 1-3 \& 1-4
+	one spent more time in real in 1-3 \& then more time in virtual tin 1-4 (familiarity?)
+	
+`Trying out', clearly visible in participant
+
+***plots showing opacity of some participants actually using the trigger not all the way down
+
+
+%=========================================================================================================
+
+\subsection{IPQ}
+
+
+%=========================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+%=========================================================================================================
 
 \clearpage
 
-\subsection{Participant 7}
+\subsubsection{Participant 7}
 
 \begin{figure}[h]
 	\begin{center}
@@ -747,7 +874,7 @@ These data are expected to reveal relationships between various different metric
 
 %=========================================================================================================
 
-\subsection{Stage 2.1 Conclusions}
+\section{Stage 2.1 Conclusions}
 
 %=========================================================================================================
 
@@ -755,11 +882,7 @@ These data are expected to reveal relationships between various different metric
 
 %=========================================================================================================
 
-\subsection{Stage 2.2 Hypotheses}
-
-%=========================================================================================================
-
-\subsection{Phase 2.2 Results}
+\section{Phase 2.2 Results}
 
 %=========================================================================================================
 
@@ -851,11 +974,7 @@ These data are expected to reveal relationships between various different metric
 
 %=========================================================================================================
 
-\subsection{Stage 2.2 Conclusions}
-
-%=========================================================================================================
-
-\subsection{Stage 2 Overall Conclusions}
+\section{Stage 2.2 Conclusions}
 
 %=========================================================================================================
 
