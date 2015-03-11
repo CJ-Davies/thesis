@@ -498,7 +498,7 @@ Further comparing head movements between the VR section of the traditional scena
 
 %=========================================================================================================
 
-\section{Stage 1 Conclusions}
+\subsection{Stage 1 Conclusions}
 
 In general, participant reactions to the Mirrorshades platform met the hypotheses. From the questionnaire data \& interview transcripts, participants reported that they found the PR scenario to be both more enjoyable \& more rewarding than the traditional scenario, despite the decreased usability \& comfort effected by the requirement to don \& carry a satchel of hardware \& hold devices in both hands. The PR scenario was reported as allowing easier comparison \& contrast between RW \& VR environments, leading to recognising more differences between the two environments \& a greater change in \& better understanding of the chapel than with the traditional scenario. The visual acuity afforded by the cameras \& both the accuracy \& lag of the IPS surfaced as the major detractors to the experience of the PR scenario.
 
@@ -565,9 +565,9 @@ However, in a PR scenario that features high spatial equivalence between its con
 
 %=========================================================================================================
 
-\subsection{Design of Scenarios}
+\section{Stage 2.1}
 
-Both stages 2.1 \& 2.2 followed a similar pattern to the stage 1 evaluation. Participants first received a `traditional' VR experience by using the DK1 \& Xbox controller to explore the VR chapel while seated \& subsequently completed the IPQ in order to produce baseline IPQ results for a traditional experience of the chapel model viewed via the DK1. In stage 2.1 the participants then performed two PR scenarios in which they walked through the RW/VR chapels. In the first scenario the default view on the DK1 screen was 100\% RW \& they were granted access to 3x different transition styles;
+Stage 2.1 followed a similar pattern to the stage 1 evaluation. Participants first received a `traditional' VR experience by using the DK1 \& Xbox controller to explore the VR chapel while seated \& subsequently completed the IPQ in order to produce baseline IPQ results for a traditional experience of the chapel model viewed via the DK1. In stage 2.1 the participants then performed two PR scenarios in which they walked through the RW/VR chapels. In the first scenario the default view on the DK1 screen was 100\% RW \& they were granted access to 3x different transition styles;
 
 \begin{enumerate}
 	\item hard switch (see section \ref{sub-hardswitch}) mapped to controller \texttt{[A]} button (transition 1)
@@ -577,22 +577,15 @@ Both stages 2.1 \& 2.2 followed a similar pattern to the stage 1 evaluation. Par
 
 In the first stage 2.1 scenario pressing \& holding the \texttt{[A]} button triggered a hard switch from 100\% RW to 100\% VR, pressing \& holding the \texttt{[B]} button triggered a linear interpolated switch from 100\% RW to 100\% VR \& pulling on the right trigger \texttt{[RT]} reduced the opacity of the game objects upon which the camera feeds were rendered from 100\% to an amount that mapped to the amount that the trigger was pulled (pulling the trigger all the way in would reduce the opacity of the objects to 0\% \& thus display 100\% VR, pulling the trigger 33\% would reduce the opacity of the objects by 33\% \& thus display 66\% RW \& 33\% VR, etc.). In the second stage 2.1 scenario they were granted access to the same 3x transitions via the Xbox controller \& additionally a 4th transition of the periodic hard switch (see section \ref{subsub-periodic}) was triggered every 3 seconds for a duration of 0.15 seconds (transition 4). These two scenarios are referred to as `scenario 1-3' \& `scenario 1-4', respectively.
 
-In stage 2.2, participants again performed two PR scenarios in which they walked through the RW/VR chapels, this time with only a single transition style available (the transition with linear interpolation) but with the default view set at 75\% RW/25\% VR in the first \& at 50\% RW/50\% VR in the second. These two scenarios are referred to as `75/25 scenario' \& `50/50 scenario'.
-
 Rather than describing a path through the chapel with particular positions of interest to stop \& look around at, participants were simply told to slowly make their way from the starting position down to the altar end of the chapel. For at least one participant in the stage 1 evaluation, their exploration of the environments seemed to be subdued by their adherence to the prescribed route. In order to promote a more natural style of exploration the route description was not used in the second stage of evaluation.
 
 %=========================================================================================================
 
 \subsection{Hypotheses}
 
-It was hypothesized that
-
 correlation between which type of transition participants favoured \& the situation they were in (walking, standing still, etc.)
 
-
-
 It is hypothesized that a manner of transitioning between visual stimuli which results in a less severe BIP will be preferable to a manner of transitioning which results in a worse BIP. As focus in the Waterworth model is most closely related to presence in the VR literature~\cite{Waterworth2001}, one of the subjective measures that will be used in this evaluation will be an established presence measure, to try to capture the behaviour of the user's position upon the focus axis.
-
 
 These data are expected to reveal relationships between various different metrics \& the choice of transition methods. For example, it is expected that participants will perform short transitions to VR or transitions to a mix of RW \& VR when moving \& perform longer transitions to VR when stationary. This kind of relationship will support or contradict the subjective data collected through questionnaire \& interview.
 
@@ -602,7 +595,7 @@ These data are expected to reveal relationships between various different metric
 
 A total of 7 participants completed the stage 2.1 evaluation;
 \begin{itemize}
-	\item Age range from 18 to 27, with a mean of 22.3 \& a standard deviation of 4
+	\item Age ranged from 18 to 27, with a mean of 22.3 \& a standard deviation of 4
 	\item 5x identified as male \& 2x as female
 	\item All reported previous experience with a games console controller
 	\item None reported previous experience with a HMD
@@ -1166,7 +1159,7 @@ traditional & 4.5 & 4 \\
 
 %=========================================================================================================
 
-\section{Stage 2.1 Conclusions}
+\subsection{Conclusions}
 
 Participants overwhelmingly preferred transition 3 compared to the others, which was somewhat surprising as initial experiments with the Mirrorshades platform with members of the OVW research group strongly indicated preference toward transition 2. With the larger number of participants in this stage of evaluation compared to the unscientific tests within the OVW group, this preference toward transition 3 should be considered legitimate even though unexpected. Reasoning for preference toward transition 3 included being able to see both environments at once \& a heightened sense of control.
 
@@ -1182,11 +1175,41 @@ IPQ results met hypotheses, with the traditional scenario scoring highly in both
 
 %=========================================================================================================
 
-\section{Phase 2.2 Results}
+\section{Stage 2.2}
+
+One of the threads that emerged from the stage 2.1 investigation was that while transition 4 was unanimously negatively received because of the worse breaks in presence that it caused by `surprising' the participants, the VR visual stimuli that it presented without consciously triggering a transition led to several participants indicating that it resulted in them better understanding the relationship between the two environments \& noticing more differences between them. Stage 2.2 thus investigated how untriggered VR stimuli could be introduced into a PR experience but in a less obtrusive manner than transition 4, namely by changing the default view to less than 100\% RW.
+
+Stage 2.2 followed the same pattern as stage 2.1, with participants first engaging in a traditional scenario in which they were seated \& used the DK1 \& Xbox controller to explore the VR chapel \& subsequently completed two PR scenarios in which they walked through the chapels. In the first of these PR scenarios the default view was set to 75\% RW/25\% VR (referred to as the `75/25 scenario') \& in the second PR scenario the default view was set to 50\%RW/50\%VR (referred to as the `50/50 scenario'). Participants were only fashioned with a single transition technique, transition 2. As the controlled variable between the two PR scenarios was opacity based, it seemed prudent not to fashion the participants with the ability to consciously affect opacity.
+
+Once again, participants were simply instructed to make their way from the starting position down to the alter end of the chapel, with no hard restrictions upon their path or when/where they were to stop \& pay attention to particular aspects of their surroundings.
+
+%=========================================================================================================
+
+\section{Stage 2.2 Results}
+
+A total of 4 participants completed the stage 2.2 evaluation;
+\begin{itemize}
+	\item Age ranged from 19 to 38, with a mean of 24.3 \& a standard deviation of 9.2
+	\item 2x identified as male \& 2x as female
+	\item 3x reported previous experience with a games console controller
+	\item None reported previous experience with a HMD
+	\item 1x reported having previously visited the chapel
+	\item None reported having previously experienced the virtual chapel
+\end{itemize}
+
+%=========================================================================================================
+
+
+
+
+
+
 
 %=========================================================================================================
 
 \clearpage
+
+\subsection{Conclusions}
 
 \subsubsection{Participant 14}
 
@@ -1271,10 +1294,6 @@ IPQ results met hypotheses, with the traditional scenario scoring highly in both
 	\caption{Some images, yah.}
 	\end{center}
 \end{figure}
-
-%=========================================================================================================
-
-\section{Stage 2.2 Conclusions}
 
 %=========================================================================================================
 
