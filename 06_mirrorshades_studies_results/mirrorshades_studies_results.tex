@@ -1047,109 +1047,103 @@ Looking specifically at the results for SP3 \& INV2 (table \ref{sp3-inv2-2-1-tab
 
 \begin{table}
 \begin{center}
-\begin{minipage}[t]{.47\linewidth}
+\begin{minipage}[t]{.45\linewidth}
 \begin{center}
-\begin{tabular}{|c|c|c|}
-\hline
+\begin{tabularx}{\textwidth}{c *{3}{>{\centering\arraybackslash}X}}
+\toprule
 
 \textbf{Scenario} & \textbf{Mean} & \textbf{Standard deviation} \\
 
-\hline
+\midrule
 
 traditional & 4.6 & 0.780 \\
 
-\hline
-
 1-3 & 4.133 & 1.093 \\
-
-\hline
 
 1-4 & 4.133 & 0.532 \\
 
-\hline
-\end{tabular}
+\bottomrule
+\end{tabularx}
 \caption{Means \& standard deviations of SP for all stage 2.1 scenarios.}
 \label{sp-2-1-table}
 \end{center}
 \end{minipage}
 %
-\begin{minipage}[t]{.47\linewidth}
+\begin{minipage}[t]{.02\linewidth}
+\hfill%
+\end{minipage}
+%
+\begin{minipage}[t]{.45\linewidth}
 \begin{center}
-\begin{tabular}{|c|c|c|}
-\hline
+\begin{tabularx}{\textwidth}{c *{3}{>{\centering\arraybackslash}X}}
+\toprule
 
 \textbf{Scenario} & \textbf{Mean} & \textbf{Standard deviation} \\
 
-\hline
+\midrule
 
 traditional & 4.166 & 1.393 \\
 
-\hline
-
 1-3 & 2.666 & 1.125 \\
-
-\hline
 
 1-4 & 1.958 & 1.308 \\
 
-\hline
-\end{tabular}
+\bottomrule
+\end{tabularx}
 \caption{Means \& standard deviations of INV for all stage 2.1 scenarios.}
 \label{inv-2-1-table}
 \end{center}
 \end{minipage}
-%\end{center}
-%\end{table}
 
-%\begin{table}
-%\begin{center}
-\begin{minipage}[t]{.47\linewidth}
+\vspace{5mm}
+
+\begin{minipage}[t]{.45\linewidth}
 \begin{center}
-\begin{tabular}{|c|c|c|}
-\hline
+\begin{tabularx}{\textwidth}{c *{3}{>{\centering\arraybackslash}X}}
+\toprule
 
 \textbf{Scenario} & \textbf{Mean} & \textbf{Standard deviation} \\
 
-\hline
+\midrule
 
 traditional & 2.208 & 1.134 \\
 
-\hline
-
 1-3 & 1.917 & 1.339 \\
-
-\hline
 
 1-4 & 1.917 & 1.080 \\
 
-\hline
-\end{tabular}
+\bottomrule
+\end{tabularx}
 \caption{Means \& standard deviations of REAL for all stage 2.1 scenarios.}
 \label{real-2-1-table}
 \end{center}
 \end{minipage}
 %
-\begin{minipage}[t]{.47\linewidth}
+\begin{minipage}[t]{.02\linewidth}
+\hfill%
+\end{minipage}
+%
+\begin{minipage}[t]{.45\linewidth}
 \begin{center}
-\begin{tabular}{|c|c|c|}
-\hline
+\begin{tabularx}{\textwidth}{c *{5}{>{\centering\arraybackslash}X}}
+\toprule
 
-\textbf{Scenario} & \textbf{Mean SP3} & \textbf{Mean INV2} \\
+\textbf{Scenario} & \multicolumn{2}{c}{\textbf{SP3}} & \multicolumn{2}{c}{\textbf{INV2}} \\
 
-\hline
+\cmidrule(l){2-3} \cmidrule(l){4-5}
 
-traditional & 4.5 & 4 \\
+ & \textbf{mean} & \textbf{sd} & \textbf{mean} & \textbf{sd} \\
+ 
+\midrule
 
-\hline
+traditional & 4.5 & 1.472 & 4 & 1.673 \\
 
-1-3 & 2.5 & 2.8 \\
+1-3 & 2.5 & 2.160 & 2.8 & 1.643 \\
 
-\hline
-
-1-4 & 3.5 & 1 \\
-
-\hline
-\end{tabular}
+1-4 & 3.5 & 1.633 & 1 & 0.707 \\
+ 
+\bottomrule
+\end{tabularx}
 \caption{Means for SP3 \& INV2 for all stage 2.1 scenarios.}
 \label{sp3-inv2-2-1-table}
 \end{center}
@@ -1249,12 +1243,12 @@ Once again, variance in yaw dominated during all three scenarios (traditional \&
 
 \subsubsection{Comparing Between 75/25 \& 50/50 Scenario}
 
-The main observations when comparing log data for the two PR scenarios are that all of the participants performed fewer transitions in the 50/50 scenario than in the 75/25 scenario, with three of the participants also spending more time (both overall \& in terms of the average duration of the periods) perceiving the default position rather than VR. Figures \ref{16-pitch-yaw-75-25.png} \& \ref{16-pitch-yaw-50-50.png} visualise this relationship for participant 16 performing the 75/25 scenario \& 50/50 scenario respectively.
+The main new observations that come to light when comparing log data for the two PR scenarios are that all of the participants performed fewer transitions in the 50/50 scenario than in the 75/25 scenario, with three of the participants also spending more time (both overall \& in terms of the average duration of the periods) perceiving the default position rather than VR in the 75/25 scenario than the 50/50 scenario. These values are summarised in tables \ref{times-75-25} \& \ref{times-50-50} for the 75/25 \& 50/50 scenarios respectively, while figures \ref{16-pitch-yaw-75-25.png} \& \ref{16-pitch-yaw-50-50.png} visualise this relationship for participant 16 performing the 75/25 scenario \& 50/50 scenario respectively.
 
 \begin{figure}[h]
 	\begin{center}
 	\includegraphics[width=\textwidth]{2.2/16-pitch-yaw-75-25.png}
-	\caption{Pitch \& yaw against time for participant 16 in 75/25 scenario, showing RW/VR transitions.}
+	\caption{Pitch \& yaw against time for participant 16 in 75/25 scenario, showing default/VR transitions.}
 	\label{16-pitch-yaw-75-25.png}
 	\end{center}
 \end{figure}
@@ -1262,16 +1256,10 @@ The main observations when comparing log data for the two PR scenarios are that 
 \begin{figure}[h]
 	\begin{center}
 	\includegraphics[width=\textwidth]{2.2/16-pitch-yaw-50-50.png}
-	\caption{Pitch \& yaw against time for participant 16 in 50/50 scenario, showing RW/VR transitions.}
+	\caption{Pitch \& yaw against time for participant 16 in 50/50 scenario, showing default/VR transitions.}
 	\label{16-pitch-yaw-50-50.png}
 	\end{center}
 \end{figure}
-
-
-
-
-
-
 
 \begin{table}
 \begin{center}
@@ -1282,7 +1270,7 @@ The main observations when comparing log data for the two PR scenarios are that 
 
 \cmidrule(l){3-4} \cmidrule(l){5-6}
 
- & & \textbf{RW} & \textbf{VR} & \textbf{RW} & \textbf{VR} \\
+ & & \textbf{default} & \textbf{VR} & \textbf{default} & \textbf{VR} \\
 
 \midrule
 
@@ -1296,13 +1284,10 @@ The main observations when comparing log data for the two PR scenarios are that 
 
 \bottomrule
 \end{tabularx}
-\caption{Distribution of time spent in RW \& VR environments for all participants during 75/25 scenario.}
-\label{floob}
+\caption{Distribution of time spent in default \& VR environments for all participants during 75/25 scenario.}
+\label{times-75-25}
 \end{center}
 \end{table}
-
-
-
 
 \begin{table}
 \begin{center}
@@ -1313,7 +1298,7 @@ The main observations when comparing log data for the two PR scenarios are that 
 
 \cmidrule(l){3-4} \cmidrule(l){5-6}
 
- &  & \textbf{RW} & \textbf{VR} & \textbf{RW} & \textbf{VR} \\
+ &  & \textbf{default} & \textbf{VR} & \textbf{default} & \textbf{VR} \\
 
 \midrule
 
@@ -1327,15 +1312,135 @@ The main observations when comparing log data for the two PR scenarios are that 
 
 \bottomrule
 \end{tabularx}
-\caption{Distribution of time spent in RW \& VR environments for all participants during 50/50 scenario.}
-\label{floob}
+\caption{Distribution of time spent in default \& VR environments for all participants during 50/50 scenario.}
+\label{times-50-50}
 \end{center}
 \end{table}
 
+In combination with interview feedback, these log data support the notion that the 50/50 scenario was more engaging, with participants not finding it necessary to perform transitions to VR as frequently in order to perceive enough VR stimuli to engage with the combined VR \& VR content.
 
 %=========================================================================================================
 
 \subsection{IPQ}
+
+When considering the IPQ results for stage 2.2 participants the traditional scenario presents very similar results for all of SP, INV \& REAL (tables \ref{sp-2-2-table}, \ref{inv-2-2-table} \& \ref{real-2-2-table} respectively) to the traditional scenario from stage 2.1 (tables \ref{sp-2-1-table}, \ref{inv-2-1-table} \& \ref{real-2-1-table}), which was to be expected \& reinforces these values as good baseline IPQ results for the traditional VR experience at the chapel.
+
+SP was reduced in the 75/25 scenario, to a level slightly lower than that in both PR scenarios in stage 2.1, while in the 50/50 scenario that was a marked increase in SP to a level (4.7) above any other scenario in either stage, including the traditional scenarios. This hints toward the optimistic expectation of a good PR experience resulting in reduced INV but increased SP compared to a traditional scenario, but representation of bodily actions within the RW environment leading to an increase in experienced spatial presence within the VR environment.
+
+INV was reduced in the 75/25 scenario \& further reduced in the 50/50 scenario, as was to be expected. Interestingly however, the INV results for both PR scenarios in stage 2.2 were notably higher than those for the PR scenarios of stage 2.1, a discrepancy that is not contained within the higher INV for the traditional scenario in stage 2.2 compared to stage 2.1.
+
+REAL was reduced in the 75/25 scenario to almost exactly the same level as both PR scenarios in stage 2.1, however for the 50/50 scenario REAL was only reduced a miniscule amount (a reduction of 0.118 from 2.563 to 2.438). This implies that the increased visibility of the VR environment when perceiving the RW environment helped to enhance the perceived realness of the VR environment.
+
+\begin{table}
+\begin{center}
+\begin{minipage}[t]{.45\linewidth}
+\begin{center}
+\begin{tabularx}{\textwidth}{c *{3}{>{\centering\arraybackslash}X}}
+\toprule
+
+\textbf{Scenario} & \textbf{Mean} & \textbf{Standard deviation} \\
+
+\midrule
+
+traditional & 4.3 & 0.476 \\
+
+75/25 & 3.95 & 1.248 \\
+
+50/50 & 4.7 & 0.739 \\
+
+\bottomrule
+\end{tabularx}
+\caption{Means \& standard deviations of SP for all stage 2.2 scenarios.}
+\label{sp-2-2-table}
+\end{center}
+\end{minipage}
+%
+\begin{minipage}[t]{.02\linewidth}
+\hfill%
+\end{minipage}
+%
+\begin{minipage}[t]{.45\linewidth}
+\begin{center}
+\begin{tabularx}{\textwidth}{c *{3}{>{\centering\arraybackslash}X}}
+\toprule
+
+\textbf{Scenario} & \textbf{Mean} & \textbf{Standard deviation} \\
+
+\midrule
+
+traditional & 4.625 & 1.299 \\
+
+75/25 & 4.25 & 1.594 \\
+
+50/50 & 3.25 & 1.696 \\
+
+\bottomrule
+\end{tabularx}
+\caption{Means \& standard deviations of INV for all stage 2.2 scenarios.}
+\label{inv-2-2-table}
+\end{center}
+\end{minipage}
+
+\vspace{5mm}
+
+\begin{minipage}[t]{.45\linewidth}
+\begin{center}
+\begin{tabularx}{\textwidth}{c *{3}{>{\centering\arraybackslash}X}}
+\toprule
+
+\textbf{Scenario} & \textbf{Mean} & \textbf{Standard deviation} \\
+
+\midrule
+
+traditional & 2.563 & 1.56 \\
+
+75/25 & 1.938 & 1.593 \\
+
+50/50 & 2.438 & 1.360 \\
+
+\bottomrule
+\end{tabularx}
+\caption{Means \& standard deviations of REAL for all stage 2.2 scenarios.}
+\label{real-2-2-table}
+\end{center}
+\end{minipage}
+%
+\begin{minipage}[t]{.02\linewidth}
+\hfill%
+\end{minipage}
+%
+\begin{minipage}[t]{.45\linewidth}
+\begin{center}
+\begin{tabularx}{\textwidth}{c *{5}{>{\centering\arraybackslash}X}}
+\toprule
+
+\textbf{Scenario} & \multicolumn{2}{c}{\textbf{SP3}} & \multicolumn{2}{c}{\textbf{INV2}} \\
+
+\cmidrule(l){2-3} \cmidrule(l){4-5}
+
+ & \textbf{mean} & \textbf{sd} & \textbf{mean} & \textbf{sd} \\
+ 
+\midrule
+
+traditional & 1.75 & 2.217 & 5 & 0.816 \\
+
+75/25 & 3.75 & 1.708 & 3.5 & 1.732 \\
+
+50/50 & 5.25 & 0.957 & 3.75 & 1.893 \\
+ 
+\bottomrule
+\end{tabularx}
+\caption{Means for SP3 \& INV2 for all stage 2.2 scenarios.}
+\label{sp3-inv2-2-2-table}
+\end{center}
+\end{minipage}
+\end{center}
+\end{table}
+
+The mean SP3 for the traditional scenario is confusingly low at 1.75 (table \ref{sp3-inv2-2-2-table}). This is especially odd considering the relatively high mean for the overall SP subscale in the traditional scenario of 4.3 (table \ref{sp-2-2-table}. It is also completely out of line with the mean SP3 for the traditional scenario from stage 2.1 of 4.5 (table \ref{sp-2-1-table}), which was in keeping with the overall SP mean of 4.6 (table \ref{sp3-inv2-2-1-table}) for the traditional scenario in stage 2.1.
+
+This oddity could be explained by confusion among the stage 2.2 participants over the wording of SP3, which presents a negative - \textit{``I did not feel present in the virtual space''}, anchored between \textit{``did not feel''} \& \textit{``felt present''}.
+
 
 %=========================================================================================================
 
