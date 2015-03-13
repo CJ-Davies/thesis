@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2015.2.5)  13 MAR 2015 15:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2015.2.5)  13 MAR 2015 17:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3303,40 +3303,32 @@ Overfull \hbox (3.46568pt too wide) in paragraph at lines 1074--1074
  []|\OT1/cmr/bx/n/10 mean| 
  []
 
-[158] [159]
+[158] [159] [160
+
+]
 <06_mirrorshades_studies_results/images/2.2/9-item-likert-type-questionnaire.pn
-g, id=744, 963.6pt x 680.5425pt>
+g, id=747, 963.6pt x 680.5425pt>
 File: 06_mirrorshades_studies_results/images/2.2/9-item-likert-type-questionnai
 re.png Graphic file (type png)
 
 <use 06_mirrorshades_studies_results/images/2.2/9-item-likert-type-questionnair
 e.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.2/9-item-like
-rt-type-questionnaire.png used on input line 1128.
+rt-type-questionnaire.png used on input line 1134.
 (pdftex.def)             Requested size: 266.14978pt x 187.96492pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[160
-
-] [161 <./06_mirrorshades_studies_results/images/2.2/9-item-likert-type-questio
-nnaire.png (PNG copy)>]
+ [161 <./06_mirrorshades_studies_results/images/2.2/9-item-likert-type-question
+naire.png (PNG copy)>] [162]
 <06_mirrorshades_studies_results/images/2.2/14-pitch-yaw-trad-75-25-50-50.png, 
-id=751, 1927.2pt x 680.5425pt>
+id=754, 1927.2pt x 680.5425pt>
 File: 06_mirrorshades_studies_results/images/2.2/14-pitch-yaw-trad-75-25-50-50.
 png Graphic file (type png)
 
 <use 06_mirrorshades_studies_results/images/2.2/14-pitch-yaw-trad-75-25-50-50.p
 ng>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.2/14-pitch-ya
-w-trad-75-25-50-50.png used on input line 1166.
+w-trad-75-25-50-50.png used on input line 1172.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[162]
 <06_mirrorshades_studies_results/images/2.2/16-pitch-yaw-75-25.png, id=755, 192
 7.2pt x 680.5425pt>
 File: 06_mirrorshades_studies_results/images/2.2/16-pitch-yaw-75-25.png Graphic
@@ -3344,8 +3336,12 @@ File: 06_mirrorshades_studies_results/images/2.2/16-pitch-yaw-75-25.png Graphic
 
 <use 06_mirrorshades_studies_results/images/2.2/16-pitch-yaw-75-25.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.2/16-pitch-ya
-w-75-25.png used on input line 1180.
+w-75-25.png used on input line 1186.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 <06_mirrorshades_studies_results/images/2.2/16-pitch-yaw-50-50.png, id=756, 192
 7.2pt x 680.5425pt>
@@ -3354,15 +3350,14 @@ File: 06_mirrorshades_studies_results/images/2.2/16-pitch-yaw-50-50.png Graphic
 
 <use 06_mirrorshades_studies_results/images/2.2/16-pitch-yaw-50-50.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.2/16-pitch-ya
-w-50-50.png used on input line 1188.
+w-50-50.png used on input line 1194.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [163 <./06_mirrorshades_studies_results/images/2.2/14-pitch-yaw-trad-75-25-50-5
-0.png (PNG copy)> <./06_mirrorshades_studies_results/images/2.2/16-pitch-yaw-75
--25.png (PNG copy)>]
+0.png (PNG copy)>]
 <06_mirrorshades_studies_results/images/2.2/14-pitch-yaw-75_25.png, id=761, 192
 7.2pt x 680.5425pt>
 File: 06_mirrorshades_studies_results/images/2.2/14-pitch-yaw-75_25.png Graphic
@@ -3370,14 +3365,15 @@ File: 06_mirrorshades_studies_results/images/2.2/14-pitch-yaw-75_25.png Graphic
 
 <use 06_mirrorshades_studies_results/images/2.2/14-pitch-yaw-75_25.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.2/14-pitch-ya
-w-75_25.png used on input line 1256.
+w-75_25.png used on input line 1262.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[164 <./06_mirrorshades_studies_results/images/2.2/16-pitch-yaw-50-50.png (PNG 
-copy)>]
+[164 <./06_mirrorshades_studies_results/images/2.2/16-pitch-yaw-75-25.png (PNG 
+copy)> <./06_mirrorshades_studies_results/images/2.2/16-pitch-yaw-50-50.png (PN
+G copy)>]
 <06_mirrorshades_studies_results/images/2.2/17-pitch-yaw-distance-moved-75-25.p
 ng, id=765, 1927.2pt x 1084.05pt>
 File: 06_mirrorshades_studies_results/images/2.2/17-pitch-yaw-distance-moved-75
@@ -3386,25 +3382,25 @@ File: 06_mirrorshades_studies_results/images/2.2/17-pitch-yaw-distance-moved-75
 <use 06_mirrorshades_studies_results/images/2.2/17-pitch-yaw-distance-moved-75-
 25.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.2/17-pitch-ya
-w-distance-moved-75-25.png used on input line 1272.
+w-distance-moved-75-25.png used on input line 1278.
 (pdftex.def)             Requested size: 443.57848pt x 249.50821pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[165 <./06_mirrorshades_studies_results/images/2.2/14-pitch-yaw-75_25.png (PNG 
-copy)>] [166 <./06_mirrorshades_studies_results/images/2.2/17-pitch-yaw-distanc
-e-moved-75-25.png (PNG copy)>]
-Overfull \hbox (3.46568pt too wide) in paragraph at lines 1390--1390
+[165]
+Overfull \hbox (3.46568pt too wide) in paragraph at lines 1396--1396
  []|\OT1/cmr/bx/n/10 mean| 
  []
 
 
-Overfull \hbox (3.46568pt too wide) in paragraph at lines 1390--1390
+Overfull \hbox (3.46568pt too wide) in paragraph at lines 1396--1396
  []|\OT1/cmr/bx/n/10 mean| 
  []
 
-) [167] [168]
+[166 <./06_mirrorshades_studies_results/images/2.2/14-pitch-yaw-75_25.png (PNG 
+copy)>] [167 <./06_mirrorshades_studies_results/images/2.2/17-pitch-yaw-distanc
+e-moved-75-25.png (PNG copy)>]) [168]
  7.
 (./07_conclusions/conclusions.tex) [169
 
@@ -4014,7 +4010,7 @@ r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texmf-d
 ist/fonts/type1/public/eurosym/feymo10.pfb></usr/share/texmf-dist/fonts/type1/p
 ublic/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/
 sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on thesis.pdf (194 pages, 93659224 bytes).
+Output written on thesis.pdf (194 pages, 93659997 bytes).
 PDF statistics:
  1102 PDF objects out of 1200 (max. 8388607)
  607 compressed objects within 7 object streams
