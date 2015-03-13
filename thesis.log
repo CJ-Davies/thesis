@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2015.2.5)  12 MAR 2015 22:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2015.2.5)  13 MAR 2015 15:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -725,7 +725,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [24 <./03_background/images/Mann_venn_original.png> <./03_background/images/Man
 n_venn_mod_1.png>]
-Overfull \hbox (18.76047pt too wide) in alignment at lines 133--204
+Overfull \hbox (17.56049pt too wide) in alignment at lines 133--204
  [] [] 
  []
 
@@ -782,9 +782,12 @@ File: 03_background/images/Lifton_continuum_modified.png Graphic file (type png
 Package pdftex.def Info: 03_background/images/Lifton_continuum_modified.png use
 d on input line 347.
 (pdftex.def)             Requested size: 354.86412pt x 111.9996pt.
- [30 <./03_background/images/Lifton_continuum_original.png> <./03_background/im
-ages/Lifton_continuum_modified.png>]
-<03_background/images/reality_virtual_reality_sensor_networks.png, id=130, 1927
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+<03_background/images/reality_virtual_reality_sensor_networks.png, id=125, 1927
 .2pt x 642.4pt>
 File: 03_background/images/reality_virtual_reality_sensor_networks.png Graphic 
 file (type png)
@@ -793,7 +796,13 @@ file (type png)
 Package pdftex.def Info: 03_background/images/reality_virtual_reality_sensor_ne
 tworks.png used on input line 356.
 (pdftex.def)             Requested size: 266.14978pt x 88.7101pt.
- [31 <./03_background/images/reality_virtual_reality_sensor_networks.png>]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[30 <./03_background/images/Lifton_continuum_original.png>] [31 <./03_backgroun
+d/images/Lifton_continuum_modified.png> <./03_background/images/reality_virtual
+_reality_sensor_networks.png>]
 <03_background/images/virtuality-continuum-augmented-reality.png, id=136, 1927.
 2pt x 357.335pt>
 File: 03_background/images/virtuality-continuum-augmented-reality.png Graphic f
@@ -852,11 +861,7 @@ y-information-flows-dashed.png used on input line 432.
 (pdftex.def)             Requested size: 443.57848pt x 147.62569pt.
  [33 <./03_background/images/virtuality-continuum-cross-reality-3.png> <./03_ba
 ckground/images/virtuality-continuum-cross-reality-information-flows-dashed.png
->] [34]
-Underfull \vbox (badness 10000) detected at line 521
- []
-
-[35] [36]
+>] [34] [35] [36]
 <03_background/images/focus-locus-sensus-with-virtuality-continuum-updated-with
 -grid.png, id=162, 1927.2pt x 1623.06375pt>
 File: 03_background/images/focus-locus-sensus-with-virtuality-continuum-updated
@@ -865,14 +870,14 @@ File: 03_background/images/focus-locus-sensus-with-virtuality-continuum-updated
 <use 03_background/images/focus-locus-sensus-with-virtuality-continuum-updated-
 with-grid.png>
 Package pdftex.def Info: 03_background/images/focus-locus-sensus-with-virtualit
-y-continuum-updated-with-grid.png used on input line 550.
+y-continuum-updated-with-grid.png used on input line 558.
 (pdftex.def)             Requested size: 354.86412pt x 298.85043pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [37]
-Overfull \hbox (13.45013pt too wide) in paragraph at lines 580--581
+Overfull \hbox (13.45013pt too wide) in paragraph at lines 588--589
 []\OT1/cmr/m/n/10 Furthermore, the no-tion of ex-pe-ri-ence of pres-ence as cha
 ng-ing con-tin-u-ally from moment-to-moment [[],
  []
@@ -884,7 +889,7 @@ File: 03_background/images/transition-rw-vr.png Graphic file (type png)
 
 <use 03_background/images/transition-rw-vr.png>
 Package pdftex.def Info: 03_background/images/transition-rw-vr.png used on inpu
-t line 598.
+t line 606.
 (pdftex.def)             Requested size: 354.86412pt x 312.89659pt.
 
 
@@ -1153,7 +1158,11 @@ pg)
 Package pdftex.def Info: 04_vtw/images/arduino_joystick_for_second_life_3.jpg u
 sed on input line 279.
 (pdftex.def)             Requested size: 310.50357pt x 241.0435pt.
- [56 <./04_vtw/images/arduino_joystick_for_second_life_3.jpg>] [57]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[56] [57 <./04_vtw/images/arduino_joystick_for_second_life_3.jpg>]
 <04_vtw/images/haversine_example.png, id=261, 1927.2pt x 693.59125pt>
 File: 04_vtw/images/haversine_example.png Graphic file (type png)
 
@@ -1179,7 +1188,7 @@ t>
 File: 04_vtw/images/arduino_hmc6343_u-blox_MAX-6.jpg Graphic file (type jpg)
  <use 04_vtw/images/arduino_hmc6343_u-blox_MAX-6.jpg>
 Package pdftex.def Info: 04_vtw/images/arduino_hmc6343_u-blox_MAX-6.jpg used on
- input line 443.
+ input line 447.
 (pdftex.def)             Requested size: 217.35588pt x 227.71786pt.
 
 <04_vtw/images/pangolin_tablet_back.jpg, id=272, 821.0675pt x 578.16pt>
@@ -1187,19 +1196,19 @@ File: 04_vtw/images/pangolin_tablet_back.jpg Graphic file (type jpg)
 
 <use 04_vtw/images/pangolin_tablet_back.jpg>
 Package pdftex.def Info: 04_vtw/images/pangolin_tablet_back.jpg used on input l
-ine 443.
+ine 447.
 (pdftex.def)             Requested size: 217.35588pt x 153.05287pt.
 File: 04_vtw/images/arduino_hmc6343_u-blox_MAX-6.jpg Graphic file (type jpg)
 
 <use 04_vtw/images/arduino_hmc6343_u-blox_MAX-6.jpg>
 Package pdftex.def Info: 04_vtw/images/arduino_hmc6343_u-blox_MAX-6.jpg used on
- input line 443.
+ input line 447.
 (pdftex.def)             Requested size: 146.07573pt x 153.05287pt.
 File: 04_vtw/images/pangolin_tablet_back.jpg Graphic file (type jpg)
 
 <use 04_vtw/images/pangolin_tablet_back.jpg>
 Package pdftex.def Info: 04_vtw/images/pangolin_tablet_back.jpg used on input l
-ine 443.
+ine 447.
 (pdftex.def)             Requested size: 217.35634pt x 153.05287pt.
  [60 <./04_vtw/images/arduino_wiring_hmc_ublox.png>] (/usr/share/texmf-dist/tex
 /latex/listings/lstlang1.sty
@@ -1208,20 +1217,20 @@ File: lstlang1.sty 2014/03/04 1.5c listings language file
 (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 464.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 468.
 
 
 (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 464.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 468.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 483--483
+Underfull \hbox (badness 10000) in paragraph at lines 487--487
 [][]$\OT1/cmtt/m/n/8 https : / / u-[]blox . com / images / downloads / Product 
 _ Docs / u-[]blox6 _ ReceiverDescriptionProtocolSpec _ (GPS .
  []
@@ -1230,89 +1239,89 @@ _ Docs / u-[]blox6 _ ReceiverDescriptionProtocolSpec _ (GPS .
 n_tablet_back.jpg>] [62] (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 527.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 531.
 
  (/usr/share/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 527.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 531.
  [63]
 <04_vtw/images/second_life_structure.png, id=288, 1927.2pt x 2195.20125pt>
 File: 04_vtw/images/second_life_structure.png Graphic file (type png)
 
 <use 04_vtw/images/second_life_structure.png>
 Package pdftex.def Info: 04_vtw/images/second_life_structure.png used on input 
-line 578.
+line 582.
 (pdftex.def)             Requested size: 354.86412pt x 404.19661pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 585.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 589.
 
-Underfull \hbox (badness 10000) in paragraph at lines 616--617
+Underfull \hbox (badness 10000) in paragraph at lines 620--621
 []|\OT1/cmr/m/n/10 Called upon each it-er-a-tion of $\OT1/cmtt/m/n/10 LLAppViwe
 r :: mainLoop()$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 616--617
+Underfull \hbox (badness 10000) in paragraph at lines 620--621
 \OT1/cmr/m/n/10 & fur-ther calls $\OT1/cmtt/m/n/10 :: updateFromMostRecentMessa
 ge()$\OT1/cmr/m/n/10 ,
  []
 
 
-Overfull \hbox (1.24747pt too wide) in paragraph at lines 622--622
+Overfull \hbox (1.24747pt too wide) in paragraph at lines 626--626
 []|\OT1/cmtt/m/n/10 ::updateFromMostRecent-
  []
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 628--629
+Underfull \hbox (badness 1320) in paragraph at lines 632--633
 \OT1/cmr/m/n/10 sage to the avatar's cam-era. This is achieved by a call
  []
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 634--635
+Underfull \hbox (badness 1087) in paragraph at lines 638--639
 []|\OT1/cmr/m/n/10 Applies the po-si-tion data ex-tracted from an Ar-duino mes-
 
  []
 
 
-Underfull \hbox (badness 1205) in paragraph at lines 634--635
+Underfull \hbox (badness 1205) in paragraph at lines 638--639
 \OT1/cmr/m/n/10 to per-form smooth move-ment be-tween the avatar's cur-rent
  []
 
 
-Underfull \hbox (badness 1552) in paragraph at lines 634--635
+Underfull \hbox (badness 1552) in paragraph at lines 638--639
 \OT1/cmr/m/n/10 po-si-tion (ob-tained with $\OT1/cmtt/m/n/10 LLAgent :: getPosi
 tionGlobal()$\OT1/cmr/m/n/10 ) &
  []
 
 
-Underfull \hbox (badness 2302) in paragraph at lines 634--635
+Underfull \hbox (badness 2302) in paragraph at lines 638--639
 \OT1/cmr/m/n/10 the new po-si-tion from the Ar-duino (con-verted from lat-i-
  []
 
 
-Underfull \hbox (badness 1314) in paragraph at lines 634--635
+Underfull \hbox (badness 1314) in paragraph at lines 638--639
 \OT1/cmr/m/n/10 tude & lon-gi-tude to Sec-ond Life re-gion co-or-di-nates in $\
 OT1/cmtt/m/n/10 ::
  []
 
 
-Overfull \hbox (1.24747pt too wide) in paragraph at lines 640--640
+Overfull \hbox (1.24747pt too wide) in paragraph at lines 644--644
 []|\OT1/cmtt/m/n/10 ::quaternionFromDegrees| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 646--646
+Underfull \hbox (badness 10000) in paragraph at lines 650--650
 []|\OT1/cmtt/m/n/10 ::latitudeLongitudeTo-
  []
 
 
-Underfull \vbox (badness 10000) detected at line 658
+Underfull \vbox (badness 10000) detected at line 662
  []
 
 [64] [65]
@@ -1321,7 +1330,7 @@ Underfull \vbox (badness 10000) detected at line 658
 File: 04_vtw/images/pangolin_second_life_dialogue.png Graphic file (type png)
  <use 04_vtw/images/pangolin_second_life_dialogue.png>
 Package pdftex.def Info: 04_vtw/images/pangolin_second_life_dialogue.png used o
-n input line 669.
+n input line 673.
 (pdftex.def)             Requested size: 266.14978pt x 260.08447pt.
 
 
@@ -1339,7 +1348,7 @@ olin_second_life_dialogue.png>] [69]
 File: 04_vtw/images/cathedral_reconstruction_side.png Graphic file (type png)
 <use 04_vtw/images/cathedral_reconstruction_side.png>
 Package pdftex.def Info: 04_vtw/images/cathedral_reconstruction_side.png used o
-n input line 742.
+n input line 746.
 (pdftex.def)             Requested size: 443.57848pt x 148.78082pt.
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
@@ -1364,7 +1373,7 @@ File: 04_vtw/images/cathedral_real_outside.jpg Graphic file (type jpg)
 
 <use 04_vtw/images/cathedral_real_outside.jpg>
 Package pdftex.def Info: 04_vtw/images/cathedral_real_outside.jpg used on input
- line 765.
+ line 769.
 (pdftex.def)             Requested size: 217.35588pt x 144.53824pt.
 
 <04_vtw/images/cathedral_reconstruction_above.jpg, id=316, 1927.2pt x 1061.9675
@@ -1372,19 +1381,19 @@ pt>
 File: 04_vtw/images/cathedral_reconstruction_above.jpg Graphic file (type jpg)
  <use 04_vtw/images/cathedral_reconstruction_above.jpg>
 Package pdftex.def Info: 04_vtw/images/cathedral_reconstruction_above.jpg used 
-on input line 765.
+on input line 769.
 (pdftex.def)             Requested size: 217.35588pt x 119.76596pt.
 File: 04_vtw/images/cathedral_real_outside.jpg Graphic file (type jpg)
 
 <use 04_vtw/images/cathedral_real_outside.jpg>
 Package pdftex.def Info: 04_vtw/images/cathedral_real_outside.jpg used on input
- line 765.
+ line 769.
 (pdftex.def)             Requested size: 180.10643pt x 119.76596pt.
 File: 04_vtw/images/cathedral_reconstruction_above.jpg Graphic file (type jpg)
 
 <use 04_vtw/images/cathedral_reconstruction_above.jpg>
 Package pdftex.def Info: 04_vtw/images/cathedral_reconstruction_above.jpg used 
-on input line 765.
+on input line 769.
 (pdftex.def)             Requested size: 217.34467pt x 119.76596pt.
 
 <04_vtw/images/pangolin_laptop_router_battery.jpg, id=317, 903.375pt x 600.2425
@@ -1392,25 +1401,25 @@ pt>
 File: 04_vtw/images/pangolin_laptop_router_battery.jpg Graphic file (type jpg)
  <use 04_vtw/images/pangolin_laptop_router_battery.jpg>
 Package pdftex.def Info: 04_vtw/images/pangolin_laptop_router_battery.jpg used 
-on input line 781.
+on input line 785.
 (pdftex.def)             Requested size: 217.35588pt x 144.41833pt.
 
 <04_vtw/images/vtw_in_use.jpg, id=318, 216.81pt x 145.0218pt>
 File: 04_vtw/images/vtw_in_use.jpg Graphic file (type jpg)
 
 <use 04_vtw/images/vtw_in_use.jpg>
-Package pdftex.def Info: 04_vtw/images/vtw_in_use.jpg used on input line 781.
+Package pdftex.def Info: 04_vtw/images/vtw_in_use.jpg used on input line 785.
 (pdftex.def)             Requested size: 217.35588pt x 145.39319pt.
 File: 04_vtw/images/pangolin_laptop_router_battery.jpg Graphic file (type jpg)
 
 <use 04_vtw/images/pangolin_laptop_router_battery.jpg>
 Package pdftex.def Info: 04_vtw/images/pangolin_laptop_router_battery.jpg used 
-on input line 781.
+on input line 785.
 (pdftex.def)             Requested size: 217.35202pt x 144.41833pt.
 File: 04_vtw/images/vtw_in_use.jpg Graphic file (type jpg)
 
 <use 04_vtw/images/vtw_in_use.jpg>
-Package pdftex.def Info: 04_vtw/images/vtw_in_use.jpg used on input line 781.
+Package pdftex.def Info: 04_vtw/images/vtw_in_use.jpg used on input line 785.
 (pdftex.def)             Requested size: 215.91623pt x 144.41833pt.
 
 <04_vtw/images/vtw_implementation.png, id=319, 1927.2pt x 713.66624pt>
@@ -1418,7 +1427,7 @@ File: 04_vtw/images/vtw_implementation.png Graphic file (type png)
 
 <use 04_vtw/images/vtw_implementation.png>
 Package pdftex.def Info: 04_vtw/images/vtw_implementation.png used on input lin
-e 785.
+e 789.
 (pdftex.def)             Requested size: 443.57848pt x 164.25957pt.
 
 
@@ -1427,7 +1436,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [71 <./04_vtw/images/cathedral_real_outside.jpg> <./04_vtw/images/cathedral_rec
 onstruction_above.jpg>] [72 <./04_vtw/images/pangolin_laptop_router_battery.jpg
 > <./04_vtw/images/vtw_in_use.jpg> <./04_vtw/images/vtw_implementation.png>]
-Overfull \hbox (26.68507pt too wide) in paragraph at lines 812--813
+Overfull \hbox (26.68507pt too wide) in paragraph at lines 816--817
 \OT1/cmr/m/n/10 route) were en-tered into a Post-greSQL database and the Post-G
 IS database ex-ten-der's \OT1/cmtt/m/n/10 ST[]HausdorffDistance
  []
@@ -1437,7 +1446,7 @@ File: 04_vtw/images/vtw_all_routes.png Graphic file (type png)
 
 <use 04_vtw/images/vtw_all_routes.png>
 Package pdftex.def Info: 04_vtw/images/vtw_all_routes.png used on input line 82
-0.
+4.
 (pdftex.def)             Requested size: 354.86412pt x 202.66731pt.
 
 
@@ -1449,7 +1458,7 @@ File: 04_vtw/images/vtw_alll_routes_first_half.png Graphic file (type png)
 
 <use 04_vtw/images/vtw_alll_routes_first_half.png>
 Package pdftex.def Info: 04_vtw/images/vtw_alll_routes_first_half.png used on i
-nput line 833.
+nput line 837.
 (pdftex.def)             Requested size: 354.86412pt x 202.66731pt.
 
 
@@ -1464,7 +1473,7 @@ File: 04_vtw/images/vtw_all_routes_second_half.png Graphic file (type png)
 
 <use 04_vtw/images/vtw_all_routes_second_half.png>
 Package pdftex.def Info: 04_vtw/images/vtw_all_routes_second_half.png used on i
-nput line 842.
+nput line 846.
 (pdftex.def)             Requested size: 354.86412pt x 202.66731pt.
 
 
@@ -2963,7 +2972,7 @@ Underfull \hbox (badness 4621) in paragraph at lines 99--100
  []
 
 
-Overfull \hbox (9.13753pt too wide) in alignment at lines 75--132
+Overfull \hbox (7.93755pt too wide) in alignment at lines 75--132
  [] [] 
  []
 
@@ -3118,7 +3127,7 @@ ire-boxplot.png Graphic file (type png)
 <use 06_mirrorshades_studies_results/images/2.1/12-item-likert-type-questionnai
 re-boxplot.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/12-item-lik
-ert-type-questionnaire-boxplot.png used on input line 586.
+ert-type-questionnaire-boxplot.png used on input line 591.
 (pdftex.def)             Requested size: 266.14978pt x 187.96492pt.
 
 
@@ -3133,11 +3142,13 @@ raphic file (type png)
 
 <use 06_mirrorshades_studies_results/images/2.1/8-pitch-yaw-trad-1-3-1-4.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/8-pitch-yaw
--trad-1-3-1-4.png used on input line 646.
+-trad-1-3-1-4.png used on input line 651.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
 
-[149 <./06_mirrorshades_studies_results/images/2.1/8-pitch-yaw-trad-1-3-1-4.png
- (PNG copy)>] [150]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[149] [150]
 <06_mirrorshades_studies_results/images/2.1/8-1-3-pitch-yaw.png, id=705, 1927.2
 pt x 680.5425pt>
 File: 06_mirrorshades_studies_results/images/2.1/8-1-3-pitch-yaw.png Graphic fi
@@ -3145,7 +3156,7 @@ le (type png)
 
 <use 06_mirrorshades_studies_results/images/2.1/8-1-3-pitch-yaw.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/8-1-3-pitch
--yaw.png used on input line 762.
+-yaw.png used on input line 767.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
 
 <06_mirrorshades_studies_results/images/2.1/12-1-4-pitch-yaw.png, id=706, 1927.
@@ -3155,11 +3166,15 @@ ile (type png)
 
 <use 06_mirrorshades_studies_results/images/2.1/12-1-4-pitch-yaw.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/12-1-4-pitc
-h-yaw.png used on input line 778.
+h-yaw.png used on input line 783.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
- [151 <./06_mirrorshades_studies_results/images/2.1/8-1-3-pitch-yaw.png (PNG co
-py)> <./06_mirrorshades_studies_results/images/2.1/12-1-4-pitch-yaw.png (PNG co
-py)>]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[151 <./06_mirrorshades_studies_results/images/2.1/8-pitch-yaw-trad-1-3-1-4.png
+ (PNG copy)> <./06_mirrorshades_studies_results/images/2.1/8-1-3-pitch-yaw.png 
+(PNG copy)>]
 <06_mirrorshades_studies_results/images/2.1/11-pitch-yaw-1-3.png, id=711, 1927.
 2pt x 680.5425pt>
 File: 06_mirrorshades_studies_results/images/2.1/11-pitch-yaw-1-3.png Graphic f
@@ -3167,8 +3182,12 @@ ile (type png)
 
 <use 06_mirrorshades_studies_results/images/2.1/11-pitch-yaw-1-3.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/11-pitch-ya
-w-1-3.png used on input line 862.
+w-1-3.png used on input line 867.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 <06_mirrorshades_studies_results/images/2.1/11-pitch-yaw-1-4.png, id=712, 1927.
 2pt x 680.5425pt>
@@ -3177,24 +3196,28 @@ ile (type png)
 
 <use 06_mirrorshades_studies_results/images/2.1/11-pitch-yaw-1-4.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/11-pitch-ya
-w-1-4.png used on input line 870.
+w-1-4.png used on input line 875.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[152 <./06_mirrorshades_studies_results/images/2.1/11-pitch-yaw-1-3.png (PNG co
-py)>]
-<06_mirrorshades_studies_results/images/2.1/7-pitch-yaw-1-4.png, id=716, 1927.2
+
+<06_mirrorshades_studies_results/images/2.1/7-pitch-yaw-1-4.png, id=713, 1927.2
 pt x 680.5425pt>
 File: 06_mirrorshades_studies_results/images/2.1/7-pitch-yaw-1-4.png Graphic fi
 le (type png)
 
 <use 06_mirrorshades_studies_results/images/2.1/7-pitch-yaw-1-4.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/7-pitch-yaw
--1-4.png used on input line 880.
+-1-4.png used on input line 885.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[152 <./06_mirrorshades_studies_results/images/2.1/12-1-4-pitch-yaw.png (PNG co
+py)>]
 <06_mirrorshades_studies_results/images/2.1/13-pitch-yaw-1-3.png, id=717, 1927.
 2pt x 680.5425pt>
 File: 06_mirrorshades_studies_results/images/2.1/13-pitch-yaw-1-3.png Graphic f
@@ -3202,10 +3225,14 @@ ile (type png)
 
 <use 06_mirrorshades_studies_results/images/2.1/13-pitch-yaw-1-3.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/13-pitch-ya
-w-1-3.png used on input line 890.
+w-1-3.png used on input line 895.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
- [153 <./06_mirrorshades_studies_results/images/2.1/11-pitch-yaw-1-4.png (PNG c
-opy)> <./06_mirrorshades_studies_results/images/2.1/7-pitch-yaw-1-4.png (PNG co
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[153 <./06_mirrorshades_studies_results/images/2.1/11-pitch-yaw-1-3.png (PNG co
+py)> <./06_mirrorshades_studies_results/images/2.1/11-pitch-yaw-1-4.png (PNG co
 py)>]
 <06_mirrorshades_studies_results/images/2.1/8-1-3_2up.png, id=721, 1927.2pt x 1
 084.05pt>
@@ -3213,7 +3240,7 @@ File: 06_mirrorshades_studies_results/images/2.1/8-1-3_2up.png Graphic file (ty
 pe png)
  <use 06_mirrorshades_studies_results/images/2.1/8-1-3_2up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/8-1-3_2up.p
-ng used on input line 904.
+ng used on input line 909.
 (pdftex.def)             Requested size: 443.57848pt x 249.50821pt.
 
 
@@ -3226,14 +3253,15 @@ File: 06_mirrorshades_studies_results/images/2.1/9-1-4_2up.png Graphic file (ty
 pe png)
  <use 06_mirrorshades_studies_results/images/2.1/9-1-4_2up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/9-1-4_2up.p
-ng used on input line 912.
+ng used on input line 917.
 (pdftex.def)             Requested size: 443.57848pt x 249.50821pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[154 <./06_mirrorshades_studies_results/images/2.1/13-pitch-yaw-1-3.png (PNG co
-py)>]
+[154 <./06_mirrorshades_studies_results/images/2.1/7-pitch-yaw-1-4.png (PNG cop
+y)> <./06_mirrorshades_studies_results/images/2.1/13-pitch-yaw-1-3.png (PNG cop
+y)>]
 <06_mirrorshades_studies_results/images/2.1/10-1-4_opacity.png, id=726, 1927.2p
 t x 680.5425pt>
 File: 06_mirrorshades_studies_results/images/2.1/10-1-4_opacity.png Graphic fil
@@ -3241,7 +3269,7 @@ e (type png)
 
 <use 06_mirrorshades_studies_results/images/2.1/10-1-4_opacity.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/10-1-4_opac
-ity.png used on input line 926.
+ity.png used on input line 931.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
 
 
@@ -3255,7 +3283,7 @@ e (type png)
 
 <use 06_mirrorshades_studies_results/images/2.1/12-1-4_opacity.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/12-1-4_opac
-ity.png used on input line 934.
+ity.png used on input line 939.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
 
 
@@ -3263,18 +3291,19 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [155 <./06_mirrorshades_studies_results/images/2.1/8-1-3_2up.png (PNG copy)>]
 [156 <./06_mirrorshades_studies_results/images/2.1/9-1-4_2up.png (PNG copy)>]
-Overfull \hbox (3.46568pt too wide) in paragraph at lines 1069--1069
- []|\OT1/cmr/bx/n/10 mean| 
- []
-
-
-Overfull \hbox (3.46568pt too wide) in paragraph at lines 1069--1069
- []|\OT1/cmr/bx/n/10 mean| 
- []
-
 [157 <./06_mirrorshades_studies_results/images/2.1/10-1-4_opacity.png (PNG copy
 )> <./06_mirrorshades_studies_results/images/2.1/12-1-4_opacity.png (PNG copy)>
-] [158] [159]
+]
+Overfull \hbox (3.46568pt too wide) in paragraph at lines 1074--1074
+ []|\OT1/cmr/bx/n/10 mean| 
+ []
+
+
+Overfull \hbox (3.46568pt too wide) in paragraph at lines 1074--1074
+ []|\OT1/cmr/bx/n/10 mean| 
+ []
+
+[158] [159]
 <06_mirrorshades_studies_results/images/2.2/9-item-likert-type-questionnaire.pn
 g, id=744, 963.6pt x 680.5425pt>
 File: 06_mirrorshades_studies_results/images/2.2/9-item-likert-type-questionnai
@@ -3283,7 +3312,7 @@ re.png Graphic file (type png)
 <use 06_mirrorshades_studies_results/images/2.2/9-item-likert-type-questionnair
 e.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.2/9-item-like
-rt-type-questionnaire.png used on input line 1123.
+rt-type-questionnaire.png used on input line 1128.
 (pdftex.def)             Requested size: 266.14978pt x 187.96492pt.
 
 
@@ -3301,7 +3330,7 @@ png Graphic file (type png)
 <use 06_mirrorshades_studies_results/images/2.2/14-pitch-yaw-trad-75-25-50-50.p
 ng>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.2/14-pitch-ya
-w-trad-75-25-50-50.png used on input line 1161.
+w-trad-75-25-50-50.png used on input line 1166.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
 
 
@@ -3315,7 +3344,7 @@ File: 06_mirrorshades_studies_results/images/2.2/16-pitch-yaw-75-25.png Graphic
 
 <use 06_mirrorshades_studies_results/images/2.2/16-pitch-yaw-75-25.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.2/16-pitch-ya
-w-75-25.png used on input line 1175.
+w-75-25.png used on input line 1180.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
 
 <06_mirrorshades_studies_results/images/2.2/16-pitch-yaw-50-50.png, id=756, 192
@@ -3325,7 +3354,7 @@ File: 06_mirrorshades_studies_results/images/2.2/16-pitch-yaw-50-50.png Graphic
 
 <use 06_mirrorshades_studies_results/images/2.2/16-pitch-yaw-50-50.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.2/16-pitch-ya
-w-50-50.png used on input line 1183.
+w-50-50.png used on input line 1188.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
 
 
@@ -3341,7 +3370,7 @@ File: 06_mirrorshades_studies_results/images/2.2/14-pitch-yaw-75_25.png Graphic
 
 <use 06_mirrorshades_studies_results/images/2.2/14-pitch-yaw-75_25.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.2/14-pitch-ya
-w-75_25.png used on input line 1251.
+w-75_25.png used on input line 1256.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
 
 
@@ -3357,7 +3386,7 @@ File: 06_mirrorshades_studies_results/images/2.2/17-pitch-yaw-distance-moved-75
 <use 06_mirrorshades_studies_results/images/2.2/17-pitch-yaw-distance-moved-75-
 25.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.2/17-pitch-ya
-w-distance-moved-75-25.png used on input line 1267.
+w-distance-moved-75-25.png used on input line 1272.
 (pdftex.def)             Requested size: 443.57848pt x 249.50821pt.
 
 
@@ -3366,12 +3395,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [165 <./06_mirrorshades_studies_results/images/2.2/14-pitch-yaw-75_25.png (PNG 
 copy)>] [166 <./06_mirrorshades_studies_results/images/2.2/17-pitch-yaw-distanc
 e-moved-75-25.png (PNG copy)>]
-Overfull \hbox (3.46568pt too wide) in paragraph at lines 1385--1385
+Overfull \hbox (3.46568pt too wide) in paragraph at lines 1390--1390
  []|\OT1/cmr/bx/n/10 mean| 
  []
 
 
-Overfull \hbox (3.46568pt too wide) in paragraph at lines 1385--1385
+Overfull \hbox (3.46568pt too wide) in paragraph at lines 1390--1390
  []|\OT1/cmr/bx/n/10 mean| 
  []
 
@@ -3515,27 +3544,293 @@ ns-stage-1.pdf, page1 used on input line 220.
 
 Appendix C.
 
-<06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, id=829
+<06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-stage-2
+-1.pdf, id=829, 597.55246pt x 845.07718pt>
+File: 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-st
+age-2-1.pdf Graphic file (type pdf)
+
+<use 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-sta
+ge-2-1.pdf>
+Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/12-item-likert-ty
+pe-questionnaire-stage-2-1.pdf used on input line 224.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+File: 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-st
+age-2-1.pdf Graphic file (type pdf)
+
+<use 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-sta
+ge-2-1.pdf>
+Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/12-item-likert-ty
+pe-questionnaire-stage-2-1.pdf used on input line 224.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+ [174
+
+]
+<06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-stage-2
+-1.pdf, id=835, page=1, 597.55246pt x 845.07718pt>
+File: 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-st
+age-2-1.pdf Graphic file (type pdf)
+
+<use 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-sta
+ge-2-1.pdf, page 1>
+Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/12-item-likert-ty
+pe-questionnaire-stage-2-1.pdf, page1 used on input line 224.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+File: 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-st
+age-2-1.pdf Graphic file (type pdf)
+
+<use 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-sta
+ge-2-1.pdf, page 1>
+Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/12-item-likert-ty
+pe-questionnaire-stage-2-1.pdf, page1 used on input line 224.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+File: 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-st
+age-2-1.pdf Graphic file (type pdf)
+
+<use 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-sta
+ge-2-1.pdf, page 1>
+Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/12-item-likert-ty
+pe-questionnaire-stage-2-1.pdf, page1 used on input line 224.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+File: 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-st
+age-2-1.pdf Graphic file (type pdf)
+
+<use 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-sta
+ge-2-1.pdf, page 1>
+Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/12-item-likert-ty
+pe-questionnaire-stage-2-1.pdf, page1 used on input line 224.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+File: 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-st
+age-2-1.pdf Graphic file (type pdf)
+
+<use 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-sta
+ge-2-1.pdf, page 1>
+Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/12-item-likert-ty
+pe-questionnaire-stage-2-1.pdf, page1 used on input line 224.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+ [175 <./06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire
+-stage-2-1.pdf>]
+Appendix D.
+
+<06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-stage-2-
+2.pdf, id=853, 597.55246pt x 845.07718pt>
+File: 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-sta
+ge-2-2.pdf Graphic file (type pdf)
+
+<use 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-stag
+e-2-2.pdf>
+Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/9-item-likert-typ
+e-questionnaire-stage-2-2.pdf used on input line 228.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+File: 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-sta
+ge-2-2.pdf Graphic file (type pdf)
+
+<use 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-stag
+e-2-2.pdf>
+Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/9-item-likert-typ
+e-questionnaire-stage-2-2.pdf used on input line 228.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+ [176
+
+]
+<06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-stage-2-
+2.pdf, id=859, page=1, 597.55246pt x 845.07718pt>
+File: 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-sta
+ge-2-2.pdf Graphic file (type pdf)
+
+<use 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-stag
+e-2-2.pdf, page 1>
+Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/9-item-likert-typ
+e-questionnaire-stage-2-2.pdf, page1 used on input line 228.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+File: 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-sta
+ge-2-2.pdf Graphic file (type pdf)
+
+<use 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-stag
+e-2-2.pdf, page 1>
+Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/9-item-likert-typ
+e-questionnaire-stage-2-2.pdf, page1 used on input line 228.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+File: 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-sta
+ge-2-2.pdf Graphic file (type pdf)
+
+<use 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-stag
+e-2-2.pdf, page 1>
+Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/9-item-likert-typ
+e-questionnaire-stage-2-2.pdf, page1 used on input line 228.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+File: 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-sta
+ge-2-2.pdf Graphic file (type pdf)
+
+<use 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-stag
+e-2-2.pdf, page 1>
+Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/9-item-likert-typ
+e-questionnaire-stage-2-2.pdf, page1 used on input line 228.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+File: 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-sta
+ge-2-2.pdf Graphic file (type pdf)
+
+<use 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-stag
+e-2-2.pdf, page 1>
+Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/9-item-likert-typ
+e-questionnaire-stage-2-2.pdf, page1 used on input line 228.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+ [177 <./06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-
+stage-2-2.pdf>]
+Appendix E.
+
+<06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-1.pdf, id=876
+, 597.55246pt x 845.07718pt>
+File: 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-1.pdf Gr
+aphic file (type pdf)
+
+<use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-1.pdf>
+Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
+ns-stage-2-1.pdf used on input line 232.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+File: 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-1.pdf Gr
+aphic file (type pdf)
+
+<use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-1.pdf>
+Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
+ns-stage-2-1.pdf used on input line 232.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+
+[178
+
+]
+<06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-1.pdf, id=882
+, page=1, 597.55246pt x 845.07718pt>
+File: 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-1.pdf Gr
+aphic file (type pdf)
+
+<use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-1.pdf, pa
+ge 1>
+Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
+ns-stage-2-1.pdf, page1 used on input line 232.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+File: 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-1.pdf Gr
+aphic file (type pdf)
+
+<use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-1.pdf, pa
+ge 1>
+Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
+ns-stage-2-1.pdf, page1 used on input line 232.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+File: 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-1.pdf Gr
+aphic file (type pdf)
+
+<use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-1.pdf, pa
+ge 1>
+Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
+ns-stage-2-1.pdf, page1 used on input line 232.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+File: 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-1.pdf Gr
+aphic file (type pdf)
+
+<use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-1.pdf, pa
+ge 1>
+Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
+ns-stage-2-1.pdf, page1 used on input line 232.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+File: 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-1.pdf Gr
+aphic file (type pdf)
+
+<use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-1.pdf, pa
+ge 1>
+Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
+ns-stage-2-1.pdf, page1 used on input line 232.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+ [179 <./06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-1.pdf
+>]
+Appendix F.
+
+<06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-2.pdf, id=908
+, 597.55246pt x 845.07718pt>
+File: 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-2.pdf Gr
+aphic file (type pdf)
+
+<use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-2.pdf>
+Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
+ns-stage-2-2.pdf used on input line 236.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+File: 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-2.pdf Gr
+aphic file (type pdf)
+
+<use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-2.pdf>
+Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
+ns-stage-2-2.pdf used on input line 236.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+
+[180
+
+]
+<06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-2.pdf, id=914
+, page=1, 597.55246pt x 845.07718pt>
+File: 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-2.pdf Gr
+aphic file (type pdf)
+
+<use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-2.pdf, pa
+ge 1>
+Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
+ns-stage-2-2.pdf, page1 used on input line 236.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+File: 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-2.pdf Gr
+aphic file (type pdf)
+
+<use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-2.pdf, pa
+ge 1>
+Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
+ns-stage-2-2.pdf, page1 used on input line 236.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+File: 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-2.pdf Gr
+aphic file (type pdf)
+
+<use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-2.pdf, pa
+ge 1>
+Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
+ns-stage-2-2.pdf, page1 used on input line 236.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+File: 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-2.pdf Gr
+aphic file (type pdf)
+
+<use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-2.pdf, pa
+ge 1>
+Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
+ns-stage-2-2.pdf, page1 used on input line 236.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+File: 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-2.pdf Gr
+aphic file (type pdf)
+
+<use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-2.pdf, pa
+ge 1>
+Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
+ns-stage-2-2.pdf, page1 used on input line 236.
+(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
+ [181 <./06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-2.pdf
+>]
+Appendix G.
+
+<06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, id=932
 , 597.55246pt x 845.07718pt>
 File: 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf Gr
 aphic file (type pdf)
 
 <use 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/igroup-presence-q
-uestionnaire.pdf used on input line 224.
+uestionnaire.pdf used on input line 240.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf Gr
 aphic file (type pdf)
 
 <use 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/igroup-presence-q
-uestionnaire.pdf used on input line 224.
+uestionnaire.pdf used on input line 240.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
-[174
+[182
 
 ]
-<06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, id=835
+<06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, id=938
 , page=1, 597.55246pt x 845.07718pt>
 File: 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf Gr
 aphic file (type pdf)
@@ -3543,7 +3838,7 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, pa
 ge 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/igroup-presence-q
-uestionnaire.pdf, page1 used on input line 224.
+uestionnaire.pdf, page1 used on input line 240.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf Gr
 aphic file (type pdf)
@@ -3551,7 +3846,7 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, pa
 ge 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/igroup-presence-q
-uestionnaire.pdf, page1 used on input line 224.
+uestionnaire.pdf, page1 used on input line 240.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
 File: 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf Gr
 aphic file (type pdf)
@@ -3559,7 +3854,7 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, pa
 ge 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/igroup-presence-q
-uestionnaire.pdf, page1 used on input line 224.
+uestionnaire.pdf, page1 used on input line 240.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
 File: 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf Gr
 aphic file (type pdf)
@@ -3567,7 +3862,7 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, pa
 ge 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/igroup-presence-q
-uestionnaire.pdf, page1 used on input line 224.
+uestionnaire.pdf, page1 used on input line 240.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
 File: 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf Gr
 aphic file (type pdf)
@@ -3575,11 +3870,11 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, pa
 ge 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/igroup-presence-q
-uestionnaire.pdf, page1 used on input line 224.
+uestionnaire.pdf, page1 used on input line 240.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
- [175 <./06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf
+ [183 <./06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf
 >]
-<06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, id=862
+<06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, id=964
 , page=2, 597.55246pt x 845.07718pt>
 File: 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf Gr
 aphic file (type pdf)
@@ -3587,7 +3882,7 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, pa
 ge 2>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/igroup-presence-q
-uestionnaire.pdf, page2 used on input line 224.
+uestionnaire.pdf, page2 used on input line 240.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
 File: 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf Gr
 aphic file (type pdf)
@@ -3595,7 +3890,7 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, pa
 ge 2>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/igroup-presence-q
-uestionnaire.pdf, page2 used on input line 224.
+uestionnaire.pdf, page2 used on input line 240.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
 File: 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf Gr
 aphic file (type pdf)
@@ -3603,11 +3898,11 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, pa
 ge 2>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/igroup-presence-q
-uestionnaire.pdf, page2 used on input line 224.
+uestionnaire.pdf, page2 used on input line 240.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
- [176 <./06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf
+ [184 <./06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf
 >]
-<06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, id=867
+<06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, id=969
 , page=3, 597.55246pt x 845.07718pt>
 File: 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf Gr
 aphic file (type pdf)
@@ -3615,7 +3910,7 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, pa
 ge 3>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/igroup-presence-q
-uestionnaire.pdf, page3 used on input line 224.
+uestionnaire.pdf, page3 used on input line 240.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
 File: 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf Gr
 aphic file (type pdf)
@@ -3623,7 +3918,7 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, pa
 ge 3>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/igroup-presence-q
-uestionnaire.pdf, page3 used on input line 224.
+uestionnaire.pdf, page3 used on input line 240.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
 File: 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf Gr
 aphic file (type pdf)
@@ -3631,11 +3926,11 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, pa
 ge 3>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/igroup-presence-q
-uestionnaire.pdf, page3 used on input line 224.
+uestionnaire.pdf, page3 used on input line 240.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
- [177 <./06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf
+ [185 <./06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf
 >]
-<06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, id=872
+<06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, id=974
 , page=4, 597.55246pt x 845.07718pt>
 File: 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf Gr
 aphic file (type pdf)
@@ -3643,7 +3938,7 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, pa
 ge 4>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/igroup-presence-q
-uestionnaire.pdf, page4 used on input line 224.
+uestionnaire.pdf, page4 used on input line 240.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
 File: 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf Gr
 aphic file (type pdf)
@@ -3651,7 +3946,7 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, pa
 ge 4>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/igroup-presence-q
-uestionnaire.pdf, page4 used on input line 224.
+uestionnaire.pdf, page4 used on input line 240.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
 File: 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf Gr
 aphic file (type pdf)
@@ -3659,162 +3954,28 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, pa
 ge 4>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/igroup-presence-q
-uestionnaire.pdf, page4 used on input line 224.
+uestionnaire.pdf, page4 used on input line 240.
 (pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
- [178 <./06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf
->]
-Appendix D.
-
-<06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-stage-2
--1.pdf, id=885, 597.55246pt x 845.07718pt>
-File: 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-st
-age-2-1.pdf Graphic file (type pdf)
-
-<use 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-sta
-ge-2-1.pdf>
-Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/12-item-likert-ty
-pe-questionnaire-stage-2-1.pdf used on input line 228.
-(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-File: 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-st
-age-2-1.pdf Graphic file (type pdf)
-
-<use 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-sta
-ge-2-1.pdf>
-Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/12-item-likert-ty
-pe-questionnaire-stage-2-1.pdf used on input line 228.
-(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
- [179
-
-]
-<06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-stage-2
--1.pdf, id=891, page=1, 597.55246pt x 845.07718pt>
-File: 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-st
-age-2-1.pdf Graphic file (type pdf)
-
-<use 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-sta
-ge-2-1.pdf, page 1>
-Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/12-item-likert-ty
-pe-questionnaire-stage-2-1.pdf, page1 used on input line 228.
-(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-File: 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-st
-age-2-1.pdf Graphic file (type pdf)
-
-<use 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-sta
-ge-2-1.pdf, page 1>
-Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/12-item-likert-ty
-pe-questionnaire-stage-2-1.pdf, page1 used on input line 228.
-(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-File: 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-st
-age-2-1.pdf Graphic file (type pdf)
-
-<use 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-sta
-ge-2-1.pdf, page 1>
-Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/12-item-likert-ty
-pe-questionnaire-stage-2-1.pdf, page1 used on input line 228.
-(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-File: 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-st
-age-2-1.pdf Graphic file (type pdf)
-
-<use 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-sta
-ge-2-1.pdf, page 1>
-Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/12-item-likert-ty
-pe-questionnaire-stage-2-1.pdf, page1 used on input line 228.
-(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-File: 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-st
-age-2-1.pdf Graphic file (type pdf)
-
-<use 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-sta
-ge-2-1.pdf, page 1>
-Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/12-item-likert-ty
-pe-questionnaire-stage-2-1.pdf, page1 used on input line 228.
-(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
- [180 <./06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire
--stage-2-1.pdf>]
-Appendix E.
-
-<06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-stage-2-
-2.pdf, id=908, 597.55246pt x 845.07718pt>
-File: 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-sta
-ge-2-2.pdf Graphic file (type pdf)
-
-<use 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-stag
-e-2-2.pdf>
-Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/9-item-likert-typ
-e-questionnaire-stage-2-2.pdf used on input line 232.
-(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-File: 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-sta
-ge-2-2.pdf Graphic file (type pdf)
-
-<use 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-stag
-e-2-2.pdf>
-Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/9-item-likert-typ
-e-questionnaire-stage-2-2.pdf used on input line 232.
-(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
- [181
-
-]
-<06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-stage-2-
-2.pdf, id=915, page=1, 597.55246pt x 845.07718pt>
-File: 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-sta
-ge-2-2.pdf Graphic file (type pdf)
-
-<use 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-stag
-e-2-2.pdf, page 1>
-Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/9-item-likert-typ
-e-questionnaire-stage-2-2.pdf, page1 used on input line 232.
-(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-File: 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-sta
-ge-2-2.pdf Graphic file (type pdf)
-
-<use 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-stag
-e-2-2.pdf, page 1>
-Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/9-item-likert-typ
-e-questionnaire-stage-2-2.pdf, page1 used on input line 232.
-(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-File: 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-sta
-ge-2-2.pdf Graphic file (type pdf)
-
-<use 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-stag
-e-2-2.pdf, page 1>
-Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/9-item-likert-typ
-e-questionnaire-stage-2-2.pdf, page1 used on input line 232.
-(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-File: 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-sta
-ge-2-2.pdf Graphic file (type pdf)
-
-<use 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-stag
-e-2-2.pdf, page 1>
-Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/9-item-likert-typ
-e-questionnaire-stage-2-2.pdf, page1 used on input line 232.
-(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
-File: 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-sta
-ge-2-2.pdf Graphic file (type pdf)
-
-<use 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-stag
-e-2-2.pdf, page 1>
-Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/9-item-likert-typ
-e-questionnaire-stage-2-2.pdf, page1 used on input line 232.
-(pdftex.def)             Requested size: 562.1644pt x 795.0303pt.
- [182 <./06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-
-stage-2-2.pdf>] (./thesis.bbl [183
+ [186 <./06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf
+>] (./thesis.bbl [187
 
 ]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
- [184]
+ [188]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
- [185] [186]
-[187]
+ [189] [190] [191]
 Missing character: There is no â in font cmti10!
 Missing character: There is no € in font cmti10!
 Missing character: There is no “ in font cmti10!
- [188] [189]) [190] (./thesis.aux)
+ [192] [193]) [194]
+(./thesis.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 117.38377pt have occurred.
@@ -3824,10 +3985,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 9326 strings out of 493108
- 178588 string characters out of 6140726
- 471730 words of memory out of 5000000
- 12378 multiletter control sequences out of 15000+600000
+ 9345 strings out of 493108
+ 179869 string characters out of 6140726
+ 471780 words of memory out of 5000000
+ 12393 multiletter control sequences out of 15000+600000
  15206 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,18n,51p,2114b,1372s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3853,10 +4014,10 @@ r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texmf-d
 ist/fonts/type1/public/eurosym/feymo10.pfb></usr/share/texmf-dist/fonts/type1/p
 ublic/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/
 sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on thesis.pdf (190 pages, 93582716 bytes).
+Output written on thesis.pdf (194 pages, 93659224 bytes).
 PDF statistics:
- 1046 PDF objects out of 1200 (max. 8388607)
- 570 compressed objects within 6 object streams
+ 1102 PDF objects out of 1200 (max. 8388607)
+ 607 compressed objects within 7 object streams
  0 named destinations out of 1000 (max. 500000)
- 936 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 976 words of extra memory for PDF output out of 10000 (max. 10000000)
 

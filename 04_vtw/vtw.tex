@@ -202,21 +202,21 @@ Due to the fact that the WindPad tablet does not feature a built-in magnetometer
 
 \begin{table}
 \begin{center}
-\begin{minipage}{.7\linewidth}
+\begin{minipage}{.45\linewidth}
 \begin{center}
-\begin{tabular}{| c | c |}
-\hline	
+\begin{tabularx}{\textwidth}{c *{2}{>{\centering\arraybackslash}X}}
+\toprule
 \textbf{HMC6343 pin} & \textbf{Arduino Uno R3 pin} \\
-\hline
+\midrule
 VCC & 5V\HMCvccFootnote{} \\
-\hline
+
 GND & GND \\
-\hline
+
 SDA & A4\itwocFootnote{} \\
-\hline
+
 SCL & A5 \\
-\hline
-\end{tabular}
+\bottomrule
+\end{tabularx}
 \end{center}
 \end{minipage}
 \end{center}
@@ -395,42 +395,46 @@ Figure \ref{arduino_wiring_hmc_ublox.png} provides a wiring diagram for connecti
 
 \begin{table}
 \begin{center}
-\begin{minipage}[t]{.47\linewidth}
+\begin{minipage}[t]{.45\linewidth}
 \begin{center}
-\begin{tabular}{| c | c |}
-\hline	
+\begin{tabularx}{\textwidth}{c *{2}{>{\centering\arraybackslash}X}}
+\toprule
 \textbf{HMC6343 pin} & \textbf{Arduino Uno R3 pin} \\
-\hline
+\midrule
 VCC & 5V\HMCvccFootnote{} \\
-\hline
+
 GND & GND \\
-\hline
+
 SDA & A4\itwocFootnote{} \\
-\hline
+
 SCL & A5 \\
-\hline
-\end{tabular}
-\caption{Pin designation for figure HMC6343.}
+\bottomrule
+\end{tabularx}
+\caption{Pin designation for figure \ref{arduino_wiring_hmc_ublox.png} (HMC6343).}
 \label{HMC6343_MAX6_wiringtable_HMC6343}
 \end{center}
 \end{minipage}
 %
-\begin{minipage}[t]{.47\linewidth}
+\begin{minipage}[t]{.02\linewidth}
+\hfill%
+\end{minipage}
+%
+\begin{minipage}[t]{.45\linewidth}
 \begin{center}
-\begin{tabular}{| c | c |}
-\hline	
+\begin{tabularx}{\textwidth}{c *{2}{>{\centering\arraybackslash}X}}
+\toprule
 \textbf{MAX-6 pin} & \textbf{Arduino Uno R3 pin} \\
-\hline
+\midrule
 VCC & 5V\MAXvccFootnote{} \\
-\hline
+
 GND & GND \\
-\hline
+
 RXD & D4 \MAXserialFootnote{}\\
-\hline
+
 TXD & D5 \\
-\hline
-\end{tabular}
-\caption{Pin designation for figure MAX-6.}
+\bottomrule
+\end{tabularx}
+\caption{Pin designation for figure \ref{arduino_wiring_hmc_ublox.png} (MAX-6).}
 \label{HMC6343_MAX6_wiringtable_MAX6}
 \end{center}
 \end{minipage}

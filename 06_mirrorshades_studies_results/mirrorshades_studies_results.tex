@@ -72,61 +72,61 @@ Before taking part in the two scenarios, participants were given the opportunity
 The comparison of the traditional scenario against the PR scenario was facilitated by the collection of a variety of both qualitative \& quantitative data. All participants completed a pre-task questionnaire which provided calibration for latter data by enquiring about age, gender identity, previous experience with VR HMDs \& whether they had previously visited St Salvtor's chapel, both RW \& VR (the RW chapel is open to the public \& a version of the VR reconstruction is publicly accessible via the OVW group's OpenSim grid\footnote{\url{openvirtualworlds.org}}). The System Usability Scale (SUS)~\cite{Brooke1996} was used to provide a basic comparison between the usability of the two scenarios, while a 12-item Likert-type questionnaire (included as appendix \ref{appendix-12-item-likert-type-questionnaire-stage-1}) was used to collect opinions on more specific aspects of the experience of both scenarios. At the end of the session, after completing both scenarios, participants were engaged in a short structured interview (prompts included as appendix \ref{appendix-interview-questions-stage-1}) in order to allow them to elaborate upon their experience in a more free form manner. Finally, in addition to the DK1 visuals being recorded via ShadowPlay, log data were collected during both scenarios, capturing the information detailed in table \ref{logdatatable} to file for each frame rendered to the DK1's screen.
 
 \begin{center}
-\begin{longtable}{| l | p{8cm} |}
+\begin{longtable}{ l  p{8cm} }
 
-\hline
+\toprule
 
 \textbf{Field} & \textbf{Description} \\
 
-\hline
+\midrule
 
 \texttt{<frame number>} & Incremented with each frame pushed to the DK1, starting at 0 when the Unity application is run. \\
 
-\hline
+\midrule
 
 \texttt{<timestamp>} & According to the laptop's internal clock. \\
 
-\hline
+\midrule
 
 \texttt{<original\_position>} & The position as a Unity \texttt{Vector3} where the participant begins the experiment (as reported by IndoorAtlas). \\
 
-\hline
+\midrule
 
 \texttt{<position>} & The position as a Unity \texttt{Vector3} where the participant is on this frame (as reported by IndoorAtlas). \\
 
-\hline
+\midrule
 
 \texttt{<delta\_x>} \& \texttt{<delta\_z>} & The difference in the \texttt{x} \& \texttt{z} axes between \texttt{<original\_position>} \& \texttt{<position>} on this frame. Change in elevation (\texttt{y} axis) is not recorded, as IndoorAtlas does not provide elevation data \& the area of St Salvator's chapel used throughout the studies is level. \\
 
-\hline
+\midrule
 
 \texttt{<left\_rotation>} \& \texttt{<right\_rotation>} & The orientations as Unity \texttt{Quaternion} of the two Unity camera game objects. The orientation of these Unity objects is tied to the orientation of the DK1, so these values represent the orientation of the participant's head on each frame. \\
 
-\hline
+\midrule
 
 \texttt{<base\_oapcity>} & The maximum opacity of the game objects upon which the camera feeds are rendered. This is how reduced maximum opacity (see section \ref{subsub-baseopacity}) is implemented (by setting this field to a value \textless 1). \\
 
-\hline
+\midrule
 
 \texttt{<left\_opacity>} \& \texttt{<right\_opacity>} & The opacity on this frame of the game objects upon which the camera feeds are rendered. \\
 
-\hline
+\midrule
 
 \texttt{<auto\_tick>} & Whether a periodic switch is in progress (see section \ref{subsub-periodic}). \\
 
-\hline
+\midrule
 
 \texttt{<auto\_duration>} \& \texttt{<auto\_spacing>} & The interval \& duration values of the periodic hard switching (if applicable). \\
 
-\hline
+\midrule
 
 \texttt{<framerate>} & An estimate of the current frame rate (frames per second). \\
 
-\hline
+\midrule
 
 \texttt{<A\_button>}, \texttt{<B\_button>} \& \texttt{<right\_trigger>} & The current values of these inputs on the Xbox controller. For the \texttt{A} \& \texttt{B} buttons this is binary, either pressed or not, while for the trigger it is a numeric value representing the amount that the trigger is being depressed. \\
 
-\hline
+\bottomrule
 \caption{Log data captured during Mirrorshades evaluations.}
 \label{logdatatable}
 \end{longtable}
@@ -504,7 +504,7 @@ While stage 1 of the evaluation investigated the suitability of applying a mobil
 
 As with the stage 1 investigation, a range of both qualitative \& quantitative data were collected. Evaluating participants' preferences toward different styles of transitioning between RW \& VR visual stimuli pertains to studying their reactions \& responses to ascertain the effect upon their focus of attention, a concept that is largely psychological in nature \& highly subjective~\cite{Ijsselsteijn2001}. Thus, subjective measures will produce the bulk of the data for evaluation, however they will again be backed up by objective log data to support or contradict any relationships that emerge.
 
-Stage 2 participants completed the same pre-task questionnaire as the stage 1 participants \& Likert-type questionnaires that shared certain items with that from stage 1 were also used; the stage 2.1 participants completed a 12-item questionnaire (included as appendix \ref{appendix-12-item-likert-type-questionnaire-stage-2-1}), while stage 2.2 participants completed a 9-item questionnaire (included as appendix \ref{appendix-9-item-likert-type-questionnaire-stage-2-2}). The SUS questionnaire was not used, while post-task interviews \& logging were present. In addition to the Likert-type questionnaire, all stage 2 participants also completed the igroup presence questionnaire~\cite{Schubert2001} (IPQ, included as appendix \ref{appendix-igroup-presence-questionnaire}).
+Stage 2 participants completed the same pre-task questionnaire as the stage 1 participants \& Likert-type questionnaires that shared certain items with that from stage 1 were also used; the stage 2.1 participants completed a 12-item questionnaire (included as appendix \ref{appendix-12-item-likert-type-questionnaire-stage-2-1}), while stage 2.2 participants completed a 9-item questionnaire (included as appendix \ref{appendix-9-item-likert-type-questionnaire-stage-2-2}). The SUS questionnaire was not used, while post-task interviews (prompts included as appendices \ref{appendix-interview-questions-stage-2-1} \& \ref{appendix-interview-questions-stage-2-2} for stage 2.1 \& stage 2.2 respectively) \& logging were present. In addition to the Likert-type questionnaire, all stage 2 participants also completed the igroup presence questionnaire~\cite{Schubert2001} (IPQ, included as appendix \ref{appendix-igroup-presence-questionnaire}).
 
 As presence does not have a single widely agreed upon definition \& those definitions that are commonly used, including that adopted by this thesis of \textit{the experience of being in one place or environment, even when one is physically situated in another} (see section \ref{lit-review-presencec}), are subjective in nature, attempts to quantify or `measure' the experience of presence are met with difficulty \& many different approaches have been adopted, some more or less suitable to certain scenarios than others. Broadly, these approaches can be categorised as either subjective (most commonly post task questionnaires), behavioural (measurement/observation of actions that do not stem from conscious thought) or physiological (heart rate, skin conductance, etc.)~\cite{Insko2003}.
 
@@ -543,15 +543,20 @@ However, in a PR scenario that features high spatial equivalence between its con
 
 \section{Stage 2.1}
 
-Stage 2.1 followed a similar pattern to the stage 1 evaluation. Participants first received a `traditional' VR experience by using the DK1 \& Xbox controller to explore the VR chapel while seated \& subsequently completed the IPQ in order to produce baseline IPQ results for a traditional experience of the chapel model viewed via the DK1. In stage 2.1 the participants then performed two PR scenarios in which they walked through the RW/VR chapels. In the first scenario the default view on the DK1 screen was 100\% RW \& they were granted access to 3x different transition styles;
+Stage 2.1 followed a similar pattern to the stage 1 evaluation. Participants first received a `traditional' VR experience by using the DK1 \& Xbox controller to explore the VR chapel while seated \& subsequently completed the IPQ in order to produce baseline IPQ results for a traditional experience of the chapel model viewed via the DK1. Participants then performed two PR scenarios in which they walked through the RW/VR chapels, thus completing three scenarios in total.
 
 \begin{enumerate}
-	\item hard switch (see section \ref{sub-hardswitch}) mapped to controller \texttt{[A]} button (transition 1)
-	\item transition with linear interpolation (see section \ref{transition-with-linear-interpolation}) mapped to controller \texttt{[B]} button (transition 2)
-	\item analogue selectable opacity (see section \ref{analogue-selectable-opacity}) mapped to controller right trigger \texttt{[RT]} (transition 3)
+	\item \textbf{Traditional scenario} - Participants explore the VR chapel from a stationary position, as VR has traditionally been employed at cultural heritage sites via CAVE installations \& by the OVW group with Oculus HMDs, using the Xbox controller to move around the VR environment observed via the DK1, with the DK1 obscuring theier view of the RW chapel around them.
+	\item \textbf{PR scenario with transitions 1-3} - Participants experience the RW \& VR chapels in tandem using the Mirrorshades platform. They wear the DK1, holding the Xbox controller in their right hand \& the smartphone in their left, with the laptop \& control box bundle in a satchel worn over one shoulder. The default view on the DK1 screen is 100\% RW \& participants are granted access to 3x different transition styles;
+	\begin{enumerate}
+		\item hard switch (see section \ref{sub-hardswitch}) mapped to controller \texttt{[A]} button (transition 1)
+		\item transition with linear interpolation (see section \ref{transition-with-linear-interpolation}) mapped to controller \texttt{[B]} button (transition 2)
+		\item analogue selectable opacity (see section \ref{analogue-selectable-opacity}) mapped to controller right trigger \texttt{[RT]} (transition 3)
+\end{enumerate}
+	\item \textbf{PR scenario with transitions 1-4} - Participants experience the same scenario as scenario 3, however this time with the introduction of the periodic hard switch (see section \ref{subsub-periodic}) which triggers a 0.15 second transition to 100\% VR every 3 seconds unless interrupted by manually triggered transitions.
 \end{enumerate}
 
-In the first stage 2.1 scenario pressing \& holding the \texttt{[A]} button triggered a hard switch from 100\% RW to 100\% VR, pressing \& holding the \texttt{[B]} button triggered a linear interpolated switch from 100\% RW to 100\% VR \& pulling on the right trigger \texttt{[RT]} reduced the opacity of the game objects upon which the camera feeds were rendered from 100\% to an amount that mapped to the amount that the trigger was pulled (pulling the trigger all the way in would reduce the opacity of the objects to 0\% \& thus display 100\% VR, pulling the trigger 33\% would reduce the opacity of the objects by 33\% \& thus display 66\% RW \& 33\% VR, etc.). In the second stage 2.1 scenario they were granted access to the same 3x transitions via the Xbox controller \& additionally a 4th transition of the periodic hard switch (see section \ref{subsub-periodic}) was triggered every 3 seconds for a duration of 0.15 seconds (transition 4). These two scenarios are referred to as `scenario 1-3' \& `scenario 1-4', respectively.
+In the PR scenario with transitions 1-3 pressing \& holding the \texttt{[A]} button triggered a hard switch from 100\% RW to 100\% VR, pressing \& holding the \texttt{[B]} button triggered a linear interpolated switch from 100\% RW to 100\% VR \& pulling on the right trigger \texttt{[RT]} reduced the opacity of the game objects upon which the camera feeds were rendered from 100\% to an amount that mapped to the amount that the trigger was pulled (pulling the trigger all the way in would reduce the opacity of the objects to 0\% \& thus display 100\% VR, pulling the trigger 33\% would reduce the opacity of the objects by 33\% \& thus display 66\% RW \& 33\% VR, etc.). In the PR scenario with transitions 1-4 participants were granted access to the same 3x transitions via the Xbox controller \& additionally the 4th transition of the periodic hard switch was triggered every 3 seconds for a duration of 0.15 seconds. These two scenarios are referred to as `scenario 1-3' \& `scenario 1-4', respectively.
 
 Rather than describing a path through the chapel with particular positions of interest to stop \& look around at, participants were simply told to slowly make their way from the starting position down to the altar end of the chapel. For at least one participant in the stage 1 evaluation, their exploration of the environments seemed to be subdued by their adherence to the prescribed route. In order to promote a more natural style of exploration the route description was not used in the second stage of evaluation.
 
@@ -1096,7 +1101,18 @@ IPQ results met hypotheses, with the traditional scenario scoring highly in both
 
 One of the threads that emerged from the stage 2.1 investigation was that while transition 4 was unanimously negatively received because of the worse breaks in presence that it caused by `surprising' the participants, the VR visual stimuli that it presented without consciously triggering a transition led to several participants indicating that it resulted in them better understanding the relationship between the two environments \& noticing more differences between them. Stage 2.2 thus investigated how untriggered VR stimuli could be introduced into a PR experience but in a less obtrusive manner than transition 4, namely by changing the default view to less than 100\% RW.
 
-Stage 2.2 followed the same pattern as stage 2.1, with participants first engaging in a traditional scenario in which they were seated \& used the DK1 \& Xbox controller to explore the VR chapel \& subsequently completed two PR scenarios in which they walked through the chapels. In the first of these PR scenarios the default view was set to 75\% RW/25\% VR (referred to as the `75/25 scenario') \& in the second PR scenario the default view was set to 50\%RW/50\%VR (referred to as the `50/50 scenario'). Participants were only fashioned with a single transition technique, transition 2. As the controlled variable between the two PR scenarios was opacity based, it seemed prudent not to fashion the participants with the ability to consciously affect opacity.
+Stage 2.2 followed the same pattern as stage 2.1, with participants first engaging in a traditional scenario in which they were seated \& used the DK1 \& Xbox controller to explore the VR chapel \& subsequently completed two PR scenarios in which they walked through the chapels, thus completing three scenarios;
+
+\begin{enumerate}
+	\item \textbf{Traditional scenario} - 
+	\item \textbf{PR scenario with 75\% RW/25\% VR default view} - 
+	\item \textbf{PR scenario with 50\% RW/50\% VR default view} -
+\end{enumerate}
+
+
+
+
+In the first of these PR scenarios the default view was set to 75\% RW/25\% VR (referred to as the `75/25 scenario') \& in the second PR scenario the default view was set to 50\%RW/50\%VR (referred to as the `50/50 scenario'). Participants were only fashioned with a single transition technique, transition 2. As the controlled variable between the two PR scenarios was opacity based, it seemed prudent not to fashion the participants with the ability to consciously affect opacity.
 
 Once again, participants were simply instructed to make their way from the starting position down to the alter end of the chapel, with no hard restrictions upon their path or when/where they were to stop \& pay attention to particular aspects of their surroundings.
 
