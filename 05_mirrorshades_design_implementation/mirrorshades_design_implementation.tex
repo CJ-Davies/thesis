@@ -340,6 +340,26 @@ In addition to video frames, still photographs taken at the same 1/4000 of a sec
 
 %=========================================================================================================
 
+\subsection{Registration of Camera \& Unity Visuals}
+
+As mentioned in section \ref{caseforpr} the registration (the `alignment') between real \& virtual objects in the Mirrorshades system is less critical than that of an AR system, as virtual objects in PR are seen as part of a complete VR environment rather than gaining context from their accurate superposition upon a background of the RW environment. Whilst accurate registration will intuitively positively effect the user experience of the Mirrorshades platform, especially when interaction with a reduced maximum opacity of the RW visuals (see section \ref{subsub-baseopacity}) is considered, the context provided to virtual objects by their wider virtual background \& an emphasis on an interaction style that switches between environments rather than permanently overlays one upon the other means that highly accurate registration is less of a concern than for many applications of AR. In fact registration accuracies insufficient for successful AR experiences may well be quite sufficient for successful PR experiences.
+
+This lessened requirement for accurate registration allows the Mirrorshades platform to operate using just the DK1's head tracker without what Azuma refers to as `additional registration strategies'~\cite{Azuma1997}.
+
+This tracker provides 1Khz sampling with roughly 2ms delay (from head movement to Unity receiving the data) \& most importantly thanks to sensor fusion performed over data from accelerometer, gyroscope \& magnetometer, drift is reduced to negligible levels. Mitigating drift in the head tracking solution was important for Oculus as it is a requirement for any VR experience that has a fixed reference point such as \textit{``a game with a cockpit, where your head’s orientation does not affect the position of whatever car/plane/mech you’re piloting''}\footnote{\url{https://www.kickstarter.com/projects/1523379957/oculus-rift-step-into-the-game/posts/380099}}\saveFN\rifttrackerfn. It would result in a poor VR experience if drift was allowed to mount between a user's head orientation \& this fixed reference point - \textit{``imagine re-orienting your head back to perfect center but in-game you're now looking slightly left or right''}\useFN\rifttrackerfn.
+
+In the case of Mirrorshades, the fixed reference point is the chapel - both the RW \& the VR chapel, as they occupy the same `place'. By making sure that the two chapels are aligned at the beginning of each session, the negligible drift in the head tracker means that sufficient registration between the two environments is maintained throughout, without the need to introduce any additional registration strategies. This alignment is effected by knowing the starting orientation of the virtual cameras in the VR chapel \& then physically placing the DK1 in the corresponding orientation in the RW chapel. This starting orientation in the VR chapel is shown in figure \ref{sallies-rift-frame-of-reference.png} \& producing the same orientation with the DK1 is trivial as it is parallel with the architecture of the building (including the floor tiles, which proved to be a useful grid to accurately align the DK1 against).
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=.85\linewidth]{sallies-rift-frame-of-reference.png}
+		\caption{Starting orientation of virtual cameras within VR chapel (top down view).}
+		\label{sallies-rift-frame-of-reference.png}
+	\end{center}
+\end{figure}
+
+%=========================================================================================================
+
 \subsection{Constraints of DK1 See Through Solution}
 
 \label{constraints_of_dk1_see_through_solution}
