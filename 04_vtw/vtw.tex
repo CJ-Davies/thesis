@@ -589,73 +589,73 @@ The Second Life client is written predominantly in C++ so the Asio library\asioF
 \subsection{\texttt{LLViewerSerialMovement} reference}
 Brief documentation of the functions in \path{/indra/newview/LLViewerSerialMovement} follows.
 \begin{center}
-\begin{longtable}{| p{4.2cm} | p{10cm} |}
+\begin{longtable}{ p{4.2cm}  p{10cm} }
 
-\hline
+\toprule
 
 \textbf{Function} & \textbf{Description} \\
 
-\hline
+\midrule
 
 %=========================================================================================================
 		
 \texttt{::connect} & Safely connects to a serial device (if not already connected). \\
 		
-\hline
+\midrule
 
 %=========================================================================================================
 
 \texttt{::disconnect} & Safely disconnects from a serial device (if already connected). \\
 		
-\hline
+\midrule
 
 %=========================================================================================================
 
 \texttt{::received} & A callback method registered to the \path{CallbackAsyncSerial} class in \path{/indra/newview/AsyncSerial}. This function parses the data (\path{const} \path{char} \path{*data}) from the serial device, extracting complete messages to the variable \path{mostRecentMessage}. Because of the nature of the serial I/O, \path{*data} is not guaranteed to contain a discrete message from the Arduino containing both orientation \& position data, thus this function must parse the array \& assemble discrete messages from possibly multiple subsequent callbacks. \\
 		
-\hline
+\midrule
 
 %=========================================================================================================
 
 \texttt{::update} & Called upon each iteration of \path{LLAppViwer::mainLoop()} \& further calls \path{::updateFromMostRecentMessage()}, \path{::updateOrientation()} \& \path{::updatePosition()}. \\
 		
-\hline
+\midrule
 
 %=========================================================================================================
 
 \texttt{::updateFromMostRecent- Message} & Processes a complete message from the Arduino which has been assembled by \path{::received()} \& extracts the constituent orientation \& position values. \\
 		
-\hline
+\midrule
 
 %=========================================================================================================
 
 \texttt{::updateOrientation} & Applies the orientation values extracted from an Arduino message to the avatar's camera. This is achieved by a call to \path{LLAgent::setAxes()} which calls \path{LLCoordFrame::setAxes()} in \path{/indra/llmath/LLCoordFrame}. The orientation values are passed as a quaternion, converting the bearing, pitch \& roll values extracted from the Arduino message as degrees using \path{::quaternionFromDegrees()}.\\
 		
-\hline
+\midrule
 
 %=========================================================================================================
 
 \texttt{::updatePosition} & Applies the position data extracted from an Arduino message to the avatar, using \path{LLAgent::startAutoPilotGlobal()} to perform smooth movement between the avatar's current position (obtained with \path{LLAgent::getPositionGlobal()}) \& the new position from the Arduino (converted from latitude \& longitude to Second Life region coordinates in \path{::latitudeLongitudeToRegionCoordinates()}). \\
 		
-\hline
+\midrule
 
 %=========================================================================================================
 
 \texttt{::quaternionFromDegrees} & A helper method to convert bearing, pitch \& roll expressed in degrees, into a single quaternion. Quaternions are frequently used to represent rotations in 3D applications, as they do not suffer from gimbal lock - Second Life is no exception to this \& internally uses quaternions for all rotation data, providing \path{/indra/llmath/LLQuaternion} for this purpose. \\
 		
-\hline
+\midrule
 
 %=========================================================================================================
 
 \texttt{::latitudeLongitudeTo- RegionCoordinate} & Converts a real world position, expressed as a longitude \& latitude pair, to the equivalent Second Life coordinates, applying the haversine formula using knowledge of the real world \& corresponding Second Life position of the anchor point \& the scale of the Second Life reconstruction compared to the real world. \\
 		
-\hline
+\midrule
 
 %=========================================================================================================
 
 \texttt{::degreesToRadians} & A helper method to convert values expressed in degrees to the equivalent value expressed in radians (implementations of the haversine formula usually make use of radians). \\
 		
-\hline
+\bottomrule
 
 %=========================================================================================================
 
