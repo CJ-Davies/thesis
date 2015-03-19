@@ -62,6 +62,9 @@
 %allows reuse of a footnote via \saveFN\foo followed by \useFN\foo
 \usepackage{savefnmark}
 
+%because having footnotes in captions where the two actually appear on the same page is madness
+\usepackage{afterpage}
+
 \let\oldFootnote\footnote
 \newcommand\nextToken\relax
 
