@@ -65,6 +65,9 @@
 %because having footnotes in captions where the two actually appear on the same page is madness
 \usepackage{afterpage}
 
+%fancier headers/footers
+\usepackage{fancyhdr}
+
 \let\oldFootnote\footnote
 \newcommand\nextToken\relax
 
@@ -110,7 +113,7 @@
 \thispagestyle{empty}
 
 \begin{center}
-	\textbf{\Huge{Parallel Reality: Tandem Exploration of Real \& Virtual Environments}}
+	\textbf{\Huge{Parallel Reality: Tandem Exploration of Real and Virtual Environments}}
 \end{center}
 
 \vspace{15mm}
@@ -139,15 +142,30 @@
 
 % ======= ======= ======= ======= ======= ======= =======
 
-\title{Parallel Reality: Tandem Exploration of Real \& Virtual Environments}
+\title{Parallel Reality: Tandem Exploration of Real and Virtual Environments}
 \date{March 2015}
 \author{CJ Davies}
 
 % ======= ======= ======= ======= ======= ======= =======
 
+\pagebreak
+
+\thispagestyle{empty}
+
 \input{00_declaration/declaration.tex}
 
 % ======= ======= ======= ======= ======= ======= =======
+
+\fancypagestyle{plain}{ %
+  \fancyhf{}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+\pagestyle{fancy}
+\fancyhead[L]{\nouppercase{\leftmark}}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{}
 
 % \chapter* in \documentclass{report} creates a chapter with no number (& thus no ToC entry)
 \chapter*{Abstract}
@@ -183,7 +201,7 @@
 
 % ======= ======= ======= ======= ======= ======= =======
 
-\chapter{Background, Theory \& Rationale}
+\chapter{Background, Theory and Rationale}
 \graphicspath{ {03_background/images/} }
 \input{03_background/background.tex}
 %\input{03_background/literature_review.tex}
@@ -209,7 +227,7 @@
 
 % ======= ======= ======= ======= ======= ======= =======
 
-\chapter{Conclusions \& Discussion}
+\chapter{Conclusions and Discussion}
 \graphicspath{ {06_mirrorshades_studies_results/images/} }
 \input{07_conclusions/conclusions.tex}
 
