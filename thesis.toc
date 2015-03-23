@@ -14,16 +14,16 @@
 \contentsline {section}{\numberline {2.4}Cross Reality}{31}
 \contentsline {subsection}{\numberline {2.4.1}Alternate Reality Definitions from Cross Reality}{33}
 \contentsline {subsection}{\numberline {2.4.2}Position of Cross Reality}{34}
-\contentsline {section}{\numberline {2.5}Parallel Reality}{35}
-\contentsline {subsection}{\numberline {2.5.1}Spatial Equivalence in Parallel Reality}{37}
+\contentsline {section}{\numberline {2.5}Parallel Reality}{36}
+\contentsline {subsection}{\numberline {2.5.1}Spatial Equivalence in Parallel Reality}{38}
 \contentsline {subsection}{\numberline {2.5.2}PolySocial Encounters Parallel Reality}{39}
-\contentsline {section}{\numberline {2.6}Summary of Additional Alternate Reality Definitions}{39}
-\contentsline {section}{\numberline {2.7}Presence}{39}
-\contentsline {subsection}{\numberline {2.7.1}Waterworth and Waterworth's three dimensions of virtual experience}{40}
-\contentsline {section}{\numberline {2.8}Transitions in Parallel Reality}{41}
-\contentsline {subsection}{\numberline {2.8.1}Transitions using the Combined Milgram/Waterworth Model}{43}
+\contentsline {section}{\numberline {2.6}Summary of Additional Alternate Reality Definitions}{40}
+\contentsline {section}{\numberline {2.7}Presence}{40}
+\contentsline {subsection}{\numberline {2.7.1}Waterworth and Waterworth's three dimensions of virtual experience}{41}
+\contentsline {section}{\numberline {2.8}Transitions in Parallel Reality}{42}
+\contentsline {subsection}{\numberline {2.8.1}Transitions using the Combined Milgram/Waterworth Model}{44}
 \contentsline {section}{\numberline {2.9}The Case for Parallel Reality}{44}
-\contentsline {section}{\numberline {2.10}Summary}{45}
+\contentsline {section}{\numberline {2.10}Summary}{46}
 \contentsline {chapter}{\numberline {3}A Virtual Time Window}{47}
 \contentsline {section}{\numberline {3.1}Virtual Heritage}{47}
 \contentsline {subsection}{\numberline {3.1.1}Alternate Reality Techniques in Virtual Heritage}{48}
@@ -33,12 +33,12 @@
 \contentsline {subsection}{\numberline {3.2.1}Second Life and Mobility}{56}
 \contentsline {section}{\numberline {3.3}Orientation Control}{57}
 \contentsline {subsection}{\numberline {3.3.1}Exploiting Second Life's Joystick Support}{59}
-\contentsline {section}{\numberline {3.4}Position Control}{60}
+\contentsline {section}{\numberline {3.4}Position Control}{61}
 \contentsline {subsection}{\numberline {3.4.1}GPS Receivers}{63}
 \contentsline {subsection}{\numberline {3.4.2}OpenSim Region Module}{66}
 \contentsline {section}{\numberline {3.5}Modifying Second Life for Orientation and Position Control}{67}
-\contentsline {subsection}{\numberline {3.5.1}Overview of Second Life Client Modifications}{67}
-\contentsline {subsection}{\numberline {3.5.2}\texttt {LLViewerSerialMovement} reference}{68}
+\contentsline {subsection}{\numberline {3.5.1}Overview of Second Life Client Modifications}{68}
+\contentsline {subsection}{\numberline {3.5.2}\texttt {LLViewerSerialMovement} reference}{69}
 \contentsline {section}{\numberline {3.6}VTW in Use}{74}
 \contentsline {subsection}{\numberline {3.6.1}Experimental Implementation}{75}
 \contentsline {subsection}{\numberline {3.6.2}Real World Performance of VTW}{76}
@@ -59,21 +59,21 @@
 \contentsline {subsection}{\numberline {4.3.1}IPS Requirements for Mirrorshades}{106}
 \contentsline {subsection}{\numberline {4.3.2}PlayStation Move}{107}
 \contentsline {subsection}{\numberline {4.3.3}Indoor Atlas}{108}
-\contentsline {section}{\numberline {4.4}Mobile Client}{112}
+\contentsline {section}{\numberline {4.4}Mobile Client}{111}
 \contentsline {subsection}{\numberline {4.4.1}Integrating IndoorAtlas and Unity}{112}
 \contentsline {section}{\numberline {4.5}Informing Transitions Between RW and VR}{114}
 \contentsline {section}{\numberline {4.6}Transition Types}{118}
 \contentsline {subsection}{\numberline {4.6.1}Hard switch}{118}
-\contentsline {subsection}{\numberline {4.6.2}Transition with linear interpolation}{118}
+\contentsline {subsection}{\numberline {4.6.2}Transition with linear interpolation}{119}
 \contentsline {subsection}{\numberline {4.6.3}Analogue selectable opacity}{119}
-\contentsline {subsection}{\numberline {4.6.4}Periodic hard switches}{119}
-\contentsline {subsection}{\numberline {4.6.5}Reduced maximum opacity}{120}
+\contentsline {subsection}{\numberline {4.6.4}Periodic hard switches}{120}
+\contentsline {subsection}{\numberline {4.6.5}Reduced maximum opacity}{121}
 \contentsline {section}{\numberline {4.7}The Assembled Mirrorshades System}{121}
 \contentsline {subsection}{\numberline {4.7.1}Hardware Components}{121}
 \contentsline {subsection}{\numberline {4.7.2}Software Components}{123}
-\contentsline {subsection}{\numberline {4.7.3}Execution}{123}
-\contentsline {section}{\numberline {4.8}Initial Testing}{124}
-\contentsline {section}{\numberline {4.9}Summary}{127}
+\contentsline {subsection}{\numberline {4.7.3}Execution}{124}
+\contentsline {section}{\numberline {4.8}Initial Testing}{125}
+\contentsline {section}{\numberline {4.9}Summary}{126}
 \contentsline {chapter}{\numberline {5}Evaluation - Merit of PR}{128}
 \contentsline {section}{\numberline {5.1}Overview}{128}
 \contentsline {section}{\numberline {5.2}Stage 1 - PR for Virtual Heritage}{129}
@@ -82,7 +82,7 @@
 \contentsline {section}{\numberline {5.3}Stage 1 Results}{134}
 \contentsline {subsection}{\numberline {5.3.1}SUS}{135}
 \contentsline {subsection}{\numberline {5.3.2}Likert-type Questionnaires}{135}
-\contentsline {subsection}{\numberline {5.3.3}Interview Transcripts}{136}
+\contentsline {subsection}{\numberline {5.3.3}Interview Transcripts}{137}
 \contentsline {subsection}{\numberline {5.3.4}Log Data}{138}
 \contentsline {subsubsection}{Comparing traditional and PR scenarios}{138}
 \contentsline {subsubsection}{Comparing RW and VR periods within PR scenario}{143}

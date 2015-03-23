@@ -85,14 +85,14 @@ The Open Virtual Worlds (OVW) research group at the School of Computer Science a
 \TwoFig{linlithgow_real.jpg} {Linlithgow Palace today.} {linlithgow_real.jpg}
        {linlithgow_reconstruction.png} {Linlithgow Palace reconstruction.} {linlithgow_reconstruction.png}
 
-\TwoFig{mosfell_outside.jpg} {Mosfell Viking Longhouse.} {mosfell_outside.jpg}
-	   {mosfell_inside.jpg} {Longhouse interior.} {mosfell_inside.jpg}
+\TwoFig{mosfell_outside.jpg} {Mosfell Viking Longhouse reconstruction (exterior).} {mosfell_outside.jpg}
+	   {mosfell_inside.jpg} {Mosfell Viking Longhouse reconstruction (interior).} {mosfell_inside.jpg}
 
-\TwoFig{caen_township_outside.jpg} {Caen Township.} {caen_township_outside.jpg}
-       {caen_township_inside_wireframe.jpg} {Caen Township wireframe detail.} {caen_township_inside_wireframe.jpg}
+\TwoFig{caen_township_outside.jpg} {Caen Township reconstruction.} {caen_township_outside.jpg}
+       {caen_township_inside_wireframe.jpg} {Caen Township reconstruction wireframe detail.} {caen_township_inside_wireframe.jpg}
 
 \TwoFig{cathedral_npc_standing.png} {Virtual humans in cathedral reconstruction.} {cathedral_npc_standing.png}
-       {cathedral_npc_talking.png} {Conversing with virtual humans.} {cathedral_npc_talking.png}
+       {cathedral_npc_talking.png} {Conversing with virtual humans in cathedral reconstruction.} {cathedral_npc_talking.png}
 
 These reconstructions were made using OpenSim, an open source implementation and extension of the Second Life server which is compatible with the numerous forks of the Second Life client program. This architecture allows straightforward construction and dissemination of the models, thanks to accessible modelling tools provided by the Second Life client itself and the client/server model that allows the models to be accessed in various deployment scenarios including temporary deployments within controlled network and client conditions as well as remotely via the Internet.
 
@@ -102,11 +102,11 @@ These reconstructions have been used to host workshops at 10 schools throughout 
 
 In addition to these temporary workshops, the reconstructions have also been used in permanently installed exhibits in museums and visitor centres, including the Virtual Time Travel Project (VTTP), which combines multi-head projection with Natural User Interaction (NUI) via Microsoft Kinect, which has been installed at the Timespan Museum and Arts Centre in Helmsdale, allowing visitors to explore the reconstruction of the Caen Township by using simple gestures, instead of relying upon a keyboard, game controller or other traditional interface (figure \ref{VTTP_projection.png}).
 
-\TwoFig{linlithgow_children.jpg} {School students learning via a reconstruction.} {linlithgow_children.jpg}
-       {VTTP_projection.png} {VTTP installation at Timespan.} {VTTP_projection.png}
+\TwoFig{linlithgow_children.jpg} {School students learning with the Linlithgow Palace reconstruction.} {linlithgow_children.jpg}
+       {VTTP_projection.png} {VTTP installation at Timespan Museum and Arts Centre.} {VTTP_projection.png}
 
-\TwoFig{rift_exhibition.jpg} {OVW via Oculus Rift.} {rift_exhibition.jpg}
-       {musa.jpg} {Museum workshop.} {musa.jpg}
+\TwoFig{rift_exhibition.jpg} {Presenting reconstructions via Oculus Rift.} {rift_exhibition.jpg}
+       {musa.jpg} {Reconstructions used in a museum workshop.} {musa.jpg}
 
 %=========================================================================================================
 
@@ -125,7 +125,7 @@ VTW manifests as a tablet computer which is capable of tracking its position via
 \begin{figure}[h]
 \centering
   \includegraphics[width=.7\linewidth]{vtw_high_level.png}
-  \caption{High level architecture of VTW.}
+  \caption{High level architecture of VTW parallel reality platform.}
   \label{vtw_high_level.png}
 \end{figure}
 
@@ -196,7 +196,7 @@ Due to the fact that the WindPad tablet does not feature a built-in magnetometer
 \begin{figure}[h]
 \centering
   \includegraphics[width=\linewidth]{arduino_wiring_hmc.png}
-  \caption{Example wiring for Arduino with HMC6343 for joystick operation.}
+  \caption{Wiring diagram for Arduino with HMC6343 for joystick operation.}
   \label{arduino_wiring_hmc.png}
 \end{figure}
 
@@ -336,7 +336,7 @@ Figure \ref{haversine_example.png} illustrates this arrangement. In the real wor
 \begin{figure}[h]
 \centering
   \includegraphics[width=\linewidth]{haversine_example.png}
-  \caption{Using haversine to mimic real world movement in a virtual world.}
+  \caption{Visualisation of how haversine is applied to mimic real world movement in a virtual world.}
   \label{haversine_example.png}
 \end{figure}
 
@@ -391,7 +391,7 @@ Figure \ref{arduino_wiring_hmc_ublox.png} provides a wiring diagram for connecti
 \begin{figure}[h]
 \centering
   \includegraphics[width=\linewidth]{arduino_wiring_hmc_ublox.png}
-  \caption{Example wiring for Arduino with HMC6343 + u-blox MAX-6.}
+  \caption{Wiring diagram for Arduino with HMC6343 + u-blox MAX-6.}
   \label{arduino_wiring_hmc_ublox.png}
 \end{figure}
 
@@ -445,8 +445,8 @@ TXD & D5 \\
 
 Figure \ref{arduino_hmc6343_u-blox_MAX-6.jpg} shows an the assembled unit, comprising an Arduino Uno R3, prototyping shield, HMC6343 and MAX-6, while figure \ref{pangolin_tablet_back.jpg} shows the packaged unit attached to the back of the WindPad.
 
-\TwoFig{arduino_hmc6343_u-blox_MAX-6.jpg} {Assembled Arduino/sensors.} {arduino_hmc6343_u-blox_MAX-6.jpg}
-       {pangolin_tablet_back.jpg} {Arduino/sensors attached to tabet.} {pangolin_tablet_back.jpg}
+\TwoFig{arduino_hmc6343_u-blox_MAX-6.jpg} {Assembled Arduino/sensors used by VTW.} {arduino_hmc6343_u-blox_MAX-6.jpg}
+       {pangolin_tablet_back.jpg} {Arduino/sensors attached to tabet used by VTW.} {pangolin_tablet_back.jpg}
        
 %=========================================================================================================
 
@@ -582,7 +582,7 @@ The Second Life client is written predominantly in C++ so the Asio library\asioF
 \begin{figure}[h]
 \centering
   \includegraphics[width=.8\linewidth]{second_life_structure.png}
-  \caption{Overview of modifications to Second Life client.}
+  \caption{Overview of modifications to Second Life client for VTW.}
   \label{second_life_structure.png}
 \end{figure}
 
@@ -673,7 +673,7 @@ These modifications to the Second Life client are configured/controlled via a wi
 \begin{figure}[h]
 \centering
   \includegraphics[width=0.6\linewidth]{pangolin_second_life_dialogue.png}
-  \caption{Config pane in modified Second Life client for HMC6343 + MAX-6.}
+  \caption{Configuration window in VTW's modified Second Life client.}
   \label{pangolin_second_life_dialogue.png}
 \end{figure}
 
@@ -746,7 +746,7 @@ The backdrop for real world experimentation with the VTW platform was the impres
 \begin{figure}[h]
 \centering
   \includegraphics[width=\linewidth]{cathedral_reconstruction_side.png}
-  \caption{St Andrews Cathedral recreation set on the sunny St Andrews day afternoon 1318, showing the West Gate in the foreground and ships in the background.}
+  \caption{St Andrews Cathedral reconstruction, depicting the cathedral as it stood in 1318.}
   \label{cathedral_reconstruction_side.png}
 \end{figure}
 
@@ -783,13 +783,13 @@ The OVW Group's reconstruction of St Andrews cathedral, as shown in figures \ref
 
 For the purposes of testing VTW at the cathedral, a temporary server and network setup was effected using a Lenovo ThinkPad X61s\thinkpadFootnote{} laptop computer to host the OpenSim server with a Linksys WRT54G\wrtFootnote{} wireless router powered from a 12V sealed lead-acid battery to provide wireless communication between the OpenSim server and the WindPad over a much larger range than the laptop's internal wireless interface could provide. This setup is shown in use at the cathedral by figure \ref{pangolin_laptop_router_battery.jpg}, the architecture of this experimental implementation is shown by figure \ref{vtw_implementation.png} and figure \ref{vtw_in_use.jpg} shows VTW in use at the cathedral.
 
-\TwoFig{pangolin_laptop_router_battery.jpg} {OpenSim Server and wireless AP.} {pangolin_laptop_router_battery.jpg}
-       {vtw_in_use.jpg} {VTW at the cathedral.} {vtw_in_use.jpg}
+\TwoFig{pangolin_laptop_router_battery.jpg} {OpenSim Server and wireless AP used throughout VTW experiments.} {pangolin_laptop_router_battery.jpg}
+       {vtw_in_use.jpg} {VTW platform in use at St Andrews cathedral.} {vtw_in_use.jpg}
 
 \begin{figure}[h]
 \centering
   \includegraphics[width=\linewidth]{vtw_implementation.png}
-  \caption{Implementation of VTW.}
+  \caption{Architecture of VTW implementation.}
   \label{vtw_implementation.png}
 \end{figure}
 
@@ -819,12 +819,12 @@ The three sets of positional data (planned route, MAX-6 recorded route and smart
 
 %This ability to control navigation within the 3D virtual environment without explicit conscious input of keyboard/mouse/touch commands is integral to reducing the cognitive load required to maintain a presence within a virtual environment which is a key requirement for overcoming the vacancy problem and achieving successful mobile cross reality.
 
-During the experiments the MAX-6 was unable to maintain reception of the additional correction data required for SBAS operation; when left stationary for several minutes reception was possible however subsequent movement of only a few meters at walking pace broke the connection. This reduced the theoretical maximum performance of the unit to 2.5m CEP, with observed performance being lower. Figure \ref{vtw_all_routes.png} depicts an aerial view of the St Andrews cathedral ruins; the blue line represents the planned route, red the route recorded by the MAX-6 receiver and green the route recorded by the smartphone for comparative purposes, both while walking the planned route.
+During the experiments the MAX-6 was unable to maintain reception of the additional correction data required for SBAS operation; when left stationary for several minutes reception was possible however subsequent movement of only a few meters at walking pace broke the connection. This reduced the theoretical maximum performance of the unit to 2.5m CEP, with observed performance being lower. Figure \ref{vtw_all_routes.png} depicts an aerial view of the St Andrews cathedral ruins, oriented with North upwards; the blue line represents the planned route, red the route recorded by the MAX-6 receiver and green the route recorded by the smartphone for comparative purposes, both while walking the planned route.
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{vtw_all_routes.png}
-\caption{Aerial view oriented North upward of the St Andrews cathedral ruins; the blue line represents the planned route, red the route recorded by the MAX-6 and green the route recorded by the smartphone whilst walking the planned route.}
+\caption{Planned and recorded paths for VTW scenario at St Andrews cathedral (complete).}
 \label{vtw_all_routes.png}
 \end{figure}
 
@@ -837,7 +837,7 @@ The maximum inaccuracies were recorded when walking along the South wall of the 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{vtw_alll_routes_first_half.png}
-\caption{Aerial view oriented North upward of the St Andrews cathedral ruins; the blue line represents the first sub-route of the planned route, red the sub-route recorded by the MAX-6 and green the sub-route recorded by the smartphone whilst walking the first planned sub-route.}
+\caption{Planned and recorded paths for VTW scenario at St Andrews cathedral (first sub path).}
 \label{vtw_alll_routes_first_half.png}
 \end{figure}
 
@@ -846,7 +846,7 @@ When analyzing the tracks in the vicinity of the nave (see figure \ref{vtw_all_r
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{vtw_all_routes_second_half.png}
-\caption{Aerial view oriented North upward of the St Andrews cathedral ruins; the blue line represents the second sub-route of the planned route, red the sub-route recorded by the MAX-6 and green the sub-route recorded by the smartphone whilst walking the second planned sub-route.}
+\caption{Planned and recorded paths for VTW scenario at St Andrews cathedral (second sub path).}
 \label{vtw_all_routes_second_half.png}
 \end{figure}
 

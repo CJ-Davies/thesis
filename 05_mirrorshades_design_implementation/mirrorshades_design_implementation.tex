@@ -37,7 +37,7 @@ Figure \ref{systemarchitecture} presents a high level architectural overview of 
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=.5\linewidth]{system-architecture.png}
-		\caption{Overview of the Mirrorshades platform.}
+		\caption{High level overview of the Mirrorshades parallel reality platform.}
 		\label{systemarchitecture}
 	\end{center}
 \end{figure}
@@ -66,20 +66,20 @@ As the different views that a user of the Mirrorshades platform switches between
 
 The stage upon which the Mirrorshades platform was designed and developed to perform upon was St Salvator's chapel in St Andrews. Founded in 1450 but internally stripped of its medieval fittings during the Protestant Reformation (1517 - 1648), the chapel looks markedly different in the present day than it did upon its completion. An existing VR reconstruction of the chapel as it stood in the period 1450-1460 and the marked differences between the internal appearance of the VR building and the current building (including the replacement of the original stone roof with a wooden one and drastically different dividing of the internal space) make this chapel an ideal candidate within the context of cultural heritage for the Mirrorshades PR system to be deployed. The magnitude of the changes between the chapel's original state and how it stands today means that AR would not in fact be able to present a faithful image of how the chapel originally looked, but would need to be combined with substantial application of diminished reality\footnote{Where \textit{augmented reality} is the \textit{addition} of information to a RW scene, \textit{diminished reality} in this sense is the \textit{removal} of parts of a RW scene.~\cite{Mann2002}} to remove present day features that were not there in the past.
 
-\TwoFig{sallies-vrst/sallies-quad-real.jpg}{St Salvator's chapel, present day.}{sallies-quad-real.jpg}
-       {sallies-vrst/sallies-quad-virtual.png}{St Salvator's chapel, reconstruction.}{sallies-quad-virtual.png}
+\TwoFig{sallies-vrst/sallies-quad-real.jpg}{St Salvator's chapel today.}{sallies-quad-real.jpg}
+       {sallies-vrst/sallies-quad-virtual.png}{St Salvator's chapel reconstruction.}{sallies-quad-virtual.png}
        
 This reconstruction project has virtually recreated St Salvator’s chapel as it was built and furnished for Bishop James Kennedy between 1450 and 1460. The chapel was of the greatest significance for the new architectural ideas that it introduced into Scotland, at a time when Scotland was particularly open to external artistic influences. However, although the shell of the chapel survives and remains in use, it has lost its vault, its window tracery and its liturgical furnishings, and it now requires specialist skills to appreciate the quality of its original state. As with other reconstructions from the OVW group, the virtual St Salvator's chapel is a product of a collaboration between architectural and art history and computer science scholarship. On the combined evidence of a highly detailed late medieval inventory and of the architecture itself, it has been possible to show how the chapel was furnished internally with altars, choir stalls, lecterns, screens, stained glass and wall paintings. The virtual chapel is enhanced with lighting, sound and movement may be explored from a variety of physical and temporal locations through an avatar. The architectural, liturgical and spatial analysis allows our understanding of the history of the Chapel as a living building to be enormously enhanced by experiencing the building in its original context.
 
-\TwoFig{sallies-vrst/sallies-real-toward-altar.jpg}{Looking towards the altar, present day.}{sallies-real-toward-altar.jpg}
-       {sallies-vrst/sallies-virtual-toward-altar.png}{Looking towards the altar, reconstruction.}{sallies-virtual-toward-altar.png}
+\TwoFig{sallies-vrst/sallies-real-toward-altar.jpg}{St Salvator's chapel looking East, present day.}{sallies-real-toward-altar.jpg}
+       {sallies-vrst/sallies-virtual-toward-altar.png}{St Salvator's chapel looking East, reconstruction.}{sallies-virtual-toward-altar.png}
 
 St Salvator's college was founded on 27 August 1450 by Bishop James Kennedy, who played a leading role in Scottish and international politics. St Salvator’s was to be open to students who were prepared to live within the college. In this, St Salvator’s was the first college in Scotland to place the education of students so firmly at the heart of its role. It was dedicated for worship in 1460. The chapel is an aisle-less rectangle with a three-sided east apse. Deeply projecting three-stage buttresses define the bays, which are now capped by pinnacles of 1861–2. The windows which occupy the full space available between the buttresses, no longer reflect their original forms. The main entrance to the chapel was through a doorway in the second bay from the west of the south flank, which is covered by a vaulted porch between the buttresses. Two doorways on the north side presumably opened into a lost sacristy and treasury range.
 
 The interior of the chapel is known to have been covered by a stone vault, which is assumed to have been of pointed barrel form with a decorative pattern of ribs, like the small vault over the south porch. The interior is now covered by an inappropriate timber roof.
 
-\TwoFig{sallies-vrst/sallies-real-from-altar.jpg}{Looking from the altar, present day.}{sallies-real-from-altar.jpg}
-       {sallies-vrst/sallies-virtual-from-altar.png}{Looking from the altar, reconstruction.}{sallies-virtual-from-altar.png}
+\TwoFig{sallies-vrst/sallies-real-from-altar.jpg}{St Salvator's chapel looking West, present day.}{sallies-real-from-altar.jpg}
+       {sallies-vrst/sallies-virtual-from-altar.png}{St Salvator's chapel looking West, reconstruction.}{sallies-virtual-from-altar.png}
 
 St Salvator’s chapel is considered the first Scottish example of a church planned with an aisle-less rectangular main body terminating in a polygonal eastern apse, a type that was to have a long future for a range of Scottish church types. Such chapels were common in university colleges in France and since Bishop Kennedy had a highly placed kinsman in the university of Paris and drew many ideas for the organisation of his college from that university’s constitution, it is reasonable to assume that he also drew some of his ideas for the architecture of his chapel from there. On this basis, St Salvator’s must be seen as an outstandingly important channel for the introduction into Scotland of new architectural ideas from France. The new architecture made a significant statement in its Scottish context. 
 
@@ -138,8 +138,8 @@ The PS3 Eye camera met most of these requirements. It's resolution is only 640x4
 
 A very early test with the PS3 Eye and the DK1\footnote{\url{https://www.youtube.com/watch?v=tS0FGZxQzCU}} was performed by simply attaching a single unmodified PS3 Eye camera to the top of the DK1 (figure \ref{rift-pseye-ziptied.jpg}), with its stock lens set to its `wide' setting (75\textdegree, presumably diagonal, FOV\footnote{\url{http://uk.playstation.com/media/247868/7010571 PS3 Eye Web_GB.pdf}}). One purpose of this test was to explore the suitability of Unity's \texttt{WebCamTexture}\footnote{\url{http://docs.unity3d.com/ScriptReference/WebCamTexture.html}} feature for integrating the stream from a USB camera into a 3D application. In this early test, the mediated RW video stream was rendered to a small `floating' window that moved with the user's head (figure \ref{floating-webcam-window.png}), allowing the user to view both environments at once, with the real environment in their peripheral whilst they were attending to the virtual. Whilst an interesting concept, the decision was made to instead render the mediated RW stream to the full DK1 screen so as to allow the user to better observe their real environment thanks to the larger image and higher resolution, with the small floating window likened more to the VTW approach of PR than an experience that allows true immersion in both environments. A second benefit of this switching approach is that it helps to mitigate any detrimental affect of latency in the camera image(s) not matching that of the virtual image(s).
 
-\TwoFig{rift-pseye-ziptied.jpg}{First monoscopic see through hardware.}{rift-pseye-ziptied.jpg}
-       {floating-webcam-window.png}{Early `floating' window see through video.}{floating-webcam-window.png}
+\TwoFig{rift-pseye-ziptied.jpg}{Oculus Rift DK1 with PS3 Eye test.}{rift-pseye-ziptied.jpg}
+       {floating-webcam-window.png}{`Floating' window see through video in Unity.}{floating-webcam-window.png}
 
 A pair of PS3 Eye cameras were dismantled, removing their outer plastic housing and stock lenses then fitting S-mount lens mounts. Ideally, the lenses used would provide the same FOV as the Rift itself is capable of displaying, such that the mediate RW stream from the cameras could be displayed at the full size of the Rift and `match' the FOV of whatever virtual content would alternatively be displayed. However there is a trade off with lenses between focal length and distortion; shorter focal lengths mean a wider FOV, however they also introduce more distortion which is not necessarily corrected by the shader that the Rift uses to compensate for the distortion of its own plastic lenses through which the image is viewed.
 
@@ -219,8 +219,8 @@ An oversight in the design of the camera mounts was realised by when William Ste
 \TwoFig{rift-clips-cameras/clips-vert.jpg}{Updated camera mount.}{clips-vert.jpg}
        {rift-clips-cameras/vert-6.jpg}{PS3 Eye cameras using updated mounts.}{vert-6.jpg}
 
-\TwoFig{rift-clips-cameras/vert-1.jpg}{Updated mount with stand-offs.}{vert-1.jpg}
-       {rift-clips-cameras/vert-4.jpg}{Updated mount with rubber washers.}{vert-4.jpg}
+\TwoFig{rift-clips-cameras/vert-1.jpg}{Updated camera mount with stand-offs.}{vert-1.jpg}
+       {rift-clips-cameras/vert-4.jpg}{Updated camera mount with rubber washers.}{vert-4.jpg}
 
 Unfortunately the PS3 Eye naming solution was temperamental at best and two camera compatibility was frequently lost. It was decided prudent to therefore replace the PS3 Eye cameras with alternatives, rather than attempting to glean a solution to their reliable compatibility with Unity. Using Steptoe's project as a guide, a pair of Logitech C310\footnote{\url{http://www.logitech.com/en-gb/product/hd-webcam-c310}} cameras were sourced. Whilst the stated refresh rate of the C310 is only 30Hz, half that of the PS3 Eye, it supports a resolution of 1280x960, which is higher than that of the PS3 Eye and of each half of the DK1's display. Thus the switch from the PS3 Eye cameras to the C310 represented a sacrifice in framerate, but an increase in resolution. Empirically the increase in resolution was however indiscernible, likely due to the effect of the DK1's optics reducing the visual acuity of its display, whilst the reduction in framerate was more prominently noticeable.
 
@@ -243,7 +243,7 @@ Unity's \texttt{WebCamTexture} support was used to gain access to the C310 video
     \begin{minipage}[t]{.32\textwidth}
         \begin{center}
         \includegraphics[width=\textwidth]{unity-screenshots/unity-screenshot-1.png}
-        \caption{Camera and backing planes.}
+        \caption{Camera and backing planes in Unity.}
         \label{unity-screenshot-1.png}
         \end{center}
     \end{minipage}%
@@ -251,7 +251,7 @@ Unity's \texttt{WebCamTexture} support was used to gain access to the C310 video
     \begin{minipage}[t]{.32\textwidth}
 		\begin{center}
         \includegraphics[width=\textwidth]{unity-screenshots/unity-screenshot-2.png}
-        \caption{Left camera plane.}
+        \caption{Left camera plane in Unity.}
         \label{unity-screenshot-2.png}
         \end{center}
     \end{minipage}%
@@ -259,7 +259,7 @@ Unity's \texttt{WebCamTexture} support was used to gain access to the C310 video
     \begin{minipage}[t]{.32\textwidth}
         \begin{center}
         \includegraphics[width=\textwidth]{unity-screenshots/unity-screenshot-3.png}
-        \caption{Right camera plane.}
+        \caption{Right camera plane in Unity.}
         \label{unity-screenshot-3.png}
         \end{center}
     \end{minipage}
@@ -271,7 +271,7 @@ It can be seen that these planes overlap considerably as they are only horizonta
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=.4\linewidth]{webcam-overlap.png}
-		\caption{Overlap between camera planes.}
+		\caption{Visualisation of overlap between camera planes.}
 		\label{webcam-overlap.png}
 	\end{center}
 \end{figure}
@@ -283,7 +283,7 @@ The arrangement of these planes in relation to the virtual cameras is shown by f
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=.85\linewidth]{unity-screenshots/unity-screenshot-6.png}
-		\caption{Arrangement of camera planes and backing planes.}
+		\caption{Arrangement of camera planes and backing planes in Unity.}
 		\label{unity-screenshot-6.png}
 	\end{center}
 \end{figure}
@@ -291,7 +291,7 @@ The arrangement of these planes in relation to the virtual cameras is shown by f
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=.85\linewidth]{unity-screenshots/unity-screenshot-7.png}
-		\caption{Spacing between camera planes and backing planes.}
+		\caption{Spacing between camera planes and backing planes in Unity.}
 		\label{unity-screenshot-7.png}
 	\end{center}
 \end{figure}
@@ -304,11 +304,11 @@ Measurement of the end-to-end latency of the C310 solution was performed by plac
 
 Both the monitor and the DK1's screen refresh at 60Hz, each frame lasting for 16.67ms, whilst a 1/4000 of a second shutter on a camera means that the shutter is open for 0.25ms. The response time of the monitor (quoted by the manufacturer as 8ms grey-to-grey) was evidently much higher than that of the Rift, as the tenths and even hundredths digit on the monitor was usually legible in each frame of the video whereas on the Rift the hundredths and thousandths digits were always illegible. Thus to determine the latency of the DK1 + camera setup using Unity, adjacent video frames were identified where a transition from one tenth digit to the next was legible enough on the Rift's display and the hundredths/thousandths digits were legible enough on the monitor, such as the pair shown by figures \ref{vid1.jpg} and \ref{vid2.jpg}. From these values, it can be inferred that the tenths digit on the DK1's screen (visible through the right eyecup hole) changed from 9 (figure \ref{vid1.jpg}) to 0 (figure \ref{vid2.jpg}) sometime between 181ms (figure \ref{vid1.jpg}) and 198ms (figure \ref{vid2.jpg}) on the monitor, which represents a latency of between 181ms and 198ms. Out of 11 pairs of frames like this, 7 pairs showed this 181-198ms latency, while 4 showed 198-215ms latency as in figures \ref{vid3.jpg} and \ref{vid4.jpg}.
 
-\TwoFig{latency/vid1.jpg}{Measuring latency (video frame).}{vid1.jpg}
-       {latency/vid2.jpg}{Measuring latency (video frame).}{vid2.jpg}
+\TwoFig{latency/vid1.jpg}{Measuring latency (video frame, 1/2).}{vid1.jpg}
+       {latency/vid2.jpg}{Measuring latency (video frame, 2/2).}{vid2.jpg}
 
-\TwoFig{latency/vid3.jpg}{Measuring latency (video frame).}{vid3.jpg}
-       {latency/vid4.jpg}{Measuring latency (video frame).}{vid4.jpg}
+\TwoFig{latency/vid3.jpg}{Measuring latency (video frame, 1/2).}{vid3.jpg}
+       {latency/vid4.jpg}{Measuring latency (video frame, 2/2).}{vid4.jpg}
 
 In addition to video frames, still photographs taken at the same 1/4000 of a second shutter speed gave some better legible stills which corroborated this 181-251ms figure. This figure is substantially greater than the 30-60ms figure often quoted\footnote{\url{https://www.oculus.com/blog/the-latent-power-of-prediction/}} as the upper limit for an acceptable VR experience, however how much it affects a relatively `slow' style of interaction such as that of applying PR to a cultural heritage site versus that of a `fast' application such as a competitive twitch game is open to interpretation from experimental results.
 
@@ -317,7 +317,7 @@ In addition to video frames, still photographs taken at the same 1/4000 of a sec
     \begin{minipage}{.32\textwidth}
         \begin{center}
         \includegraphics[width=\textwidth]{latency/still1.jpg}
-        \caption{Measuring latency (still photograph).}
+        \caption{Measuring latency (still photograph, 1/3).}
         \label{still1.jpg}
         \end{center}
     \end{minipage}%
@@ -325,7 +325,7 @@ In addition to video frames, still photographs taken at the same 1/4000 of a sec
     \begin{minipage}{.32\textwidth}
 		\begin{center}
         \includegraphics[width=\textwidth]{latency/still2.jpg}
-        \caption{Measuring latency (still photograph).}
+        \caption{Measuring latency (still photograph, 2/3).}
         \label{still2.jpg}
         \end{center}
     \end{minipage}%
@@ -333,7 +333,7 @@ In addition to video frames, still photographs taken at the same 1/4000 of a sec
     \begin{minipage}{.32\textwidth}
         \begin{center}
         \includegraphics[width=\textwidth]{latency/still3.jpg}
-        \caption{Measuring latency (still photograph).}
+        \caption{Measuring latency (still photograph, 3/3).}
         \label{still3.jpg}
         \end{center}
     \end{minipage}
@@ -355,7 +355,7 @@ In the case of Mirrorshades, the fixed reference point is the chapel - both the 
 \begin{figure}
 	\begin{center}
 		\includegraphics[width=.85\linewidth]{sallies-rift-frame-of-reference.png}
-		\caption{Starting orientation of virtual cameras within VR chapel (top down view).}
+		\caption{Starting orientation of virtual cameras within Unity chapel reconstruction (top down view).}
 		\label{sallies-rift-frame-of-reference.png}
 	\end{center}
 \end{figure}
@@ -384,8 +384,8 @@ It should also be noted in this discussion that the DK1's combination of optics 
 
 A further consideration is the discrepancy between the cameras' sensors and the users' eyes, caused due to the fact that the cameras must be mounted to the front of the DK1 and thus several inches in front of the user's eyes. This has the effect of making the user experience viewing the real world from several inches in front of where their eyes truly are (as if their eyes were `on stalks'), whilst viewing VR through the same setup does not have this effect. The distance between the sensors and the user's eyes was reduced when iterating from the first mounting mechanism with metal stand-offs (figure \ref{deep-mounts.jpg}) to the second mechanism with rubber washers (figure \ref{shallow-mounts.jpg}), however with the interaction style of Mirrorshades where the user is predominantly focussed on observing objects and architecture 15-20ft away from them the discrepancy is not particularly noticeable - it is when trying to manipulate objects much closer to the eyes that the discrepancy becomes prominent.
 
-\TwoFig{rift-clips-cameras/deep-mounts.jpg}{Early mounts, large eye/sensor distance.}{deep-mounts.jpg}
-       {rift-clips-cameras/shallow-mounts.jpg}{Later mounts, smaller eye/sensor distance.}{shallow-mounts.jpg}
+\TwoFig{rift-clips-cameras/deep-mounts.jpg}{Early camera mounts, large eye/sensor distance.}{deep-mounts.jpg}
+       {rift-clips-cameras/shallow-mounts.jpg}{Later camera mounts, smaller eye/sensor distance.}{shallow-mounts.jpg}
 
 %Because of the approach that the DK1 uses to produce a `3D' image, by using side-by-side stereoscopic rendering where each eye receives a different image, with these images horizontally separated on the single screen, the solution does not feature zero parallax.
 
@@ -445,7 +445,7 @@ Whilst the PSMove has been used successfully for pedestrian position tracking in
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=.8\linewidth]{psmove-screenshot.png}
-		\caption{PSMove failing to locate even in dim conditions.}
+		\caption{PSMove failing to locate illuminated marker even in dim conditions.}
 		\label{psmove-screenshot.png}
 	\end{center}
 \end{figure}
@@ -463,20 +463,20 @@ The major concern at this point was whether the building materials employed in t
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=.6\linewidth]{jack-cole-ceiling.jpg}
-		\caption{Metalwork in department building ceiling.}
+		\caption{Metalwork abundant in department building ceiling.}
 		\label{jack-cole-ceiling.jpg}
 	\end{center}
 \end{figure}
 
-\TwoFig{jack-cole-splodges-red.png}{Positions reported by IndoorAtlas.}{jack-cole-splodges-red.png}
-       {jack-cole-indooratlas-routes.png}{Route mapped during offline phase.}{jack-cole-indooratlas-routes.png}
+\TwoFig{jack-cole-splodges-red.png}{Positions reported by IndoorAtlas within department building.}{jack-cole-splodges-red.png}
+       {jack-cole-indooratlas-routes.png}{Route mapped in department building during offline phase.}{jack-cole-indooratlas-routes.png}
 
 It should be noted that the IndoorAtlas technology only reports positions upon routes that have been previously mapped in an offline mapping phase; for the test results shown by figure \ref{jack-cole-splodges-red.png}, this offline mapping phase comprised walking the route shown by the thick black line in figure \ref{jack-cole-indooratlas-routes.png} several times. In the following test, had the user deviated from this route, IndoorAtlas would still have reported them as being somewhere upon it; it would not attempt to extrapolate their position into unmapped territory. This is presumably because the scale of distortions in the Earth's magnetic field is quite fine grained, supported by the fact that many of the black dots are less than a meter apart, thus extrapolation would not fair well. This is an important aspect to take into account when performing the offline mapping phase, as one must map sufficient paths to cover all possible places and routes that a user may walk. For locations comprised mainly of corridors and small rooms, this is not an issue, however for a location that contains a large open space in which the user is free to meander, a more involved mapping process in which the entire space is systematically covered by back and forth routes that progress across the space is required.
 
 Initial testing of IndoorAtlas at St Salvator's chapel proved surprisingly successful, with the platform able to track the smartphone accurately throughout the building even without any obvious overbearing metal content in the structure or its furnishings. Figure \ref{sallies-splodges-red.png} shows the set of positions reported by the IndoorAtlas platform whilst walking throughout the chapel, which is roughly 30m across, after an offline mapping phase that mapped the routes shown in figure \ref{sallies-indoor-atlas-routes.png}.
 
-\TwoFig{sallies-splodges-red.png}{Preliminary testing of IndoorAtlas in St Salvator's chapel.}{sallies-splodges-red.png}
-       {sallies-indoor-atlas-routes.png}{Routes mapped during offline phase.}{sallies-indoor-atlas-routes.png}
+\TwoFig{sallies-splodges-red.png}{Positions reported during preliminary testing of IndoorAtlas at St Salvator's chapel.}{sallies-splodges-red.png}
+       {sallies-indoor-atlas-routes.png}{Routes mapped in St Salvator's chapel during offline phase.}{sallies-indoor-atlas-routes.png}
 
 Upon closer inspection of the building, metal grating that runs along the ground along the central aisle, representing much of the horizontal movement in figure \ref{sallies-splodges-red.png} and shown in figure \ref{DSCN0172.jpg} and figure \ref{DSCN0174.jpg} in detail, which also extends to the open area in front of the altar as shown in figure \ref{DSCN0175.jpg}, may explain this unexpectedly high performance, however in other areas such as when walking to either side of the altar (far right of figures \ref{sallies-splodges-red.png} and \ref{sallies-indoor-atlas-routes.png}) there were no obvious sources, as seen in figure \ref{DSCN0176.jpg}, of magnetic interference to account for the maintained accuracy. Possible less obvious explanations could be the ferromagnetic properties of certain types of stone used in the building's construction and the presence of electrical lighting and audio systems installed into the chapel (loudspeaker and light fixture visible in figure \ref{DSCN0177.jpg}), which presumably make use of electrical cables routed throughout the building.
 
@@ -485,7 +485,7 @@ Upon closer inspection of the building, metal grating that runs along the ground
     \begin{minipage}{.32\textwidth}
         \begin{center}
         \includegraphics[width=\textwidth]{Sallies-photos/DSCN0172.jpg}
-        \caption{Chapel aisle, flanked by gratings.}
+        \caption{St Salvator's chapel aisle, flanked by gratings.}
         \label{DSCN0172.jpg}
         \end{center}
     \end{minipage}%
@@ -493,7 +493,7 @@ Upon closer inspection of the building, metal grating that runs along the ground
     \begin{minipage}{.32\textwidth}
 		\begin{center}
         \includegraphics[width=\textwidth]{Sallies-photos/DSCN0174.jpg}
-        \caption{Grating detail.}
+        \caption{Detail of St Salvator's chapel gratings.}
         \label{DSCN0174.jpg}
         \end{center}
     \end{minipage}%
@@ -501,15 +501,15 @@ Upon closer inspection of the building, metal grating that runs along the ground
     \begin{minipage}{.32\textwidth}
         \begin{center}
         \includegraphics[width=\textwidth]{Sallies-photos/DSCN0175.jpg}
-        \caption{Gratings before altar.}
+        \caption{Gratings before altar at St Salvator's chapel.}
         \label{DSCN0175.jpg}
         \end{center}
     \end{minipage}
     \end{center}
 \end{figure}
 
-\TwoFig{Sallies-photos/DSCN0176.jpg}{No obvious metal around altar.}{DSCN0176.jpg}
-       {Sallies-photos/DSCN0177.jpg}{Loudspeaker and electric light fixture.}{DSCN0177.jpg}
+\TwoFig{Sallies-photos/DSCN0176.jpg}{Altar in St Salvator's chapel, with no obvious metal.}{DSCN0176.jpg}
+       {Sallies-photos/DSCN0177.jpg}{Loudspeaker and electric light fixture within St Salvator's chapel.}{DSCN0177.jpg}
        
 %=========================================================================================================
 
@@ -525,8 +525,8 @@ Since the development of Mirrorshades, Oculus' have partnered with Samsung to pr
 
 Due to the role of the mobile client being filled by a laptop computer, position data obtained via IndoorAtlas using an Android smartphone had to be relayed to the laptop. Modifications were made to an IndoorAtlas SDK beta example app, such that it submits position data to a remote MySQL database server via a PHP/HTTP POST mechanism. This not only allows the mobile client to determine its position by polling the database server for the most up-to-date data, but also allows for remote logging (unrestricted by local storage on the smartphone) and for other applications to easily make use of the location data; during development, a Web based visualisation of the position data was used for both the department building (figure \ref{indooratlas-webpage-jack-cole.png}) and St Salvator's chapel (figure \ref{indooratlas-webpage-sallies.png}). These Web pages render the position of the user as a red mark using a relative position \texttt{div} and served as a source of diagnostic information that was quickly accessible from any platform.
 
-\TwoFig{indooratlas-webpage-jack-cole.png}{Web visualisation of department building positioning.}{indooratlas-webpage-jack-cole.png}
-        {indooratlas-webpage-sallies.png}{Web visualisation of chapel positioning.}{indooratlas-webpage-sallies.png}
+\TwoFig{indooratlas-webpage-jack-cole.png}{Web visualisation of IndoorAtlas information for department building.}{indooratlas-webpage-jack-cole.png}
+        {indooratlas-webpage-sallies.png}{Web visualisation of IndoorAtlas information for St Salvator's chapel.}{indooratlas-webpage-sallies.png}
 
 Translating RW positions reported by IndoorAtlas into VR positions within the Unity environments is performed in a similar same way as RW positions reported by GPS were translated into VR positions within the OpenSim environment in section \ref{second_life_position_control}, except that the myriad formats that position data are reported by the IndoorAtlas API negates the requirement to use the haversine formula. As well as providing indoor positions in the form of longitude and latitude pairs, the API also provides positions as offsets from the origin of the floorplan image file used when performing the offline mapping phase, in both pixels and meters. Thus, instead of deriving the displacement between the anchor point and the user's position by using haversine to calculate great circle distances between pairs of longitude and latitude, the displacement is instead obtained by simply adding/negating the position of the user reported in meters from the position of the anchor point also in meters. This approach is possible with IndoorAtlas as the use of a floorplan image provides a frame of reference, that can be indexed by 2D pixel coordinates and converted into meters using a pixels-per-meter value, that did not exist with the GPS approach adopted for VTW that requires no offline mapping phase.
 
@@ -542,8 +542,8 @@ Using IndoorAtlas reported positions in Unity is configured and achieved by a co
 
 Thanks to the ability of the Unity engine to build applications for myriad platforms, the integration of IndoorAtlas IPS into Unity could be tested within the department building using a pair of Android smartphones\footnote{\url{https://www.youtube.com/watch?v=i3lEnXZMjms}} before moving on to the full DK1 based setup. This can be seen in figure \ref{indooratlas-two-phones.png}, where the smartphone in the right hand (a Google Nexus 4) is running the modified IndoorAtlas SDK beta example app, POSTing position data to the remote MySQL server, while the smartphone in the left hand (a Google Nexus 5) is running a Unity application that depicts a top-down view of the user's current position within a 3D model of the department building.
 
-\TwoFig{indooratlas-two-phones.png}{Anchor point (yellow) and avatar position (red).}{indooratlas-two-phones.png}
-       {unity-screenshots/unity-anchor-point.png}{RW anchor point settings in Unity.}{unity-anchor-point.png}
+\TwoFig{indooratlas-two-phones.png}{Unity and IndoorAtlas integration testing using two smartphones.}{indooratlas-two-phones.png}
+       {unity-screenshots/unity-anchor-point.png}{RW anchor point settings in Unity application.}{unity-anchor-point.png}
 
 %=========================================================================================================
 
@@ -565,7 +565,7 @@ Considering the first aspect, the difference in breaks in presence is illustrate
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=.8\textwidth]{transition-mix-vr.png}
-		\caption{Transition between RW/VR mix and VR.}
+		\caption{Visualisation using the combined Milgram/Waterworth model of the theorised experience of a user of a PR system performing a transition between a RW/VR mix and the VR environment.}
 		\label{transition-mix-vr.png}
 	\end{center}
 \end{figure}
@@ -577,7 +577,7 @@ Considering the second aspect, the difference in breaks is illustrated by once a
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=.8\textwidth]{transition-rw-vr-hard.png}
-		\caption{Instantaneous replacement of visual stimuli.}
+		\caption{Visualisation using the combined Milgram/Waterworth model of the theorised experience of a user of a PR system performing am instantaneous transition between its constituent RW and VR environments.}
 		\label{transition-rw-vr-hard.png}
 	\end{center}
 \end{figure}
@@ -603,7 +603,7 @@ The user presses and holds the \texttt{[A]} button on the controller to switch t
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=0.5\textwidth]{switching-hard-with-controller.png}
-		\caption{Hard switch.}
+		\caption{Instantaneous hard switch between RW and VR visual stimuli.}
 		\label{scenario1}
 	\end{center}
 \end{figure}
@@ -617,7 +617,7 @@ The user presses and holds the \texttt{[B]} button on the controller to switch t
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=.8\textwidth]{switching-soft-with-controller.png}
-		\caption{Switch with linear interpolation.}
+		\caption{Switch with linear interpolation between RW and VR visual stimuli.}
 		\label{scenario12}
 	\end{center}
 \end{figure}
@@ -633,7 +633,7 @@ This method allows the user to superimpose VR visual stimuli upon default visual
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=.8\textwidth]{switching-analogue-with-controller.png}
-		\caption{Analogue selectable opacity.}
+		\caption{Analogue selectable opacity between RW and VR visual stimuli, where any intermediary position can be lingered upon.}
 		\label{scenario2}
 	\end{center}
 \end{figure}
@@ -651,7 +651,7 @@ Independent or in addition to any of the previous scenarios, the visual stimuli 
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=\textwidth]{timed-switch.png}
-		\caption{Periodic hard switches.}
+		\caption{Periodic instantaneous hard switches between RW and VR visual stimuli.}
 		\label{scenariotimed}
 	\end{center}
 \end{figure}
@@ -667,7 +667,7 @@ Independent or in addition to any of the previous scenarios, the maximum opacity
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=0.5\textwidth]{base-opacity-hard-switch.png}
-		\caption{Hard switch from reduced maximum opacity.}
+		\caption{Instantaneous hard switch between RW/VR mix and VR visual stimuli.}
 		\label{scenariobaseopacity}
 	\end{center}
 \end{figure}
@@ -699,8 +699,8 @@ The hardware components of the system that are carried by the user comprise;
 
 Figure \ref{DSCN0198.jpg} shows an overview of this hardware; the laptop computer is bottom left, the DK1 control box (with USB battery pack, 4-port USB hub and Xbox controller receiver) is bottom right, the DK1 itself (with camera solution attached) is top right, the Xbox controller is top center and the Nexus 5 smartphone is top left. Figure \ref{DSCN0191.jpg} shows a detailed view of the USB battery pack (white, bottom), the DK1 control box (directly above battery), the USB hub (on top, right) and the Xbox controller receiver (top, left). The use of a USB hub allows there to be only two wires running between the control box bundle and the laptop, which can be seen in figure \ref{DSCN0198.jpg} - the grey cable atop the laptop is the cable from the USB hub and carries the DK1 head tracker information, camera feeds and Xbox controller commands, the black cable is the HDMI cable that carries visual output from the laptop to the DK1. Unlike the DK2, which is powered solely by its USB connection, the DK1 requires an external power source as it draws more power than a single USB socket on a computer can provide. Luckily, this external power supply is rated at 5V, the same as a USB connection, so a USB battery pack that provides sufficient current (more than a computer's USB sockets, but less than high powered USB wall chargers and battery packs) could be used to enabled the DK1 to be used mobile.
 
-\TwoFig{DSCN0198.jpg}{Mirrorshades hardware.}{DSCN0198.jpg}
-       {DSCN0191.jpg}{Detail of control box bundle.}{DSCN0191.jpg}
+\TwoFig{DSCN0198.jpg}{Hardware of the Mirrorshades platform carried by the user.}{DSCN0198.jpg}
+       {DSCN0191.jpg}{Detail of Mirrorshades control box bundle.}{DSCN0191.jpg}
 
 The laptop and control box bundle are carried in a satchel hung over the user's shoulder, the smartphone is held in their left hand and the Xbox controller is held in their right hand. In addition to this hardware carried by the user, a remote server is used to provide a MySQL database. During the user studies at St Salvator's chapel, the server used had an Intel Xeon E3-1270 four-core/eight-thread processor, 32GiB RAM, 4x WD RE4 1TB hard disks in software RAID6 and 100mbit/s Internet connectivity. This server ran the Debian stable release, with a standard LAMP stack and mdadm for RAID management.
 
@@ -731,29 +731,29 @@ As the user changes their position by walking, the visuals that are presented to
 \label{initial-testing}
 The completed Mirrorshades platform was initially tested within the department building\footnote{\url{https://www.youtube.com/watch?v=oy5NqqDtkJ4}}, as shown in figures \ref{testing-vids-screenshots/jc-1.png} to \ref{testing-vids-screenshots/jc-4.png}. Note that this test took place with an earlier PS3 Eye based camera solution in which the camera feeds were rendered to the full expanse of the DK1's display, rather than the later C310 solution in which the camera feeds have their FOV correctly scaled to the DK1's display (see section \ref{modifying-dk1}). This initial integration test confirmed the correct functioning of the platform as a whole and that the accuracy of the IPS was great enough for the desired modality of interaction, at least within the department building with its abundance of metal building materials and electricla provisions.
 
-\TwoFig{testing-vids-screenshots/jc-1.png}{Mirrorshades test in department building.}{testing-vids-screenshots/jc-1.png}
-       {testing-vids-screenshots/jc-2.png}{Mirrorshades test in department building.}{testing-vids-screenshots/jc-2.png}
+\TwoFig{testing-vids-screenshots/jc-1.png}{Mirrorshades test in department building (real).}{testing-vids-screenshots/jc-1.png}
+       {testing-vids-screenshots/jc-2.png}{Mirrorshades test in department building (virtual).}{testing-vids-screenshots/jc-2.png}
 
-\TwoFig{testing-vids-screenshots/jc-3.png}{Mirrorshades test in department building.}{testing-vids-screenshots/jc-3.png}
-       {testing-vids-screenshots/jc-4.png}{Mirrorshades test in department building.}{testing-vids-screenshots/jc-4.png}
+%\TwoFig{testing-vids-screenshots/jc-3.png}{Mirrorshades test in department building.}{testing-vids-screenshots/jc-3.png}
+%       {testing-vids-screenshots/jc-4.png}{Mirrorshades test in department building.}{testing-vids-screenshots/jc-4.png}
 
 \pagebreak
 
 The first test in St Salvator's chapel\footnote{\url{https://www.youtube.com/watch?v=W4oPIHIr9Z4}}, as shown in figures \ref{testing-vids-screenshots/sallies-first-1.png} and \ref{testing-vids-screenshots/sallies-first-2.png}, confirmed that the accuracy of the IPS within the chapel was great enough and that the wireless network provision within the chapel was of sufficient speed and stability to support the operating of the platform.
 
-\TwoFig{testing-vids-screenshots/sallies-first-1.png}{Mirrorshades test in St Salvator's chapel.}{testing-vids-screenshots/sallies-first-1.png}
-       {testing-vids-screenshots/sallies-first-2.png}{Mirrorshades test in St Salvator's chapel.}{testing-vids-screenshots/sallies-first-2.png}
+\TwoFig{testing-vids-screenshots/sallies-first-1.png}{Mirrorshades test in St Salvator's chapel (real).}{testing-vids-screenshots/sallies-first-1.png}
+       {testing-vids-screenshots/sallies-first-2.png}{Mirrorshades test in St Salvator's chapel (virtual).}{testing-vids-screenshots/sallies-first-2.png}
 
 Testing then took place with members of the Open Virtual Worlds research group\footnote{\url{https://www.youtube.com/watch?v=pvGV5dCjt4U}}, as seen in figures \ref{testing-vids-screenshots/sallies-second-1.png} to \ref{testing-vids-screenshots/sallies-second-1.png}, to provide initial feedback from participants not involved closely with the design and development of the platform. During these early tests, there was already a strong preference expressed from the participants toward the transition with linear interpolation (see section \ref{transition-with-linear-interpolation}) which is why in the following user studies this was the transition adopted for those in which there was only a single user-controllable transition style.
 
-\TwoFig{testing-vids-screenshots/sallies-second-1.png}{Mirrorshades test with OVW group members in St Salvator's chapel.}{testing-vids-screenshots/sallies-second-1.png}
-       {testing-vids-screenshots/sallies-second-4.png}{Mirrorshades test with OVW group members in St Salvator's chapel.}{testing-vids-screenshots/sallies-second-4.png}
+\TwoFig{testing-vids-screenshots/sallies-second-1.png}{Mirrorshades test with OVW group members in St Salvator's chapel (composite, 1/4).}{testing-vids-screenshots/sallies-second-1.png}
+       {testing-vids-screenshots/sallies-second-4.png}{Mirrorshades test with OVW group members in St Salvator's chapel (composite, 2/4).}{testing-vids-screenshots/sallies-second-4.png}
 
-\TwoFig{testing-vids-screenshots/sallies-second-5.png}{Mirrorshades test with OVW group members in St Salvator's chapel.}{testing-vids-screenshots/sallies-second-5.png}
-       {testing-vids-screenshots/sallies-second-6.png}{Mirrorshades test with OVW group members in St Salvator's chapel.}{testing-vids-screenshots/sallies-second-6.png}
+%\TwoFig{testing-vids-screenshots/sallies-second-5.png}{Mirrorshades test with OVW group members in St Salvator's chapel.}{testing-vids-screenshots/sallies-second-5.png}
+%       {testing-vids-screenshots/sallies-second-6.png}{Mirrorshades test with OVW group members in St Salvator's chapel.}{testing-vids-screenshots/sallies-second-6.png}
 
-\TwoFig{testing-vids-screenshots/sallies-second-7.png}{Mirrorshades test with OVW group members in St Salvator's chapel.}{testing-vids-screenshots/sallies-second-7.png}
-       {testing-vids-screenshots/sallies-second-8.png}{Mirrorshades test with OVW group members in St Salvator's chapel.}{testing-vids-screenshots/sallies-second-8.png}
+\TwoFig{testing-vids-screenshots/sallies-second-7.png}{Mirrorshades test with OVW group members in St Salvator's chapel (composite, 3/4).}{testing-vids-screenshots/sallies-second-7.png}
+       {testing-vids-screenshots/sallies-second-8.png}{Mirrorshades test with OVW group members in St Salvator's chapel (composite, 4/4).}{testing-vids-screenshots/sallies-second-8.png}
 
 %=========================================================================================================
 
