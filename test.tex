@@ -1,0 +1,120 @@
+\documentclass{report}
+
+%university regulations(?)
+\usepackage[margin=3cm]{geometry}
+
+%tables that allow footnotes
+\usepackage{tabularx}
+
+\usepackage{booktabs}
+
+\begin{document}
+
+\begin{table}
+\begin{center}
+\begin{minipage}[t]{.45\linewidth}
+\begin{center}
+\begin{tabularx}{\textwidth}{c *{3}{>{\centering\arraybackslash}X}}
+\toprule
+
+\textbf{Scenario} & \textbf{Mean} & \textbf{Standard deviation} \\
+
+\midrule
+
+traditional & 4.3 & 0.476 \\
+
+75/25 & 3.95 & 1.248 \\
+
+50/50 & 4.7 & 0.739 \\
+
+\bottomrule
+\end{tabularx}
+\caption{Means and standard deviations of SP for all stage 2.2 scenarios.}
+\label{sp-2-2-table}
+\end{center}
+\end{minipage}
+%
+\begin{minipage}[t]{.02\linewidth}
+\hfill%
+\end{minipage}
+%
+\begin{minipage}[t]{.45\linewidth}
+\begin{center}
+\begin{tabularx}{\textwidth}{c *{3}{>{\centering\arraybackslash}X}}
+\toprule
+
+\textbf{Scenario} & \textbf{Mean} & \textbf{Standard deviation} \\
+
+\midrule
+
+traditional & 4.625 & 1.299 \\
+
+75/25 & 4.25 & 1.594 \\
+
+50/50 & 3.25 & 1.696 \\
+
+\bottomrule
+\end{tabularx}
+\caption{Means and standard deviations of INV for all stage 2.2 scenarios.}
+\label{inv-2-2-table}
+\end{center}
+\end{minipage}
+
+\vspace{5mm}
+
+\begin{minipage}[t]{.45\linewidth}
+\begin{center}
+\begin{tabularx}{\textwidth}{c *{3}{>{\centering\arraybackslash}X}}
+\toprule
+
+\textbf{Scenario} & \textbf{Mean} & \textbf{Standard deviation} \\
+
+\midrule
+
+traditional & 2.563 & 1.56 \\
+
+75/25 & 1.938 & 1.593 \\
+
+50/50 & 2.438 & 1.360 \\
+
+\bottomrule
+\end{tabularx}
+\caption{Means and standard deviations of REAL for all stage 2.2 scenarios.}
+\label{real-2-2-table}
+\end{center}
+\end{minipage}
+%
+\begin{minipage}[t]{.02\linewidth}
+\hfill%
+\end{minipage}
+%
+\begin{minipage}[t]{.45\linewidth}
+\begin{center}
+\begin{tabularx}{\textwidth}{c *{5}{>{\centering\arraybackslash}X}}
+\toprule
+
+\textbf{Scenario} & \multicolumn{2}{c}{\textbf{SP3}} & \multicolumn{2}{c}{\textbf{INV2}} \\
+
+\cmidrule(l){2-3} \cmidrule(l){4-5}
+
+ & \textbf{mean} & \textbf{sd} & \textbf{mean} & \textbf{sd} \\
+ 
+\midrule
+
+traditional & 1.75 & 2.217 & 5 & 0.816 \\
+
+75/25 & 3.75 & 1.708 & 3.5 & 1.732 \\
+
+50/50 & 5.25 & 0.957 & 3.75 & 1.893 \\
+ 
+\bottomrule
+\end{tabularx}
+\caption{Means for SP3 and INV2 for all stage 2.2 scenarios.}
+\label{sp3-inv2-2-2-table}
+\end{center}
+\end{minipage}
+\end{center}
+\end{table}
+
+
+\end{document}

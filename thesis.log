@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2015.3.6)  23 MAR 2015 14:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2015.3.6)  23 MAR 2015 15:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -900,7 +900,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [41] [42 <./03_background/images/focus-locus-sensus-with-virtuality-continuum-u
 pdated-with-grid.png>]
-Overfull \hbox (13.45013pt too wide) in paragraph at lines 620--621
+Overfull \hbox (13.45013pt too wide) in paragraph at lines 623--624
 []\OT1/cmr/m/n/10 Furthermore, the no-tion of ex-pe-ri-ence of pres-ence as cha
 ng-ing con-tin-u-ally from moment-to-moment [[],
  []
@@ -911,7 +911,7 @@ File: 03_background/images/transition-rw-vr.png Graphic file (type png)
 
 <use 03_background/images/transition-rw-vr.png>
 Package pdftex.def Info: 03_background/images/transition-rw-vr.png used on inpu
-t line 638.
+t line 641.
 (pdftex.def)             Requested size: 354.86412pt x 312.89659pt.
 
 
@@ -3063,12 +3063,12 @@ y)> <./06_mirrorshades_studies_results/images/1/3_pitch_yaw.png (PNG copy)>]
 [146]
  6.
 
-Underfull \hbox (badness 10000) in paragraph at lines 450--453
+Underfull \hbox (badness 10000) in paragraph at lines 448--451
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 450--453
+Underfull \hbox (badness 10000) in paragraph at lines 448--451
 
  []
 
@@ -3081,7 +3081,7 @@ File: 06_mirrorshades_studies_results/images/participant-m.jpg Graphic file (ty
 pe jpg)
  <use 06_mirrorshades_studies_results/images/participant-m.jpg>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/participant-m.j
-pg used on input line 468.
+pg used on input line 466.
 (pdftex.def)             Requested size: 443.57848pt x 249.39119pt.
 
 [148 <./06_mirrorshades_studies_results/images/participant-m.jpg>] [149]
@@ -3094,7 +3094,7 @@ ire-boxplot.png Graphic file (type png)
 <use 06_mirrorshades_studies_results/images/2.1/12-item-likert-type-questionnai
 re-boxplot.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/12-item-lik
-ert-type-questionnaire-boxplot.png used on input line 558.
+ert-type-questionnaire-boxplot.png used on input line 556.
 (pdftex.def)             Requested size: 266.14978pt x 187.96492pt.
 
 
@@ -3109,7 +3109,7 @@ raphic file (type png)
 
 <use 06_mirrorshades_studies_results/images/2.1/8-pitch-yaw-trad-1-3-1-4.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/8-pitch-yaw
--trad-1-3-1-4.png used on input line 616.
+-trad-1-3-1-4.png used on input line 614.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
 
 
@@ -3123,7 +3123,7 @@ le (type png)
 
 <use 06_mirrorshades_studies_results/images/2.1/8-1-3-pitch-yaw.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/8-1-3-pitch
--yaw.png used on input line 732.
+-yaw.png used on input line 730.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
 
 <06_mirrorshades_studies_results/images/2.1/12-1-4-pitch-yaw.png, id=721, 1927.
@@ -3133,7 +3133,7 @@ ile (type png)
 
 <use 06_mirrorshades_studies_results/images/2.1/12-1-4-pitch-yaw.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/12-1-4-pitc
-h-yaw.png used on input line 748.
+h-yaw.png used on input line 746.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
 
 
@@ -3149,7 +3149,7 @@ ile (type png)
 
 <use 06_mirrorshades_studies_results/images/2.1/11-pitch-yaw-1-3.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/11-pitch-ya
-w-1-3.png used on input line 832.
+w-1-3.png used on input line 830.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
 
 
@@ -3163,7 +3163,7 @@ ile (type png)
 
 <use 06_mirrorshades_studies_results/images/2.1/11-pitch-yaw-1-4.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/11-pitch-ya
-w-1-4.png used on input line 840.
+w-1-4.png used on input line 838.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
 
 
@@ -3178,7 +3178,7 @@ le (type png)
 
 <use 06_mirrorshades_studies_results/images/2.1/7-pitch-yaw-1-4.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/7-pitch-yaw
--1-4.png used on input line 850.
+-1-4.png used on input line 848.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
 
 
@@ -3192,7 +3192,7 @@ ile (type png)
 
 <use 06_mirrorshades_studies_results/images/2.1/13-pitch-yaw-1-3.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/13-pitch-ya
-w-1-3.png used on input line 860.
+w-1-3.png used on input line 858.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
 
 
@@ -3207,7 +3207,7 @@ File: 06_mirrorshades_studies_results/images/2.1/8-1-3_2up.png Graphic file (ty
 pe png)
  <use 06_mirrorshades_studies_results/images/2.1/8-1-3_2up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/8-1-3_2up.p
-ng used on input line 874.
+ng used on input line 872.
 (pdftex.def)             Requested size: 443.57848pt x 249.50821pt.
 
 
@@ -3220,7 +3220,7 @@ File: 06_mirrorshades_studies_results/images/2.1/9-1-4_2up.png Graphic file (ty
 pe png)
  <use 06_mirrorshades_studies_results/images/2.1/9-1-4_2up.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/9-1-4_2up.p
-ng used on input line 882.
+ng used on input line 880.
 (pdftex.def)             Requested size: 443.57848pt x 249.50821pt.
 
 
@@ -3236,7 +3236,7 @@ e (type png)
 
 <use 06_mirrorshades_studies_results/images/2.1/10-1-4_opacity.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/10-1-4_opac
-ity.png used on input line 896.
+ity.png used on input line 894.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
 
 
@@ -3250,7 +3250,7 @@ e (type png)
 
 <use 06_mirrorshades_studies_results/images/2.1/12-1-4_opacity.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.1/12-1-4_opac
-ity.png used on input line 904.
+ity.png used on input line 902.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
 
 
@@ -3261,12 +3261,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [164 <./06_mirrorshades_studies_results/images/2.1/10-1-4_opacity.png (PNG copy
 )> <./06_mirrorshades_studies_results/images/2.1/12-1-4_opacity.png (PNG copy)>
 ]
-Overfull \hbox (3.46568pt too wide) in paragraph at lines 1039--1039
+Overfull \hbox (3.46568pt too wide) in paragraph at lines 1037--1037
  []|\OT1/cmr/bx/n/10 mean| 
  []
 
 
-Overfull \hbox (3.46568pt too wide) in paragraph at lines 1039--1039
+Overfull \hbox (3.46568pt too wide) in paragraph at lines 1037--1037
  []|\OT1/cmr/bx/n/10 mean| 
  []
 
@@ -3281,7 +3281,7 @@ re.png Graphic file (type png)
 <use 06_mirrorshades_studies_results/images/2.2/9-item-likert-type-questionnair
 e.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.2/9-item-like
-rt-type-questionnaire.png used on input line 1105.
+rt-type-questionnaire.png used on input line 1103.
 (pdftex.def)             Requested size: 266.14978pt x 187.96492pt.
  [168 <./06_mirrorshades_studies_results/images/2.2/9-item-likert-type-question
 naire.png (PNG copy)>] [169]
@@ -3293,7 +3293,7 @@ png Graphic file (type png)
 <use 06_mirrorshades_studies_results/images/2.2/14-pitch-yaw-trad-75-25-50-50.p
 ng>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.2/14-pitch-ya
-w-trad-75-25-50-50.png used on input line 1141.
+w-trad-75-25-50-50.png used on input line 1139.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
 
 <06_mirrorshades_studies_results/images/2.2/16-pitch-yaw-75-25.png, id=770, 192
@@ -3303,7 +3303,7 @@ File: 06_mirrorshades_studies_results/images/2.2/16-pitch-yaw-75-25.png Graphic
 
 <use 06_mirrorshades_studies_results/images/2.2/16-pitch-yaw-75-25.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.2/16-pitch-ya
-w-75-25.png used on input line 1155.
+w-75-25.png used on input line 1153.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
 
 
@@ -3317,7 +3317,7 @@ File: 06_mirrorshades_studies_results/images/2.2/16-pitch-yaw-50-50.png Graphic
 
 <use 06_mirrorshades_studies_results/images/2.2/16-pitch-yaw-50-50.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.2/16-pitch-ya
-w-50-50.png used on input line 1163.
+w-50-50.png used on input line 1161.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
 
 
@@ -3332,7 +3332,7 @@ File: 06_mirrorshades_studies_results/images/2.2/14-pitch-yaw-75_25.png Graphic
 
 <use 06_mirrorshades_studies_results/images/2.2/14-pitch-yaw-75_25.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.2/14-pitch-ya
-w-75_25.png used on input line 1231.
+w-75_25.png used on input line 1229.
 (pdftex.def)             Requested size: 443.57848pt x 156.6357pt.
 
 
@@ -3349,7 +3349,7 @@ File: 06_mirrorshades_studies_results/images/2.2/17-pitch-yaw-distance-moved-75
 <use 06_mirrorshades_studies_results/images/2.2/17-pitch-yaw-distance-moved-75-
 25.png>
 Package pdftex.def Info: 06_mirrorshades_studies_results/images/2.2/17-pitch-ya
-w-distance-moved-75-25.png used on input line 1247.
+w-distance-moved-75-25.png used on input line 1245.
 (pdftex.def)             Requested size: 443.57848pt x 249.50821pt.
 
 
@@ -3357,12 +3357,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [172] [173 <./06_mirrorshades_studies_results/images/2.2/14-pitch-yaw-75_25.png
  (PNG copy)>]
-Overfull \hbox (3.46568pt too wide) in paragraph at lines 1365--1365
+Overfull \hbox (3.46568pt too wide) in paragraph at lines 1363--1363
  []|\OT1/cmr/bx/n/10 mean| 
  []
 
 
-Overfull \hbox (3.46568pt too wide) in paragraph at lines 1365--1365
+Overfull \hbox (3.46568pt too wide) in paragraph at lines 1363--1363
  []|\OT1/cmr/bx/n/10 mean| 
  []
 
@@ -4001,7 +4001,7 @@ r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texmf-d
 ist/fonts/type1/public/eurosym/feymo10.pfb></usr/share/texmf-dist/fonts/type1/p
 ublic/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/
 sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on thesis.pdf (207 pages, 80345610 bytes).
+Output written on thesis.pdf (207 pages, 80345607 bytes).
 PDF statistics:
  1136 PDF objects out of 1200 (max. 8388607)
  635 compressed objects within 7 object streams
