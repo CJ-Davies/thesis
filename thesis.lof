@@ -36,7 +36,7 @@
 \contentsline {figure}{\numberline {3.14}{\ignorespaces Reconstructions used in a museum workshop.\relax }}{54}
 \contentsline {figure}{\numberline {3.15}{\ignorespaces High level architecture of VTW parallel reality platform.\relax }}{55}
 \contentsline {figure}{\numberline {3.16}{\ignorespaces Wiring diagram for Arduino with HMC6343 for joystick operation.\relax }}{57}
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Assembled Arduino Uno R3 + HMC6343.\relax }}{58}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Assembled Arduino Uno R3 + HMC6343.\relax }}{57}
 \contentsline {figure}{\numberline {3.18}{\ignorespaces Configuration in Second Life client for Arduino + HMC6343 `joystick'.\relax }}{60}
 \contentsline {figure}{\numberline {3.19}{\ignorespaces Visualisation of how haversine is applied to mimic real world movement in a virtual world.\relax }}{62}
 \contentsline {figure}{\numberline {3.20}{\ignorespaces Wiring diagram for Arduino with HMC6343 + u-blox MAX-6.\relax }}{63}
@@ -60,8 +60,8 @@
 \contentsline {figure}{\numberline {4.1}{\ignorespaces High level overview of the Mirrorshades parallel reality platform.\relax }}{82}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces St Salvator's chapel today.\relax }}{84}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces St Salvator's chapel reconstruction.\relax }}{84}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces St Salvator's chapel looking East, present day.\relax }}{85}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces St Salvator's chapel looking East, reconstruction.\relax }}{85}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces St Salvator's chapel looking East, present day.\relax }}{84}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces St Salvator's chapel looking East, reconstruction.\relax }}{84}
 \contentsline {figure}{\numberline {4.6}{\ignorespaces St Salvator's chapel looking West, present day.\relax }}{85}
 \contentsline {figure}{\numberline {4.7}{\ignorespaces St Salvator's chapel looking West, reconstruction.\relax }}{85}
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Howard Rheingold's 1992 bestseller \textit {Virtual Reality}\nobreakspace {}\cite {Rheingold1992}.\relax }}{86}
@@ -72,22 +72,22 @@
 \contentsline {figure}{\numberline {4.13}{\ignorespaces Camera mount base.\relax }}{91}
 \contentsline {figure}{\numberline {4.14}{\ignorespaces Camera mount slotted plate.\relax }}{91}
 \contentsline {figure}{\numberline {4.15}{\ignorespaces Camera mount attached to DK1.\relax }}{91}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Cameras mounted using stand-offs.\relax }}{92}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Two PS3 Eye cameras mounted on DK1.\relax }}{92}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Unity failing to instantiate references to multiple PS3 Eye cameras.\relax }}{93}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Cameras mounted using stand-offs.\relax }}{91}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Two PS3 Eye cameras mounted on DK1.\relax }}{91}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Unity failing to instantiate references to multiple PS3 Eye cameras.\relax }}{92}
 \contentsline {figure}{\numberline {4.19}{\ignorespaces Updated camera mount.\relax }}{93}
 \contentsline {figure}{\numberline {4.20}{\ignorespaces PS3 Eye cameras using updated mounts.\relax }}{93}
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Updated camera mount with stand-offs.\relax }}{94}
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Updated camera mount with rubber washers.\relax }}{94}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Updated camera mount with stand-offs.\relax }}{93}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Updated camera mount with rubber washers.\relax }}{93}
 \contentsline {figure}{\numberline {4.23}{\ignorespaces Setting C310 PCBs into thermoplastic.\relax }}{94}
 \contentsline {figure}{\numberline {4.24}{\ignorespaces C310 mounted to DK1 (three-quarter view).\relax }}{94}
-\contentsline {figure}{\numberline {4.25}{\ignorespaces C310 mounted to DK1 (front view).\relax }}{95}
-\contentsline {figure}{\numberline {4.26}{\ignorespaces C310 mounted to DK1 (detail view).\relax }}{95}
+\contentsline {figure}{\numberline {4.25}{\ignorespaces C310 mounted to DK1 (front view).\relax }}{94}
+\contentsline {figure}{\numberline {4.26}{\ignorespaces C310 mounted to DK1 (detail view).\relax }}{94}
 \contentsline {figure}{\numberline {4.27}{\ignorespaces Camera and backing planes in Unity.\relax }}{95}
 \contentsline {figure}{\numberline {4.28}{\ignorespaces Left camera plane in Unity.\relax }}{95}
 \contentsline {figure}{\numberline {4.29}{\ignorespaces Right camera plane in Unity.\relax }}{95}
 \contentsline {figure}{\numberline {4.30}{\ignorespaces Visualisation of overlap between camera planes.\relax }}{96}
-\contentsline {figure}{\numberline {4.31}{\ignorespaces Arrangement of camera planes and backing planes in Unity.\relax }}{97}
+\contentsline {figure}{\numberline {4.31}{\ignorespaces Arrangement of camera planes and backing planes in Unity.\relax }}{96}
 \contentsline {figure}{\numberline {4.32}{\ignorespaces Spacing between camera planes and backing planes in Unity.\relax }}{97}
 \contentsline {figure}{\numberline {4.33}{\ignorespaces Measuring latency (video frame, 1/2).\relax }}{98}
 \contentsline {figure}{\numberline {4.34}{\ignorespaces Measuring latency (video frame, 2/2).\relax }}{98}
@@ -96,34 +96,34 @@
 \contentsline {figure}{\numberline {4.37}{\ignorespaces Measuring latency (still photograph, 1/3).\relax }}{98}
 \contentsline {figure}{\numberline {4.38}{\ignorespaces Measuring latency (still photograph, 2/3).\relax }}{98}
 \contentsline {figure}{\numberline {4.39}{\ignorespaces Measuring latency (still photograph, 3/3).\relax }}{98}
-\contentsline {figure}{\numberline {4.40}{\ignorespaces Starting orientation of virtual cameras within Unity chapel reconstruction (top down view).\relax }}{100}
-\contentsline {figure}{\numberline {4.41}{\ignorespaces Early camera mounts, large eye/sensor distance.\relax }}{102}
-\contentsline {figure}{\numberline {4.42}{\ignorespaces Later camera mounts, smaller eye/sensor distance.\relax }}{102}
-\contentsline {figure}{\numberline {4.43}{\ignorespaces IPS technologies plotted against their accuracy and coverage, from\nobreakspace {}\cite {Mautz2012}.\relax }}{103}
-\contentsline {figure}{\numberline {4.44}{\ignorespaces Requirements parameters of IPS, from\nobreakspace {}\cite {Mautz2012}.\relax }}{103}
+\contentsline {figure}{\numberline {4.40}{\ignorespaces Starting orientation of virtual cameras (toward left side) within Unity chapel reconstruction (top down view).\relax }}{100}
+\contentsline {figure}{\numberline {4.41}{\ignorespaces Early camera mounts, large eye/sensor distance.\relax }}{101}
+\contentsline {figure}{\numberline {4.42}{\ignorespaces Later camera mounts, smaller eye/sensor distance.\relax }}{101}
+\contentsline {figure}{\numberline {4.43}{\ignorespaces IPS technologies plotted against their accuracy and coverage.\relax }}{103}
+\contentsline {figure}{\numberline {4.44}{\ignorespaces Requirements parameters of IPS.\relax }}{103}
 \contentsline {figure}{\numberline {4.45}{\ignorespaces PSMove failing to locate illuminated marker even in dim conditions.\relax }}{105}
-\contentsline {figure}{\numberline {4.46}{\ignorespaces Metalwork abundant in department building ceiling.\relax }}{107}
+\contentsline {figure}{\numberline {4.46}{\ignorespaces Metalwork abundant in department building ceiling.\relax }}{106}
 \contentsline {figure}{\numberline {4.47}{\ignorespaces Positions reported by IndoorAtlas within department building.\relax }}{107}
 \contentsline {figure}{\numberline {4.48}{\ignorespaces Route mapped in department building during offline phase.\relax }}{107}
-\contentsline {figure}{\numberline {4.49}{\ignorespaces Positions reported during preliminary testing of IndoorAtlas at St Salvator's chapel.\relax }}{108}
-\contentsline {figure}{\numberline {4.50}{\ignorespaces Routes mapped in St Salvator's chapel during offline phase.\relax }}{108}
+\contentsline {figure}{\numberline {4.49}{\ignorespaces Positions reported during preliminary testing of IndoorAtlas at St Salvator's chapel.\relax }}{107}
+\contentsline {figure}{\numberline {4.50}{\ignorespaces Routes mapped in St Salvator's chapel during offline phase.\relax }}{107}
 \contentsline {figure}{\numberline {4.51}{\ignorespaces St Salvator's chapel aisle, flanked by gratings.\relax }}{108}
 \contentsline {figure}{\numberline {4.52}{\ignorespaces Detail of St Salvator's chapel gratings.\relax }}{108}
 \contentsline {figure}{\numberline {4.53}{\ignorespaces Gratings before altar at St Salvator's chapel.\relax }}{108}
-\contentsline {figure}{\numberline {4.54}{\ignorespaces Altar in St Salvator's chapel, with no obvious metal.\relax }}{109}
-\contentsline {figure}{\numberline {4.55}{\ignorespaces Loudspeaker and electric light fixture within St Salvator's chapel.\relax }}{109}
+\contentsline {figure}{\numberline {4.54}{\ignorespaces Altar in St Salvator's chapel, with no obvious metal.\relax }}{108}
+\contentsline {figure}{\numberline {4.55}{\ignorespaces Loudspeaker and electric light fixture within St Salvator's chapel.\relax }}{108}
 \contentsline {figure}{\numberline {4.56}{\ignorespaces Web visualisation of IndoorAtlas information for department building.\relax }}{110}
 \contentsline {figure}{\numberline {4.57}{\ignorespaces Web visualisation of IndoorAtlas information for St Salvator's chapel.\relax }}{110}
 \contentsline {figure}{\numberline {4.58}{\ignorespaces Unity and IndoorAtlas integration testing using two smartphones.\relax }}{111}
 \contentsline {figure}{\numberline {4.59}{\ignorespaces RW anchor point settings in Unity application.\relax }}{111}
-\contentsline {figure}{\numberline {4.60}{\ignorespaces Visualisation using the combined Milgram/Waterworth model of the theorised experience of a user of a PR system performing a transition between a RW/VR mix and the VR environment.\relax }}{113}
-\contentsline {figure}{\numberline {4.61}{\ignorespaces Visualisation using the combined Milgram/Waterworth model of the theorised experience of a user of a PR system performing am instantaneous transition between its constituent RW and VR environments.\relax }}{114}
+\contentsline {figure}{\numberline {4.60}{\ignorespaces Visualisation using the combined Milgram/Waterworth model of the theorised experience of a user of a PR system performing a transition between a RW/VR mix and the VR environment.\relax }}{112}
+\contentsline {figure}{\numberline {4.61}{\ignorespaces Visualisation using the combined Milgram/Waterworth model of the theorised experience of a user of a PR system performing am instantaneous transition between its constituent RW and VR environments.\relax }}{113}
 \contentsline {figure}{\numberline {4.62}{\ignorespaces Instantaneous hard switch between RW and VR visual stimuli.\relax }}{115}
 \contentsline {figure}{\numberline {4.63}{\ignorespaces Switch with linear interpolation between RW and VR visual stimuli.\relax }}{115}
 \contentsline {figure}{\numberline {4.64}{\ignorespaces Analogue selectable opacity between RW and VR visual stimuli, where any intermediary position can be lingered upon.\relax }}{116}
-\contentsline {figure}{\numberline {4.65}{\ignorespaces Periodic instantaneous hard switches between RW and VR visual stimuli.\relax }}{117}
+\contentsline {figure}{\numberline {4.65}{\ignorespaces Periodic instantaneous hard switches between RW and VR visual stimuli.\relax }}{116}
 \contentsline {figure}{\numberline {4.66}{\ignorespaces Instantaneous hard switch between RW/VR mix and VR visual stimuli.\relax }}{117}
-\contentsline {figure}{\numberline {4.67}{\ignorespaces Implementation of Mirrorshades platform.\relax }}{118}
+\contentsline {figure}{\numberline {4.67}{\ignorespaces Implementation of Mirrorshades PR platform.\relax }}{118}
 \contentsline {figure}{\numberline {4.68}{\ignorespaces Hardware of the Mirrorshades platform carried by the user.\relax }}{119}
 \contentsline {figure}{\numberline {4.69}{\ignorespaces Detail of Mirrorshades control box bundle.\relax }}{119}
 \contentsline {figure}{\numberline {4.70}{\ignorespaces Mirrorshades test in department building (real).\relax }}{121}
@@ -135,40 +135,40 @@
 \contentsline {figure}{\numberline {4.76}{\ignorespaces Mirrorshades test with OVW group members in St Salvator's chapel (composite, 3/4).\relax }}{122}
 \contentsline {figure}{\numberline {4.77}{\ignorespaces Mirrorshades test with OVW group members in St Salvator's chapel (composite, 4/4).\relax }}{122}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Participant using Mirrorshades in user studies at St Salvator's chapel.\relax }}{125}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Path and positions within St Salvator's chapel that participants weere instructed to follow and attend to.\relax }}{127}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Stage 1 evaluation SUS results.\relax }}{131}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Stage 1 evaluation Likert-type questionnaire results.\relax }}{131}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Pitch and yaw against time for participant 1 in traditional VR and PR scenarios.\relax }}{134}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Pitch and yaw against time for participant 4 in traditional VR and PR scenarios.\relax }}{134}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Pitch and yaw against time for participant 6 in traditional VR and PR scenarios.\relax }}{135}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Pitch and yaw against time, aligned with distance moved against time, for participant 1 in both scenarios.\relax }}{137}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Pitch and yaw against time, aligned with distance moved against time, for participant 3 in both scenarios.\relax }}{138}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Pitch and yaw against time for participant 1 in PR scenario, showing RW/VR periods.\relax }}{139}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Pitch and yaw against time for participant 3 in PR scenario, showing RW/VR periods.\relax }}{139}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Pitch and yaw against time for participant 5 in PR scenario, showing RW/VR periods.\relax }}{140}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Participant using Mirrorshades in user studies at St Salvator's chapel.\relax }}{124}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Path and positions within St Salvator's chapel that participants weere instructed to follow and attend to.\relax }}{126}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Stage 1 evaluation SUS results.\relax }}{130}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Stage 1 evaluation Likert-type questionnaire results.\relax }}{130}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Pitch and yaw against time for participant 1 in traditional VR and PR scenarios.\relax }}{133}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Pitch and yaw against time for participant 4 in traditional VR and PR scenarios.\relax }}{133}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Pitch and yaw against time for participant 6 in traditional VR and PR scenarios.\relax }}{134}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Pitch and yaw against time, aligned with distance moved against time, for participant 1 in both scenarios.\relax }}{136}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Pitch and yaw against time, aligned with distance moved against time, for participant 3 in both scenarios.\relax }}{137}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Pitch and yaw against time for participant 1 in PR scenario, showing RW/VR periods.\relax }}{138}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Pitch and yaw against time for participant 3 in PR scenario, showing RW/VR periods.\relax }}{138}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Pitch and yaw against time for participant 5 in PR scenario, showing RW/VR periods.\relax }}{139}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Participant using Mirrorshades in user studies at St Salvator's chapel.\relax }}{143}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Stage 2.1 evaluation Likert-type questionnaire results.\relax }}{148}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Pitch and yaw against time for participant 8 in traditional and both PR scenarios.\relax }}{151}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Pitch and yaw against time for participant 8 in scenario 1-3, showing RW/VR transitions.\relax }}{153}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Pitch and yaw against time for participant 12 in scenario 1-4, showing RW/VR transitions.\relax }}{153}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Pitch and yaw against time for participant 11 in scenario 1-3, showing RW/VR transitions.\relax }}{154}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Pitch and yaw against time for participant 11 in scenario 1-3, showing RW/VR transitions.\relax }}{155}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Pitch and yaw against time for participant 7 in scenario 1-4, showing RW/VR transitions.\relax }}{155}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Pitch and yaw against time for participant 13 in scenario 1-3, showing RW/VR transitions.\relax }}{156}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Pitch and yaw against time aligned with distance moved against time for participant 8 in scenario 1-3, showing RW/VR transitions.\relax }}{157}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Pitch and yaw against time aligned with distance moved against time for participant 9 in scenario 1-4, showing RW/VR transitions.\relax }}{158}
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Opacity of camera objects against time for participant 10 in scenario 1-4, showing RW/VR transitions.\relax }}{159}
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Opacity of camera objects against time for participant 12 in scenario 1-4, showing RW/VR transitions.\relax }}{159}
-\contentsline {figure}{\numberline {6.14}{\ignorespaces Stage 2.2 evaluation Likert-type questionnaire results.\relax }}{162}
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Pitch and yaw against time for participant 14 in traditional and both PR scenarios.\relax }}{164}
-\contentsline {figure}{\numberline {6.16}{\ignorespaces Pitch and yaw against time for participant 16 in 75/25 scenario, showing default/VR transitions.\relax }}{165}
-\contentsline {figure}{\numberline {6.17}{\ignorespaces Pitch and yaw against time for participant 16 in 50/50 scenario, showing default/VR transitions.\relax }}{165}
-\contentsline {figure}{\numberline {6.18}{\ignorespaces Pitch and yaw against time for participant 14 in 75/25 scenario, showing default/VR transitions.\relax }}{166}
-\contentsline {figure}{\numberline {6.19}{\ignorespaces Pitch and yaw against time aligned with distance moved against time for participant 17 in 75/25 scenario, showing default/VR transitions.\relax }}{167}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Participant using Mirrorshades in user studies at St Salvator's chapel.\relax }}{142}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Stage 2.1 evaluation Likert-type questionnaire results.\relax }}{147}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Pitch and yaw against time for participant 8 in traditional and both PR scenarios.\relax }}{150}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Pitch and yaw against time for participant 8 in scenario 1-3, showing RW/VR transitions.\relax }}{152}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Pitch and yaw against time for participant 12 in scenario 1-4, showing RW/VR transitions.\relax }}{152}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Pitch and yaw against time for participant 11 in scenario 1-3, showing RW/VR transitions.\relax }}{153}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Pitch and yaw against time for participant 11 in scenario 1-3, showing RW/VR transitions.\relax }}{154}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Pitch and yaw against time for participant 7 in scenario 1-4, showing RW/VR transitions.\relax }}{154}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Pitch and yaw against time for participant 13 in scenario 1-3, showing RW/VR transitions.\relax }}{155}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Pitch and yaw against time aligned with distance moved against time for participant 8 in scenario 1-3, showing RW/VR transitions.\relax }}{156}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Pitch and yaw against time aligned with distance moved against time for participant 9 in scenario 1-4, showing RW/VR transitions.\relax }}{157}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Opacity of camera objects against time for participant 10 in scenario 1-4, showing RW/VR transitions.\relax }}{158}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Opacity of camera objects against time for participant 12 in scenario 1-4, showing RW/VR transitions.\relax }}{158}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Stage 2.2 evaluation Likert-type questionnaire results.\relax }}{161}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Pitch and yaw against time for participant 14 in traditional and both PR scenarios.\relax }}{163}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Pitch and yaw against time for participant 16 in 75/25 scenario, showing default/VR transitions.\relax }}{164}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Pitch and yaw against time for participant 16 in 50/50 scenario, showing default/VR transitions.\relax }}{164}
+\contentsline {figure}{\numberline {6.18}{\ignorespaces Pitch and yaw against time for participant 14 in 75/25 scenario, showing default/VR transitions.\relax }}{165}
+\contentsline {figure}{\numberline {6.19}{\ignorespaces Pitch and yaw against time aligned with distance moved against time for participant 17 in 75/25 scenario, showing default/VR transitions.\relax }}{166}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces The \textit {Mirrorshades} parallel reality platform in use at a 15th century chapel.\relax }}{173}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces The \textit {Mirrorshades} parallel reality platform in use at a 15th century chapel.\relax }}{172}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
