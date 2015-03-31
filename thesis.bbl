@@ -1,4 +1,4 @@
-\begin{thebibliography}{100}
+\begin{thebibliography}{10}
 
 \bibitem{Rheingold1992}
 Howard Rheingold.
@@ -101,17 +101,6 @@ Camille Scherrer, Julien Pilet, Pascal Fua, and Vincent Lepetit.
 \newblock In {\em Proceedings - 7th IEEE International Symposium on Mixed and
   Augmented Reality 2008, ISMAR 2008}, pages 163--164, 2008.
 
-\bibitem{Brey2014}
-Philip Brey.
-\newblock {The Physical and Social Reality of Virtual Worlds}.
-\newblock In Mark Grimshaw, editor, {\em The Oxford Handbook of Virtuality},
-  chapter~2, pages 42--54. Oxford University Press, 2014.
-
-\bibitem{Milgram1994}
-Paul Milgram and Fumio Kishino.
-\newblock {A Taxonomy of Mixed Reality Visual Displays}.
-\newblock {\em IEICE Trans. Information Systems}, E77-D(12):1321--1329, 1994.
-
 \bibitem{Milgram1999}
 Paul Milgram and Herman~Colquhoun Jr.
 \newblock {A Taxonomy of Real and Virtual World Display Integration}, 1999.
@@ -129,18 +118,6 @@ A~Steed.
 \newblock In M~Grimshaw, editor, {\em The Oxford Handbook of Virtuality},
   chapter~26, pages 420--443. Oxford University Press, 2014.
 
-\bibitem{Want2009}
-Roy Want.
-\newblock {Through Tinted Eyeglasses}.
-\newblock {\em IEEE Pervasive Computing}, 8(3):2--4, July 2009.
-
-\bibitem{York2004}
-Judy York and Parag~C Pendharkar.
-\newblock {Human–computer interaction issues for mobile computing in a
-  variable work context}.
-\newblock {\em International Journal of Human-Computer Studies},
-  60(5-6):771--797, 2004.
-
 \bibitem{Schofield2012}
 Jack Schofield.
 \newblock {Google Project Glass: will we really wear digital goggles?}, 2012.
@@ -155,6 +132,29 @@ Sherry Turkle.
 Steve Mann.
 \newblock {Mediated Reality with implementations for everyday life}, 2002.
 
+\bibitem{Want2009}
+Roy Want.
+\newblock {Through Tinted Eyeglasses}.
+\newblock {\em IEEE Pervasive Computing}, 8(3):2--4, July 2009.
+
+\bibitem{York2004}
+Judy York and Parag~C Pendharkar.
+\newblock {Human–computer interaction issues for mobile computing in a
+  variable work context}.
+\newblock {\em International Journal of Human-Computer Studies},
+  60(5-6):771--797, 2004.
+
+\bibitem{Terashima2001}
+Nobuyoshi Terashima and John Tiffin, editors.
+\newblock {\em {HyperReality: Paradigm for the Third Millenium}}.
+\newblock Routledge, 2001.
+
+\bibitem{Baudrillard1994}
+Jean Baudrillard.
+\newblock {\em {Simulacra and Simulation}}, volume~29 of {\em The Body, in
+  theory}.
+\newblock University of Michigan Press, 1994.
+
 \bibitem{Sheridan1992a}
 Thomas Sheridan.
 \newblock {Musings on Telepresence and Virtual Presence}.
@@ -164,11 +164,6 @@ Thomas Sheridan.
 \bibitem{Druck2006}
 Aaron Druck.
 \newblock {When Will Virtual Reality Become a Reality?}, 2006.
-
-\bibitem{Terashima2001}
-Nobuyoshi Terashima and John Tiffin, editors.
-\newblock {\em {HyperReality: Paradigm for the Third Millenium}}.
-\newblock Routledge, 2001.
 
 \bibitem{Krevelen2010}
 D~W F~Van Krevelen and R~Poelman.
@@ -191,22 +186,10 @@ Mar\'{\i}a Caballero, Ting-Ray Chang, Mar\'{\i}a Men\'{e}ndez, and Valentina
   computer interaction with mobile devices and services}, MobileHCI '10, pages
   451--454, New York, NY, USA, 2010. ACM.
 
-\bibitem{Baudrillard1994}
-Jean Baudrillard.
-\newblock {\em {Simulacra and Simulation}}, volume~29 of {\em The Body, in
-  theory}.
-\newblock University of Michigan Press, 1994.
-
 \bibitem{Paradiso2009}
 Joseph~A. Paradiso and James~A. Landay.
 \newblock {Cross-Reality Environments}.
 \newblock {\em Pervasive Computing, IEEE}, 8(3):14--15, July 2009.
-
-\bibitem{Soraker2010}
-J.H. Soraker.
-\newblock {\em {The value of virtual worlds: A Philosophical Analysis of
-  Virtual Worlds and their Potential Impact on Well-Being}}.
-\newblock PhD thesis, 2010.
 
 \bibitem{kim:practical}
 Marie Kim, Hwang~Jae Gak, and Cheol~Sig Pyo.
@@ -246,6 +229,13 @@ Joshua Lifton, Mark Feldmeier, Yasuhiro Ono, Cameron Lewis, and Joseph~A.
 Sherry Turkle.
 \newblock {\em {Life on the Screen}}.
 \newblock Simon \& Schuster, 1st touchs edition, 1997.
+
+\bibitem{Simeone2015}
+Adalberto~L Simeone, Eduardo Velloso, and Hans Gellersen.
+\newblock {Substitutional Reality : Using the Physical Environment to Design
+  Virtual Reality Experiences}.
+\newblock In {\em Proceedings of SIGCHI Conference on Human Factors in
+  Computing Systems (CHI 2015)}, 2015.
 
 \bibitem{Roush2007}
 Wade Roush.

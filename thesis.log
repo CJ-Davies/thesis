@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2015.3.6)  31 MAR 2015 17:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2015.3.6)  31 MAR 2015 17:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -665,6 +665,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--13
 [22
 
 ]
+
+Package natbib Warning: Citation `Brey2014' on page 23 undefined on input line 
+41.
+
+
 <03_background/images/virtuality_continuum_extent_of_world_knowledge_continuum.
 png, id=88, 1927.2pt x 786.94pt>
 File: 03_background/images/virtuality_continuum_extent_of_world_knowledge_conti
@@ -763,7 +768,16 @@ Overfull \hbox (3.15314pt too wide) in alignment at lines 147--230
 Underfull \vbox (badness 10000) detected at line 230
  []
 
-[29] [30] [31]
+[29] [30]
+
+Package natbib Warning: Citation `Soraker2010' on page 31 undefined on input li
+ne 246.
+
+
+Package natbib Warning: Citation `Brey2014' on page 31 undefined on input line 
+246.
+
+[31]
 <03_background/images/lifton_shadow_lab.png, id=129, 822.07124pt x 588.1975pt>
 File: 03_background/images/lifton_shadow_lab.png Graphic file (type png)
 
@@ -827,8 +841,12 @@ tworks.png used on input line 311.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [33 <./03_background/images/Lifton_continuum_original.png> <./03_background/ima
-ges/Lifton_continuum_modified.png>] [34 <./03_background/images/reality_virtual
-_reality_sensor_networks.png>]
+ges/Lifton_continuum_modified.png>]
+
+Package natbib Warning: Citation `Brey2014' on page 34 undefined on input line 
+341.
+
+[34 <./03_background/images/reality_virtual_reality_sensor_networks.png>]
 <03_background/images/virtuality-continuum-augmented-reality.png, id=146, 1927.
 2pt x 357.335pt>
 File: 03_background/images/virtuality-continuum-augmented-reality.png Graphic f
@@ -4015,19 +4033,22 @@ uestionnaire.pdf, page4 used on input line 271.
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
- [193] [194]
+ [193]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
- [195] [196] [197]
+ [194] [195] [196] [197]
 Missing character: There is no â in font cmti10!
 Missing character: There is no € in font cmti10!
 Missing character: There is no “ in font cmti10!
- [198] [199]) [200]
-(./thesis.aux)
+ [198])
+
+Package natbib Warning: There were undefined citations.
+
+[199] (./thesis.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 117.38377pt have occurred.
@@ -4037,10 +4058,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 9816 strings out of 493108
- 185546 string characters out of 6140726
- 478768 words of memory out of 5000000
- 12854 multiletter control sequences out of 15000+600000
+ 9812 strings out of 493108
+ 185464 string characters out of 6140726
+ 478777 words of memory out of 5000000
+ 12850 multiletter control sequences out of 15000+600000
  15206 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,18n,51p,2116b,1372s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -4066,10 +4087,10 @@ r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texmf-d
 ist/fonts/type1/public/eurosym/feymo10.pfb></usr/share/texmf-dist/fonts/type1/p
 ublic/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/
 sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on thesis.pdf (200 pages, 80374673 bytes).
+Output written on thesis.pdf (199 pages, 80374183 bytes).
 PDF statistics:
- 1114 PDF objects out of 1200 (max. 8388607)
- 620 compressed objects within 7 object streams
+ 1111 PDF objects out of 1200 (max. 8388607)
+ 618 compressed objects within 7 object streams
  0 named destinations out of 1000 (max. 500000)
  971 words of extra memory for PDF output out of 10000 (max. 10000000)
 
