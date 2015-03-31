@@ -1,19 +1,19 @@
 \contentsline {chapter}{\numberline {1}Introduction}{17}
-\contentsline {section}{\numberline {1.1}Parallel Reality}{18}
+\contentsline {section}{\numberline {1.1}Parallel Reality}{17}
 \contentsline {section}{\numberline {1.2}Contributions}{20}
-\contentsline {section}{\numberline {1.3}Document Overview}{21}
+\contentsline {section}{\numberline {1.3}Document Overview}{20}
 \contentsline {chapter}{\numberline {2}Background, Theory and Rationale}{22}
-\contentsline {section}{\numberline {2.1}Overview}{23}
+\contentsline {section}{\numberline {2.1}Overview}{22}
 \contentsline {section}{\numberline {2.2}Defining Alternate Realities}{23}
 \contentsline {subsection}{\numberline {2.2.1}Milgram and Kishino's Reality-Virtuality Continuum}{23}
 \contentsline {subsection}{\numberline {2.2.2}Steve Mann's Venn Diagrams}{25}
 \contentsline {subsection}{\numberline {2.2.3}Roy Want's Virtuality Matrix}{27}
 \contentsline {subsection}{\numberline {2.2.4}Adopted Alternate Reality Definitions}{29}
-\contentsline {section}{\numberline {2.3}A New Category of Alternate Reality}{31}
+\contentsline {section}{\numberline {2.3}A New Category of Alternate Reality}{30}
 \contentsline {subsection}{\numberline {2.3.1}Cross Reality}{31}
 \contentsline {subsubsection}{Alternate Reality Definitions from Cross Reality}{33}
 \contentsline {subsubsection}{Position of Cross Reality}{34}
-\contentsline {subsection}{\numberline {2.3.2}Parallel Reality}{35}
+\contentsline {subsection}{\numberline {2.3.2}Parallel Reality}{36}
 \contentsline {subsection}{\numberline {2.3.3}Spatial Equivalence in Parallel Reality}{37}
 \contentsline {subsection}{\numberline {2.3.4}Additional Alternate Reality Definitions}{39}
 \contentsline {section}{\numberline {2.4}Alternate Reality Experience}{39}
@@ -27,9 +27,9 @@
 \contentsline {section}{\numberline {3.1}Virtual Heritage}{47}
 \contentsline {subsection}{\numberline {3.1.1}Alternate Reality Techniques in Virtual Heritage}{48}
 \contentsline {subsection}{\numberline {3.1.2}Virtual Heritage at the University of St Andrews}{51}
-\contentsline {subsection}{\numberline {3.1.3}Parallel Reality in Virtual Heritage}{54}
+\contentsline {subsection}{\numberline {3.1.3}Parallel Reality in Virtual Heritage}{53}
 \contentsline {section}{\numberline {3.2}The Virtual Time Window}{54}
-\contentsline {subsection}{\numberline {3.2.1}Second Life and Mobility}{56}
+\contentsline {subsection}{\numberline {3.2.1}Second Life and Mobility}{55}
 \contentsline {section}{\numberline {3.3}Orientation Control}{56}
 \contentsline {subsection}{\numberline {3.3.1}Exploiting Second Life's Joystick Support}{58}
 \contentsline {section}{\numberline {3.4}Position Control}{60}
@@ -50,11 +50,11 @@
 \contentsline {section}{\numberline {4.2}Virtual Reality Head Mounted Displays}{85}
 \contentsline {subsection}{\numberline {4.2.1}The Oculus Rift DK1 and Unity Game Engine}{87}
 \contentsline {subsection}{\numberline {4.2.2}Modifying the DK1 for See Through Video}{88}
-\contentsline {subsection}{\numberline {4.2.3}Switchable Stereoscopic See Through Video with Unity}{95}
+\contentsline {subsection}{\numberline {4.2.3}Switchable Stereoscopic See Through Video with Unity}{94}
 \contentsline {subsection}{\numberline {4.2.4}Latency of DK1 See Through Video Solution}{96}
 \contentsline {subsection}{\numberline {4.2.5}Registration of Camera and Unity Visuals}{98}
-\contentsline {subsection}{\numberline {4.2.6}Constraints of DK1 See Through Solution}{99}
-\contentsline {section}{\numberline {4.3}Indoor Positioning Systems}{102}
+\contentsline {subsection}{\numberline {4.2.6}Constraints of DK1 See Through Solution}{100}
+\contentsline {section}{\numberline {4.3}Indoor Positioning Systems}{101}
 \contentsline {subsection}{\numberline {4.3.1}IPS Requirements for Mirrorshades}{102}
 \contentsline {subsection}{\numberline {4.3.2}PlayStation Move}{104}
 \contentsline {subsection}{\numberline {4.3.3}Indoor Atlas}{105}
@@ -63,16 +63,16 @@
 \contentsline {section}{\numberline {4.5}Informing Transitions Between RW and VR}{111}
 \contentsline {section}{\numberline {4.6}Transition Types}{114}
 \contentsline {subsection}{\numberline {4.6.1}Hard switch}{114}
-\contentsline {subsection}{\numberline {4.6.2}Transition with linear interpolation}{115}
+\contentsline {subsection}{\numberline {4.6.2}Transition with linear interpolation}{114}
 \contentsline {subsection}{\numberline {4.6.3}Analogue selectable opacity}{115}
 \contentsline {subsection}{\numberline {4.6.4}Periodic hard switches}{116}
 \contentsline {subsection}{\numberline {4.6.5}Reduced maximum opacity}{117}
 \contentsline {section}{\numberline {4.7}The Assembled Mirrorshades PR Platform}{117}
-\contentsline {subsection}{\numberline {4.7.1}Hardware Components}{117}
+\contentsline {subsection}{\numberline {4.7.1}Hardware Components}{118}
 \contentsline {subsection}{\numberline {4.7.2}Software Components}{119}
 \contentsline {subsection}{\numberline {4.7.3}Execution}{120}
 \contentsline {section}{\numberline {4.8}Initial Testing}{120}
-\contentsline {section}{\numberline {4.9}Summary}{122}
+\contentsline {section}{\numberline {4.9}Summary}{121}
 \contentsline {chapter}{\numberline {5}Evaluation - Merit of PR}{123}
 \contentsline {section}{\numberline {5.1}Overview}{123}
 \contentsline {section}{\numberline {5.2}Stage 1 - PR for Virtual Heritage}{124}
@@ -80,11 +80,11 @@
 \contentsline {subsection}{\numberline {5.2.2}Evaluation Techniques}{127}
 \contentsline {section}{\numberline {5.3}Stage 1 Results}{129}
 \contentsline {subsection}{\numberline {5.3.1}SUS}{129}
-\contentsline {subsection}{\numberline {5.3.2}Likert-type Questionnaires}{130}
+\contentsline {subsection}{\numberline {5.3.2}Likert-type Questionnaires}{129}
 \contentsline {subsection}{\numberline {5.3.3}Interview Transcripts}{131}
 \contentsline {subsection}{\numberline {5.3.4}Log Data}{132}
 \contentsline {subsubsection}{Comparing traditional and PR scenarios}{133}
-\contentsline {subsubsection}{Comparing RW and VR periods within PR scenario}{136}
+\contentsline {subsubsection}{Comparing RW and VR periods within PR scenario}{135}
 \contentsline {subsubsection}{Comparing VR periods of PR scenario to VR section of traditional VR scenario}{139}
 \contentsline {section}{\numberline {5.4}Summary}{140}
 \contentsline {chapter}{\numberline {6}Evaluation - Informing PR}{141}
@@ -111,9 +111,9 @@
 \contentsline {subsection}{\numberline {6.6.3}Log Data}{163}
 \contentsline {subsubsection}{Considering all scenarios (traditional and PR)}{163}
 \contentsline {subsubsection}{Comparing Between 75/25 and 50/50 Scenario}{163}
-\contentsline {subsubsection}{Walking and Head Movement}{165}
-\contentsline {subsection}{\numberline {6.6.4}IPQ}{166}
-\contentsline {subsection}{\numberline {6.6.5}Stage 2.2 Summary}{167}
+\contentsline {subsubsection}{Walking and Head Movement}{164}
+\contentsline {subsection}{\numberline {6.6.4}IPQ}{165}
+\contentsline {subsection}{\numberline {6.6.5}Stage 2.2 Summary}{166}
 \contentsline {section}{\numberline {6.7}Best Practices for PR}{168}
 \contentsline {chapter}{\numberline {7}Conclusion}{171}
 \contentsline {section}{\numberline {7.1}Contributions}{171}
