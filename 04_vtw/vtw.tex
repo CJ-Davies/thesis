@@ -280,15 +280,15 @@ As mentioned in section \ref{SecondLifeMobility} the Second Life client can be c
 	\item Modification to the Second Life client to allow the compass bearing and yaw values to be used directly at a lower level of abstraction.
 \end{enumerate}
 
-Method 1 has the advantage of having no reliance upon any particular Second Life client, as all available clients are forks of the official client from Linden Lab and maintain the same keyboard, mouse and joystick interfaces. However if the level of control attainable by re-purposing these interfaces for control from magnetometer and accelerometer data is not enough, method 2 will be the only option.
+Method 1 has the advantage of maintaining compatibility with all Second Life clients, as all clients are forks of the same official client from Linden Lab and feature the same keyboard, mouse and joystick interfaces. However if the level of control attainable by re-purposing these interfaces for control from magnetometer and accelerometer data is not enough, method 2 represents the only workable option.
 
-Conceptually, all Arduino boards are programmed over an RS-232 serial connection. When the platform was first launched, the Arduino boards themselves had a physical DE-9 serial connector with which to connect to a host computer's serial connector. But as serial connectors all but disappeared from modern computers, the Arduino's serial connector was replaced in later revisions with a USB connector, as USB is now all but ubiquitous on today's computers. The move from a physical RS-232 connector to a USB connector requires additional hardware upon the Arduino board to convert between RS-232 and USB, as the ATMega328\atmegaTFootnote{} microcontroller at the heart of the Arduino Uno R3 does not have a USB interface itself. For this reason the current revision, the Arduino Uno R3, sports an ATMega16U2\atmegaFootnote{} microcontroller that serves to convert communications between the two standards, RS-232 and USB.
+Conceptually, all Arduino boards are programmed over an RS-232 serial connection. When the platform was first launched, the Arduino boards themselves had a physical DE-9 serial connector with which to connect to a host computer's serial connector. But as serial connectors all but disappeared from modern computers, the Arduino's serial connector was replaced in later revisions with a USB connector, as USB is now all but ubiquitous on today's computers. The move from a physical RS-232 connector to a USB connector requires additional hardware upon the Arduino board to convert between RS-232 and USB, as the ATMega328\atmegaTFootnote{} microcontroller at the heart of the Arduino Uno R3 does not sport a USB interface itself. For this reason the current revision, the Arduino Uno R3, sports an ATMega16U2\atmegaFootnote{} microcontroller that serves simply to convert communications between the two standards, RS-232 and USB.
 
-With its stock firmware, the Arduino's ATMega16U2 presents itself to the host computer as a USB-to-serial bridge. However the ATMega16U2 can have this stock firmware replaced in order to change its behaviour. One of these new behaviours is to act as a USB Human Interface Device (HID) class controller, identifying itself to the host computer as one of a myriad input devices - including joysticks. Using a USB HID class joystick firmware for the ATMega16U2\arduinousbhidFootnote{}, based upon the Lightweight USB Framework for AVRs (LUFA)\lufaFootnote{}, the Arduino can imitate a standard USB joystick, sending joystick commands to the host computer using the protocol in the USB specification.
+With its stock firmware, the Arduino's ATMega16U2 presents itself to the host computer as a USB-to-serial bridge, however this stock firmware can be replaced in order to change its behaviour. One alternative behaviour is to act as a USB Human Interface Device (HID) class controller, identifying itself to the host computer as one of a myriad input devices - including joysticks. Using a USB HID class joystick firmware for the ATMega16U2\arduinousbhidFootnote{}, based upon the Lightweight USB Framework for AVRs (LUFA)\lufaFootnote{}, the Arduino can imitate a standard USB joystick, sending joystick commands to the host computer using the protocol of the USB specification.
 
 %***How to flash the firmware
 
-In this manner, the Arduino can marshal the values obtained from the HMC6343 into standard USB HID joystick commands, allowing the Second Life client's stock joystick interface (see figure \ref{arduino_joystick_for_second_life_3.jpg}) to be used to control the camera orientation (\& avatar movement) according to the physical orientation of the HMC6343, as can be seen working in a video available online\ArduinoJoystickVideoFootnote{}.
+In this manner, the Arduino can marshal the values obtained from the HMC6343 into standard USB HID joystick commands, allowing the Second Life client's stock joystick interface (see figure \ref{arduino_joystick_for_second_life_3.jpg}) to be used to control the camera orientation (\& avatar movement) according to the physical orientation of the HMC6343. A simple example of this can be seen in a video available to view online\ArduinoJoystickVideoFootnote{}.
 
 \begin{figure}[h]
 \centering
@@ -297,18 +297,18 @@ In this manner, the Arduino can marshal the values obtained from the HMC6343 int
   \label{arduino_joystick_for_second_life_3.jpg}
 \end{figure}
 
-Unfortunately, the precision attainable through this approach was not sufficient for the style of control and interaction required for VTW. Specifically, the Second Life client's joystick interface applies smoothing/damping to the joystick inputs, preventing reliable rotations or movements of specific values - sending a joystick command to rotate the camera by $x$\textdegree\ followed by a second command to rotate the camera by $-x$\textdegree\ does not reliably return the camera to its original orientation before the application of the first rotation. As the interaction required is to map the \textit{absolute} orientation of the tablet to the Second Life camera, this discrepancy (which cannot be disabled from the Second Life client's joystick configuration) rendered the approach unworkable.
+Unfortunately, this experimentation revealed that the precision attainable through this approach was not sufficient for the style of control and interaction required for VTW. Specifically, the Second Life client's joystick interface applies smoothing/damping to the joystick inputs, preventing reliable rotations or movements of specific values - sending a joystick command to rotate the camera by $x$\textdegree\ followed by a second command to rotate the camera by $-x$\textdegree\ does not reliably return the camera to its original orientation from before the application of the first rotation. As the required interaction is to map the \textit{absolute} orientation of the tablet to the Second Life camera, this discrepancy (which cannot be disabled from the Second Life client's joystick configuration) renders the approach unworkable.
 
 %=========================================================================================================
 
 \section{Position Control}
 \label{second_life_position_control}
 
-In order to control the position of the Second Life avatar, sensor data are required for the position of the user in the real world. As the cultural heritage sites that VTW was intended for use upon are outdoor sites, namely those where there are traces of ruins and clear views of the sky, GPS is the logical choice for tracking user position. GPS has been widely used as a localization technique within virtual heritage, particularly for augmented reality applications.
+In order to control the position of the Second Life avatar, sensor data are required for the position of the user in the real world. VTW is intended for use upon outdoor sites, namely those where there are traces of ruins and clear views of the sky, so GPS represents the logical choice for tracking user position. GPS has been widely used as a localization technique within virtual heritage, particularly for augmented reality applications.
 
 %***diagram showing this
 
-In order for readings from a GPS receiver to be used to control the position of the Second Life avatar within a reconstruction, a translation must be performed between the coordinate system of GPS (latitude and longitude) and the coordinate system of Second Life (simple X,Y coordinates within 256 metre square `regions'). This is achieved by use of a single `anchor point', for which both the real world latitude and longitude and the corresponding virtual world X,Y coordinates are known. Calculating Second Life displacement from these X,Y coordinates is achieved by applying the scale of the reconstruction to the displacement between the anchor point's latitude and longitude and the user's current position reported as latitude and longitude by a GPS receiver. This real world displacement is calculated using the haversine formula~\cite{VanBrummelen2012}, which is used to calculate the `great circle' (orthodromic) distance between two points on the surface of a sphere (such as the Earth, when simplified from its oblate spheroid shape). The central angle \text{$\left(\frac{d}{r}\right)$} between the two points is given by;
+In order for readings from a GPS receiver to be used to control the position of the Second Life avatar within a reconstruction, a translation must be performed between the coordinate system of GPS (latitude and longitude) and the coordinate system of Second Life (simple X,Y coordinates within 256 metre square `regions'). This is achieved by use of a single `anchor point', for which both the real world latitude and longitude and the corresponding virtual world X,Y coordinates are known. Calculating displacement within Second Life from these X,Y coordinates is achieved by applying the scale of the reconstruction to the displacement between the anchor point's latitude and longitude and the user's current position reported as latitude and longitude by a GPS receiver. This real world displacement is calculated using the haversine formula~\cite{VanBrummelen2012}, which is used to calculate the `great circle' (orthodromic) distance between two points on the surface of a sphere (such as the Earth, when simplified from its oblate spheroid shape). The central angle \text{$\left(\frac{d}{r}\right)$} between the two points is given by;
 
 \begin{equation}
 \label{haversine1}
@@ -343,14 +343,14 @@ d & = 2r \arcsin\left( \sqrt{\text{haversin} \left( \phi_{2} - \phi_{1} \right) 
 & = 2r \arcsin\left( \sqrt{\sin^{2} \left( \frac{\phi_{2} - \phi_{1}}{2}\right) + \cos\left( \phi_{1} \right) \cos\left( \phi_{2} \right) \sin^{2} \left( \frac{\lambda_{2} - \lambda_{1}}{2} \right) } \right)
 \end{align}
 
-The prerequisites for this approach are that the Second Life model is aligned correctly to the Second Life compass as the real location is aligned to real bearings (also required for orientation control from the previous section), a single anchor point for which both the real world latitude and longitude and the corresponding virtual world X and Y coordinates are known and that the reconstruction adheres to a known, consistent scale.
+The prerequisites for this approach are that the Second Life model is aligned correctly to the Second Life compass as the real location is aligned to real bearings (also required for orientation control, as mentioned in the previous section), a single `anchor point' for which both the real world latitude and longitude and the corresponding virtual world X and Y coordinates are known and that the reconstruction adheres to a consistent, known scale.
 
 Figure \ref{haversine_example.png} illustrates this arrangement. In the real world, on the left, we know the latitude and longitude of the anchor point, as well as the latitude and longitude of the user's current position as reported by the GPS receiver. In the virtual world, on the right, we know the X,Y coordinates that are equivalent to the latitude and longitude of the anchor point and we must calculate the X,Y coordinates that are equivalent to the user's current position as reported by the GPS receiver.
 
 \begin{figure}[h]
 \centering
   \includegraphics[width=\linewidth]{haversine_example.png}
-  \caption{Visualisation of how haversine is applied to mimic real world movement in a virtual world.}
+  \caption{Visualisation of how haversine is applied to mimic real world movement in a virtual environment.}
   \label{haversine_example.png}
 \end{figure}
 
@@ -366,7 +366,7 @@ While the difference in latitude between the anchor point and the user's positio
 2r \arcsin\left( \sqrt{\sin^{2} \left( \frac{\phi_{2} - \phi_{1}}{2}\right)} \right)
 \end{equation}
 
-Applying the scale of the reconstruction to these values gives $\Delta$x and $\Delta$y, which can then be added or subtracted from the X,Y coordinates of the anchor point to give the coordinates of the user's position, $\upsilon_{2}(x),\upsilon_{2}(y)$.
+Applying the scale of the reconstruction to these values gives $\Delta$x and $\Delta$y, which can then be added to or subtracted from the X,Y coordinates of the anchor point to give the coordinates of the user's position, $\upsilon_{2}(x),\upsilon_{2}(y)$.
 
 %Using the haversine formula the great-circle (or orthodromic) distance between the latitude of the anchor point and the latitude of the new GPS reading is calculated, then applying the scale of the model results in the equivalent distance in OpenSim metrics between the Y coordinate of the anchor point and the Y coordinate of the position corresponding to the new GPS reading. Repeating the same calculations with the longitude of the new GPS reading provides the distance between the X coordinate of the anchor point and the X coordinate of the position corresponding to the new GPS reading. Adding or subtracting these distances as appropriate to the OpenSim coordinates of the anchor point provides the OpenSim coordinates that correspond to the new GPS reading, to which the avatar is then instructed to move.
 
@@ -398,7 +398,7 @@ Applying the scale of the reconstruction to these values gives $\Delta$x and $\D
 
 %=====================
 
-The WindPad features an internal AzureWave GPS-M16 GPS receiver\azurewaveFootnote{}, however poor API provision and meagre documentation required the adoption of an alternative receiver. As an Arduino was already being used to provide orientation data from accelerometer and magnetometer, integrating the GPS receiver into this package such that all orientation and position data came from a single source seemed prudent. After receiving input and advice from the UK High Altitude Society\habFootnote{}, \textit{``a loose collection of people who are interested in launching unmanned high altitude balloons into near space''} who make extensive use of GPS receivers for tracking their launches, the u-blox MAX-6\ubloxFootnote{} GPS receiver outfitted with a Sarantel SL-1202\sarantelFootnote{} passive antenna was chosen to provide position data for the VTW platform. The MAX-6 is of higher operational specification than the GPS-M16 and supports Satellite Based Augmentation Systems (SBAS) which improve the accuracy of location data by applying additional correction data received from networks of satellites and ground-based transmitters separate to those of the GPS system. These networks include the European Geostationary Navigation Overlay Service (EGNOS) that covers the UK where the experiments took place.
+The WindPad features an internal AzureWave GPS-M16 GPS receiver\azurewaveFootnote{}, however poor API provision and meagre documentation required the adoption of an alternative receiver. As an Arduino was already being used to provide orientation data from accelerometer and magnetometer, integrating the GPS receiver into this package such that all orientation and position data came from a single source was prudent. After receiving input and advice from the UK High Altitude Society\habFootnote{}, \textit{``a loose collection of people who are interested in launching unmanned high altitude balloons into near space''} who make extensive use of GPS receivers for tracking their launches, the u-blox MAX-6\ubloxFootnote{} GPS receiver outfitted with a Sarantel SL-1202\sarantelFootnote{} passive antenna was chosen to provide position data for the VTW platform. The MAX-6 is of higher operational specification than the GPS-M16 and supports Satellite Based Augmentation Systems (SBAS) which improve the accuracy of location data by applying additional correction data received from networks of satellites and ground-based transmitters separate to those of the GPS satellites. These networks include the European Geostationary Navigation Overlay Service (EGNOS) that covers the UK where the VTW platform was developed and evaluated.
 
 Figure \ref{arduino_wiring_hmc_ublox.png} provides a wiring diagram for connectivity of a u-blox MAX-6 to an Arduino Uno R3, along with the HMC6343 from section \ref{OrientationControl}, with the pinout values provided by tables \ref{HMC6343_MAX6_wiringtable_HMC6343} and \ref{HMC6343_MAX6_wiringtable_MAX6}. The LED and 220$\Omega$ resistor on digital pin 12 is used for diagnostic output. The wiring shown here is for a MAX-6 breakout without I2C connectivity, instead using Arduino's SoftwareSerial\softwareserialFootnote{} library.
 
@@ -457,25 +457,25 @@ TXD & D5 \\
 \end{center}
 \end{table}
 
-Figure \ref{arduino_hmc6343_u-blox_MAX-6.jpg} shows an the assembled unit, comprising an Arduino Uno R3, prototyping shield, HMC6343 and MAX-6, while figure \ref{pangolin_tablet_back.jpg} shows the packaged unit attached to the back of the WindPad with the single required USB cable connecting the two.
+Figure \ref{arduino_hmc6343_u-blox_MAX-6.jpg} shows the assembled unit, comprising an Arduino Uno R3, prototyping shield, HMC6343 and MAX-6, while figure \ref{pangolin_tablet_back.jpg} shows this package attached to the back of the WindPad with the single required USB cable connecting the two.
 
-\TwoFig{arduino_hmc6343_u-blox_MAX-6.jpg} {Assembled Arduino/sensors used by VTW.} {arduino_hmc6343_u-blox_MAX-6.jpg}
-       {pangolin_tablet_back.jpg} {Arduino/sensors attached to tabet used by VTW.} {pangolin_tablet_back.jpg}
+\TwoFig{arduino_hmc6343_u-blox_MAX-6.jpg} {Assembled Arduino/sensor package used by VTW.} {arduino_hmc6343_u-blox_MAX-6.jpg}
+       {pangolin_tablet_back.jpg} {Arduino/sensor package attached to tablet used by VTW.} {pangolin_tablet_back.jpg}
        
 %=========================================================================================================
 
 The MAX-6 was configured as follows;
 
 \begin{enumerate}
-	\item Dynamic Platform Model set to Pedestrian.
-	\item SBAS via EGNOS is enabled,
-	\item GPGLL/GPGSA/GPGSV/GPVTG messages are disabled,
-	\item GPRMC/GPGGA messages are enabled.
+	\item Dynamic Platform Model set to Pedestrian
+	\item SBAS via EGNOS enabled
+	\item GPGLL/GPGSA/GPGSV/GPVTG messages disabled
+	\item GPRMC/GPGGA messages enabled
 \end{enumerate}
 
-The Dynamic Platform Models adjust how the navigation engine processes the readings that the receiver produces and by choosing the correct model for the receiver's application the accuracy of position output is increased. As VTW is an application in which the user walks about an outdoor cultural heritage site, the pedestrian model is most suitable. Satellite Based Augmentation System (SBAS) is enabled for the European Geostationary Navigation Overlay Service (EGNOS), which is available at the cultural heritage sites in Scotland that VTW will be used at, to improve the accuracy of the position output.
+The Dynamic Platform Models adjust how the onboard navigation engine processes the readings that the receiver produces and by choosing the correct model for the receiver's application the accuracy of position output is increased. As VTW is an application in which the user walks about an outdoor cultural heritage site, the pedestrian model is most suitable. SBAS is enabled for the EGNOS, which is available at the cultural heritage sites in Scotland that VTW was developed to be used at, to improve the accuracy of the position output.
 
-The output of the receiver is in the form of messages in the NMEA 0183 protocol from the National Marine Electronics Association. By default, the MAX-6 sends many more message types than are required for VTW and as the Arduino's processing power is limited the superfluous messages are disabled. The GPRMC message format contains the recommended minimum amount of information for transit applications, including time, latitude and longitude, which covers all of the position information required by VTW.
+The output of the receiver is in the form of messages in the NMEA 0183 protocol from the National Marine Electronics Association\footnote{\url{https://www.nmea.org/content/nmea_standards/nmea_0183_v_410.asp}}. By default, the MAX-6 sends many more message types than are required for VTW and as the Arduino's processing power is limited the superfluous messages are disabled. The GPRMC message format contains the recommended minimum amount of information for transit applications, including time, latitude and longitude, which covers all of the position information required by VTW.
 
 These configurations are effected by sending the MAX-6 commands encoded in the UBX protocol as arrays of hex values, which the Arduino is capable of doing at power on. For example, setting the Dynamic Platform Model to Pedestrian is performed with the code in figure \ref{arduinoMAX6hex}, where \path{sendUBX} is a function that writes out using SoftwareSerial;
 
@@ -500,7 +500,7 @@ success = 0;
 \label{arduinoMAX6hex}
 \end{figure}
 
-These hex arrays can be generated by hand from the UBX protocol specification\maxProtocolFootnote{}, or the MAX-6 can be configured by connecting it directly to a host computer (such as by using an Arduino as an UART by connecting the MAX-6 to digital pins 0 and 1), configuring the MAX-6 using the u-blox u-center software and then copying the resultant config as hex messages from the relevant console window.
+These hex arrays can be generated by hand from the UBX protocol specification\maxProtocolFootnote{}, or the MAX-6 can be configured by connecting it directly to a host computer (such as by using an Arduino as a Universal Asynchronous Receiver/Transmitter (UART) by connecting the MAX-6 to digital pins 0 and 1), configuring the MAX-6 using the u-blox u-center software and then copying the resultant config as hex messages from the relevant console window.
 
 NMEA messages from the MAX-6 are processed on the Arduino using the TinyGPS library\tinygpsFootnote{}, extracting the latitude and longitude values before combining them with magnetic compass bearing (yaw) and pitch values from the HMC6343 and sending these to the host computer via the Arduino's USB connectivity.
 
@@ -522,9 +522,9 @@ One of the extensions that the OpenSim server provides over the Second Life serv
 	\textit{``Region modules are .net/mono DLLs. During initialization of the simulator, the OpenSimulator bin directory (bin/) and the scriptengines (bin/ScriptEngines) directory are scanned for DLLs, in an attempt to load region modules stored there. Region modules execute within the heart of the simulator and have access to all its facilities. Typically, region modules register for a number of events, e.g. chat messages, user logins, texture transfers, and take what ever steps are appropriate for the purposes of the module.''}\RegionModuleFootnote{}
 \end{quotation}
 
-Region modules allow for more complex and powerful extensions, written in C\#, to be developed external to the OpenSim platform than would otherwise be possible via Second Life's internal Linden Scripting Language (LSL). Similar to how the Second Life client's joystick interface represented an opportunity to implement the orientation control of VTW without relying upon a bespoke, modified client, an OpenSim Region Module represented a possibility to implement the position control required by VTW without similar reliance upon a bespoke client.
+Region modules allow for more complex and powerful extensions, written in \texttt{C\#}, to be developed external to the OpenSim platform than would otherwise be possible via Second Life's internal Linden Scripting Language (LSL). Similar to how the Second Life client's joystick interface represented an opportunity to implement the orientation control of VTW without relying upon a bespoke, modified client, an OpenSim Region Module represented a possibility to implement the position control required by VTW without similar reliance upon a bespoke client.
 
-An excerpt from the implementation of the position control required by VTW as a region module is included as \ref{RegionModuleCode1} (the full region module code available online\RegionModuleCodeFootnote{}). This shows the use of haversine, implemented using the \texttt{atan2()} function, calculating the displacement in real world latitude between the anchor point and the new GPS reading (lines 5-8), applying the scale of the reconstruction to this displacement (lines 10-14) and then applying this scaled displacement to the virtual world Y coordinate of the anchor (lines 16-24). This process is then repeated for the longitude/X coordinate and the avatar can then be moved to the position within the OpenSim reconstruction that is equivalent to the user's new real world position.
+An excerpt from the implementation in this manner of the position control required by VTW as a region module is included as \ref{RegionModuleCode1} (the full region module code is available online\RegionModuleCodeFootnote{}). This shows the use of haversine, implemented using the \texttt{atan2()} function, calculating the displacement in real world latitude between the anchor point and the new GPS reading (lines 5-8), applying the scale of the reconstruction to this displacement (lines 10-14) and then applying this scaled displacement to the virtual world Y coordinate of the anchor (lines 16-24). This process is then repeated for the longitude/X coordinate and the avatar is then be moved to the position within the OpenSim reconstruction that is equivalent to the user's new real world position.
 
 \begin{figure}[h]
 \begin{lstlisting}[language=Java, numbers=left, numberstyle=\small, stepnumber=1, frame=single, breaklines=true, backgroundcolor=\color{codebackground}, showstringspaces=false]
@@ -568,7 +568,7 @@ private Vector3 LatitudeLongitudeToRegionCoordinate(double newLat, double newLon
 Due to the Second Life client's existing control interfaces not allowing enough control over camera orientation for VTW's requirements (section \ref{exploitJoystick}), it was necessary to modify the client's codebase to produce a bespoke client allowing complete control over orientation by magnetometer and accelerometer input. Although sufficient position control could be achieved via an OpenSim region module (section \ref{regionModule}) it was prudent to also encapsulate position control through the modified client; not only does this allow for finer grain control, it also removes the dependency upon the virtual reconstruction being hosted upon an OpenSim server (Second Life's own servers do not support extension via Region Modules). Thus, the Second Life client was modified with the addition of the ability to;
 
 \begin{itemize}
-	\item connect to a serial device for I/O,
+	\item connect to a serial device for input/output,
 	\item control movement of the avatar according to input from this serial device,
 	\item control the camera according to input from this serial device.
 \end{itemize}
@@ -583,7 +583,7 @@ Due to the Second Life client's existing control interfaces not allowing enough 
 
 \newcommand{\fedetftFootnote}{\footnote{\url{http://www.webalice.it/fede.tft/serial_port/serial_port.html}}}
 
-\newcommand{\regionmodulelimitationFootnote}{\footnote{This is not due to any limitation on the part of OpenSim, but simply due to the Second Life client modifications being pursued further than the OpenSim module.}}
+\newcommand{\regionmodulelimitationFootnote}{\footnote{This is not due to any limitation on the part of OpenSim, but simply due to the Second Life client modifications being pursued further than the OpenSim module was.}}
 
 \newcommand{\megaregionFootnote}{\footnote{\url{http://opensimulator.org/wiki/Setting_Up_Mega-Regions}}}
 
@@ -591,7 +591,7 @@ Due to the Second Life client's existing control interfaces not allowing enough 
 
 %Replaced the Linden Boost binary with that built by LightDrake
 
-The Second Life client is written predominantly in C++ so the Asio library\asioFootnote{} from the popular Boost project\boostFootnote{} was used to imbue it with serial connectivity, allowing it to receive messages from the Arduino in an asynchronous non-blocking fashion. The fundamental buffered asynchronous serial handling was implemented using Terraneo Federico's \path{AsyncSerial} class\fedetftFootnote{} which is included in the client codebase as \path{/indra/newview/AsyncSerial}. The majority of the functionality added to the client is then contained within \path{/indra/newview/LLViewerSerialMovement}. The core executable of the viewer, \path{/indra/newview/LLAppViewer} obtains an instance of \path{LLViewerSerialMovement} and then calls \path{LLViewerSerialMovement::update()} upon each iteration of the client's main update loop, \path{LLAppViewer::mainLoop()}. These modifications are visualised by figure \ref{second_life_structure.png}.
+The Second Life client is written predominantly in \texttt{C++} so the Asio library\asioFootnote{} from the popular Boost project\boostFootnote{} was used to imbue it with serial connectivity, allowing it to receive messages from the Arduino in an asynchronous non-blocking fashion. The fundamental buffered asynchronous serial handling was implemented using Terraneo Federico's \path{AsyncSerial} class\fedetftFootnote{} which is included in the client codebase as \path{/indra/newview/AsyncSerial}. The majority of the functionality added to the client is then contained within \path{/indra/newview/LLViewerSerialMovement}. The core executable of the viewer, \path{/indra/newview/LLAppViewer} obtains an instance of \path{LLViewerSerialMovement} and calls \path{LLViewerSerialMovement::update()} upon each iteration of the client's main update loop, \path{LLAppViewer::mainLoop()}. These modifications are visualised by figure \ref{second_life_structure.png} and the modified client codebase is available online\footnote{\url{https://bitbucket.org/cj_davies/viewer-release-serial-io}}.
 
 \begin{figure}[h]
 \centering
@@ -603,7 +603,7 @@ The Second Life client is written predominantly in C++ so the Asio library\asioF
 %=========================================================================================================
 
 \subsection{\texttt{LLViewerSerialMovement} reference}
-Brief documentation of the functions in \path{/indra/newview/LLViewerSerialMovement} follows.
+Table \ref{pangolin-function-reference} provides documentation of the functions in \path{/indra/newview/LLViewerSerialMovement}.
 \begin{center}
 \begin{longtable}{ p{4.2cm}  p{10cm} }
 
@@ -627,13 +627,13 @@ Brief documentation of the functions in \path{/indra/newview/LLViewerSerialMovem
 
 %=========================================================================================================
 
-\texttt{::received} & A callback method registered to the \path{CallbackAsyncSerial} class in \path{/indra/newview/AsyncSerial}. This function parses the data (\path{const} \path{char} \path{*data}) from the serial device, extracting complete messages to the variable \path{mostRecentMessage}. Because of the nature of the serial I/O, \path{*data} is not guaranteed to contain a discrete message from the Arduino containing both orientation and position data, thus this function must parse the array and assemble discrete messages from possibly multiple subsequent callbacks. \\
+\texttt{::received} & A callback method registered to the \path{CallbackAsyncSerial} class in \path{/indra/newview/AsyncSerial}. This function parses the data (\path{const} \path{char} \path{*data}) from the serial device, extracting complete messages to the variable \path{mostRecentMessage}. Because of the nature of the serial I/O, \path{*data} is not guaranteed to contain a discrete message from the Arduino containing both orientation and position data (it may contain a `partial' or `incomplete' message) thus this function must parse the array and assemble discrete messages possibly from multiple subsequent callbacks. \\
 		
 \midrule
 
 %=========================================================================================================
 
-\texttt{::update} & Called upon each iteration of \path{LLAppViwer::mainLoop()} and further calls \path{::updateFromMostRecentMessage()}, \path{::updateOrientation()} and \path{::updatePosition()}. \\
+\texttt{::update} & Called upon each iteration of \path{LLAppViwer::mainLoop()} and in turn calls \path{::updateFromMostRecentMessage()}, \path{::updateOrientation()} and \path{::updatePosition()}. \\
 		
 \midrule
 
@@ -651,7 +651,7 @@ Brief documentation of the functions in \path{/indra/newview/LLViewerSerialMovem
 
 %=========================================================================================================
 
-\texttt{::updatePosition} & Applies the position data extracted from an Arduino message to the avatar, using \path{LLAgent::startAutoPilotGlobal()} to perform smooth movement between the avatar's current position (obtained with \path{LLAgent::getPositionGlobal()}) and the new position from the Arduino (converted from latitude and longitude to Second Life region coordinates in \path{::latitudeLongitudeToRegionCoordinates()}). \\
+\texttt{::updatePosition} & Applies the position data extracted from an Arduino message to the avatar, using \path{LLAgent::startAutoPilotGlobal()} to perform smooth movement between the avatar's current position (obtained with \path{LLAgent::getPositionGlobal()}) and the new position derived from the Arduino (converted from latitude and longitude to Second Life region coordinates using \path{::latitudeLongitudeToRegionCoordinates()}). \\
 		
 \midrule
 
@@ -675,14 +675,16 @@ Brief documentation of the functions in \path{/indra/newview/LLViewerSerialMovem
 
 %=========================================================================================================
 
+\caption{Reference of LLViewerSerialMovement functions.}
+\label{pangolin-function-reference}
 \end{longtable}
 \end{center}
 
 %=========================================================================================================
 
-Controlling the avatar's position according to latitude and longitude readings from the GPS receiver was again implemented using the haversine formula. This implementation, included as figure \ref{secondlifehaversine} can be compared to the OpenSim region module version included previously as figure \ref{RegionModuleCode1}. One important difference between the Second Life client implementation and the OpenSim region module implementation is that the former uses global coordinates, rather than local coordinates\regionmodulelimitationFootnote{}. This means that the Second Life client implementation allows positional control of an avatar across region boundaries, crucial for use with a cultural heritage reconstruction that spans multiple regions in an OpenSim `megaregion'\megaregionFootnote{} such as that used for testing of VTW.
+Controlling the avatar's position according to latitude and longitude readings from the GPS receiver was again implemented using the haversine formula. This implementation, included as figure \ref{secondlifehaversine} can be compared to the OpenSim region module version previously included as figure \ref{RegionModuleCode1}. One important difference between the Second Life client implementation and the OpenSim region module implementation is that the former uses global coordinates, rather than local coordinates\regionmodulelimitationFootnote{}. This means that the Second Life client implementation allows positional control of an avatar across region boundaries, crucial for use with a cultural heritage reconstruction that spans multiple regions in an OpenSim `megaregion'\megaregionFootnote{} such as that used for testing of VTW.
 
-These modifications to the Second Life client are configured/controlled via a window added to the client and accessed via a menu entry (see figure \ref{pangolin_second_life_dialogue.png}). The implementation of this resides in \path{/indra/newview/LLViewerSerialMonitor}. This allows for specification of the path to the serial device, along with its baudrate, as well as the specification of the anchor point - the latitude and longitude of the point in the real world and the equivalent X/Y coordinates in the Second Life reconstruction. The window then provides diagnostic output showing the messages coming in from the serial device, along with controls to individually enable/disable orientation and position control and alter the high-pass and smoothing applied to both controls.
+These modifications to the Second Life client are configured/controlled via a window added to the client and accessed via a menu entry (see figure \ref{pangolin_second_life_dialogue.png}). The implementation of this window resides in \path{/indra/newview/LLViewerSerialMonitor}. This allows for specification of the path to the serial device, along with its baudrate, as well as the specification of the anchor point - the latitude and longitude of the point in the real world and the equivalent X/Y coordinates in the Second Life reconstruction. The window then provides diagnostic output showing the messages coming in from the serial device, along with controls to individually enable/disable orientation and position control and alter the high-pass and smoothing applied to both controls.
 
 \begin{figure}[h]
 \centering
@@ -737,7 +739,7 @@ boost::tuple<float, float, float> LLViewerSerialMovement::latitudeLongitudeToReg
     return boost::make_tuple(X, Y, anchorCoordinates.get<2>());
 }
 \end{lstlisting}
-\caption{Converting longitude and latitude to Second Life coordinates using haversine.}
+\caption{Converting longitude and latitude to Second Life coordinates using haversine in modified Second Life codebase.}
 \label{secondlifehaversine}
 \end{figure}
 
@@ -760,7 +762,7 @@ The backdrop for real world experimentation with the VTW platform was the impres
 \begin{figure}[h]
 \centering
   \includegraphics[width=\linewidth]{cathedral_reconstruction_side.png}
-  \caption{St Andrews Cathedral reconstruction, depicting the cathedral as it stood in 1318.}
+  \caption{St Andrews Cathedral reconstruction in Second Life/OpenSim, depicting the cathedral as it stood in 1318.}
   \label{cathedral_reconstruction_side.png}
 \end{figure}
 
@@ -769,17 +771,17 @@ The backdrop for real world experimentation with the VTW platform was the impres
 %~\cite{Kennedy2013} Canons and Cathedrals
 
 St Andrews Cathedral occupies a site used for worship since the 8th Century AD. Work on the Cathedral began around 1160 and was completed nearly 150 years later (the west fa\c{c}ade and parts of the nave collapsed in a storm around 1270). It was finally consecrated in 1318 four years after the battle of Bannockburn and in the presence of King Robert I of Scotland. In its prime, St Andrews Cathedral was the centre of Scotland’s religious life, its largest and most magnificent church. In 1378 the Cathedral suffered a significant fire prompting
-a reworking of many of its features including the West and East End windows. Its presence was the catalyst for the foundation of a university at St Andrews in the early fifteenth century~\cite{Fawcett2011}, which remains an important seat of learning to this day. In 1561 following the Scottish reformation the Cathedral was abandoned by the Bishops and replaced by the parish church as the chief place of worship. The former headquarters of the Scottish Church was left to fall into ruin, with much of its stone being used in the construction of town dwellings.
+a reworking of many of its features, including the West and East End windows. Its presence was the catalyst for the foundation of the university at St Andrews in the early fifteenth century~\cite{Fawcett2011}. In 1561 following the Scottish reformation, the Cathedral was abandoned by the Bishops and replaced as the chief place of worship by the parish church. The cathedral was left to fall into ruin, with much of its stone being used in the construction of town dwellings.
 
-During its time the Cathedral was central to Scottish personalities and history. St Andrews was the highest ranking Scottish see. The establishment of Augustinian Cannons followed by the initiation of
+During its time the Cathedral was central to Scottish personalities and history: St Andrews was the highest ranking Scottish see. The establishment of Augustinian Cannons followed by the initiation of
 building work by Bishop Ernald reflected integration with the European church, economic dynamism and decline of the Celtic Church. The diocese funded Robert Bruce during the Wars of Independence. Its Bishop William de Lamberton contributed to the formulation of the Declaration of Arbroath, a central document in the formation of
 Scottish Nationhood. Isabella, sister of Donnchadh IV, last Pictish Earl of Fife, crowned Bruce King. John Knox personally lead his congregation against the Cathedral’s finery and following the murder of Cardinal Beaton the first Scottish protestant congregation was established in the Bishop’s palace.
 
-Today the cathedral lies in ruins, but important fragments remain. The east gable of the presbytery, where the relics of St Andrew were purported to be kept, along with the south wall of the nave, and the majestic West Entrance all point to the Cathedral’s former majesty. The cloister retains its ruined chapter house and stone-vaulted under crofts. Consequently, much evidence of the Cathedral’s form exists. A view from the nave looking towards the choir is shown by figure \ref{cathedral_real_outside.jpg}.
+Today the cathedral lies in ruins, but important fragments remain. The east gable of the presbytery, where the relics of St Andrew himself were purported to be kept, along with the south wall of the nave and the majestic West Entrance, all point to the Cathedral’s former majesty. The cloister retains its ruined chapter house and stone-vaulted under crofts. Consequently, much evidence of the Cathedral’s form exists. A view from the present day taken from the nave looking towards the choir is shown by figure \ref{cathedral_real_outside.jpg}.
 
 %=====================
 
-The OVW Group's reconstruction of St Andrews cathedral, as shown in figures \ref{cathedral_reconstruction_side.png} and \ref{cathedral_reconstruction_above.jpg}, represents the site as it stood in 1318, the year of its consecration. This virtual reconstruction, presenting a historically accurate model of the cathedral as it stood at the peak of its former glory, is very large at over 400m by 600m and spanning multiple storeys, featuring the cloisters as well as the Cannons' living quarters.
+The OVW Group's reconstruction of St Andrews cathedral, as shown in figures \ref{cathedral_reconstruction_side.png} and \ref{cathedral_reconstruction_above.jpg}, represents the site as it stood in 1318, the year of its consecration. This virtual reconstruction, presenting a historically accurate model of the cathedral as it stood at the peak of its former glory, is very large at over 400m by 600m and spans multiple storeys, featuring the cloisters as well as the Cannons' living quarters.
 
 \TwoFig{cathedral_real_outside.jpg} {St Andrews cathedral today.} {cathedral_real_outside.jpg}
        {cathedral_reconstruction_above.jpg} {St Andrews cathedral reconstruction.} {cathedral_reconstruction_above.jpg}
@@ -787,8 +789,6 @@ The OVW Group's reconstruction of St Andrews cathedral, as shown in figures \ref
 %=========================================================================================================
 
 \subsection{Experimental Implementation}
-
-\textbf{***Go through Arduino sketch and talk about things like magnetic declination, etc.}
 
 %Magnetic declination information was entered into the HMC6343 for the position of the cathedral and the date of our experiments. The HMC6343's hard-iron offset calculation feature was used each time the hardware configuration was altered. The sampling frequency of the HMC6343 was set to its highest value of 10Hz. Orientation was set to `upright front' to match the physical orientation of the IC in the experiments.
 
@@ -827,7 +827,7 @@ For the purposes of testing VTW at the cathedral, a temporary server and network
 
 The product summary for the MAX-6 claims accuracy of 2.5m Circular Error Probable (CEP) without SBAS corrections and 2m CEP with SBAS corrections \textit{``demonstrated with a good active antenna''}\ubloxcepFootnote{}. This means that, in an ideal situation with SBAS correction data available, there would be 50\% certainty that each position reported by the GPS receiver would be within 2m of its actual position. The SL-1202 antenna used is passive, however as the distance between antenna and the MAX-6 IC itself in the hardware application is only a few millimeters there would have been negligible benefit from using an active antenna. However whether the SL-1202 constitutes `good' for achieving the headlining performance characteristics of the MAX-6 is debatable as the definition of `good' was not provided in the product summary.
 
-To determine the real world accuracy attainable with the MAX-6 outfitted with the SL-1202 in situations akin to those of the cultural heritage case study, a walking route around the St Andrews cathedral ruins, akin to the route that an individual visitor or school group might take, was planned and then walked with the MAX-6 connected to a laptop computer via an Arduino operating as a Universal Asynchronous Receiver/Transmitter (UART) feeding the raw NMEA messages into the u-center\ucenterFootnote{} GPS evaluation software version 7.0 which logged the messages for later evaluation. Simultaneously for comparative purposes a mid-range consumer Android smartphone was used to record the same track; a HTC One S\htconesFootnote{} containing a gpsOne Gen 8A solution within its Qualcomm Snapdragon S4 processor\snapdragonFootnote{} and using Google's My Tracks\mytracksFootnote{} app version 2.0.3 to record the data.
+To determine the real world accuracy attainable with the MAX-6 outfitted with the SL-1202 in situations akin to those of the cultural heritage case study, a walking route around the St Andrews cathedral ruins, akin to the route that an individual visitor or school group might take, was planned and then walked with the MAX-6 connected to a laptop computer via an Arduino operating as a UART feeding the raw NMEA messages into the u-center\ucenterFootnote{} GPS evaluation software version 7.0 which logged the messages for later evaluation. Simultaneously for comparative purposes a mid-range consumer Android smartphone was used to record the same track; a HTC One S\htconesFootnote{} containing a gpsOne Gen 8A solution within its Qualcomm Snapdragon S4 processor\snapdragonFootnote{} and using Google's My Tracks\mytracksFootnote{} app version 2.0.3 to record the data.
 
 The three sets of positional data (planned route, MAX-6 recorded route and smartphone recorded route) were entered into a PostgreSQL database and the PostGIS database extender's \texttt{ST\_HausdorffDistance} algorithm\hausdorffFootnote{} was used to calculate the Hausdorff distances between the recorded routes and the planned route and between the recorded routes themselves. In this scenario, the Hausdorff distance represents the furthest distance needed to travel from any point on the route recorded by the GPS receiver to reach the nearest point on the planned route. Because of the substantially greater inaccuracies identified in the latter part of the recorded tracks, separate Hausdorff distances were calculated both for the complete tracks and also for truncated first and second sub-tracks.
 
