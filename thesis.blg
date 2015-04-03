@@ -3,12 +3,11 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: unsrt.bst
 Database file #1: bib.bib
-Warning--I didn't find a database entry for "Brey2014"
-Warning--I didn't find a database entry for "Soraker2010"
 Warning--there's a number but no volume in Applin2012
 Warning--there's a number but no series in Qiu2009
 Warning--can't use both author and editor fields in Baudrillard1994
 Warning--can't use both volume and number fields in Baudrillard1994
+Warning--empty school in Soraker2010
 Warning--can't use both author and editor fields in Bartle2004
 Warning--can't use both volume and number fields in Bartle2004
 Warning--empty journal in Laureys2009
@@ -20,45 +19,45 @@ Warning--empty publisher in Taketomi2011
 Warning--empty publisher in VanBrummelen2012
 Warning--empty publisher in Jones2006
 Warning--empty journal in Constantin2003a
-You've used 100 entries,
+You've used 102 entries,
             1791 wiz_defined-function locations,
-            1085 strings with 22837 characters,
-and the built_in function-call counts, 24580 in all, are:
-= -- 2266
-> -- 947
-< -- 46
-+ -- 360
-- -- 260
-* -- 1519
-:= -- 3624
-add.period$ -- 311
-call.type$ -- 100
-change.case$ -- 89
+            1090 strings with 23033 characters,
+and the built_in function-call counts, 25057 in all, are:
+= -- 2312
+> -- 959
+< -- 48
++ -- 365
+- -- 263
+* -- 1546
+:= -- 3696
+add.period$ -- 318
+call.type$ -- 102
+change.case$ -- 90
 chr.to.int$ -- 0
-cite$ -- 115
-duplicate$ -- 1230
-empty$ -- 2507
-format.name$ -- 260
-if$ -- 5714
+cite$ -- 118
+duplicate$ -- 1258
+empty$ -- 2556
+format.name$ -- 263
+if$ -- 5825
 int.to.chr$ -- 0
-int.to.str$ -- 100
-missing$ -- 90
-newline$ -- 487
-num.names$ -- 115
-pop$ -- 419
+int.to.str$ -- 102
+missing$ -- 91
+newline$ -- 497
+num.names$ -- 119
+pop$ -- 428
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 658
+skip$ -- 671
 stack$ -- 0
-substring$ -- 1465
-swap$ -- 394
-text.length$ -- 46
+substring$ -- 1489
+swap$ -- 404
+text.length$ -- 48
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 15
-while$ -- 248
-width$ -- 103
-write$ -- 1091
-(There were 17 warnings)
+warning$ -- 16
+while$ -- 254
+width$ -- 105
+write$ -- 1113
+(There were 16 warnings)
