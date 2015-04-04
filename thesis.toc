@@ -36,96 +36,96 @@
 \contentsline {section}{\numberline {3.4}Position Control}{62}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}GPS Receivers}{64}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}OpenSim Region Module}{67}{subsection.3.4.2}
-\contentsline {section}{\numberline {3.5}Modifying Second Life for Orientation and Position Control}{69}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Overview of Second Life Client Modifications}{69}{subsection.3.5.1}
+\contentsline {section}{\numberline {3.5}Modifying Second Life for Orientation and Position Control}{68}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Overview of Second Life Client Modifications}{68}{subsection.3.5.1}
 \contentsline {subsection}{\numberline {3.5.2}\texttt {LLViewerSerialMovement} reference}{69}{subsection.3.5.2}
-\contentsline {section}{\numberline {3.6}VTW in Use}{75}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Experimental Implementation}{76}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}Real World Performance of VTW}{76}{subsection.3.6.2}
-\contentsline {subsection}{\numberline {3.6.3}Performance Implications}{81}{subsection.3.6.3}
-\contentsline {section}{\numberline {3.7}Summary}{81}{section.3.7}
-\contentsline {chapter}{\numberline {4}Mirrorshades}{83}{chapter.4}
-\contentsline {section}{\numberline {4.1}Learning from VTW}{83}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}The Mirrorshades Platform}{84}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}St Salvator's Chapel}{85}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Virtual Reality Head Mounted Displays}{87}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}The Oculus Rift DK1 and Unity Game Engine}{89}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Modifying the DK1 for See Through Video}{90}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Switchable Stereoscopic See Through Video with Unity}{96}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Latency of DK1 See Through Video Solution}{98}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Registration of Camera and Unity Visuals}{100}{subsection.4.2.5}
-\contentsline {subsection}{\numberline {4.2.6}Constraints of DK1 See Through Solution}{102}{subsection.4.2.6}
-\contentsline {section}{\numberline {4.3}Indoor Positioning Systems}{103}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}IPS Requirements for Mirrorshades}{104}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}PlayStation Move}{106}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Indoor Atlas}{107}{subsection.4.3.3}
-\contentsline {section}{\numberline {4.4}Mobile Client}{110}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Integrating IndoorAtlas and Unity}{111}{subsection.4.4.1}
-\contentsline {section}{\numberline {4.5}Informing Transitions Between RW and VR}{113}{section.4.5}
-\contentsline {section}{\numberline {4.6}Transition Types}{116}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Hard switch}{116}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Transition with linear interpolation}{116}{subsection.4.6.2}
-\contentsline {subsection}{\numberline {4.6.3}Analogue selectable opacity}{117}{subsection.4.6.3}
-\contentsline {subsection}{\numberline {4.6.4}Periodic hard switches}{118}{subsection.4.6.4}
-\contentsline {subsection}{\numberline {4.6.5}Reduced maximum opacity}{119}{subsection.4.6.5}
-\contentsline {section}{\numberline {4.7}The Assembled Mirrorshades PR Platform}{119}{section.4.7}
-\contentsline {subsection}{\numberline {4.7.1}Hardware Components}{120}{subsection.4.7.1}
-\contentsline {subsection}{\numberline {4.7.2}Software Components}{121}{subsection.4.7.2}
-\contentsline {subsection}{\numberline {4.7.3}Execution}{122}{subsection.4.7.3}
-\contentsline {section}{\numberline {4.8}Initial Testing}{122}{section.4.8}
-\contentsline {section}{\numberline {4.9}Summary}{123}{section.4.9}
-\contentsline {chapter}{\numberline {5}Evaluation - Merit of PR}{125}{chapter.5}
-\contentsline {section}{\numberline {5.1}Overview}{125}{section.5.1}
-\contentsline {section}{\numberline {5.2}Stage 1 - PR for Virtual Heritage}{126}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Design of the Scenarios}{128}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Evaluation Techniques}{129}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}Stage 1 Results}{131}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}SUS}{131}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Likert-type Questionnaires}{131}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Interview Transcripts}{133}{subsection.5.3.3}
-\contentsline {subsection}{\numberline {5.3.4}Log Data}{134}{subsection.5.3.4}
-\contentsline {subsubsection}{Comparing traditional and PR scenarios}{135}{subsection.5.3.4}
-\contentsline {subsubsection}{Comparing RW and VR periods within PR scenario}{137}{figure.caption.109}
-\contentsline {subsubsection}{Comparing VR periods of PR scenario to VR section of traditional VR scenario}{141}{table.caption.113}
-\contentsline {section}{\numberline {5.4}Summary}{142}{section.5.4}
-\contentsline {chapter}{\numberline {6}Evaluation - Informing PR}{143}{chapter.6}
-\contentsline {section}{\numberline {6.1}Overview}{143}{section.6.1}
-\contentsline {section}{\numberline {6.2}Evaluation Techniques}{144}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Presence Questionnaires}{145}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}The Igroup Presence Questionnaire}{147}{subsection.6.2.2}
-\contentsline {section}{\numberline {6.3}Stage 2.1 - Evaluating Transition styles}{148}{section.6.3}
-\contentsline {section}{\numberline {6.4}Stage 2.1 Results}{149}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Likert-type Questionnaires}{149}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Interview Transcripts}{150}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}Log Data}{152}{subsection.6.4.3}
-\contentsline {subsubsection}{Considering all scenarios (traditional and PR)}{152}{subsection.6.4.3}
-\contentsline {subsubsection}{Comparing RW and VR periods within PR scenarios}{152}{table.caption.118}
-\contentsline {subsubsection}{Experimenting With Transition Styles}{154}{table.caption.121}
-\contentsline {subsubsection}{Walking and Head Movement}{155}{figure.caption.125}
-\contentsline {subsubsection}{Use of Intermediary Opacities}{156}{figure.caption.127}
-\contentsline {subsection}{\numberline {6.4.4}IPQ}{157}{subsection.6.4.4}
-\contentsline {subsection}{\numberline {6.4.5}Stage 2.1 Summary}{159}{subsection.6.4.5}
-\contentsline {section}{\numberline {6.5}Stage 2.2 - Default Views}{162}{section.6.5}
-\contentsline {section}{\numberline {6.6}Stage 2.2 Results}{163}{section.6.6}
-\contentsline {subsection}{\numberline {6.6.1}Likert-type Questionnaires}{163}{subsection.6.6.1}
-\contentsline {subsection}{\numberline {6.6.2}Interview Transcripts}{164}{subsection.6.6.2}
-\contentsline {subsection}{\numberline {6.6.3}Log Data}{165}{subsection.6.6.3}
-\contentsline {subsubsection}{Considering all scenarios (traditional and PR)}{165}{subsection.6.6.3}
-\contentsline {subsubsection}{Comparing Between 75/25 and 50/50 Scenario}{165}{figure.caption.132}
-\contentsline {subsubsection}{Walking and Head Movement}{166}{figure.caption.137}
-\contentsline {subsection}{\numberline {6.6.4}IPQ}{167}{subsection.6.6.4}
-\contentsline {subsection}{\numberline {6.6.5}Stage 2.2 Summary}{168}{subsection.6.6.5}
-\contentsline {section}{\numberline {6.7}Best Practices for PR}{170}{section.6.7}
-\contentsline {chapter}{\numberline {7}Conclusion}{173}{chapter.7}
-\contentsline {section}{\numberline {7.1}Contributions}{173}{section.7.1}
-\contentsline {section}{\numberline {7.2}Future Work}{174}{section.7.2}
-\contentsline {section}{\numberline {7.3}Final Thoughts}{176}{section.7.3}
-\contentsline {chapter}{Appendices}{176}{section.7.3}
-\contentsline {chapter}{\numberline {A}Stage 1 Evaluation 12-item Likert-type Questionnaire}{177}{Appendix.1.A}
-\contentsline {chapter}{\numberline {B}Stage 1 Interview Prompts}{179}{Appendix.1.B}
-\contentsline {chapter}{\numberline {C}Stage 2.1 12-item Likert-type Questionnaire}{181}{Appendix.1.C}
-\contentsline {chapter}{\numberline {D}Stage 2.2 9-item Likert-type Questionnaire}{183}{Appendix.1.D}
-\contentsline {chapter}{\numberline {E}Stage 2.1 Interview Prompts}{185}{Appendix.1.E}
-\contentsline {chapter}{\numberline {F}Stage 2.2 Interview Prompts}{187}{Appendix.1.F}
-\contentsline {chapter}{\numberline {G}Igroup Presence Questionnaire (IPQ)}{189}{Appendix.1.G}
-\contentsline {chapter}{Bibliography}{194}{Appendix.1.G}
+\contentsline {section}{\numberline {3.6}VTW in Use}{74}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Experimental Implementation}{75}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Real World Performance of VTW}{75}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Performance Implications}{80}{subsection.3.6.3}
+\contentsline {section}{\numberline {3.7}Summary}{80}{section.3.7}
+\contentsline {chapter}{\numberline {4}Mirrorshades}{82}{chapter.4}
+\contentsline {section}{\numberline {4.1}Learning from VTW}{82}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}The Mirrorshades Platform}{83}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}St Salvator's Chapel}{84}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Virtual Reality Head Mounted Displays}{86}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}The Oculus Rift DK1 and Unity Game Engine}{88}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Modifying the DK1 for See Through Video}{89}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Switchable Stereoscopic See Through Video with Unity}{95}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Latency of DK1 See Through Video Solution}{97}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Registration of Camera and Unity Visuals}{99}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}Constraints of DK1 See Through Solution}{101}{subsection.4.2.6}
+\contentsline {section}{\numberline {4.3}Indoor Positioning Systems}{102}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}IPS Requirements for Mirrorshades}{103}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}PlayStation Move}{105}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Indoor Atlas}{106}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Mobile Client}{109}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Integrating IndoorAtlas and Unity}{110}{subsection.4.4.1}
+\contentsline {section}{\numberline {4.5}Informing Transitions Between RW and VR}{112}{section.4.5}
+\contentsline {section}{\numberline {4.6}Transition Types}{115}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Hard switch}{115}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Transition with linear interpolation}{115}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.3}Analogue selectable opacity}{116}{subsection.4.6.3}
+\contentsline {subsection}{\numberline {4.6.4}Periodic hard switches}{117}{subsection.4.6.4}
+\contentsline {subsection}{\numberline {4.6.5}Reduced maximum opacity}{118}{subsection.4.6.5}
+\contentsline {section}{\numberline {4.7}The Assembled Mirrorshades PR Platform}{118}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Hardware Components}{119}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Software Components}{120}{subsection.4.7.2}
+\contentsline {subsection}{\numberline {4.7.3}Execution}{121}{subsection.4.7.3}
+\contentsline {section}{\numberline {4.8}Initial Testing}{121}{section.4.8}
+\contentsline {section}{\numberline {4.9}Summary}{122}{section.4.9}
+\contentsline {chapter}{\numberline {5}Evaluation - Merit of PR}{124}{chapter.5}
+\contentsline {section}{\numberline {5.1}Overview}{124}{section.5.1}
+\contentsline {section}{\numberline {5.2}Stage 1 - PR for Virtual Heritage}{125}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Design of the Scenarios}{127}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Evaluation Techniques}{128}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Stage 1 Results}{130}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}SUS}{130}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Likert-type Questionnaires}{130}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Interview Transcripts}{132}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.4}Log Data}{133}{subsection.5.3.4}
+\contentsline {subsubsection}{Comparing traditional and PR scenarios}{134}{subsection.5.3.4}
+\contentsline {subsubsection}{Comparing RW and VR periods within PR scenario}{136}{figure.caption.109}
+\contentsline {subsubsection}{Comparing VR periods of PR scenario to VR section of traditional VR scenario}{140}{table.caption.113}
+\contentsline {section}{\numberline {5.4}Summary}{141}{section.5.4}
+\contentsline {chapter}{\numberline {6}Evaluation - Informing PR}{142}{chapter.6}
+\contentsline {section}{\numberline {6.1}Overview}{142}{section.6.1}
+\contentsline {section}{\numberline {6.2}Evaluation Techniques}{143}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Presence Questionnaires}{144}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}The Igroup Presence Questionnaire}{146}{subsection.6.2.2}
+\contentsline {section}{\numberline {6.3}Stage 2.1 - Evaluating Transition styles}{147}{section.6.3}
+\contentsline {section}{\numberline {6.4}Stage 2.1 Results}{148}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Likert-type Questionnaires}{148}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Interview Transcripts}{149}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Log Data}{151}{subsection.6.4.3}
+\contentsline {subsubsection}{Considering all scenarios (traditional and PR)}{151}{subsection.6.4.3}
+\contentsline {subsubsection}{Comparing RW and VR periods within PR scenarios}{151}{table.caption.118}
+\contentsline {subsubsection}{Experimenting With Transition Styles}{153}{table.caption.121}
+\contentsline {subsubsection}{Walking and Head Movement}{154}{figure.caption.125}
+\contentsline {subsubsection}{Use of Intermediary Opacities}{155}{figure.caption.127}
+\contentsline {subsection}{\numberline {6.4.4}IPQ}{156}{subsection.6.4.4}
+\contentsline {subsection}{\numberline {6.4.5}Stage 2.1 Summary}{158}{subsection.6.4.5}
+\contentsline {section}{\numberline {6.5}Stage 2.2 - Default Views}{161}{section.6.5}
+\contentsline {section}{\numberline {6.6}Stage 2.2 Results}{162}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}Likert-type Questionnaires}{162}{subsection.6.6.1}
+\contentsline {subsection}{\numberline {6.6.2}Interview Transcripts}{163}{subsection.6.6.2}
+\contentsline {subsection}{\numberline {6.6.3}Log Data}{164}{subsection.6.6.3}
+\contentsline {subsubsection}{Considering all scenarios (traditional and PR)}{164}{subsection.6.6.3}
+\contentsline {subsubsection}{Comparing Between 75/25 and 50/50 Scenario}{164}{figure.caption.132}
+\contentsline {subsubsection}{Walking and Head Movement}{165}{figure.caption.137}
+\contentsline {subsection}{\numberline {6.6.4}IPQ}{166}{subsection.6.6.4}
+\contentsline {subsection}{\numberline {6.6.5}Stage 2.2 Summary}{167}{subsection.6.6.5}
+\contentsline {section}{\numberline {6.7}Best Practices for PR}{169}{section.6.7}
+\contentsline {chapter}{\numberline {7}Conclusion}{172}{chapter.7}
+\contentsline {section}{\numberline {7.1}Contributions}{172}{section.7.1}
+\contentsline {section}{\numberline {7.2}Future Work}{173}{section.7.2}
+\contentsline {section}{\numberline {7.3}Final Thoughts}{175}{section.7.3}
+\contentsline {chapter}{Appendices}{175}{section.7.3}
+\contentsline {chapter}{\numberline {A}Stage 1 Evaluation 12-item Likert-type Questionnaire}{176}{Appendix.1.A}
+\contentsline {chapter}{\numberline {B}Stage 1 Interview Prompts}{178}{Appendix.1.B}
+\contentsline {chapter}{\numberline {C}Stage 2.1 12-item Likert-type Questionnaire}{180}{Appendix.1.C}
+\contentsline {chapter}{\numberline {D}Stage 2.2 9-item Likert-type Questionnaire}{182}{Appendix.1.D}
+\contentsline {chapter}{\numberline {E}Stage 2.1 Interview Prompts}{184}{Appendix.1.E}
+\contentsline {chapter}{\numberline {F}Stage 2.2 Interview Prompts}{186}{Appendix.1.F}
+\contentsline {chapter}{\numberline {G}Igroup Presence Questionnaire (IPQ)}{188}{Appendix.1.G}
+\contentsline {chapter}{Bibliography}{193}{Appendix.1.G}
