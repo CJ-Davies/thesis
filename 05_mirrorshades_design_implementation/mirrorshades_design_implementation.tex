@@ -124,7 +124,7 @@ One deciding factor in this deliberation was the more stringent performance requ
 
 %=========================================================================================================
 
-\subsection{Modifying the DK1 for See Through Video}
+\subsection{Modifying the DK1 for Video See-Through}
 \label{modifying-dk1}
 The Oculus Rift DK1 covers the user's entire field of view, such that they cannot see any of their real world surroundings whilst wearing it, and it does not feature any camera provision to allow a mediated view of the real world to be presented to them. As such, it was necessary to modify the DK1 to provide such capability for use as a component of the Mirrorshades parallel reality platform. When choosing cameras for this task, there were several desired ideal features;
 \begin{itemize}
@@ -139,7 +139,7 @@ The PS3 Eye camera met most of these requirements. While its resolution of 640x4
 An early test with the PS3 Eye and the DK1 (a video of this test is available to view online\footnote{\url{https://www.youtube.com/watch?v=tS0FGZxQzCU}}) was performed by simply attaching a single unmodified PS3 Eye camera to the top of the DK1 (figure \ref{rift-pseye-ziptied.jpg}), with its stock lens set to its `wide' setting (75\textdegree, presumably diagonal, FOV\footnote{\url{http://uk.playstation.com/media/247868/7010571 PS3 Eye Web_GB.pdf}}). This test explored the suitability of Unity's \texttt{WebCamTexture}\footnote{\url{http://docs.unity3d.com/ScriptReference/WebCamTexture.html}} feature for integrating the stream from a USB camera into a 3D application. The mediated RW video stream was rendered to a small `floating' window that moved with the user's head (figure \ref{floating-webcam-window.png}), allowing the user to view both environments in tandem in a manner similar to VTW in reverse - the virtual environment filling most of their viewport and the real environment as a smaller window in their periphery. Whilst an interesting concept, the decision was made to instead render the mediated RW stream to the full DK1 screen so as to allow the user to better observe their real environment thanks to the larger image and higher resolution, with the small floating window likened more to the VTW approach of parallel reality than an experience that allows true immersion in the environment of choice. A second benefit of this switching approach is that it helps to mitigate any detrimental affect of latency in the camera image(s) not matching that of the virtual image(s).
 
 \TwoFig{rift-pseye-ziptied.jpg}{Oculus Rift DK1 with PS3 Eye test.}{rift-pseye-ziptied.jpg}
-       {floating-webcam-window.png}{`Floating' window see through video in Unity.}{floating-webcam-window.png}
+       {floating-webcam-window.png}{`Floating' window video see-through in Unity.}{floating-webcam-window.png}
 
 A pair of PS3 Eye cameras were dismantled, their outer plastic housing removed, stock lenses removed and S-mount lens mounts fitted. Ideally, the lenses used would provide the same FOV that the Rift itself is capable of displaying, such that the mediate RW stream from the cameras could be displayed at the full size of the Rift and `match' the FOV of whatever virtual content is alternatively displayed. However there is a trade off with lenses between focal length and distortion; shorter focal lengths mean a wider FOV, however they also introduce more distortion which is not necessarily corrected by the shader that the Rift uses to compensate for the distortion of its own plastic lenses through which the image is viewed.
 
@@ -234,7 +234,7 @@ The C310 cameras received the same attention as the PS3 Eye cameras; they were d
 
 %=========================================================================================================
 
-\subsection{Switchable Stereoscopic See Through Video with Unity}
+\subsection{Switchable Stereoscopic Video See-Through with Unity}
 
 Unity's \texttt{WebCamTexture} support was used to gain access to the C310 video streams within Unity. Due to better provisioned drivers, there was no issue with Unity obtaining references to both C310 as there was with the two PS3 Eye cameras. These video streams are applied to a pair of planes, of matching orientation and aspect ratio to the video stream, that are situated perpendicular to the two virtual camera objects of the Oculus Unity prefab. This is shown by figure \ref{unity-screenshot-1.png} in which the smaller portrait planes in the centre of the image are those onto which the camera streams are rendered.
 
@@ -298,7 +298,7 @@ The arrangement of these planes in relation to the virtual cameras is shown by f
 
 %=========================================================================================================
 
-\subsection{Latency of DK1 See Through Video Solution}
+\subsection{Latency of DK1 Video See-Through Solution}
 
 Measurement of the end-to-end latency of the C310 solution was performed by placing the DK1, with the lens cups removed, in front of a LCD monitor displaying a timer\footnote{\url{http://www.flatpanels.dk/monitortest_inputlag_dk.php}}. In this context, end-to-end latency refers to the time taken for a visible change in the scene in front of the DK1 (in this instance, the incrementing digits upon the monitor) to be reflected by a comparable change upon the DK1's display. This figure accounts for latency introduced by the C310 cameras themselves, by the Unity engine and by the DK1's display. A digital camera was set up on a tripod behind the monitor and DK1, such that it could record both the monitor and the milliseconds value on the DK1's screen. The digital camera was set at a sufficiently high sensitivity as to record video at 50fps with a shutter speed of 1/4000 of a second.
 
@@ -360,7 +360,7 @@ In the case of Mirrorshades, the fixed reference point is the chapel - both the 
 
 %=========================================================================================================
 
-\subsection{Constraints of DK1 See Through Solution}
+\subsection{Constraints of DK1 Video See-Through Solution}
 
 \label{constraints_of_dk1_see_through_solution}
 
@@ -688,7 +688,7 @@ Figure \ref{experimentalimplementation} presents an overview of the individual c
 \subsection{Hardware Components}
 The hardware components of the system that are carried by the user comprise;
 \begin{itemize}
-	\item an Oculus Rift DK1 HMD modified by the addition of a stereo camera video see through solution comprising 2x Logitech C310 webcams modified with S-mount lens mounts and 2.1mm lenses to provide approximately 81.2\textdegree\ horizontal FOV of the RW environment;
+	\item an Oculus Rift DK1 HMD modified by the addition of a stereo camera video see-through solution comprising 2x Logitech C310 webcams modified with S-mount lens mounts and 2.1mm lenses to provide approximately 81.2\textdegree\ horizontal FOV of the RW environment;
 	\item a 12000mAh USB battery pack, capable of outputting 2.1A at 5V, to power the DK1;
 	\item a Clevo W110ER laptop computer, with an Intel i7-3632QM four-core/eight-thread processor, Nvidia GT 650M graphics card, 16GiB system memory and a SSD to allow safe operation while moving;
 	\item a Google Nexus 5 smartphone, running Android 4.4.4;
