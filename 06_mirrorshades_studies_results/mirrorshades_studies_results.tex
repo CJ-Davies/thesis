@@ -25,7 +25,7 @@ The Mirrorshades parallel reality platform was evaluated in two stages; the firs
 
 Participants were sourced by adverts disseminated via an internal university memo system, which sends email to all registered staff and students each week. The advert appeared for several consecutive weeks. Participants were invited to take part in a \textit{``virtual reality study \ldots\ investigating different ways of switching your view between your real surroundings and a virtual environment''}. Participation was incentivised by a prize draw to win Amazon vouchers. This approach was adopted instead of sourcing participants from within the OVW group and wider (computer science) department, as participants with a heightened knowledge \&/or interest in the technology underlying the platform were expected to skew results by paying conscious attention to the system and its implementation rather than the actual experience of using the system. In total 17 participants, 10x male and 7x female, with a mean age of 23.1 years and a standard deviation of 4.9 years, took part in the user studies, each lasting 20-30 minutes. All studies took place at St Salvator's chapel during afternoon hours, with the chapel open to the general public.
 
-\begin{figure}[ht]
+\begin{figure}
 	\begin{center}
 		\includegraphics[width=\linewidth]{participant-f.jpg}
 		\caption{Participant using Mirrorshades in user studies at St Salvator's chapel.}
@@ -56,7 +56,7 @@ This first stage of evaluation was designed to ascertain whether applying mobile
 
 The scenarios were intended to mimic the style of exploration and interaction that visitors to the chapel usually display, after observing the behaviour of such visitors on several occasions. From these observations, a common pattern of behaviour emerged: visitors enter the chapel from the North/West corner then proceed to walk Eastwards along the nave, pausing to look around after passing through the rood screen, before continuing along the nave toward the altar. They then pause in front of the altar upon reaching the end of the pews and then walk North toward the tomb where they pause again to inspect it. Participants in this first stage of the evaluation process were instructed to imagine that they were performing a similar visit to the chapel and to follow a similar path, pausing after the rood screen, at the end of the pews and in front of the tomb to look around their environment(s) in more detail, however they were encouraged to stop and look around at any times/positions that they wished and not to feel restricted to the described path and locations - the intent of the scenario was to encourage a natural style of exploration despite the unusual situation of making use of bulky VR hardware, rather than to restrict them to an `on rails' experience. Participants were shown the map included as figure \ref{chapel-path} (oriented North upwards) to help visualise the scenario.
 
-\begin{figure}[h]
+\begin{figure}
 	\begin{center}
 		\includegraphics[width=.6\linewidth]{chapel-path.png}
 		\caption{Path and positions within St Salvator's chapel that participants were instructed to roughly follow and attend to (oriented North upwards).}
@@ -77,7 +77,7 @@ Before taking part in the two scenarios, participants were given the opportunity
 Comparison of the seated VR scenario against the parallel reality scenario is facilitated by the collection of a variety of both qualitative and quantitative data. All participants completed a pre-task questionnaire which provides calibration for other data by enquiring about age, gender identity, previous experience with VR HMDs and whether they had previously visited St Salvtor's chapel, both RW and VR (the RW chapel is open to the public and a version of the VR reconstruction is publicly accessible via the OVW group's OpenSim grid\footnote{\url{openvirtualworlds.org}}). The System Usability Scale (SUS)~\cite{Brooke1996} was used to provide a basic comparison between the usability of the two scenarios, while a 12-item Likert-type questionnaire (included as appendix \ref{appendix-12-item-likert-type-questionnaire-stage-1}) was used to collect opinions on more specific aspects of the experience of both scenarios. At the end of the session, after completing both scenarios, participants were engaged in a short structured interview (prompts included as appendix \ref{appendix-interview-questions-stage-1}) in order to allow them to elaborate upon their experience in a more free form manner. Finally, in addition to the DK1 visuals being recorded via ShadowPlay, log data were collected during both scenarios, capturing the information detailed in table \ref{logdatatable} to file at regular intervals for processing and visualising via R.
 
 \begin{center}
-\begin{longtable}{ l  p{8cm} }
+\begin{longtable}{ l  p{6.5cm} }
 
 \toprule
 
@@ -313,7 +313,7 @@ Reluctance to changing head orientation when moving in the parallel reality scen
 
 When comparing pitch and yaw data between the RW and VR periods within the parallel reality scenario, it is notable that for some participants there was more variance in the periods in which they were perceiving VR stimuli than in those in which they were perceiving RW stimuli, meaning that they turned their heads more when looking at the VR environment than when looking at the RW environment. This is particularly evident when plotting these pitch and yaw data against time with the periods of RW/VR indicated. Figure \ref{1_pitch_yaw.png} shows the pitch and yaw data for participant 1 during the parallel reality scenario, who prominently displayed this tendency toward greater head movement while viewing VR than RW. The coloured background of the plot indicates which environment the participant was perceiving at that time index; blue for RW and green for VR. Correlation is evident between the most pronounced changes in yaw (red line) and the periods that the participant was observing VR stimuli (green background). As can be seen in figure \ref{3_pitch_yaw.png} this relationship is even more prevalent in the data from participant 3, while the data from participant 5 in figure \ref{5_pitch_yaw.png} still show the relationship but to a lesser extent.
 
-\begin{figure}[h]
+\begin{figure}
 	\begin{center}
 	\includegraphics[width=\textwidth]{1/1_pitch_yaw.png}
 	\caption{Pitch and yaw against time for participant 1 in parallel reality scenario, showing RW/VR periods.}
@@ -321,7 +321,7 @@ When comparing pitch and yaw data between the RW and VR periods within the paral
 	\end{center}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}
 	\begin{center}
 	\includegraphics[width=\textwidth]{1/3_pitch_yaw.png}
 	\caption{Pitch and yaw against time for participant 3 in parallel reality scenario, showing RW/VR periods.}
@@ -329,7 +329,7 @@ When comparing pitch and yaw data between the RW and VR periods within the paral
 	\end{center}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}
 	\begin{center}
 	\includegraphics[width=\textwidth]{1/5_pitch_yaw.png}
 	\caption{Pitch and yaw against time for participant 5 in parallel reality scenario, showing RW/VR periods.}
@@ -425,7 +425,7 @@ Log data show participants displaying restricted head movement throughout the pa
 
 %\clearpage
 
-\chapter{Informing Parallel Reality Implementation}
+\chapter{Informed Parallel Reality}
 
 %\section{Stage 2 - Informing Parallel Reality Implementation}
 
