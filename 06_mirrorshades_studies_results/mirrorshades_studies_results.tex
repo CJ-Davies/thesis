@@ -409,6 +409,22 @@ Further comparing head movements between the VR section of the seated VR scenari
 
 %=========================================================================================================
 
+\subsection{Graphical Performancee of Mirrorshades Platform}
+
+The overhead of capturing, processing and rendering the camera streams resulted in an overall lower and more variable framerate throughout the parallel reality scenario than the seated VR scenario. Figure \ref{1-frames-2-up.png} shows framerate against time for participant 1 performing both scenarios and this figure is representative of all participants throughout the stage 1 investigations. Note that the referesh rate of the DK1 is 60Hz and the Mirrorshades Unity application was run with vsync enabled (vsync limits framerate to the refresh rate of the display, in order to avoid screen tearing) so any values shown above 60 frames per second in figure \ref{1-frames-2-up.png} are due to the method used to estimate frames per second values. The periods in the seated VR scenario plot in figure \ref{1-frames-2-up.png} where the plot is roughly level around 60 frames per second represents when the Unity application had reached this vsync limit.
+
+\begin{figure}[ht]
+	\begin{center}
+		\includegraphics[width=\linewidth]{1/1-frames-2-up.png}
+		\caption{Framerate against time for seated VR scenario (left) and parallel reality scenario (right) for participant 1.}
+		\label{1-frames-2-up.png}
+	\end{center}
+\end{figure}
+
+In the parallel reality scenarios there was no real correlation between framerates and transitions between real and virtual stimuli, due to the way that the real and virtual graphics are processed. The way that the culling masks used to obscure real visuals when observing virtual visuals and vice-versa are implemented in Unity does not seem to completely prevent the application from processing the unseen visuals; if they did, we would expect to see framerate increase drastically during the real periods, as the rendering overhead of the camera streams is substantially less than that of rendering the 3D environment of the chapel. The variance in framerate in the parallel reality scenarios instead varies more in accordance to what part of the chapel the participant was directed toward and whether they were moving or standing still, as certain parts of the 3D model are substantially more complex in terms of the number of virtual objects (and thus the number of draw calls required) and rendering moving graphics has an overhead over rendering a static scene. Comparing the parallel reality plot from figure \ref{1-frames-2-up.png} to the plot of distance moved against time for this same participant in figure \ref{1_4up.png} (bottom right) hints at this relationship.
+
+%=========================================================================================================
+
 \subsection{Freeform Exploration and Detailed Comparison}
 
 In terms of the three scenarios described in section \ref{parallel-reality-in-virtual-heritage} for application of parallel reality to virtual heritage, the Mirrorshades platform proved throughout this first stage of investigation that it had both the positional accuracy and the orientational accuracy to fully achieve the freeform exploration scenario even in the confines of an indoor cultural heritage site and even when the participant was in very close proximity to walls/corners as shown in figures \ref{Mirrorshades-close-comparison-3.png} and \ref{Mirrorshades-close-comparison-4.png}.

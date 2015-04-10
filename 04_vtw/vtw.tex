@@ -901,16 +901,18 @@ When analyzing the tracks in the vicinity of the nave (see figure \ref{vtw_all_r
 \label{vtw_all_routes_second_half.png}
 \end{figure}
 
-VTW's camera control from orientation data does not have as stringent performance criteria as its movement control. Unlike augmented reality applications where sparse virtual content is superimposed upon a view of a real environment and the virtual objects must be placed accurately in order for the effect to work well, parallel reality presents a complete virtual environment that in the case of VTW is viewed alternately side-by-side with the real environment and thus discrepancies between orientation of real and virtual environments has a less detrimental effect. The accuracy of the camera control during the experiments was reported as being sufficient, however the speed at which the camera orientation moved to match physical orientation was reported as being too slow, resulting in having to wait for the display to `catch up' to changes in orientation. This is attributed to the 10Hz sampling rate of the orientation sensors which, particularly after readings are combined for smoothing purposes to reduce jerky movement, resulted in too infrequent orientation updates. Frame rates within VTW whilst navigating the route averaged between 15 and 20 frames per second with the Second Life client's `quality and speed' slider set to the `low' position.
+VTW's camera control from orientation data does not have as stringent performance criteria as its movement control. Unlike augmented reality applications where sparse virtual content is superimposed upon a view of a real environment and the virtual objects must be placed accurately in order for the effect to work well, parallel reality presents a complete virtual environment that in the case of VTW is viewed alternately side-by-side with the real environment and thus discrepancies between orientation of real and virtual environments has a less detrimental effect. The accuracy of the camera control during the experiments was reported as being sufficient, however the speed at which the camera orientation moved to match physical orientation was reported as being too slow, resulting in having to wait for the display to `catch up' to changes in orientation. This is attributed to the 10Hz sampling rate of the orientation sensors which, particularly after readings are combined for smoothing purposes to reduce jerky movement, resulted in too infrequent orientation updates.
 
-The style of explorative interaction with virtual content that this system employs is more resilient to input lag and low frame rates than other scenarios of interaction with virtual content such as fast paced competitive video games including First Person Shooters (FPS) [20], but overall user experience would nonetheless be improved by a faster sampling of orientation data and a higher frame rate. Additionally it should be noted that the cathedral reconstruction was created with relatively powerful desktop computers in mind as the primary deployment platform and has not been optimized for use on less powerful mobile platforms such as VTW. Performance of VTW on a less graphically complex OpenSim region that also depicts a reconstruction of a cultural heritage site was better at 20 to 25 frames per second at the `low' position and between 15 and 20 frames per second at `high'.
+VTW averaged framerates between 20 and 25 frames per second with the Second Life client's quality option set to the `Low' position. Figure \ref{vtw-framerates.png} shows average framerates of the client's different quality options when standing at two different positions within the cathedral site, one `indoor' position from the centre of the nave and one `outdoor' position from the grassy area contained by the cloisters. The framerates for the indoor position are lower than that of the outdoor position, as the model features substantially more detail indoors than outdoors, due to the number of furnishings, tapestries, etc. that filled the cathedral.
 
-%\begin{figure}[h]
-%\centering
-%\includegraphics[width=0.48\textwidth]{vtw_fps_plot_salt_pans.jpg}
-%\caption{Plot of Pangolin's performance (measured in frames per second) against different graphical settings (selected via the `Quality and speed' slider of the viewer) in two positions within the Salt Pan 2 region.}
-%\label{vtw_fps_plot_salt_pans.jpg}
-%\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{vtw-framerates.png}
+	\caption{Average framerates for VTW at St Andrews cathedral.}
+	\label{vtw-framerates.png}
+\end{figure}
+
+The style of explorative interaction with virtual content that this system employs is more resilient to input lag and low frame rates than other scenarios of interaction with virtual content such as fast paced competitive video games including First Person Shooters (FPS) [20], but overall user experience would nonetheless be improved by a faster sampling of orientation data and a higher frame rate. Additionally it should be noted that the cathedral reconstruction was created with relatively powerful desktop computers in mind as the primary deployment platform and has not been optimized for use on less powerful mobile platforms such as VTW.
 
 %=========================================================================================================
 
