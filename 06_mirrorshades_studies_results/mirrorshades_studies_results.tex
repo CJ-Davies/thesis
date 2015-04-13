@@ -411,7 +411,7 @@ Further comparing head movements between the VR section of the seated VR scenari
 
 \subsection{Graphical Performance}
 \label{stage-1-framerates}
-The overhead of capturing, processing and rendering the camera streams resulted in an overall lower framerate throughout the parallel reality scenario than the seated VR scenario, as shown by figure \ref{framerates_1.png}. The seated VR scenario averaged 52.4 fps compared to 39.2 fps for the parallel reality scenario, representing a 25.2\% slowdown for the parallel reality scenario. Note that the referesh rate of the DK1 is 60Hz and the Mirrorshades Unity application was run with vsync enabled (vsync limits framerate to the refresh rate of the display in order to avoid screen tearing) so any values shown above 60 frames per second in figures \ref{framerates_1.png} and \ref{1-frames-2-up.png} are due to the method used to estimate frames per second values.
+The overhead of capturing, processing and rendering the camera streams resulted in an overall lower framerate throughout the parallel reality scenario than the seated VR scenario, as shown by figure \ref{framerates_1.png}. The seated VR scenario averaged 52.4 fps compared to 39.2 fps for the parallel reality scenario, representing a 25.2\% slowdown for the parallel reality scenario. Note that the referesh rate of the DK1 is 60Hz and the Mirrorshades Unity application was run with vsync enabled (vsync limits framerate to the refresh rate of the display in order to avoid screen tearing) so any values shown above 60 fps in figures \ref{framerates_1.png} and \ref{1-frames-2-up.png} are due to the method used to estimate fps values.
 
 \begin{figure}[ht]
 	\begin{center}
@@ -421,7 +421,7 @@ The overhead of capturing, processing and rendering the camera streams resulted 
 	\end{center}
 \end{figure}
 
-In the parallel reality scenarios there was no real correlation between framerates and transitions between real and virtual stimuli, due to the way that the real and virtual graphics are processed. The way that the culling masks used to obscure real visuals when observing virtual visuals and vice-versa are implemented in Unity does not seem to completely prevent the application from processing the unseen visuals; if they did, we would expect to see framerate increase drastically during the real periods, as the rendering overhead of the camera streams is substantially less than that of rendering the 3D environment of the virtual chapel, but this does relation was not exhibited - figure \ref{1-frames-2-up.png} shows framerate against time for participant 1 for both the seated VR scenario (left) and the parallel reality scenario (right), which are representative of all participants during this stage of investigation. The periods in the seated VR scenario plot in figure \ref{1-frames-2-up.png} where the plot is roughly level around 60 frames per second represents when the Unity application had reached the framerate limit imposed by vsync.
+In the parallel reality scenarios there was no real correlation between framerates and transitions between real and virtual stimuli, presumably due to the manner in which the real and virtual graphics are processed. The way that the culling masks used to obscure real visuals when observing virtual visuals and vice-versa are implemented in Unity does not seem to completely prevent the application from processing the unseen visuals; if they did, we would expect to see framerate increase drastically during the real periods, as the rendering overhead of the camera streams should intuitively be much less than that of rendering the 3D environment of the virtual chapel, but this relation was not exhibited - figure \ref{1-frames-2-up.png} shows framerate against time for participant 1 for both the seated VR scenario (left) and the parallel reality scenario (right) and is representative of all participants during this stage of investigation. The periods in the seated VR scenario plot where the plot is roughly level around 60 frames per second represents when the Unity application had reached the framerate limit imposed by vsync.
 
 \begin{figure}[ht]
 	\begin{center}
@@ -431,7 +431,7 @@ In the parallel reality scenarios there was no real correlation between framerat
 	\end{center}
 \end{figure}
 
-Instead of varying according to whether the participant was observing real or virtual, the variance in framerate in the parallel reality scenarios instead varies more in accordance to what part of the chapel the participant was directed toward and whether they were moving or standing still, as certain parts of the 3D model are substantially more complex in terms of the number of virtual objects (and thus the number of draw calls required) and rendering moving graphics has an overhead compared to rendering a static scene. Comparing the parallel reality plot from figure \ref{1-frames-2-up.png} to the plot of distance moved against time for the same participant in figure \ref{1_4up.png} (bottom right) hints at this relationship.
+Instead of varying according to whether the participant was observing real or virtual, the variance in framerate in the parallel reality scenarios instead varies more in accordance to what part of the chapel the participant was directing their view toward and whether they were moving or standing still, as certain parts of the 3D model are substantially more complex in terms of the number of virtual objects (and thus the number of draw calls required) and rendering moving graphics has an overhead compared to rendering a static scene. Comparing the parallel reality plot from figure \ref{1-frames-2-up.png} to the plot of distance moved against time for the same participant in figure \ref{1_4up.png} (bottom right) hints at this relationship.
 
 %=========================================================================================================
 
@@ -1064,7 +1064,7 @@ seated & 4.5 & 1.472 & 4 & 1.673 \\
 
 \subsection{Graphical Performance}
 \label{stage-2-1-framerates}
-Framerates throughout the stage 2.1 investigation were largely as was to be expected after the stage 1 performance (see section \ref{stage-1-framerates}), with the seated VR scenario achieving slightly higher overall framerates with a mean of 53.2 fps (for the 3x participants for which these data were recorded) than the parallel reality scenarios that averaged 44.5 fps in scenario 1-3 and 41.1 fps in scenario 1-4. The difference between the seated VR scenario and the parallel reality scenarios was smaller than in investigation 1, with the parallel reality scenarios exhibiting a 16.4\% slowdown compared to the 25.2\% slowdown seen in the stage 1 investigation. The explanation for this is not clear; it could be related to the introduction of the ability to view both real and virtual environments simultaneously via transition 3, which may less complex to render in terms of the culling masks than completely culling real or virtual visuals, or it could simply be a result of a new graphics driver leading to improved performance in particular areas.
+Framerates throughout the stage 2.1 investigation were largely as was to be expected after the stage 1 performance (see section \ref{stage-1-framerates}) with the seated VR scenario achieving slightly higher overall framerates with a mean of 53.2 fps (for the 3x participants for which these data were recorded) than the parallel reality scenarios that averaged 44.5 fps in scenario 1-3 and 41.1 fps in scenario 1-4. The difference between the seated VR scenario and the parallel reality scenarios was smaller than in investigation 1, with the parallel reality scenarios exhibiting a 16.4\% slowdown compared to the 25.2\% slowdown seen in the stage 1 investigation. The explanation for this is not immediately clear; it could be related to the introduction of the ability to view both real and virtual environments simultaneously via transition 3, which may be less complex to render in terms of the culling masks than completely culling real or virtual visuals, or it could simply be a result of a newer graphics driver leading to improved performance in particular rendering areas.
 
 \begin{figure}[h]
 	\begin{center}
@@ -1092,7 +1092,7 @@ IPQ results met hypotheses, with the seated VR scenario scoring highly in both S
 
 %=========================================================================================================
 
-\clearpage
+%\clearpage
 
 %=========================================================================================================
 
@@ -1399,7 +1399,7 @@ seated & 1.75 & 2.217 & 5 & 0.816 \\
 \subsection{Graphical Performance}
 \label{stage-2-2-framerates}
 
-Once again the seated VR scenario provided the highest framerates (for the 2x participants for whom these data were captured) out of the three scenarios with an average of 53.8 fps, with both parallel reality scenarios performing slightly slower with an average of 47.7 fps during the 75/25 scenario and an average of 48.3 fps during the 50/50 scenario, as shown in figure \ref{framerates_2-2.png}. The difference between the seated VR and parallel reality scenarios was further reduced in this stage of the investigation to an 11.3\% slowdown for the parallel reality scenarios, which is lower than the 16.4\% slowdown measured in the stage 2.1 investigation and substantially lower than the 25.2\% slowdown measured in the stage 1 investigation. The fact that the stage 2.2 parallel reality scenarios were predominantly rendering both real and virtual visuals simultaneously lends weight to the possibility discussed in section\ref{stage-2-1-framerates} that this style of rendering presents less complexity than completely culling real or virtual visuals as was the case throughout all of the stage 1 investigations and much of the stage 2.1 investigations.
+Once again the seated VR scenario provided the highest framerates (for the 2x participants for whom these data were captured) out of the three scenarios with an average of 53.8 fps, with both parallel reality scenarios performing slightly slower with an average of 47.7 fps during the 75/25 scenario and 48.3 fps during the 50/50 scenario, as shown in figure \ref{framerates_2-2.png}. The difference between the seated VR and the parallel reality scenarios was further reduced in this stage of the investigation to an 11.3\% slowdown for the parallel reality scenarios, which is lower than the 16.4\% slowdown measured in the stage 2.1 investigation and substantially lower than the 25.2\% slowdown measured in the stage 1 investigation. The fact that the stage 2.2 parallel reality scenarios were predominantly rendering both real and virtual visuals simultaneously lends weight to the possibility discussed in section\ref{stage-2-1-framerates} that this style of rendering presents less complexity than completely culling real or virtual visuals as was the case throughout all of the stage 1 investigations and much of the stage 2.1 investigations.
 
 \begin{figure}[h]
 	\begin{center}
@@ -1425,7 +1425,7 @@ However it is worth considering that while a default view that presents \textles
 
 %=========================================================================================================
 
-\section{Best Practices for PR}
+\section{Best Practices for Parallel Reality}
 
 The investigations described in this chapter and the preceding chapter have experimentally shown the value of the Mirrorshades platform and parallel reality in general as a new modality for on-site comparison of real and immersive virtual environments within the context of a cultural heritage site, as well as revealing a number of indicators toward best practices for future implementation of parallel reality systems.
 
