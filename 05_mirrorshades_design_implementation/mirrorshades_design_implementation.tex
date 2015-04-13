@@ -529,15 +529,47 @@ Due to the role of the mobile client being filled by a laptop computer, position
 
 Translating RW positions reported by IndoorAtlas into VR positions within the Unity environments is performed using an anchor point in a similar same way as RW positions reported by GPS were translated into VR positions within the OpenSim environment in section \ref{second_life_position_control}, except that the myriad formats that position data are reported by the IndoorAtlas API negates the requirement to use the haversine formula. As well as providing indoor positions in the form of global longitude and latitude pairs, the API also provides positions as offsets from the origin of the floorplan image file used when performing the offline mapping phase, in both pixels and meters. Instead of deriving the displacement between the anchor point and the user's position by using haversine to calculate great circle distances between pairs of global longitude and latitude, the displacement is instead obtained by simply adding/negating the position of the user reported in meters from the position of the anchor point also in meters. This approach is possible with IndoorAtlas as the use of a floorplan image provides a frame of reference, that can be indexed by 2D pixel coordinates and converted into meters using a pixels-per-meter value, this frame of reference did not exist with the GPS approach adopted for VTW, however the GPS approach did not require an offline mapping phase.
 
-%\begin{figure}
-%	\begin{center}
-%		\includegraphics[width=.8\linewidth]{Jack-Cole-unity-anchor-new.png}
-%		\caption{Anchor point (yellow) and avatar position (red).}
-%		\label{Jack-Cole-unity-anchor-new.png}
-%	\end{center}
-%\end{figure}
-	
 Using IndoorAtlas reported positions in Unity is configured and achieved by a combination of two scripted objects. One object, the anchor point, simply contains fields for the entry and storage of the RW position information of the anchor point (see figure \ref{unity-anchor-point.png}). In the Unity environment this object can be rendered with no texture or collider, such that it does not interfere with the environment in any way, but by using a dedicated object for the anchor point rather than attaching the script to another object, the anchor point object itself can be positioned within the environment at the correct VR position and infer the virtual side of the anchor coordinates from its position instead of the user having to enter these details manually in addition to the corresponding RW ones.
+
+Figure \ref{unity-no-haversine} shows how Unity positions are calculated from IndoorAtlas positions where \path{read.GetDouble(0)} and \path{read.getDouble(1)} are the results of a MySQL query containing the current position of the smartphone reported by IndoorAtlas, \path{anchorAtlasI} and \path{anchorAtlasJ} represent the position of the anchor point which are obtained directly from the position of the anchor point object within the scene and \path{pixelsPerMeter} is the scale of real distances to the floorplan image used during the offline mapping phase. In this fashion displacement from the anchor point is calculated without the use of haversine.
+
+\begin{figure}[h]
+\begin{lstlisting}[language=Java, numbers=left, numberstyle=\small, stepnumber=1, frame=single, breaklines=true, backgroundcolor=\color{codebackground}, showstringspaces=false]
+using (con) {
+    using (cmd = new MySqlCommand(query, con)) {
+        read = cmd.ExecuteReader();
+        while (read.Read()) {
+            for (int i = 0; i < read.FieldCount; i++) {
+
+                xDiff = Math.Abs((read.GetDouble(0) - anchorAtlasI));
+                Double xDiffMeters = xDiff / pixelsPerMeter;
+
+                yDiff = Math.Abs((read.GetDouble(1) - anchorAtlasJ));
+                Double yDiffMeters = yDiff / pixelsPerMeter;
+
+                if (read.GetDouble(0) > anchorAtlasI) {
+                    xNewPos = anchorUnityX + xDiffMeters;
+                }
+                else {
+                    xNewPos = anchorUnityX - xDiffMeters;
+                }
+
+                if (read.GetDouble(1) > anchorAtlasJ) {
+                    yNewPos = anchorUnityY - yDiffMeters;
+                }
+                else {
+                    yNewPos = anchorUnityY + yDiffMeters;
+                }
+
+                newPos = new Vector3((float)xNewPos, (float)transform.position.y, (float)yNewPos);
+            }
+        }
+    }
+}
+\end{lstlisting}
+\caption{Calculating Unity positions from IndoorAtlas data.}
+\label{unity-no-haversine}
+\end{figure}
 
 Thanks to the ability of the Unity engine to build applications for myriad platforms, the integration of IndoorAtlas IPS into Unity could be tested within the department building using a pair of Android smartphones (a video of which can be viewed online\footnote{\url{https://www.youtube.com/watch?v=i3lEnXZMjms}}) before moving on to the full DK1 based setup. This can be seen in figure \ref{indooratlas-two-phones.png}, where the smartphone in the right hand (a Google Nexus 4) is running the modified IndoorAtlas SDK beta example app, POSTing position data to the remote MySQL server, while the smartphone in the left hand (a Google Nexus 5) is running a Unity application that depicts a top-down view of the user's current position within a 3D model of the department building.
 
