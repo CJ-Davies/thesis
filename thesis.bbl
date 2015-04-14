@@ -1,12 +1,5 @@
 \begin{thebibliography}{100}
 
-\bibitem{Rheingold1992}
-Howard Rheingold.
-\newblock {\em {Virtual Reality: The Revolutionary Technology of
-  Computer-Generated Artificial Worlds - and How It Promises to Transform
-  Society}}.
-\newblock Simon \& Schuster, 1992.
-
 \bibitem{Waterworth2014}
 J~A Waterworth and E~L Waterworth.
 \newblock {Distributed Embodiment: Real Presence in Virtual Bodies}.
@@ -18,6 +11,13 @@ Bruce Damer and Randy Hinrichs.
 \newblock {The Virtuality and Reality of Avatar Cyberspace}.
 \newblock In Mark Grimshaw, editor, {\em The Oxford Handbook of Virtuality},
   chapter~1, pages 17--41. Oxford University Press, 2014.
+
+\bibitem{Rheingold1992}
+Howard Rheingold.
+\newblock {\em {Virtual Reality: The Revolutionary Technology of
+  Computer-Generated Artificial Worlds - and How It Promises to Transform
+  Society}}.
+\newblock Simon \& Schuster, 1992.
 
 \bibitem{Lucas1951}
 Darrell~Blaine Lucas and Steuart~Henderson Britt.
@@ -109,7 +109,9 @@ Philip Brey.
 
 \bibitem{Milgram1999}
 Paul Milgram and Herman~Colquhoun Jr.
-\newblock {A Taxonomy of Real and Virtual World Display Integration}, 1999.
+\newblock {A Taxonomy of Real and Virtual World Display Integration}.
+\newblock In Y~Ohta and H~Tamura, editors, {\em Mixed Reality - Merging Real
+  and Virtual Worlds}. Springer, New York, 1999.
 
 \bibitem{Qvortrup2002}
 Lars Qvortrup.
@@ -118,15 +120,17 @@ Lars Qvortrup.
 \newblock In Lars Qvortrup, editor, {\em Virtual Space: Spatiality in Virtual
   Inhabited 3D Worlds}, chapter~1, pages 5--24. Springer-Verlag, 2002.
 
+\bibitem{Sheridan1992a}
+Thomas Sheridan.
+\newblock {Musings on Telepresence and Virtual Presence}.
+\newblock {\em Presence: Teleoperators and Virtual Environments},
+  1(1):120--126, 1992.
+
 \bibitem{Steed2014}
 A~Steed.
 \newblock {Recreating Visual Reality in Virtuality}.
 \newblock In M~Grimshaw, editor, {\em The Oxford Handbook of Virtuality},
   chapter~26, pages 420--443. Oxford University Press, 2014.
-
-\bibitem{Schofield2012}
-Jack Schofield.
-\newblock {Google Project Glass: will we really wear digital goggles?}, 2012.
 
 \bibitem{Turkle2011}
 Sherry Turkle.
@@ -136,7 +140,8 @@ Sherry Turkle.
 
 \bibitem{Mann2002a}
 Steve Mann.
-\newblock {Mediated Reality with implementations for everyday life}, 2002.
+\newblock {Mediated Reality with implementations for everyday life}.
+\newblock {\em Presence: Teleoperators and Virtual Environments}, 2002.
 
 \bibitem{Want2009}
 Roy Want.
@@ -145,8 +150,8 @@ Roy Want.
 
 \bibitem{York2004}
 Judy York and Parag~C Pendharkar.
-\newblock {Human–computer interaction issues for mobile computing in a
-  variable work context}.
+\newblock {Human computer interaction issues for mobile computing in a variable
+  work context}.
 \newblock {\em International Journal of Human-Computer Studies},
   60(5-6):771--797, 2004.
 
@@ -161,16 +166,6 @@ Jean Baudrillard.
   theory}.
 \newblock University of Michigan Press, 1994.
 
-\bibitem{Sheridan1992a}
-Thomas Sheridan.
-\newblock {Musings on Telepresence and Virtual Presence}.
-\newblock {\em Presence: Teleoperators and Virtual Environments},
-  1(1):120--126, 1992.
-
-\bibitem{Druck2006}
-Aaron Druck.
-\newblock {When Will Virtual Reality Become a Reality?}, 2006.
-
 \bibitem{Krevelen2010}
 D~W F~Van Krevelen and R~Poelman.
 \newblock {A Survey of Augmented Reality Technologies, Applications and
@@ -180,8 +175,9 @@ D~W F~Van Krevelen and R~Poelman.
 \bibitem{Mann2002}
 Steve Mann and James Fung.
 \newblock {EyeTap Devices for Augmented, Deliberately Diminished, or Otherwise
-  Altered Visual Perception of Rigid Planar Patches of Real-World Scenes},
-  2002.
+  Altered Visual Perception of Rigid Planar Patches of Real-World Scenes}.
+\newblock {\em Presence: Teleoperators and Virtual Environments},
+  11(2):158--175, 2002.
 
 \bibitem{caballero:behand}
 Mar\'{\i}a Caballero, Ting-Ray Chang, Mar\'{\i}a Men\'{e}ndez, and Valentina
@@ -216,18 +212,6 @@ Joshua Lifton and Joseph Paradiso.
 \newblock In {\em Proceedings of the First International ICST Conference on
   Facets of Virtual Environments (FaVE)}, July 2009.
 
-\bibitem{Hughes2006}
-Ian Hughes.
-\newblock {Lessons from second life}, 2006.
-
-\bibitem{Hughes2006a}
-Ian Hughes.
-\newblock {Second Life – Outside in}, 2006.
-
-\bibitem{Hughes2006b}
-Ian Hughes.
-\newblock {Well it got my attention – Second Life}, 2006.
-
 \bibitem{Lifton2007b}
 Joshua Lifton, Mark Feldmeier, Yasuhiro Ono, Cameron Lewis, and Joseph~A.
   Paradiso.
@@ -240,10 +224,7 @@ Joshua Lifton, Mark Feldmeier, Yasuhiro Ono, Cameron Lewis, and Joseph~A.
 \bibitem{InternationalOrganizationforStandardization2011}
 {International Organization for Standardization} and (ISO).
 \newblock {ISO/IEC 23005-1:2011 - Information technology -- Media context and
-  control -- Part 1: Architecture}.
-\newblock
-  $\backslash$url\{http://www.iso.org/iso/iso\_catalogue/catalogue\_tc/catalogue\_detail.htm?csnumber=54985\},
-  2011.
+  control -- Part 1: Architecture}, 2011.
 
 \bibitem{Turkle1997}
 Sherry Turkle.
@@ -256,10 +237,6 @@ Adalberto~L Simeone, Eduardo Velloso, and Hans Gellersen.
   Virtual Reality Experiences}.
 \newblock In {\em Proceedings of SIGCHI Conference on Human Factors in
   Computing Systems (CHI 2015)}, 2015.
-
-\bibitem{Roush2007}
-Wade Roush.
-\newblock {Second Earth}, 2007.
 
 \bibitem{Vinge2006}
 Vernor Vinge.
@@ -320,12 +297,15 @@ Wijnand Ijsselsteijn.
 
 \bibitem{Heeter2003}
 Carrie Heeter.
-\newblock {Reflections on Real Presence by a Virtual Person}, 2003.
+\newblock {Reflections on Real Presence by a Virtual Person}.
+\newblock {\em Presence: Teleoperators and Virtual Environments},
+  12(4):335--345, 2003.
 
 \bibitem{Ijsselsteijn1998}
 Wijnand Ijsselsteijn, Huib de~Ridder, Roelof Hamberg, Don Bouwhuis, and
   Jonathan Freeman.
-\newblock {Perceived depth and the feeling of presence in 3DTV}, 1998.
+\newblock {Perceived depth and the feeling of presence in 3DTV}.
+\newblock {\em Displays}, 18(4):207--214, 1998.
 
 \bibitem{Turkle2004}
 Sherry Turkle.
@@ -358,6 +338,9 @@ Raffaele {De Amicis}, Gabrio Girardi, Michele Andreolli, Giuseppe Conti, and
 \bibitem{Andersen}
 Peter B\o~gh Andersen.
 \newblock {Tangible Objects : Connecting Informational and Physical space}.
+\newblock In L~Qvortrup, J~Jensen, E~Kjems, N~Lehmann, and C~Madsen, editors,
+  {\em Virtual Space: Spatiality in Virtual Inhabited 3D Worlds}, chapter~3,
+  pages 190--210. Springer London, 2002.
 
 \bibitem{Roussou2002}
 Maria Roussou.
