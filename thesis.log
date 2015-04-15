@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2015.4.11)  14 APR 2015 16:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2015.4.11)  15 APR 2015 16:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1184,25 +1184,22 @@ Package pdftex.def Info: 04_vtw/images/linlithgow_children.jpg used on input li
 ne 139.
 (pdftex.def)             Requested size: 209.1301pt x 139.19916pt.
 
-<04_vtw/images/VTTP_projection.png, id=1713, 1204.5pt x 416.55624pt>
-File: 04_vtw/images/VTTP_projection.png Graphic file (type png)
+<04_vtw/images/musa.jpg, id=1713, 1027.84pt x 350.30875pt>
+File: 04_vtw/images/musa.jpg Graphic file (type jpg)
 
-<use 04_vtw/images/VTTP_projection.png>
-Package pdftex.def Info: 04_vtw/images/VTTP_projection.png used on input line 1
-39.
-(pdftex.def)             Requested size: 209.1301pt x 72.32002pt.
+<use 04_vtw/images/musa.jpg>
+Package pdftex.def Info: 04_vtw/images/musa.jpg used on input line 139.
+(pdftex.def)             Requested size: 209.1301pt x 71.27388pt.
 File: 04_vtw/images/linlithgow_children.jpg Graphic file (type jpg)
-
-<use 04_vtw/images/linlithgow_children.jpg>
+ <use 04_vtw/images/linlithgow_children.jpg>
 Package pdftex.def Info: 04_vtw/images/linlithgow_children.jpg used on input li
 ne 139.
-(pdftex.def)             Requested size: 108.64293pt x 72.32002pt.
-File: 04_vtw/images/VTTP_projection.png Graphic file (type png)
+(pdftex.def)             Requested size: 107.06967pt x 71.27388pt.
+File: 04_vtw/images/musa.jpg Graphic file (type jpg)
 
-<use 04_vtw/images/VTTP_projection.png>
-Package pdftex.def Info: 04_vtw/images/VTTP_projection.png used on input line 1
-39.
-(pdftex.def)             Requested size: 209.11815pt x 72.32002pt.
+<use 04_vtw/images/musa.jpg>
+Package pdftex.def Info: 04_vtw/images/musa.jpg used on input line 139.
+(pdftex.def)             Requested size: 209.12453pt x 71.27388pt.
 
 <04_vtw/images/rift_exhibition.jpg, id=1714, 5492.52pt x 3661.68pt>
 File: 04_vtw/images/rift_exhibition.jpg Graphic file (type jpg)
@@ -1212,25 +1209,28 @@ Package pdftex.def Info: 04_vtw/images/rift_exhibition.jpg used on input line 1
 42.
 (pdftex.def)             Requested size: 209.1301pt x 139.4023pt.
 
-<04_vtw/images/musa.jpg, id=1715, 1027.84pt x 350.30875pt>
-File: 04_vtw/images/musa.jpg Graphic file (type jpg)
+<04_vtw/images/VTTP_projection.png, id=1715, 1204.5pt x 416.55624pt>
+File: 04_vtw/images/VTTP_projection.png Graphic file (type png)
 
-<use 04_vtw/images/musa.jpg>
-Package pdftex.def Info: 04_vtw/images/musa.jpg used on input line 142.
-(pdftex.def)             Requested size: 209.1301pt x 71.27388pt.
+<use 04_vtw/images/VTTP_projection.png>
+Package pdftex.def Info: 04_vtw/images/VTTP_projection.png used on input line 1
+42.
+(pdftex.def)             Requested size: 209.1301pt x 72.32002pt.
 File: 04_vtw/images/rift_exhibition.jpg Graphic file (type jpg)
- <use 04_vtw/images/rift_exhibition.jpg>
+
+<use 04_vtw/images/rift_exhibition.jpg>
 Package pdftex.def Info: 04_vtw/images/rift_exhibition.jpg used on input line 1
 42.
-(pdftex.def)             Requested size: 106.85648pt x 71.27388pt.
-File: 04_vtw/images/musa.jpg Graphic file (type jpg)
+(pdftex.def)             Requested size: 108.44884pt x 72.32002pt.
+File: 04_vtw/images/VTTP_projection.png Graphic file (type png)
 
-<use 04_vtw/images/musa.jpg>
-Package pdftex.def Info: 04_vtw/images/musa.jpg used on input line 142.
-(pdftex.def)             Requested size: 209.12453pt x 71.27388pt.
- [58 <./04_vtw/images/linlithgow_children.jpg> <./04_vtw/images/VTTP_projection
-.png (PNG copy)> <./04_vtw/images/rift_exhibition.jpg> <./04_vtw/images/musa.jp
-g>] [59]
+<use 04_vtw/images/VTTP_projection.png>
+Package pdftex.def Info: 04_vtw/images/VTTP_projection.png used on input line 1
+42.
+(pdftex.def)             Requested size: 209.11815pt x 72.32002pt.
+ [58 <./04_vtw/images/linlithgow_children.jpg> <./04_vtw/images/musa.jpg> <./04
+_vtw/images/rift_exhibition.jpg> <./04_vtw/images/VTTP_projection.png (PNG copy
+)>] [59]
 <04_vtw/images/vtw_high_level.png, id=1736, 1927.2pt x 892.33376pt>
 File: 04_vtw/images/vtw_high_level.png Graphic file (type png)
 
@@ -1467,76 +1467,61 @@ File: 04_vtw/images/cathedral_reconstruction_side.png Graphic file (type png)
 Package pdftex.def Info: 04_vtw/images/cathedral_reconstruction_side.png used o
 n input line 801.
 (pdftex.def)             Requested size: 426.79135pt x 143.14876pt.
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
- [78
 
- <./04_vtw/images/cathedral_reconstruction_side.png>]
-<04_vtw/images/cathedral_real_outside.jpg, id=2090, 284.7438pt x 189.3474pt>
+<04_vtw/images/cathedral_real_outside.jpg, id=2085, 284.7438pt x 189.3474pt>
 File: 04_vtw/images/cathedral_real_outside.jpg Graphic file (type jpg)
 
 <use 04_vtw/images/cathedral_real_outside.jpg>
 Package pdftex.def Info: 04_vtw/images/cathedral_real_outside.jpg used on input
- line 824.
+ line 822.
 (pdftex.def)             Requested size: 209.1301pt x 139.06897pt.
 
-<04_vtw/images/cathedral_reconstruction_above.jpg, id=2091, 1927.2pt x 1061.967
+<04_vtw/images/cathedral_reconstruction_above.jpg, id=2086, 1927.2pt x 1061.967
 5pt>
 File: 04_vtw/images/cathedral_reconstruction_above.jpg Graphic file (type jpg)
  <use 04_vtw/images/cathedral_reconstruction_above.jpg>
 Package pdftex.def Info: 04_vtw/images/cathedral_reconstruction_above.jpg used 
-on input line 824.
+on input line 822.
 (pdftex.def)             Requested size: 209.1301pt x 115.22876pt.
 File: 04_vtw/images/cathedral_real_outside.jpg Graphic file (type jpg)
 
 <use 04_vtw/images/cathedral_real_outside.jpg>
 Package pdftex.def Info: 04_vtw/images/cathedral_real_outside.jpg used on input
- line 824.
+ line 822.
 (pdftex.def)             Requested size: 173.28505pt x 115.22876pt.
 File: 04_vtw/images/cathedral_reconstruction_above.jpg Graphic file (type jpg)
 
 <use 04_vtw/images/cathedral_reconstruction_above.jpg>
 Package pdftex.def Info: 04_vtw/images/cathedral_reconstruction_above.jpg used 
-on input line 824.
+on input line 822.
 (pdftex.def)             Requested size: 209.1108pt x 115.22876pt.
+ [78
 
+ <./04_vtw/images/cathedral_reconstruction_side.png>]
 <04_vtw/images/pangolin_laptop_router_battery.jpg, id=2099, 903.375pt x 600.242
 5pt>
 File: 04_vtw/images/pangolin_laptop_router_battery.jpg Graphic file (type jpg)
  <use 04_vtw/images/pangolin_laptop_router_battery.jpg>
 Package pdftex.def Info: 04_vtw/images/pangolin_laptop_router_battery.jpg used 
-on input line 838.
+on input line 836.
 (pdftex.def)             Requested size: 209.1301pt x 138.95044pt.
 
 <04_vtw/images/vtw_in_use.jpg, id=2100, 216.81pt x 145.0218pt>
 File: 04_vtw/images/vtw_in_use.jpg Graphic file (type jpg)
 
 <use 04_vtw/images/vtw_in_use.jpg>
-Package pdftex.def Info: 04_vtw/images/vtw_in_use.jpg used on input line 838.
+Package pdftex.def Info: 04_vtw/images/vtw_in_use.jpg used on input line 836.
 (pdftex.def)             Requested size: 209.1301pt x 139.89204pt.
 File: 04_vtw/images/pangolin_laptop_router_battery.jpg Graphic file (type jpg)
 
 <use 04_vtw/images/pangolin_laptop_router_battery.jpg>
 Package pdftex.def Info: 04_vtw/images/pangolin_laptop_router_battery.jpg used 
-on input line 838.
+on input line 836.
 (pdftex.def)             Requested size: 209.12274pt x 138.95044pt.
 File: 04_vtw/images/vtw_in_use.jpg Graphic file (type jpg)
 
 <use 04_vtw/images/vtw_in_use.jpg>
-Package pdftex.def Info: 04_vtw/images/vtw_in_use.jpg used on input line 838.
+Package pdftex.def Info: 04_vtw/images/vtw_in_use.jpg used on input line 836.
 (pdftex.def)             Requested size: 207.73824pt x 138.95044pt.
 
 <04_vtw/images/vtw_implementation.png, id=2101, 1927.2pt x 713.66624pt>
@@ -1544,28 +1529,28 @@ File: 04_vtw/images/vtw_implementation.png Graphic file (type png)
 
 <use 04_vtw/images/vtw_implementation.png>
 Package pdftex.def Info: 04_vtw/images/vtw_implementation.png used on input lin
-e 842.
+e 840.
 (pdftex.def)             Requested size: 426.79135pt x 158.04156pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [79 <./04_vtw/images/cathedral_real_outside.jpg> <./04_vtw/images/cathedral_rec
-onstruction_above.jpg>] [80 <./04_vtw/images/pangolin_laptop_router_battery.jpg
-> <./04_vtw/images/vtw_in_use.jpg> <./04_vtw/images/vtw_implementation.png>]
-<04_vtw/images/vtw_all_routes.png, id=2131, 903.375pt x 515.9275pt>
+onstruction_above.jpg> <./04_vtw/images/pangolin_laptop_router_battery.jpg> <./
+04_vtw/images/vtw_in_use.jpg>] [80 <./04_vtw/images/vtw_implementation.png>]
+<04_vtw/images/vtw_all_routes.png, id=2132, 903.375pt x 515.9275pt>
 File: 04_vtw/images/vtw_all_routes.png Graphic file (type png)
 
 <use 04_vtw/images/vtw_all_routes.png>
 Package pdftex.def Info: 04_vtw/images/vtw_all_routes.png used on input line 87
-7.
+5.
 (pdftex.def)             Requested size: 341.43437pt x 194.99957pt.
  [81 <./04_vtw/images/vtw_all_routes.png>]
 <04_vtw/images/vtw_alll_routes_first_half.png, id=2140, 903.375pt x 515.9275pt>
 File: 04_vtw/images/vtw_alll_routes_first_half.png Graphic file (type png)
 <use 04_vtw/images/vtw_alll_routes_first_half.png>
 Package pdftex.def Info: 04_vtw/images/vtw_alll_routes_first_half.png used on i
-nput line 890.
+nput line 888.
 (pdftex.def)             Requested size: 341.43437pt x 194.99957pt.
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
@@ -1575,7 +1560,7 @@ Missing character: There is no ƒ in font cmr10!
 File: 04_vtw/images/vtw_all_routes_second_half.png Graphic file (type png)
 <use 04_vtw/images/vtw_all_routes_second_half.png>
 Package pdftex.def Info: 04_vtw/images/vtw_all_routes_second_half.png used on i
-nput line 899.
+nput line 897.
 (pdftex.def)             Requested size: 341.43437pt x 194.99957pt.
 
 
@@ -1589,12 +1574,9 @@ File: 04_vtw/images/vtw-framerates.png Graphic file (type png)
 Package pdftex.def Info: 04_vtw/images/vtw-framerates.png used on input line 91
 4.
 (pdftex.def)             Requested size: 213.39568pt x 213.39815pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[83 <./04_vtw/images/vtw_all_routes_second_half.png>] [84 <./04_vtw/images/vtw-
-framerates.png (PNG copy)>] [85]) [86]
+ [83 <./04_vtw/images/vtw_all_routes_second_half.png> <./04_vtw/images/vtw-fram
+erates.png (PNG copy)>] [84] [85])
+[86]
  4.
 
 (./05_mirrorshades_design_implementation/mirrorshades_design_implementation.tex
@@ -4228,12 +4210,7 @@ Package atveryend Info: Empty hook `BeforeClearDocument' on input line 293.
  [213]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 293.
 
-(./thesis.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
+(./thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 293.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 293.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
@@ -4246,10 +4223,10 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 293.
  ) 
 Here is how much of TeX's memory you used:
- 14201 strings out of 493109
- 252899 string characters out of 6140856
- 587741 words of memory out of 5000000
- 16353 multiletter control sequences out of 15000+600000
+ 14200 strings out of 493109
+ 252888 string characters out of 6140856
+ 587718 words of memory out of 5000000
+ 16352 multiletter control sequences out of 15000+600000
  15206 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,18n,51p,2114b,1402s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -4611,7 +4588,7 @@ share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texmf-dis
 t/fonts/type1/public/eurosym/feymo10.pfb></usr/share/texmf-dist/fonts/type1/pub
 lic/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
 rm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on thesis.pdf (213 pages, 93106254 bytes).
+Output written on thesis.pdf (213 pages, 93104993 bytes).
 PDF statistics:
  3734 PDF objects out of 4296 (max. 8388607)
  3152 compressed objects within 32 object streams
