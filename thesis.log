@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2015.4.11)  21 APR 2015 12:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2015.4.11)  27 APR 2015 18:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -844,14 +844,14 @@ Underfull \vbox (badness 10000) detected at line 230
  []
 
 [30] [31] [32]
-<03_background/images/lifton_shadow_lab.png, id=1349, 822.07124pt x 588.1975pt>
+<03_background/images/lifton_shadow_lab.png, id=1350, 822.07124pt x 588.1975pt>
 File: 03_background/images/lifton_shadow_lab.png Graphic file (type png)
 <use 03_background/images/lifton_shadow_lab.png>
 Package pdftex.def Info: 03_background/images/lifton_shadow_lab.png used on inp
 ut line 265.
 (pdftex.def)             Requested size: 209.1301pt x 149.63385pt.
 
-<03_background/images/ubiquitous_sensor_portal.jpg, id=1350, 360.53798pt x 377.
+<03_background/images/ubiquitous_sensor_portal.jpg, id=1351, 360.53798pt x 377.
 59045pt>
 File: 03_background/images/ubiquitous_sensor_portal.jpg Graphic file (type jpg)
 
@@ -883,10 +883,6 @@ Package pdftex.def Info: 03_background/images/Lifton_continuum_original.png use
 d on input line 295.
 (pdftex.def)             Requested size: 341.43437pt x 71.83864pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
 <03_background/images/Lifton_continuum_modified.png, id=1366, 1927.2pt x 608.27
 25pt>
 File: 03_background/images/Lifton_continuum_modified.png Graphic file (type png
@@ -899,8 +895,8 @@ d on input line 302.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[34]
-<03_background/images/reality_virtual_reality_sensor_networks.png, id=1374, 192
+
+<03_background/images/reality_virtual_reality_sensor_networks.png, id=1368, 192
 7.2pt x 642.4pt>
 File: 03_background/images/reality_virtual_reality_sensor_networks.png Graphic 
 file (type png)
@@ -909,10 +905,8 @@ file (type png)
 Package pdftex.def Info: 03_background/images/reality_virtual_reality_sensor_ne
 tworks.png used on input line 311.
 (pdftex.def)             Requested size: 256.07741pt x 85.35774pt.
- [35 <./03_background/images/Lifton_continuum_original.png> <./03_background/im
-ages/Lifton_continuum_modified.png> <./03_background/images/reality_virtual_rea
-lity_sensor_networks.png>]
-<03_background/images/virtuality-continuum-augmented-reality.png, id=1390, 1927
+ [34 <./03_background/images/Lifton_continuum_original.png>]
+<03_background/images/virtuality-continuum-augmented-reality.png, id=1383, 1927
 .2pt x 357.335pt>
 File: 03_background/images/virtuality-continuum-augmented-reality.png Graphic f
 ile (type png)
@@ -922,7 +916,7 @@ Package pdftex.def Info: 03_background/images/virtuality-continuum-augmented-re
 ality.png used on input line 334.
 (pdftex.def)             Requested size: 426.79135pt x 79.13193pt.
 
-<03_background/images/virtuality-continuum-cross-reality-1.png, id=1391, 1927.2
+<03_background/images/virtuality-continuum-cross-reality-1.png, id=1384, 1927.2
 pt x 322.20375pt>
 File: 03_background/images/virtuality-continuum-cross-reality-1.png Graphic fil
 e (type png)
@@ -932,7 +926,7 @@ Package pdftex.def Info: 03_background/images/virtuality-continuum-cross-realit
 y-1.png used on input line 342.
 (pdftex.def)             Requested size: 426.79135pt x 71.3521pt.
 
-<03_background/images/virtuality-continuum-cross-reality-2.png, id=1392, 1927.2
+<03_background/images/virtuality-continuum-cross-reality-2.png, id=1385, 1927.2
 pt x 345.29pt>
 File: 03_background/images/virtuality-continuum-cross-reality-2.png Graphic fil
 e (type png)
@@ -942,7 +936,7 @@ Package pdftex.def Info: 03_background/images/virtuality-continuum-cross-realit
 y-2.png used on input line 350.
 (pdftex.def)             Requested size: 426.79135pt x 76.46455pt.
 
-<03_background/images/virtuality-continuum-cross-reality-3.png, id=1393, 1927.2
+<03_background/images/virtuality-continuum-cross-reality-3.png, id=1386, 1927.2
 pt x 354.32375pt>
 File: 03_background/images/virtuality-continuum-cross-reality-3.png Graphic fil
 e (type png)
@@ -951,11 +945,14 @@ e (type png)
 Package pdftex.def Info: 03_background/images/virtuality-continuum-cross-realit
 y-3.png used on input line 358.
 (pdftex.def)             Requested size: 426.79135pt x 78.46507pt.
- [36 <./03_background/images/virtuality-continuum-augmented-reality.png> <./03_
-background/images/virtuality-continuum-cross-reality-1.png> <./03_background/im
-ages/virtuality-continuum-cross-reality-2.png>]
+ [35 <./03_background/images/Lifton_continuum_modified.png> <./03_background/im
+ages/reality_virtual_reality_sensor_networks.png>] [36 <./03_background/images/
+virtuality-continuum-augmented-reality.png> <./03_background/images/virtuality-
+continuum-cross-reality-1.png> <./03_background/images/virtuality-continuum-cro
+ss-reality-2.png> <./03_background/images/virtuality-continuum-cross-reality-3.
+png>]
 <03_background/images/virtuality-continuum-cross-reality-information-flows-dash
-ed.png, id=1408, 1927.2pt x 641.39626pt>
+ed.png, id=1409, 1927.2pt x 641.39626pt>
 File: 03_background/images/virtuality-continuum-cross-reality-information-flows
 -dashed.png Graphic file (type png)
 
@@ -968,9 +965,8 @@ y-information-flows-dashed.png used on input line 391.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[37 <./03_background/images/virtuality-continuum-cross-reality-3.png>] [38 <./0
-3_background/images/virtuality-continuum-cross-reality-information-flows-dashed
-.png>] [39]
+[37] [38 <./03_background/images/virtuality-continuum-cross-reality-information
+-flows-dashed.png>] [39]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -4569,7 +4565,7 @@ share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texmf-dis
 t/fonts/type1/public/eurosym/feymo10.pfb></usr/share/texmf-dist/fonts/type1/pub
 lic/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
 rm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on thesis.pdf (215 pages, 93141792 bytes).
+Output written on thesis.pdf (215 pages, 93143521 bytes).
 PDF statistics:
  3765 PDF objects out of 4296 (max. 8388607)
  3181 compressed objects within 32 object streams
