@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2015.4.11)  1 MAY 2015 13:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Arch Linux) (preloaded format=pdflatex 2015.4.11)  1 MAY 2015 13:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1490,30 +1490,32 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [79 <./04_vtw/images/cathedral_real_outside.jpg> <./04_vtw/images/cathedral_rec
 onstruction_above.jpg> <./04_vtw/images/pangolin_laptop_router_battery.jpg> <./
 04_vtw/images/vtw_in_use.jpg>] [80 <./04_vtw/images/vtw_implementation.png>]
-<04_vtw/images/vtw_all_routes.png, id=2143, 903.375pt x 515.9275pt>
+<04_vtw/images/vtw_all_routes.png, id=2143, 1535.7375pt x 970.62625pt>
 File: 04_vtw/images/vtw_all_routes.png Graphic file (type png)
 
 <use 04_vtw/images/vtw_all_routes.png>
 Package pdftex.def Info: 04_vtw/images/vtw_all_routes.png used on input line 89
 3.
-(pdftex.def)             Requested size: 341.43437pt x 194.99957pt.
+(pdftex.def)             Requested size: 341.43437pt x 215.78964pt.
  [81 <./04_vtw/images/vtw_all_routes.png>]
-<04_vtw/images/vtw_alll_routes_first_half.png, id=2152, 903.375pt x 515.9275pt>
+<04_vtw/images/vtw_alll_routes_first_half.png, id=2152, 1537.745pt x 972.63374p
+t>
 File: 04_vtw/images/vtw_alll_routes_first_half.png Graphic file (type png)
-<use 04_vtw/images/vtw_alll_routes_first_half.png>
+ <use 04_vtw/images/vtw_alll_routes_first_half.png>
 Package pdftex.def Info: 04_vtw/images/vtw_alll_routes_first_half.png used on i
 nput line 906.
-(pdftex.def)             Requested size: 341.43437pt x 194.99957pt.
+(pdftex.def)             Requested size: 341.43437pt x 215.95395pt.
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ƒ in font cmr10!
 
-<04_vtw/images/vtw_all_routes_second_half.png, id=2154, 903.375pt x 515.9275pt>
+<04_vtw/images/vtw_all_routes_second_half.png, id=2154, 1537.745pt x 970.62625p
+t>
 File: 04_vtw/images/vtw_all_routes_second_half.png Graphic file (type png)
-<use 04_vtw/images/vtw_all_routes_second_half.png>
+ <use 04_vtw/images/vtw_all_routes_second_half.png>
 Package pdftex.def Info: 04_vtw/images/vtw_all_routes_second_half.png used on i
 nput line 915.
-(pdftex.def)             Requested size: 341.43437pt x 194.99957pt.
+(pdftex.def)             Requested size: 341.43437pt x 215.50824pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -4588,7 +4590,7 @@ share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texmf-dis
 t/fonts/type1/public/eurosym/feymo10.pfb></usr/share/texmf-dist/fonts/type1/pub
 lic/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
 rm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on thesis.pdf (215 pages, 92628089 bytes).
+Output written on thesis.pdf (215 pages, 100825540 bytes).
 PDF statistics:
  3786 PDF objects out of 4296 (max. 8388607)
  3198 compressed objects within 32 object streams
