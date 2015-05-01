@@ -862,7 +862,7 @@ For the purposes of testing VTW at the cathedral, a temporary server and network
 
 %=========================================================================================================
 
-\subsection{Position and Orientation Performance}
+\subsection{Position Performance}
 
 \newcommand{\ubloxcepFootnote}{\footnote{\url{https://u-blox.com/images/downloads/Product_Docs/MAX-6_ProductSummary_(GPS.G6-HW-10089).pdf}}}
 
@@ -917,9 +917,20 @@ When analyzing the sub-track in the vicinity of the nave (see figure \ref{vtw_al
 \label{vtw_all_routes_second_half.png}
 \end{figure}
 
-%VTW's camera control from orientation data does not have as stringent performance criteria as its movement control. Unlike augmented reality applications where sparse virtual content is superimposed upon a view of a real environment and the virtual objects must be placed accurately in order for the effect to work well, parallel reality presents a complete virtual environment that in the case of VTW is viewed alternately side-by-side with the real environment and thus discrepancies between orientation of real and virtual environments has a less detrimental effect.
+In addition to the accuracy of the position tracking it is also important to consider the frequency and granularity of these data. Even if the position data used by a freeform explorative parallel reality system were extremely accurate the experience of using that platform would be poor if these data were reported too infrequently, as it would either lead to `jumpy' movement where the virtual view had to move a substantial distance to match each newly reported real position or a reliance upon dead-reckoning to predict the user's movement between subsequent data. Likewise even with accurate and frequently reported position data, if the granularity of these data is not especially fine the experience of using the platform will be negatively impacted by an inability to make small real movements and see them reflected as similarly small virtual movements in order to pay attention to a specific aspect of the environments.
 
-The accuracy of the camera control during the experiments was sufficient, however the speed at which the camera orientation moved to match physical orientation was rather slow, resulting in having to wait for the display to `catch up' to changes in orientation. This is attributed to the 10Hz sampling rate of the orientation sensors which, particularly after readings are combined for smoothing purposes to reduce jerky movement, resulted in too infrequent orientation updates.
+Throughout the test route the HTC One S reported only 27 positions. This would have resulted in extremely large virtual movements if used for VTW and the low granularity of these positions (as seen in figure \ref{vtwpositiondeltas.png} would have meant that the user would've found it frustratingly difficult to match real world movements to virtual world equivalents. The MAX-6 performed substantially better in these regards, reporting 251 positions along the same route and with substantially higher granularity (also shown in figure \ref{vtwpositiondeltas.png}. However in practise even though subsequent positions reported by the MAX-6 during tests when integrated into the VTW platform were usually no more than 1-3m away, when standing still with the VTW the MAX-6 would not `settle' and keep the virtual view in the same position, but would instead continue to report new positions within this 1-3m range. This resulted in the virtual view frequently moving even while the user was standing stationary in the real world.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{vtwpositiondeltas.png}
+\caption{Distance between subsequent GPS position data.}
+\label{vtwpositiondeltas.png}
+\end{figure}
+
+%=========================================================================================================
+
+%VTW's camera control from orientation data does not have as stringent performance criteria as its movement control. Unlike augmented reality applications where sparse virtual content is superimposed upon a view of a real environment and the virtual objects must be placed accurately in order for the effect to work well, parallel reality presents a complete virtual environment that in the case of VTW is viewed alternately side-by-side with the real environment and thus discrepancies between orientation of real and virtual environments has a less detrimental effect.
 
 %=========================================================================================================
 
@@ -935,6 +946,8 @@ VTW averaged framerates between 20 and 25 frames per second (fps) with the modif
 \end{figure}
 
 The style of explorative interaction with virtual content that the VTW platform employs is more resilient to lower frame rates than other scenarios of interaction with virtual content such as fast paced competitive video games including first person shooters [20], but overall user experience would nonetheless be improved by a higher frame rate. It should however be noted that the cathedral reconstruction was created with relatively powerful desktop computers in mind as the primary deployment platform and has not been optimized for use on less powerful mobile platforms such as the tablet used by VTW.
+
+The accuracy of the camera control during the experiments was sufficient, however the speed at which the camera orientation moved to match physical orientation was rather slow, resulting in having to wait for the display to `catch up' to changes in orientation. This is attributed to the 10Hz sampling rate of the orientation sensors which, particularly after readings are combined for smoothing purposes to reduce jerky movement, resulted in too infrequent orientation updates.
 
 %=========================================================================================================
 
