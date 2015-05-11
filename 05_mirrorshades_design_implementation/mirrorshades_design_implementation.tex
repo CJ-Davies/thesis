@@ -48,13 +48,13 @@ Figure \ref{systemarchitecture} presents a high level architectural overview of 
 	\end{center}
 \end{figure}
 
-Emphasis should be placed on the fact that the two views, RW and VR, through the function of IPS and head tracking combined with the spatial equivalence of the constituent environments, represent equivalent vantage points within the two environments, differentiating the modality of interaction from the visual perception exchange systems exhibited in an Istanbul church by Mathieu Briand which at first glance might seem a similar modality at least in terms of the hardware employed and the deployment to a heritage locale;
+Emphasis should be placed on the fact that the two views, RW and VR, through the function of IPS and head tracking combined with the spatial equivalence of the constituent environments, represent equivalent vantage points within the two environments, differentiating the modality of interaction from the visual perception exchange systems exhibited in an Istanbul church by Mathieu Briand which at first glance might seem a similar modality at least in terms of the hardware employed and the deployment to a heritage locale:
 
 \begin{quote}
 	\textit{``In an earlier version, set in the Hagia Eirene church in Istanbul, visitors wearing a wireless headgear viewing device could press a button to exchange the image on the screen with that of another of the six headgear cameras, revealing whatever it was pointing at. Visitors were fascinated by the dynamic visual transformations, such as the way the brightly painted floor could suddenly be replaced by the church dome as they wandered around the space.''}~\cite{Jones2006}
 \end{quote}
 
-Likewise the modality of interaction provided by the Mirrorshades platform distances itself from that of Briand's later experiments into `controlled schizophrenia' in which displacement of body and vision were intentional, as the different views that a user of the Mirrorshades platform switches between are inherently the same `place' as seen from the same vantage point;
+Likewise the modality of interaction provided by the Mirrorshades platform distances itself from that of Briand's later experiments into `controlled schizophrenia' in which displacement of body and vision were intentional, as the different views that a user of the Mirrorshades platform switches between are inherently the same `place' as seen from the same vantage point:
 
 \begin{quote}
 	\textit{``The audience members wear helmets that incorporate a camera, goggle-style compact monitor, and headphones. The audience members may also carry a connector that can be plugged and unplugged from the nine sockets placed around the museum, in order to exchange audiovisual experiences with others.}
@@ -66,7 +66,7 @@ Likewise the modality of interaction provided by the Mirrorshades platform dista
 
 \subsection{St Salvator's Chapel}
 
-The location elected for application of the Mirrorshades platform is St Salvator's chapel in St Andrews. Founded in 1450 but internally stripped of its medieval fittings during the Protestant Reformation (1517 - 1648) the chapel looks markedly different today than it did upon its completion. An existing virtual reconstruction of the chapel as it stood in the period 1450-1460, created by the OVW group, and the marked differences between the internal appearance of the reconstruction and the present day building (including the replacement of the original stone roof with a wooden one and drastically different dividing of the internal space) make the chapel an ideal candidate within the context of cultural heritage for the Mirrorshades parallel reality system to be deployed. The magnitude of the changes between the chapel's original state and how it stands today means that augmented reality would not in fact be able to present a faithful image of how the chapel originally looked, but would need to be combined with substantial application of diminished reality to remove present day features that were not there in the past.
+The location elected for application of the Mirrorshades platform is St Salvator's chapel in St Andrews. Founded in 1450 but internally stripped of its medieval fittings during the Protestant Reformation (1517 - 1648) the chapel looks markedly different today than it did upon its completion. An existing virtual reconstruction of the chapel as it stood in the period 1450-1460, created by the OVW group, and the marked differences between the internal appearance of the reconstruction and the present day building (including the replacement of the original stone roof with a wooden one and drastically different dividing of the internal space) make the chapel an ideal candidate within the context of cultural heritage for the Mirrorshades parallel reality system to be deployed. The magnitude of the changes between the chapel's original state and how it stands today means that augmented reality would not in fact be able to present a faithful image of how the chapel originally looked, but would need to be combined with substantial application of diminished reality to remove present day features that were not there in the past. For example, when in proximity to the rood screen in its new position (discussed beneath), removing it would require replacing almost the entire viewport with augmented or diminished visuals.
 
 \TwoFig{sallies-vrst/sallies-quad-real.jpg}{St Salvator's chapel today.}{sallies-quad-real.jpg}
        {sallies-vrst/sallies-quad-virtual.png}{St Salvator's chapel reconstruction.}{sallies-quad-virtual.png}
@@ -126,7 +126,7 @@ One deciding factor in opting to convert OpenSim content to Unity rather than us
 
 \subsection{Modifying the DK1 for Video See-Through}
 \label{modifying-dk1}
-The Oculus Rift DK1 covers the user's entire field of view, such that they cannot see any of their real world surroundings whilst wearing it, and it does not feature any camera provision to allow a mediated view of the real world to be presented to them. As such it was necessary to modify the DK1 to provide with such video see-through capability for use as a component of the Mirrorshades parallel reality platform. When choosing cameras for this task there were several desired features;
+The Oculus Rift DK1 covers the user's entire field of view, such that they cannot see any of their real world surroundings whilst wearing it, and it does not feature any camera provision to allow a mediated view of the real world to be presented to them. As such it was necessary to modify the DK1 to provide with such video see-through capability for use as a component of the Mirrorshades parallel reality platform. When choosing cameras for this task there were several desired features:
 \begin{itemize}
 	\item Resolution and refresh rate that match (or exceed) those of the DK1's display.
 	\item Sensor aspect ratio that matches that of each half of the DK1's display.
@@ -587,7 +587,8 @@ Attending to visual stimuli from the RW environment via the cameras when using M
 
 As discussed in section \ref{transitions_in_parallel_reality}, when a user experiences such a transition from viewing the visual stimuli of one environment (or combination of environments) to viewing the visual stimuli of a different environment (or different combination of environments) this will have an effect upon their sense of presence - a break in presence, as a deflection along the focus of attention axis of the combined Milgram/Waterworth model. These breaks are undesirable, as they stand to make the act of performing a transition between two environments (or combinations of environments) unpleasant, to detract from the fundamental purpose of allowing the user to transition between environments and could even act to deter users from triggering these transitions when they wish to. Implementing these transitions in a manner that minimises the severity of the breaks is integral to the realisation of an enjoyable and useful parallel reality platform for use in cultural heritage.
 
-At the conceptual level there are two aspects of these transitions that can be altered and which will affect the severity of the breaks in presence;
+At the conceptual level there are two aspects of these transitions that can be altered and which will affect the severity of the breaks in presence:
+
 \begin{enumerate}
 	\item The starting and ending position upon the locus of attention axis.
 	\item The process of replacing one set of visual stimuli with the other.
@@ -723,7 +724,7 @@ Figure \ref{experimentalimplementation} presents an overview of the individual c
 \end{figure}
 
 \subsection{Hardware Components}
-The hardware components of the system that are carried by the user comprise;
+The hardware components of the system that are carried by the user comprise:
 \begin{itemize}
 	\item An Oculus Rift DK1 HMD modified by the addition of a stereo camera video see-through solution comprising 2x Logitech C310 webcams modified with S-mount lens mounts and 2.1mm lenses to provide approximately 81.2\textdegree\ horizontal FOV of the RW environment.
 	\item A 12,000mAh USB battery pack, capable of outputting 2.1A at 5V, to power the DK1.
@@ -740,7 +741,7 @@ Figure \ref{DSCN0198.jpg} shows an overview of this hardware; the laptop compute
 The laptop and control box bundle are carried in a satchel worn over the user's shoulder, the smartphone is held in their left hand and the Xbox controller is held in their right hand. In addition to this hardware carried by the user, a remote server is used to provide a MySQL database. During the user studies at St Salvator's chapel the server used had an Intel Xeon E3-1270 four-core/eight-thread processor, 32GiB RAM, 4x WD RE4 1TB hard disks in software RAID6 and 100mbit/s Internet connectivity. This server was running the Debian stable release, with a standard LAMP stack and used mdadm for RAID management.
 
 \subsection{Software Components}
-The software components of the system comprise;
+The software components of the system comprise:
 \begin{itemize}
 	\item An Android application that runs on the Nexus 5 smartphone, determines the location of the smartphone within the building that it is in using IndoorAtlas and submits these location data via PHP to a database server. The source code of this application is available online\footnote{\url{https://github.com/CJ-Davies/IndoorAtlas_SQL_uploader}}.
 	\item A PHP page on the database server that allows IndoorAtlas position data to be submitted to MySQL.
