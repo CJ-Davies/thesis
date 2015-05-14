@@ -21,12 +21,12 @@ This chapter discusses the design and development of a parallel reality platform
 
 %=========================================================================================================
 
-%With a display technology such as an immersive VR HMD however, \textit{``there is practically no screen''} as it \textit{``totally covered by our field of view, vanishes''}~\cite{Tzortzaki2002}.
+%With a display technology such as an immersive VR HMD however, 
 
 \section{Overview}
-The development of the VTW platform as a preliminary foray into applying the concept of parallel reality to the field of cultural heritage performed sufficiently to implement the static viewpoint scenario described in section \ref{parallel-reality-in-virtual-heritage}, wherein the viewpoints are spaced further apart than the worst case accuracy of the GPS solution, and to partly explore the freeform exploration scenario for expansive outdoor cultural heritage sites, in which visitors view things from some distance from where the inaccuracy of positioning is not apparent.
+The development of the VTW platform as a preliminary foray into applying the concept of parallel reality to the field of cultural heritage performed sufficiently to implement the static viewpoint scenario described in section \ref{parallel-reality-in-virtual-heritage}, wherein the viewpoints are spaced further apart than the worst case accuracy of the GPS solution, and to partly explore the freeform exploration scenario for expansive outdoor cultural heritage sites, in which visitors view artefacts within the environments from some distance from where the inaccuracy of positioning is not apparent.
 
-To continue the investigation of parallel reality, once again using cultural heritage as a real world case study, the platform described in this chapter investigates the use of parallel reality at indoor cultural heritage sites. This allows the use of an IPS to track the user's position, which promises greater accuracy than even SBAS enhanced GPS does outdoors, allowing for the full freeform exploration scenario to be explored, even in much less expansive sites, and even for aspects of the third scenario with detailed comparison to be experienced. Furthermore the use of a HMD capable of producing stereoscopic 3D visuals that completely fill the user's view, in place of a tablet, allows the investigation of parallel reality to extend to systems that present a completely immersive virtual experience instead of a `window' into the virtual, realising the true essence of the envisioned experiential aspect of parallel reality that VTW did not provide.
+To continue the investigation of parallel reality, once again using cultural heritage as a real world case study, the platform described in this chapter investigated the use of parallel reality at indoor cultural heritage sites. This allowed the use of an IPS to track the user's position, which promised greater accuracy than even SBAS enhanced GPS did outdoors, allowing for the full freeform exploration scenario to be explored, even in much less expansive sites, and even for aspects of the third scenario with detailed comparison to be experienced. Furthermore the use of a HMD capable of producing stereoscopic 3D visuals that completely fill the user's view, in place of a tablet, allowed the investigation of parallel reality to extend to systems that present a completely immersive virtual experience instead of a `window' into the virtual, realising the true essence of the envisioned experiential aspect of parallel reality that VTW did not provide. Whilst VTW presented the user with a `screen' into the virtual, around which they could still perceive their real environment, with the Mirrorshades platform's HMD \textit{``there is practically no screen''} as it \textit{``totally covered by our field of view, vanishes''}~\cite{Tzortzaki2002}.
 
 %=========================================================================================================
 
@@ -682,6 +682,20 @@ Figure \ref{scenario2} illustrates this scenario, while considering the combined
 
 %=========================================================================================================
 
+\subsection{Reduced maximum opacity}
+\label{subsub-baseopacity}
+Independent or in addition to any of the previous transition types, the maximum opacity of the game objects that the camera feeds are rendered upon is reduced such that the default view displays a mix of VR superimposed upon RW. Figure \ref{scenariobaseopacity} illustrates this scenario in combination with a hard switch (section \ref{sub-hardswitch}) in which the user triggers hard switches between the default view of the VR/RW mix and a fully VR environment. Figure \ref{transition-mix-vr.png} visualises the expected user experience of this RW/VR mix default view upon the combined Milgram/Waterworth model when combined with a linear interpolated transition (section \ref{transition-with-linear-interpolation}). The sensus of attention is depicted as being higher when viewing the RW/VR mix default view than when viewing a wholly RW default view such as in figure \ref{transition-rw-vr-hard.png}, as it was expected that `making sense' of the mixed environment would require more conscious thought than one that is wholly real or wholly virtual. However the deflection upon the focus of attention axis when performing the transition is depicted as being smaller than in figure \ref{focus-locus-sensus-with-virtuality-continuum-with-transition}, which shows the same linear interpolated transition as figure \ref{transition-mix-vr.png} but from a starting position of a wholly RW environment. This is because the constant presence in the user's default view of some small amount of the VR environment is expected to make switching fully to that VR environment less unpleasant than when that VR environment is presented as a complete alternative.
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=0.5\textwidth]{base-opacity-hard-switch.png}
+		\caption{Instantaneous hard switch between RW/VR mix and VR visual stimuli.}
+		\label{scenariobaseopacity}
+	\end{center}
+\end{figure}
+
+%=========================================================================================================
+
 \subsection{Periodic hard switches}
 \label{subsub-periodic}
 Independent or in addition to any of the previous transition types, the visual stimuli displayed by the DK1 switch from the default view to VR at a set interval and for a set amount of time. For example, every 3 seconds the stimuli switch from the default view to VR for 0.2 of a second before switching back to the default view. Any user triggered transition causes the interval timer to be reset such that an `automated' switch will never occur after less time from a user triggered switch than the set interval. Automated transitions are disabled whilst \texttt{[RT]} is at all depressed. Figure \ref{scenariotimed} illustrates this scenario, where \texttt{i} represents the interval between switches and \texttt{d} represents the duration of the switch from the default view to VR.
@@ -694,21 +708,7 @@ Independent or in addition to any of the previous transition types, the visual s
 	\end{center}
 \end{figure}
 
-Considering the combined Milgram/Waterworth model the periodic glimpses of the VR environment are postulated to lessen the deflection upon the focus of attention axis when the user comes to manually perform a transition in a similar manner as to how changing the default view from wholly RW to a RW/VR mix is expected to achieve the same (see figure \ref{transition-mix-vr.png}). However the flashes may not necessarily cause the associated increase in sensus of attention and decrease in focus of attention when viewing the default environment that a RW/VR mix is expected to result in.
-
-%=========================================================================================================
-
-\subsection{Reduced maximum opacity}
-\label{subsub-baseopacity}
-Independent or in addition to any of the previous transition types, the maximum opacity of the game objects that the camera feeds are rendered upon is reduced such that the default view displays a mix of VR superimposed upon RW. Figure \ref{scenariobaseopacity} illustrates this scenario in combination with a hard switch (section \ref{sub-hardswitch}) in which the user triggers hard switches between the default view of the VR/RW mix and a fully VR environment. Figure \ref{transition-mix-vr.png} visualises the expected user experience of this RW/VR mix default view upon the combined Milgram/Waterworth model when combined with a linear interpolated transition (section \ref{transition-with-linear-interpolation}).
-
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=0.5\textwidth]{base-opacity-hard-switch.png}
-		\caption{Instantaneous hard switch between RW/VR mix and VR visual stimuli.}
-		\label{scenariobaseopacity}
-	\end{center}
-\end{figure}
+Considering the combined Milgram/Waterworth model, it was postulated that these periodic glimpses of the VR environment would lessen the deflection upon the focus of attention axis when the user subsequently performed a manual transition to VR. In a similar manner as to how changing the default view from wholly RW to a RW/VR mix (see section \ref{subsub-baseopacity}) was expected to reduce the negative impact of transitions, by always overlaying a certain level of the VR environment, providing momentary `glimpses' of the VR environment was hoped to perform similarly. However as the default view in this scenario can be maintained at 100\% RW, it may avoid the increase in sensus of attention and focus of attention expected to result from viewing a RW/VR mix.
 
 %=========================================================================================================
 
