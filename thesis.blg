@@ -8,52 +8,52 @@ Warning--there's a number but no series in Qiu2009
 Warning--can't use both author and editor fields in Baudrillard1994
 Warning--can't use both volume and number fields in Baudrillard1994
 Warning--empty school in Soraker2010
+Warning--empty publisher in Billinghurst2014
 Warning--can't use both author and editor fields in Bartle2004
 Warning--can't use both volume and number fields in Bartle2004
 Warning--empty journal in Laureys2009
 Warning--there's a number but no series in Papagiannakis2004
 Warning--empty publisher in Taketomi2011
 Warning--empty publisher in VanBrummelen2012
-Warning--empty publisher in Billinghurst2014
-You've used 113 entries,
+You've used 118 entries,
             1791 wiz_defined-function locations,
-            1177 strings with 25346 characters,
-and the built_in function-call counts, 31175 in all, are:
-= -- 2975
-> -- 1116
-< -- 70
-+ -- 418
-- -- 305
-* -- 1991
-:= -- 4542
-add.period$ -- 378
-call.type$ -- 113
-change.case$ -- 99
+            1204 strings with 25828 characters,
+and the built_in function-call counts, 33153 in all, are:
+= -- 3176
+> -- 1160
+< -- 80
++ -- 434
+- -- 316
+* -- 2108
+:= -- 4800
+add.period$ -- 398
+call.type$ -- 118
+change.case$ -- 104
 chr.to.int$ -- 0
-cite$ -- 125
-duplicate$ -- 1607
-empty$ -- 3108
-format.name$ -- 305
-if$ -- 7299
+cite$ -- 130
+duplicate$ -- 1722
+empty$ -- 3313
+format.name$ -- 316
+if$ -- 7788
 int.to.chr$ -- 0
-int.to.str$ -- 113
-missing$ -- 118
-newline$ -- 566
-num.names$ -- 152
-pop$ -- 436
+int.to.str$ -- 118
+missing$ -- 123
+newline$ -- 591
+num.names$ -- 167
+pop$ -- 466
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 854
+skip$ -- 925
 stack$ -- 0
-substring$ -- 2104
-swap$ -- 558
-text.length$ -- 70
+substring$ -- 2264
+swap$ -- 613
+text.length$ -- 80
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 12
-while$ -- 334
-width$ -- 116
-write$ -- 1290
+while$ -- 359
+width$ -- 121
+write$ -- 1350
 (There were 12 warnings)
