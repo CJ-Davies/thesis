@@ -60,7 +60,7 @@
 \contentsline {figure}{\numberline {3.37}{\ignorespaces Distance between subsequent GPS position data.\relax }}{90}{figure.caption.58}
 \contentsline {figure}{\numberline {3.38}{\ignorespaces Average framerates for VTW at St Andrews cathedral.\relax }}{91}{figure.caption.59}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces High level overview of the Mirrorshades parallel reality platform.\relax }}{95}{figure.caption.60}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces High level overview of the Mirrorshades parallel reality platform in use.\relax }}{95}{figure.caption.60}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces The Mirrorshades parallel reality platform.\relax }}{96}{figure.caption.61}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces St Salvator's chapel today.\relax }}{97}{figure.caption.62}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces St Salvator's chapel reconstruction.\relax }}{97}{figure.caption.62}
@@ -103,8 +103,8 @@
 \contentsline {figure}{\numberline {4.41}{\ignorespaces Top down view of starting orientation of virtual cameras (toward left side and facing the right, frustum lines visible in white) within Unity chapel reconstruction.\relax }}{113}{figure.caption.83}
 \contentsline {figure}{\numberline {4.42}{\ignorespaces Early camera mounts with large eye/sensor distance.\relax }}{115}{figure.caption.84}
 \contentsline {figure}{\numberline {4.43}{\ignorespaces Later camera mounts with smaller eye/sensor distance.\relax }}{115}{figure.caption.84}
-\contentsline {figure}{\numberline {4.44}{\ignorespaces IPS technologies plotted against their accuracy and coverage, image courtesy Rainer Mautz\nobreakspace {}\cite {Mautz2012}.\relax }}{116}{figure.caption.86}
-\contentsline {figure}{\numberline {4.45}{\ignorespaces Requirements parameters of IPS, image courtesy Rainer Mautz\nobreakspace {}\cite {Mautz2012}.\relax }}{116}{figure.caption.86}
+\contentsline {figure}{\numberline {4.44}{\ignorespaces IPS technologies plotted against their accuracy and coverage, image courtesy Rainer Mautz\nobreakspace {}\cite {Mautz2012}.\relax }}{117}{figure.caption.86}
+\contentsline {figure}{\numberline {4.45}{\ignorespaces Requirements parameters of IPS, image courtesy Rainer Mautz\nobreakspace {}\cite {Mautz2012}.\relax }}{117}{figure.caption.86}
 \contentsline {figure}{\numberline {4.46}{\ignorespaces PSMove failing to locate illuminated marker even in relatively dim conditions.\relax }}{119}{figure.caption.87}
 \contentsline {figure}{\numberline {4.47}{\ignorespaces Metalwork abundant in department building ceiling.\relax }}{120}{figure.caption.88}
 \contentsline {figure}{\numberline {4.48}{\ignorespaces Positions reported by IndoorAtlas within department building.\relax }}{121}{figure.caption.89}
@@ -114,8 +114,8 @@
 \contentsline {figure}{\numberline {4.52}{\ignorespaces St Salvator's chapel aisle, flanked by metal gratings.\relax }}{122}{figure.caption.91}
 \contentsline {figure}{\numberline {4.53}{\ignorespaces Detail of St Salvator's chapel metal gratings.\relax }}{122}{figure.caption.91}
 \contentsline {figure}{\numberline {4.54}{\ignorespaces Metal gratings before altar at St Salvator's chapel.\relax }}{122}{figure.caption.91}
-\contentsline {figure}{\numberline {4.55}{\ignorespaces Altar in St Salvator's chapel, with no obvious metal.\relax }}{122}{figure.caption.92}
-\contentsline {figure}{\numberline {4.56}{\ignorespaces Loudspeaker and electric light fixture within St Salvator's chapel.\relax }}{122}{figure.caption.92}
+\contentsline {figure}{\numberline {4.55}{\ignorespaces Altar in St Salvator's chapel, with no obvious metal.\relax }}{123}{figure.caption.92}
+\contentsline {figure}{\numberline {4.56}{\ignorespaces Loudspeaker and electric light fixture within St Salvator's chapel.\relax }}{123}{figure.caption.92}
 \contentsline {figure}{\numberline {4.57}{\ignorespaces Web visualisation of IndoorAtlas information for department building.\relax }}{124}{figure.caption.93}
 \contentsline {figure}{\numberline {4.58}{\ignorespaces Web visualisation of IndoorAtlas information for St Salvator's chapel.\relax }}{124}{figure.caption.93}
 \contentsline {figure}{\numberline {4.59}{\ignorespaces Calculating Unity positions from IndoorAtlas data.\relax }}{125}{figure.caption.94}
@@ -125,7 +125,7 @@
 \contentsline {figure}{\numberline {4.63}{\ignorespaces Visualisation using the combined Milgram/Waterworth model of the theorised experience of a user of the Mirrorshades parallel reality platform performing an instantaneous transition between its constituent RW and VR environments.\relax }}{128}{figure.caption.97}
 \contentsline {figure}{\numberline {4.64}{\ignorespaces Instantaneous hard switch between RW and VR visual stimuli.\relax }}{130}{figure.caption.98}
 \contentsline {figure}{\numberline {4.65}{\ignorespaces Switch with linear interpolation between RW and VR visual stimuli.\relax }}{131}{figure.caption.99}
-\contentsline {figure}{\numberline {4.66}{\ignorespaces Analogue selectable opacity between RW and VR visual stimuli, where any intermediary position can be lingered upon.\relax }}{132}{figure.caption.100}
+\contentsline {figure}{\numberline {4.66}{\ignorespaces Analogue selectable opacity between RW and VR visual stimuli, where any intermediary position can be lingered upon.\relax }}{131}{figure.caption.100}
 \contentsline {figure}{\numberline {4.67}{\ignorespaces Periodic instantaneous hard switches between RW and VR visual stimuli.\relax }}{132}{figure.caption.101}
 \contentsline {figure}{\numberline {4.68}{\ignorespaces Instantaneous hard switch between RW/VR mix and VR visual stimuli.\relax }}{133}{figure.caption.102}
 \contentsline {figure}{\numberline {4.69}{\ignorespaces Implementation of Mirrorshades parallel reality platform.\relax }}{133}{figure.caption.103}
@@ -137,8 +137,8 @@
 \contentsline {figure}{\numberline {4.75}{\ignorespaces Mirrorshades test in St Salvator's chapel (virtual).\relax }}{137}{figure.caption.106}
 \contentsline {figure}{\numberline {4.76}{\ignorespaces Mirrorshades test with OVW group members in St Salvator's chapel (composite, 1/4).\relax }}{137}{figure.caption.107}
 \contentsline {figure}{\numberline {4.77}{\ignorespaces Mirrorshades test with OVW group members in St Salvator's chapel (composite, 2/4).\relax }}{137}{figure.caption.107}
-\contentsline {figure}{\numberline {4.78}{\ignorespaces Mirrorshades test with OVW group members in St Salvator's chapel (composite, 3/4).\relax }}{137}{figure.caption.108}
-\contentsline {figure}{\numberline {4.79}{\ignorespaces Mirrorshades test with OVW group members in St Salvator's chapel (composite, 4/4).\relax }}{137}{figure.caption.108}
+\contentsline {figure}{\numberline {4.78}{\ignorespaces Mirrorshades test with OVW group members in St Salvator's chapel (composite, 3/4).\relax }}{138}{figure.caption.108}
+\contentsline {figure}{\numberline {4.79}{\ignorespaces Mirrorshades test with OVW group members in St Salvator's chapel (composite, 4/4).\relax }}{138}{figure.caption.108}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Participant using Mirrorshades in a user study at St Salvator's chapel.\relax }}{140}{figure.caption.109}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Path and positions within St Salvator's chapel that participants were instructed to roughly follow and attend to (oriented North upwards).\relax }}{142}{figure.caption.110}
