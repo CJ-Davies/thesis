@@ -11,7 +11,7 @@
 \contentsline {subsection}{\numberline {2.1.3}Roy Want's Virtuality Matrix}{33}{subsection.2.1.3}
 \contentsline {section}{\numberline {2.2}Adopted Alternate Reality Definitions}{34}{section.2.2}
 \contentsline {section}{\numberline {2.3}Cross Reality}{37}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}The Vacancy Problem}{38}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.1}The Vacancy Problem}{39}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Alternate Reality Definitions from Cross Reality}{39}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Position of Cross Reality}{40}{subsection.2.3.3}
 \contentsline {section}{\numberline {2.4}Parallel Reality}{43}{section.2.4}
@@ -31,17 +31,17 @@
 \contentsline {subsection}{\numberline {3.1.2}Existing Virtual Heritage Applications}{57}{subsection.3.1.2}
 \contentsline {subsection}{\numberline {3.1.3}Situated Simulation}{59}{subsection.3.1.3}
 \contentsline {subsection}{\numberline {3.1.4}Virtual Heritage at the University of St Andrews}{62}{subsection.3.1.4}
-\contentsline {subsection}{\numberline {3.1.5}Parallel Reality in Virtual Heritage}{64}{subsection.3.1.5}
-\contentsline {section}{\numberline {3.2}The Virtual Time Window}{66}{section.3.2}
+\contentsline {subsection}{\numberline {3.1.5}Parallel Reality in Virtual Heritage}{65}{subsection.3.1.5}
+\contentsline {section}{\numberline {3.2}The Virtual Time Window}{67}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Second Life and Mobility}{68}{subsection.3.2.1}
-\contentsline {section}{\numberline {3.3}Orientation Control}{68}{section.3.3}
+\contentsline {section}{\numberline {3.3}Orientation Control}{69}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Exploiting Second Life's Joystick Support}{71}{subsection.3.3.1}
 \contentsline {section}{\numberline {3.4}Position Control}{73}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}GPS Receivers}{75}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}OpenSim Region Module}{78}{subsection.3.4.2}
-\contentsline {section}{\numberline {3.5}Modifying Second Life for Orientation and Position Control}{79}{section.3.5}
+\contentsline {section}{\numberline {3.5}Modifying Second Life for Orientation and Position Control}{80}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}Overview of Second Life Client Modifications}{80}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}\texttt {LLViewerSerialMovement} reference}{80}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.2}\texttt {LLViewerSerialMovement} reference}{81}{subsection.3.5.2}
 \contentsline {section}{\numberline {3.6}Evaluating VTW}{86}{section.3.6}
 \contentsline {subsection}{\numberline {3.6.1}Evaluation Process}{87}{subsection.3.6.1}
 \contentsline {subsection}{\numberline {3.6.2}GPS Performance}{87}{subsection.3.6.2}
@@ -58,24 +58,24 @@
 \contentsline {subsection}{\numberline {4.3.2}Modifying the DK1 for Video See-Through}{104}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}Switchable Stereoscopic Video See-Through with Unity}{110}{subsection.4.3.3}
 \contentsline {subsection}{\numberline {4.3.4}Latency of DK1 Video See-Through Solution}{113}{subsection.4.3.4}
-\contentsline {subsection}{\numberline {4.3.5}Constraints of DK1 Video See-Through Solution}{113}{subsection.4.3.5}
+\contentsline {subsection}{\numberline {4.3.5}Constraints of DK1 Video See-Through Solution}{114}{subsection.4.3.5}
 \contentsline {subsection}{\numberline {4.3.6}Registration of Camera and Unity Visuals}{116}{subsection.4.3.6}
-\contentsline {section}{\numberline {4.4}Indoor Positioning System}{117}{section.4.4}
+\contentsline {section}{\numberline {4.4}Indoor Positioning System}{118}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}IPS Requirements for Mirrorshades}{118}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}PlayStation Move}{120}{subsection.4.4.2}
 \contentsline {subsection}{\numberline {4.4.3}Indoor Atlas}{121}{subsection.4.4.3}
 \contentsline {section}{\numberline {4.5}Mobile Client}{125}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Integrating IndoorAtlas and Unity}{125}{subsection.4.5.1}
-\contentsline {section}{\numberline {4.6}Design Considerations for RW/VR Transitions}{128}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Control Mechanism for Transitions}{131}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.5.1}Integrating IndoorAtlas and Unity}{126}{subsection.4.5.1}
+\contentsline {section}{\numberline {4.6}Design Considerations for RW/VR Transitions}{127}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Control Mechanism for Transitions}{130}{subsection.4.6.1}
 \contentsline {section}{\numberline {4.7}Transition Types}{132}{section.4.7}
 \contentsline {subsection}{\numberline {4.7.1}Hard transition}{132}{subsection.4.7.1}
 \contentsline {subsection}{\numberline {4.7.2}Transition with linear interpolation}{132}{subsection.4.7.2}
 \contentsline {subsection}{\numberline {4.7.3}Analogue selectable opacity}{133}{subsection.4.7.3}
 \contentsline {subsection}{\numberline {4.7.4}Periodic hard transitions}{134}{subsection.4.7.4}
-\contentsline {subsection}{\numberline {4.7.5}Reduced maximum opacity}{134}{subsection.4.7.5}
+\contentsline {subsection}{\numberline {4.7.5}Reduced maximum opacity}{135}{subsection.4.7.5}
 \contentsline {section}{\numberline {4.8}The Assembled Mirrorshades Parallel Reality Platform}{135}{section.4.8}
-\contentsline {subsection}{\numberline {4.8.1}Hardware Components}{136}{subsection.4.8.1}
+\contentsline {subsection}{\numberline {4.8.1}Hardware Components}{135}{subsection.4.8.1}
 \contentsline {subsection}{\numberline {4.8.2}Software Components}{137}{subsection.4.8.2}
 \contentsline {subsection}{\numberline {4.8.3}Execution}{138}{subsection.4.8.3}
 \contentsline {section}{\numberline {4.9}Initial Testing}{138}{section.4.9}

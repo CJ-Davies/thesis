@@ -303,17 +303,21 @@ The arrangement of these planes in relation to the virtual cameras is shown by f
 
 \subsection{Latency of DK1 Video See-Through Solution}
 
-Measurement of the end-to-end latency of the C310 solution was performed by placing the DK1, with the lens cups removed, in front of a LCD monitor displaying a timer\footnote{\url{http://www.flatpanels.dk/monitortest_inputlag_dk.php}}. In this context end-to-end latency refers to the time taken for a visible change in the scene in front of the DK1 (such as the incrementing digits upon the monitor) to be reflected by a comparable change upon the DK1's display. This figure accounts for latency introduced by the C310 cameras themselves, by the Unity engine and by the DK1's display. A digital camera was set up on a tripod behind the monitor and DK1 such that it could record both the monitor and the milliseconds value on the DK1's screen. The digital camera was set at a sufficiently high sensitivity as to record video at 50fps with a shutter speed of 1/4000 of a second. Both the monitor and the DK1's screen refreshed at 60Hz, each frame lasting for 16.67ms, whilst a 1/4000 of a second shutter on the camera meant that the exposure was made over 0.25ms. The response time of the monitor (quoted by the manufacturer as 8ms grey-to-grey) was evidently much higher than that of the Rift, as the tenths and even hundredths digit on the monitor was usually legible in each frame of the video whereas on the Rift the hundredths and thousandths digits were always illegible.
-
-To determine an estimate of the latency of the DK1 and camera setup using Unity, adjacent video frames were identified where a transition from one tenth digit to the next was legible on the Rift's display and the hundredths/thousandths digits were legible on the monitor, such as the pair shown by figures \ref{vid1.jpg} and \ref{vid2.jpg}. From these values it can be inferred that the tenths digit on the DK1's screen (visible through the right eyecup hole) changed from 9 (figure \ref{vid1.jpg}) to 0 (figure \ref{vid2.jpg}) sometime between 181ms (figure \ref{vid1.jpg}) and 198ms (figure \ref{vid2.jpg}) on the monitor, which represents a latency of between 181ms and 198ms. Out of 11 pairs of frames like this identified, 7 pairs showed this 181-198ms latency, while 4 showed 198-215ms latency as seen in figures \ref{vid3.jpg} and \ref{vid4.jpg}.
-
-In addition to video frames still photographs taken at the same 1/4000 of a second shutter speed gave some more legible stills which corroborated this 181-251ms figure. This figure is substantially greater than the 30-60ms figure often quoted\footnote{\url{https://www.oculus.com/blog/the-latent-power-of-prediction/}} as the upper limit for an acceptable VR experience, however how much it affects a relatively slow style of interaction such as that of applying parallel reality to a cultural heritage site versus that of a fast application such as a competitive `twitch' gaming is open to interpretation from experimental evaluation.
+Measurement of the end-to-end latency of the C310 solution was performed by placing the DK1, with the lens cups removed, in front of a LCD monitor displaying a timer\footnote{\url{http://www.flatpanels.dk/monitortest_inputlag_dk.php}}. In this context end-to-end latency refers to the time taken for a visible change in the scene in front of the DK1 (such as the incrementing digits upon the monitor) to be reflected by a comparable change upon the DK1's display. This figure accounts for latency introduced by the C310 cameras themselves, by the Unity engine and by the DK1's display.
 
 \TwoFig{latency/vid1.jpg}{Measuring latency (video frame, 1/2).}{vid1.jpg}
        {latency/vid2.jpg}{Measuring latency (video frame, 2/2).}{vid2.jpg}
 
+A digital camera was set up on a tripod behind the monitor and DK1 such that it could record both the monitor and the milliseconds value on the DK1's screen. The digital camera was set at a sufficiently high sensitivity as to record video at 50fps with a shutter speed of 1/4000 of a second. Both the monitor and the DK1's screen refreshed at 60Hz, each frame lasting for 16.67ms, whilst a 1/4000 of a second shutter on the camera meant that the exposure was made over 0.25ms. The response time of the monitor (quoted by the manufacturer as 8ms grey-to-grey) was evidently much higher than that of the Rift, as the tenths and even hundredths digit on the monitor was usually legible in each frame of the video whereas on the Rift the hundredths and thousandths digits were always illegible.
+
 \TwoFig{latency/vid3.jpg}{Measuring latency (video frame, 1/2).}{vid3.jpg}
        {latency/vid4.jpg}{Measuring latency (video frame, 2/2).}{vid4.jpg}
+
+\newpage
+
+To determine an estimate of the latency of the DK1 and camera setup using Unity, adjacent video frames were identified where a transition from one tenth digit to the next was legible on the Rift's display and the hundredths/thousandths digits were legible on the monitor, such as the pair shown by figures \ref{vid1.jpg} and \ref{vid2.jpg}. From these values it can be inferred that the tenths digit on the DK1's screen (visible through the right eyecup hole) changed from 9 (figure \ref{vid1.jpg}) to 0 (figure \ref{vid2.jpg}) sometime between 181ms (figure \ref{vid1.jpg}) and 198ms (figure \ref{vid2.jpg}) on the monitor, which represents a latency of between 181ms and 198ms. Out of 11 pairs of frames like this identified, 7 pairs showed this 181-198ms latency, while 4 showed 198-215ms latency as seen in figures \ref{vid3.jpg} and \ref{vid4.jpg}.
+
+In addition to video frames still photographs taken at the same 1/4000 of a second shutter speed gave some more legible stills which corroborated this 181-251ms figure. This figure is substantially greater than the 30-60ms figure often quoted\footnote{\url{https://www.oculus.com/blog/the-latent-power-of-prediction/}} as the upper limit for an acceptable VR experience, however how much it affects a relatively slow style of interaction such as that of applying parallel reality to a cultural heritage site versus that of a fast application such as a competitive `twitch' gaming is open to interpretation from experimental evaluation.
 
 \begin{figure}[h]
     \begin{center}
@@ -402,7 +406,7 @@ In the case of Mirrorshades the fixed reference point is the chapel - both the R
 
 For outdoor applications GPS represents a suitable solution for the vast majority of position tracking requirements. Global coverage and the ability to scale accuracy as required, from many metres with a basic GPS receiver such as those integrated into smartphones, to a few metres with SBAS augmentations and further to as little as 10cm with the (costly) deployment of Differential GPS (DGPS) beacons, has led to GPS occupying the role of the `go to' solution where position tracking is required for an outdoor application. For indoor applications however there is no single technology or solution that provides such encompassing suitability as GPS does outdoors and as such a large number of different technologies have been employed to produce IPS, which are summarised in table \ref{mautz-table.png}.
 
-\begin{table}
+\begin{table}[h]
 	\begin{center}
 		\includegraphics[width=\linewidth]{mautz-table.png}
 	\end{center}
@@ -514,6 +518,8 @@ Upon closer inspection of the chapel, metal gratings set into the floor and whic
        {Sallies-photos/DSCN0177.jpg}{Loudspeaker and electric light fixture within St Salvator's chapel.}{DSCN0177.jpg}
        
 %=========================================================================================================
+
+\newpage
 
 \section{Mobile Client}
 \label{mobile-client}

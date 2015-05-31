@@ -163,6 +163,8 @@ In addition to these temporary workshops, the reconstructions have also been use
 
 %=========================================================================================================
 
+\newpage
+
 \subsection{Parallel Reality in Virtual Heritage}
 
 \label{parallel-reality-in-virtual-heritage}
@@ -417,7 +419,7 @@ The difference in longitude between the anchor point and the user's position, $\
 2r \arcsin\left( \sqrt{\sin^{2} \left( \frac{\lambda_{2} - \lambda_{1}}{2} \right) } \right)
 \end{equation}
 
-While the difference in latitude between the anchor point and the user's position, $\Delta\phi$, is given by:
+The difference in latitude between the anchor point and the user's position, $\Delta\phi$, is given by:
 
 \begin{equation}
 2r \arcsin\left( \sqrt{\sin^{2} \left( \frac{\phi_{2} - \phi_{1}}{2}\right)} \right)
@@ -456,6 +458,8 @@ Applying the scale of the reconstruction to these values gives $\Delta$x and $\D
 %=====================
 
 The WindPad features an internal AzureWave GPS-M16 GPS receiver\azurewaveFootnote{}, however poor API provision and meagre documentation required the adoption of an alternative receiver. As an Arduino was already being used to provide orientation data from accelerometer and magnetometer, integrating the GPS receiver into this package such that all orientation and position data came from a single interface was prudent. After receiving input and advice from the UK High Altitude Society, \textit{``a loose collection of people who are interested in launching unmanned high altitude balloons into near space''}\habFootnote{} who make extensive use of GPS receivers for tracking their launches, the u-blox MAX-6\ubloxFootnote{} GPS receiver outfitted with a Sarantel SL-1202\sarantelFootnote{} passive antenna was chosen to provide position data for the VTW platform. The MAX-6 is of higher operational specification than the GPS-M16 and supports Satellite Based Augmentation Systems (SBAS), which improves the accuracy of location data by applying additional correction data received from networks of satellites and ground-based transmitters separate to those of the GPS satellites. These networks include the European Geostationary Navigation Overlay Service (EGNOS) that covers the UK where the VTW platform was developed and evaluated.
+
+\newpage
 
 Figure \ref{arduino_wiring_hmc_ublox.png} provides a wiring diagram for connectivity of a u-blox MAX-6 to an Arduino Uno R3, along with the HMC6343 from section \ref{OrientationControl}, with the pinout values provided by tables \ref{HMC6343_MAX6_wiringtable_HMC6343} and \ref{HMC6343_MAX6_wiringtable_MAX6}. The LED and 220$\Omega$ resistor on digital pin 12 is used for diagnostic output. The wiring shown here is for a MAX-6 breakout without I2C connectivity, instead using Arduino's SoftwareSerial\softwareserialFootnote{} library. Figure \ref{arduino_hmc6343_u-blox_MAX-6.jpg} shows the assembled unit, comprising an Arduino Uno R3, prototyping shield, HMC6343 and MAX-6, while figure \ref{pangolin_tablet_back.jpg} shows this package attached to the back of the WindPad with the single required USB cable connecting the two.
 
@@ -658,6 +662,8 @@ The Second Life client is written predominantly in \texttt{C++} so the Asio libr
 \end{figure}
 
 %=========================================================================================================
+
+\newpage
 
 \subsection{\texttt{LLViewerSerialMovement} reference}
 Table \ref{pangolin-function-reference} provides documentation of the functions in \path{/indra/newview/LLViewerSerialMovement}.
