@@ -519,6 +519,8 @@ TXD & D5 \\
        
 %=========================================================================================================
 
+\newpage
+
 The MAX-6 was configured as follows:
 
 \begin{enumerate}
@@ -682,7 +684,9 @@ Table \ref{pangolin-function-reference} provides documentation of the functions 
 
 %=========================================================================================================
 
-\texttt{::received} & A callback method registered to the \path{CallbackAsyncSerial} class in \path{/indra/newview/AsyncSerial}. This function parses the data (\path{const} \path{char} \path{*data}) from the serial device, extracting complete messages to the variable \path{mostRecentMessage}. Because of the nature of the serial I/O, \path{*data} is not guaranteed to contain a discrete message from the Arduino containing both orientation and position data (it may contain a partial/incomplete message) thus this function has to parse the array and assemble discrete messages from multiple subsequent callbacks. \\
+\texttt{::received} & A callback method registered to the \path{CallbackAsyncSerial} class in \path{/indra/newview/AsyncSerial}. This function parses the data (\path{const} \path{char} \path{*data}) from the serial device, extracting complete messages to the variable \path{mostRecentMessage}. \\
+
+& Because of the nature of the serial I/O, \path{*data} is not guaranteed to contain a discrete message from the Arduino containing both orientation and position data (it may contain a partial/incomplete message) thus this function has to parse the array and assemble discrete messages from multiple subsequent callbacks. \\
 		
 \midrule
 
