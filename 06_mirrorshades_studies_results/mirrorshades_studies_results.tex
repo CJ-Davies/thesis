@@ -78,6 +78,8 @@ Before taking part in the two scenarios, participants were given the opportunity
 
 All participants completed a pre-task questionnaire which provided calibration for other data by enquiring about age, gender identity, previous experience with VR HMDs and whether they had previously visited St Salvtor's chapel, both RW and VR (the RW chapel is open to the public and a version of the VR reconstruction is publicly accessible via the OVW group's OpenSim grid\footnote{\url{http://openvirtualworlds.org}}). The System Usability Scale (SUS)~\cite{Brooke1996} was used to provide a basic comparison between the usability of the two scenarios, while a 12-item Likert-type questionnaire (included as appendix \ref{appendix-12-item-likert-type-questionnaire-stage-1}) was used to collect opinions on more specific aspects of the experience of both scenarios. At the end of the session, after completing both scenarios, participants were engaged in a short structured interview (prompts included as appendix \ref{appendix-interview-questions-stage-1}) in order to allow them to elaborate upon their experience in a more free form manner. The visuals displayed upon the DK1 were recorded via ShadowPlay and the participants themselves were recorded by video camera. Finally, log data were collected during both scenarios, capturing the information detailed in table \ref{logdatatable} to file at regular intervals for statistical processing and visualising via R.
 
+\newpage
+
 \begin{center}
 \begin{longtable}{ l  p{6.5cm} }
 
@@ -313,7 +315,9 @@ Reluctance to changing head orientation when moving in the seated VR scenario ca
 
 Reluctance to changing head orientation when moving in the parallel reality scenario is most logically explained by participants feeling as though with the reduced visual acuity of their RW environment seen through the cameras and DK1 screen combined with the discrepancy in position and environmental objects of their VR environment that they needed to pay more conscious attention to their walking, lest they lose their footing. Upon reaching a location of particular interest and standing still, their willingness to perform larger head movements returned as they no longer had to contend with obstacle avoidance.
 
-\begin{figure}
+\vspace{4cm}
+
+\begin{figure}[h]
 	\begin{center}
 	\includegraphics[width=\textwidth]{1/1_4up.png}
 	\caption{Pitch and yaw against time, aligned with distance moved against time, for participant 1 in both scenarios.}
@@ -331,7 +335,7 @@ Reluctance to changing head orientation when moving in the parallel reality scen
 
 %=====================
 
-\pagebreak
+\clearpage
 
 Plotting position data upon the floorplan of the chapel reveal that several participants walked noticeably closer to the altar (far right of the floorplan) during the parallel reality scenario than during the VR section of the seated VR scenario. Figures \ref{06-seatedmap.png} (seated VR scenario) and \ref{06-movmap.png} (parallel reality scenario) show this relationship using participant 6 as an example. The reason for this is not immediately clear; it could be that the real altar presented a more interesting object for observation than its virtual counterpart, so that during the parallel reality scenario in which the real altar was visible participants found themselves drawn to it more than in the VR section of the seated VR scenario when only its virtual partner was visible, or it could be that participants who were less accustomed with the control methodology of the seated VR scenario simply wanted to complete the route as quickly as possible and thus took a more direct route to the `goal'.
 
@@ -463,6 +467,8 @@ In the parallel reality scenario there was no real correlation between framerate
 		\label{1-frames-2-up.png}
 	\end{center}
 \end{figure}
+
+\newpage
 
 Instead of varying according to whether the participant was observing RW or VR, the variance in framerate in the parallel reality scenarios instead varies more in accordance to what part of the chapel the participant was directing their view toward and whether they were moving or standing still. Certain parts of the 3D model are substantially more complex in terms of the number of virtual objects (and thus the number of draw calls required) and rendering moving graphics has an overhead compared to rendering a static scene. Comparing the parallel reality plot from figure \ref{1-frames-2-up.png} (right) to the plot of distance moved against time for the same participant in figure \ref{1_4up.png} (bottom right) hints at this relationship. The seated VR scenario plot (figure \ref{1-frames-2-up.png} left) shows periods in which framerate reached and was capped at the 60fps enforced by vsync.
 
@@ -1010,7 +1016,7 @@ As seen in the results to the stage 1 evaluation, there is also a correlation in
 
 Confirming responses during the post task interviews, several participants made use of the analogue selectable transition (transition 3, accessed via the right trigger \texttt{[RT]}) to view both RW and VR environments together, by pausing with the trigger partially depressed. Figures \ref{10-1-4_opacity.png} and \ref{12-1-4_opacity.png} show examples, for participants 10 and 12 respectively undertaking scenario 1-4, of the opacity of the objects upon which the camera feeds were rendered. An opacity of 1.0 means that the camera feeds were completely opaque and that the participant was thus perceiving 100\% RW visual stimuli, while an opacity of 0 means that the camera feeds were invisible and that the participant was perceiving 100\% VR visual stimuli. As well as using the analogue selectable transition to view both environments at once, there are incidents where it seems that the participant used it to control the speed at which a transition from 100\% RW to 100\% VR was performed. We can see that participant 10 (figure \ref{10-1-4_opacity.png}) uses transition 3 at around 250 seconds to perform a transition to a 100\% VR view, but at a slower rate than the linear interpolated transition such as can be seen taking place just before at around 245 seconds. This greater level of control in how quickly transitions were performed was raised in interviews as one reason why this particular transition was favoured by participants.
 
-\begin{figure}
+\begin{figure}[h]
 	\begin{center}
 	\includegraphics[width=\textwidth]{2.1/10-1-4_opacity.png}
 	\caption{Opacity of camera objects against time for participant 10 in scenario 1-4, showing RW/VR transitions.}
@@ -1053,7 +1059,7 @@ Confirming responses during the post task interviews, several participants made 
 
 IPQ results were scaled from the -3 to +3 range used by the questionnaires to the 0 to 6 range used to express results herein. The reversed items (SP2, INV3 and REAL1) had their results appropriately reversed. Tables \ref{sp-2-1-table}, \ref{inv-2-1-table} and \ref{real-2-1-table} show the mean and standard deviation for SP, INV and REAL respectively for the all of the scenarios (seated VR scenario, scenario 1-3 and scenario 1-4).
 
-\begin{table}
+\begin{table}[h]
 \begin{center}
 \begin{minipage}[t]{.45\linewidth}
 \begin{center}
@@ -1307,15 +1313,19 @@ Plots of position data upon the chapel floorplan show a similar relationship as 
 \TwoFig{splodge-maps/16-seatedmap.png}{Position data during seated VR scenario for participant 16.}{16-seatedmap.png}
        {splodge-maps/16-50map.png}{Position data during 50/50 scenario for participant 16.}{16-50map.png}
 
+\newpage
+
 Whilst one explanation for this behaviour, as touched upon in section \ref{stage1-seated-vs-parallel-reality}, is simply that the combination of real and virtual altar in the parallel reality scenarios drew the participants' attention more than just the virtual altar in the seated VR scenario did, enough to warrant the challenge of the steps, an additional observation herein presents a somewhat intriguing possibility. Many visitors to the chapel display a heightened reverence for the altar, not approaching it too closely nor stepping up to the platform it stands upon, presumably due to an overbearing assumption that it may be construed as disrespectful or against socially accepted etiquette to do so. However with a view that is constantly a mix of a real and a virtual environment, as in the parallel reality scenarios in this stage of the evaluation, it is conceivable that this reduced clarity or less `real' seeming nature of the altar, along with the increased interest of the combined real and virtual views, could have led participants to feel more comfortable than non parallel reality visitors to approach it more closely and even to mount its platform.
 
 %=====================
+
+\newpage
 
 \subsubsection{Comparing Between 75/25 and 50/50 Scenarios}
 
 Observations that come to light when comparing log data between the two parallel reality scenarios are that all of the participants performed fewer transitions in the 50/50 scenario than in the 75/25 scenario, with the ratio between time spent in RW and VR environments showing that participants spent comparatively less time viewing VR in the 50/50 scenario than the 75/25 scenario. These values are summarised in tables \ref{times-75-25} and \ref{times-50-50} for the 75/25 and 50/50 scenarios respectively, while figures \ref{16-pitch-yaw-75-25.png} and \ref{16-pitch-yaw-50-50.png} visualise this relationship using participant 16 as an example when performing the 75/25 scenario and 50/50 scenario respectively.
 
-\begin{figure}
+\begin{figure}[h]
 	\begin{center}
 	\includegraphics[width=\textwidth]{2.2/16-pitch-yaw-75-25.png}
 	\caption{Pitch and yaw against time for participant 16 in 75/25 scenario, showing default/VR transitions.}
@@ -1323,7 +1333,7 @@ Observations that come to light when comparing log data between the two parallel
 	\end{center}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h]
 	\begin{center}
 	\includegraphics[width=\textwidth]{2.2/16-pitch-yaw-50-50.png}
 	\caption{Pitch and yaw against time for participant 16 in 50/50 scenario, showing default/VR transitions.}
@@ -1333,9 +1343,13 @@ Observations that come to light when comparing log data between the two parallel
 
 In combination with interview feedback these log data are explained by the notion that the 50/50 scenario was more engaging, with participants not finding it necessary to perform transitions to VR as frequently in order to perceive enough VR stimuli to engage with it.
 
+\newpage
+
 When considering the distribution of variance in head pitch and yaw in relation to whether participants were viewing the default position or VR, maximum variance in stage 2.2 was no longer as closely related to the VR periods as in previous stages of the evaluation. Participant 14 in particular frequently displayed maximum variance when viewing the default position, more so even than when viewing VR, as shown by figure \ref{14-pitch-yaw-75_25.png}. While this is understandable in the sense that the participants no longer necessarily needed to perform a transition to VR in order to see a sufficient amount of the VR environment, it is worth highlighting that by allowing the user to see the VR environment in this manner means that they were simultaneously perceiving more angles of the RW environment which in earlier stages of evaluation they may not have seen as maximum variance in pitch and yaw only occurred when they were viewing VR visual stimuli.
 
-\begin{table}
+\vspace{1.5cm}
+
+\begin{table}[h]
 \begin{center}
 \begin{tabularx}{\textwidth}{c *{6}{>{\centering\arraybackslash}X}}
 \toprule
@@ -1363,7 +1377,9 @@ When considering the distribution of variance in head pitch and yaw in relation 
 \end{center}
 \end{table}
 
-\begin{table}
+\vspace{1.5cm}
+
+\begin{table}[h]
 \begin{center}
 \begin{tabularx}{\textwidth}{c *{6}{>{\centering\arraybackslash}X}}
 \toprule
@@ -1400,6 +1416,8 @@ When considering the distribution of variance in head pitch and yaw in relation 
 \end{figure}
 
 %=====================
+
+\newpage
 
 \subsubsection{Walking and Head Movement}
 
@@ -1546,7 +1564,9 @@ When considering SP3 and INV2 in isolation, the mean SP3 for the seated VR scena
 
 Once again the seated VR scenario provided the highest framerates (for the 2x participants for whom these data were captured) out of the three scenarios with an average of 53.8 fps. Both parallel reality scenarios performed slightly slower with an average of 47.7 fps during the 75/25 scenario and 48.3 fps during the 50/50 scenario. Figure \ref{framerates_2-2.png} presents these figures. The difference between the seated VR and the parallel reality scenarios was further reduced in this stage of the evaluation to an 11.3\% slowdown, lower than the 16.4\% slowdown measured in the stage 2.1 evaluation and substantially lower than the 25.2\% slowdown measured in the stage 1 evaluation. The fact that the stage 2.2 parallel reality scenarios were predominantly rendering both real and virtual visuals simultaneously lends weight to the possibility discussed in section \ref{stage-2-1-framerates} that this style of rendering presents less computational complexity than completely culling real or virtual visuals as was the case throughout all of the stage 1 evaluations and much of the stage 2.1 evaluations.
 
-\begin{figure}
+\vspace{2cm}
+
+\begin{figure}[h]
 	\begin{center}
 	\includegraphics[width=.6\textwidth]{2.2/framerates_2-2.png}
 	\caption{Framerates for seated VR and both parallel reality scenarios for all participants.}
