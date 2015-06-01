@@ -305,17 +305,17 @@ The arrangement of these planes in relation to the virtual cameras is shown by f
 
 Measurement of the end-to-end latency of the C310 solution was performed by placing the DK1, with the lens cups removed, in front of a LCD monitor displaying a timer\footnote{\url{http://www.flatpanels.dk/monitortest_inputlag_dk.php}}. In this context end-to-end latency refers to the time taken for a visible change in the scene in front of the DK1 (such as the incrementing digits upon the monitor) to be reflected by a comparable change upon the DK1's display. This figure accounts for latency introduced by the C310 cameras themselves, by the Unity engine and by the DK1's display.
 
+A digital camera was set up on a tripod behind the monitor and DK1 such that it could record both the monitor and the milliseconds value on the DK1's screen. The digital camera was set at a sufficiently high sensitivity as to record video at 50fps with a shutter speed of 1/4000 of a second. Both the monitor and the DK1's screen refreshed at 60Hz, each frame lasting for 16.67ms, whilst a 1/4000 of a second shutter on the camera meant that the exposure was made over 0.25ms. The response time of the monitor (quoted by the manufacturer as 8ms grey-to-grey) was evidently much higher than that of the Rift, as the tenths and even hundredths digit on the monitor was usually legible in each frame of the video whereas on the Rift the hundredths and thousandths digits were always illegible.
+
+To determine an estimate of the latency of the DK1 and camera setup using Unity, adjacent video frames were identified where a transition from one tenth digit to the next was legible on the Rift's display and the hundredths/thousandths digits were legible on the monitor, such as the pair shown by figures \ref{vid1.jpg} and \ref{vid2.jpg}. From these values it can be inferred that the tenths digit on the DK1's screen (visible through the right eyecup hole) changed from 9 (figure \ref{vid1.jpg}) to 0 (figure \ref{vid2.jpg}) sometime between 181ms (figure \ref{vid1.jpg}) and 198ms (figure \ref{vid2.jpg}) on the monitor, which represents a latency of between 181ms and 198ms. Out of 11 pairs of frames like this identified, 7 pairs showed this 181-198ms latency, while 4 showed 198-215ms latency as seen in figures \ref{vid3.jpg} and \ref{vid4.jpg}.
+
 \TwoFig{latency/vid1.jpg}{Measuring latency (video frame, 1/2).}{vid1.jpg}
        {latency/vid2.jpg}{Measuring latency (video frame, 2/2).}{vid2.jpg}
-
-A digital camera was set up on a tripod behind the monitor and DK1 such that it could record both the monitor and the milliseconds value on the DK1's screen. The digital camera was set at a sufficiently high sensitivity as to record video at 50fps with a shutter speed of 1/4000 of a second. Both the monitor and the DK1's screen refreshed at 60Hz, each frame lasting for 16.67ms, whilst a 1/4000 of a second shutter on the camera meant that the exposure was made over 0.25ms. The response time of the monitor (quoted by the manufacturer as 8ms grey-to-grey) was evidently much higher than that of the Rift, as the tenths and even hundredths digit on the monitor was usually legible in each frame of the video whereas on the Rift the hundredths and thousandths digits were always illegible.
 
 \TwoFig{latency/vid3.jpg}{Measuring latency (video frame, 1/2).}{vid3.jpg}
        {latency/vid4.jpg}{Measuring latency (video frame, 2/2).}{vid4.jpg}
 
 \newpage
-
-To determine an estimate of the latency of the DK1 and camera setup using Unity, adjacent video frames were identified where a transition from one tenth digit to the next was legible on the Rift's display and the hundredths/thousandths digits were legible on the monitor, such as the pair shown by figures \ref{vid1.jpg} and \ref{vid2.jpg}. From these values it can be inferred that the tenths digit on the DK1's screen (visible through the right eyecup hole) changed from 9 (figure \ref{vid1.jpg}) to 0 (figure \ref{vid2.jpg}) sometime between 181ms (figure \ref{vid1.jpg}) and 198ms (figure \ref{vid2.jpg}) on the monitor, which represents a latency of between 181ms and 198ms. Out of 11 pairs of frames like this identified, 7 pairs showed this 181-198ms latency, while 4 showed 198-215ms latency as seen in figures \ref{vid3.jpg} and \ref{vid4.jpg}.
 
 In addition to video frames still photographs taken at the same 1/4000 of a second shutter speed gave some more legible stills which corroborated this 181-251ms figure. This figure is substantially greater than the 30-60ms figure often quoted\footnote{\url{https://www.oculus.com/blog/the-latent-power-of-prediction/}} as the upper limit for an acceptable VR experience, however how much it affects a relatively slow style of interaction such as that of applying parallel reality to a cultural heritage site versus that of a fast application such as a competitive `twitch' gaming is open to interpretation from experimental evaluation.
 
@@ -587,6 +587,8 @@ Thanks to the ability of the Unity engine to build applications for myriad platf
        
 %=========================================================================================================
 
+\clearpage
+
 \section{Design Considerations for RW/VR Transitions}
 \label{design-considerations-for-rw-vr-transitions}
 Attending to visual stimuli from the RW environment via the cameras when using Mirrorshades is required for the user to safely move around. Delay in IndoorAtlas reporting the user's position and inaccuracies in these position data mean that moving around while attending only to visual stimuli from the VR environment would not be safe for the user, even with unchanging RW obstacles with perfectly accurate representations in the VR environment - which in itself is an unlikely scenario considering a cultural heritage site in which it is extremely likely that many RW obstacles will not have equivalent VR representations. Whilst one can walk through a virtual wall, the same is not true of a real one. Thus the `default' view through the DK1 had to display enough of the view through the cameras for the user to safely navigate their environment, including any obstacles within it (whether these are static objects such as walls and furniture, or dynamic objects such as other humans). For the user to alternatively view through the DK1 a scene that is more, or completely, virtual, thus requires a transition to be performed in which the visual stimuli presented to the user via the DK1 are changed from the default view to the alternative view.
@@ -612,6 +614,8 @@ Considering the first aspect the effect upon breaks in presence is illustrated b
 
 The user is expected to experience a greater sense of presence (a position further toward the presence extreme of the focus of attention axis) when engaging with the RW environment in the scenario depicted by figure \ref{focus-locus-sensus-with-virtuality-continuum-with-transition} than when than when engaging with the RW/VR mix in the scenario depicted by figure \ref{transition-mix-vr.png}, as comprehending the mixed environment is expected to require a greater degree of conceptual/abstract reasoning. However in figure \ref{transition-mix-vr.png}, performing a transition to the wholly VR environment is expected to result in a smaller deflection upon the focus of attention axis than performing a transition to VR in figure \ref{focus-locus-sensus-with-virtuality-continuum-with-transition}, as instead of being presented with a completely new environment the user is instead presented with a solidification of the VR environment that they were already perceiving to a lessened extent when engaging with the RW/VR mix.
 
+\newpage
+
 Considering the second aspect, the effect upon breaks in presence is illustrated by once again considering the scenario represented by figure \ref{focus-locus-sensus-with-virtuality-continuum-with-transition} and this time comparing it to that of figure \ref{transition-rw-vr-hard.png}. Figure \ref{focus-locus-sensus-with-virtuality-continuum-with-transition} envisages a transition in which the visual stimuli of one environment are gradually replaced with those of the other, such as by performing linear interpolation upon the opacity of the textures that the camera streams are rendered to. Figure \ref{transition-rw-vr-hard.png} envisages a reaction to the visual stimuli of one environment being instantaneously replaced with those of the other. The instantaneous switch will intuitively come as more of a shock to the user than the gradual exchange, resulting in a worse break in presence and thus the greater deflection upon the focus of attention axis, and also requiring a greater length of time of receiving visual stimuli from the VR environment before coming to understand them.
 
 \begin{figure}[h]
@@ -625,6 +629,8 @@ Considering the second aspect, the effect upon breaks in presence is illustrated
 In order to best implement a parallel reality system that provides its users with the ability to perform transitions like this, ascertaining the optimum manner in which to perform these transitions between the constituent environments is important. As such a number of different transition methods were designed and implemented for evaluation through user studies.
 
 %=========================================================================================================
+
+\newpage
 
 \subsection{Control Mechanism for Transitions}
 
@@ -788,6 +794,8 @@ The first test in St Salvator's chapel (a video of which can be viewed online\fo
 
 \TwoFig{testing-vids-screenshots/sallies-first-1.png}{Mirrorshades test in St Salvator's chapel (real).}{testing-vids-screenshots/sallies-first-1.png}
        {testing-vids-screenshots/sallies-first-2.png}{Mirrorshades test in St Salvator's chapel (virtual).}{testing-vids-screenshots/sallies-first-2.png}
+
+\newpage
 
 Testing then took place with members of the Open Virtual Worlds research group (a video of which can be viewed online\footnote{\url{https://www.youtube.com/watch?v=pvGV5dCjt4U}}) as seen in figures \ref{testing-vids-screenshots/sallies-second-1.png} to \ref{testing-vids-screenshots/sallies-second-8.png}. These tests provided initial feedback from participants not directly involved with development of the platform. During these early tests there was a strong preference expressed from the participants toward the transition with linear interpolation (see section \ref{transition-with-linear-interpolation}).
 

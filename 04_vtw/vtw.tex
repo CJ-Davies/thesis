@@ -274,8 +274,8 @@ Due to the fact that the WindPad tablet does not feature a built-in magnetometer
 %=====================
 
 \begin{table}
-\begin{center}
-\begin{minipage}{.45\linewidth}
+%\begin{center}
+\begin{minipage}[c]{.45\linewidth}
 \begin{center}
 \begin{tabularx}{\textwidth}{c *{2}{>{\centering\arraybackslash}X}}
 \toprule
@@ -290,21 +290,26 @@ SDA & A4\itwocFootnote{} \\
 SCL & A5 \\
 \bottomrule
 \end{tabularx}
-\end{center}
-\end{minipage}
-\end{center}
 \caption{Pin designation for figure \ref{arduino_wiring_hmc.png}.}
 \label{HMC6343wiringtable}
+\end{center}
+\end{minipage}
+%
+\begin{minipage}[c]{.02\linewidth}
+\hfill%
+\end{minipage}
+%
+\begin{minipage}[c]{.45\linewidth}
+\begin{center}
+\includegraphics[width=\linewidth]{arduino_joystick_for_second_life_1.jpg}
+\captionof{figure}{Assembled Arduino Uno R3 and HMC6343 package.}
+\label{arduino_joystick_for_second_life_1.jpg}
+\end{center}
+\end{minipage}
+%\end{center}
 \end{table}
 
 %=====================
-
-\begin{figure}[h]
-\centering
-  \includegraphics[width=.6\linewidth]{arduino_joystick_for_second_life_1.jpg}
-  \caption{Assembled Arduino Uno R3 and HMC6343 package.}
-  \label{arduino_joystick_for_second_life_1.jpg}
-\end{figure}
 
 Although the 10Hz update rate of the HMC6343 is much lower than those sported by the other packages, its combination of accelerometer and magnetometer into a single package ensured maximum accuracy: even a small discrepancy between the physical mounting of separate accelerometer and magnetometer packages would have been of noticeable detriment to the performance of the platform. The inclusion of tilt-compensation algorithms in the HMC6343 also allowed for easier and faster integration into VTW.
 
@@ -459,8 +464,6 @@ Applying the scale of the reconstruction to these values gives $\Delta$x and $\D
 
 The WindPad features an internal AzureWave GPS-M16 GPS receiver\azurewaveFootnote{}, however poor API provision and meagre documentation required the adoption of an alternative receiver. As an Arduino was already being used to provide orientation data from accelerometer and magnetometer, integrating the GPS receiver into this package such that all orientation and position data came from a single interface was prudent. After receiving input and advice from the UK High Altitude Society, \textit{``a loose collection of people who are interested in launching unmanned high altitude balloons into near space''}\habFootnote{} who make extensive use of GPS receivers for tracking their launches, the u-blox MAX-6\ubloxFootnote{} GPS receiver outfitted with a Sarantel SL-1202\sarantelFootnote{} passive antenna was chosen to provide position data for the VTW platform. The MAX-6 is of higher operational specification than the GPS-M16 and supports Satellite Based Augmentation Systems (SBAS), which improves the accuracy of location data by applying additional correction data received from networks of satellites and ground-based transmitters separate to those of the GPS satellites. These networks include the European Geostationary Navigation Overlay Service (EGNOS) that covers the UK where the VTW platform was developed and evaluated.
 
-\newpage
-
 Figure \ref{arduino_wiring_hmc_ublox.png} provides a wiring diagram for connectivity of a u-blox MAX-6 to an Arduino Uno R3, along with the HMC6343 from section \ref{OrientationControl}, with the pinout values provided by tables \ref{HMC6343_MAX6_wiringtable_HMC6343} and \ref{HMC6343_MAX6_wiringtable_MAX6}. The LED and 220$\Omega$ resistor on digital pin 12 is used for diagnostic output. The wiring shown here is for a MAX-6 breakout without I2C connectivity, instead using Arduino's SoftwareSerial\softwareserialFootnote{} library. Figure \ref{arduino_hmc6343_u-blox_MAX-6.jpg} shows the assembled unit, comprising an Arduino Uno R3, prototyping shield, HMC6343 and MAX-6, while figure \ref{pangolin_tablet_back.jpg} shows this package attached to the back of the WindPad with the single required USB cable connecting the two.
 
 \begin{figure}[h]
@@ -523,8 +526,6 @@ TXD & D5 \\
        
 %=========================================================================================================
 
-\newpage
-
 The MAX-6 was configured as follows:
 
 \begin{enumerate}
@@ -533,6 +534,8 @@ The MAX-6 was configured as follows:
 	\item GPGLL/GPGSA/GPGSV/GPVTG messages disabled.
 	\item GPRMC/GPGGA messages enabled.
 \end{enumerate}
+
+\newpage
 
 The Dynamic Platform Models adjust how the onboard navigation engine processes the readings that the receiver produces and by choosing the correct model for the receiver's application the accuracy of position output is increased. As VTW is an application in which the user walks about an outdoor cultural heritage site, the pedestrian model is most suitable. SBAS is enabled for the EGNOS, which is available at cultural heritage sites within Scotland, in order to improve the accuracy of the position output.
 
@@ -663,7 +666,7 @@ The Second Life client is written predominantly in \texttt{C++} so the Asio libr
 
 %=========================================================================================================
 
-\newpage
+\clearpage
 
 \subsection{\texttt{LLViewerSerialMovement} reference}
 Table \ref{pangolin-function-reference} provides documentation of the functions in \path{/indra/newview/LLViewerSerialMovement}.
@@ -919,15 +922,15 @@ The maximum inaccuracies were recorded when walking along the South wall of the 
 \end{figure}
 
 When analyzing the sub-track in the vicinity of the nave (see figure \ref{vtw_all_routes_second_half.png}) it can be seen that although the MAX-6 outperformed the smartphone in terms of Hausdorff distance this relationship is misleading as the smartphone track corresponded more closely in shape to the planned route even if it did stray further from it at its extreme. The discrepancy in the behavior of the two receivers in this situation is attributed to different implementations of dead-reckoning functionality between the receivers. Dead-reckoning is the process used when the GPS receiver loses reception of location data from satellites and extrapolates its position based upon a combination of the last received position data and the velocity of travel at the time of receiving these data (defined for the MAX-6 by the Dynamic Platform Model chosen).
- 
+
+In addition to the accuracy of the position tracking it is also important to consider the frequency and granularity of these data. Even if the position data used by a freeform explorative parallel reality system were extremely accurate, the experience of using that platform would be poor if these data were reported too infrequently, as it would either lead to `jumpy' movement where the virtual view had to move a substantial distance to match each newly reported real position, or a reliance upon dead-reckoning to predict the user's movement between subsequent data. Likewise even with accurate and frequently reported position data, if the granularity of these data is not especially fine then the experience of using the platform will be negatively impacted by an inability to make small real movements and see them reflected as similarly small virtual movements when trying to pay attention to specific aspects of the environments.
+
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{vtw_all_routes_second_half.png}
 \caption{Planned and recorded paths at St Andrews cathedral (second sub track).}
 \label{vtw_all_routes_second_half.png}
 \end{figure}
-
-In addition to the accuracy of the position tracking it is also important to consider the frequency and granularity of these data. Even if the position data used by a freeform explorative parallel reality system were extremely accurate, the experience of using that platform would be poor if these data were reported too infrequently, as it would either lead to `jumpy' movement where the virtual view had to move a substantial distance to match each newly reported real position, or a reliance upon dead-reckoning to predict the user's movement between subsequent data. Likewise even with accurate and frequently reported position data, if the granularity of these data is not especially fine then the experience of using the platform will be negatively impacted by an inability to make small real movements and see them reflected as similarly small virtual movements when trying to pay attention to specific aspects of the environments.
 
 Throughout the test route the HTC One S only reported 27 positions. This would have resulted in extremely large virtual movements if used for VTW and the low granularity of these positions (as seen in figure \ref{vtwpositiondeltas.png}) would have meant that the user would've found it frustratingly difficult to match real world movements to virtual world equivalents in any sort of freeform exploration scenario. The MAX-6 performed substantially better in these regards, reporting 251 positions along the same route and with substantially higher granularity (also shown in figure \ref{vtwpositiondeltas.png}).
 
