@@ -272,7 +272,7 @@ As an alternate reality paradigm cross reality has its roots in work undertaken 
 \textit{``The control mechanisms worked two ways generally. There was a physical lab that had devices that were controlled by a pub/sub mechanism \ldots\ Those devices subscribed to various messages. So initially web pages controlled them \ldots\ Equally the objects generated messages when they were physically switched on and off. As SL\SLfootnote{} had an RPC interface it was possible \ldots\ to subscribe to the same messages and send requests into SL to change states of objects \ldots\ So there were lights, blinds, proximity detectors and even the tilt sensors on the laptops that were instrumented with these messages.''}
 \end{quote}
 
-It was the subsequent work of the Responsive Environments Group at MIT's Media Lab, centred around the research of Joshua Lifton in combining the Plug sensor/actuator platform~\cite{Lifton2007b} with a Second Life hosted virtual model of the physical Lab (shown in figure \ref{lifton_shadow_lab.png}) in the `Shadow Lab' project, that truly launched cross reality as an area of academic interest. The Shadow Lab project did not allow for tandem visual engagement with both constituent environments of the cross reality platform, focussing instead on the interplay of sensor data and actuator commands exchanged between the environments. This visual aspect was addressed in part by the subsequent Ubiquitous Sensor Portal project, which situated 45 I/O rich `portals' (figure \ref{ubiquitous_sensor_portal.jpg}) throughout the Lab, each with a corresponding extension in Second Life. However in stark contrast to the Shadow Lab project, these portals were not situated in a simulation of the real Lab in situations corresponding to their physical location, but instead in an abstract virtual representation with a geometric layout reflecting intellectual affiliation as opposed to real-world location.
+It was the subsequent work of the Responsive Environments Group at MIT's Media Lab, centred around the research of Joshua Lifton in combining the Plug sensor/actuator platform~\cite{Lifton2007b} with a Second Life hosted virtual model of the physical Lab (shown in figure \ref{lifton_shadow_lab.png}) in the `Shadow Lab' project, that truly launched cross reality (then referred to as dual reality~\cite{lifton:adoption}) as an area of academic interest. The Shadow Lab project did not allow for tandem visual engagement with both constituent environments of the cross reality platform, focussing instead on the interplay of sensor data and actuator commands exchanged between the environments. This visual aspect was addressed in part by the subsequent Ubiquitous Sensor Portal project, which situated 45 I/O rich `portals' (figure \ref{ubiquitous_sensor_portal.jpg}) throughout the Lab, each with a corresponding extension in Second Life. However in stark contrast to the Shadow Lab project, these portals were not situated in a simulation of the real Lab in situations corresponding to their physical location, but instead in an abstract virtual representation with a geometric layout reflecting intellectual affiliation as opposed to real-world location.
 
 \TwoFig{lifton_shadow_lab.png} {Side view of the virtual Shadow Lab~\cite{Lifton2007a}, image courtesy Joe Paradiso.} {lifton_shadow_lab.png}
        {ubiquitous_sensor_portal.jpg} {A Ubiquitous Sensor Portal\protect\footnotemark , image courtesy Joe Paradiso.} {ubiquitous_sensor_portal.jpg}
@@ -419,7 +419,9 @@ The discussion in the previous section highlighted that the first distinguishing
 	\end{center}
 \end{figure}
 
-While the parallel reality concept introduced by this thesis also features two discrete environments, one real and the other virtual, that users can freely transition between visually observing, it does not feature this bidirectional information flow between the environments (other than using sensed real position information to maintain the user's vantage point into the virtual environment). Thus, this concept could not be considered cross reality as it does not meet both of the distinguishing criteria. The term \textbf{parallel reality} is instead proposed to describe the new concept. Parallel reality is thus defined as:
+While the parallel reality concept introduced by this thesis also features two discrete environments, one real and the other virtual, that users can freely transition between visually observing, the bidirectional information flow between these environments operates in a different manner. In a cross reality system information flows both ways between the constituent environments and is processed and combined by computational means. In a parallel reality system information still flows in both directions between the environments, but it is processed and combined by the human mind, rather than through computational means. The exception to this observation is the use of sensed real position information in a parallel reality system to maintain the user's vantage point into the virtual environment.
+
+As such, the term \textbf{parallel reality} is proposed to describe this distinct concept, removing the explicit requirement for computationally processed bidirectional information flows in exchange for the implicit human combination of real and virtual information. Parallel reality is thus defined as:
 
 \begin{quote}
 	\textbf{Parallel Reality:} A system comprising two environments that the user may freely switch between, one real and the other virtual, both complete unto themselves.
@@ -545,7 +547,7 @@ Also related is the concept of \textit{involvement}, defined in this context as 
 
 \newcommand{\absencefootnote}{\footnote{\textbf{Absence} is defined as \textit{``a psychological focus on \ldots\ conceptual processing''}~\cite{Waterworth2001}, as \textit{``presence in an exclusively mental activity''}~\cite{Giuseppe2014}, with total presence (in the above definition) and total absence representing opposite poles along the continuum of the focus of attention axis~\cite{Mantovani2010}.}}
 
-Waterworth and Waterworth present the \textit{three dimensions of virtual experience} model (figure \ref{focus-locus-sensus-original}) for visualising and discussing virtual/physical experience in terms of three separate `axes of attention', one of which relates closely to the popular use of the term presence in the wider alternate reality literature~\cite{Waterworth2001}. This division of the concept of virtual/physical experience, which allows the separate consideration of which environment a user is attending to the stimuli of and how \textit{much} they are attending to these stimuli (wherever they may come from), is diagnostic in the investigation of the experience of parallel reality systems that promote the transition between the stimuli of two discrete environments, particularly where the concept of the `break in presence' is concerned (see section \ref{background-breaks-in-presence}).
+Waterworth and Waterworth present the \textit{three dimensions of virtual experience} model (reproduced in figure \ref{focus-locus-sensus-original} from the original in~\cite{Waterworth2001}) for visualising and discussing virtual/physical experience in terms of three separate `axes of attention', one of which relates closely to the popular use of the term presence in the wider alternate reality literature. This division of the concept of virtual/physical experience, which allows the separate consideration of which environment a user is attending to the stimuli of and how \textit{much} they are attending to these stimuli (wherever they may come from), is diagnostic in the investigation of the experience of parallel reality systems that promote transition between the stimuli of two discrete environments, particularly where the concept of the `break in presence' is concerned (see section \ref{background-breaks-in-presence}).
 
 \begin{figure}[h]
 	\begin{center}
@@ -598,7 +600,7 @@ Furthermore one can postulate as to the essence of Lifton's vacancy with regard 
 
 \label{transitions_in_parallel_reality}
 
-In terms of the combined Milgram/Waterworth model, the novel aspect of parallel reality can be visualised as the ability it imparts upon its user to freely switch their locus of attention between equivalent vantage points in real and virtual environments. In order to achieve the highest quality of experience with this style of interaction it is vital to determine how best to implement these transitions; that is, to mitigate the increased cognitive load (manifesting as increased conceptual reasoning and reduced perceptual processing) required to comprehend each transition, as this will detract from engagement with the environments and reduce the user's willingness to perform subsequent transitions. The ability of a parallel reality platform to mitigate the vacancy problem can be viewed as how well it reduces the deflection experienced upon the focus of attention axis from presence toward absence when performing a transition between two positions upon the locus of attention axis.
+In terms of the combined Milgram/Waterworth model, the novel aspect of parallel reality can be visualised as the ability it imparts upon its user to freely switch their locus of attention between equivalent vantage points in real and virtual environments. In order to achieve the highest quality of experience with this style of interaction it is vital to determine how best to implement these transitions; that is, to mitigate the increased cognitive load (manifesting as increased conceptual reasoning and reduced perceptual processing) required to comprehend each transition, as this will detract from engagement with the environments and reduce the user's willingness to perform subsequent transitions.
 
 %In the systems developed by this thesis the users maintain mobility, such that they can move around the two environments in tandem, thus extending existing XR platforms that featured static locations at which a user in the real environment could see into the virtual and vice-versa. This combination of unhindered mobility with the ability to transition between real and virtual stimuli thus alleviates the vacancy problem.
 
@@ -628,21 +630,11 @@ The Waterworth model considers presence in terms of attending to stimuli from ei
 
 This difference between the Steed and Waterworth uses of break in presence can be visualised by considering the axes of the combined Milgram/Waterworth model. In the Steed definition a break in presence represents a movement upon the locus of attention axis from the virtual world to the real world. In the Waterworth definition a break in presence represents a movement upon the focus of attention axis from presence to absence, regardless of position upon the locus of attention axis.
 
-Transitions between the virtual world and the real world can be implemented in multiple different manners and it is expected that users may prefer different implementations in different situations, surroundings and scenarios. Preference toward a particular implementation is posited to correlate with a less severe break in presence being experienced upon its execution. This thesis explores several different transition implementations, both in order to identify and quantify preferences toward them in general, and to infer any relationships between transition preference and particular situational states.
-
 %=========================================================================================================
 
-\subsection{Parallel Reality and the Combined Milgram/Waterworth Model}
+\subsection{Visualising Transitions and the Extended Vacancy Problem}
+
 Visualised using the combined Milgram/Waterworth model, the transitions of a parallel reality system are an oscillation between two different positions upon the locus of attention axis. Figure \ref{focus-locus-sensus-with-virtuality-continuum-with-transition} shows an example where a user performs a smooth transition between perceiving stimuli from a fully real environment and a fully virtual environment.
-
-Heightened cognitive load required to comprehend the transition is represented by a temporary movement upon the focus of attention axis from presence toward absence (a break in presence). With the ability of a wide field of view (FOV), stereoscopic 3D, head-tracked HMD (such as that used by the Mirrorshades platform developed in this thesis) to produce immersive virtual reality visual stimuli that require fairly limited cognitive processing and our inherent ability to engage with our real surroundings without significant cognitive load, focus is represented as being high (toward the presence extreme) when attending to stimuli from either the real or virtual environments.
-
-Sensus is expected to be largely task dependent, however when performing a task that involves actively engaging with the visual stimuli from either/both of the real and virtual environments it is expected to be high (toward the conscious extreme). Upon triggering a transition, sensus is expected to increase, as the user centres their attention upon relating the visual stimuli from the new environment to those they were just perceiving from the other environment
-
-%Whilst continued exposure to the platform is expected to reduce the severity of the BIPs, mitigating their severity from the outset (reducing the displacement from the presence extremum downwards toward absence) through informed execution of the transitions between RW and VR is believed to be important to the overall quality of experience that users receive.
-
-%absent-mindedness - caused by increased attention toward a single object of focus (hyperfocus, eg the object of focus is the switch)
-% or caused by distraction (again, the switch)
 
 \begin{figure}[h]
 	\begin{center}
@@ -651,6 +643,35 @@ Sensus is expected to be largely task dependent, however when performing a task 
 		\label{focus-locus-sensus-with-virtuality-continuum-with-transition}
 	\end{center}	
 \end{figure}
+
+Heightened cognitive load required to comprehend the transition is represented by a temporary movement upon the focus of attention axis from presence toward absence (a break in presence). With the ability of a wide field of view (FOV), stereoscopic 3D, head-tracked HMD (such as that used by the Mirrorshades platform developed in this thesis) to produce immersive virtual reality visual stimuli that require fairly limited cognitive processing and our inherent ability to engage with our real surroundings without significant cognitive load, focus is represented as being high (toward the presence extreme) when attending to stimuli from either the real or virtual environments.
+
+Sensus is expected to be largely task dependent, however when performing a task that involves actively engaging with the visual stimuli from either/both of the real and virtual environments it is expected to be high (toward the conscious extreme). Upon triggering a transition, sensus is expected to increase, as the user centres their attention upon relating the visual stimuli from the new environment to those they were just perceiving from the other environment.
+
+Transitions between the virtual world and the real world can be implemented in multiple different manners and it is expected that users may prefer different implementations in different situations, surroundings and scenarios. Preference toward a particular implementation is posited to correlate with a less severe break in presence being experienced upon its execution, indicating a greater reduction in the magnitude of the deflection experienced upon the focus of attention axis from presence toward absence when performing the transition.
+
+With Lifton's vacancy being visualised upon the combined model as the largely singular nature of a user's position upon the locus of attention axis (section \ref{combined-milgram-waterworth-model}) and the parallel reality concept hoping to allow users to more freely oscillate between two positions upon the locus of attention axis, success in mitigating deflections upon the focus of attention axis when performing transitions, allowing multiple positions upon the locus of attention axis to be occupied, can be related to success in mitigating vacancy. This observation leads to an extended definition of the vacancy problem:
+
+\begin{quote}
+	\textbf{The Extended Vacancy Problem} - Performing a transition between two environments upon the locus of attention axis of the combined Milgram/Waterworth model is accompanied by a deflection upon the focus of attention axis from presence towards absence.
+\end{quote}
+
+By investigating several different transition implementations, identifying and quantifying preferences toward them in different situational states, this thesis explores the relationships between transitions and the successful mitigation of the extended vacancy problem.
+
+%=========================================================================================================
+
+%\subsection{Parallel Reality and the Combined Milgram/Waterworth Model}
+
+
+
+
+
+%Whilst continued exposure to the platform is expected to reduce the severity of the BIPs, mitigating their severity from the outset (reducing the displacement from the presence extremum downwards toward absence) through informed execution of the transitions between RW and VR is believed to be important to the overall quality of experience that users receive.
+
+%absent-mindedness - caused by increased attention toward a single object of focus (hyperfocus, eg the object of focus is the switch)
+% or caused by distraction (again, the switch)
+
+
 
 %=========================================================================================================
 %=========================================================================================================
@@ -721,3 +742,5 @@ Decades of research into alternate realities has furnished us with a rich contin
 Although less thoroughly investigated, the concept of creating an alternate reality system by combining two complete environments, one real and the other virtual, into a cross reality system presents an interesting avenue for furthering alternate reality techniques and applications, in particular to addressing the vacancy problem that affects users when trying to distribute their attention between two environments. Previous cross reality research has focussed upon alleviating this vacancy problem by integrating sensor and actuator infrastructure into the constituent real and virtual environments of a system, such that actions and events in one environment could manifest into the other. However direct visual engagement with both environments was not often possible in these systems and only from predetermined, static locations.
 
 Parallel reality has been introduced as a new category of alternate reality that allows its user to visually engage with both a real and a virtual environment at any position, freely switching between them at any time. In trading the sensor/actuator infrastructure of a cross reality system for direct visual engagement with both environments, the parallel reality concept further addresses the vacancy problem by truly providing \textit{``the means to be in more than one place (reality) at a time''}\cite{Lifton2007a}.
+
+The combined Milgram/Waterworth model has been introduced as a method for visualising alternate reality experience, including those of parallel reality systems, and in relation to this model the definition of the vacancy problem has been extended to allow for the success of parallel reality systems at mitigating vacancy to be explored.
