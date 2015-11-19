@@ -22,7 +22,7 @@ These techniques provide access to locations and artefacts scattered about the w
 
 Virtual heritage techniques offer substantial benefits to collaborative investigation of heritage sites, providing multiple users with the ability to collaborate via a multitude of different visualization modalities including video see-through head-tracked HMDs, projected table surfaces, large screen displays and tracked hand-held displays, including the ability for experts physically located at a particular site to collaborate with those remote to it~\cite{benko:collaborative}. This combination of different techniques not only benefits experts, but has been used in the creation of contiguous platforms for building and managing exhibitions of 3D models of artefacts accessed in museums, galleries and via the Web~\cite{Wojciechowski2004}, focussed not only on the digitization and subsequent interaction with such content to aid in its preservation and protection, but also with making these resources as widely available as possible to any interested parties (scientists, archaeologists, curators, historians and the general public)~\cite{walczak:applications}.
 
-Even traditionally two-dimensional visual resources associated with cultural heritage can be integrated into such state-of-the-art systems, visualized via immersive CAVE (Cave Automatic Virtual Environment~\cite{Tzortzaki2002}) techniques as part of `information landscapes'~\cite{Ruffaldi2008}. Virtual heritage techniques such as these are of particular benefit to young people as cultural heritage sites often arouse little involvement in them, especially if the site's present day appearance bears few traces of its original stature and makes it difficult to appreciate its original splendour and importance~\cite{ardito:combining}.
+Even traditionally two-dimensional visual resources associated with cultural heritage can be integrated into such state-of-the-art systems, visualized via immersive CAVE (Cave Automatic Virtual Environment~\cite{Tzortzaki2002}) techniques as part of `information landscapes'~\cite{Ruffaldi2008}. Virtual heritage techniques such as these are of particular benefit to young people as cultural heritage sites often arouse little involvement in them, especially if a site's present day appearance bears few traces of its original stature and makes it difficult to appreciate its original splendour and importance~\cite{ardito:combining}.
 
 %=========================================================================================================
 
@@ -142,7 +142,7 @@ The reconstruction process involves the use of Geographic Information System (GI
 
 To date these reconstructions have been used to host workshops at 10 different schools throughout Scotland, including both primary and secondary institutions, where all requisite computing infrastructure was taken, assembled at the school, then disassembled and removed at the end of the day. Students were split into groups of 4-5, sharing a computer with screen, keyboard, mouse and Xbox controller (a control modality instantly recognised by most school students). Worksheets with tasks were used to structure their interaction with the reconstructions and guide the experiential learning process over 20-40 minute sessions (see figure \ref{linlithgow_children.jpg}). Similar workshops have also been performed in museums, using the same approach of temporary setups of computing hardware (see figure \ref{musa.jpg}). In addition to traditional computer screens, larger LCD television screens, still larger projection screens and Oculus Rift virtual reality HMDs have been used with this same content~(as seen in figure \ref{rift_exhibition.jpg}).
 
-In addition to these temporary workshops, the reconstructions have also been used in permanently installed exhibits in museums and visitor centres, including the Virtual Time Travel Project (VTTP) which combines multi-head projection with Natural User Interaction (NUI) via Microsoft Kinect and has been installed at the Timespan Museum and Arts Centre in Helmsdale. VTTP allows visitors to explore the reconstruction of the Caen Township by using simple gestures instead of relying upon a keyboard, game controller or other tangible interface, and can be seen in figure \ref{VTTP_projection.png} and in a video available to view online\footnote{\url{https://vimeo.com/90968731}}.
+Furthermore the reconstructions have also been used in permanently installed exhibits in museums and visitor centres, including the Virtual Time Travel Project (VTTP) which combines multi-head projection with Natural User Interaction (NUI) via Microsoft Kinect and has been installed at the Timespan Museum and Arts Centre in Helmsdale. VTTP allows visitors to explore the reconstruction of the Caen Township by using simple gestures instead of relying upon a keyboard, game controller or other tangible interface, and can be seen in figure \ref{VTTP_projection.png} and in a video available to view online\footnote{\url{https://vimeo.com/90968731}}.
 
 \TwoFig{linlithgow_children.jpg} {School students learning with the Linlithgow Palace reconstruction.} {linlithgow_children.jpg}
        {rift_exhibition.jpg} {Presenting reconstructions via Oculus Rift.} {rift_exhibition.jpg}
@@ -262,52 +262,13 @@ In order to control Second Life's camera in the fashion required for VTW, sensor
 
 VTW considers yaw in terms of magnetic compass bearing, as this provides a value that can be used to directly control the yaw of the virtual camera if the virtual reconstruction within OpenSim is correctly oriented to OpenSim's own compass. Magnetic compass bearings are sensed electronically via a 3-axis microelectromechanical (MEMS) magnetometer, which measures the strength of magnetic field along each of its 3 axes. By comparing the values of each axis to the known direction of the field lines of Earth's magnetic field, a compass bearing relative to the magnetometer's orientation can be calculated. Pitch is sensed using a 3-axis MEMS accelerometer, which measures force of acceleration along each of its 3 axes. In the case of static or slow moving applications, this acceleration is predominantly that caused by the Earth's gravitational pull and by comparing the values between each axis the direction of this acceleration (down toward the centre of the Earth) can be determined in relation to the orientation of the accelerometer itself and thus the accelerometer's own orientation (and that of the tablet it is attached to) can be deduced.
 
-Due to the fact that the WindPad tablet does not feature a built-in magnetometer and its built-in accelerometer is little more than a rudimentary tilt sensor for differentiating between discrete cases of landscape and portrait orientation for screen rotation, it was necessary to interface external magnetometer and accelerometer sensors. The popular Arduino\ArduinoFootnote{} microcontroller platform was used for prototyping with several different sensor packages, including the MMA8452\MMAfootnote{}, the ADXL335\ADXLfootnote{} and the HMC5883L\HMCfootnote{}. The package eventually adopted for use with VTW from this prototyping stage was the HMC6343\HMCtwoFootnote{}, which combines a 3-axis MEMS magnetometer and 3-axis MEMs accelerometer into a single package sporting an I2C serial interface, along with algorithms to internally apply the accelerometer's readings to `tilt compensate' the magnetometer's readings. Figure \ref{arduino_wiring_hmc.png} provides a wiring diagram for connectivity of a HMC6343 to an Arduino Uno R3, with the pinout values provided by table \ref{HMC6343wiringtable}, while figure \ref{arduino_joystick_for_second_life_1.jpg} shows an assembled unit.
+Due to the fact that the WindPad tablet does not feature a built-in magnetometer and its built-in accelerometer is little more than a rudimentary tilt sensor for differentiating between discrete cases of landscape and portrait orientation for screen rotation, it was necessary to interface external magnetometer and accelerometer sensors. The popular Arduino\ArduinoFootnote{} microcontroller platform was used for prototyping with several different sensor packages, including the MMA8452\MMAfootnote{}, the ADXL335\ADXLfootnote{} and the HMC5883L\HMCfootnote{}. The package eventually adopted for use with VTW from this prototyping stage was the HMC6343\HMCtwoFootnote{}, which combines a 3-axis MEMS magnetometer and 3-axis MEMs accelerometer into a single package sporting an I2C serial interface, along with algorithms to internally apply the accelerometer's readings to `tilt compensate' the magnetometer's readings. Appendix \ref{appendix-vtw-hardware} contains a hardware reference with wiring diagrams and pinout values for connectivity of a HMC6343 to an Arduino Uno R3.
 
-\begin{figure}[h]
-\centering
-  \includegraphics[width=\linewidth]{arduino_wiring_hmc.png}
-  \caption{Wiring diagram for Arduino with HMC6343.}
-  \label{arduino_wiring_hmc.png}
-\end{figure}
+%Figure \ref{arduino_wiring_hmc.png} provides a wiring diagram for connectivity of a HMC6343 to an Arduino Uno R3, with the pinout values provided by table \ref{HMC6343wiringtable}, while figure \ref{arduino_joystick_for_second_life_1.jpg} shows an assembled unit.
 
 %=====================
 
-\begin{table}
-%\begin{center}
-\begin{minipage}[c]{.45\linewidth}
-\begin{center}
-\begin{tabularx}{\textwidth}{c *{2}{>{\centering\arraybackslash}X}}
-\toprule
-\textbf{HMC6343 pin} & \textbf{Arduino Uno R3 pin} \\
-\midrule
-VCC & 5V\HMCvccFootnote{} \\
-
-GND & GND \\
-
-SDA & A4\itwocFootnote{} \\
-
-SCL & A5 \\
-\bottomrule
-\end{tabularx}
-\caption{Pin designation for figure \ref{arduino_wiring_hmc.png}.}
-\label{HMC6343wiringtable}
-\end{center}
-\end{minipage}
-%
-\begin{minipage}[c]{.02\linewidth}
-\hfill%
-\end{minipage}
-%
-\begin{minipage}[c]{.45\linewidth}
-\begin{center}
-\includegraphics[width=\linewidth]{arduino_joystick_for_second_life_1.jpg}
-\captionof{figure}{Assembled Arduino Uno R3 and HMC6343 package.}
-\label{arduino_joystick_for_second_life_1.jpg}
-\end{center}
-\end{minipage}
-%\end{center}
-\end{table}
+% figures in appendix
 
 %=====================
 
@@ -464,107 +425,15 @@ Applying the scale of the reconstruction to these values gives $\Delta$x and $\D
 
 The WindPad features an internal AzureWave GPS-M16 GPS receiver\azurewaveFootnote{}, however poor API provision and meagre documentation required the adoption of an alternative receiver. As an Arduino was already being used to provide orientation data from accelerometer and magnetometer, integrating the GPS receiver into this package such that all orientation and position data came from a single interface was prudent. After receiving input and advice from the UK High Altitude Society, \textit{``a loose collection of people who are interested in launching unmanned high altitude balloons into near space''}\habFootnote{} who make extensive use of GPS receivers for tracking their launches, the u-blox MAX-6\ubloxFootnote{} GPS receiver outfitted with a Sarantel SL-1202\sarantelFootnote{} passive antenna was chosen to provide position data for the VTW platform. The MAX-6 is of higher operational specification than the GPS-M16 and supports Satellite Based Augmentation Systems (SBAS), which improves the accuracy of location data by applying additional correction data received from networks of satellites and ground-based transmitters separate to those of the GPS satellites. These networks include the European Geostationary Navigation Overlay Service (EGNOS) that covers the UK where the VTW platform was developed and evaluated.
 
-Figure \ref{arduino_wiring_hmc_ublox.png} provides a wiring diagram for connectivity of a u-blox MAX-6 to an Arduino Uno R3, along with the HMC6343 from section \ref{OrientationControl}, with the pinout values provided by tables \ref{HMC6343_MAX6_wiringtable_HMC6343} and \ref{HMC6343_MAX6_wiringtable_MAX6}. The LED and 220$\Omega$ resistor on digital pin 12 is used for diagnostic output. The wiring shown here is for a MAX-6 breakout without I$^{2}$C connectivity, instead using Arduino's SoftwareSerial\softwareserialFootnote{} library. Figure \ref{arduino_hmc6343_u-blox_MAX-6.jpg} shows the assembled unit, comprising an Arduino Uno R3, prototyping shield, HMC6343 and MAX-6, while figure \ref{pangolin_tablet_back.jpg} shows this package attached to the back of the WindPad with the single required USB cable connecting the two.
-
-\begin{figure}[h]
-\centering
-  \includegraphics[width=\linewidth]{arduino_wiring_hmc_ublox.png}
-  \caption{Wiring diagram for Arduino with HMC6343 and u-blox MAX-6.}
-  \label{arduino_wiring_hmc_ublox.png}
-\end{figure}
-
-\begin{table}
-\begin{center}
-\begin{minipage}[t]{.45\linewidth}
-\begin{center}
-\begin{tabularx}{\textwidth}{c *{2}{>{\centering\arraybackslash}X}}
-\toprule
-\textbf{HMC6343 pin} & \textbf{Arduino Uno R3 pin} \\
-\midrule
-VCC & 5V\HMCvccFootnote{} \\
-
-GND & GND \\
-
-SDA & A4\itwocFootnote{} \\
-
-SCL & A5 \\
-\bottomrule
-\end{tabularx}
-\caption{Pin designation for figure \ref{arduino_wiring_hmc_ublox.png} (HMC6343).}
-\label{HMC6343_MAX6_wiringtable_HMC6343}
-\end{center}
-\end{minipage}
-%
-\begin{minipage}[t]{.02\linewidth}
-\hfill%
-\end{minipage}
-%
-\begin{minipage}[t]{.45\linewidth}
-\begin{center}
-\begin{tabularx}{\textwidth}{c *{2}{>{\centering\arraybackslash}X}}
-\toprule
-\textbf{MAX-6 pin} & \textbf{Arduino Uno R3 pin} \\
-\midrule
-VCC & 5V\MAXvccFootnote{} \\
-
-GND & GND \\
-
-RXD & D4 \MAXserialFootnote{}\\
-
-TXD & D5 \\
-\bottomrule
-\end{tabularx}
-\caption{Pin designation for figure \ref{arduino_wiring_hmc_ublox.png} (MAX-6).}
-\label{HMC6343_MAX6_wiringtable_MAX6}
-\end{center}
-\end{minipage}
-\end{center}
-\end{table}
-
-\TwoFig{arduino_hmc6343_u-blox_MAX-6.jpg} {Assembled Arduino/sensor package used by VTW.} {arduino_hmc6343_u-blox_MAX-6.jpg}
-       {pangolin_tablet_back.jpg} {Arduino/sensor package attached to tablet used by VTW.} {pangolin_tablet_back.jpg}
+Appendix \ref{appendix-vtw-hardware} contains a hardware reference witht wiring diagrams and pinout values for connectivity of the MAX-6 to an Arduino Uno R3.
        
 %=========================================================================================================
-
-The MAX-6 was configured as follows:
-
-\begin{enumerate}
-	\item Dynamic Platform Model set to Pedestrian.
-	\item SBAS via EGNOS enabled.
-	\item GPGLL/GPGSA/GPGSV/GPVTG messages disabled.
-	\item GPRMC/GPGGA messages enabled.
-\end{enumerate}
-
-\newpage
 
 The Dynamic Platform Models adjust how the onboard navigation engine processes the readings that the receiver produces and by choosing the correct model for the receiver's application the accuracy of position output is increased. As VTW is an application in which the user walks about an outdoor cultural heritage site, the pedestrian model is most suitable. SBAS is enabled for the EGNOS, which is available at cultural heritage sites within Scotland, in order to improve the accuracy of the position output.
 
 The output of the receiver is in the form of messages in the NMEA 0183 protocol from the National Marine Electronics Association\footnote{\url{https://www.nmea.org/content/nmea_standards/nmea_0183_v_410.asp}}. By default the MAX-6 sends many more message types than are required for VTW and as the Arduino's processing power is limited the superfluous messages were disabled. The GPRMC message format contains the recommended minimum amount of information for transit applications, including time, latitude and longitude, which covers all of the position information required by VTW.
 
 These configurations were effected by sending the MAX-6 commands encoded in the UBX protocol as arrays of hex values, which the Arduino is capable of doing at power on. For example, setting the Dynamic Platform Model to Pedestrian is performed with the code in figure \ref{arduinoMAX6hex}, where \path{sendUBX} is a function that writes to the MAX-6 using SoftwareSerial.
-
-\begin{figure}[h]
-\begin{lstlisting}[language=C, numbers=left, numberstyle=\small, stepnumber=1, frame=single, breaklines=true, backgroundcolor=\color{codebackground}, showstringspaces=false]
-uint8_t CFG_NAV5[] = {0xB5, 0x62, 0x06, 0x24, 0x24, 0x00, 0xFF, 0xFF,
-                      0x03, 0x03, 0x00, 0x00, 0x00, 0x00, 0x10, 0x27,
-                      0x00, 0x00, 0x05, 0x00, 0xFA, 0x00, 0xFA, 0x00,
-                      0x64, 0x00, 0x2C, 0x01, 0x32, 0x3C, 0x00, 0x00,
-                      0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                      0x00, 0x00, 0x00, 0x00};
-calculateUBXChecksum(CFG_NAV5, (sizeof(CFG_NAV5)/sizeof(uint8_t)));
-
-while (!success)
-{
-  sendUBX(CFG_NAV5, (sizeof(CFG_NAV5)/sizeof(uint8_t)));
-  success = getUBX_ACK(CFG_NAV5);
-}
-success = 0;
-\end{lstlisting}
-\caption{Setting MAX-6 Dynamic Platform Model to Pedestrian in an Arduino sketch.}
-\label{arduinoMAX6hex}
-\end{figure}
-
-These hex arrays can be generated by hand from the UBX protocol specification\maxProtocolFootnote{}, or by connecting the MAX-6 directly to a host computer (such as by using an Arduino as a Universal Asynchronous Receiver/Transmitter (UART) by connecting the MAX-6 to digital pins 0 and 1) and using the u-blox u-center\footnote{\url{https://u-blox.com/en/evaluation-tools-a-software/u-center/u-center.html}} software, copying the resultant config as hex messages from the relevant console window.
 
 NMEA messages from the MAX-6 are processed on the Arduino using the TinyGPS library\tinygpsFootnote{}, extracting the latitude and longitude values before combining them with magnetic compass bearing (yaw) and pitch values from the HMC6343 and sending these to the tablet via the Arduino's USB connectivity.
 
@@ -664,91 +533,7 @@ The Second Life client is written predominantly in \texttt{C++} so the Asio libr
   \label{second_life_structure.png}
 \end{figure}
 
-%=========================================================================================================
-
-\clearpage
-
-\subsection{\texttt{LLViewerSerialMovement} reference}
-Table \ref{pangolin-function-reference} provides documentation of the functions in \path{/indra/newview/LLViewerSerialMovement}.
-\begin{center}
-\begin{longtable}{ p{4.2cm}  p{10cm} }
-
-\toprule
-
-\textbf{Function} & \textbf{Description} \\
-
-\midrule
-
-%=========================================================================================================
-		
-\texttt{::connect} & Safely connects to a serial device (if not already connected). \\
-		
-\midrule
-
-%=========================================================================================================
-
-\texttt{::disconnect} & Safely disconnects from a serial device (if already connected). \\
-		
-\midrule
-
-%=========================================================================================================
-
-\texttt{::received} & A callback method registered to the \path{CallbackAsyncSerial} class in \path{/indra/newview/AsyncSerial}. This function parses the data (\path{const} \path{char} \path{*data}) from the serial device, extracting complete messages to the variable \path{mostRecentMessage}. \\
-
-& Because of the nature of the serial I/O, \path{*data} is not guaranteed to contain a discrete message from the Arduino containing both orientation and position data (it may contain a partial/incomplete message) thus this function has to parse the array and assemble discrete messages from multiple subsequent callbacks. \\
-		
-\midrule
-
-%=========================================================================================================
-
-\texttt{::update} & Called upon each iteration of \path{LLAppViwer::mainLoop()} and in turn calls \path{::updateFromMostRecentMessage()}, \path{::updateOrientation()} and \path{::updatePosition()}. \\
-		
-\midrule
-
-%=========================================================================================================
-
-\texttt{::updateFromMostRecent- Message} & Processes a complete message from the Arduino which has been assembled by \path{::received()} and extracts the constituent orientation and position values. \\
-		
-\midrule
-
-%=========================================================================================================
-
-\texttt{::updateOrientation} & Applies the orientation values extracted from an Arduino message to the avatar's camera. This is achieved by a call to \path{LLAgent::setAxes()} which calls \path{LLCoordFrame::setAxes()} in \path{/indra/llmath/LLCoordFrame}. The orientation values are passed as a quaternion, converting the bearing, pitch and roll values extracted from the Arduino message as degrees using \path{::quaternionFromDegrees()}.\\
-		
-\midrule
-
-%=========================================================================================================
-
-\texttt{::updatePosition} & Applies the position data extracted from an Arduino message to the avatar, using \path{LLAgent::startAutoPilotGlobal()} to perform smooth movement between the avatar's current position (obtained with \path{LLAgent::getPositionGlobal()}) and the new position derived from the Arduino (converted from latitude and longitude to Second Life region coordinates using \path{::latitudeLongitudeToRegionCoordinates()}). \\
-		
-\midrule
-
-%=========================================================================================================
-
-\texttt{::quaternionFromDegrees} & A helper method to convert a set of bearing, pitch and roll readings expressed separately in degrees, into a single quaternion. Quaternions are frequently used to represent rotations in 3D applications, as they do not suffer from gimbal lock; Second Life is no exception to this and internally uses quaternions for all rotation data, providing \path{/indra/llmath/LLQuaternion} for this purpose. \\
-		
-\midrule
-
-%=========================================================================================================
-
-\texttt{::latitudeLongitudeTo- RegionCoordinate} & Converts a real world position, expressed as a longitude and latitude pair, to the equivalent Second Life coordinates, applying the haversine formula using knowledge of the real world and corresponding Second Life position of the anchor point and the scale of the Second Life reconstruction compared to the real world. \\
-		
-\midrule
-
-%=========================================================================================================
-
-\texttt{::degreesToRadians} & A helper method to convert values expressed in degrees to the equivalent value expressed in radians (implementations of the haversine formula usually make use of radians). \\
-		
-\bottomrule
-
-%=========================================================================================================
-
-\caption{Reference of LLViewerSerialMovement functions.}
-\label{pangolin-function-reference}
-\end{longtable}
-\end{center}
-
-%=========================================================================================================
+Appendix \ref{appendix-vtw-software} provides a reference for the functions contained within \texttt{LLViewerSerialMovement}.
 
 Controlling the avatar's position according to latitude and longitude readings from the GPS receiver was again implemented using the haversine formula. This implementation, included as figure \ref{secondlifehaversine}, can be compared to the OpenSim region module implementation previously included as figure \ref{RegionModuleCode1}. One important difference between this Second Life client implementation and the OpenSim region module implementation is that the former uses global coordinates, rather than local coordinates\regionmodulelimitationFootnote{}. This means that the Second Life client implementation allows positional control of an avatar across region boundaries, crucial for use with a cultural heritage reconstruction that spans multiple regions in an OpenSim `megaregion'\megaregionFootnote{} such as that used for evaluation of VTW.
 
@@ -912,7 +697,7 @@ The Hausdorff distance between the planned route and that recorded by the MAX-6 
 
 The MAX-6 achieved better performance than the smartphone which recorded a Hausdorff distance of $1.33e^{-04\circ}$ ($\pm14.8$m N/S, $\pm8.2$m E/W). The Hausdorff distance between the routes logged by the MAX-6 and the smartphone was $1.14e^{-04\circ}$ ($\pm12.7$m N/S, $\pm7.0$m E/W) which represents a low correlation between the inaccuracies recorded by the two receivers even though they are of similar magnitudes from the planned route.
 
-The maximum inaccuracies were recorded when walking along the South wall of the cathedral's nave. This wall is one of the most complete sections of the building with stonework reaching some 30ft above ground level (as can be seen in figure \ref{cathedral_real_outside.jpg} and in the shadows cast in figure \ref{vtw_all_routes.png}) which provides an effective obstruction to line-of-sight to half of the sky (and thus substantially impairing reception of signals from GPS satellites) when in proximity to it. This issue has been encountered in some earlier sitsim experiments~\cite{Liestøl2014}. When considering just the sub-track shown in figure \ref{vtw_alll_routes_first_half.png}, which terminates before this wall begins to significantly obstruct view of the sky, the Hausdorff distances are notably smaller; the MAX-6 achieved a Hausdorff distance of $7.23e^{-05\circ}$ ($\pm8.05$m N/S, $\pm4.47$m E/W), with the smartphone still behind with $8.99e^{-05\circ}$ ($\pm10.01$m N/S, $\pm5.56$m E/W). Again the Hausdorff distance between the receivers showed low correlation between the inaccuracies, at $6.43e^{-05\circ}$ ($\pm7.12$m N/S, $\pm3.98$m E/W).
+The maximum inaccuracies were recorded when walking along the South wall of the cathedral's nave. This wall is one of the most complete sections of the building with stonework reaching some 30ft above ground level (as can be seen in figure \ref{cathedral_real_outside.jpg} and in the shadows cast in figure \ref{vtw_all_routes.png}) which provides an effective obstruction to line-of-sight to half of the sky (and thus substantially impairing reception of signals from GPS satellites) when in proximity to it. This issue was encountered in some earlier sitsim experiments~\cite{Liestøl2014}. When considering just the sub-track shown in figure \ref{vtw_alll_routes_first_half.png}, which terminates before this wall begins to significantly obstruct view of the sky, the Hausdorff distances are notably smaller; the MAX-6 achieved a Hausdorff distance of $7.23e^{-05\circ}$ ($\pm8.05$m N/S, $\pm4.47$m E/W), with the smartphone still behind with $8.99e^{-05\circ}$ ($\pm10.01$m N/S, $\pm5.56$m E/W). Again the Hausdorff distance between the receivers showed low correlation between the inaccuracies, at $6.43e^{-05\circ}$ ($\pm7.12$m N/S, $\pm3.98$m E/W).
  
 \begin{figure}[h]
 \centering

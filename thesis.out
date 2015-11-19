@@ -41,93 +41,94 @@
 \BOOKMARK [2][-]{subsection.3.4.2}{OpenSim Region Module}{section.3.4}% 41
 \BOOKMARK [1][-]{section.3.5}{Modifying Second Life for Orientation and Position Control}{chapter.3}% 42
 \BOOKMARK [2][-]{subsection.3.5.1}{Overview of Second Life Client Modifications}{section.3.5}% 43
-\BOOKMARK [2][-]{subsection.3.5.2}{LLViewerSerialMovement reference}{section.3.5}% 44
-\BOOKMARK [1][-]{section.3.6}{Evaluating VTW}{chapter.3}% 45
-\BOOKMARK [2][-]{subsection.3.6.1}{Evaluation Process}{section.3.6}% 46
-\BOOKMARK [2][-]{subsection.3.6.2}{GPS Performance}{section.3.6}% 47
-\BOOKMARK [2][-]{subsection.3.6.3}{Graphical Performance}{section.3.6}% 48
-\BOOKMARK [2][-]{subsection.3.6.4}{Performance Implications}{section.3.6}% 49
-\BOOKMARK [2][-]{subsection.3.6.5}{Real World Experience of VTW}{section.3.6}% 50
-\BOOKMARK [1][-]{section.3.7}{Summary}{chapter.3}% 51
-\BOOKMARK [0][-]{chapter.4}{Mirrorshades}{}% 52
-\BOOKMARK [1][-]{section.4.1}{Overview}{chapter.4}% 53
-\BOOKMARK [1][-]{section.4.2}{The Mirrorshades Platform}{chapter.4}% 54
-\BOOKMARK [2][-]{subsection.4.2.1}{St Salvator's Chapel}{section.4.2}% 55
-\BOOKMARK [1][-]{section.4.3}{Virtual Reality HMD}{chapter.4}% 56
-\BOOKMARK [2][-]{subsection.4.3.1}{The Oculus Rift DK1 and Unity Game Engine}{section.4.3}% 57
-\BOOKMARK [2][-]{subsection.4.3.2}{Modifying the DK1 for Video See-Through}{section.4.3}% 58
-\BOOKMARK [2][-]{subsection.4.3.3}{Switchable Stereoscopic Video See-Through with Unity}{section.4.3}% 59
-\BOOKMARK [2][-]{subsection.4.3.4}{Latency of DK1 Video See-Through Solution}{section.4.3}% 60
-\BOOKMARK [2][-]{subsection.4.3.5}{Constraints of DK1 Video See-Through Solution}{section.4.3}% 61
-\BOOKMARK [2][-]{subsection.4.3.6}{Registration of Camera and Unity Visuals}{section.4.3}% 62
-\BOOKMARK [1][-]{section.4.4}{Indoor Positioning System}{chapter.4}% 63
-\BOOKMARK [2][-]{subsection.4.4.1}{IPS Requirements for Mirrorshades}{section.4.4}% 64
-\BOOKMARK [2][-]{subsection.4.4.2}{PlayStation Move}{section.4.4}% 65
-\BOOKMARK [2][-]{subsection.4.4.3}{Indoor Atlas}{section.4.4}% 66
-\BOOKMARK [1][-]{section.4.5}{Mobile Client}{chapter.4}% 67
-\BOOKMARK [2][-]{subsection.4.5.1}{Integrating IndoorAtlas and Unity}{section.4.5}% 68
-\BOOKMARK [1][-]{section.4.6}{Design Considerations for RW/VR Transitions}{chapter.4}% 69
-\BOOKMARK [2][-]{subsection.4.6.1}{Control Mechanism for Transitions}{section.4.6}% 70
-\BOOKMARK [1][-]{section.4.7}{Transition Types}{chapter.4}% 71
-\BOOKMARK [2][-]{subsection.4.7.1}{Hard transition}{section.4.7}% 72
-\BOOKMARK [2][-]{subsection.4.7.2}{Transition with linear interpolation}{section.4.7}% 73
-\BOOKMARK [2][-]{subsection.4.7.3}{Analogue selectable opacity}{section.4.7}% 74
-\BOOKMARK [2][-]{subsection.4.7.4}{Periodic hard transitions}{section.4.7}% 75
-\BOOKMARK [2][-]{subsection.4.7.5}{Reduced maximum opacity}{section.4.7}% 76
-\BOOKMARK [1][-]{section.4.8}{The Assembled Mirrorshades Parallel Reality Platform}{chapter.4}% 77
-\BOOKMARK [2][-]{subsection.4.8.1}{Hardware Components}{section.4.8}% 78
-\BOOKMARK [2][-]{subsection.4.8.2}{Software Components}{section.4.8}% 79
-\BOOKMARK [2][-]{subsection.4.8.3}{Execution}{section.4.8}% 80
-\BOOKMARK [1][-]{section.4.9}{Initial Testing}{chapter.4}% 81
-\BOOKMARK [1][-]{section.4.10}{Summary}{chapter.4}% 82
-\BOOKMARK [0][-]{chapter.5}{Evaluation: Merit of Parallel Reality}{}% 83
-\BOOKMARK [1][-]{section.5.1}{Overview}{chapter.5}% 84
-\BOOKMARK [1][-]{section.5.2}{Stage 1 - Merit of Parallel Reality}{chapter.5}% 85
-\BOOKMARK [2][-]{subsection.5.2.1}{Design of the Scenarios}{section.5.2}% 86
-\BOOKMARK [2][-]{subsection.5.2.2}{Evaluation Techniques}{section.5.2}% 87
-\BOOKMARK [1][-]{section.5.3}{Stage 1 Results}{chapter.5}% 88
-\BOOKMARK [2][-]{subsection.5.3.1}{SUS}{section.5.3}% 89
-\BOOKMARK [2][-]{subsection.5.3.2}{Likert-type Questionnaires}{section.5.3}% 90
-\BOOKMARK [2][-]{subsection.5.3.3}{Interview Transcripts}{section.5.3}% 91
-\BOOKMARK [2][-]{subsection.5.3.4}{Log Data}{section.5.3}% 92
-\BOOKMARK [2][-]{subsection.5.3.5}{Graphical Performance}{section.5.3}% 93
-\BOOKMARK [2][-]{subsection.5.3.6}{IndoorAtlas Performance}{section.5.3}% 94
-\BOOKMARK [2][-]{subsection.5.3.7}{Freeform Exploration and Detailed Comparison}{section.5.3}% 95
-\BOOKMARK [1][-]{section.5.4}{Summary}{chapter.5}% 96
-\BOOKMARK [0][-]{chapter.6}{Evaluation: Informed Parallel Reality}{}% 97
-\BOOKMARK [1][-]{section.6.1}{Overview}{chapter.6}% 98
-\BOOKMARK [1][-]{section.6.2}{Evaluation Techniques}{chapter.6}% 99
-\BOOKMARK [2][-]{subsection.6.2.1}{Presence Questionnaires}{section.6.2}% 100
-\BOOKMARK [2][-]{subsection.6.2.2}{The Igroup Presence Questionnaire}{section.6.2}% 101
-\BOOKMARK [1][-]{section.6.3}{Stage 2.1 - Evaluating Transition styles}{chapter.6}% 102
-\BOOKMARK [1][-]{section.6.4}{Stage 2.1 Results}{chapter.6}% 103
-\BOOKMARK [2][-]{subsection.6.4.1}{Likert-type Questionnaires}{section.6.4}% 104
-\BOOKMARK [2][-]{subsection.6.4.2}{Interview Transcripts}{section.6.4}% 105
-\BOOKMARK [2][-]{subsection.6.4.3}{Log Data}{section.6.4}% 106
-\BOOKMARK [2][-]{subsection.6.4.4}{IPQ}{section.6.4}% 107
-\BOOKMARK [2][-]{subsection.6.4.5}{Graphical Performance}{section.6.4}% 108
-\BOOKMARK [2][-]{subsection.6.4.6}{IndoorAtlas Performance}{section.6.4}% 109
-\BOOKMARK [2][-]{subsection.6.4.7}{Stage 2.1 Summary}{section.6.4}% 110
-\BOOKMARK [1][-]{section.6.5}{Stage 2.2 - Default Views}{chapter.6}% 111
-\BOOKMARK [1][-]{section.6.6}{Stage 2.2 Results}{chapter.6}% 112
-\BOOKMARK [2][-]{subsection.6.6.1}{Likert-type Questionnaires}{section.6.6}% 113
-\BOOKMARK [2][-]{subsection.6.6.2}{Interview Transcripts}{section.6.6}% 114
-\BOOKMARK [2][-]{subsection.6.6.3}{Log Data}{section.6.6}% 115
-\BOOKMARK [2][-]{subsection.6.6.4}{IPQ}{section.6.6}% 116
-\BOOKMARK [2][-]{subsection.6.6.5}{Graphical Performance}{section.6.6}% 117
-\BOOKMARK [2][-]{subsection.6.6.6}{IndoorAtlas Performance}{section.6.6}% 118
-\BOOKMARK [2][-]{subsection.6.6.7}{Stage 2.2 Summary}{section.6.6}% 119
-\BOOKMARK [1][-]{section.6.7}{Best Practices for Parallel Reality}{chapter.6}% 120
-\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 121
-\BOOKMARK [1][-]{section.7.1}{Contributions}{chapter.7}% 122
-\BOOKMARK [1][-]{section.7.2}{Future Work}{chapter.7}% 123
-\BOOKMARK [1][-]{section.7.3}{Final Thoughts}{chapter.7}% 124
-\BOOKMARK [0][-]{chapter*.159}{Appendices}{}% 125
-\BOOKMARK [0][-]{Appendix.1.A}{Stage 1 Evaluation 12-item Likert-type Questionnaire}{}% 126
-\BOOKMARK [0][-]{Appendix.1.B}{Stage 1 Interview Prompts}{}% 127
-\BOOKMARK [0][-]{Appendix.1.C}{Stage 2.1 12-item Likert-type Questionnaire}{}% 128
-\BOOKMARK [0][-]{Appendix.1.D}{Stage 2.2 9-item Likert-type Questionnaire}{}% 129
-\BOOKMARK [0][-]{Appendix.1.E}{Stage 2.1 Interview Prompts}{}% 130
-\BOOKMARK [0][-]{Appendix.1.F}{Stage 2.2 Interview Prompts}{}% 131
-\BOOKMARK [0][-]{Appendix.1.G}{Igroup Presence Questionnaire \(IPQ\)}{}% 132
-\BOOKMARK [0][-]{Appendix.1.G}{Bibliography}{}% 133
+\BOOKMARK [1][-]{section.3.6}{Evaluating VTW}{chapter.3}% 44
+\BOOKMARK [2][-]{subsection.3.6.1}{Evaluation Process}{section.3.6}% 45
+\BOOKMARK [2][-]{subsection.3.6.2}{GPS Performance}{section.3.6}% 46
+\BOOKMARK [2][-]{subsection.3.6.3}{Graphical Performance}{section.3.6}% 47
+\BOOKMARK [2][-]{subsection.3.6.4}{Performance Implications}{section.3.6}% 48
+\BOOKMARK [2][-]{subsection.3.6.5}{Real World Experience of VTW}{section.3.6}% 49
+\BOOKMARK [1][-]{section.3.7}{Summary}{chapter.3}% 50
+\BOOKMARK [0][-]{chapter.4}{Mirrorshades}{}% 51
+\BOOKMARK [1][-]{section.4.1}{Overview}{chapter.4}% 52
+\BOOKMARK [1][-]{section.4.2}{The Mirrorshades Platform}{chapter.4}% 53
+\BOOKMARK [2][-]{subsection.4.2.1}{St Salvator's Chapel}{section.4.2}% 54
+\BOOKMARK [1][-]{section.4.3}{Virtual Reality HMD}{chapter.4}% 55
+\BOOKMARK [2][-]{subsection.4.3.1}{The Oculus Rift DK1 and Unity Game Engine}{section.4.3}% 56
+\BOOKMARK [2][-]{subsection.4.3.2}{Modifying the DK1 for Video See-Through}{section.4.3}% 57
+\BOOKMARK [2][-]{subsection.4.3.3}{Switchable Stereoscopic Video See-Through with Unity}{section.4.3}% 58
+\BOOKMARK [2][-]{subsection.4.3.4}{Latency of DK1 Video See-Through Solution}{section.4.3}% 59
+\BOOKMARK [2][-]{subsection.4.3.5}{Constraints of DK1 Video See-Through Solution}{section.4.3}% 60
+\BOOKMARK [2][-]{subsection.4.3.6}{Registration of Camera and Unity Visuals}{section.4.3}% 61
+\BOOKMARK [1][-]{section.4.4}{Indoor Positioning System}{chapter.4}% 62
+\BOOKMARK [2][-]{subsection.4.4.1}{IPS Requirements for Mirrorshades}{section.4.4}% 63
+\BOOKMARK [2][-]{subsection.4.4.2}{PlayStation Move}{section.4.4}% 64
+\BOOKMARK [2][-]{subsection.4.4.3}{Indoor Atlas}{section.4.4}% 65
+\BOOKMARK [1][-]{section.4.5}{Mobile Client}{chapter.4}% 66
+\BOOKMARK [2][-]{subsection.4.5.1}{Integrating IndoorAtlas and Unity}{section.4.5}% 67
+\BOOKMARK [1][-]{section.4.6}{Design Considerations for RW/VR Transitions}{chapter.4}% 68
+\BOOKMARK [2][-]{subsection.4.6.1}{Control Mechanism for Transitions}{section.4.6}% 69
+\BOOKMARK [1][-]{section.4.7}{Transition Types}{chapter.4}% 70
+\BOOKMARK [2][-]{subsection.4.7.1}{Hard transition}{section.4.7}% 71
+\BOOKMARK [2][-]{subsection.4.7.2}{Transition with linear interpolation}{section.4.7}% 72
+\BOOKMARK [2][-]{subsection.4.7.3}{Analogue selectable opacity}{section.4.7}% 73
+\BOOKMARK [2][-]{subsection.4.7.4}{Periodic hard transitions}{section.4.7}% 74
+\BOOKMARK [2][-]{subsection.4.7.5}{Reduced maximum opacity}{section.4.7}% 75
+\BOOKMARK [1][-]{section.4.8}{The Assembled Mirrorshades Parallel Reality Platform}{chapter.4}% 76
+\BOOKMARK [2][-]{subsection.4.8.1}{Hardware Components}{section.4.8}% 77
+\BOOKMARK [2][-]{subsection.4.8.2}{Software Components}{section.4.8}% 78
+\BOOKMARK [2][-]{subsection.4.8.3}{Execution}{section.4.8}% 79
+\BOOKMARK [1][-]{section.4.9}{Initial Testing}{chapter.4}% 80
+\BOOKMARK [1][-]{section.4.10}{Summary}{chapter.4}% 81
+\BOOKMARK [0][-]{chapter.5}{Evaluation: Merit of Parallel Reality}{}% 82
+\BOOKMARK [1][-]{section.5.1}{Overview}{chapter.5}% 83
+\BOOKMARK [1][-]{section.5.2}{Stage 1 - Merit of Parallel Reality}{chapter.5}% 84
+\BOOKMARK [2][-]{subsection.5.2.1}{Design of the Scenarios}{section.5.2}% 85
+\BOOKMARK [2][-]{subsection.5.2.2}{Evaluation Techniques}{section.5.2}% 86
+\BOOKMARK [1][-]{section.5.3}{Stage 1 Results}{chapter.5}% 87
+\BOOKMARK [2][-]{subsection.5.3.1}{SUS}{section.5.3}% 88
+\BOOKMARK [2][-]{subsection.5.3.2}{Likert-type Questionnaires}{section.5.3}% 89
+\BOOKMARK [2][-]{subsection.5.3.3}{Interview Transcripts}{section.5.3}% 90
+\BOOKMARK [2][-]{subsection.5.3.4}{Log Data}{section.5.3}% 91
+\BOOKMARK [2][-]{subsection.5.3.5}{Graphical Performance}{section.5.3}% 92
+\BOOKMARK [2][-]{subsection.5.3.6}{IndoorAtlas Performance}{section.5.3}% 93
+\BOOKMARK [2][-]{subsection.5.3.7}{Freeform Exploration and Detailed Comparison}{section.5.3}% 94
+\BOOKMARK [1][-]{section.5.4}{Summary}{chapter.5}% 95
+\BOOKMARK [0][-]{chapter.6}{Evaluation: Informed Parallel Reality}{}% 96
+\BOOKMARK [1][-]{section.6.1}{Overview}{chapter.6}% 97
+\BOOKMARK [1][-]{section.6.2}{Evaluation Techniques}{chapter.6}% 98
+\BOOKMARK [2][-]{subsection.6.2.1}{Presence Questionnaires}{section.6.2}% 99
+\BOOKMARK [2][-]{subsection.6.2.2}{The Igroup Presence Questionnaire}{section.6.2}% 100
+\BOOKMARK [1][-]{section.6.3}{Stage 2.1 - Evaluating Transition styles}{chapter.6}% 101
+\BOOKMARK [1][-]{section.6.4}{Stage 2.1 Results}{chapter.6}% 102
+\BOOKMARK [2][-]{subsection.6.4.1}{Likert-type Questionnaires}{section.6.4}% 103
+\BOOKMARK [2][-]{subsection.6.4.2}{Interview Transcripts}{section.6.4}% 104
+\BOOKMARK [2][-]{subsection.6.4.3}{Log Data}{section.6.4}% 105
+\BOOKMARK [2][-]{subsection.6.4.4}{IPQ}{section.6.4}% 106
+\BOOKMARK [2][-]{subsection.6.4.5}{Graphical Performance}{section.6.4}% 107
+\BOOKMARK [2][-]{subsection.6.4.6}{IndoorAtlas Performance}{section.6.4}% 108
+\BOOKMARK [2][-]{subsection.6.4.7}{Stage 2.1 Summary}{section.6.4}% 109
+\BOOKMARK [1][-]{section.6.5}{Stage 2.2 - Default Views}{chapter.6}% 110
+\BOOKMARK [1][-]{section.6.6}{Stage 2.2 Results}{chapter.6}% 111
+\BOOKMARK [2][-]{subsection.6.6.1}{Likert-type Questionnaires}{section.6.6}% 112
+\BOOKMARK [2][-]{subsection.6.6.2}{Interview Transcripts}{section.6.6}% 113
+\BOOKMARK [2][-]{subsection.6.6.3}{Log Data}{section.6.6}% 114
+\BOOKMARK [2][-]{subsection.6.6.4}{IPQ}{section.6.6}% 115
+\BOOKMARK [2][-]{subsection.6.6.5}{Graphical Performance}{section.6.6}% 116
+\BOOKMARK [2][-]{subsection.6.6.6}{IndoorAtlas Performance}{section.6.6}% 117
+\BOOKMARK [2][-]{subsection.6.6.7}{Stage 2.2 Summary}{section.6.6}% 118
+\BOOKMARK [1][-]{section.6.7}{Best Practices for Parallel Reality}{chapter.6}% 119
+\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 120
+\BOOKMARK [1][-]{section.7.1}{Contributions}{chapter.7}% 121
+\BOOKMARK [1][-]{section.7.2}{Future Work}{chapter.7}% 122
+\BOOKMARK [1][-]{section.7.3}{Final Thoughts}{chapter.7}% 123
+\BOOKMARK [0][-]{chapter*.153}{Appendices}{}% 124
+\BOOKMARK [0][-]{Appendix.1.A}{VTW Hardware Reference}{}% 125
+\BOOKMARK [0][-]{Appendix.1.B}{LLViewerSerialMovement reference}{}% 126
+\BOOKMARK [0][-]{Appendix.1.C}{Stage 1 Evaluation 12-item Likert-type Questionnaire}{}% 127
+\BOOKMARK [0][-]{Appendix.1.D}{Stage 1 Interview Prompts}{}% 128
+\BOOKMARK [0][-]{Appendix.1.E}{Stage 2.1 12-item Likert-type Questionnaire}{}% 129
+\BOOKMARK [0][-]{Appendix.1.F}{Stage 2.2 9-item Likert-type Questionnaire}{}% 130
+\BOOKMARK [0][-]{Appendix.1.G}{Stage 2.1 Interview Prompts}{}% 131
+\BOOKMARK [0][-]{Appendix.1.H}{Stage 2.2 Interview Prompts}{}% 132
+\BOOKMARK [0][-]{Appendix.1.I}{Igroup Presence Questionnaire \(IPQ\)}{}% 133
+\BOOKMARK [0][-]{Appendix.1.I}{Bibliography}{}% 134
