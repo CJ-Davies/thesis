@@ -1,0 +1,49 @@
+\begin{figure}[h]
+\begin{lstlisting}[language=C++, numbers=left, numberstyle=\small, stepnumber=1, frame=single, breaklines=true, backgroundcolor=\color{codebackground}, showstringspaces=false]
+boost::tuple<float, float, float> LLViewerSerialMovement::latitudeLongitudeToRegionCoordinate(double newLat, double newLong, float anchorLat, float anchorLong, float scale, boost::tuple<float, float, float> anchorCoordinates) {
+
+    double d, a, c, X, Y;
+
+    // calculate difference in y (latitude) between anchor & new reading
+    d = fabs(degreesToRadians(newLat - anchorLat));
+    a = sin(d / 2) * sin(d / 2);
+    c = 2 * atan2(sqrt(a), sqrt(1 - a));
+
+    // mean radius of the Earth is 6371km (6371000m)
+    d = 6371000 * c;
+
+    // apply scale
+    d *= scale;
+
+    // sum appropriately from the anchor
+    if (newLat > anchorLat) {
+        Y = (anchorCoordinates.get<1>() + d);
+    }
+    else {
+        Y = (anchorCoordinates.get<1>() - d);
+    }
+
+    // calculate difference in x (longitude) between anchor & new reading
+    d = fabs(degreesToRadians((newLong - anchorLong)));
+    a = sin(d / 2) * sin(d / 2) * cos(degreesToRadians(newLat)) * cos(degreesToRadians(anchorLat));
+    c = 2 * atan2(sqrt(a), sqrt(1 - a));
+    
+    d = 6371000 * c;
+
+    // apply scale
+    d *= scale;
+
+    // sum appropriately from anchor
+    if (newLong > anchorLong) {
+        X = (anchorCoordinates.get<0>() + d);
+    }
+    else {
+        X = (anchorCoordinates.get<0>() - d);
+    }
+
+    return boost::make_tuple(X, Y, anchorCoordinates.get<2>());
+}
+\end{lstlisting}
+\caption{Converting longitude and latitude to Second Life coordinates using haversine in modified Second Life codebase.}
+\label{secondlifehaversine}
+\end{figure}

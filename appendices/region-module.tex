@@ -1,0 +1,30 @@
+\begin{figure}[h]
+\begin{lstlisting}[language=Java, numbers=left, numberstyle=\small, stepnumber=1, frame=single, breaklines=true, backgroundcolor=\color{codebackground}, showstringspaces=false]
+private Vector3 LatitudeLongitudeToRegionCoordinate(double newLat, double newLong, double anchorLat, double anchorLong, Vector3 anchorVector, double scale) {
+
+    double d, a, c, X, Y;
+
+    //calculate the difference in y (latitude) between the anchor & the new reading
+    d = Math.Abs(ToRadians(newLat - anchorLat));
+    a = Math.Sin(d / 2) * Math.Sin(d / 2);
+    c = 2 * Math.Atan2(Math.Sqrt(a), Math.Sqrt(1 - a));
+
+    //mean radius of the Earth is 6371km (6371000m)
+    d = 6371000 * c;
+
+    //apply scale
+    d *= scale;
+
+    //sum appropriately from the anchor
+    if (newLat > anchorLat) {
+        mlog.DebugFormat("[GPSAvatarModule]: LatitudeLongitudeToRegionCoordinate() - (Y) newLat > anchorLat.");
+        Y = (anchorVector.Y + d);
+    }
+    else {
+        mlog.DebugFormat("[GPSAvatarModule]: LatitudeLongitudeToRegionCoordinate() - (Y) newLat < anchorLat.");
+        Y = (anchorVector.Y - d);
+    }
+\end{lstlisting}
+\caption{Excerpt of OpenSim Region Module for avatar movement via GPS.}
+\label{RegionModuleCode1}
+\end{figure}
