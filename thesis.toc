@@ -59,12 +59,12 @@
 \contentsline {subsection}{\numberline {4.3.2}Modifying the DK1 for Video See-Through}{102}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}Switchable Stereoscopic Video See-Through with Unity}{108}{subsection.4.3.3}
 \contentsline {subsection}{\numberline {4.3.4}Latency of DK1 Video See-Through Solution}{111}{subsection.4.3.4}
-\contentsline {subsection}{\numberline {4.3.5}Constraints of DK1 Video See-Through Solution}{112}{subsection.4.3.5}
-\contentsline {subsection}{\numberline {4.3.6}Registration of Camera and Unity Visuals}{114}{subsection.4.3.6}
+\contentsline {subsection}{\numberline {4.3.5}Constraints of DK1 Video See-Through Solution}{113}{subsection.4.3.5}
+\contentsline {subsection}{\numberline {4.3.6}Registration of Camera and Unity Visuals}{115}{subsection.4.3.6}
 \contentsline {section}{\numberline {4.4}Indoor Positioning System}{116}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}IPS Requirements for Mirrorshades}{116}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}PlayStation Move}{118}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Indoor Atlas}{119}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.1}IPS Requirements for Mirrorshades}{117}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}PlayStation Move}{119}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Indoor Atlas}{120}{subsection.4.4.3}
 \contentsline {section}{\numberline {4.5}Mobile Client}{123}{section.4.5}
 \contentsline {subsection}{\numberline {4.5.1}Integrating IndoorAtlas and Unity}{124}{subsection.4.5.1}
 \contentsline {section}{\numberline {4.6}Design Considerations for RW/VR Transitions}{127}{section.4.6}
@@ -92,8 +92,8 @@
 \contentsline {subsection}{\numberline {5.3.3}Interview Transcripts}{148}{subsection.5.3.3}
 \contentsline {subsection}{\numberline {5.3.4}Log Data}{150}{subsection.5.3.4}
 \contentsline {subsubsection}{Comparing seated and parallel reality scenarios}{150}{subsection.5.3.4}
-\contentsline {subsubsection}{Comparing RW and VR periods within parallel reality scenario}{154}{figure.caption.108}
-\contentsline {subsubsection}{Comparing VR periods of parallel reality scenario to VR section of seated VR scenario}{156}{table.caption.112}
+\contentsline {subsubsection}{Comparing RW and VR periods within parallel reality scenario}{154}{figure.caption.109}
+\contentsline {subsubsection}{Comparing VR periods of parallel reality scenario to VR section of seated VR scenario}{156}{table.caption.113}
 \contentsline {subsection}{\numberline {5.3.5}Graphical Performance}{157}{subsection.5.3.5}
 \contentsline {subsection}{\numberline {5.3.6}IndoorAtlas Performance}{158}{subsection.5.3.6}
 \contentsline {subsection}{\numberline {5.3.7}Freeform Exploration and Detailed Comparison}{159}{subsection.5.3.7}
@@ -109,10 +109,10 @@
 \contentsline {subsection}{\numberline {6.4.2}Interview Transcripts}{171}{subsection.6.4.2}
 \contentsline {subsection}{\numberline {6.4.3}Log Data}{172}{subsection.6.4.3}
 \contentsline {subsubsection}{Considering all scenarios (seated VR and both parallel reality scenarios)}{172}{subsection.6.4.3}
-\contentsline {subsubsection}{Comparing RW and VR periods within parallel reality scenarios}{174}{figure.caption.123}
-\contentsline {subsubsection}{Experimenting With Transition Styles}{176}{table.caption.126}
-\contentsline {subsubsection}{Walking and Head Movement}{178}{figure.caption.129}
-\contentsline {subsubsection}{Use of Intermediary Opacities}{181}{figure.caption.131}
+\contentsline {subsubsection}{Comparing RW and VR periods within parallel reality scenarios}{174}{figure.caption.124}
+\contentsline {subsubsection}{Experimenting With Transition Styles}{176}{table.caption.127}
+\contentsline {subsubsection}{Walking and Head Movement}{178}{figure.caption.130}
+\contentsline {subsubsection}{Use of Intermediary Opacities}{181}{figure.caption.132}
 \contentsline {subsection}{\numberline {6.4.4}IPQ}{182}{subsection.6.4.4}
 \contentsline {subsection}{\numberline {6.4.5}Graphical Performance}{183}{subsection.6.4.5}
 \contentsline {subsection}{\numberline {6.4.6}IndoorAtlas Performance}{184}{subsection.6.4.6}
@@ -123,8 +123,8 @@
 \contentsline {subsection}{\numberline {6.6.2}Interview Transcripts}{189}{subsection.6.6.2}
 \contentsline {subsection}{\numberline {6.6.3}Log Data}{190}{subsection.6.6.3}
 \contentsline {subsubsection}{Considering all scenarios (seated VR and parallel reality)}{190}{subsection.6.6.3}
-\contentsline {subsubsection}{Comparing Between 75/25 and 50/50 Scenarios}{192}{figure.caption.140}
-\contentsline {subsubsection}{Walking and Head Movement}{194}{figure.caption.145}
+\contentsline {subsubsection}{Comparing Between 75/25 and 50/50 Scenarios}{192}{figure.caption.141}
+\contentsline {subsubsection}{Walking and Head Movement}{194}{figure.caption.146}
 \contentsline {subsection}{\numberline {6.6.4}IPQ}{195}{subsection.6.6.4}
 \contentsline {subsection}{\numberline {6.6.5}Graphical Performance}{197}{subsection.6.6.5}
 \contentsline {subsection}{\numberline {6.6.6}IndoorAtlas Performance}{198}{subsection.6.6.6}
@@ -134,7 +134,7 @@
 \contentsline {section}{\numberline {7.1}Contributions}{202}{section.7.1}
 \contentsline {section}{\numberline {7.2}Future Work}{203}{section.7.2}
 \contentsline {section}{\numberline {7.3}Final Thoughts}{206}{section.7.3}
-\contentsline {chapter}{Appendices}{207}{chapter*.152}
+\contentsline {chapter}{Appendices}{207}{chapter*.153}
 \contentsline {chapter}{\numberline {A}VTW Hardware Reference}{208}{Appendix.1.A}
 \contentsline {chapter}{\numberline {B}\texttt {LLViewerSerialMovement} reference}{211}{Appendix.1.B}
 \contentsline {chapter}{\numberline {C}OpenSim Region Module GPS excerpt}{213}{Appendix.1.C}
