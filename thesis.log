@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.16)  23 NOV 2015 21:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.16)  24 NOV 2015 21:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1449,9 +1449,9 @@ Package pdftex.def Info: 05_mirrorshades_design_implementation/images/participa
 nt-f-5.jpg used on input line 91.
 (pdftex.def)             Requested size: 426.79135pt x 239.98096pt.
  [96 <./05_mirrorshades_design_implementation/images/system-architecture.png> <
-./05_mirrorshades_design_implementation/images/participant-f-5.jpg>]
+./05_mirrorshades_design_implementation/images/participant-f-5.jpg>] [97]
 <05_mirrorshades_design_implementation/images/sallies-vrst/sallies-quad-real.jp
-g, id=2315, 246.6816pt x 157.7895pt>
+g, id=2321, 246.6816pt x 157.7895pt>
 File: 05_mirrorshades_design_implementation/images/sallies-vrst/sallies-quad-re
 al.jpg Graphic file (type jpg)
 
@@ -1462,7 +1462,7 @@ rst/sallies-quad-real.jpg used on input line 119.
 (pdftex.def)             Requested size: 209.1301pt x 133.77258pt.
 
 <05_mirrorshades_design_implementation/images/sallies-vrst/sallies-quad-virtual
-.png, id=2316, 1927.2pt x 1056.94875pt>
+.png, id=2322, 1927.2pt x 1056.94875pt>
 File: 05_mirrorshades_design_implementation/images/sallies-vrst/sallies-quad-vi
 rtual.png Graphic file (type png)
 
@@ -1487,7 +1487,7 @@ tual.png>
 Package pdftex.def Info: 05_mirrorshades_design_implementation/images/sallies-v
 rst/sallies-quad-virtual.png used on input line 119.
 (pdftex.def)             Requested size: 209.1108pt x 114.6842pt.
- [97]
+
 <05_mirrorshades_design_implementation/images/sallies-vrst/sallies-real-toward-
 altar.jpg, id=2323, 1084.05pt x 722.7pt>
 File: 05_mirrorshades_design_implementation/images/sallies-vrst/sallies-real-to
@@ -1525,9 +1525,13 @@ toward-altar.png>
 Package pdftex.def Info: 05_mirrorshades_design_implementation/images/sallies-v
 rst/sallies-virtual-toward-altar.png used on input line 124.
 (pdftex.def)             Requested size: 209.1108pt x 114.6842pt.
-
+ [98 <./05_mirrorshades_design_implementation/images/sallies-vrst/sallies-quad-
+real.jpg> <./05_mirrorshades_design_implementation/images/sallies-vrst/sallies-
+quad-virtual.png> <./05_mirrorshades_design_implementation/images/sallies-vrst/
+sallies-real-toward-altar.jpg> <./05_mirrorshades_design_implementation/images/
+sallies-vrst/sallies-virtual-toward-altar.png>]
 <05_mirrorshades_design_implementation/images/sallies-vrst/sallies-real-from-al
-tar.jpg, id=2325, 1027.84pt x 685.56125pt>
+tar.jpg, id=2329, 1027.84pt x 685.56125pt>
 File: 05_mirrorshades_design_implementation/images/sallies-vrst/sallies-real-fr
 om-altar.jpg Graphic file (type jpg)
 
@@ -1538,7 +1542,7 @@ rst/sallies-real-from-altar.jpg used on input line 131.
 (pdftex.def)             Requested size: 209.1301pt x 139.48442pt.
 
 <05_mirrorshades_design_implementation/images/sallies-vrst/sallies-virtual-from
--altar.png, id=2326, 1927.2pt x 1056.94875pt>
+-altar.png, id=2330, 1927.2pt x 1056.94875pt>
 File: 05_mirrorshades_design_implementation/images/sallies-vrst/sallies-virtual
 -from-altar.png Graphic file (type png)
 
@@ -1568,13 +1572,9 @@ Underfull \hbox (badness 1371) in paragraph at lines 131--131
 \OT1/cmr/m/n/10 re-con-struc-tion (note closer po-si-tion of rood
  []
 
-[98 <./05_mirrorshades_design_implementation/images/sallies-vrst/sallies-quad-r
-eal.jpg> <./05_mirrorshades_design_implementation/images/sallies-vrst/sallies-q
-uad-virtual.png> <./05_mirrorshades_design_implementation/images/sallies-vrst/s
-allies-real-toward-altar.jpg> <./05_mirrorshades_design_implementation/images/s
-allies-vrst/sallies-virtual-toward-altar.png>] [99 <./05_mirrorshades_design_im
-plementation/images/sallies-vrst/sallies-real-from-altar.jpg> <./05_mirrorshade
-s_design_implementation/images/sallies-vrst/sallies-virtual-from-altar.png>]
+[99 <./05_mirrorshades_design_implementation/images/sallies-vrst/sallies-real-f
+rom-altar.jpg> <./05_mirrorshades_design_implementation/images/sallies-vrst/sal
+lies-virtual-from-altar.png>]
 <05_mirrorshades_design_implementation/images/rheingold-virtual-reality.jpg, id
 =2343, 152.2488pt x 216.81pt>
 File: 05_mirrorshades_design_implementation/images/rheingold-virtual-reality.jp
@@ -1633,8 +1633,9 @@ Underfull \hbox (badness 2237) in paragraph at lines 190--190
 
 [103 <./05_mirrorshades_design_implementation/images/rift-pseye-ziptied.jpg> <.
 /05_mirrorshades_design_implementation/images/floating-webcam-window.png>]
+[104]
 <05_mirrorshades_design_implementation/images/rift-clips-cameras/lens-compariso
-n-on-ps3eye-pcb.jpg, id=2400, 1027.84pt x 578.16pt>
+n-on-ps3eye-pcb.jpg, id=2407, 1027.84pt x 578.16pt>
 File: 05_mirrorshades_design_implementation/images/rift-clips-cameras/lens-comp
 arison-on-ps3eye-pcb.jpg Graphic file (type jpg)
 
@@ -1644,7 +1645,7 @@ Package pdftex.def Info: 05_mirrorshades_design_implementation/images/rift-clip
 s-cameras/lens-comparison-on-ps3eye-pcb.jpg used on input line 222.
 (pdftex.def)             Requested size: 209.1301pt x 117.63254pt.
 
-<05_mirrorshades_design_implementation/images/fov-comparison-1.png, id=2401, 12
+<05_mirrorshades_design_implementation/images/fov-comparison-1.png, id=2408, 12
 84.8pt x 722.7pt>
 File: 05_mirrorshades_design_implementation/images/fov-comparison-1.png Graphic
  file (type png)
@@ -1669,7 +1670,6 @@ Package pdftex.def Info: 05_mirrorshades_design_implementation/images/fov-compa
 rison-1.png used on input line 222.
 (pdftex.def)             Requested size: 209.1206pt x 117.63033pt.
 
-[104]
 <05_mirrorshades_design_implementation/images/rift-clips-cameras/clips.jpg, id=
 2418, 326.91261pt x 243.00182pt>
 File: 05_mirrorshades_design_implementation/images/rift-clips-cameras/clips.jpg
@@ -1965,8 +1965,13 @@ Underfull \hbox (badness 3229) in paragraph at lines 310--310
 []\OT1/cmr/m/n/10 Figure 4.30: |Right cam-era
  []
 
-
-<05_mirrorshades_design_implementation/images/webcam-overlap.png, id=2485, 1927
+[109 <./05_mirrorshades_design_implementation/images/rift-clips-cameras/middle.
+jpg> <./05_mirrorshades_design_implementation/images/rift-clips-cameras/right.j
+pg> <./05_mirrorshades_design_implementation/images/unity-screenshots/unity-scr
+eenshot-1.png (PNG copy)> <./05_mirrorshades_design_implementation/images/unity
+-screenshots/unity-screenshot-2.png (PNG copy)> <./05_mirrorshades_design_imple
+mentation/images/unity-screenshots/unity-screenshot-3.png (PNG copy)>]
+<05_mirrorshades_design_implementation/images/webcam-overlap.png, id=2490, 1927
 .2pt x 2130.96124pt>
 File: 05_mirrorshades_design_implementation/images/webcam-overlap.png Graphic f
 ile (type png)
@@ -1976,15 +1981,6 @@ Package pdftex.def Info: 05_mirrorshades_design_implementation/images/webcam-ov
 erlap.png used on input line 321.
 (pdftex.def)             Requested size: 170.71393pt x 188.75426pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[109 <./05_mirrorshades_design_implementation/images/rift-clips-cameras/middle.
-jpg> <./05_mirrorshades_design_implementation/images/rift-clips-cameras/right.j
-pg> <./05_mirrorshades_design_implementation/images/unity-screenshots/unity-scr
-eenshot-1.png (PNG copy)> <./05_mirrorshades_design_implementation/images/unity
--screenshots/unity-screenshot-2.png (PNG copy)> <./05_mirrorshades_design_imple
-mentation/images/unity-screenshots/unity-screenshot-3.png (PNG copy)>]
 <05_mirrorshades_design_implementation/images/unity-screenshots/unity-screensho
 t-6.png, id=2495, 1371.1225pt x 614.295pt>
 File: 05_mirrorshades_design_implementation/images/unity-screenshots/unity-scre
@@ -4314,7 +4310,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 321.
 Here is how much of TeX's memory you used:
  14456 strings out of 493054
  259260 string characters out of 6140585
- 593381 words of memory out of 5000000
+ 593374 words of memory out of 5000000
  16523 multiletter control sequences out of 15000+600000
  14907 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -4707,7 +4703,7 @@ share/texmf-dist/fonts/type1/public/eurosym/feymo10.pfb></usr/share/texmf-dist/
 fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/pub
 lic/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
 ti1000.pfb>
-Output written on thesis.pdf (244 pages, 106767655 bytes).
+Output written on thesis.pdf (244 pages, 106702121 bytes).
 PDF statistics:
  4243 PDF objects out of 4296 (max. 8388607)
  3569 compressed objects within 36 object streams
