@@ -27,7 +27,7 @@ The VTW investigation, as a first foray into the creation of a parallel reality 
 %=========================================================================================================
 
 \section{Virtual Heritage}
-
+\label{virtual-heritage}
 Alternate reality technologies have been used for over two decades~\cite{Roussou2002} to aid in the investigation, understanding and dissemination of information pertaining to our past in the fields of archaeology and cultural heritage. Whilst archaeology studies human activity through the recovery of remains, heritage is concerned also with intangible attributes of society; tradition, art, narratives and other cultural evidences~\cite{Roussou2002}. \textit{Virtual heritage} is the name given to the application of advanced imaging techniques, including alternate realities, to the synthesis, conservation, reproduction, representation, reprocessing and display of this cultural evidence~\cite{roussou:photorealism}.
 
 These techniques provide access to locations and artefacts scattered about the world which may reside in private collections inaccessible to scholars, much less to the general public, and outwith their original context of creation~\cite{griffin:recovering}. They allow recreations to be made of the numerous cultural heritage objects that are deteriorating or are at risk of being lost, whether due to natural causes such as weather and natural disasters or due to acts of man such as civil war~\cite{Ikeuchi2003}.
@@ -270,7 +270,7 @@ The Second Life client, intended for use on a desktop or laptop computer, provid
 
 In order to control Second Life's camera in the fashion required for VTW, sensor data were required for the orientation in which the user was holding the tablet. Specifically the tablet's yaw and pitch were needed; roll was considered less important as users were expected to hold the tablet roughly level with the horizon when looking `through' it.
 
-VTW considers yaw in terms of magnetic compass bearing, as this provides a value that can be used to directly control the yaw of the virtual camera if the virtual reconstruction within OpenSim is correctly oriented to OpenSim's own compass. Magnetic compass bearings are sensed electronically via a 3-axis microelectromechanical (MEMS) magnetometer, which measures the strength of magnetic field along each of its 3 axes. By comparing the values of each axis to the known direction of the field lines of Earth's magnetic field, a compass bearing relative to the magnetometer's orientation can be calculated. Pitch is sensed using a 3-axis MEMS accelerometer, which measures force of acceleration along each of its 3 axes. In the case of static or slow moving applications, this acceleration is predominantly that caused by the Earth's gravitational pull and by comparing the values between each axis the direction of this acceleration (down toward the centre of the Earth) can be determined in relation to the orientation of the accelerometer itself and thus the accelerometer's own orientation (and that of the tablet it is attached to) can be deduced.
+VTW considers yaw in terms of magnetic compass bearing, as this provides a value that can be used to directly control the yaw of the virtual camera if the virtual reconstruction within OpenSim is correctly oriented to OpenSim's own compass. Magnetic compass bearings are sensed electronically via a 3-axis microelectromechanical (MEMS) magnetometer, which measures the strength of magnetic field along each of its 3 axes. By comparing the values of each axis to the known direction of the field lines of Earth's magnetic field, a compass bearing relative to the magnetometer's orientation can be calculated. Pitch is sensed using a 3-axis MEMS accelerometer, which measures force of acceleration along each of its 3 axes. In the case of static or slow moving applications, this acceleration is predominantly that caused by the Earth's gravitational pull. By comparing the values between each axis the direction of this acceleration (down toward the centre of the Earth) can be determined in relation to the orientation of the accelerometer itself. From this the accelerometer's own orientation (and that of the tablet it is attached to) can be deduced.
 
 Due to the fact that the WindPad tablet does not feature a built-in magnetometer and its built-in accelerometer is little more than a rudimentary tilt sensor for differentiating between discrete cases of landscape and portrait orientation for screen rotation, it was necessary to interface external magnetometer and accelerometer sensors. The popular Arduino\ArduinoFootnote{} microcontroller platform was used for prototyping with several different sensor packages, including the MMA8452\MMAfootnote{}, the ADXL335\ADXLfootnote{} and the HMC5883L\HMCfootnote{}. The package eventually adopted for use with VTW from this prototyping stage was the HMC6343\HMCtwoFootnote{}, which combines a 3-axis MEMS magnetometer and 3-axis MEMs accelerometer into a single package sporting an I2C serial interface, along with algorithms to internally apply the accelerometer's readings to `tilt compensate' the magnetometer's readings. Appendix \ref{appendix-vtw-hardware} contains a hardware reference with wiring diagrams and pinout values for connectivity of a HMC6343 to an Arduino Uno R3.
 
@@ -606,18 +606,18 @@ The product summary for the MAX-6 claims accuracy of 2.5m Circular Error Probabl
 
 To determine the real world accuracy attainable with the MAX-6 outfitted with the SL-1202 in the scenario of the cathedral as a cultural heritage site and thus which of the three scenarios outlined in section \ref{parallel-reality-in-virtual-heritage} the VTW platform could support, a route around the St Andrews cathedral ruins akin to the route that a visitor might take was planned. The route was walked with the MAX-6 connected to a laptop computer via an Arduino operating as a UART, feeding the raw NMEA messages into the u-center software version 7.0 which logged the messages for later evaluation. Simultaneously for comparative purposes a mid-range consumer Android smartphone was used to record the same track: a HTC One S\htconesFootnote{} containing a gpsOne Gen 8A solution within its Qualcomm Snapdragon S4 processor\snapdragonFootnote{}, using Google's My Tracks\mytracksFootnote{} app version 2.0.3 to record the data.
 
-The three sets of positional data (planned route, MAX-6 recorded route and smartphone recorded route) were entered into a PostgreSQL database and the PostGIS database extender's \texttt{ST\_HausdorffDistance} algorithm\hausdorffFootnote{} was used to calculate the Hausdorff distances between the recorded routes and the planned route and between the recorded routes themselves. In this scenario, the Hausdorff distance represents the furthest distance needed to travel from any point on the route recorded by the GPS receiver to reach the nearest point on the planned route. Because of the substantially greater inaccuracies identified in the latter part of the recorded tracks, separate Hausdorff distances were calculated both for the complete tracks and also for truncated first and second sub-tracks.
+To compare the accuracy of the GPS receivers to the planned route, the Hausdorff distance between them was calculated. In this scenario the Hausdorff distance represents the furthest distance needed to travel from any point on the GPS recorded route to reach the nearest point on the planned route. The three sets of positional data (planned route, MAX-6 recorded route and smartphone recorded route) were entered into a PostgreSQL database and the PostGIS database extender's \texttt{ST\_HausdorffDistance} algorithm\hausdorffFootnote{} was used to calculate the Hausdorff distances between the recorded routes and the planned route and between the recorded routes themselves. Because of the substantially greater inaccuracies identified in the latter part of the recorded tracks, separate Hausdorff distances were calculated both for the complete tracks and also for truncated first and second sub-tracks.
 
 %This ability to control navigation within the 3D virtual environment without explicit conscious input of keyboard/mouse/touch commands is integral to reducing the cognitive load required to maintain a presence within a virtual environment which is a key requirement for overcoming the vacancy problem and achieving successful mobile cross reality.
 
-During the experiments the MAX-6 was unable to maintain reception of the additional correction data required for SBAS operation. When left stationary for several minutes reception was possible however subsequent movement of only a few meters at walking pace would reliably break reception. This reduced the theoretical maximum performance of the unit to 2.5m CEP, with observed performance being lower.
+During the experiments the MAX-6 was unable to maintain reception of the additional correction data required for SBAS operation. When left stationary for several minutes reception of SBAS data was achieved however subsequent movement of only a few meters at walking pace would reliably break reception. This reduced the theoretical maximum performance of the unit to 2.5m CEP, with observed performance being lower.
 
 Figure \ref{vtw_all_routes.png} depicts an aerial view of the St Andrews cathedral ruins, oriented with North upwards; the blue line represents the planned route, red the route recorded by the MAX-6 receiver and green the route recorded by the smartphone while walking the planned route.
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{vtw_all_routes.png}
-\caption{Planned and recorded paths at St Andrews cathedral (complete track).}
+\caption{Planned and recorded paths at St Andrews cathedral (complete track, planned route in blue, MAX-6 route in red, smartphone route in green).}
 \label{vtw_all_routes.png}
 \end{figure}
 
@@ -630,7 +630,7 @@ The maximum inaccuracies were recorded when walking along the South wall of the 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{vtw_alll_routes_first_half.png}
-\caption{Planned and recorded paths at St Andrews cathedral (first sub track).}
+\caption{Planned and recorded paths at St Andrews cathedral (first sub track, planned route in blue, MAX-6 route in red, smartphone route in green).}
 \label{vtw_alll_routes_first_half.png}
 \end{figure}
 
@@ -641,7 +641,7 @@ In addition to the accuracy of the position tracking it is also important to con
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{vtw_all_routes_second_half.png}
-\caption{Planned and recorded paths at St Andrews cathedral (second sub track).}
+\caption{Planned and recorded paths at St Andrews cathedral (second sub track, planned route in blue, MAX-6 route in red, smartphone route in green).}
 \label{vtw_all_routes_second_half.png}
 \end{figure}
 
