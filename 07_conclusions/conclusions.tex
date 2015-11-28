@@ -41,12 +41,11 @@ As listed in section \ref{intro-contributions} the contributions of this thesis 
 
 \begin{itemize}
 	\item The introduction of parallel reality as a new category of alternate reality that allows users to experience complete real and virtual environments in tandem and represents an avenue for further mitigation of the vacancy problem.
-	\item The framing of parallel reality through a thorough investigation and extension of previous taxonomies that classify and distinguish between alternate reality terminology.
-	\item The introduction of the combined Milgram/Waterworth model for visualising alternate reality experiences, including those of parallel reality systems.
-	\item The visualisation of the vacancy problem upon the combined Milgram/Waterworth model, leading to the definition of the extended vacancy problem.
-	\item Development of a preliminary parallel reality platform, the Virtual Time Window, through extension of the Second Life client.
-	\item Development of a second parallel reality platform, dubbed Mirrorshades, that uses the Unity game engine to combine new virtual reality hardware with novel indoor positioning technology.
-	\item Evaluation of the Mirrorshades platform through user studies of a real world use case study within the realm of virtual heritage, including the discussion and application of an established presence questionnaire to a parallel reality experience.
+	\item The framing of parallel reality through a thorough investigation and extension of previous taxonomies that classify and distinguish between alternate reality terminologies.
+	\item The introduction of the combined Milgram/Waterworth model and the extended vacancy problem definition, for visualising alternate reality experiences, including those of parallel reality systems.
+	\item Exploration into the suitability of an existing state of the art alternate reality modality of interaction (Situated Simulations) for investigation into parallel reality experience, producing the Virtual Time Window platform through extension of the Second Life client.
+	\item Development of a new platform for parallel reality, dubbed Mirrorshades, that uses the Unity game engine to combine the modern virtual reality hardware of the Oculus Rift with the novel indoor positioning technology of IndoorAtlas.
+	\item Evaluation of the Mirrorshades platform through user studies of a real world use case study within the realm of virtual heritage, including the discussion and application of an established presence questionnaire to a parallel reality experience, both to assess the worth of the concept and to inform future implementations.
 	\item Creation and discussion of a set of best practices for future parallel reality endeavours.
 \end{itemize}
 
@@ -54,25 +53,29 @@ As listed in section \ref{intro-contributions} the contributions of this thesis 
 
 \section{Objectives}
 
-In reference to the objectives as listed in section \ref{objectivesandmethodology} and reproduced here for discussion, this thesis has been successful in meeting what set out to do.
+In reference to the objectives as originally listed in section \ref{objectivesandmethodology} this thesis has been successful in meeting what it set out to do, as discussed below.
 
 \begin{enumerate}
 	\item[1] Introduce the parallel reality concept by situating it within the larger ecosystem of existing categories of alternate reality, through a thorough exploration of existing alternate reality definitions, taxonomies and frameworks, performing updates, modifications and extensions where required.
 \end{enumerate}
 
-The introduction of parallel reality, in a clear and unambiguous fashion, as a new category of alternate reality was no simple task, as decades of research into alternate realities has furnished us with a rich continuum of approaches and technologies for creating, combining, augmenting and diminishing real and virtual environments. The fact that there are often no clear boundaries between where one category ends and another begins, with continuums being more popular than discrete categorisation, due largely to the inherently subjective nature of space experience, has lead to many common labels applying to multiple different scenarios. Whilst some of these are compatible if not identical, some are almost contradictory. However it is seldom the case that any use of the terms in the literature is genuinely incorrect.
+The introduction of parallel reality as a new category of alternate reality in a clear and unambiguous fashion was no simple task, as decades of research into alternate realities has furnished us with a rich continuum of approaches and technologies for creating, combining, augmenting and diminishing real and virtual environments. The fact that there are often no clear boundaries between where one category ends and another begins, with continuums being a more popular method for identification than discrete categorisation and due largely to the inherently subjective nature of space experience, has lead to many common labels being applied to multiple subtly different scenarios. Whilst some of these uses are explained easily enough by different subjective positions, some would seem at first glance to be almost contradictory.
 
-Thus the purpose of the extensive review in chapter \ref{chapter-background} of existing techniques for categorising and distinguishing between different alternate realities was to ensure that parallel reality was introduced in a fashion that made its place in comparison to all the other alternate reality terms clear and unambiguous.
-
-It is important to appreciate that much of it is subjective however. Lots of abstract thought had to go into this, verging on the philosophical in places but always trying to ground it in science.
+The purpose of the extensive background and literature review in chapter \ref{chapter-background} of existing techniques for categorising and distinguishing between different alternate realities was thus to ensure that parallel reality could be introduced in a fashion that made its place in comparison to all previous alternate reality terms clear and unambiguous. Naturally this review itself is contingent upon the author's own subjective positions and opinions, with such discussions of space experience at risk of leaning toward philosophy as much as they do toward computing, however the import of the endeavour was not to create a canonical set of definitions but rather to remove ambiguity in the introduction and definition of parallel reality.
 
 \begin{enumerate}
 	\item[2] Develop a suitable model for the illustration of experience in parallel reality scenarios, allowing not only for comparison and contrast between parallel reality and other alternate reality experiences, but also for illustration of different implementations of parallel reality experience.
 \end{enumerate}
 
-As one of the direct products of the work discussed for objective 1, the combined Milgram/Waterworth model was produced for this purpose and represents an indispensable tool for visualising, discussing and comparing alternate reality experiences. By combining the relatively objective assessment of where the percepts a user is perceiving originate from (the Milgram and Kishino approach) with the more subjective and experiential assessment of the direction and magnitude of human attention (the Waterworth and Waterworth approach) we are gifted the ability to assess both vantages onto an alternate reality experience and to more easily relate them and see any relationships.
+As one of the direct products of the work discussed for objective 1, the combined Milgram/Waterworth model was produced for this purpose and represents a novel tool for visualising, discussing and comparing alternate reality experiences. By combining the relatively objective assessment of where the percepts a user is perceiving originate from (Milgram and Kishino) with the more subjective and experiential assessment of the direction and magnitude of their mental resources (Waterworth and Waterworth) we are gifted the ability to assess both vantages upon a single plot, which promises to make relationships both more visible and more easily discussed.
 
-One of these relationships that becomes apparent when considering the two original models combined in the manner of the combined Milgram/Waterworth model is that of how the vacancy problem, as identified by Lifton, can be explained in a more scientific fashion in reference both to the Milgram and Kishino model and to the Waterworth and Waterworth model, leading to the introduction of the definition of the extended vacancy problem (section \ref{visualising-transitions-extended-vacancy}).
+One such relationship that became apparent in this manner was that of how the vacancy problem, as identified by Lifton in his cross reality research, can be mapped and explained in reference to both the Milgram and Kishino continuum and the Waterworth and Waterworth model, while also connecting with the Waterworth and Waterworth notion of the break in presence concept. This observation led to the introduction of the definition of the extended vacancy problem, as found in section \ref{visualising-transitions-extended-vacancy} and reproduced below:
+
+\begin{quote}
+	\textbf{The Extended Vacancy Problem} - Performing a transition between two environments upon the locus of attention axis of the combined Milgram/Waterworth model is accompanied by a break in presence manifesting as a deflection upon the focus of attention axis from presence towards absence.
+\end{quote}
+
+This method of visualisation is particularly useful for discussion of the parallel reality concept, as the manner in which it allows the comparatively objective assessment of the provenance of the stimuli that the user is perceiving to be visualised along with the comparatively subjective assessment of their experience in terms of conceptual versus perceptual processing and their level of conscious arousal is of particular value for systems in which there is more than one environment that the user is encouraged to attend to, unlike the majority of previous alternate reality experiences wherein the user is encouraged to attend to a single environment (whether that be real, virtual, or a mix) at the intentional exclusion of all others.
 
 \begin{enumerate}
 	\item[3] Develop a parallel reality system suitable for deployment to real world user studies to effect comparison against previous categories of alternate reality.
