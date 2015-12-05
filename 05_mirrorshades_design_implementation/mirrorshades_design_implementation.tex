@@ -137,6 +137,7 @@ The reconstruction of the chapel involved both the mental reconstruction of modi
 %=========================================================================================================
 
 \section{Virtual Reality HMD}
+\label{virtual-reality-hmd}
 The concept of virtual reality and the associated HMDs that provide wide field of view, stereoscopic 3D graphics coupled with head tracking is currently experiencing a resurgence of interest and investment, thanks largely to the advent of Oculus\footnote{\url{https://www.oculus.com/}} and their Rift platform\footnote{\url{https://www.oculus.com/rift/}}. Whilst the first head mounted computer display was created in the late 1960s by Ivan Sutherland~\cite{Rheingold1992}, it was not until the late 1980s and early 1990s that VR began to be promoted as a consumer platform. Unfortunately both hardware and software were not ready for consumer adoption at this time and these systems failed to live up to the substantial hype of being a \textit{``revolutionary technology''} which promised to \textit{``transform society''} (figure \ref{rheingold-virtual-reality.jpg}), resulting in the VR bubble bursting.
 
 \begin{figure}[h]
@@ -504,7 +505,7 @@ Whilst PSMove has been used successfully for pedestrian position tracking in pre
 %=========================================================================================================
 
 \subsection{Indoor Atlas}
-
+\label{indooratlassection}
 During the evaluation phase of different IPS and their suitability to the Mirrorshades platform and its application to St Salvator's chapel, Finnish startup IndoorAtlas\footnote{\url{https://www.indooratlas.com/}} released the first public beta of their indoor positioning technology that uses the magnetometers found in smartphones to locate a user within a magnetic `fingerprint' of a building. This approach takes inspiration from animals such as the spiny lobster that are able to determine their position from the Earth's magnetic field~\cite{Boles2003}. A spin out from research at the University of Oulu in 2009~\cite{Haverinen2009,Haverinen2009a}, with a similar project undertaken by Media Lab researchers in 2011~\cite{Chung2011}, IndoorAtlas exploits how the Earth's magnetic field is distorted by both natural and man-made sources - distortions that VTW had to \textit{contend} with to produce accurate compass bearings. Indoors these distortions come from building materials, especially in modern structures employing a framework of metal beams, but also from electrical cabling, HVAC ducting, concrete rebar, etc. By recording a map of these distortions in an offline mapping phase, producing a fingerpint of the magnetic field around a building, the location of a user can be deduced by comparing the readings from their smartphone's magnetometer to this fingerprint.
 
 IndoorAtlas represented a good match for the IPS requirements of the Mirrorshades platform. In particular the lack of dependence upon any deployed infrastructure such as ultrasound beacons or visual tracking targets suited the deployment area of Mirrorshades well, as most cultural heritage sites would not be amenable to the deployment of such hardware. Furthermore the reliance upon only a smartphone held by the user meant that coverage would only be limited by the area that had been mapped in the offline mapping phase, allowing the positioning to scale to arbitrarily large indoor cultural heritage sites. This requirement for only a smartphone also met the low cost requirement of the Mirrorshades platform, as mid to high end smartphones with sensitive magnetometers can presently be purchased for just a few hundred dollars.
@@ -678,7 +679,7 @@ In order to best implement a parallel reality system that provides its users wit
 \newpage
 
 \subsection{Control Mechanism for Transitions}
-
+\label{control-mechanism-for-transitions}
 Granting the user the ability to trigger transitions between different visual stimuli, including the ability to choose different styles of transition, required the user to be provided with a control mechanism. This control mechanism needed to detract as little as possible from the user's ability to process the visual stimuli that they were receiving from the DK1. As the camera solution mounted to the DK1 is not ideal for observing very close objects due to heightened negative parallax at close distances and the roughly arm's length hyperfocal distance (see section \ref{constraints_of_dk1_see_through_solution}), a control modality that could be quickly learned and then used by touch/memory was necessary.
 
 Using the smartphone upon which IndoorAtlas operates did not represent a good solution, as a lack of physical buttons upon modern smartphones meant that triggering different transitions would require touching different areas of the screen - a task that would not be reliably performable without looking at the phone each time. As the smartphone must be held in the user's hand (placing it in a pocket or in the satchel was attempted, however a severe negative impact on the performance of IndoorAtlas was experienced) the control mechanism must be usable with the remaining single hand.

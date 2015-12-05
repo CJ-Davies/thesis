@@ -15,7 +15,7 @@ This chapter recounts the development of the Virtual Time Window, a platform tha
 %=========================================================================================================
 
 \section{Overview}
-
+\label{vtw-overview}
 The Virtual Time Window (VTW) was a preliminary investigation into the application of parallel reality to virtual heritage, that leveraged the OVW group's existing OpenSim reconstructions of cultural heritage sites in a handheld package that allows tandem exploration of both the real cultural heritage sites and their spatially equivalent virtual reconstructions.
 
 The challenge was not only to create a platform that explored the plausibility of leveraging an existing modality of alternate reality interaction (Situated Simulations) for investigation into parallel reality experience in a virtual heritage scenario, but also to do so by making use of the OVW group's extensive catalogue of OpenSim based reconstructions. As discussed in section \ref{caseforpr} the ability of the parallel reality concept to make use of existing complete virtual models, without requiring a lengthy conversion phase of aspects of that content into an alternative format or framework, is one of its potential advantages.
@@ -55,7 +55,7 @@ This model classifies visualization strategies according to four continua, repre
 	\textit{``\ldots its capacity to contextually offer the possibility to subjectively experience an interactive behaviour in a synchronous way, thus enabling the user the opportunity to meaningfully contribute to a given experience or to affect in real time the visualized  item''}~\cite{Foni2010}.
 \end{quote}
 
-The shading of each point within the cube represents its degree of virtuality, conceptually analogous to Milgram and Kishino's reality-virtuality continuum (see section \ref{milgram&kishino}) with real world/world unmodelled represented as solid black, virtual reality/world completely modelled as completely white and positions in-between as various shades of grey. Papagiannakis et al. explain the position of 16 visualization techniques applied to cultural heritage, including both traditional techniques and state-of-the-art methodologies, by their positions within the cube and via the table included as figure \ref{taxonomy_2.png}.
+The shading of each point within the cube represents its degree of virtuality, conceptually analogous to Milgram and Kishino's reality-virtuality continuum (see section \ref{background-milgram-and-kishino}) with real world/world unmodelled represented as solid black, virtual reality/world completely modelled as completely white and positions in-between as various shades of grey. Papagiannakis et al. explain the position of 16 visualization techniques applied to cultural heritage, including both traditional techniques and state-of-the-art methodologies, by their positions within the cube and via the table included as figure \ref{taxonomy_2.png}.
 
 \begin{figure}[h]
 \centering
@@ -413,6 +413,8 @@ Applying the scale of the reconstruction to these values gives $\Delta$x and $\D
 
 \subsection{GPS Receivers}
 
+\label{gps-receivers}
+
 \newcommand{\azurewaveFootnote}{\footnote{\url{http://www.azurewave.com/product_GPS-M19_1.asp}}}
 
 \newcommand{\habFootnote}{\footnote{\url{http://ukhas.org.uk/}}}
@@ -589,7 +591,7 @@ For the purposes of evaluating VTW at the cathedral, a temporary server and netw
 %=========================================================================================================
 
 \subsection{Position Control Performance}
-
+\label{vtw-position-control-performance}
 \newcommand{\ubloxcepFootnote}{\footnote{\url{https://u-blox.com/images/downloads/Product_Docs/MAX-6_ProductSummary_(GPS.G6-HW-10089).pdf}}}
 
 \newcommand{\htconesFootnote}{\footnote{\url{http://www.htc.com/uk/smartphones/htc-one-s/}}}
@@ -663,7 +665,7 @@ However when the MAX-6 readings were integrated into the VTW platform and it was
 %=========================================================================================================
 
 \subsection{Orientation Control and Graphical Performance}
-
+\label{vtw-orientation-control-performance}
 The accuracy of the camera control during testing was sufficient, however the speed at which the camera orientation moved to match physical orientation was rather slow, resulting in having to wait for the display to `catch up' to changes in orientation. This is attributed to the 10Hz sampling rate of the orientation sensors which, particularly after readings were combined for smoothing purposes to reduce jerky movement, resulted in too infrequent orientation updates. This hardware shortcoming is something that has already been addressed since VTW's development, by the introduction of commodity orientation sensors that sample at much higher rates and which have already begun to find their way into the realm of midrange smartphones and tablets.
 
 During testing at the cathedral site VTW averaged framerates between 20 and 25 frames per second (fps) with the modified Second Life client's quality option set to the `Low' position. Figure \ref{vtw-framerates.png} shows average framerates of the client's different quality options when standing at two different positions within the cathedral site; one `indoor' position from the centre of the nave and one `outdoor' position from the grassy area surrounded by the cloisters. The framerates for the indoor position were lower than those for the outdoor position as the virtual cathedral model features substantially more detail indoors than outdoors, due to the number of furnishings, tapestries, etc. that originally filled the building and which have been faithfully reconstructed in the virtual model.
