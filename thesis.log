@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.16)  18 JAN 2016 13:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.16)  19 JAN 2016 02:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -670,45 +670,44 @@ Package pdftex.def Info: crest.png used on input line 136.
 ] (./hyperlinks.tex) [5
 
 ]
-(./thesis.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 2.
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+(./abbreviations.tex
+Underfull \vbox (badness 10000) detected at line 49
+ []
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 58.
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 2.
+LaTeX Font Info:    Try loading font information for U+msb on input line 58.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [6
 
-] [7] [8]
+]) [7] (./thesis.toc
+[8
+
+] [9] [10]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 141.
- [9])
+ [11])
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
- [10]
-(./thesis.lof [11
+ [12] (./thesis.lof [13
 
-] [12] [13] [14] [15] [16])
+] [14] [15] [16] [17] [18])
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [17] (./thesis.lot [18
+ [19]
+(./thesis.lot [20
 
 ])
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
- [19]
-(./abbreviations.tex
-Underfull \vbox (badness 10000) detected at line 56
- []
-
-[20
-
-]) [21]
+ [21]
  1.
 (./01_introduction/introduction.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--9
@@ -3669,7 +3668,7 @@ t _ Docs / u-[]blox6 _ ReceiverDescriptionProtocolSpec _ (GPS .
 olin_tablet_back.jpg>]
 Appendix B.
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <20.74> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 274.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 269.
 (./appendices/vtw-software.tex
 Underfull \hbox (badness 10000) in paragraph at lines 33--34
 []|\OT1/cmr/m/n/10 Called upon each it-er-a-tion of $\OT1/cmtt/m/n/10 LLAppViwe
@@ -3722,7 +3721,7 @@ Underfull \vbox (badness 10000) detected at line 77
 ]) [222]
 Appendix C.
 
-Overfull \hbox (25.47981pt too wide) in paragraph at lines 278--278
+Overfull \hbox (25.47981pt too wide) in paragraph at lines 273--273
  |[]\OT1/cmr/bx/n/20.74 OpenSim Re-gion Mod-ule GPS
  []
 
@@ -3745,22 +3744,22 @@ Appendix E.
 File: appendices/ethics.pdf Graphic file (type pdf)
 
 <use appendices/ethics.pdf>
-Package pdftex.def Info: appendices/ethics.pdf used on input line 287.
+Package pdftex.def Info: appendices/ethics.pdf used on input line 282.
 (pdftex.def)             Requested size: 597.43048pt x 845.07518pt.
 File: appendices/ethics.pdf Graphic file (type pdf)
  <use appendices/ethics.pdf>
-Package pdftex.def Info: appendices/ethics.pdf used on input line 287.
+Package pdftex.def Info: appendices/ethics.pdf used on input line 282.
 (pdftex.def)             Requested size: 597.43048pt x 845.07518pt.
 
 <appendices/ethics.pdf, id=3865, page=1, 597.43195pt x 845.07724pt>
 File: appendices/ethics.pdf Graphic file (type pdf)
 
 <use appendices/ethics.pdf, page 1>
-Package pdftex.def Info: appendices/ethics.pdf, page1 used on input line 287.
+Package pdftex.def Info: appendices/ethics.pdf, page1 used on input line 282.
 (pdftex.def)             Requested size: 597.43048pt x 845.07518pt.
 File: appendices/ethics.pdf Graphic file (type pdf)
  <use appendices/ethics.pdf, page 1>
-Package pdftex.def Info: appendices/ethics.pdf, page1 used on input line 287.
+Package pdftex.def Info: appendices/ethics.pdf, page1 used on input line 282.
 (pdftex.def)             Requested size: 597.45782pt x 845.11386pt.
 
 [226
@@ -3768,32 +3767,32 @@ Package pdftex.def Info: appendices/ethics.pdf, page1 used on input line 287.
 ]
 File: appendices/ethics.pdf Graphic file (type pdf)
  <use appendices/ethics.pdf, page 1>
-Package pdftex.def Info: appendices/ethics.pdf, page1 used on input line 287.
+Package pdftex.def Info: appendices/ethics.pdf, page1 used on input line 282.
 (pdftex.def)             Requested size: 597.45782pt x 845.11386pt.
 File: appendices/ethics.pdf Graphic file (type pdf)
  <use appendices/ethics.pdf, page 1>
-Package pdftex.def Info: appendices/ethics.pdf, page1 used on input line 287.
+Package pdftex.def Info: appendices/ethics.pdf, page1 used on input line 282.
 (pdftex.def)             Requested size: 597.45782pt x 845.11386pt.
 File: appendices/ethics.pdf Graphic file (type pdf)
 
 <use appendices/ethics.pdf, page 1>
-Package pdftex.def Info: appendices/ethics.pdf, page1 used on input line 287.
+Package pdftex.def Info: appendices/ethics.pdf, page1 used on input line 282.
 (pdftex.def)             Requested size: 597.45782pt x 845.11386pt.
  [227 <./appendices/ethics.pdf, page is rotated 270 degrees>]
 <appendices/ethics.pdf, id=3876, page=2, 597.43195pt x 845.07724pt>
 File: appendices/ethics.pdf Graphic file (type pdf)
 
 <use appendices/ethics.pdf, page 2>
-Package pdftex.def Info: appendices/ethics.pdf, page2 used on input line 287.
+Package pdftex.def Info: appendices/ethics.pdf, page2 used on input line 282.
 (pdftex.def)             Requested size: 597.45782pt x 845.11386pt.
 File: appendices/ethics.pdf Graphic file (type pdf)
  <use appendices/ethics.pdf, page 2>
-Package pdftex.def Info: appendices/ethics.pdf, page2 used on input line 287.
+Package pdftex.def Info: appendices/ethics.pdf, page2 used on input line 282.
 (pdftex.def)             Requested size: 597.45782pt x 845.11386pt.
 File: appendices/ethics.pdf Graphic file (type pdf)
 
 <use appendices/ethics.pdf, page 2>
-Package pdftex.def Info: appendices/ethics.pdf, page2 used on input line 287.
+Package pdftex.def Info: appendices/ethics.pdf, page2 used on input line 282.
 (pdftex.def)             Requested size: 597.45782pt x 845.11386pt.
  [228 <./appendices/ethics.pdf, page is rotated 270 degrees>]
 Appendix F.
@@ -3806,7 +3805,7 @@ age-1.pdf Graphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-sta
 ge-1.pdf>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/12-item-likert-ty
-pe-questionnaire-stage-1.pdf used on input line 291.
+pe-questionnaire-stage-1.pdf used on input line 286.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-st
 age-1.pdf Graphic file (type pdf)
@@ -3814,7 +3813,7 @@ age-1.pdf Graphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-sta
 ge-1.pdf>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/12-item-likert-ty
-pe-questionnaire-stage-1.pdf used on input line 291.
+pe-questionnaire-stage-1.pdf used on input line 286.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
 <06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-stage-1
@@ -3825,7 +3824,7 @@ age-1.pdf Graphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-sta
 ge-1.pdf, page 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/12-item-likert-ty
-pe-questionnaire-stage-1.pdf, page1 used on input line 291.
+pe-questionnaire-stage-1.pdf, page1 used on input line 286.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-st
 age-1.pdf Graphic file (type pdf)
@@ -3833,7 +3832,7 @@ age-1.pdf Graphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-sta
 ge-1.pdf, page 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/12-item-likert-ty
-pe-questionnaire-stage-1.pdf, page1 used on input line 291.
+pe-questionnaire-stage-1.pdf, page1 used on input line 286.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
  [229
 
@@ -3844,7 +3843,7 @@ age-1.pdf Graphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-sta
 ge-1.pdf, page 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/12-item-likert-ty
-pe-questionnaire-stage-1.pdf, page1 used on input line 291.
+pe-questionnaire-stage-1.pdf, page1 used on input line 286.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-st
 age-1.pdf Graphic file (type pdf)
@@ -3852,7 +3851,7 @@ age-1.pdf Graphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-sta
 ge-1.pdf, page 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/12-item-likert-ty
-pe-questionnaire-stage-1.pdf, page1 used on input line 291.
+pe-questionnaire-stage-1.pdf, page1 used on input line 286.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-st
 age-1.pdf Graphic file (type pdf)
@@ -3860,7 +3859,7 @@ age-1.pdf Graphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-sta
 ge-1.pdf, page 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/12-item-likert-ty
-pe-questionnaire-stage-1.pdf, page1 used on input line 291.
+pe-questionnaire-stage-1.pdf, page1 used on input line 286.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
  [230 <./06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire
 -stage-1.pdf>]
@@ -3873,14 +3872,14 @@ hic file (type pdf)
 
 <use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-1.pdf>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
-ns-stage-1.pdf used on input line 295.
+ns-stage-1.pdf used on input line 290.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: 06_mirrorshades_studies_results/PDFs/interview-questions-stage-1.pdf Grap
 hic file (type pdf)
 
 <use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-1.pdf>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
-ns-stage-1.pdf used on input line 295.
+ns-stage-1.pdf used on input line 290.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
 <06_mirrorshades_studies_results/PDFs/interview-questions-stage-1.pdf, id=3911,
@@ -3891,7 +3890,7 @@ hic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-1.pdf, page
  1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
-ns-stage-1.pdf, page1 used on input line 295.
+ns-stage-1.pdf, page1 used on input line 290.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: 06_mirrorshades_studies_results/PDFs/interview-questions-stage-1.pdf Grap
 hic file (type pdf)
@@ -3899,7 +3898,7 @@ hic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-1.pdf, page
  1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
-ns-stage-1.pdf, page1 used on input line 295.
+ns-stage-1.pdf, page1 used on input line 290.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
  [231
 
@@ -3910,7 +3909,7 @@ hic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-1.pdf, page
  1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
-ns-stage-1.pdf, page1 used on input line 295.
+ns-stage-1.pdf, page1 used on input line 290.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: 06_mirrorshades_studies_results/PDFs/interview-questions-stage-1.pdf Grap
 hic file (type pdf)
@@ -3918,7 +3917,7 @@ hic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-1.pdf, page
  1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
-ns-stage-1.pdf, page1 used on input line 295.
+ns-stage-1.pdf, page1 used on input line 290.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: 06_mirrorshades_studies_results/PDFs/interview-questions-stage-1.pdf Grap
 hic file (type pdf)
@@ -3926,13 +3925,13 @@ hic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-1.pdf, page
  1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
-ns-stage-1.pdf, page1 used on input line 295.
+ns-stage-1.pdf, page1 used on input line 290.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
  [232 <./06_mirrorshades_studies_results/PDFs/interview-questions-stage-1.pdf>]
 
 Appendix H.
 
-Overfull \hbox (14.12561pt too wide) in paragraph at lines 298--298
+Overfull \hbox (14.12561pt too wide) in paragraph at lines 293--293
  |[]\OT1/cmr/bx/n/20.74 Stage 2.1 12-item Likert-type
  []
 
@@ -3945,7 +3944,7 @@ age-2-1.pdf Graphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-sta
 ge-2-1.pdf>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/12-item-likert-ty
-pe-questionnaire-stage-2-1.pdf used on input line 299.
+pe-questionnaire-stage-2-1.pdf used on input line 294.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-st
 age-2-1.pdf Graphic file (type pdf)
@@ -3953,7 +3952,7 @@ age-2-1.pdf Graphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-sta
 ge-2-1.pdf>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/12-item-likert-ty
-pe-questionnaire-stage-2-1.pdf used on input line 299.
+pe-questionnaire-stage-2-1.pdf used on input line 294.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
 <06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-stage-2
@@ -3964,7 +3963,7 @@ age-2-1.pdf Graphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-sta
 ge-2-1.pdf, page 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/12-item-likert-ty
-pe-questionnaire-stage-2-1.pdf, page1 used on input line 299.
+pe-questionnaire-stage-2-1.pdf, page1 used on input line 294.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-st
 age-2-1.pdf Graphic file (type pdf)
@@ -3972,7 +3971,7 @@ age-2-1.pdf Graphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-sta
 ge-2-1.pdf, page 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/12-item-likert-ty
-pe-questionnaire-stage-2-1.pdf, page1 used on input line 299.
+pe-questionnaire-stage-2-1.pdf, page1 used on input line 294.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
  [233
 
@@ -3983,7 +3982,7 @@ age-2-1.pdf Graphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-sta
 ge-2-1.pdf, page 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/12-item-likert-ty
-pe-questionnaire-stage-2-1.pdf, page1 used on input line 299.
+pe-questionnaire-stage-2-1.pdf, page1 used on input line 294.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-st
 age-2-1.pdf Graphic file (type pdf)
@@ -3991,7 +3990,7 @@ age-2-1.pdf Graphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-sta
 ge-2-1.pdf, page 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/12-item-likert-ty
-pe-questionnaire-stage-2-1.pdf, page1 used on input line 299.
+pe-questionnaire-stage-2-1.pdf, page1 used on input line 294.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-st
 age-2-1.pdf Graphic file (type pdf)
@@ -3999,7 +3998,7 @@ age-2-1.pdf Graphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire-sta
 ge-2-1.pdf, page 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/12-item-likert-ty
-pe-questionnaire-stage-2-1.pdf, page1 used on input line 299.
+pe-questionnaire-stage-2-1.pdf, page1 used on input line 294.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
  [234 <./06_mirrorshades_studies_results/PDFs/12-item-likert-type-questionnaire
 -stage-2-1.pdf>]
@@ -4013,7 +4012,7 @@ ge-2-2.pdf Graphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-stag
 e-2-2.pdf>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/9-item-likert-typ
-e-questionnaire-stage-2-2.pdf used on input line 303.
+e-questionnaire-stage-2-2.pdf used on input line 298.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-sta
 ge-2-2.pdf Graphic file (type pdf)
@@ -4021,7 +4020,7 @@ ge-2-2.pdf Graphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-stag
 e-2-2.pdf>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/9-item-likert-typ
-e-questionnaire-stage-2-2.pdf used on input line 303.
+e-questionnaire-stage-2-2.pdf used on input line 298.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
 <06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-stage-2-
@@ -4032,7 +4031,7 @@ ge-2-2.pdf Graphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-stag
 e-2-2.pdf, page 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/9-item-likert-typ
-e-questionnaire-stage-2-2.pdf, page1 used on input line 303.
+e-questionnaire-stage-2-2.pdf, page1 used on input line 298.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-sta
 ge-2-2.pdf Graphic file (type pdf)
@@ -4040,7 +4039,7 @@ ge-2-2.pdf Graphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-stag
 e-2-2.pdf, page 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/9-item-likert-typ
-e-questionnaire-stage-2-2.pdf, page1 used on input line 303.
+e-questionnaire-stage-2-2.pdf, page1 used on input line 298.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
  [235
 
@@ -4051,7 +4050,7 @@ ge-2-2.pdf Graphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-stag
 e-2-2.pdf, page 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/9-item-likert-typ
-e-questionnaire-stage-2-2.pdf, page1 used on input line 303.
+e-questionnaire-stage-2-2.pdf, page1 used on input line 298.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-sta
 ge-2-2.pdf Graphic file (type pdf)
@@ -4059,7 +4058,7 @@ ge-2-2.pdf Graphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-stag
 e-2-2.pdf, page 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/9-item-likert-typ
-e-questionnaire-stage-2-2.pdf, page1 used on input line 303.
+e-questionnaire-stage-2-2.pdf, page1 used on input line 298.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-sta
 ge-2-2.pdf Graphic file (type pdf)
@@ -4067,13 +4066,13 @@ ge-2-2.pdf Graphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-stag
 e-2-2.pdf, page 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/9-item-likert-typ
-e-questionnaire-stage-2-2.pdf, page1 used on input line 303.
+e-questionnaire-stage-2-2.pdf, page1 used on input line 298.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
  [236 <./06_mirrorshades_studies_results/PDFs/9-item-likert-type-questionnaire-
 stage-2-2.pdf>]
 Appendix J.
 
-Overfull \hbox (1.35281pt too wide) in paragraph at lines 306--306
+Overfull \hbox (1.35281pt too wide) in paragraph at lines 301--301
  |[]\OT1/cmr/bx/n/20.74 Stage 2.1 In-ter-view Prompts| 
  []
 
@@ -4085,14 +4084,14 @@ aphic file (type pdf)
 
 <use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-1.pdf>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
-ns-stage-2-1.pdf used on input line 307.
+ns-stage-2-1.pdf used on input line 302.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-1.pdf Gr
 aphic file (type pdf)
 
 <use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-1.pdf>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
-ns-stage-2-1.pdf used on input line 307.
+ns-stage-2-1.pdf used on input line 302.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
 <06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-1.pdf, id=398
@@ -4103,7 +4102,7 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-1.pdf, pa
 ge 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
-ns-stage-2-1.pdf, page1 used on input line 307.
+ns-stage-2-1.pdf, page1 used on input line 302.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-1.pdf Gr
 aphic file (type pdf)
@@ -4111,7 +4110,7 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-1.pdf, pa
 ge 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
-ns-stage-2-1.pdf, page1 used on input line 307.
+ns-stage-2-1.pdf, page1 used on input line 302.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
  [237
 
@@ -4122,7 +4121,7 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-1.pdf, pa
 ge 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
-ns-stage-2-1.pdf, page1 used on input line 307.
+ns-stage-2-1.pdf, page1 used on input line 302.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-1.pdf Gr
 aphic file (type pdf)
@@ -4130,7 +4129,7 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-1.pdf, pa
 ge 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
-ns-stage-2-1.pdf, page1 used on input line 307.
+ns-stage-2-1.pdf, page1 used on input line 302.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-1.pdf Gr
 aphic file (type pdf)
@@ -4138,13 +4137,13 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-1.pdf, pa
 ge 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
-ns-stage-2-1.pdf, page1 used on input line 307.
+ns-stage-2-1.pdf, page1 used on input line 302.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
  [238 <./06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-1.pdf
 >]
 Appendix K.
 
-Overfull \hbox (7.57pt too wide) in paragraph at lines 310--310
+Overfull \hbox (7.57pt too wide) in paragraph at lines 305--305
  |[]\OT1/cmr/bx/n/20.74 Stage 2.2 In-ter-view Prompts| 
  []
 
@@ -4156,14 +4155,14 @@ aphic file (type pdf)
 
 <use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-2.pdf>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
-ns-stage-2-2.pdf used on input line 311.
+ns-stage-2-2.pdf used on input line 306.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-2.pdf Gr
 aphic file (type pdf)
 
 <use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-2.pdf>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
-ns-stage-2-2.pdf used on input line 311.
+ns-stage-2-2.pdf used on input line 306.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
 <06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-2.pdf, id=402
@@ -4174,7 +4173,7 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-2.pdf, pa
 ge 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
-ns-stage-2-2.pdf, page1 used on input line 311.
+ns-stage-2-2.pdf, page1 used on input line 306.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-2.pdf Gr
 aphic file (type pdf)
@@ -4182,7 +4181,7 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-2.pdf, pa
 ge 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
-ns-stage-2-2.pdf, page1 used on input line 311.
+ns-stage-2-2.pdf, page1 used on input line 306.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
  [239
 
@@ -4193,7 +4192,7 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-2.pdf, pa
 ge 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
-ns-stage-2-2.pdf, page1 used on input line 311.
+ns-stage-2-2.pdf, page1 used on input line 306.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-2.pdf Gr
 aphic file (type pdf)
@@ -4201,7 +4200,7 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-2.pdf, pa
 ge 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
-ns-stage-2-2.pdf, page1 used on input line 311.
+ns-stage-2-2.pdf, page1 used on input line 306.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-2.pdf Gr
 aphic file (type pdf)
@@ -4209,13 +4208,13 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-2.pdf, pa
 ge 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/interview-questio
-ns-stage-2-2.pdf, page1 used on input line 311.
+ns-stage-2-2.pdf, page1 used on input line 306.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
  [240 <./06_mirrorshades_studies_results/PDFs/interview-questions-stage-2-2.pdf
 >]
 Appendix L.
 
-Overfull \hbox (27.16742pt too wide) in paragraph at lines 314--314
+Overfull \hbox (27.16742pt too wide) in paragraph at lines 309--309
  |[]\OT1/cmr/bx/n/20.74 Igroup Pres-ence Ques-tion-naire
  []
 
@@ -4227,14 +4226,14 @@ aphic file (type pdf)
 
 <use 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/igroup-presence-q
-uestionnaire.pdf used on input line 315.
+uestionnaire.pdf used on input line 310.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf Gr
 aphic file (type pdf)
 
 <use 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/igroup-presence-q
-uestionnaire.pdf used on input line 315.
+uestionnaire.pdf used on input line 310.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
 <06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, id=404
@@ -4245,7 +4244,7 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, pa
 ge 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/igroup-presence-q
-uestionnaire.pdf, page1 used on input line 315.
+uestionnaire.pdf, page1 used on input line 310.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf Gr
 aphic file (type pdf)
@@ -4253,7 +4252,7 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, pa
 ge 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/igroup-presence-q
-uestionnaire.pdf, page1 used on input line 315.
+uestionnaire.pdf, page1 used on input line 310.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
  [241
 
@@ -4264,7 +4263,7 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, pa
 ge 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/igroup-presence-q
-uestionnaire.pdf, page1 used on input line 315.
+uestionnaire.pdf, page1 used on input line 310.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf Gr
 aphic file (type pdf)
@@ -4272,7 +4271,7 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, pa
 ge 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/igroup-presence-q
-uestionnaire.pdf, page1 used on input line 315.
+uestionnaire.pdf, page1 used on input line 310.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf Gr
 aphic file (type pdf)
@@ -4280,7 +4279,7 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, pa
 ge 1>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/igroup-presence-q
-uestionnaire.pdf, page1 used on input line 315.
+uestionnaire.pdf, page1 used on input line 310.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
  [242 <./06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf
 >]
@@ -4292,7 +4291,7 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, pa
 ge 2>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/igroup-presence-q
-uestionnaire.pdf, page2 used on input line 315.
+uestionnaire.pdf, page2 used on input line 310.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf Gr
 aphic file (type pdf)
@@ -4300,7 +4299,7 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, pa
 ge 2>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/igroup-presence-q
-uestionnaire.pdf, page2 used on input line 315.
+uestionnaire.pdf, page2 used on input line 310.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf Gr
 aphic file (type pdf)
@@ -4308,7 +4307,7 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, pa
 ge 2>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/igroup-presence-q
-uestionnaire.pdf, page2 used on input line 315.
+uestionnaire.pdf, page2 used on input line 310.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
  [243 <./06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf
 >]
@@ -4320,7 +4319,7 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, pa
 ge 3>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/igroup-presence-q
-uestionnaire.pdf, page3 used on input line 315.
+uestionnaire.pdf, page3 used on input line 310.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf Gr
 aphic file (type pdf)
@@ -4328,7 +4327,7 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, pa
 ge 3>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/igroup-presence-q
-uestionnaire.pdf, page3 used on input line 315.
+uestionnaire.pdf, page3 used on input line 310.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf Gr
 aphic file (type pdf)
@@ -4336,7 +4335,7 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, pa
 ge 3>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/igroup-presence-q
-uestionnaire.pdf, page3 used on input line 315.
+uestionnaire.pdf, page3 used on input line 310.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
  [244 <./06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf
 >]
@@ -4348,7 +4347,7 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, pa
 ge 4>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/igroup-presence-q
-uestionnaire.pdf, page4 used on input line 315.
+uestionnaire.pdf, page4 used on input line 310.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf Gr
 aphic file (type pdf)
@@ -4356,7 +4355,7 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, pa
 ge 4>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/igroup-presence-q
-uestionnaire.pdf, page4 used on input line 315.
+uestionnaire.pdf, page4 used on input line 310.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf Gr
 aphic file (type pdf)
@@ -4364,7 +4363,7 @@ aphic file (type pdf)
 <use 06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf, pa
 ge 4>
 Package pdftex.def Info: 06_mirrorshades_studies_results/PDFs/igroup-presence-q
-uestionnaire.pdf, page4 used on input line 315.
+uestionnaire.pdf, page4 used on input line 310.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
  [245 <./06_mirrorshades_studies_results/PDFs/igroup-presence-questionnaire.pdf
 >] (./thesis.bbl [246
@@ -4379,20 +4378,20 @@ Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
  [254]
 [255])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 330.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 325.
  [256]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 330.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 325.
  (./thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 330.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 330.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 325.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 325.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: C0E27F96D30CFDC5B97AA1CA7D2461DE;10558.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 330.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 325.
  ) 
 Here is how much of TeX's memory you used:
  14520 strings out of 493054
  260769 string characters out of 6140585
- 596896 words of memory out of 5000000
+ 595896 words of memory out of 5000000
  16557 multiletter control sequences out of 15000+600000
  14907 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -4794,7 +4793,7 @@ share/texmf-dist/fonts/type1/public/eurosym/feymo10.pfb></usr/share/texmf-dist/
 fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/pub
 lic/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
 ti1000.pfb>
-Output written on thesis.pdf (256 pages, 107387635 bytes).
+Output written on thesis.pdf (256 pages, 107387329 bytes).
 PDF statistics:
  4451 PDF objects out of 5155 (max. 8388607)
  3748 compressed objects within 38 object streams
