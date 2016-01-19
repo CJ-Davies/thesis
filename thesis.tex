@@ -111,6 +111,12 @@
   \end{figure}%
 }
 
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+
 % ======= ======= ======= ======= ======= ======= =======
 
 \begin{document}
@@ -152,10 +158,12 @@
 % ======= ======= ======= ======= ======= ======= =======
 
 \title{Parallel Reality: Tandem Exploration of Real and Virtual Environments}
-\date{March 2015}
+\date{June 2015}
 \author{CJ Davies}
 
 % ======= ======= ======= ======= ======= ======= =======
+
+\afterpage{\blankpage}
 
 \pagebreak
 
@@ -176,6 +184,10 @@
 \fancyhead[R]{\thepage}
 \fancyfoot[C]{}
 
+\afterpage{\blankpage}
+
+% ======= ======= ======= ======= ======= ======= =======
+
 % \chapter* in \documentclass{report} creates a chapter with no number (& thus no ToC entry)
 \chapter*{Abstract}
 \input{00_abstract/abstract.tex}
@@ -192,11 +204,6 @@
 
 % ======= ======= ======= ======= ======= ======= =======
 
-\chapter*{List of Abbreviations}
-\input{abbreviations.tex}
-
-% ======= ======= ======= ======= ======= ======= =======
-
 \tableofcontents
 
 % ======= ======= ======= ======= ======= ======= =======
@@ -209,7 +216,16 @@
 
 % ======= ======= ======= ======= ======= ======= =======
 
+\chapter*{List of Abbreviations}
+\fancyhead[L]{List of Abbreviations}
+\input{abbreviations.tex}
+
+
+
+% ======= ======= ======= ======= ======= ======= =======
+
 \chapter{Introduction}
+\fancyhead[L]{\nouppercase{\leftmark}}
 \graphicspath{ {06_mirrorshades_studies_results/images/} }
 \input{01_introduction/introduction.tex}
 
